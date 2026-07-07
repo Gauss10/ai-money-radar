@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Money Radar</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/echarts/5.5.0/echarts.min.js"></script>
+<style>
+  :root{
+    --bg:#c7d3f2; --card:#faf1e0; --card2:#f1e3c8; --border:#43302b;
+    --text:#3b2a24; --sub:#7a6455; --faint:#a08d7b;
+    --anthropic:#d97757; --openai:#1f9e83; --google:#5b86ea; --gpu:#d9a13b; --dc:#8e7cc3; --fable:#f0762b;
+    --up:#2e8b46; --down:#cf4b3c;
+    --bar:#5fc0b0;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{
+    background-color:var(--bg);
+    background-image:repeating-linear-gradient(0deg, rgba(255,255,255,.55) 0 1px, transparent 1px 26px),
+                     repeating-linear-gradient(90deg, rgba(255,255,255,.55) 0 1px, transparent 1px 26px);
+    color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.55}
+  .mono{font-family:"SF Mono",SFMono-Regular,ui-monospace,Menlo,Consolas,monospace}
+  .wrap{max-width:1200px;margin:0 auto;padding:0 20px 60px}
+  header{padding:36px 0 8px;position:relative}
+  header h1{font-family:'VT323',ui-monospace,monospace;font-size:42px;font-weight:400;letter-spacing:1px;color:#31221c;text-shadow:2px 2px 0 rgba(255,255,255,.7)}
+  header h1 .dot{color:var(--fable)}
+  #langBtn{position:absolute;top:44px;right:0}
+  .tagline{color:var(--sub);font-size:14px;margin-top:2px}
+  .stamps{color:var(--faint);font-size:12px;margin-top:10px}
+  .stamps span{margin-right:16px}
+  .banner{display:none;background:#fdeec9;border:2px solid var(--border);box-shadow:3px 3px 0 var(--border);color:#7a5b1f;border-radius:8px;padding:10px 14px;font-size:13px;margin:14px 0}
+  section{margin-top:38px}
+  .sec-h{display:flex;align-items:baseline;gap:12px;margin-bottom:16px;flex-wrap:wrap}
+  .sec-h h2{font-size:18px;font-weight:750;color:#31221c}
+  .sec-h .tag{font-size:11px;padding:2px 10px;border-radius:99px;border:1.5px solid var(--border);background:var(--card);box-shadow:2px 2px 0 var(--border);color:var(--sub)}
+  .grid{display:grid;gap:18px}
+  .g2{grid-template-columns:1fr 1fr}
+  .g3{grid-template-columns:repeat(3,1fr)}
+  @media(max-width:900px){.g2,.g3{grid-template-columns:1fr}}
+  .card{background:var(--card);border:2px solid var(--border);border-radius:10px;padding:16px;box-shadow:4px 4px 0 var(--border)}
+  .card h3{margin:-16px -16px 14px;padding:7px 12px;background:var(--bar);border-bottom:2px solid var(--border);border-radius:8px 8px 0 0;color:#31221c;font-weight:700;font-size:12.5px;display:flex;justify-content:space-between;align-items:center;gap:10px}
+  .card h3::after{content:'‒ ▢ ✕';font-family:ui-monospace,monospace;letter-spacing:3px;opacity:.6;font-size:11px;white-space:nowrap}
+  .card h3 .sub2{font-weight:400;color:#4c3a2c;opacity:.75}
+  #sec-arr .card{--bar:#f2a65a}
+  #sec-tokens .card{--bar:#5fc0b0}
+  #sec-gpu .card{--bar:#f2c14e}
+  #sec-dc .card{--bar:#f2a0b9}
+  .chart{height:340px;width:100%}
+  .chart-sm{height:260px;width:100%}
+  .arr-card{position:relative;overflow:visible}
+  .arr-card .co{font-size:14px;font-weight:800}
+  .arr-big{font-family:'VT323',ui-monospace,monospace;font-size:clamp(34px,4vw,52px);letter-spacing:1px;margin:2px 0 0;color:#31221c;font-variant-numeric:tabular-nums}
+  .arr-sub{font-size:12.5px;color:var(--sub)}
+  .arr-sub b{color:var(--text)}
+  .arr-note{display:inline-block;margin-top:6px;color:var(--faint);font-size:11px;border-top:1px dotted #d8c7a8;padding-top:5px}
+  .pill{display:inline-block;font-size:11px;padding:1px 8px;border-radius:99px;margin-left:8px;border:1.5px solid var(--border)}
+  .pill.up{background:#d9ead3;color:var(--up)}
+  .glow-a{border-left:6px solid var(--anthropic)}
+  .glow-o{border-left:6px solid var(--openai)}
+  .stat .v{font-family:'VT323',ui-monospace,monospace;font-size:30px;letter-spacing:.5px;font-variant-numeric:tabular-nums;color:#31221c}
+  .stat .d{font-size:12px;margin-top:2px}
+  .stat .d span{margin-right:10px}
+  .up-c{color:var(--up)} .down-c{color:var(--down)}
+  .stale{font-size:10px;color:var(--faint);border:1px solid var(--border);border-radius:4px;padding:0 4px;margin-left:6px;background:var(--card2)}
+  table{width:100%;border-collapse:collapse;font-size:12.5px}
+  th{color:var(--sub);text-align:left;font-weight:700;padding:7px 8px;border-bottom:2px solid var(--border);white-space:nowrap}
+  td{padding:6px 8px;border-bottom:1px solid #e6d5b4;white-space:nowrap}
+  td.num,th.num{text-align:right;font-variant-numeric:tabular-nums}
+  .wm-host{position:relative}
+  .wm{display:none;position:absolute;inset:0;z-index:5;align-items:center;justify-content:center;pointer-events:none}
+  .wm div{transform:rotate(-14deg);border:2px dashed var(--border);color:#7a5b1f;background:rgba(250,241,224,.92);padding:10px 22px;border-radius:10px;font-weight:700;font-size:15px;text-align:center;box-shadow:4px 4px 0 var(--border)}
+  .sampled .wm{display:flex}
+  .sampled .or-chart{opacity:.5}
+  .news li{list-style:none;display:flex;gap:10px;padding:7px 6px;border-bottom:1px solid #e6d5b4;font-size:13px;align-items:baseline}
+  .news li.hot{background:#fdeec9;border:1.5px solid var(--border);box-shadow:2px 2px 0 var(--border);border-radius:8px;margin:8px 0;padding:9px 10px}
+  .news .nd{color:var(--faint);font-size:11.5px;white-space:nowrap;min-width:78px}
+  .news a{color:var(--text);text-decoration:none;border-bottom:1px dotted var(--faint)}
+  .news a:hover{color:#8a4b2a}
+  .news .ns{color:var(--faint);font-size:11.5px;white-space:nowrap;margin-left:auto}
+  .sig p{font-size:12.5px;color:var(--sub);margin:9px 0}
+  .sig b{color:var(--text)}
+  .sig a{color:#8a4b2a;text-decoration:none}
+  footer{margin-top:46px;border-top:2px solid var(--border);padding-top:16px;color:var(--sub);font-size:12.5px}
+  footer h4{color:var(--text);font-size:13px;margin:12px 0 6px}
+  .fineprint{margin-top:12px;color:var(--faint);font-size:11px;line-height:1.6}
+  .btn{cursor:pointer;background:var(--card);border:1.5px solid var(--border);box-shadow:2px 2px 0 var(--border);color:var(--text);font-size:11.5px;border-radius:6px;padding:2px 10px}
+  .btn:active{transform:translate(2px,2px);box-shadow:none}
+  .btn.on{background:#5fc0b0}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <h1>AI MONEY RADAR<span class="dot">▮</span></h1>
+  <button class="btn" id="langBtn">EN</button>
+  <div class="tagline" id="i_tagline"></div>
+  <div class="stamps mono" id="stamps"></div>
+  <div class="banner" id="fileBanner"></div>
+</header>
+
+<section id="sec-arr">
+  <div class="sec-h"><h2 id="i_sec_arr"></h2><span class="tag" id="i_tag_arr"></span></div>
+  <div class="grid g2" id="arrCards"></div>
+  <div class="card" style="margin-top:18px">
+    <h3><span id="i_arr_chart"></span><button class="btn" id="logBtn">log</button></h3>
+    <div class="chart" id="arrChart"></div>
+  </div>
+</section>
+
+<section id="sec-tokens">
+  <div class="sec-h"><h2 id="i_sec_tok"></h2><span class="tag">OpenRouter API · Vercel Gateway · SDK downloads</span></div>
+  <div class="wm-host" id="tokenHost">
+    <div class="wm"><div id="i_wm"></div></div>
+    <div class="grid g2">
+      <div class="card or-chart"><h3><span id="i_fable"></span></h3><div class="chart-sm" id="fableChart"></div></div>
+      <div class="card or-chart"><h3><span id="i_watch"></span></h3><div class="chart-sm" id="watchChart"></div></div>
+    </div>
+    <div class="grid g2" style="margin-top:18px">
+      <div class="card or-chart"><h3><span id="i_total"></span></h3><div class="chart-sm" id="totalChart"></div></div>
+      <div class="card or-chart"><h3 id="topH"><span id="i_top"></span></h3><div class="chart-sm" id="topChart"></div></div>
+    </div>
+  </div>
+  <div class="grid g2" style="margin-top:18px">
+    <div class="card"><h3 id="vgTokenH"><span></span></h3><div class="chart-sm" id="vgTokenChart"></div></div>
+    <div class="card"><h3 id="vgSpendH"><span></span></h3><div class="chart-sm" id="vgSpendChart"></div></div>
+  </div>
+  <div class="grid g2" style="margin-top:18px">
+    <div class="card"><h3><span id="i_vgtrend"></span></h3><div class="chart-sm" id="vgTrendChart"></div></div>
+    <div class="card sig" id="sigCard"><h3><span id="i_kol"></span></h3></div>
+  </div>
+  <div class="grid g2" style="margin-top:18px">
+    <div class="card"><h3><span id="i_sdk"></span></h3><div class="chart-sm" id="sdkChart"></div></div>
+    <div class="card" style="overflow-x:auto"><h3><span id="i_sites"></span></h3><table id="dcTable"></table></div>
+  </div>
+</section>
+
+<section id="sec-gpu">
+  <div class="sec-h"><h2 id="i_sec_gpu"></h2><span class="tag" id="i_tag_gpu"></span></div>
+  <div class="grid g3" id="gpuCards"></div>
+  <div class="card" style="margin-top:18px"><h3><span id="i_gpu_chart"></span></h3><div class="chart" id="gpuChart"></div></div>
+</section>
+
+<section id="sec-dc">
+  <div class="sec-h"><h2 id="i_sec_dc"></h2><span class="tag" id="i_tag_dc"></span></div>
+  <div class="grid g3" id="dcCards"></div>
+  <div class="card" style="margin-top:18px"><h3><span id="i_dc_chart"></span></h3><div class="chart-sm" id="dcChart"></div></div>
+  <div class="card" style="margin-top:18px"><h3><span id="i_news"></span><span class="sub2" id="newsMeta"></span></h3><ul class="news" id="newsList"></ul></div>
+</section>
+
+<footer>
+  <h4>Methodology</h4>
+  <p id="i_method"></p>
+  <p class="fineprint"><span id="orCite">OpenRouter (openrouter.ai/rankings)</span> · Epoch AI, AI Data Centers (CC-BY 4.0) · Ornn Compute Price Index · Vercel AI Gateway Leaderboards · npm / pypistats · Google News · <span id="i_fine"></span></p>
+</footer>
+
+</div>
+
+<script>
+/* ───────── i18n ───────── */
+const LANG = localStorage.getItem('aimt_lang') || 'zh';
+document.documentElement.lang = LANG === 'zh' ? 'zh-CN' : 'en';
+const T = {
+zh: {
+  tagline:'AI 变现跟踪：GPU 租赁价格 · 模型 Token 用量 · Frontier Lab ARR · 数据中心建设',
+  banner:'直接双击打开无法加载数据（浏览器限制 file:// fetch）。本地预览请运行：python3 -m http.server 8000',
+  sec_arr:'① Frontier Lab ARR — 实时估算', tag_arr:'综合估算口径 · 实时外推',
+  arr_chart:'ARR 轨迹：历史（实线）→ 实时外推（虚线，阴影为模型不确定带）· ◆ = 公开报道对照点',
+  est_arr:'— estimated ARR', mm:'implied M/M',
+  arr_note:'综合估算 · 非公司披露/非审计',
+  sec_tok:'② Token 用量与采用度',
+  wm:'OpenRouter 图为 SAMPLE DATA（占位虚构）<br><span style="font-size:12px;font-weight:400">配置 OPENROUTER_API_KEY（免费注册）并跑一次 Action 后自动替换</span>',
+  fable:'Claude Fable 5 · 每日 Token（B/day）— OpenRouter',
+  watch:'重点模型家族对比（B tokens/day）— OpenRouter',
+  total:'OpenRouter 日 Token 总量（B/day · 全模型含长尾）',
+  top7:'Top Models — 最新一周合计（B tokens）— OpenRouter', top1:'Top Models — 最新一天（B tokens）— OpenRouter',
+  vg_tok:'Vercel Gateway — Token 份额 Top 10', vg_spend:'Vercel Gateway — $ Spend 份额 Top 10',
+  vg_sub:(d,p)=>`${d} · Claude 系 ${p}%`,
+  vgtrend:'Vercel Gateway — 份额历史（逐日，Token vs $ Spend）',
+  kol:'KOL / Podcast — AI 应用与变现观点',
+  sdk:'SDK 下载量 7DMA（M/day）— developer adoption proxy',
+  sites:'Top Sites by IT Power — Epoch',
+  sec_gpu:'③ GPU 租赁价格 — Ornn OCPI', tag_gpu:'$/GPU-hr · 日频',
+  gpu_chart:'价格指数走势（$/GPU-hr）',
+  sec_dc:'④ AI 数据中心建设 — Epoch AI + News', tag_dc:'卫星影像 + permits · ~月频 · 新闻日更',
+  dc_sites:'覆盖 Sites', dc_sites_sub:'Epoch 卫星+permit 追踪样本',
+  dc_power:'IT Power', dc_power_sub:'总设施功耗另 +20–50%',
+  dc_comp:'算力存量', dc_comp_sub:'≈ 覆盖全球已交付 AI 算力 ~27%',
+  dc_chart:'行业累计装机（覆盖样本内，前向填充加总）',
+  news:'建设动态 ', news_meta:(n,d)=>`（${n} 条 · 更新 ${d}）`,
+  method:'ARR 主线为本站<b>综合估算口径</b>（多渠道 triangulation），历史段为月度估算的对数线性插值；最新时点之后沿校准后的增速路径实时外推，阴影为模型不确定带（随外推时长扩大）。◆ 散点为公开报道的 run-rate 对照。外推是<b>实时测算</b>而非公司指引；口径均为 run-rate（月化×12），非审计数字，仅供研究参考。Token 计数使用各 provider 自家 tokenizer；OpenRouter / Vercel Gateway 为第三方路由渠道窗口，适合看边际变化与份额拐点，不代表全市场总量。',
+  fine:'仅供研究参考，非投资建议。',
+  fable_empty:'<div><b style="color:var(--fable)">Fable 5 未出现在 OpenRouter 日度 top-50（token 口径）</b></div><div>本数据集只含每日 top-50 模型 + 长尾合计。Fable 5 定价 $10/$50，「低 token 量、高客单」形态——变现信号先看 <b>Vercel Gateway 的 $ Spend 份额</b>。</div><div style="color:var(--faint)">进入 top-50 当天，此图自动点亮。</div>',
+  s_total:'日总量', s_7dma:'7DMA', s_mw:'累计 IT Power (MW)', s_h100e:'累计算力 (k H100-eq)',
+  s_cl_sp:'Claude 系 $ Spend %', s_cl_tk:'Claude 系 Token %', s_fb_sp:'Fable 5 $ Spend %', s_fb_tk:'Fable 5 Token %',
+  th:['Site','Owner','User','MW','k H100e'], stale:'数据至 ',
+},
+en: {
+  tagline:'AI money radar: GPU rental prices · model token usage · frontier-lab ARR · datacenter buildout',
+  banner:'Opening this file directly can\'t load data (file:// fetch is blocked). For local preview run: python3 -m http.server 8000',
+  sec_arr:'① Frontier Lab ARR — Live Estimate', tag_arr:'composite estimate · live extrapolation',
+  arr_chart:'ARR trajectory: history (solid) → live extrapolation (dashed; band = model uncertainty) · ◆ = public checkpoints',
+  est_arr:'— estimated ARR', mm:'implied M/M',
+  arr_note:'Composite estimate · not disclosed/audited',
+  sec_tok:'② Token Usage & Adoption',
+  wm:'OpenRouter charts show SAMPLE DATA<br><span style="font-size:12px;font-weight:400">Set OPENROUTER_API_KEY (free) and run the Action once to replace</span>',
+  fable:'Claude Fable 5 · Daily Tokens (B/day) — OpenRouter',
+  watch:'Model family comparison (B tokens/day) — OpenRouter',
+  total:'OpenRouter daily token total (B/day · all models incl. long tail)',
+  top7:'Top Models — trailing 7-day total (B tokens) — OpenRouter', top1:'Top Models — latest day (B tokens) — OpenRouter',
+  vg_tok:'Vercel Gateway — Token share Top 10', vg_spend:'Vercel Gateway — $ Spend share Top 10',
+  vg_sub:(d,p)=>`${d} · Claude family ${p}%`,
+  vgtrend:'Vercel Gateway — share history (daily, Token vs $ Spend)',
+  kol:'KOL / Podcasts — takes on AI apps & monetization',
+  sdk:'SDK downloads 7DMA (M/day) — developer adoption proxy',
+  sites:'Top Sites by IT Power — Epoch',
+  sec_gpu:'③ GPU Rental Prices — Ornn OCPI', tag_gpu:'$ per GPU-hr · daily',
+  gpu_chart:'Price index ($/GPU-hr)',
+  sec_dc:'④ AI Datacenter Buildout — Epoch AI + News', tag_dc:'satellite + permits · ~monthly · news daily',
+  dc_sites:'Sites covered', dc_sites_sub:'Epoch satellite + permit sample',
+  dc_power:'IT Power', dc_power_sub:'facility power typically +20–50% on top',
+  dc_comp:'Compute stock', dc_comp_sub:'≈ ~27% of global delivered AI compute',
+  dc_chart:'Cumulative installed base (covered sample, forward-filled)',
+  news:'Construction News ', news_meta:(n,d)=>`(${n} items · updated ${d})`,
+  method:'The ARR mainline is this site\'s <b>composite estimate</b> (multi-channel triangulation): log-linear interpolation across monthly estimates for history, and a calibrated growth-path extrapolation beyond the latest point (shaded band = model uncertainty, widening with horizon). ◆ markers are publicly reported run-rate checkpoints. The extrapolation is a <b>live calculation</b>, not company guidance; all figures are run-rates (monthly ×12), unaudited, for research reference only. Token counts use each provider\'s own tokenizer; OpenRouter / Vercel Gateway are third-party routing windows — good for marginal change and share inflections, not market totals.',
+  fine:'For research reference only — not investment advice.',
+  fable_empty:'<div><b style="color:var(--fable)">Fable 5 is not in OpenRouter\'s daily top-50 (by tokens)</b></div><div>This dataset only includes the daily top-50 models plus an aggregated long tail. At $10/$50 pricing, Fable 5 is a low-token / high-ticket model — watch <b>Vercel Gateway $ Spend share</b> for the monetization signal.</div><div style="color:var(--faint)">The day it enters the top-50, this chart lights up automatically.</div>',
+  s_total:'Daily total', s_7dma:'7DMA', s_mw:'Cumulative IT Power (MW)', s_h100e:'Cumulative compute (k H100-eq)',
+  s_cl_sp:'Claude family $ spend %', s_cl_tk:'Claude family token %', s_fb_sp:'Fable 5 $ spend %', s_fb_tk:'Fable 5 token %',
+  th:['Site','Owner','User','MW','k H100e'], stale:'data thru ',
+}};
+const tr = k => T[LANG][k] ?? T.zh[k] ?? k;
+
+/* ───────── helpers ───────── */
+const $ = id => document.getElementById(id);
+const CHARTS = [];
+function mkChart(id){ const c = echarts.init($(id)); CHARTS.push(c); return c; }
+addEventListener('resize', () => CHARTS.forEach(c => c.resize()));
+const AX = {axisLine:{lineStyle:{color:'#43302b'}}, axisLabel:{color:'#7a6455',fontSize:11}, splitLine:{lineStyle:{color:'#e6d5b4'}}};
+const TIP = {trigger:'axis', backgroundColor:'#fff8e9', borderColor:'#43302b', borderWidth:1.5, textStyle:{color:'#3b2a24',fontSize:12}};
+const LEG = {textStyle:{color:'#7a6455',fontSize:10}, top:0, type:'scroll'};
+const fmtInt = n => Math.round(n).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const safeUrl = u => /^https?:\/\//i.test(String(u || '')) ? String(u).replace(/"/g, '%22') : '#';
+const day = 86400000, MS_MO = 30.44 * day;
+async function loadJSON(path){ try{ const r = await fetch(path); if(!r.ok) throw 0; return await r.json(); }catch(e){ return null; } }
+const BUNDLE = window.__DATA__ || null;
+async function src(key, path){ return (BUNDLE && BUNDLE[key]) ? BUNDLE[key] : await loadJSON(path); }
+function dma7(pts){ const out=[]; for(let i=0;i<pts.length;i++){ const s=pts.slice(Math.max(0,i-6),i+1); out.push([pts[i][0], +(s.reduce((a,p)=>a+p[1],0)/s.length).toFixed(2)]); } return out; }
+function brandColor(name){ const n=name.toLowerCase();
+  if(n.includes('fable')) return '#f0762b';
+  if(n.includes('claude')||n.includes('anthropic')) return '#d97757';
+  if(n.includes('gpt')||n.includes('openai')||n.includes('o3')||n.includes('embedding')) return '#1f9e83';
+  if(n.includes('gemini')||n.includes('imagen')) return '#5b86ea';
+  if(n.includes('deepseek')) return '#6b74d6';
+  if(n.includes('grok')) return '#7d8a9c';
+  if(n.includes('glm')) return '#b06ab3';
+  if(n.includes('minimax')) return '#3fb6c4';
+  return '#8d7b68'; }
+
+/* ───────── static i18n ───────── */
+(function(){
+  const map = {i_tagline:'tagline', i_sec_arr:'sec_arr', i_tag_arr:'tag_arr', i_arr_chart:'arr_chart',
+    i_sec_tok:'sec_tok', i_wm:'wm', i_fable:'fable', i_watch:'watch', i_total:'total', i_top:'top7',
+    i_vgtrend:'vgtrend', i_kol:'kol', i_sdk:'sdk', i_sites:'sites', i_sec_gpu:'sec_gpu', i_tag_gpu:'tag_gpu',
+    i_gpu_chart:'gpu_chart', i_sec_dc:'sec_dc', i_tag_dc:'tag_dc', i_dc_chart:'dc_chart', i_news:'news',
+    i_method:'method', i_fine:'fine', fileBanner:'banner'};
+  for(const [id,k] of Object.entries(map)){ const el=$(id); if(el) el.innerHTML = tr(k); }
+  const b = $('langBtn');
+  b.textContent = LANG === 'zh' ? 'EN' : '中文';
+  b.onclick = () => { localStorage.setItem('aimt_lang', LANG === 'zh' ? 'en' : 'zh'); location.reload(); };
+})();
+
+/* ───────── ARR ───────── */
+function arrModelRaw(co){
+  const pts = co.estimates.map(e => ({t: Date.parse(e.date), v: e.arr_bn})).sort((a,b)=>a.t-b.t);
+  const last = pts[pts.length-1];
+  const pj = co.extrapolation, pjT = Date.parse(pj.to);
+  const center = Math.sqrt(pj.low * pj.high);
+  const rC = Math.log(center / last.v) / (pjT - last.t);
+  const rL = Math.log(pj.low  / last.v) / (pjT - last.t);
+  const rH = Math.log(pj.high / last.v) / (pjT - last.t);
+  function interp(t){
+    if(t <= pts[0].t) return pts[0].v;
+    for(let i=1;i<pts.length;i++) if(t <= pts[i].t){
+      const a=pts[i-1], b=pts[i], f=(t-a.t)/(b.t-a.t);
+      return a.v * Math.pow(b.v/a.v, f);
+    }
+    return last.v;
+  }
+  const est = (t, r) => t <= last.t ? interp(t) : last.v * Math.exp((r ?? rC) * (t - last.t));
+  return {pts, last, pjT, center, rC, rL, rH, est};
+}
+function prepArr(arr){
+  if(!arr) return null;
+  if(arr.render) return arr;
+  const out = {render:true, updated:arr.updated, companies:{}};
+  for(const [k, co] of Object.entries(arr.companies)){
+    const m = arrModelRaw(co);
+    const hist = [];
+    for(let t=m.pts[0].t; t<m.last.t; t+=3*day) hist.push([t, +m.est(t).toFixed(2)]);
+    hist.push([m.last.t, m.last.v]);
+    const ext=[], lo=[], hi=[];
+    for(let t=m.last.t; t<=m.pjT; t+=5*day){
+      ext.push([t, +m.est(t).toFixed(2)]);
+      lo.push([t, +m.est(t, m.rL).toFixed(2)]);
+      hi.push([t, +m.est(t, m.rH).toFixed(2)]);
+    }
+    ext.push([m.pjT, +m.center.toFixed(1)]);
+    out.companies[k] = {label:co.label, color:co.color, hist, ext, fanLo:lo, fanHi:hi,
+      cps:(co.checkpoints||[]).map(c=>({t:Date.parse(c.date), v:c.arr_bn, src:c.source})),
+      counter:{tLast:m.last.t, vLast:m.last.v, rMs:m.rC},
+      yoyDen:+m.est(Date.now()-365*day).toFixed(2)};
+  }
+  return out;
+}
+function initARR(arrPrep){
+  if(!arrPrep) return;
+  const cos = arrPrep.companies;
+  const cards = $('arrCards');
+  for(const [key, c] of Object.entries(cos)){
+    const el = document.createElement('div');
+    el.className = 'card arr-card ' + (key === 'anthropic' ? 'glow-a' : 'glow-o');
+    el.innerHTML = `
+      <h3 style="--bar:${key==='anthropic'?'#f4b183':'#8fd1c0'}"><span>${c.label} ${tr('est_arr')}</span></h3>
+      <div class="co" style="color:${c.color}">${c.label} <span class="pill up" id="yoy-${key}"></span></div>
+      <div class="arr-big" id="big-${key}">—</div>
+      <div class="arr-sub"><b id="rate-${key}"></b>/hr · ${tr('mm')} <b id="mm-${key}"></b></div>
+      <div class="arr-note">${tr('arr_note')}</div>`;
+    cards.appendChild(el);
+  }
+  const val = (c, t) => c.counter.vLast * Math.exp(c.counter.rMs * (t - c.counter.tLast));
+  function tick(){
+    const t = Date.now();
+    for(const [key, c] of Object.entries(cos)){
+      const v = val(c, t) * 1e9;
+      $('big-'+key).textContent = '$' + fmtInt(v);
+      $('rate-'+key).textContent = '+$' + fmtInt(v * (Math.exp(c.counter.rMs * 3600e3) - 1));
+      $('mm-'+key).textContent = ((Math.exp(c.counter.rMs * MS_MO) - 1) * 100).toFixed(1) + '%';
+      $('yoy-'+key).textContent = 'Y/Y +' + fmtInt((val(c, t) / c.yoyDen - 1) * 100) + '%';
+    }
+  }
+  tick(); setInterval(tick, 120);
+
+  const chart = mkChart('arrChart');
+  let logMode = false;
+  function render(){
+    const series = [];
+    for(const [key, c] of Object.entries(cos)){
+      series.push(
+        {name:c.label, type:'line', data:c.hist, showSymbol:false, lineStyle:{width:2.5, color:c.color}, itemStyle:{color:c.color}, z:5,
+          markLine:{silent:true, symbol:'none', lineStyle:{color:'#a08d7b', type:'dotted'}, label:{show:false}, data:[{xAxis:Date.now()}]}},
+        {name:c.label+' ext', type:'line', data:c.ext, showSymbol:false, lineStyle:{width:2, type:'dashed', color:c.color}, itemStyle:{color:c.color}, z:5},
+        {name:c.label+' fanlo', type:'line', data:c.fanLo, stack:'fan'+key, showSymbol:false, lineStyle:{opacity:0}, tooltip:{show:false}},
+        {name:c.label+' fanhi', type:'line', data:c.fanHi.map((p,i)=>[p[0], +(p[1]-c.fanLo[i][1]).toFixed(2)]), stack:'fan'+key, showSymbol:false, lineStyle:{opacity:0}, areaStyle:{color:c.color, opacity:.15}, tooltip:{show:false}},
+        {name:c.label+' cps', type:'scatter', symbol:'diamond', symbolSize:9,
+          data:c.cps.map(p=>({value:[p.t, p.v], src:p.src})),
+          itemStyle:{color:'transparent', borderColor:c.color, borderWidth:1.5},
+          tooltip:{formatter: pp => `${c.label} ◆ $${pp.value[1]}B<br><span style="color:#7a6455">${pp.data.src||''}</span>`}, z:7}
+      );
+    }
+    chart.setOption({
+      tooltip: {...TIP, valueFormatter: v => '$' + v + 'B'},
+      legend: {data: Object.values(cos).map(x=>x.label), textStyle:{color:'#7a6455'}, top:0},
+      grid: {left:52, right:24, top:30, bottom:28},
+      xAxis: {type:'time', ...AX, max: Date.parse('2027-01-20')},
+      yAxis: {type: logMode ? 'log' : 'value', ...AX, name:'$B run-rate', nameTextStyle:{color:'#a08d7b'}, logBase:10, min: logMode ? 2 : 0},
+      series
+    }, true);
+  }
+  render();
+  $('logBtn').onclick = () => { logMode = !logMode; $('logBtn').classList.toggle('on', logMode); render(); };
+}
+
+/* ───────── OpenRouter tokens ───────── */
+const wlName = k => { const n = k.replace(/^[^/]+\//,'').replace(/\/$/,''); return n || k.split('/')[0]; };
+function initTokens(or_){
+  if(!or_) return;
+  if(or_.sample) $('tokenHost').classList.add('sampled');
+  if(or_.citation) $('orCite').textContent = or_.citation;
+
+  const wl = or_.watchlist || {};
+  const FKEY = ['anthropic/claude-5-fable','anthropic/claude-fable-5'].find(k => (wl[k]||[]).length) || null;
+  const fable = FKEY ? wl[FKEY] : [];
+  if(!fable.length && !or_.sample){
+    $('fableChart').innerHTML = `<div style="height:100%;display:flex;flex-direction:column;justify-content:center;gap:10px;color:var(--sub);font-size:12.5px;line-height:1.6">${tr('fable_empty')}</div>`;
+  } else {
+    mkChart('fableChart').setOption({
+      tooltip: TIP, grid:{left:46,right:14,top:26,bottom:26},
+      xAxis:{type:'category', data:fable.map(p=>p[0].slice(5)), ...AX},
+      yAxis:{type:'value', ...AX},
+      series:[{type:'line', data:fable.map(p=>p[1]), smooth:.3, showSymbol:false,
+        lineStyle:{width:2.5,color:'#f0762b'},
+        areaStyle:{color:new echarts.graphic.LinearGradient(0,0,0,1,[{offset:0,color:'rgba(240,118,43,.35)'},{offset:1,color:'rgba(240,118,43,0)'}])}}]
+    });
+  }
+
+  const wlNames = Object.keys(wl).filter(k => k !== FKEY);
+  const palette = ['#5b86ea','#2e8b46','#9d7cc3','#d9a13b','#d16b95','#3fb6c4'];
+  mkChart('watchChart').setOption({
+    tooltip: TIP, legend:LEG,
+    grid:{left:46,right:14,top:30,bottom:26},
+    xAxis:{type:'time', ...AX}, yAxis:{type:'value', ...AX},
+    series: [
+      ...(fable.length ? [{name:'claude-5-fable', type:'line', data:fable.map(p=>[p[0],p[1]]), showSymbol:false, lineStyle:{width:2.5,color:'#f0762b'}, itemStyle:{color:'#f0762b'}}] : []),
+      ...wlNames.map((k,i)=>({name:wlName(k), type:'line', data:wl[k].map(p=>[p[0],p[1]]), showSymbol:false, lineStyle:{width:1.6,color:palette[i%palette.length]}, itemStyle:{color:palette[i%palette.length]}}))
+    ]
+  });
+
+  const tot = or_.daily_totals || [];
+  if(tot.length){
+    mkChart('totalChart').setOption({
+      tooltip: {...TIP, valueFormatter:v=>v+' B'},
+      legend:LEG,
+      grid:{left:52,right:14,top:30,bottom:26},
+      xAxis:{type:'time', ...AX}, yAxis:{type:'value', ...AX, name:'B/day', nameTextStyle:{color:'#a08d7b'}},
+      series:[
+        {name:tr('s_total'), type:'line', data:tot.map(p=>[p[0],p[1]]), showSymbol:false, lineStyle:{width:1, color:'rgba(217,119,87,.45)'}, itemStyle:{color:'#d97757'},
+          areaStyle:{color:'rgba(217,119,87,.10)'}},
+        {name:tr('s_7dma'), type:'line', data:dma7(tot).map(p=>[p[0],p[1]]), showSymbol:false, lineStyle:{width:2.5, color:'#c1502e'}, itemStyle:{color:'#c1502e'}}
+      ]
+    });
+  }
+
+  const top7 = or_.top_models_7d, top1 = or_.top_models_latest || [];
+  const top = (top7 && top7.length) ? top7 : top1;
+  $('i_top').textContent = (top7 && top7.length) ? tr('top7') : tr('top1');
+  mkChart('topChart').setOption({
+    tooltip:{...TIP, trigger:'item'}, grid:{left:150,right:36,top:8,bottom:26},
+    xAxis:{type:'value', ...AX},
+    yAxis:{type:'category', data:top.map(m=>m.slug.replace(/^[^/]+\//,'')).reverse(), ...AX, axisLabel:{color:'#7a6455',fontSize:10.5}},
+    series:[{type:'bar', data:top.map(m=>({value:m.tokens_b, itemStyle:{color: brandColor(m.slug), borderColor:'#43302b', borderWidth:1}})).reverse(), barWidth:'62%'}]
+  });
+}
+
+/* ───────── Vercel Gateway ───────── */
+function initVercel(vg){
+  if(!vg || !(vg.snapshots||[]).length) return;
+  const snaps = vg.snapshots;
+  const snap = snaps[snaps.length-1];
+  const claudeSum = arr => +(arr||[]).filter(x=>x[0].toLowerCase().includes('claude')).reduce((s,x)=>s+x[1],0).toFixed(1);
+  $('vgTokenH').firstElementChild.innerHTML = `${tr('vg_tok')} <span class="sub2">${T[LANG].vg_sub(snap.date, claudeSum(snap.token_share))}</span>`;
+  $('vgSpendH').firstElementChild.innerHTML = `${tr('vg_spend')} <span class="sub2">${T[LANG].vg_sub(snap.date, claudeSum(snap.spend_share))}</span>`;
+  const mkBar = (id, rows) => mkChart(id).setOption({
+    tooltip:{...TIP, trigger:'item', valueFormatter:v=>v+'%'},
+    grid:{left:170,right:40,top:8,bottom:26},
+    xAxis:{type:'value', ...AX},
+    yAxis:{type:'category', data:rows.map(r=>r[0]).reverse(), ...AX, axisLabel:{color:'#7a6455',fontSize:10.5}},
+    series:[{type:'bar', data:rows.map(r=>({value:r[1], itemStyle:{color:brandColor(r[0]), borderColor:'#43302b', borderWidth:1}})).reverse(), barWidth:'62%',
+      label:{show:true, position:'right', color:'#7a6455', fontSize:10, formatter:'{c}%'}}]
+  });
+  mkBar('vgTokenChart', snap.token_share);
+  mkBar('vgSpendChart', snap.spend_share);
+
+  const h = vg.history;
+  if(h && h.cost && h.cost.days){
+    const days = h.cost.days;
+    const S = (metric, name) => ((h[metric]||{}).series||{})[name] || [];
+    mkChart('vgTrendChart').setOption({
+      tooltip: {...TIP, valueFormatter:v=>v+'%'},
+      legend:LEG,
+      grid:{left:40,right:14,top:30,bottom:26},
+      xAxis:{type:'category', data:days.map(d=>d.slice(5)), ...AX},
+      yAxis:{type:'value', ...AX, name:'%', nameTextStyle:{color:'#a08d7b'}},
+      series:[
+        {name:tr('s_cl_sp'), type:'line', data:S('cost','Claude (family)'), showSymbol:false, lineStyle:{width:2.5,color:'#d97757'}, itemStyle:{color:'#d97757'}},
+        {name:tr('s_cl_tk'), type:'line', data:S('tokens','Claude (family)'), showSymbol:false, lineStyle:{width:2,color:'#5b86ea'}, itemStyle:{color:'#5b86ea'}},
+        {name:tr('s_fb_sp'), type:'line', data:S('cost','Claude Fable 5'), showSymbol:false, lineStyle:{width:2,type:'dashed',color:'#f0762b'}, itemStyle:{color:'#f0762b'}},
+        {name:tr('s_fb_tk'), type:'line', data:S('tokens','Claude Fable 5'), showSymbol:false, lineStyle:{width:1.5,type:'dotted',color:'#3fb6c4'}, itemStyle:{color:'#3fb6c4'}}
+      ]
+    });
+  } else {
+    const dates = snaps.map(s=>s.date);
+    mkChart('vgTrendChart').setOption({
+      tooltip: {...TIP, valueFormatter:v=>v+'%'}, legend:LEG,
+      grid:{left:40,right:14,top:30,bottom:26},
+      xAxis:{type:'category', data:dates, ...AX}, yAxis:{type:'value', ...AX},
+      series:[
+        {name:tr('s_cl_sp'), type:'line', data:snaps.map(s=>claudeSum(s.spend_share)), showSymbol:true, lineStyle:{width:2.5,color:'#d97757'}, itemStyle:{color:'#d97757'}},
+        {name:tr('s_cl_tk'), type:'line', data:snaps.map(s=>claudeSum(s.token_share)), showSymbol:true, lineStyle:{width:2,color:'#5b86ea'}, itemStyle:{color:'#5b86ea'}}
+      ]
+    });
+  }
+}
+
+/* ───────── SDK ───────── */
+function initSDK(sdk){
+  if(!sdk) return;
+  const series = [];
+  const add = (name, pts, color, dash) => { if(pts && pts.length > 7) series.push(
+    {name, type:'line', data:dma7(pts), showSymbol:false, lineStyle:{width:2, color, type:dash||'solid'}, itemStyle:{color}}); };
+  add('npm @anthropic-ai/sdk', (sdk.npm||{})['@anthropic-ai/sdk'], '#d97757');
+  add('npm openai', (sdk.npm||{})['openai'], '#1f9e83');
+  add('pypi anthropic', (sdk.pypi||{})['anthropic'], '#d97757', 'dashed');
+  add('pypi openai', (sdk.pypi||{})['openai'], '#1f9e83', 'dashed');
+  if(!series.length) return;
+  mkChart('sdkChart').setOption({
+    tooltip: TIP, legend:LEG,
+    grid:{left:40,right:14,top:30,bottom:26},
+    xAxis:{type:'time', ...AX}, yAxis:{type:'value', ...AX, name:'M/day', nameTextStyle:{color:'#a08d7b'}},
+    series
+  });
+}
+
+/* ───────── KOL ───────── */
+function initSignals(sig){
+  if(!sig) return;
+  const el = $('sigCard');
+  let html = '';
+  for(const k of (sig.kol||[])){
+    const take = LANG === 'en' ? (k.take_en || k.take) : k.take;
+    const via = LANG === 'en' ? (k.via_en || k.via) : k.via;
+    html += `<p><span class="mono" style="color:var(--faint)">${esc(k.date)}</span> <b>${esc(k.who)}</b> <span style="color:var(--faint)">· ${esc(via)}</span><br>${esc(take)} <a href="${safeUrl(k.url)}" target="_blank" rel="noopener noreferrer">↗</a></p>`;
+  }
+  el.insertAdjacentHTML('beforeend', html);
+}
+
+/* ───────── GPU ───────── */
+function initGPU(gpu){
+  if(!gpu) return;
+  const colors = {'H100 SXM':'#d9a13b','H200':'#e07b39','B200':'#cf4b3c','A100 SXM4':'#8d7b68','RTX 5090':'#3fb6c4'};
+  const cards = $('gpuCards');
+  const asOf = Date.parse(gpu.as_of || '');
+  for(const [name, pts] of Object.entries(gpu.series)){
+    if(!pts.length) continue;
+    const last = pts[pts.length-1];
+    const at = back => { const target = Date.parse(last[0]) - back*day;
+      let best = pts[0]; for(const p of pts){ if(Date.parse(p[0]) <= target) best = p; } return best[1]; };
+    const d7 = (last[1]/at(7)-1)*100, d30 = (last[1]/at(30)-1)*100;
+    const stale = asOf && (asOf - Date.parse(last[0]) > 3*day);
+    const el = document.createElement('div');
+    el.className = 'card stat';
+    el.innerHTML = `<h3><span>${name}${stale?`<span class="stale">${tr('stale')}${last[0]}</span>`:''}</span></h3>
+      <div class="v" style="color:${colors[name]||'#31221c'}">$${last[1].toFixed(2)}<span style="font-size:14px;color:var(--faint)">/hr</span></div>
+      <div class="d mono"><span class="${d7>=0?'up-c':'down-c'}">7d ${d7>=0?'+':''}${d7.toFixed(1)}%</span><span class="${d30>=0?'up-c':'down-c'}">30d ${d30>=0?'+':''}${d30.toFixed(1)}%</span></div>`;
+    cards.appendChild(el);
+  }
+  mkChart('gpuChart').setOption({
+    tooltip: {...TIP, valueFormatter:v=>'$'+(+v).toFixed(2)},
+    legend:{textStyle:{color:'#7a6455'}, top:0},
+    grid:{left:44,right:18,top:30,bottom:28},
+    xAxis:{type:'time', ...AX}, yAxis:{type:'value', ...AX, scale:true},
+    series: Object.entries(gpu.series).map(([name,pts])=>({name, type:'line', showSymbol:false,
+      data: pts.map(p=>[p[0],p[1]]), lineStyle:{width:2, color:colors[name]}, itemStyle:{color:colors[name]}}))
+  });
+}
+
+/* ───────── Data centers ───────── */
+function initDC(dc, news){
+  if(dc){
+    const cards = $('dcCards');
+    const t = dc.totals || {};
+    const mk = (label, val, sub) => { const el=document.createElement('div'); el.className='card stat';
+      el.innerHTML=`<h3><span>${label}</span></h3><div class="v">${val}</div><div class="d" style="color:var(--faint)">${sub||''}</div>`; cards.appendChild(el); };
+    mk(tr('dc_sites'), t.sites ?? '—', tr('dc_sites_sub'));
+    mk(tr('dc_power'), (t.it_power_gw ?? '—') + ' GW', tr('dc_power_sub'));
+    mk(tr('dc_comp'), (t.h100_eq_m ?? '—') + 'M H100-eq', tr('dc_comp_sub'));
+
+    const tl = dc.industry_timeline || [];
+    if(tl.length){
+      mkChart('dcChart').setOption({
+        tooltip: TIP, legend:{textStyle:{color:'#7a6455'},top:0},
+        grid:{left:52,right:56,top:30,bottom:26},
+        xAxis:{type:'category', data:tl.map(r=>r[0]), ...AX},
+        yAxis:[{type:'value', name:'MW', ...AX, nameTextStyle:{color:'#a08d7b'}},
+               {type:'value', name:'k H100-eq', ...AX, splitLine:{show:false}, nameTextStyle:{color:'#a08d7b'}}],
+        series:[
+          {name:tr('s_mw'), type:'bar', data:tl.map(r=>Math.round(r[1])), itemStyle:{color:'rgba(142,124,195,.55)', borderColor:'#43302b', borderWidth:.5}, barWidth:'55%'},
+          {name:tr('s_h100e'), type:'line', yAxisIndex:1, data:tl.map(r=>Math.round(r[2])), showSymbol:false, lineStyle:{width:2.5,color:'#8e7cc3'}, itemStyle:{color:'#8e7cc3'}}
+        ]
+      });
+    }
+    const sites = dc.top_sites || [];
+    const th = tr('th');
+    $('dcTable').innerHTML = `<tr><th>${th[0]}</th><th>${th[1]}</th><th>${th[2]}</th><th class="num">${th[3]}</th><th class="num">${th[4]}</th></tr>` +
+      sites.slice(0,12).map(s=>`<tr><td title="${esc(s.location)}">${esc(s.name)}</td><td>${esc(s.owner)||'—'}</td><td>${esc((s.user||'—').toString().split(',')[0])}</td><td class="num">${s.mw?Math.round(s.mw):'—'}</td><td class="num">${s.h100e_k?fmtInt(s.h100e_k):'—'}</td></tr>`).join('');
+  }
+  if(news && (news.items||[]).length){
+    $('newsMeta').textContent = T[LANG].news_meta(news.items.length, news.as_of||'');
+    $('newsList').innerHTML = news.items.map(i =>
+      `<li><span class="nd mono">${i.approx?'≈':''}${esc(i.date)}</span><span><a href="${safeUrl(i.url)}" target="_blank" rel="noopener noreferrer">${esc(i.title)}</a></span><span class="ns">${esc(i.news_source)}</span></li>`).join('');
+  }
+}
+
+/* ───────── boot ───────── */
+(async function(){
+  if(location.protocol === 'file:' && !BUNDLE) $('fileBanner').style.display = 'block';
+  const [arr, or_, gpu, dc, vg, sdk, sig, news] = await Promise.all([
+    src('arr', 'data/arr_checkpoints.json'), src('openrouter', 'data/openrouter_daily.json'),
+    src('gpu', 'data/gpu_prices.json'), src('datacenters', 'data/datacenters.json'),
+    src('vercel', 'data/vercel_gateway.json'), src('sdk', 'data/sdk_downloads.json'),
+    src('signals', 'data/curated_signals.json'), src('news', 'data/dc_news.json')
+  ]);
+  const st = [];
+  if(arr) st.push('ARR: ' + (arr.updated || ''));
+  if(gpu) st.push('GPU: ' + gpu.as_of);
+  if(or_) st.push('Tokens: ' + (or_.sample ? 'SAMPLE' : String(or_.as_of).slice(0,10)));
+  if(vg) st.push('Gateway: ' + vg.as_of);
+  if(sdk) st.push('SDK: ' + sdk.as_of);
+  if(dc) st.push('DC: ' + (dc.as_of||''));
+  $('stamps').innerHTML = st.map(s=>'<span>'+s+'</span>').join('');
+  initARR(prepArr(arr)); initTokens(or_); initVercel(vg); initSDK(sdk); initSignals(sig);
+  initGPU(gpu); initDC(dc, news);
+})();
+</script>
+
+</body>
+</html>

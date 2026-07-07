@@ -1,0 +1,12 @@
+# 密钥：绝不入库（Actions 里用 GitHub Secrets 提供）
+scripts/.env
+
+# 本地留档资产：不进公开仓库
+local-archive-2026-07-07/
+
+__pycache__/
+*.pyc
+
+# 本地维护文档：公开仓库只保留产品和数据管道
+README.md
+AI-Money-Radar-数据说明.md
