@@ -584,7 +584,7 @@ function initDC(dc, news){
   if(news && (news.items||[]).length){
     $('newsMeta').textContent = T[LANG].news_meta(news.items.length, news.as_of||'');
     $('newsList').innerHTML = news.items.map(i =>
-      `<li><span class="nd mono">${i.approx?'≈':''}${esc(i.date)}</span><span><a href="${safeUrl(i.url)}" target="_blank" rel="noopener noreferrer">${esc(i.title)}</a></span><span class="ns">${esc(i.news_source)}</span></li>`).join('');
+      `<li><span class="nd mono">${i.approx?'≈':''}${esc(i.date)}</span><span><a href="${safeUrl(i.url)}" target="_blank" rel="noopener noreferrer">${esc(LANG === 'zh' ? (i.title_zh || i.title) : i.title)}</a></span><span class="ns">${esc(i.news_source)}</span></li>`).join('');
   }
 }
 
