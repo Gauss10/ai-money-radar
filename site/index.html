@@ -245,7 +245,14 @@ const fmtInt = n => Math.round(n).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',
 const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const safeUrl = u => /^https?:\/\//i.test(String(u || '')) ? String(u).replace(/"/g, '%22') : '#';
 const day = 86400000, MS_MO = 30.44 * day;
-async function loadJSON(path){ try{ const r = await fetch(path); if(!r.ok) throw 0; return await r.json(); }catch(e){ return null; } }
+async function loadJSON(path){
+  try{
+    const sep = path.includes('?') ? '&' : '?';
+    const r = await fetch(`${path}${sep}v=${Date.now()}`, { cache: 'no-store' });
+    if(!r.ok) throw 0;
+    return await r.json();
+  }catch(e){ return null; }
+}
 const BUNDLE = window.__DATA__ || null;
 async function src(key, path){ return (BUNDLE && BUNDLE[key]) ? BUNDLE[key] : await loadJSON(path); }
 function dma7(pts){ const out=[]; for(let i=0;i<pts.length;i++){ const s=pts.slice(Math.max(0,i-6),i+1); out.push([pts[i][0], +(s.reduce((a,p)=>a+p[1],0)/s.length).toFixed(2)]); } return out; }
