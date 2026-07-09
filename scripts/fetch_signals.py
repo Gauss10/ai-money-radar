@@ -10,7 +10,7 @@ AI Signal X / podcast feeds -> site/data/curated_signals.json
   - 直接读取 AI Signal 中央 feed，不需要 Twitter / podcast 抓取密钥。
   - 用关键词打分筛选与 AI 变现相关的信号：token spend、GPU / compute、
     agent workflow、model routing、eval、moat 等。
-  - 展示 4 条，旧展示项进入 kol_archive；reports 原样保留。
+  - 展示最新且候选数足够的一天；旧展示项进入 kol_archive；reports 原样保留。
 
 说明:
   这是自动化 KOL 卡片，不替代人工深读。它优先保证每日线上更新不断档。
@@ -264,6 +264,15 @@ def sort_key(entry):
     return (effective_score(entry), entry.get("date", ""), entry.get("who", ""))
 
 
+def target_display_day(candidates):
+    days = sorted({parse_day(item.get("date")) for item in candidates}, reverse=True)
+    days = [day for day in days if day != datetime.date.min]
+    for day in days:
+        if sum(1 for item in candidates if parse_day(item.get("date")) == day) >= DISPLAY_LIMIT:
+            return day
+    return days[0] if days else None
+
+
 def main():
     x_feed = fetch_json("feeds/feed-x.json")
     podcast_feed = fetch_json("feeds/feed-podcasts.json")
@@ -271,10 +280,15 @@ def main():
 
     candidates = make_x_candidates(x_feed) + make_podcast_candidates(podcast_feed)
     candidates = dedupe(sorted(candidates, key=sort_key, reverse=True))
+    display_day = target_display_day(candidates)
+    display_pool = [
+        item for item in candidates
+        if display_day is None or parse_day(item.get("date")) == display_day
+    ]
 
     old_display = cur.get("kol") or []
     old_archive = cur.get("kol_archive") or []
-    display = dedupe(candidates + old_display)[:DISPLAY_LIMIT]
+    display = dedupe(display_pool)[:DISPLAY_LIMIT]
     display_urls = {item.get("url") for item in display}
 
     archive_seed = [item for item in old_display if item.get("url") not in display_urls]
@@ -286,14 +300,15 @@ def main():
         "as_of": str(datetime.date.today()),
         "note": (
             "自动 curated 的 KOL / podcast 观点（源：AI Signal 中央 X + 播客 feed；"
-            "规则打分生成）。展示 4 条、take 一句话；换下条目进入 kol_archive。"
+            "规则打分生成）。展示最新且候选数足够的一天；换下条目进入 kol_archive。"
         ),
         "kol": [public_entry(item) for item in display],
         "reports": cur.get("reports") or [],
         "kol_archive": [public_entry(item) for item in archive],
     }
     save_json("curated_signals.json", out)
-    print(f"  candidates: {len(candidates)}, display: {len(out['kol'])}, archive: {len(out['kol_archive'])}")
+    day_text = display_day.isoformat() if display_day else "n/a"
+    print(f"  candidates: {len(candidates)}, display_day: {day_text}, display: {len(out['kol'])}, archive: {len(out['kol_archive'])}")
     for item in out["kol"]:
         print(f"  - {item['date']} {item['who']} | {item['via']}")
 
