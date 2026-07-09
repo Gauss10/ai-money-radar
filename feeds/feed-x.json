@@ -10,7 +10,7 @@
           "id": "2074951886969725413",
           "text": "@petergostev love the idea of the \"swear meter\", probably a quite strong eval signal. are these string-based greps?",
           "created_at": "2026-07-08T20:20:55+00:00",
-          "like_count": 280,
+          "like_count": 293,
           "retweet_count": 5,
           "reply_count": 12,
           "url": "https://x.com/karpathy/status/2074951886969725413"
@@ -27,9 +27,9 @@
           "id": "2074882968770728416",
           "text": "Introducing SWE-1.7, the most capable model we’ve trained yet.\n\nIt scores within a few points of the strongest frontier models at a fraction of the cost, and is now available at 1000 tok/s.\n\nRL is not hitting its limit: after refining our recipe, we keep seeing gains as we scale https://t.co/xV2NFTJwlI",
           "created_at": "2026-07-08T15:47:03+00:00",
-          "like_count": 3958,
-          "retweet_count": 386,
-          "reply_count": 198,
+          "like_count": 3977,
+          "retweet_count": 387,
+          "reply_count": 199,
           "url": "https://x.com/cognition/status/2074882968770728416"
         },
         {
@@ -111,45 +111,45 @@
           "id": "2074709023807664454",
           "text": "GPT-5.6 sol launches thursday!\n\nhappy building",
           "created_at": "2026-07-08T04:15:52+00:00",
-          "like_count": 29752,
-          "retweet_count": 1869,
-          "reply_count": 1804,
+          "like_count": 29814,
+          "retweet_count": 1871,
+          "reply_count": 1808,
           "url": "https://x.com/sama/status/2074709023807664454"
         },
         {
           "id": "2074907025537224840",
           "text": "Introducing GPT-Live, a new generation of voice models for natural human-AI interaction.\n\nRolling out in ChatGPT starting today.\n\nYou’ll want to turn the sound on for this one. https://t.co/WzoQFvA5ir",
           "created_at": "2026-07-08T17:22:39+00:00",
-          "like_count": 18329,
-          "retweet_count": 1635,
-          "reply_count": 930,
+          "like_count": 18523,
+          "retweet_count": 1651,
+          "reply_count": 941,
           "url": "https://x.com/OpenAI/status/2074907025537224840"
         },
         {
           "id": "2074909079450050629",
           "text": "GPT-live (next-generation voice) launches today in ChatGPT.\n\nit feels magical and 'real'.\n\ni have always preferred typing to talking to an AI, now i think that's going to shift.",
           "created_at": "2026-07-08T17:30:49+00:00",
-          "like_count": 9106,
-          "retweet_count": 439,
-          "reply_count": 823,
+          "like_count": 9166,
+          "retweet_count": 440,
+          "reply_count": 830,
           "url": "https://x.com/sama/status/2074909079450050629"
         },
         {
           "id": "2074862990214787301",
           "text": "I had early access to 5.6/Sol for ~month. Sol is my default. It is faster, plans/judges just as good as Fable, and I think produces better overall work. I’ll reach for Fable still for highly targeted debug or performance work with clear reward functions. \n\nA cheeky way I describe Sol vs Fable to my friends is that Sol is a charismatic, efficient, talented coworker you’re jealous of. Fable is a genius recluse that is brilliant at its fixations but doesn’t go out, doesn’t date, and you don’t want to hang out with them much lol.\n\nFable is undefeated at highly targeted debug/security/performance goals. It’s a sight to behold and I was never able to get Sol to push as hard in this category. I’ll keep using it for this.\n\nSol is better or comparable at everything else, in my experience. Give it a shot, it’s hard to describe but it’s just more enjoyable to work with. \n\n(Disclaimer I have no financial ties to either lab, wasn’t paid for any of this.)",
           "created_at": "2026-07-08T14:27:40+00:00",
-          "like_count": 5388,
-          "retweet_count": 242,
-          "reply_count": 178,
+          "like_count": 5441,
+          "retweet_count": 246,
+          "reply_count": 181,
           "url": "https://x.com/mitchellh/status/2074862990214787301"
         },
         {
           "id": "2074856006576713973",
           "text": "i've never hyped a model release, we're generally conservative with how we use these things\n\nbut gpt-5.6 has had a massive impact on our team, we're using 5x the tokens as we used to\n\nit's not even smarter than fable or anything, but it's just so reliable and fun to use",
           "created_at": "2026-07-08T13:59:55+00:00",
-          "like_count": 5303,
-          "retweet_count": 125,
-          "reply_count": 216,
+          "like_count": 5340,
+          "retweet_count": 129,
+          "reply_count": 218,
           "url": "https://x.com/thdxr/status/2074856006576713973"
         }
       ]
@@ -185,26 +185,26 @@
           "id": "2074915721684086811",
           "text": "Announcing Grok 4.5, our first model trained specifically for coding and agents. It was trained with Cursor and offers frontier intelligence at leading speeds and cost efficiency.\n\nhttps://t.co/i8HpU7w64k https://t.co/oBjGtTsoNc",
           "created_at": "2026-07-08T17:57:12+00:00",
-          "like_count": 18628,
-          "retweet_count": 2736,
-          "reply_count": 992,
+          "like_count": 18877,
+          "retweet_count": 2769,
+          "reply_count": 1011,
           "url": "https://x.com/SpaceXAI/status/2074915721684086811"
         },
         {
           "id": "2074979063106843131",
           "text": "Congrats to @SpaceXAI on Grok 4.5 — trained on NVIDIA GB300 NVL72 systems and purpose-built for coding, agentic tasks, and knowledge work. This is what happens when world-class AI infrastructure meets world-class AI research.",
           "created_at": "2026-07-08T22:08:54+00:00",
-          "like_count": 1731,
-          "retweet_count": 159,
-          "reply_count": 64,
+          "like_count": 1800,
+          "retweet_count": 168,
+          "reply_count": 66,
           "url": "https://x.com/nvidia/status/2074979063106843131"
         },
         {
           "id": "2074510027897844105",
           "text": "NVIDIA Vera: The Max Single-Threaded CPU at Scale. \n\nAgentic AI systems run sequentially, each reasoning step, tool call, and code execution happens one at a time on the CPU. When that CPU slows under load, the entire agentic loop slows and valuable GPUs go underutilized.\n\nA max single-threaded CPU at scale keeps every agent step fast, even when the system is fully loaded. That's what NVIDIA Vera is built to do, and why Perplexity is already building on it.\n\nRead More https://t.co/8w5PVPG0pt",
           "created_at": "2026-07-07T15:05:07+00:00",
-          "like_count": 916,
-          "retweet_count": 110,
+          "like_count": 920,
+          "retweet_count": 111,
           "reply_count": 65,
           "url": "https://x.com/nvidia/status/2074510027897844105"
         },
@@ -212,8 +212,8 @@
           "id": "2074872091388903774",
           "text": "Enterprises don’t just need agents that perform. They need agents they can shape, govern and improve as their business evolves.\n\nThat’s the idea behind our work with LangChain.\n\nRead more: https://t.co/3hu5eARj5N",
           "created_at": "2026-07-08T15:03:50+00:00",
-          "like_count": 350,
-          "retweet_count": 44,
+          "like_count": 352,
+          "retweet_count": 45,
           "reply_count": 32,
           "url": "https://x.com/nvidia/status/2074872091388903774"
         },
@@ -221,8 +221,8 @@
           "id": "2074961724164214951",
           "text": "Every company has specialized intelligence that sets it apart.\n\nWith @langchain, we’re helping enterprises turn that knowledge into specialized agents they can customize, secure and improve over time. https://t.co/70dmvQsxY8",
           "created_at": "2026-07-08T21:00:00+00:00",
-          "like_count": 282,
-          "retweet_count": 37,
+          "like_count": 292,
+          "retweet_count": 38,
           "reply_count": 23,
           "url": "https://x.com/nvidia/status/2074961724164214951"
         }
@@ -245,9 +245,9 @@
           "id": "2074997570317779038",
           "text": "New in Claude Code: /checkup\n\nRun /checkup to:\n\n1. Clean up unused skills/MCPs/plugins and save context\n2. Dedup your local CLAUDE.md against the checked in CLAUDE.md\n3. Break up root CLAUDE.md into nested CLAUDE.md's + skills\n4. Turn off slow hooks\n5. Update your Claude Code to the latest version\n6. Enable auto mode by default\n7. Pre-approve frequently denied read-only commands\n\n.. And a few other goodies.\n\n/checkup confirms with you before making any changes. Enjoy!",
           "created_at": "2026-07-08T23:22:27+00:00",
-          "like_count": 4417,
-          "retweet_count": 357,
-          "reply_count": 151,
+          "like_count": 4624,
+          "retweet_count": 381,
+          "reply_count": 153,
           "url": "https://x.com/bcherny/status/2074997570317779038"
         }
       ]
@@ -262,9 +262,9 @@
           "id": "2074925531519468012",
           "text": "Tomorrow at 10am PT I'm hosting a live walkthrough of how we progressed from single-player Claude Code to multi-player Claude Tag. Then, we're going deep on how Claude Tag actually works.\n\nAI used to finish your sentence. Then, it wrote entire features. Now, Claude Tag can monitor your channels, do proactive work for you, the whole team can steer it, and it remembers what you told it last week.\n\nRegister: https://t.co/D8Lz61BXn4",
           "created_at": "2026-07-08T18:36:11+00:00",
-          "like_count": 450,
+          "like_count": 453,
           "retweet_count": 30,
-          "reply_count": 36,
+          "reply_count": 37,
           "url": "https://x.com/_catwu/status/2074925531519468012"
         }
       ]
@@ -286,17 +286,17 @@
           "id": "2075016514860650685",
           "text": "Introducing Native SDK\n\nThe toolkit for building native apps\n\n→ Hot reload\n→ Markup + Zig\n→ Instant launch\n→ macOS, Windows and Linux\n→ GPU engine built from scratch\n→ Built-in design system and themes\n→ Custom components + design tokens https://t.co/UCm7S2bzwP",
           "created_at": "2026-07-09T00:37:43+00:00",
-          "like_count": 798,
-          "retweet_count": 52,
-          "reply_count": 57,
+          "like_count": 859,
+          "retweet_count": 55,
+          "reply_count": 59,
           "url": "https://x.com/ctatedev/status/2075016514860650685"
         },
         {
           "id": "2075018147330232707",
           "text": "AI will make all software Native.\n\nUncompromising performance and platform affinity.",
           "created_at": "2026-07-09T00:44:12+00:00",
-          "like_count": 433,
-          "retweet_count": 13,
+          "like_count": 453,
+          "retweet_count": 14,
           "reply_count": 34,
           "url": "https://x.com/rauchg/status/2075018147330232707"
         },
@@ -304,7 +304,7 @@
           "id": "2074874387065680201",
           "text": "Chat SDK is now a channel in @evedev_\n\nDeliver your eve agent via iMessage, WhatsApp, Telegram, and more.\n\nhttps://t.co/mHYUdgSa0X",
           "created_at": "2026-07-08T15:12:57+00:00",
-          "like_count": 247,
+          "like_count": 249,
           "retweet_count": 21,
           "reply_count": 10,
           "url": "https://x.com/vercel_dev/status/2074874387065680201"
@@ -313,7 +313,7 @@
           "id": "2074874713143460150",
           "text": "The blissful sound of all the pieces of the agent stack clicking together. ht @nishimiya. This will power my personal productivity agents!",
           "created_at": "2026-07-08T15:14:15+00:00",
-          "like_count": 180,
+          "like_count": 182,
           "retweet_count": 4,
           "reply_count": 24,
           "url": "https://x.com/rauchg/status/2074874713143460150"
@@ -322,7 +322,7 @@
           "id": "2074920778135683340",
           "text": "Grok 4.5 is on AI Gateway. Switch to @SpaceXAI's flagship model with one command:\n\n𝚟𝚎𝚛𝚌𝚎𝚕 𝚊𝚒-𝚐𝚊𝚝𝚎𝚠𝚊𝚢 𝚛𝚞𝚕𝚎𝚜 𝚊𝚍𝚍 \\\n  --𝚝𝚢𝚙𝚎 𝚛𝚎𝚠𝚛𝚒𝚝𝚎 \\\n  --𝚜𝚘𝚞𝚛𝚌𝚎 𝚡𝚊𝚒/𝚐𝚛𝚘𝚔-𝟺.𝟹 \\\n  --𝚍𝚎𝚜𝚝𝚒𝚗𝚊𝚝𝚒𝚘𝚗 𝚡𝚊𝚒/𝚐𝚛𝚘𝚔-𝟺.𝟻 https://t.co/Z2PwNTu910",
           "created_at": "2026-07-08T18:17:18+00:00",
-          "like_count": 139,
+          "like_count": 142,
           "retweet_count": 8,
           "reply_count": 9,
           "url": "https://x.com/vercel_dev/status/2074920778135683340"
@@ -398,5 +398,5 @@
     }
   ],
   "errors": null,
-  "generated_at": "2026-07-09T04:11:30.573599+00:00"
+  "generated_at": "2026-07-09T04:30:09.759622+00:00"
 }
