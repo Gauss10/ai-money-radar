@@ -103,6 +103,12 @@ TITLE_ZH_OVERRIDES = {
     'Ohio’s warped energy policy: 10 natural gas plants are being built or planned to power AI':
         '俄亥俄能源政策扭曲：10 座天然气电厂正在建设或规划中，为 AI 供电',
 }
+TITLE_EN_OVERRIDES = {
+    'Anthropic 拟投建澳洲数据中心园区：目标 1.4GW、报道口径 ~$21.6B，2027 年底前 ≥1GW 上线，FID 约 6 周内':
+        'Anthropic may build an Australian data center campus: 1.4GW target, reported ~$21.6B, >=1GW online by end-2027, FID in ~6 weeks',
+    "SB Energy × DOE：Portsmouth Site 800MW / $10B AI 数据中心（'world's largest' 口径，公私合作租用 DOE 土地）":
+        "SB Energy x DOE: Portsmouth Site 800MW / $10B AI data center ('world's largest' framing; public-private partnership leasing DOE land)",
+}
 
 
 def normalize_title(value):
@@ -286,6 +292,8 @@ def main():
     translated = 0
     for item in out_items:
         base_title = title_without_source(item.get('title'), item.get('news_source'))
+        if item.get('title') in TITLE_EN_OVERRIDES:
+            item['title_en'] = TITLE_EN_OVERRIDES[item.get('title')]
         if base_title in TITLE_ZH_OVERRIDES:
             item['title_zh'] = TITLE_ZH_OVERRIDES[base_title]
         elif not item.get('title_zh'):
@@ -297,7 +305,7 @@ def main():
 
     out = {
         'as_of': str(datetime.date.today()),
-        'source': 'Google News RSS（每日增量；按事件实体聚类去重，同事件留最权威稿；pinned 手动精选保留；中文界面展示 title_zh）',
+        'source': 'Google News RSS（每日增量；按事件实体聚类去重，同事件留最权威稿；pinned 手动精选保留；中英界面分别展示 title_zh/title_en）',
         'items': out_items,
     }
     if block:
