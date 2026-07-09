@@ -578,10 +578,8 @@ function initDC(dc, news){
       sites.slice(0,12).map(s=>`<tr><td title="${esc(s.location)}">${esc(s.name)}</td><td>${esc(s.owner)||'—'}</td><td>${esc((s.user||'—').toString().split(',')[0])}</td><td class="num">${s.mw?Math.round(s.mw):'—'}</td><td class="num">${s.h100e_k?fmtInt(s.h100e_k):'—'}</td></tr>`).join('');
   }
   if(news && (news.items||[]).length){
-    const latestDate = news.as_of || [...new Set(news.items.map(i => i.date).filter(Boolean))].sort().pop();
-    const items = latestDate ? news.items.filter(i => i.date === latestDate) : news.items;
-    $('newsMeta').textContent = T[LANG].news_meta(items.length, latestDate||'');
-    $('newsList').innerHTML = items.map(i =>
+    $('newsMeta').textContent = T[LANG].news_meta(news.items.length, news.as_of||'');
+    $('newsList').innerHTML = news.items.map(i =>
       `<li><span class="nd mono">${i.approx?'≈':''}${esc(i.date)}</span><span><a href="${safeUrl(i.url)}" target="_blank" rel="noopener noreferrer">${esc(i.title)}</a></span><span class="ns">${esc(i.news_source)}</span></li>`).join('');
   }
 }
