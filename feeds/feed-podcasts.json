@@ -52,23 +52,6 @@
       "transcript_error": "episode_page: No transcript link or transcript-like page text found; youtube: No YouTube video id in link"
     },
     {
-      "channel": "SemiAnalysis",
-      "domain": "ai",
-      "guid": "UqWqsRQHpbA",
-      "title": "If vLLM vs SGLang can compute to one conclusion, it's gotta be that competition is beneficial.",
-      "pub_date": "2026-07-08T09:02:56+00:00",
-      "link": "https://www.youtube.com/shorts/UqWqsRQHpbA",
-      "audio_url": "",
-      "duration": "",
-      "description": "If vLLM vs SGLang can compute to one conclusion, it's gotta be that competition is beneficial. Cameron Quilici explains why InferenceX showcases in isolation.",
-      "transcript": "Can you talk about the maybe the reason for this and why in some ways having the competition between different open source infra engines as well as vendor specific libraries is actually driving a lot of innovation and improving things instead of just like waiting for somebody to be nice enough to to share what they've learned. They're kind of many of them are forced to innovate really fast in order to stay ahead. >> Yeah, I mean we tend to stray away from comparing VL and SG Lang on inference specifically [snorts] mainly because we didn't find it beneficial necessarily to have like make it a competition. We we more so just wanted to showcase each one in isolation, but you know, on the other hand it does kind of create some competitive spirit which makes both sides move faster which can also be a problem because we only have a limited compute to run things. So when you double the amount of of submissions on on a on a certain model, it's kind of like, you know, a a lot of CI time, but yeah, we've seen great improvements by both VL and SG Lang and I think that a little bit of competition is is good.",
-      "transcript_available": true,
-      "transcript_source": "youtube_transcript_api",
-      "transcript_url": null,
-      "transcript_video_id": "UqWqsRQHpbA",
-      "transcript_error": null
-    },
-    {
       "channel": "Latent Space",
       "domain": "ai",
       "guid": "https://www.latent.space/p/ainews-lilian-weng-summarizes-35",
@@ -174,23 +157,6 @@
       "transcript_error": null
     },
     {
-      "channel": "SemiAnalysis",
-      "domain": "ai",
-      "guid": "kfihRzSU3Og",
-      "title": "DeepSeek V4 ships with two variants allowing it to hit 1M Context.",
-      "pub_date": "2026-07-07T02:00:44+00:00",
-      "link": "https://www.youtube.com/shorts/kfihRzSU3Og",
-      "audio_url": "",
-      "duration": "",
-      "description": "DeepSeek V4 ships with two variants allowing it to hit 1M Context. Kimbo Chen breaks down the attention changes and the Mega MOE speeding up compute.",
-      "transcript": "I think the the headline changes or the features of V4 compared to V3 and R1 uh would be the 1 million context length. This ability, in order to uh achieve or to get to a million context length, DeepSpeed did like a very aggressive innovations on um the the attention mechanism. That's like the first thing. And the second thing is the Mega MoE to like uh um speed up things, to speed up the expert FFN computations. Uh first, the uh the attention mechanism, um DeepSpeed V4 comes with uh two variants of um sparse attention. One is the the compressed sparse attention and the heavily compressed uh attention.",
-      "transcript_available": true,
-      "transcript_source": "youtube_transcript_api",
-      "transcript_url": null,
-      "transcript_video_id": "kfihRzSU3Og",
-      "transcript_error": null
-    },
-    {
       "channel": "Lenny's Podcast",
       "domain": "ai",
       "guid": "https://www.lennysnewsletter.com/p/how-i-ai-sonnet-5-review-and-how",
@@ -279,6 +245,8 @@
       "transcript_error": null
     }
   ],
-  "errors": null,
-  "generated_at": "2026-07-09T03:31:21.340730+00:00"
+  "errors": [
+    "SemiAnalysis: https://www.youtube.com/feeds/videos.xml?channel_id=UCf_KhBXw5TIV0A7butjgFhg attempt 1/3: Client error '404 Not Found' for url 'https://www.youtube.com/feeds/videos.xml?channel_id=UCf_KhBXw5TIV0A7butjgFhg'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404 | https://www.youtube.com/feeds/videos.xml?channel_id=UCf_KhBXw5TIV0A7butjgFhg attempt 2/3: Client error '404 Not Found' for url 'https://www.youtube.com/feeds/videos.xml?channel_id=UCf_KhBXw5TIV0A7butjgFhg'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404 | https://www.youtube.com/feeds/videos.xml?channel_id=UCf_KhBXw5TIV0A7butjgFhg attempt 3/3: Client error '404 Not Found' for url 'https://www.youtube.com/feeds/videos.xml?channel_id=UCf_KhBXw5TIV0A7butjgFhg'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404"
+  ],
+  "generated_at": "2026-07-09T04:11:30.573599+00:00"
 }
