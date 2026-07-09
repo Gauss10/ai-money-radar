@@ -509,7 +509,11 @@ function initSignals(sig){
   if(!sig) return;
   const el = $('sigCard');
   let html = '';
-  for(const k of (sig.kol||[])){
+  const kol = sig.kol || [];
+  const asOfItems = sig.as_of ? kol.filter(k => k.date === sig.as_of) : [];
+  const latestDate = [...new Set(kol.map(k => k.date).filter(Boolean))].sort().pop();
+  const display = asOfItems.length ? asOfItems : (latestDate ? kol.filter(k => k.date === latestDate) : kol);
+  for(const k of display){
     const take = LANG === 'en' ? (k.take_en || k.take) : k.take;
     const via = LANG === 'en' ? (k.via_en || k.via) : k.via;
     html += `<p><span class="mono" style="color:var(--faint)">${esc(k.date)}</span> <b>${esc(k.who)}</b> <span style="color:var(--faint)">· ${esc(via)}</span><br>${esc(take)} <a href="${safeUrl(k.url)}" target="_blank" rel="noopener noreferrer">↗</a></p>`;
