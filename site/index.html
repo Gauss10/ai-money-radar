@@ -169,7 +169,7 @@ zh: {
   sec_arr:'① Frontier Lab ARR — 实时估算', tag_arr:'综合估算口径 · 实时外推',
   arr_chart:'ARR 轨迹：历史（实线）→ 实时外推（虚线，阴影为模型不确定带）· ◆ = 公开报道对照点',
   est_arr:'— estimated ARR', mm:'implied M/M',
-  arr_note:'综合估算 · 非公司披露/非审计',
+  arr_note:'实时模拟 · 综合估算 · 非公司披露/非审计',
   sec_tok:'② Token 用量与采用度',
   wm:'OpenRouter 图为 SAMPLE DATA（占位虚构）<br><span style="font-size:12px;font-weight:400">配置 OPENROUTER_API_KEY（免费注册）并跑一次 Action 后自动替换</span>',
   fable:'Claude Fable 5 · 每日 Token（B/day）— OpenRouter',
@@ -203,7 +203,7 @@ en: {
   sec_arr:'① Frontier Lab ARR — Live Estimate', tag_arr:'composite estimate · live extrapolation',
   arr_chart:'ARR trajectory: history (solid) → live extrapolation (dashed; band = model uncertainty) · ◆ = public checkpoints',
   est_arr:'— estimated ARR', mm:'implied M/M',
-  arr_note:'Composite estimate · not disclosed/audited',
+  arr_note:'Live simulation · composite estimate · not disclosed/audited',
   sec_tok:'② Token Usage & Adoption',
   wm:'OpenRouter charts show SAMPLE DATA<br><span style="font-size:12px;font-weight:400">Set OPENROUTER_API_KEY (free) and run the Action once to replace</span>',
   fable:'Claude Fable 5 · Daily Tokens (B/day) — OpenRouter',
@@ -578,8 +578,10 @@ function initDC(dc, news){
       sites.slice(0,12).map(s=>`<tr><td title="${esc(s.location)}">${esc(s.name)}</td><td>${esc(s.owner)||'—'}</td><td>${esc((s.user||'—').toString().split(',')[0])}</td><td class="num">${s.mw?Math.round(s.mw):'—'}</td><td class="num">${s.h100e_k?fmtInt(s.h100e_k):'—'}</td></tr>`).join('');
   }
   if(news && (news.items||[]).length){
-    $('newsMeta').textContent = T[LANG].news_meta(news.items.length, news.as_of||'');
-    $('newsList').innerHTML = news.items.map(i =>
+    const latestDate = news.as_of || [...new Set(news.items.map(i => i.date).filter(Boolean))].sort().pop();
+    const items = latestDate ? news.items.filter(i => i.date === latestDate) : news.items;
+    $('newsMeta').textContent = T[LANG].news_meta(items.length, latestDate||'');
+    $('newsList').innerHTML = items.map(i =>
       `<li><span class="nd mono">${i.approx?'≈':''}${esc(i.date)}</span><span><a href="${safeUrl(i.url)}" target="_blank" rel="noopener noreferrer">${esc(i.title)}</a></span><span class="ns">${esc(i.news_source)}</span></li>`).join('');
   }
 }
@@ -594,7 +596,7 @@ function initDC(dc, news){
     src('signals', 'data/curated_signals.json'), src('news', 'data/dc_news.json')
   ]);
   const st = [];
-  if(arr) st.push('ARR: ' + (arr.updated || ''));
+  if(arr) st.push(LANG === 'zh' ? 'ARR: 实时模拟' : 'ARR: live simulation');
   if(gpu) st.push('GPU: ' + gpu.as_of);
   if(or_) st.push('Tokens: ' + (or_.sample ? 'SAMPLE' : String(or_.as_of).slice(0,10)));
   if(vg) st.push('Gateway: ' + vg.as_of);
