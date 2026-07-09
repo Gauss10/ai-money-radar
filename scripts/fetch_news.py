@@ -10,9 +10,7 @@ AI 数据中心建设新闻 -> site/data/dc_news.json
   - 为标题生成中文 title_zh；英文原文 title 保留
   - pinned 条目 (手工精选/改写标题) 永远保留
   - 其余按日期倒序, 总条数截到 30
-  - 语义级去重 (同一事件多家报道) 不在本脚本做 —— 让 Claude 定期清理,
-    或人工删掉重复项即可 (脚本不会重新加回已删除的 URL? 会。要彻底屏蔽
-    可把该条 url 加进 blocklist 字段)
+  - 按事件实体聚类去重: 同一事件多家报道时, 保留权威来源/手工 pinned 稿
 """
 import datetime, email.utils, json, re, xml.etree.ElementTree as ET
 from urllib.parse import quote, urlencode
@@ -23,6 +21,32 @@ QUERIES = ['AI data center construction OR investment when:2d',
 KEEP = 30
 TRANSLATE_API = 'https://translate.googleapis.com/translate_a/single'
 HAS_CJK = re.compile(r'[\u4e00-\u9fff]')
+SOURCE_PRIORITY = {
+    'Reuters': 0,
+    'Meta Store': 1,
+    'energy.gov': 1,
+    'CNBC': 2,
+    'The Guardian': 2,
+    'Politico': 2,
+    'Data Center Dynamics': 3,
+    'Data Center Knowledge': 3,
+    'Construction Dive': 4,
+    'GovTech': 4,
+    'Business Insider': 4,
+    'Electrek': 4,
+    'Bisnow': 4,
+    'Seeking Alpha': 5,
+    'Yahoo! Finance Canada': 6,
+    'PennLive.com': 6,
+    'Pensacola News Journal': 6,
+    'Pulse 2.0': 6,
+    'Industrial Info Resources': 6,
+    '10/12 Industry Report': 7,
+    'fox5sandiego.com': 8,
+    'The Tech Buzz': 8,
+    "Let's Data Science": 8,
+    'simplywall.st': 9,
+}
 TITLE_ZH_OVERRIDES = {
     'Meta to build $13B data centre north of Edmonton, its first in Canada':
         'Meta 将在埃德蒙顿以北建设约 130 亿加元数据中心，为其加拿大首个数据中心',
@@ -81,6 +105,15 @@ TITLE_ZH_OVERRIDES = {
 }
 
 
+def normalize_title(value):
+    value = (value or '').lower()
+    value = value.replace('data centre', 'data center')
+    value = value.replace('datacenter', 'data center')
+    value = value.replace('’', "'").replace('‘', "'")
+    value = re.sub(r'[^a-z0-9$]+', ' ', value)
+    return re.sub(r'\s+', ' ', value).strip()
+
+
 def title_without_source(title, source):
     title = (title or '').strip()
     source = (source or '').strip()
@@ -92,6 +125,86 @@ def title_without_source(title, source):
         if lower.endswith(suffix):
             return title[:-len(suffix)].strip()
     return title
+
+
+def event_key(item):
+    if item.get('pinned') and not item.get('approx'):
+        return f'pinned:{item.get("url") or item.get("title")}'
+
+    title = title_without_source(item.get('title'), item.get('news_source'))
+    t = normalize_title(title)
+    if not t:
+        return f'url:{item.get("url")}'
+
+    if 'meta' in t and 'data center' in t and any(x in t for x in ('canada', 'canadian', 'alberta', 'edmonton')):
+        return 'event:meta-canada-alberta-data-center'
+    if 'meta' in t and 'wyoming' in t and 'wastewater' in t:
+        return 'event:meta-wyoming-wastewater'
+    if 'permit' in t and 'data center' in t and any(x in t for x in ('skipping', 'time consuming')):
+        return 'event:data-center-permit-skipping'
+    if 'sunrun' in t and 'home' in t and 'ai data center' in t:
+        return 'event:sunrun-home-ai-data-center'
+    if 'labor shortage' in t and 'data center construction' in t:
+        return 'event:data-center-construction-labor-shortage'
+    if 'virginia' in t and 'data center' in t and 'power tax' in t:
+        return 'event:virginia-data-center-power-tax'
+    if 'virginia' in t and 'data center' in t and any(x in t for x in ('project dies', 'site selection')):
+        return 'event:virginia-data-center-project-cancelled'
+    if 'national grid ventures' in t and 'joulent' in t:
+        return 'event:national-grid-ventures-joulent'
+    if 'grid constraints' in t and 'data center' in t:
+        return 'event:grid-constraints-data-center-buildout'
+    if 'terawulf' in t and 'anthropic' in t and 'kentucky' in t:
+        return 'event:terawulf-anthropic-kentucky-data-center'
+    if 'nscale' in t and '$900 million' in t:
+        return 'event:nscale-900m-data-center-expansion'
+    if 'ohio' in t and 'natural gas' in t and 'ai' in t:
+        return 'event:ohio-gas-plants-ai-power'
+    if 'chemTreat'.lower() in t and 'cooling' in t and 'ai data center' in t:
+        return 'event:chemtreat-ai-data-center-cooling'
+
+    compact = re.sub(r'\b(the|a|an|to|for|of|and|in|on|is|are|as|after|first|major|latest)\b', ' ', t)
+    compact = re.sub(r'\s+', ' ', compact).strip()
+    return f'title:{compact}'
+
+
+def source_rank(item):
+    if item.get('pinned'):
+        return -1
+    return SOURCE_PRIORITY.get(item.get('news_source'), 20)
+
+
+def date_rank(item):
+    try:
+        return -datetime.date.fromisoformat(item.get('date') or '1900-01-01').toordinal()
+    except Exception:
+        return 0
+
+
+def item_rank(item):
+    title = title_without_source(item.get('title'), item.get('news_source'))
+    richness = sum(1 for token in ('$', 'billion', 'million', 'gw', 'mw', 'data center') if token in title.lower())
+    return (
+        source_rank(item),
+        -richness,
+        date_rank(item),
+        -len(title),
+    )
+
+
+def dedupe_by_event(items):
+    winners = {}
+    removed = 0
+    for item in items:
+        key = event_key(item)
+        prev = winners.get(key)
+        if not prev or item_rank(item) < item_rank(prev):
+            if prev:
+                removed += 1
+            winners[key] = item
+        else:
+            removed += 1
+    return list(winners.values()), removed
 
 
 def translate_title(title, source):
@@ -165,6 +278,7 @@ def main():
                 added += 1
     print(f'  fetched, {added} new items')
 
+    items, removed = dedupe_by_event(items)
     pinned = [i for i in items if i.get('pinned')]
     rest = sorted((i for i in items if not i.get('pinned')),
                   key=lambda x: x['date'], reverse=True)[:KEEP - len(pinned)]
@@ -189,7 +303,7 @@ def main():
     if block:
         out['blocklist'] = sorted(block)
     save_json('dc_news.json', out)
-    print(f'  total {len(out_items)} items ({len(pinned)} pinned), translated {translated}')
+    print(f'  total {len(out_items)} items ({len(pinned)} pinned), removed {removed} duplicates, translated {translated}')
 
 
 if __name__ == '__main__':
