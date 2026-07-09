@@ -1,0 +1,285 @@
+{
+  "x": [
+    {
+      "handle": "karpathy",
+      "name": "Andrej Karpathy",
+      "domain": "ai",
+      "tier": "analyst",
+      "tweets": [
+        {
+          "id": "2073499112876761166",
+          "text": "@petergostev incredible, ty for putting this together, i didn't appreciate that models would be able to create these awesome, rich, playable worlds that fuse knowledge and code. when the bear catches the salmon @ 43m :O lol!",
+          "created_at": "2026-07-04T20:08:06+00:00",
+          "like_count": 403,
+          "retweet_count": 9,
+          "reply_count": 16,
+          "url": "https://x.com/karpathy/status/2073499112876761166"
+        },
+        {
+          "id": "2073505440479293773",
+          "text": "Agree, it's beautiful, top tier fablemaxxing! :)\nI think with every new model tier there is something new that qualitatively leaps and surprises, for Fable so far these threejs envs seem to be up there. The bear thing is such a weird little detail to have there, and the fish actually struggles in its mouth. How does an LLM even know all these things from just internet, and then have the ability to convert that understanding into xyz coordinates, meshes, transforms, animations, effects, interactivity and mini stories? Amazing to think about what +1, +2, +3 model tiers might be able to create.",
+          "created_at": "2026-07-04T20:33:15+00:00",
+          "like_count": 241,
+          "retweet_count": 8,
+          "reply_count": 8,
+          "url": "https://x.com/karpathy/status/2073505440479293773"
+        }
+      ]
+    },
+    {
+      "handle": "swyx",
+      "name": "Swyx (Shawn Wang)",
+      "domain": "ai",
+      "tier": "analyst",
+      "tweets": [
+        {
+          "id": "2073220591684096087",
+          "text": "i often think about the irony of how \"tools for thought\" people spent like a decade making cool pretty demos with canvases \n\nand then got completely mogged by low contrast poorly designed CLIs just winning because they do commodity thinking for you",
+          "created_at": "2026-07-04T01:41:22+00:00",
+          "like_count": 260,
+          "retweet_count": 5,
+          "reply_count": 42,
+          "url": "https://x.com/swyx/status/2073220591684096087"
+        },
+        {
+          "id": "2073282565629436090",
+          "text": "@altryne @aiDotEngineer we saved the aie signs!!! https://t.co/JahAQIS1XE",
+          "created_at": "2026-07-04T05:47:38+00:00",
+          "like_count": 33,
+          "retweet_count": 2,
+          "reply_count": 4,
+          "url": "https://x.com/swyx/status/2073282565629436090"
+        },
+        {
+          "id": "2073578155621896555",
+          "text": "@hey_amandam aie crop tops and workout gear coming right up",
+          "created_at": "2026-07-05T01:22:12+00:00",
+          "like_count": 11,
+          "retweet_count": 0,
+          "reply_count": 3,
+          "url": "https://x.com/swyx/status/2073578155621896555"
+        },
+        {
+          "id": "2073586973357514762",
+          "text": "@hey_amandam @grok can you work up some sample simple AIE workout gear given these baseline brand logos and guidelines\n\ndont hallucinate extra branding https://t.co/oR42AORoHw",
+          "created_at": "2026-07-05T01:57:14+00:00",
+          "like_count": 5,
+          "retweet_count": 0,
+          "reply_count": 2,
+          "url": "https://x.com/swyx/status/2073586973357514762"
+        },
+        {
+          "id": "2073294102612107659",
+          "text": "@hey_amandam @aiDotEngineer this is the entire aie strategy/value prop in a nutshell",
+          "created_at": "2026-07-04T06:33:28+00:00",
+          "like_count": 4,
+          "retweet_count": 0,
+          "reply_count": 0,
+          "url": "https://x.com/swyx/status/2073294102612107659"
+        }
+      ]
+    },
+    {
+      "handle": "dylan522p",
+      "name": "Dylan Patel (SemiAnalysis)",
+      "domain": "ai",
+      "tier": "analyst",
+      "tweets": []
+    },
+    {
+      "handle": "leopoldasch",
+      "name": "Leopold Aschenbrenner",
+      "domain": "ai",
+      "tier": "analyst",
+      "tweets": []
+    },
+    {
+      "handle": "jimkxa",
+      "name": "Jim Keller",
+      "domain": "ai",
+      "tier": "analyst",
+      "tweets": []
+    },
+    {
+      "handle": "sama",
+      "name": "Sam Altman",
+      "domain": "ai",
+      "tier": "exec",
+      "tweets": [
+        {
+          "id": "2073791666553844074",
+          "text": "our older kid put two words together for the first time and i am approximately as amazed by this cognitive feat as i am by GPT-5.6 discovering new math",
+          "created_at": "2026-07-05T15:30:37+00:00",
+          "like_count": 8939,
+          "retweet_count": 235,
+          "reply_count": 984,
+          "url": "https://x.com/sama/status/2073791666553844074"
+        }
+      ]
+    },
+    {
+      "handle": "DarioAmodei",
+      "name": "Dario Amodei",
+      "domain": "ai",
+      "tier": "exec",
+      "tweets": []
+    },
+    {
+      "handle": "demishassabis",
+      "name": "Demis Hassabis (Google DeepMind)",
+      "domain": "ai",
+      "tier": "exec",
+      "tweets": []
+    },
+    {
+      "handle": "jietang",
+      "name": "Tang Jie (Z.ai / Tsinghua)",
+      "domain": "ai",
+      "tier": "exec",
+      "tweets": []
+    },
+    {
+      "handle": "AmandaAskell",
+      "name": "Amanda Askell (Anthropic)",
+      "domain": "ai",
+      "tier": "builder",
+      "tweets": []
+    },
+    {
+      "handle": "bcherny",
+      "name": "Boris Cherny (Claude Code)",
+      "domain": "ai",
+      "tier": "builder",
+      "tweets": []
+    },
+    {
+      "handle": "_catwu",
+      "name": "Cat Wu (Anthropic)",
+      "domain": "ai",
+      "tier": "builder",
+      "tweets": [
+        {
+          "id": "2073439890482794966",
+          "text": "One of the things I love about Claude Fable 5 is that it knew to use propensity score matching (matching users on activity so you compare like with like) in my retention analysis without me asking.\n\nIt’s exciting to see Fable 5’s improved judgment across all of its work, from writing emails and docs in Cowork to debugging complex errors in Claude Code",
+          "created_at": "2026-07-04T16:12:47+00:00",
+          "like_count": 550,
+          "retweet_count": 11,
+          "reply_count": 64,
+          "url": "https://x.com/_catwu/status/2073439890482794966"
+        },
+        {
+          "id": "2073806626965049686",
+          "text": "what are your top claude code + workflows + artifacts use cases?\n\none of my new favorites is for sourcing candidates:\n- tell cc about the role and backgrounds i’m looking for\n- ask cc to kick off a dynamic workflow to find 100 candidates, and include linkedin, twitter, blog, podcasts, and one-line pitch for each\n- ask cc to make an artifact and email it to me. then, i lock my laptop and head out for the day\n- i review the list on the go once cc is done!",
+          "created_at": "2026-07-05T16:30:03+00:00",
+          "like_count": 357,
+          "retweet_count": 12,
+          "reply_count": 73,
+          "url": "https://x.com/_catwu/status/2073806626965049686"
+        },
+        {
+          "id": "2073442459103940833",
+          "text": "@khandewalarya i’m using the currently released fable 5!",
+          "created_at": "2026-07-04T16:22:59+00:00",
+          "like_count": 15,
+          "retweet_count": 0,
+          "reply_count": 4,
+          "url": "https://x.com/_catwu/status/2073442459103940833"
+        },
+        {
+          "id": "2073857084614160794",
+          "text": "@EHumpierres i let it use computer use to do it",
+          "created_at": "2026-07-05T19:50:34+00:00",
+          "like_count": 1,
+          "retweet_count": 1,
+          "reply_count": 1,
+          "url": "https://x.com/_catwu/status/2073857084614160794"
+        },
+        {
+          "id": "2073812212175839580",
+          "text": "@danmana @The_Whole_Daisy this is so cool! would love to see what fable likes to draw",
+          "created_at": "2026-07-05T16:52:15+00:00",
+          "like_count": 1,
+          "retweet_count": 0,
+          "reply_count": 1,
+          "url": "https://x.com/_catwu/status/2073812212175839580"
+        }
+      ]
+    },
+    {
+      "handle": "alexalbert__",
+      "name": "Alex Albert (Anthropic)",
+      "domain": "ai",
+      "tier": "builder",
+      "tweets": []
+    },
+    {
+      "handle": "rauchg",
+      "name": "Guillermo Rauch (Vercel)",
+      "domain": "ai",
+      "tier": "builder",
+      "tweets": [
+        {
+          "id": "2073563586270781674",
+          "text": "🏁 I animated the token 💰 spend race, from ~lifetime Vercel AI Gateway usage, which aggregates trillions of tokens from millions of developers a month.\n\nFascinating to see the fluctuations among the labs, Anthropic's dominance, and the rise of open weight AI. https://t.co/iX8oRA4SBP",
+          "created_at": "2026-07-05T00:24:18+00:00",
+          "like_count": 1432,
+          "retweet_count": 63,
+          "reply_count": 122,
+          "url": "https://x.com/rauchg/status/2073563586270781674"
+        },
+        {
+          "id": "2073571511471124543",
+          "text": "@_markfenner Google is a quiet killer, because their models make economic sense to people. Even if @x is not excited about them as much (or at least in my bubble)",
+          "created_at": "2026-07-05T00:55:48+00:00",
+          "like_count": 60,
+          "retweet_count": 0,
+          "reply_count": 8,
+          "url": "https://x.com/rauchg/status/2073571511471124543"
+        },
+        {
+          "id": "2073827115842302447",
+          "text": "@MelkeyDev One agentic infrastructure CLI to rule them all",
+          "created_at": "2026-07-05T17:51:28+00:00",
+          "like_count": 40,
+          "retweet_count": 3,
+          "reply_count": 4,
+          "url": "https://x.com/rauchg/status/2073827115842302447"
+        },
+        {
+          "id": "2073566929370116151",
+          "text": "@quasa0 We have several token origins for Anthropic's models, so in practice it's almost never offline. (And we recently shipped routing rules in case a model gets retired!)\nhttps://t.co/qIvN3fyTFe",
+          "created_at": "2026-07-05T00:37:35+00:00",
+          "like_count": 11,
+          "retweet_count": 0,
+          "reply_count": 0,
+          "url": "https://x.com/rauchg/status/2073566929370116151"
+        },
+        {
+          "id": "2073568416670380046",
+          "text": "@shawkisukkar You mean of the consumers of tokens?",
+          "created_at": "2026-07-05T00:43:30+00:00",
+          "like_count": 1,
+          "retweet_count": 0,
+          "reply_count": 1,
+          "url": "https://x.com/rauchg/status/2073568416670380046"
+        }
+      ]
+    },
+    {
+      "handle": "amasad",
+      "name": "Amjad Masad (Replit)",
+      "domain": "ai",
+      "tier": "builder",
+      "tweets": []
+    },
+    {
+      "handle": "joshwoodward",
+      "name": "Josh Woodward (Google Labs)",
+      "domain": "ai",
+      "tier": "builder",
+      "tweets": []
+    }
+  ],
+  "errors": null,
+  "generated_at": "2026-07-05T22:57:17.051016+00:00"
+}

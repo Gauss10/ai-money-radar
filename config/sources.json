@@ -1,0 +1,396 @@
+{
+  "twitter": {
+    "lookback_hours": 48,
+    "max_tweets_per_user": 5,
+    "min_engagement": 10,
+    "accounts": [
+      {
+        "handle": "karpathy",
+        "name": "Andrej Karpathy",
+        "domain": "ai",
+        "tier": "analyst"
+      },
+      {
+        "handle": "swyx",
+        "name": "Swyx (Shawn Wang)",
+        "domain": "ai",
+        "tier": "analyst"
+      },
+      {
+        "handle": "dylan522p",
+        "name": "Dylan Patel (SemiAnalysis)",
+        "domain": "ai",
+        "tier": "analyst"
+      },
+      {
+        "handle": "leopoldasch",
+        "name": "Leopold Aschenbrenner",
+        "domain": "ai",
+        "tier": "analyst"
+      },
+      {
+        "handle": "jimkxa",
+        "name": "Jim Keller",
+        "domain": "ai",
+        "tier": "analyst"
+      },
+      {
+        "handle": "sama",
+        "name": "Sam Altman",
+        "domain": "ai",
+        "tier": "exec"
+      },
+      {
+        "handle": "DarioAmodei",
+        "name": "Dario Amodei",
+        "domain": "ai",
+        "tier": "exec"
+      },
+      {
+        "handle": "demishassabis",
+        "name": "Demis Hassabis (Google DeepMind)",
+        "domain": "ai",
+        "tier": "exec"
+      },
+      {
+        "handle": "jietang",
+        "name": "Tang Jie (Z.ai / Tsinghua)",
+        "domain": "ai",
+        "tier": "exec"
+      },
+      {
+        "handle": "nvidia",
+        "name": "NVIDIA (Jensen Huang / AI infrastructure)",
+        "domain": "ai",
+        "tier": "infra"
+      },
+      {
+        "handle": "AmandaAskell",
+        "name": "Amanda Askell (Anthropic)",
+        "domain": "ai",
+        "tier": "builder"
+      },
+      {
+        "handle": "bcherny",
+        "name": "Boris Cherny (Claude Code)",
+        "domain": "ai",
+        "tier": "builder"
+      },
+      {
+        "handle": "_catwu",
+        "name": "Cat Wu (Anthropic)",
+        "domain": "ai",
+        "tier": "builder"
+      },
+      {
+        "handle": "alexalbert__",
+        "name": "Alex Albert (Anthropic)",
+        "domain": "ai",
+        "tier": "builder"
+      },
+      {
+        "handle": "rauchg",
+        "name": "Guillermo Rauch (Vercel)",
+        "domain": "ai",
+        "tier": "builder"
+      },
+      {
+        "handle": "amasad",
+        "name": "Amjad Masad (Replit)",
+        "domain": "ai",
+        "tier": "builder"
+      },
+      {
+        "handle": "joshwoodward",
+        "name": "Josh Woodward (Google Labs)",
+        "domain": "ai",
+        "tier": "builder"
+      },
+      {
+        "handle": "ornith_",
+        "name": "Ornith (agentic coding LLM)",
+        "domain": "ai",
+        "tier": "builder"
+      }
+    ]
+  },
+  "podcasts": {
+    "lookback_hours": 72,
+    "transcription": {
+      "provider": "volc_asr_auc",
+      "enabled_by_default": true,
+      "default_limit": 2,
+      "poll_interval_seconds": 10,
+      "max_wait_seconds": 1800,
+      "relevance_keywords": [
+        "ai",
+        "artificial intelligence",
+        "agent",
+        "agents",
+        "llm",
+        "model",
+        "openai",
+        "anthropic",
+        "google deepmind",
+        "deepmind",
+        "nvidia",
+        "semiconductor",
+        "gpu",
+        "inference",
+        "data center",
+        "datacenter",
+        "robotics",
+        "automation"
+      ]
+    },
+    "people": {
+      "lookback_hours": 168,
+      "search_recency": "week",
+      "max_results_per_search": 3,
+      "max_new_per_run": 5,
+      "min_duration_minutes": 15,
+      "min_channel_subscribers": 50000,
+      "searches": [
+        {
+          "person": "Sundar Pichai",
+          "query": "Sundar Pichai interview",
+          "domain": "ai"
+        },
+        {
+          "person": "Greg Brockman",
+          "query": "Greg Brockman interview",
+          "domain": "ai"
+        },
+        {
+          "person": "Sam Altman",
+          "query": "Sam Altman interview",
+          "domain": "ai"
+        },
+        {
+          "person": "Dario Amodei",
+          "query": "Dario Amodei interview",
+          "domain": "ai"
+        },
+        {
+          "person": "Demis Hassabis",
+          "query": "Demis Hassabis interview",
+          "domain": "ai"
+        },
+        {
+          "person": "Jensen Huang",
+          "query": "Jensen Huang interview",
+          "domain": "ai"
+        },
+        {
+          "person": "Satya Nadella",
+          "query": "Satya Nadella AI interview",
+          "domain": "ai"
+        },
+        {
+          "person": "Mark Zuckerberg",
+          "query": "Mark Zuckerberg AI interview",
+          "domain": "ai"
+        },
+        {
+          "person": "Daniela Amodei",
+          "query": "Daniela Amodei Anthropic interview",
+          "domain": "ai"
+        },
+        {
+          "person": "Krishna Rao",
+          "query": "Krishna Rao Anthropic CFO interview",
+          "domain": "ai"
+        },
+        {
+          "person": "Mike Krieger",
+          "query": "Mike Krieger Anthropic interview",
+          "domain": "ai"
+        },
+        {
+          "person": "Sholto Douglas",
+          "query": "Sholto Douglas Anthropic interview",
+          "domain": "ai"
+        },
+        {
+          "person": "Amanda Askell",
+          "query": "Amanda Askell Anthropic interview",
+          "domain": "ai"
+        },
+        {
+          "person": "Boris Cherny",
+          "query": "Boris Cherny Claude Code interview",
+          "domain": "ai"
+        },
+        {
+          "person": "Cat Wu",
+          "query": "Cat Wu Anthropic Claude Code interview",
+          "domain": "ai"
+        },
+        {
+          "person": "Alex Albert",
+          "query": "Alex Albert Anthropic Claude interview",
+          "domain": "ai"
+        },
+        {
+          "person": "Kevin Weil",
+          "query": "Kevin Weil OpenAI interview",
+          "domain": "ai"
+        },
+        {
+          "person": "Ivan Zhao",
+          "query": "Ivan Zhao Notion interview",
+          "domain": "ai"
+        },
+        {
+          "person": "Dylan Patel",
+          "query": "Dylan Patel SemiAnalysis interview",
+          "domain": "ai"
+        },
+        {
+          "person": "Gavin Baker",
+          "query": "Gavin Baker AI interview",
+          "domain": "invest"
+        },
+        {
+          "person": "闫俊杰",
+          "query": "闫俊杰 MiniMax 访谈",
+          "domain": "ai",
+          "region": "cn"
+        },
+        {
+          "person": "杨植麟",
+          "query": "杨植麟 Kimi Moonshot 访谈",
+          "domain": "ai",
+          "region": "cn"
+        },
+        {
+          "person": "梁文锋",
+          "query": "梁文锋 DeepSeek 访谈",
+          "domain": "ai",
+          "region": "cn"
+        },
+        {
+          "person": "唐杰",
+          "query": "唐杰 智谱AI 访谈",
+          "domain": "ai",
+          "region": "cn"
+        },
+        {
+          "person": "罗福莉",
+          "query": "罗福莉 大模型 访谈",
+          "domain": "ai",
+          "region": "cn"
+        },
+        {
+          "person": "李广密",
+          "query": "李广密 拾象 访谈",
+          "domain": "ai",
+          "region": "cn"
+        },
+        {
+          "person": "肖弘",
+          "query": "肖弘 Manus 访谈",
+          "domain": "ai",
+          "region": "cn"
+        }
+      ]
+    },
+    "channels": [
+      {
+        "name": "Dwarkesh Patel",
+        "domain": "ai",
+        "rss_url": "https://www.dwarkesh.com/feed"
+      },
+      {
+        "name": "Lex Fridman",
+        "domain": "ai",
+        "rss_url": "https://lexfridman.com/feed/podcast/"
+      },
+      {
+        "name": "Latent Space",
+        "domain": "ai",
+        "rss_url": "https://www.latent.space/feed",
+        "fallback_rss_urls": [
+          "https://api.substack.com/feed/podcast/1084089.rss"
+        ],
+        "transcribe_missing": true
+      },
+      {
+        "name": "All-In Podcast",
+        "domain": "ai",
+        "rss_url": "https://rss.libsyn.com/shows/254861/destinations/1928300.xml",
+        "needs_filter": true,
+        "transcribe_missing": "relevant"
+      },
+      {
+        "name": "a16z",
+        "domain": "ai",
+        "rss_url": "https://feeds.simplecast.com/JGE3yC0V"
+      },
+      {
+        "name": "No Priors",
+        "domain": "ai",
+        "rss_url": "https://feeds.megaphone.fm/nopriors"
+      },
+      {
+        "name": "Google DeepMind Podcast",
+        "domain": "ai",
+        "rss_url": "https://feeds.simplecast.com/JT6pbPkg"
+      },
+      {
+        "name": "SemiAnalysis",
+        "domain": "ai",
+        "rss_url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCf_KhBXw5TIV0A7butjgFhg"
+      },
+      {
+        "name": "Lightcone Podcast",
+        "domain": "ai",
+        "rss_url": "https://anchor.fm/s/f58d3330/podcast/rss"
+      },
+      {
+        "name": "Lenny's Podcast",
+        "domain": "ai",
+        "rss_url": "https://www.lennysnewsletter.com/feed",
+        "fallback_rss_urls": [
+          "https://api.substack.com/feed/podcast/10845.rss"
+        ],
+        "transcribe_missing": true
+      },
+      {
+        "name": "Invest Like the Best",
+        "domain": "invest",
+        "rss_url": "https://feeds.megaphone.fm/CLS2859450455",
+        "needs_filter": true,
+        "transcribe_missing": "relevant"
+      },
+      {
+        "name": "Capital Allocators",
+        "domain": "invest",
+        "rss_url": "https://rss.libsyn.com/shows/94820/destinations/482814.xml"
+      },
+      {
+        "name": "The Acquirers Podcast",
+        "domain": "invest",
+        "rss_url": "https://anchor.fm/s/9603714/podcast/rss"
+      }
+    ]
+  },
+  "arxiv": {
+    "lookback_hours": 48,
+    "max_papers": 30,
+    "categories": [
+      {
+        "id": "cs.AI",
+        "name": "Artificial Intelligence"
+      },
+      {
+        "id": "cs.CL",
+        "name": "Computation and Language"
+      },
+      {
+        "id": "cs.LG",
+        "name": "Machine Learning"
+      }
+    ]
+  }
+}

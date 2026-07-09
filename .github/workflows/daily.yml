@@ -29,11 +29,15 @@ jobs:
         with:
           python-version: '3.12'
 
+      - name: Install dependencies
+        run: pip install -r requirements-signal.txt
+
       # 定时/手动触发时抓数据；普通 push 只重新部署，不抓数
       - name: Update data
         if: github.event_name != 'push'
         env:
           OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+          TWITTER_COOKIES: ${{ secrets.TWITTER_COOKIES }}
         run: |
           cd scripts
           python update_all.py
@@ -43,7 +47,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add site/data arr-model/arr_checkpoints.json
+          git add site/data arr-model/arr_checkpoints.json feeds/feed-x.json feeds/feed-podcasts.json feeds/feed-arxiv.json
           git diff --cached --quiet || git commit -m "data: daily update $(date -u +%F)"
           git push
 
