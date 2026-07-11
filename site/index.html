@@ -607,7 +607,7 @@ function initDC(dc, news){
   const st = [];
   if(arr) st.push(LANG === 'zh' ? 'ARR: 实时模拟' : 'ARR: live simulation');
   if(gpu) st.push('GPU: ' + gpu.as_of);
-  if(or_) st.push('Tokens: ' + (or_.sample ? 'SAMPLE' : String(or_.as_of).slice(0,10)));
+  if(or_) st.push('Tokens: ' + (or_.sample ? 'SAMPLE' : String(or_.latest_date || or_.as_of).slice(0,10)));
   if(vg) st.push('Gateway: ' + vg.as_of);
   if(sdk) st.push('SDK: ' + sdk.as_of);
   if(dc) st.push('DC: ' + (dc.as_of||''));

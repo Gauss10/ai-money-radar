@@ -3,6 +3,7 @@ name: daily-update
 on:
   schedule:
     - cron: '30 22 * * *'   # UTC 22:30 = 北京时间早上 06:30
+    - cron: '0 2 * * *'     # UTC 02:00 = 北京时间上午 10:00；补齐延迟发布的 OpenRouter 日榜
   workflow_dispatch: {}      # 手动触发按钮
   push:
     branches: [main]         # 手动改数据/代码 push 后立即重新部署
