@@ -22,6 +22,21 @@ METRIC_MAP = {'tokens': 'tokens', 'cost': 'cost'}   # history 的两个口径
 SNAP_MAP = {'tokens': 'token_share', 'cost': 'spend_share', 'requests': 'request_share'}
 
 
+def weekly_average(table, dates, metric):
+    """Average the public daily shares across the selected data dates."""
+    if not dates:
+        return []
+    totals = {}
+    for d in dates:
+        for model, share in table.get(metric, {}).get(d, []):
+            totals[model] = totals.get(model, 0.0) + share
+    averages = {model: total / len(dates) for model, total in totals.items()}
+    top = sorted(averages.items(), key=lambda x: -x[1])[:10]
+    rows = [[model, round(share, 1)] for model, share in top]
+    rows.append(['Other', round(max(0.0, 100 - sum(share for _, share in rows)), 1)])
+    return rows
+
+
 def extract_rawdata(html):
     """从 flight data 中提取 rawData 数组 (转义 JSON, 需两次反转义)"""
     m = re.search(r'\\"rawData\\":\[', html)
@@ -90,11 +105,23 @@ def main():
     snaps.append(snap)
     snaps = snaps[-90:]   # 保留 90 天记录
 
+    # ---- 最新 7 个共同数据日的份额算术平均 ----
+    week_days = sorted(set(table.get('tokens', {})) & set(table.get('cost', {})))[-7:]
+    latest_7d = {
+        'start_date': week_days[0],
+        'end_date': week_days[-1],
+        'day_count': len(week_days),
+        'token_share': weekly_average(table, week_days, 'tokens'),
+        'spend_share': weekly_average(table, week_days, 'cost'),
+    } if week_days else None
+
     out = {
         'as_of': today,
         'source': 'Vercel AI Gateway Leaderboards (vercel.com/ai-gateway/leaderboards/models)',
         'window_note': 'share % per day, parsed from page-embedded daily series',
+        'weekly_note': 'arithmetic mean of daily shares across the latest 7 common data dates; not weighted by absolute token or spend totals',
         'snapshots': snaps,
+        'latest_7d': latest_7d,
         'history': hist,
     }
     save_json('vercel_gateway.json', out)

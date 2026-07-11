@@ -127,6 +127,10 @@
     <div class="card"><h3 id="vgTokenH"><span></span></h3><div class="chart-sm" id="vgTokenChart"></div></div>
     <div class="card"><h3 id="vgSpendH"><span></span></h3><div class="chart-sm" id="vgSpendChart"></div></div>
   </div>
+  <div class="grid g2" id="vgWeekRow" style="margin-top:18px">
+    <div class="card"><h3 id="vgWeekTokenH"><span></span></h3><div class="chart-sm" id="vgWeekTokenChart"></div></div>
+    <div class="card"><h3 id="vgWeekSpendH"><span></span></h3><div class="chart-sm" id="vgWeekSpendChart"></div></div>
+  </div>
   <div class="grid g2" style="margin-top:18px">
     <div class="card"><h3><span id="i_vgtrend"></span></h3><div class="chart-sm" id="vgTrendChart"></div></div>
     <div class="card sig" id="sigCard"><h3><span id="i_kol"></span></h3></div>
@@ -178,6 +182,9 @@ zh: {
   top7:'Top Models — 最新一周合计（B tokens）— OpenRouter', top1:'Top Models — 最新一天（B tokens）— OpenRouter',
   vg_tok:'Vercel Gateway — Token 份额 Top 10', vg_spend:'Vercel Gateway — $ Spend 份额 Top 10',
   vg_sub:(d,p)=>`${d} · Claude 系 ${p}%`,
+  vg_week_tok:'Vercel Gateway — 最新一周Token 份额 Top 10（算数平均）',
+  vg_week_spend:'Vercel Gateway — 最新一周$ Spend 份额 Top 10（算数平均）',
+  vg_week_sub:p=>`Claude 系 ${p}%`,
   vgtrend:'Vercel Gateway — 份额历史（逐日，Token vs $ Spend）',
   kol:'KOL / Podcast — AI 应用与变现观点',
   sdk:'SDK 下载量 7DMA（M/day）— developer adoption proxy',
@@ -190,7 +197,7 @@ zh: {
   dc_comp:'算力存量', dc_comp_sub:'≈ 覆盖全球已交付 AI 算力 ~27%',
   dc_chart:'行业累计装机（覆盖样本内，前向填充加总）',
   news:'建设动态 ', news_meta:(n,d)=>`（${n} 条 · 更新 ${d}）`,
-  method:'ARR 主线为本站<b>综合估算口径</b>（多渠道 triangulation），历史段为月度估算的对数线性插值；最新时点之后沿校准后的增速路径实时外推，阴影为模型不确定带（随外推时长扩大）。◆ 散点为公开报道的 run-rate 对照。外推是<b>实时测算</b>而非公司指引；口径均为 run-rate（月化×12），非审计数字，仅供研究参考。Token 计数使用各 provider 自家 tokenizer；OpenRouter / Vercel Gateway 为第三方路由渠道窗口，适合看边际变化与份额拐点，不代表全市场总量。',
+  method:'ARR 主线为本站<b>综合估算口径</b>（多渠道 triangulation），历史段为月度估算的对数线性插值；最新时点之后沿校准后的增速路径实时外推，阴影为模型不确定带（随外推时长扩大）。◆ 散点为公开报道的 run-rate 对照。外推是<b>实时测算</b>而非公司指引；口径均为 run-rate（月化×12），非审计数字，仅供研究参考。Token 计数使用各 provider 自家 tokenizer；OpenRouter / Vercel Gateway 为第三方路由渠道窗口，适合看边际变化与份额拐点，不代表全市场总量。Vercel 公共榜单只披露页面公开 Top 10 模型序列的每日 Token 与 $ Spend 份额，不披露每日绝对量；“最新一周”取最近 7 个共同数据日，对每日份额作算术平均，不做绝对量加权。未进入该 Top 10 序列的模型计入 Other。',
   fine:'仅供研究参考，非投资建议。',
   fable_empty:'<div><b style="color:var(--fable)">Fable 5 未出现在 OpenRouter 日度 top-50（token 口径）</b></div><div>本数据集只含每日 top-50 模型 + 长尾合计。Fable 5 定价 $10/$50，「低 token 量、高客单」形态——变现信号先看 <b>Vercel Gateway 的 $ Spend 份额</b>。</div><div style="color:var(--faint)">进入 top-50 当天，此图自动点亮。</div>',
   s_total:'日总量', s_7dma:'7DMA', s_mw:'累计 IT Power (MW)', s_h100e:'累计算力 (k H100-eq)',
@@ -212,6 +219,9 @@ en: {
   top7:'Top Models — trailing 7-day total (B tokens) — OpenRouter', top1:'Top Models — latest day (B tokens) — OpenRouter',
   vg_tok:'Vercel Gateway — Token share Top 10', vg_spend:'Vercel Gateway — $ Spend share Top 10',
   vg_sub:(d,p)=>`${d} · Claude family ${p}%`,
+  vg_week_tok:'Vercel Gateway — Latest-week Token share Top 10 (arithmetic mean)',
+  vg_week_spend:'Vercel Gateway — Latest-week $ Spend share Top 10 (arithmetic mean)',
+  vg_week_sub:p=>`Claude family ${p}%`,
   vgtrend:'Vercel Gateway — share history (daily, Token vs $ Spend)',
   kol:'KOL / Podcasts — takes on AI apps & monetization',
   sdk:'SDK downloads 7DMA (M/day) — developer adoption proxy',
@@ -224,7 +234,7 @@ en: {
   dc_comp:'Compute stock', dc_comp_sub:'≈ ~27% of global delivered AI compute',
   dc_chart:'Cumulative installed base (covered sample, forward-filled)',
   news:'Construction News ', news_meta:(n,d)=>`(${n} items · updated ${d})`,
-  method:'The ARR mainline is this site\'s <b>composite estimate</b> (multi-channel triangulation): log-linear interpolation across monthly estimates for history, and a calibrated growth-path extrapolation beyond the latest point (shaded band = model uncertainty, widening with horizon). ◆ markers are publicly reported run-rate checkpoints. The extrapolation is a <b>live calculation</b>, not company guidance; all figures are run-rates (monthly ×12), unaudited, for research reference only. Token counts use each provider\'s own tokenizer; OpenRouter / Vercel Gateway are third-party routing windows — good for marginal change and share inflections, not market totals.',
+  method:'The ARR mainline is this site\'s <b>composite estimate</b> (multi-channel triangulation): log-linear interpolation across monthly estimates for history, and a calibrated growth-path extrapolation beyond the latest point (shaded band = model uncertainty, widening with horizon). ◆ markers are publicly reported run-rate checkpoints. The extrapolation is a <b>live calculation</b>, not company guidance; all figures are run-rates (monthly ×12), unaudited, for research reference only. Token counts use each provider\'s own tokenizer; OpenRouter / Vercel Gateway are third-party routing windows — good for marginal change and share inflections, not market totals. Vercel\'s public leaderboard reports daily Token and $ Spend shares for the page\'s published Top 10 model series, but not daily absolute totals; “latest week” is the arithmetic mean of daily shares across the latest 7 common data dates, without absolute-volume weighting. Models outside that Top 10 series are included in Other.',
   fine:'For research reference only — not investment advice.',
   fable_empty:'<div><b style="color:var(--fable)">Fable 5 is not in OpenRouter\'s daily top-50 (by tokens)</b></div><div>This dataset only includes the daily top-50 models plus an aggregated long tail. At $10/$50 pricing, Fable 5 is a low-token / high-ticket model — watch <b>Vercel Gateway $ Spend share</b> for the monetization signal.</div><div style="color:var(--faint)">The day it enters the top-50, this chart lights up automatically.</div>',
   s_total:'Daily total', s_7dma:'7DMA', s_mw:'Cumulative IT Power (MW)', s_h100e:'Cumulative compute (k H100-eq)',
@@ -460,6 +470,16 @@ function initVercel(vg){
   });
   mkBar('vgTokenChart', snap.token_share);
   mkBar('vgSpendChart', snap.spend_share);
+
+  const week = vg.latest_7d;
+  if(week && week.token_share && week.spend_share){
+    $('vgWeekTokenH').firstElementChild.innerHTML = `${tr('vg_week_tok')} <span class="sub2">${T[LANG].vg_week_sub(claudeSum(week.token_share))}</span>`;
+    $('vgWeekSpendH').firstElementChild.innerHTML = `${tr('vg_week_spend')} <span class="sub2">${T[LANG].vg_week_sub(claudeSum(week.spend_share))}</span>`;
+    mkBar('vgWeekTokenChart', week.token_share);
+    mkBar('vgWeekSpendChart', week.spend_share);
+  } else {
+    $('vgWeekRow').style.display = 'none';
+  }
 
   const h = vg.history;
   if(h && h.cost && h.cost.days){
