@@ -14,11 +14,29 @@
       "tier": "analyst",
       "tweets": [
         {
+          "id": "2076036901824532530",
+          "text": "so far at least, i'm pretty sure AI has been net job-creating.\n\nthis was not what i expected--although i was much less pessimistic than others, i thought by this level of capability we'd have seen some impact.\n\nit is possible this direction keeps going!",
+          "created_at": "2026-07-11T20:12:22+00:00",
+          "like_count": 9272,
+          "retweet_count": 349,
+          "reply_count": 1395,
+          "url": "https://x.com/sama/status/2076036901824532530"
+        },
+        {
+          "id": "2076155833428431012",
+          "text": "if you only learned about jevons paradox primarily wrt software demand in the age of agentic engineering, you may not have fully internalized jevons parodox’s impact under the conditions of:\n\n- humans who can wield coding agents well*\n- coding agents breaking containment to all other knowledge work\n\nas the efficiency of labor goes up/unit cost of knowledge work goes broadly down, the demand for total work and better knowledge goes up, not down.\n\nwhat happened to coding isnt the exception; it’s the herald.\n\n*aka AI Engineers",
+          "created_at": "2026-07-12T04:04:58+00:00",
+          "like_count": 62,
+          "retweet_count": 2,
+          "reply_count": 16,
+          "url": "https://x.com/swyx/status/2076155833428431012"
+        },
+        {
           "id": "2075718882376159261",
           "text": "AIE art is almost complete! Thank you for everyone who contributed to this at @aiDotEngineer and @swyx office. If only I could plug it into @UpsideGTM to make it easily accessible 😂😂 https://t.co/sQDco6CDyw",
           "created_at": "2026-07-10T23:08:41+00:00",
           "like_count": 14,
-          "retweet_count": 0,
+          "retweet_count": 1,
           "reply_count": 0,
           "url": "https://x.com/mada299/status/2075718882376159261"
         },
@@ -39,15 +57,6 @@
           "retweet_count": 0,
           "reply_count": 0,
           "url": "https://x.com/swyx/status/2075681776136269875"
-        },
-        {
-          "id": "2075650070213714336",
-          "text": "@Badiaserra @JangLawrenceK @poolsideai @reflection_ai @katseyeworld 🔫 shots fired",
-          "created_at": "2026-07-10T18:35:15+00:00",
-          "like_count": 1,
-          "retweet_count": 0,
-          "reply_count": 1,
-          "url": "https://x.com/swyx/status/2075650070213714336"
         }
       ]
     },
@@ -58,19 +67,10 @@
       "tier": "analyst",
       "tweets": [
         {
-          "id": "2075364232623956227",
-          "text": "compute daddy @dylan522p has spoken https://t.co/Vb2mKfCln8",
-          "created_at": "2026-07-09T23:39:26+00:00",
-          "like_count": 3699,
-          "retweet_count": 183,
-          "reply_count": 149,
-          "url": "https://x.com/alexandr_wang/status/2075364232623956227"
-        },
-        {
           "id": "2075751632667881844",
           "text": "@KevInvestingYT Scale up CPO on GPU is delayed as we said. ¯⁠\\⁠_⁠(⁠ツ⁠)⁠_⁠/⁠¯\nNot my job to care about stocks.\nMy job is to track the supply chain accurately",
           "created_at": "2026-07-11T01:18:49+00:00",
-          "like_count": 123,
+          "like_count": 134,
           "retweet_count": 0,
           "reply_count": 3,
           "url": "https://x.com/dylan522p/status/2075751632667881844"
@@ -79,7 +79,7 @@
           "id": "2075795521286091002",
           "text": "@awodias @KevInvestingYT Micron did fail, and then later Nvidia brought down the pin speed targets they had for Rubin as a whole, which enabled the ecosystem to ship to them. If you read the actual note instead of regurgitated nonsense you'd know that.",
           "created_at": "2026-07-11T04:13:13+00:00",
-          "like_count": 40,
+          "like_count": 42,
           "retweet_count": 0,
           "reply_count": 2,
           "url": "https://x.com/dylan522p/status/2075795521286091002"
@@ -101,6 +101,15 @@
           "retweet_count": 0,
           "reply_count": 0,
           "url": "https://x.com/dylan522p/status/2075679816616149259"
+        },
+        {
+          "id": "2076090256626172023",
+          "text": "@manifesting93 @SemiAnalysis_ We said scale up CPO on the GPU. \nNot CPO generally.",
+          "created_at": "2026-07-11T23:44:23+00:00",
+          "like_count": 0,
+          "retweet_count": 0,
+          "reply_count": 1,
+          "url": "https://x.com/dylan522p/status/2076090256626172023"
         }
       ]
     },
@@ -128,45 +137,45 @@
           "id": "2075452680760443190",
           "text": "To celebrate the launch of GPT-5.6 Sol, we will reset the rate limits again (twice) across ChatGPT Work and Codex over the next 24 hours.\n\nWe want you to have the time to truly try ambitious tasks and get the hang of it. Happy exploring!",
           "created_at": "2026-07-10T05:30:53+00:00",
-          "like_count": 14481,
+          "like_count": 14493,
           "retweet_count": 917,
           "reply_count": 1687,
           "url": "https://x.com/thsottiaux/status/2075452680760443190"
         },
         {
-          "id": "2075982820322025788",
-          "text": "30% of the cost was on fable at these levels of usage?",
-          "created_at": "2026-07-11T16:37:28+00:00",
-          "like_count": 7800,
-          "retweet_count": 170,
-          "reply_count": 350,
-          "url": "https://x.com/sama/status/2075982820322025788"
-        },
-        {
           "id": "2076036901824532530",
           "text": "so far at least, i'm pretty sure AI has been net job-creating.\n\nthis was not what i expected--although i was much less pessimistic than others, i thought by this level of capability we'd have seen some impact.\n\nit is possible this direction keeps going!",
           "created_at": "2026-07-11T20:12:22+00:00",
-          "like_count": 6358,
-          "retweet_count": 241,
-          "reply_count": 1107,
+          "like_count": 9272,
+          "retweet_count": 349,
+          "reply_count": 1395,
           "url": "https://x.com/sama/status/2076036901824532530"
+        },
+        {
+          "id": "2075982820322025788",
+          "text": "30% of the cost was on fable at these levels of usage?",
+          "created_at": "2026-07-11T16:37:28+00:00",
+          "like_count": 9384,
+          "retweet_count": 216,
+          "reply_count": 375,
+          "url": "https://x.com/sama/status/2075982820322025788"
         },
         {
           "id": "2075985056846451123",
           "text": "\"physicians found fewer flaws in GPT-5.6 responses than physician-written responses.\"",
           "created_at": "2026-07-11T16:46:22+00:00",
-          "like_count": 3762,
-          "retweet_count": 213,
-          "reply_count": 324,
+          "like_count": 4523,
+          "retweet_count": 269,
+          "reply_count": 356,
           "url": "https://x.com/sama/status/2075985056846451123"
         },
         {
           "id": "2075585386441789605",
           "text": "GPT-5.6 is now the preferred model in Microsoft 365 Copilot\n\nhttps://t.co/r2B3EJuV1A",
           "created_at": "2026-07-10T14:18:13+00:00",
-          "like_count": 3524,
-          "retweet_count": 178,
-          "reply_count": 404,
+          "like_count": 3664,
+          "retweet_count": 186,
+          "reply_count": 414,
           "url": "https://x.com/sama/status/2075585386441789605"
         }
       ]
@@ -202,17 +211,17 @@
           "id": "2075611004508029149",
           "text": "Every AI response you've ever gotten started with an electron. ⚡\n\nIn a recent interview with Sequoia Capital, Jensen Huang described AI infrastructure as a five-layer cake, and at the very bottom, before chips, before data centers, before models, is energy.\n\nThat's the binding constraint on the Intelligence Age: not compute, not software — watts.\n\nThis is why NVIDIA calls AI factories the dynamos of our era. They take in electrons and send out tokens of intelligence. We're a few hundred billion dollars into what Jensen calls the largest infrastructure buildout in human history. Trillions more to go.\n\nThe question isn't whether AI will scale. It's whether the energy grid can keep up. ⬆️",
           "created_at": "2026-07-10T16:00:01+00:00",
-          "like_count": 708,
-          "retweet_count": 121,
-          "reply_count": 84,
+          "like_count": 729,
+          "retweet_count": 123,
+          "reply_count": 85,
           "url": "https://x.com/nvidia/status/2075611004508029149"
         },
         {
           "id": "2075724298841387291",
           "text": "AI factories don’t have to be a strain on the grid. Instead, they can be an energy supplier⚡ \n\nEmerald AI's Conductor platform, developed using the NVIDIA Vera Rubin DSX AI Factory reference design, is leading the way for power-flexible AI factories — built to come onto the grid faster without impacting existing power needs.",
           "created_at": "2026-07-10T23:30:12+00:00",
-          "like_count": 307,
-          "retweet_count": 52,
+          "like_count": 319,
+          "retweet_count": 58,
           "reply_count": 42,
           "url": "https://x.com/nvidia/status/2075724298841387291"
         }
@@ -242,17 +251,17 @@
           "id": "2075635283211772279",
           "text": "Claude Code on desktop now has an in-app browser.\n\nClaude can pull up docs, designs, or any other site. It can read, click through, and interact the same way it does with your local dev servers.\n\nIt's sandboxed and configurable: you choose whether sessions persist. https://t.co/Jbc21OP0vJ",
           "created_at": "2026-07-10T17:36:29+00:00",
-          "like_count": 20007,
-          "retweet_count": 1323,
-          "reply_count": 656,
+          "like_count": 20539,
+          "retweet_count": 1372,
+          "reply_count": 667,
           "url": "https://x.com/ClaudeDevs/status/2075635283211772279"
         },
         {
           "id": "2075647324790112304",
           "text": "Claude Code can now open any website inside the desktop app.\n\nClaude can use your production app, open the links it sends you, check Twitter, and even watch the FIFA World Cup!",
           "created_at": "2026-07-10T18:24:20+00:00",
-          "like_count": 1616,
-          "retweet_count": 66,
+          "like_count": 1633,
+          "retweet_count": 68,
           "reply_count": 74,
           "url": "https://x.com/_catwu/status/2075647324790112304"
         }
@@ -275,8 +284,8 @@
           "id": "2075606519861936371",
           "text": "I love that @shadcn has managed to build the best UI infrastructure for agents and for humans. It's so so satisfying to play with the new typeset configurator.",
           "created_at": "2026-07-10T15:42:11+00:00",
-          "like_count": 920,
-          "retweet_count": 21,
+          "like_count": 972,
+          "retweet_count": 23,
           "reply_count": 22,
           "url": "https://x.com/rauchg/status/2075606519861936371"
         },
@@ -284,7 +293,7 @@
           "id": "2075593267295752222",
           "text": "Deep dive into how you can generate designs, prototypes, frontends, and full stack apps with your own design system in @v0. As models continue to get faster, v0 gets more magical.",
           "created_at": "2026-07-10T14:49:32+00:00",
-          "like_count": 571,
+          "like_count": 579,
           "retweet_count": 28,
           "reply_count": 25,
           "url": "https://x.com/rauchg/status/2075593267295752222"
@@ -293,7 +302,7 @@
           "id": "2075613815560094203",
           "text": "You can now deploy @Lovable apps to Vercel. https://t.co/jj7SAtOEGb",
           "created_at": "2026-07-10T16:11:11+00:00",
-          "like_count": 334,
+          "like_count": 339,
           "retweet_count": 14,
           "reply_count": 33,
           "url": "https://x.com/vercel/status/2075613815560094203"
@@ -302,7 +311,7 @@
           "id": "2075614779658690849",
           "text": "You can now import 💗Lovable apps to Vercel with zero config. Just import your Git repo.\n\nNew Lovable apps are Nitro-backed, the standard runtime for the open web. Start in Lovable, grow on Vercel: AI development with no ceiling.",
           "created_at": "2026-07-10T16:15:01+00:00",
-          "like_count": 290,
+          "like_count": 294,
           "retweet_count": 6,
           "reply_count": 34,
           "url": "https://x.com/rauchg/status/2075614779658690849"
@@ -314,26 +323,7 @@
       "name": "Amjad Masad (Replit)",
       "domain": "ai",
       "tier": "builder",
-      "tweets": [
-        {
-          "id": "2075413916491075755",
-          "text": "It’s fantastic to see how dynamic the LLM market has become in just a short period.\n\nJust 6 months ago VCs suffered Anthropic psychosis and convinced themselves that it was going to be a monopoly.\n\nThey will keep making great models, but so will the others, including new entrants",
-          "created_at": "2026-07-10T02:56:51+00:00",
-          "like_count": 848,
-          "retweet_count": 35,
-          "reply_count": 65,
-          "url": "https://x.com/amasad/status/2075413916491075755"
-        },
-        {
-          "id": "2075423115052790054",
-          "text": "While AI is making coding less rigid, we’re making the runtime more rigid. \n\nI’m noticing our infra teams writing formal specs for the first time. More deterministic systems. More resilient infrastructure.\n\nThe faster you want to move, the more solid the ground beneath you has to be.",
-          "created_at": "2026-07-10T03:33:24+00:00",
-          "like_count": 601,
-          "retweet_count": 41,
-          "reply_count": 56,
-          "url": "https://x.com/amasad/status/2075423115052790054"
-        }
-      ]
+      "tweets": []
     },
     {
       "handle": "joshwoodward",
@@ -345,19 +335,10 @@
           "id": "2075547784107757851",
           "text": "KBC x Gemini in India!",
           "created_at": "2026-07-10T11:48:48+00:00",
-          "like_count": 326,
+          "like_count": 328,
           "retweet_count": 17,
           "reply_count": 22,
           "url": "https://x.com/joshwoodward/status/2075547784107757851"
-        },
-        {
-          "id": "2075440159320166727",
-          "text": "Dream of making it to the KBC hot seat? Let's get you there 🤝\nGoogle Gemini is teaming up with KBC and @SonyTV as your personal knowledge companion ✨\nFrom registrations to the final padhaav, your answers are just a prompt away.\nToh chaliye shuru krte hai https://t.co/sVOQh4TJKu https://t.co/Yd07aGNBpN",
-          "created_at": "2026-07-10T04:41:08+00:00",
-          "like_count": 89,
-          "retweet_count": 12,
-          "reply_count": 9,
-          "url": "https://x.com/GoogleIndia/status/2075440159320166727"
         },
         {
           "id": "2075613493018218599",
@@ -379,5 +360,5 @@
     }
   ],
   "errors": null,
-  "generated_at": "2026-07-11T23:25:50.859317+00:00"
+  "generated_at": "2026-07-12T05:15:13.237871+00:00"
 }
