@@ -36,12 +36,12 @@ class FetchSignalsTests(unittest.TestCase):
         }
         self.assertTrue(fetch_signals.same_event(left, right))
 
-    def test_display_keeps_only_one_identical_take(self):
+    def test_different_events_survive_identical_take(self):
         entries = [
             {"date": "2026-07-10", "who": "A", "url": "a", "take": "same", "_raw": "first item"},
             {"date": "2026-07-10", "who": "B", "url": "b", "take": "same", "_raw": "second item"},
         ]
-        self.assertEqual(len(fetch_signals.dedupe(entries, unique_take=True)), 1)
+        self.assertEqual(len(fetch_signals.dedupe(entries)), 2)
 
 
 if __name__ == "__main__":

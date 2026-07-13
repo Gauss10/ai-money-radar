@@ -318,20 +318,14 @@ def same_event(left, right):
     return jaccard >= 0.35 or sequence >= 0.72
 
 
-def dedupe(entries, unique_take=False):
+def dedupe(entries):
     seen_urls = set()
-    seen_takes = set()
     out = []
     for entry in entries:
         key = entry.get("url") or f"{entry.get('date')}|{entry.get('who')}|{entry.get('via')}"
-        take_key = clean_text(entry.get("take")).lower()
         if key in seen_urls or any(same_event(entry, prior) for prior in out):
             continue
-        if unique_take and take_key in seen_takes:
-            continue
         seen_urls.add(key)
-        if take_key:
-            seen_takes.add(take_key)
         out.append(entry)
     return out
 
@@ -385,7 +379,9 @@ def main():
 
     old_display = cur.get("kol") or []
     old_archive = cur.get("kol_archive") or []
-    display = dedupe(display_pool, unique_take=True)[:DISPLAY_LIMIT]
+    # Different events may map to the same high-level take. Keep them when the
+    # author/event differs; URL and semantic event dedupe already remove copies.
+    display = dedupe(display_pool)[:DISPLAY_LIMIT]
     display_urls = {item.get("url") for item in display}
 
     archive_seed = [item for item in old_display if item.get("url") not in display_urls]

@@ -41,7 +41,13 @@ jobs:
           TWITTER_COOKIES: ${{ secrets.TWITTER_COOKIES }}
         run: |
           cd scripts
-          python update_all.py
+          if [[ "${{ github.event.schedule }}" == "0 2 * * *" ]]; then
+            # The second schedule only catches OpenRouter's delayed daily data.
+            # Do not overwrite the KOL selection produced by the main run.
+            python fetch_openrouter.py
+          else
+            python update_all.py
+          fi
 
       - name: Commit updated data
         if: github.event_name != 'push'
