@@ -539,10 +539,7 @@ function initSignals(sig){
   if(!sig) return;
   const el = $('sigCard');
   let html = '';
-  const kol = sig.kol || [];
-  const asOfItems = sig.as_of ? kol.filter(k => k.date === sig.as_of) : [];
-  const latestDate = [...new Set(kol.map(k => k.date).filter(Boolean))].sort().pop();
-  const display = asOfItems.length ? asOfItems : (latestDate ? kol.filter(k => k.date === latestDate) : kol);
+  const display = sig.kol || [];
   for(const k of display){
     const take = LANG === 'en' ? (k.take_en || k.take) : k.take;
     const via = LANG === 'en' ? (k.via_en || k.via) : k.via;

@@ -41,7 +41,7 @@ GitHub Actions 位于 `.github/workflows/daily.yml`：
 | Vercel AI Gateway 份额 | `site/data/vercel_gateway.json` | 自动；公开页面数据 |
 | GPU 租赁价格 | `site/data/gpu_prices.json` | 自动；Ornn 公开 API |
 | SDK 下载量 | `site/data/sdk_downloads.json` | 自动；npm / PyPI |
-| KOL / X / 播客观点 | `site/data/curated_signals.json` | 自动；先生成本地 feed，再按事件和 URL 去重后筛选 |
+| KOL / X / 播客观点 | `site/data/curated_signals.json` | 自动；按 URL、事件和展示摘要去重，从最近 3 天补足 |
 | 数据中心新闻 | `site/data/dc_news.json` | 自动；Google News RSS；按事件去重；中英界面分别展示 `title_zh` / `title_en` |
 | ARR 估算 | `site/data/arr_checkpoints.json` | 事件驱动；来自 `arr-model/arr_source.json` |
 | AI 数据中心容量 | `site/data/datacenters.json` | 半自动；来自 `data_centers/*.csv` |
@@ -80,6 +80,6 @@ KOL / X / 播客：
 
 - 相同 URL 只保留一条。
 - 同一人物、同一天、文本高度相似的内容按同一事件处理。
-- 不同作者或不同事件即使映射到相同观点摘要也分别保留；相同 URL 或同一人物同一天的高度相似事件仍然去重。
+- 展示区按 URL、事件和观点摘要去重；当最新一天不足 4 条时，从 feed 最新日期起的最近 3 天候选与 archive 中补足。
 - 英文关键词按完整词或短语匹配，避免 `compute` 误命中 `computer science`。
 - 过滤弱相关回复；以 `@` 开头且信号不足的内容不进入展示区。

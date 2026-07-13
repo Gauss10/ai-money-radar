@@ -26,6 +26,7 @@ from common import ROOT, load_json, save_json
 
 FEEDS_DIR = os.path.join(ROOT, "feeds")
 DISPLAY_LIMIT = 4
+DISPLAY_LOOKBACK_DAYS = 3
 ARCHIVE_LIMIT = 40
 
 PEOPLE = [
@@ -310,6 +311,8 @@ def same_event(left, right):
         return False
     if left.get("who") != right.get("who"):
         return False
+    if not clean_text(left.get("_raw")) or not clean_text(right.get("_raw")):
+        return False
     left_tokens, right_tokens = semantic_tokens(left), semantic_tokens(right)
     if not left_tokens or not right_tokens:
         return False
@@ -318,14 +321,20 @@ def same_event(left, right):
     return jaccard >= 0.35 or sequence >= 0.72
 
 
-def dedupe(entries):
+def dedupe(entries, unique_take=False):
     seen_urls = set()
+    seen_takes = set()
     out = []
     for entry in entries:
         key = entry.get("url") or f"{entry.get('date')}|{entry.get('who')}|{entry.get('via')}"
+        take_key = clean_text(entry.get("take")).casefold()
         if key in seen_urls or any(same_event(entry, prior) for prior in out):
             continue
+        if unique_take and take_key and take_key in seen_takes:
+            continue
         seen_urls.add(key)
+        if take_key:
+            seen_takes.add(take_key)
         out.append(entry)
     return out
 
@@ -355,13 +364,27 @@ def sort_key(entry):
     return (effective_score(entry), entry.get("date", ""), entry.get("who", ""))
 
 
-def target_display_day(candidates):
-    days = sorted({parse_day(item.get("date")) for item in candidates}, reverse=True)
+def recent_display_pool(candidates, lookback_days=DISPLAY_LOOKBACK_DAYS):
+    days = [parse_day(item.get("date")) for item in candidates]
     days = [day for day in days if day != datetime.date.min]
-    for day in days:
-        if sum(1 for item in candidates if parse_day(item.get("date")) == day) >= DISPLAY_LIMIT:
-            return day
-    return days[0] if days else None
+    if not days:
+        return []
+    latest_day = max(days)
+    cutoff = latest_day - datetime.timedelta(days=lookback_days - 1)
+    pool = [
+        item for item in candidates
+        if cutoff <= parse_day(item.get("date")) <= latest_day
+    ]
+    return sorted(
+        pool,
+        key=lambda item: (parse_day(item.get("date")), effective_score(item)),
+        reverse=True,
+    )
+
+
+def select_display(candidates, historical=()):
+    merged = dedupe(list(candidates) + list(historical))
+    return dedupe(recent_display_pool(merged), unique_take=True)[:DISPLAY_LIMIT]
 
 
 def main():
@@ -371,17 +394,10 @@ def main():
 
     candidates = make_x_candidates(x_feed) + make_podcast_candidates(podcast_feed)
     candidates = dedupe(sorted(candidates, key=sort_key, reverse=True))
-    display_day = target_display_day(candidates)
-    display_pool = [
-        item for item in candidates
-        if display_day is None or parse_day(item.get("date")) == display_day
-    ]
 
     old_display = cur.get("kol") or []
     old_archive = cur.get("kol_archive") or []
-    # Different events may map to the same high-level take. Keep them when the
-    # author/event differs; URL and semantic event dedupe already remove copies.
-    display = dedupe(display_pool)[:DISPLAY_LIMIT]
+    display = select_display(candidates, old_display + old_archive)
     display_urls = {item.get("url") for item in display}
 
     archive_seed = [item for item in old_display if item.get("url") not in display_urls]
@@ -393,15 +409,17 @@ def main():
         "as_of": str(datetime.date.today()),
         "note": (
             "自动 curated 的 KOL / podcast 观点（源：本仓库 Actions 生成的 X + 播客 feed；"
-            "规则打分生成）。展示最新且候选数足够的一天；换下条目进入 kol_archive。"
+            "规则打分生成）。从 feed 与历史候选的最近 3 天内选择，展示摘要去重；"
+            "换下条目进入 kol_archive。"
         ),
         "kol": [public_entry(item) for item in display],
         "reports": cur.get("reports") or [],
         "kol_archive": [public_entry(item) for item in archive],
     }
     save_json("curated_signals.json", out)
-    day_text = display_day.isoformat() if display_day else "n/a"
-    print(f"  candidates: {len(candidates)}, display_day: {day_text}, display: {len(out['kol'])}, archive: {len(out['kol_archive'])}")
+    display_dates = [item["date"] for item in out["kol"]]
+    window_text = f"{min(display_dates)}..{max(display_dates)}" if display_dates else "n/a"
+    print(f"  candidates: {len(candidates)}, display_window: {window_text}, display: {len(out['kol'])}, archive: {len(out['kol_archive'])}")
     for item in out["kol"]:
         print(f"  - {item['date']} {item['who']} | {item['via']}")
 
