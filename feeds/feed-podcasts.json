@@ -154,23 +154,6 @@
       "transcript_error": null
     },
     {
-      "channel": "All-In Podcast",
-      "domain": "ai",
-      "guid": "e7e64c8a-492a-4227-a6cb-5ff7894f3f3a",
-      "title": "Open Source Wins, AGI Is Here, and Scorsese's AI Toolkit with CEOs of Cerebras & Black Forest Labs",
-      "pub_date": "2026-07-10T01:26:00+00:00",
-      "link": "https://allinchamathjason.libsyn.com/open-source-wins-agi-is-here-and-scorseses-ai-toolkit-with-ceos-of-cerebras-black-forest-labs",
-      "audio_url": "https://dts.podtrac.com/redirect.mp3/traffic.libsyn.com/secure/allinchamathjason/PARIS_Versailles_Ch4.mp3?dest-id=1928300",
-      "duration": "01:03:57",
-      "description": "<p>(0:00) The AI Buildout: Datacenters Bigger Than Cities (Andrew Feldman)</p> <p>(1:50) Reasoning, Inference, and Breaking Moore's Law</p> <p>(16:28) Open Source, AI Sovereignty, and the Road to AGI</p> <p>(40:54) The Innovation Behind Generative Video (Robin Rombach)</p> <p>(47:31) Martin Scorsese, Robots, and the Future of Hollywood IP</p> <p>Thanks to our partners for making this possible!</p> <p>AppLovin Ads - AppLovin's AI advertising platform reaches over a billion daily active users across mobile games. Full-screen video ads with a 35-second median watch time. Advertisers are profitably spending hundreds of thousands of dollars a day and advertiser access is still in closed beta. The window is open at <a href= \"https://applovin.com/ALLIN\">https://applovin.com/ALLIN</a></p> <p>Nasdaq - Industries, capital, and intelligence are converging into a single, interconnected system, and the infrastructure behind it needs to evolve just as quickly. Nasdaq was built for this moment: Powering more than 135 marketplaces and regulators globally and connecting capital to the companies shaping the future. As the innovation economy accelerates, connectivity becomes the critical asset. Nasdaq is the technology platform that makes it possible, and scalable. Learn more at <a href= \"https://Nasdaq.com\">https://Nasdaq.com</a></p> <p>Follow Andrew:</p> <p><a href= \"https://x.com/andrewdfeldman\">https://x.com/andrewdfeldman</a></p> <p>Follow Robin:</p> <p><a href= \"https://x.com/robrombach\">https://x.com/robrombach</a></p> <p>Follow the besties:</p> <p><a href=\"https://x.com/chamath\">https://x.com/chamath</a></p> <p><a href=\"https://x.com/Jason\">https://x.com/Jason</a></p> <p><a href= \"https://x.com/DavidSacks\">https://x.com/DavidSacks</a></p> <p><a href= \"https://x.com/friedberg\">https://x.com/friedberg</a></p> <p>Follow on X:</p> <p><a href= \"https://x.com/theallinpod\">https://x.com/theallinpod</a></p> <p>Follow on Instagram:</p> <p><a href= \"https://www.instagram.com/theallinpod",
-      "transcript": null,
-      "transcript_available": false,
-      "transcript_source": null,
-      "transcript_url": null,
-      "transcript_video_id": null,
-      "transcript_error": "episode_page: text too sparse to be a transcript (3318 chars for 63 min); youtube: No YouTube video id in link"
-    },
-    {
       "channel": "LangChain and 2 more",
       "domain": "ai",
       "person": "Jensen Huang",
@@ -212,5 +195,5 @@
     }
   ],
   "errors": null,
-  "generated_at": "2026-07-12T23:25:40.571222+00:00"
+  "generated_at": "2026-07-13T02:14:16.109047+00:00"
 }
