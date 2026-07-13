@@ -16,7 +16,11 @@ from common import env, http_get, load_json, save_json
 API = 'https://openrouter.ai/api/v1/datasets/rankings-daily'
 # watchlist 前缀 -> 对 permaslug 做 startswith 匹配
 WATCH = ['anthropic/claude-5-fable', 'anthropic/claude-sonnet', 'openai/gpt-5',
-         'google/gemini-3', 'deepseek/', 'x-ai/grok']
+         'google/gemini-3', 'deepseek/', 'x-ai/grok', 'tencent/hy3']
+WATCH_START = {
+    # Hunyuan 3 first appeared in the OpenRouter rankings under this slug family.
+    'tencent/hy3': datetime.date(2026, 7, 6),
+}
 B = 1e9
 
 
@@ -45,6 +49,9 @@ def main():
         start = datetime.date.fromisoformat(max(old_totals)) - datetime.timedelta(days=3)
     else:
         start = datetime.date(2025, 1, 1)
+    for wkey, first_date in WATCH_START.items():
+        if not (cur.get('watchlist') or {}).get(wkey):
+            start = min(start, first_date)
     rows, meta = fetch_window(key, start, today)
     print(f'  fetched {len(rows)} rows, {start} -> {today}')
 

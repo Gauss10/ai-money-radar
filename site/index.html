@@ -392,7 +392,8 @@ function initARR(arrPrep){
 }
 
 /* ───────── OpenRouter tokens ───────── */
-const wlName = k => { const n = k.replace(/^[^/]+\//,'').replace(/\/$/,''); return n || k.split('/')[0]; };
+const WL_LABELS = {'tencent/hy3':'hunyuan-3'};
+const wlName = k => { const n = k.replace(/^[^/]+\//,'').replace(/\/$/,''); return WL_LABELS[k] || n || k.split('/')[0]; };
 function initTokens(or_){
   if(!or_) return;
   if(or_.sample) $('tokenHost').classList.add('sampled');
@@ -417,7 +418,9 @@ function initTokens(or_){
   const wlNames = Object.keys(wl).filter(k => k !== FKEY);
   const palette = ['#5b86ea','#2e8b46','#9d7cc3','#d9a13b','#d16b95','#3fb6c4'];
   mkChart('watchChart').setOption({
-    tooltip: TIP, legend:LEG,
+    tooltip: TIP,
+    legend:{...LEG, type:'plain', left:'center', right:0, itemWidth:14, itemHeight:8, itemGap:8,
+      textStyle:{...LEG.textStyle, fontSize:9.5}},
     grid:{left:46,right:14,top:30,bottom:26},
     xAxis:{type:'time', ...AX}, yAxis:{type:'value', ...AX},
     series: [
