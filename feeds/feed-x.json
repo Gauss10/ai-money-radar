@@ -14,49 +14,40 @@
       "tier": "analyst",
       "tweets": [
         {
-          "id": "2076727753924337706",
-          "text": "By the end of the year we should have:\n\nGPT 6\nFable 5.5\nGemini 3.5 Pro\nGrok 5\nSpark 2\nKimi 3\nMinimax M3.5\nGLM 6\nDeepSeek v4.5\nMistral 4\nQwen 4\nMiMo 3\n\nNever in the history of LLMs has the frontier been so multipolar. The benefits to agent labs and agent orchestration / LLM council judges/sidekicking are ramping up. invest accordingly",
-          "created_at": "2026-07-13T17:57:34+00:00",
-          "like_count": 201,
-          "retweet_count": 7,
-          "reply_count": 52,
-          "url": "https://x.com/swyx/status/2076727753924337706"
-        },
-        {
-          "id": "2076692379013353842",
-          "text": "Congrats to PI on the unicorn round and $100M ARR!\n\nwe were proud to have @willccbb introduce verifiers at the first AIE NYC a year ago and now... it is v1!\n\nWill joins a rare list of three-time AIE speakers, and his talk on the full PI stack  is linked below! https://t.co/HXCuQjn6A1",
-          "created_at": "2026-07-13T15:37:00+00:00",
-          "like_count": 159,
-          "retweet_count": 9,
-          "reply_count": 8,
-          "url": "https://x.com/aiDotEngineer/status/2076692379013353842"
-        },
-        {
-          "id": "2076747575236141151",
-          "text": "one of my favorite AIE online track talks ever and fave online track success stories - we weren't sure about the sandboxing trend this time last year so we put a trial balloon online, now we were the first to have an entire sandboxing track and it was a PACKED room https://t.co/FC3blEB3Tb",
-          "created_at": "2026-07-13T19:16:20+00:00",
-          "like_count": 43,
-          "retweet_count": 1,
-          "reply_count": 10,
-          "url": "https://x.com/swyx/status/2076747575236141151"
-        },
-        {
-          "id": "2076765556813041976",
-          "text": "@nikitabier request: make it much easier to report spam / flag ai bots. currently i need like 2-4 clicks to report/hide/block anything. ui should give us some confidence that it feeds back usefully to your classifiers. reward superclassifiers.",
-          "created_at": "2026-07-13T20:27:47+00:00",
-          "like_count": 40,
-          "retweet_count": 0,
-          "reply_count": 4,
-          "url": "https://x.com/swyx/status/2076765556813041976"
-        },
-        {
-          "id": "2076746947382440397",
-          "text": "🆕From fork() to Fleet: Designing an Agent Sandbox Cloud\n\nhttps://t.co/qA8g9FtJeS\n\n@abshkbh spoke at AIEWF Online last year about Arrakis, his open source MicroVM-based secure sandboxes. @gdb hired him immediately for his expertise and passion - and now, after a year at OpenAI and recent release of @ChatGPTApp Work, he makes his onstage debut covering the three pillars of agent cloud engineering - Runtime, Persistence, and Orchestration - and ends with a surprising conclusion on why storage and filesystems are an integral part of agent clouds!",
-          "created_at": "2026-07-13T19:13:51+00:00",
-          "like_count": 25,
+          "id": "2077072402828361772",
+          "text": "cosign. models have overtuned to this now and do not realize when the agentsmd is out of date and should be changed/ignored.\n\nlast night i goaled 5.6 sol to complete a 5 stage task and woke up to find it was still stuck on stage 0. it took a while to read the transcript back a few hours to realize at some point some agent had committed “stage 0 is the target dont do anything else” so poor sol spent 8 hours only refining and verifying stage 0 because /goal would not let it stop and agentsmd would not let it proceed.\n\nif you dont know whats in your agentsmd before you fire off each task, it is an indirect prompt injection you perform on yourself. /plan, /goal, /skill, or nothing at all.",
+          "created_at": "2026-07-14T16:47:05+00:00",
+          "like_count": 189,
           "retweet_count": 3,
-          "reply_count": 2,
-          "url": "https://x.com/aiDotEngineer/status/2076746947382440397"
+          "reply_count": 45,
+          "url": "https://x.com/swyx/status/2077072402828361772"
+        },
+        {
+          "id": "2076840521574842401",
+          "text": "Did... Codex just overtake Claude Code?\n\n24.5 hours ago Tibo announced 6M active users.\n\nthis means Codex usage jumped 1M in ~ONE DAY.\n\nthe last user number we heard from Claude Code was 2M in Feb: https://t.co/jghFZlpjEq\n\nmore analysis within, but this is very big if true. https://t.co/cMw1QUyj9C",
+          "created_at": "2026-07-14T01:25:40+00:00",
+          "like_count": 45,
+          "retweet_count": 5,
+          "reply_count": 18,
+          "url": "https://x.com/latentspacepod/status/2076840521574842401"
+        },
+        {
+          "id": "2077162040108748830",
+          "text": "uhm this gpt 5.6 launch might be the openai's most successful model ever since...\n\nsince chatgpt? \n\nthis is IPO altering stuff going on here https://t.co/c66oEVEOVF",
+          "created_at": "2026-07-14T22:43:16+00:00",
+          "like_count": 48,
+          "retweet_count": 1,
+          "reply_count": 14,
+          "url": "https://x.com/swyx/status/2077162040108748830"
+        },
+        {
+          "id": "2077063291193729325",
+          "text": "@nicoalbanese10 @OpenAI not surprised, congrats!!!",
+          "created_at": "2026-07-14T16:10:53+00:00",
+          "like_count": 2,
+          "retweet_count": 0,
+          "reply_count": 1,
+          "url": "https://x.com/swyx/status/2077063291193729325"
         }
       ]
     },
@@ -65,26 +56,7 @@
       "name": "Dylan Patel (SemiAnalysis)",
       "domain": "ai",
       "tier": "analyst",
-      "tweets": [
-        {
-          "id": "2076200679186567521",
-          "text": "Or he failed to keep it together (Anthropic, Thinky, Core Automation, etc) and bloviated so much about his tech that everyone saw it as existential and it created completion from all the hyperscalers.\nIf he played his cards right I'd bet there'd be no Anthropic or Meta TBD or XAI",
-          "created_at": "2026-07-12T07:03:10+00:00",
-          "like_count": 1614,
-          "retweet_count": 44,
-          "reply_count": 91,
-          "url": "https://x.com/dylan522p/status/2076200679186567521"
-        },
-        {
-          "id": "2076090256626172023",
-          "text": "@manifesting93 @SemiAnalysis_ We said scale up CPO on the GPU. \nNot CPO generally.",
-          "created_at": "2026-07-11T23:44:23+00:00",
-          "like_count": 1,
-          "retweet_count": 0,
-          "reply_count": 1,
-          "url": "https://x.com/dylan522p/status/2076090256626172023"
-        }
-      ]
+      "tweets": []
     },
     {
       "handle": "leopoldasch",
@@ -107,31 +79,49 @@
       "tier": "exec",
       "tweets": [
         {
-          "id": "2076398253332140410",
-          "text": "i'd love to see interesting things people have built with 5.6 sol.\n\ni will send the person who made the coolest thing a special gift from the openai archives.",
-          "created_at": "2026-07-12T20:08:15+00:00",
-          "like_count": 16747,
-          "retweet_count": 576,
-          "reply_count": 3060,
-          "url": "https://x.com/sama/status/2076398253332140410"
+          "id": "2077036999303999910",
+          "text": "GPT-5.6 sol is half the price and ~twice as token efficient as fable in many cases for accomplishing the same task.\n\nhappy to deliver at one-quarter of the price.",
+          "created_at": "2026-07-14T14:26:24+00:00",
+          "like_count": 17651,
+          "retweet_count": 640,
+          "reply_count": 1193,
+          "url": "https://x.com/sama/status/2077036999303999910"
+        },
+        {
+          "id": "2076812846793650485",
+          "text": "i gave 5.6 sol access to my camera roll and had it extract pictures of every piece of clothing i own from my photos\n\nthen, told it to find new outfits for me and render them on me with gpt-image!\n\nits kinda cool to see your entire wardrobe in a collection like this https://t.co/SV796uScrB",
+          "created_at": "2026-07-13T23:35:42+00:00",
+          "like_count": 17313,
+          "retweet_count": 654,
+          "reply_count": 371,
+          "url": "https://x.com/cdngdev/status/2076812846793650485"
         },
         {
           "id": "2076459871021736245",
           "text": "Rest assured that GPT 5.6 Sol will stay in the ChatGPT subscription you pay for. Including Go, Plus and Pro subscriptions. At least until we ship an even better model.",
           "created_at": "2026-07-13T00:13:06+00:00",
-          "like_count": 15219,
-          "retweet_count": 593,
-          "reply_count": 767,
+          "like_count": 16392,
+          "retweet_count": 629,
+          "reply_count": 805,
           "url": "https://x.com/thsottiaux/status/2076459871021736245"
         },
         {
-          "id": "2076759681230672036",
-          "text": "@freak4pc @OpenAI @claudeai @thsottiaux thanks!\n\nwhat do you like better about it?",
-          "created_at": "2026-07-13T20:04:26+00:00",
-          "like_count": 386,
-          "retweet_count": 5,
-          "reply_count": 69,
-          "url": "https://x.com/sama/status/2076759681230672036"
+          "id": "2077114635308986427",
+          "text": "Hello. We have reached 8M active users across Codex and ChatGPT Work.\n\nWe are once again resetting the usage limits for all. And we continue to not have the 5h rate limit as well, allowing everyone to explore the boundaries of GPT-5.6 Sol and discover how ambitious you can be.\n\nSee you tomorrow for more updates on our growth!",
+          "created_at": "2026-07-14T19:34:54+00:00",
+          "like_count": 11798,
+          "retweet_count": 686,
+          "reply_count": 1421,
+          "url": "https://x.com/thsottiaux/status/2077114635308986427"
+        },
+        {
+          "id": "2077033807736459713",
+          "text": "2.5x increase in usage of our agentic products (codex and chatgpt work) in the last week!\n\nwelcome.",
+          "created_at": "2026-07-14T14:13:43+00:00",
+          "like_count": 11535,
+          "retweet_count": 346,
+          "reply_count": 772,
+          "url": "https://x.com/sama/status/2077033807736459713"
         }
       ]
     },
@@ -154,7 +144,17 @@
       "name": "Tang Jie (Z.ai / Tsinghua)",
       "domain": "ai",
       "tier": "exec",
-      "tweets": []
+      "tweets": [
+        {
+          "id": "2076913247316492510",
+          "text": "Our Single-rollout Asynchronous Optimization (SAO), is able to train stably for one thousand steps and consistently outperform GRPO and its variants on agentic coding and reasoning benchmarks,\nsuch as SWE-Bench Verified, BeyondAIME, and IMOAnswerBench. https://t.co/oca1DvDvdB",
+          "created_at": "2026-07-14T06:14:39+00:00",
+          "like_count": 912,
+          "retweet_count": 83,
+          "reply_count": 32,
+          "url": "https://x.com/jietang/status/2076913247316492510"
+        }
+      ]
     },
     {
       "handle": "nvidia",
@@ -166,46 +166,46 @@
           "id": "2076690662196490454",
           "text": "What’s the saying about the early bird and the worm? 🐦🪱\n\n#NVIDIAGTC Berlin discounted pricing is available for a limited time only - join us for the latest in AI, accelerated computing, robotics, simulation, and more. https://t.co/1IHCGu1sKZ",
           "created_at": "2026-07-13T15:30:11+00:00",
-          "like_count": 210,
-          "retweet_count": 28,
-          "reply_count": 41,
+          "like_count": 357,
+          "retweet_count": 43,
+          "reply_count": 54,
           "url": "https://x.com/nvidia/status/2076690662196490454"
         },
         {
           "id": "2076796314306617590",
           "text": "As organizations move from AI pilots to production, infrastructure decisions have shifted from peak chip specs to cost per token: how many useful tokens they can deliver per dollar, per watt, and within required latency targets. \n\nNVIDIA's full-stack inference software continuously improves hardware performance — so that number keeps improving, even after deployment.\n\nSee the 🧵",
           "created_at": "2026-07-13T22:30:00+00:00",
-          "like_count": 54,
-          "retweet_count": 12,
-          "reply_count": 15,
+          "like_count": 234,
+          "retweet_count": 42,
+          "reply_count": 36,
           "url": "https://x.com/nvidia/status/2076796314306617590"
         },
         {
-          "id": "2076796320824590441",
-          "text": "With software optimizations alone, NVIDIA has delivered 5x more tokens from the same GPUs and power envelope, and the pace is accelerating. https://t.co/CGj0weofoD",
-          "created_at": "2026-07-13T22:30:02+00:00",
-          "like_count": 10,
-          "retweet_count": 1,
-          "reply_count": 4,
-          "url": "https://x.com/nvidia/status/2076796320824590441"
+          "id": "2077060563666866491",
+          "text": "⚡ Performance per watt is the foundational metric for every AI factory today operating in a power-constrained environment. 🧵 https://t.co/MjKyT704zf",
+          "created_at": "2026-07-14T16:00:02+00:00",
+          "like_count": 234,
+          "retweet_count": 27,
+          "reply_count": 21,
+          "url": "https://x.com/nvidia/status/2077060563666866491"
         },
         {
-          "id": "2076796351241728218",
-          "text": "Leading companies are already compounding value with full-stack open inference software on NVIDIA Blackwell:\n\nBaseten used TensorRT LLM to serve DeepSeek V4 Pro on Blackwell, applying proprietary runtime optimizations to deliver up to 50% more tokens per second for reasoning, coding, and long-context workloads.\n\nCognition uses NVIDIA Dynamo to manage inference GPUs like NVIDIA Blackwell, giving its team a ready-made path to scale reinforcement learning workloads by seamlessly managing the lifecycle of inference engines.\n\nDeep Infra runs frontier open source models on Blackwell from day zero using the NVIDIA inference software stack, including DeepSeek V4.\n\nDigitalOcean enabled (tag) Hippocratic AI to use NVIDIA inference software on Blackwell to increase throughput 30% while maintaining sub-half-second time to first response — across 10 million patient calls.\n\nTogether AI used TensorRT-LLM on Blackwell to help (tag) Cursor accelerate from model optimizations to production endpoints for its real-time coding experience.\n\nRead the blog: https://t.co/p4YMznUGZp",
-          "created_at": "2026-07-13T22:30:09+00:00",
-          "like_count": 7,
-          "retweet_count": 1,
+          "id": "2077075654210695537",
+          "text": "Enterprises need AI they can trust, control and customize. \n\nOpen models give teams the visibility and ownership to evaluate AI against their standards, specialize AI with domain knowledge, and improve accuracy and efficiency. https://t.co/DSEV4McGUx",
+          "created_at": "2026-07-14T17:00:00+00:00",
+          "like_count": 169,
+          "retweet_count": 24,
+          "reply_count": 34,
+          "url": "https://x.com/nvidia/status/2077075654210695537"
+        },
+        {
+          "id": "2077060569459253384",
+          "text": "On DeepSeek V4 Pro, NVIDIA GB300 NVL72 systems deliver up to 25× higher performance per watt than NVIDIA Hopper. https://t.co/eniwABkd00",
+          "created_at": "2026-07-14T16:00:04+00:00",
+          "like_count": 52,
+          "retweet_count": 0,
           "reply_count": 3,
-          "url": "https://x.com/nvidia/status/2076796351241728218"
-        },
-        {
-          "id": "2076796326025585020",
-          "text": "That's 5x lower token cost from software in just one month — on the same hardware. https://t.co/vQayyApDOT",
-          "created_at": "2026-07-13T22:30:03+00:00",
-          "like_count": 4,
-          "retweet_count": 1,
-          "reply_count": 4,
-          "url": "https://x.com/nvidia/status/2076796326025585020"
+          "url": "https://x.com/nvidia/status/2077060569459253384"
         }
       ]
     },
@@ -230,13 +230,13 @@
       "tier": "builder",
       "tweets": [
         {
-          "id": "2076351399999557669",
-          "text": "We're extending Claude Fable 5 access on all paid plans, as well as keeping Claude Code’s weekly rate limits 50% higher, through July 19.",
-          "created_at": "2026-07-12T17:02:05+00:00",
-          "like_count": 72214,
-          "retweet_count": 7189,
-          "reply_count": 6575,
-          "url": "https://x.com/claudeai/status/2076351399999557669"
+          "id": "2076789349145092230",
+          "text": "Artifacts now support public sharing and multiplayer editing in Claude Code, and can be created with Claude Tag. https://t.co/XEhkN3qHAC",
+          "created_at": "2026-07-13T22:02:20+00:00",
+          "like_count": 3429,
+          "retweet_count": 197,
+          "reply_count": 183,
+          "url": "https://x.com/ClaudeDevs/status/2076789349145092230"
         }
       ]
     },
@@ -254,49 +254,49 @@
       "tier": "builder",
       "tweets": [
         {
-          "id": "2076364176252191222",
-          "text": "Make the model a cog in a machine you own.\n\n◾ AI SDK → open model API\n◾ https://t.co/O7y9dmUqk5 → open Agent API\n◾ AI Gateway → open ZDR inference\n\nStartups and enterprises must own their data, evals, model choices, software layer. Don't outsource your brain.",
-          "created_at": "2026-07-12T17:52:51+00:00",
-          "like_count": 1047,
-          "retweet_count": 66,
-          "reply_count": 74,
-          "url": "https://x.com/rauchg/status/2076364176252191222"
-        },
-        {
           "id": "2076713720731042174",
           "text": "“Open-weight models ran 29% of gateway tokens, up from 11% in April”",
           "created_at": "2026-07-13T17:01:49+00:00",
-          "like_count": 209,
-          "retweet_count": 11,
-          "reply_count": 28,
+          "like_count": 270,
+          "retweet_count": 14,
+          "reply_count": 31,
           "url": "https://x.com/rauchg/status/2076713720731042174"
-        },
-        {
-          "id": "2076412134540685483",
-          "text": "@elonmusk I was literally just testing it for this usecase and it’s performing great. Grok 4.5 is an excellent foundation for agents",
-          "created_at": "2026-07-12T21:03:25+00:00",
-          "like_count": 148,
-          "retweet_count": 2,
-          "reply_count": 11,
-          "url": "https://x.com/rauchg/status/2076412134540685483"
         },
         {
           "id": "2076786138195595704",
           "text": "Powerful building block for autonomous, self-optimizing websites and applications.\n\nGive agents the ability to set up and tune experiments with feature flags.",
           "created_at": "2026-07-13T21:49:34+00:00",
-          "like_count": 92,
-          "retweet_count": 2,
-          "reply_count": 16,
+          "like_count": 174,
+          "retweet_count": 4,
+          "reply_count": 27,
           "url": "https://x.com/rauchg/status/2076786138195595704"
         },
         {
-          "id": "2076783671768752610",
-          "text": "You can now manage targeting rules for Vercel Flags with Vercel CLI.\n\n𝚟𝚌 𝚏𝚕𝚊𝚐𝚜 𝚛𝚞𝚕𝚎𝚜 𝚊𝚍𝚍 𝚗𝚎𝚠-𝚌𝚑𝚎𝚌𝚔𝚘𝚞𝚝 \\\n  --𝚌𝚘𝚗𝚍𝚒𝚝𝚒𝚘𝚗 \"𝚞𝚜𝚎𝚛.𝚌𝚘𝚞𝚗𝚝𝚛𝚢:𝚒𝚗:𝙳𝙴,𝙴𝚂\" \\\n  --𝚟𝚊𝚛𝚒𝚊𝚗𝚝 𝚗𝚎𝚠-𝚌𝚑𝚎𝚌𝚔𝚘𝚞𝚝\nhttps://t.co/c2s0teHUoq",
-          "created_at": "2026-07-13T21:39:46+00:00",
-          "like_count": 27,
-          "retweet_count": 1,
-          "reply_count": 3,
-          "url": "https://x.com/vercel_dev/status/2076783671768752610"
+          "id": "2077154901013221444",
+          "text": "The @agentmail team has been cooking. Tell your agent to 𝚟𝚎𝚛𝚌𝚎𝚕 𝚒𝚗𝚜𝚝𝚊𝚕𝚕 𝚊𝚐𝚎𝚗𝚝𝚖𝚊𝚒𝚕 – no signup, automatic setup and unified billing.",
+          "created_at": "2026-07-14T22:14:54+00:00",
+          "like_count": 94,
+          "retweet_count": 6,
+          "reply_count": 17,
+          "url": "https://x.com/rauchg/status/2077154901013221444"
+        },
+        {
+          "id": "2076815883209712038",
+          "text": "Agent Runs now shows subagent activity for @evedev_ projects.\n\nInspect each run in full, including turns, model and tool calls, cost, and token usage.\n\nhttps://t.co/sha40IgCrT",
+          "created_at": "2026-07-13T23:47:46+00:00",
+          "like_count": 87,
+          "retweet_count": 5,
+          "reply_count": 2,
+          "url": "https://x.com/vercel_dev/status/2076815883209712038"
+        },
+        {
+          "id": "2077149178233524535",
+          "text": "AgentMail is on the Vercel Marketplace.\n\nYour agents can send, receive, and reply to email from a real inbox.\n• Full thread memory\n• Structured data extraction\n• Deliverability handled\n\nRun 𝚟𝚌 𝚒 𝚊𝚐𝚎𝚗𝚝𝚖𝚊𝚒𝚕 or learn more ↓\nhttps://t.co/GB3UQ0CxAu",
+          "created_at": "2026-07-14T21:52:10+00:00",
+          "like_count": 69,
+          "retweet_count": 6,
+          "reply_count": 5,
+          "url": "https://x.com/vercel_dev/status/2077149178233524535"
         }
       ]
     },
@@ -307,49 +307,22 @@
       "tier": "builder",
       "tweets": [
         {
-          "id": "2076227936202662357",
-          "text": "Vibe Research\n\nFine-tuning a Qwen-8b model to play chess on Replit. Running 3 parallel branches with different experiments and making real progress.\n\nIt's amazing how far models have come in their ability to do ML (they used to be really bad at it). So now someone with good intuition to guide the process could do interesting ML work, even if they have never done it before.",
-          "created_at": "2026-07-12T08:51:29+00:00",
-          "like_count": 536,
-          "retweet_count": 40,
-          "reply_count": 51,
-          "url": "https://x.com/amasad/status/2076227936202662357"
-        },
-        {
-          "id": "2076356893736673507",
-          "text": "Fun to see Replit's computer use model play against my new chess engine https://t.co/SQmN4NamlR",
-          "created_at": "2026-07-12T17:23:54+00:00",
-          "like_count": 213,
-          "retweet_count": 12,
-          "reply_count": 24,
-          "url": "https://x.com/amasad/status/2076356893736673507"
-        },
-        {
-          "id": "2076426879016542404",
-          "text": "Paradoxically is as frontier LLMs getting better might lead to less usage because they will enable enterprises to do their own ML research and move away from expensive models and distill known use-cases into smaller models.\n\nProgramming languages might be a useful analogy.\n\nYou use JavaScript and Python to move fast but for hot code paths you write C or Rust code (even assembly sometimes).\n\nDynamic languages here is like frontier/expensive tokens. It’s the easiest to build with but once you understand the use-case and have the data you can distill that into a cheaper model.\n\nPresumably most of CPU cycles today go to C/C++ because that’s what operating systems and browsers are written in but new apps will usually start with high level languages before they start optimizing.\n\nAnd the analogy fits because recently we’re seeing LLMs help programmers rewrite code with lower level languages (eg Bun’s rewrite to Rust was unlocked by Fable). Same thing will happen with ML.",
-          "created_at": "2026-07-12T22:02:00+00:00",
-          "like_count": 99,
-          "retweet_count": 7,
-          "reply_count": 5,
-          "url": "https://x.com/amasad/status/2076426879016542404"
+          "id": "2076689215258014069",
+          "text": "‼️ BREAKING: xAI's Grok Build CLI was uploading entire Git repositories to a Google Cloud bucket, private codebases and unredacted secrets included. The uploads quietly stopped via a hidden server-side flag, and xAI still has not said a word about scope, retention, or deletion.\n\nThe scale is staggering. On a 12 GB test repo, 5.1 GB flew out the door to xAI's grok-code-session-traces bucket while the actual coding task needed just 192 KB. The tool grabbed whatever repository it ran in, not the files it needed.\n\nThe fix arrived as a hidden flag, disable_codebase_upload: true, a day after a researcher's wire-level analysis. The \"Improve the model\" opt-out never stopped the uploads.\n\nStill no advisory, no scope, no word on whether already-uploaded code gets deleted. For anyone pointing AI coding agents at proprietary code, what crosses the wire matters more than what the settings page says.",
+          "created_at": "2026-07-13T15:24:26+00:00",
+          "like_count": 8311,
+          "retweet_count": 1086,
+          "reply_count": 430,
+          "url": "https://x.com/IntCyberDigest/status/2076689215258014069"
         },
         {
           "id": "2076776737074184661",
           "text": "Getting realtime progress updates on my model training runs. \n\nThis feels like early vibe coding except it’s making personal models. https://t.co/NBFr2sVJT5",
           "created_at": "2026-07-13T21:12:13+00:00",
-          "like_count": 108,
-          "retweet_count": 2,
-          "reply_count": 13,
+          "like_count": 228,
+          "retweet_count": 4,
+          "reply_count": 30,
           "url": "https://x.com/amasad/status/2076776737074184661"
-        },
-        {
-          "id": "2076234309913215071",
-          "text": "@ThibaultJaigu Replit does all that automatically. Re eval will publish everything when am at a good point.",
-          "created_at": "2026-07-12T09:16:48+00:00",
-          "like_count": 4,
-          "retweet_count": 0,
-          "reply_count": 1,
-          "url": "https://x.com/amasad/status/2076234309913215071"
         }
       ]
     },
@@ -369,5 +342,5 @@
     }
   ],
   "errors": null,
-  "generated_at": "2026-07-13T23:25:43.514172+00:00"
+  "generated_at": "2026-07-14T23:24:21.012457+00:00"
 }
