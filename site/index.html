@@ -157,7 +157,7 @@
 <footer>
   <h4>Methodology</h4>
   <p id="i_method"></p>
-  <p class="fineprint"><span id="orCite">OpenRouter (openrouter.ai/rankings)</span> · Epoch AI, AI Data Centers (CC-BY 4.0) · Ornn Compute Price Index · Vercel AI Gateway Leaderboards · npm / pypistats · Google News · <span id="i_fine"></span></p>
+  <p class="fineprint"><span id="orCite">OpenRouter (openrouter.ai/rankings)</span> · Epoch AI, AI Data Centers (CC-BY 4.0) · Ornn Compute Price Index · Vercel AI Gateway Leaderboards (CC BY 4.0; API data transformed by AI Money Radar) · npm / pypistats · Google News · <span id="i_fine"></span></p>
 </footer>
 
 </div>
@@ -185,7 +185,7 @@ zh: {
   vg_week_tok:'Vercel Gateway — 最新一周Token 份额 Top 10（算数平均）',
   vg_week_spend:'Vercel Gateway — 最新一周$ Spend 份额 Top 10（算数平均）',
   vg_week_sub:p=>`Claude 系 ${p}%`,
-  vgtrend:'Vercel Gateway — 份额历史（逐日，Token vs $ Spend）',
+  vgtrend:'Vercel Gateway — Lab $ Spend（逐日份额）',
   kol:'KOL / Podcast — AI 应用与变现观点',
   sdk:'SDK 下载量 7DMA（M/day）— developer adoption proxy',
   sites:'Top Sites by IT Power — Epoch',
@@ -197,11 +197,11 @@ zh: {
   dc_comp:'算力存量', dc_comp_sub:'≈ 覆盖全球已交付 AI 算力 ~27%',
   dc_chart:'行业累计装机（覆盖样本内，前向填充加总）',
   news:'建设动态 ', news_meta:(n,d)=>`（${n} 条 · 更新 ${d}）`,
-  method:'ARR 主线为本站<b>综合估算口径</b>（多渠道 triangulation），历史段为月度估算的对数线性插值；最新时点之后沿校准后的增速路径实时外推，阴影为模型不确定带（随外推时长扩大）。◆ 散点为公开报道的 run-rate 对照。外推是<b>实时测算</b>而非公司指引；口径均为 run-rate（月化×12），非审计数字，仅供研究参考。Token 计数使用各 provider 自家 tokenizer；OpenRouter / Vercel Gateway 为第三方路由渠道窗口，适合看边际变化与份额拐点，不代表全市场总量。Vercel 公共榜单只披露页面公开 Top 10 模型序列的每日 Token 与 $ Spend 份额，不披露每日绝对量；“最新一周”取最近 7 个共同数据日，对每日份额作算术平均，不做绝对量加权。未进入该 Top 10 序列的模型计入 Other。',
+  method:'ARR 主线为本站<b>综合估算口径</b>（多渠道 triangulation），历史段为月度估算的对数线性插值；最新时点之后沿校准后的增速路径实时外推，阴影为模型不确定带（随外推时长扩大）。◆ 散点为公开报道的 run-rate 对照。外推是<b>实时测算</b>而非公司指引；口径均为 run-rate（月化×12），非审计数字，仅供研究参考。Token 计数使用各 provider 自家 tokenizer；OpenRouter / Vercel Gateway 为第三方路由渠道窗口，适合看边际变化与份额拐点，不代表全市场总量。Vercel 数据来自官方 Leaderboard Export API；模型榜只披露每日 Top 10 的 Token 与 $ Spend 份额，不披露绝对量，未进入榜单者计入 Other。“最新一周”取最近 7 个共同数据日作份额算术平均，不做绝对量加权。Lab 趋势直接使用官方逐日 Spend 份额，其中 Google Lab 在图中标为 Gemini。',
   fine:'仅供研究参考，非投资建议。',
   fable_empty:'<div><b style="color:var(--fable)">Fable 5 未出现在 OpenRouter 日度 top-50（token 口径）</b></div><div>本数据集只含每日 top-50 模型 + 长尾合计。Fable 5 定价 $10/$50，「低 token 量、高客单」形态——变现信号先看 <b>Vercel Gateway 的 $ Spend 份额</b>。</div><div style="color:var(--faint)">进入 top-50 当天，此图自动点亮。</div>',
   s_total:'日总量', s_7dma:'7DMA', s_mw:'累计 IT Power (MW)', s_h100e:'累计算力 (k H100-eq)',
-  s_cl_sp:'Claude 系 $ Spend %', s_cl_tk:'Claude 系 Token %', s_fb_sp:'Fable 5 $ Spend %', s_fb_tk:'Fable 5 Token %',
+  s_lab_anthropic:'Anthropic', s_lab_openai:'OpenAI', s_lab_google:'Gemini', s_lab_zai:'Z.ai',
   th:['Site','Owner','User','MW','k H100e'], stale:'数据至 ',
 },
 en: {
@@ -222,7 +222,7 @@ en: {
   vg_week_tok:'Vercel Gateway — Latest-week Token share Top 10 (arithmetic mean)',
   vg_week_spend:'Vercel Gateway — Latest-week $ Spend share Top 10 (arithmetic mean)',
   vg_week_sub:p=>`Claude family ${p}%`,
-  vgtrend:'Vercel Gateway — share history (daily, Token vs $ Spend)',
+  vgtrend:'Vercel Gateway — Daily Lab $ Spend share',
   kol:'KOL / Podcasts — takes on AI apps & monetization',
   sdk:'SDK downloads 7DMA (M/day) — developer adoption proxy',
   sites:'Top Sites by IT Power — Epoch',
@@ -234,11 +234,11 @@ en: {
   dc_comp:'Compute stock', dc_comp_sub:'≈ ~27% of global delivered AI compute',
   dc_chart:'Cumulative installed base (covered sample, forward-filled)',
   news:'Construction News ', news_meta:(n,d)=>`(${n} items · updated ${d})`,
-  method:'The ARR mainline is this site\'s <b>composite estimate</b> (multi-channel triangulation): log-linear interpolation across monthly estimates for history, and a calibrated growth-path extrapolation beyond the latest point (shaded band = model uncertainty, widening with horizon). ◆ markers are publicly reported run-rate checkpoints. The extrapolation is a <b>live calculation</b>, not company guidance; all figures are run-rates (monthly ×12), unaudited, for research reference only. Token counts use each provider\'s own tokenizer; OpenRouter / Vercel Gateway are third-party routing windows — good for marginal change and share inflections, not market totals. Vercel\'s public leaderboard reports daily Token and $ Spend shares for the page\'s published Top 10 model series, but not daily absolute totals; “latest week” is the arithmetic mean of daily shares across the latest 7 common data dates, without absolute-volume weighting. Models outside that Top 10 series are included in Other.',
+  method:'The ARR mainline is this site\'s <b>composite estimate</b> (multi-channel triangulation): log-linear interpolation across monthly estimates for history, and a calibrated growth-path extrapolation beyond the latest point (shaded band = model uncertainty, widening with horizon). ◆ markers are publicly reported run-rate checkpoints. The extrapolation is a <b>live calculation</b>, not company guidance; all figures are run-rates (monthly ×12), unaudited, for research reference only. Token counts use each provider\'s own tokenizer; OpenRouter / Vercel Gateway are third-party routing windows — good for marginal change and share inflections, not market totals. Vercel data comes from the official Leaderboard Export API. The model leaderboard reports daily Token and $ Spend shares for its Top 10, not absolute totals; models outside the list are included in Other. “Latest week” is the arithmetic mean across the latest 7 common data dates, without absolute-volume weighting. Lab trends use official daily Spend shares; Google Lab is labeled Gemini in the chart.',
   fine:'For research reference only — not investment advice.',
   fable_empty:'<div><b style="color:var(--fable)">Fable 5 is not in OpenRouter\'s daily top-50 (by tokens)</b></div><div>This dataset only includes the daily top-50 models plus an aggregated long tail. At $10/$50 pricing, Fable 5 is a low-token / high-ticket model — watch <b>Vercel Gateway $ Spend share</b> for the monetization signal.</div><div style="color:var(--faint)">The day it enters the top-50, this chart lights up automatically.</div>',
   s_total:'Daily total', s_7dma:'7DMA', s_mw:'Cumulative IT Power (MW)', s_h100e:'Cumulative compute (k H100-eq)',
-  s_cl_sp:'Claude family $ spend %', s_cl_tk:'Claude family token %', s_fb_sp:'Fable 5 $ spend %', s_fb_tk:'Fable 5 token %',
+  s_lab_anthropic:'Anthropic', s_lab_openai:'OpenAI', s_lab_google:'Gemini', s_lab_zai:'Z.ai',
   th:['Site','Owner','User','MW','k H100e'], stale:'data thru ',
 }};
 const tr = k => T[LANG][k] ?? T.zh[k] ?? k;
@@ -484,34 +484,29 @@ function initVercel(vg){
     $('vgWeekRow').style.display = 'none';
   }
 
-  const h = vg.history;
-  if(h && h.cost && h.cost.days){
-    const days = h.cost.days;
-    const S = (metric, name) => ((h[metric]||{}).series||{})[name] || [];
+  const labSpend = ((vg.lab_history||{}).spend)||{};
+  if(labSpend.days && labSpend.days.length){
+    const days = labSpend.days;
+    const S = name => (labSpend.series||{})[name] || [];
+    const compactLabChart = window.innerWidth <= 600;
+    const labLegend = compactLabChart
+      ? {...LEG, itemWidth:12, itemHeight:8, itemGap:6, textStyle:{color:'#7a6455',fontSize:9}}
+      : LEG;
     mkChart('vgTrendChart').setOption({
-      tooltip: {...TIP, valueFormatter:v=>v+'%'},
-      legend:LEG,
-      grid:{left:40,right:14,top:30,bottom:26},
+      tooltip: {...TIP, trigger:'axis', valueFormatter:v=>v+'%'},
+      legend:labLegend,
+      grid:compactLabChart ? {left:34,right:12,top:34,bottom:28} : {left:40,right:14,top:30,bottom:26},
       xAxis:{type:'category', data:days.map(d=>d.slice(5)), ...AX},
       yAxis:{type:'value', ...AX, name:'%', nameTextStyle:{color:'#a08d7b'}},
       series:[
-        {name:tr('s_cl_sp'), type:'line', data:S('cost','Claude (family)'), showSymbol:false, lineStyle:{width:2.5,color:'#d97757'}, itemStyle:{color:'#d97757'}},
-        {name:tr('s_cl_tk'), type:'line', data:S('tokens','Claude (family)'), showSymbol:false, lineStyle:{width:2,color:'#5b86ea'}, itemStyle:{color:'#5b86ea'}},
-        {name:tr('s_fb_sp'), type:'line', data:S('cost','Claude Fable 5'), showSymbol:false, lineStyle:{width:2,type:'dashed',color:'#f0762b'}, itemStyle:{color:'#f0762b'}},
-        {name:tr('s_fb_tk'), type:'line', data:S('tokens','Claude Fable 5'), showSymbol:false, lineStyle:{width:1.5,type:'dotted',color:'#3fb6c4'}, itemStyle:{color:'#3fb6c4'}}
+        {name:tr('s_lab_anthropic'), type:'line', data:S('Anthropic'), showSymbol:false, lineStyle:{width:2.5,color:'#d97757'}, itemStyle:{color:'#d97757'}},
+        {name:tr('s_lab_openai'), type:'line', data:S('OpenAI'), showSymbol:false, lineStyle:{width:2.2,color:'#1f9e83'}, itemStyle:{color:'#1f9e83'}},
+        {name:tr('s_lab_google'), type:'line', data:S('Gemini'), showSymbol:false, lineStyle:{width:2.2,color:'#5b86ea'}, itemStyle:{color:'#5b86ea'}},
+        {name:tr('s_lab_zai'), type:'line', data:S('Z.ai'), showSymbol:false, lineStyle:{width:2.2,color:'#8e7cc3'}, itemStyle:{color:'#8e7cc3'}}
       ]
     });
   } else {
-    const dates = snaps.map(s=>s.date);
-    mkChart('vgTrendChart').setOption({
-      tooltip: {...TIP, valueFormatter:v=>v+'%'}, legend:LEG,
-      grid:{left:40,right:14,top:30,bottom:26},
-      xAxis:{type:'category', data:dates, ...AX}, yAxis:{type:'value', ...AX},
-      series:[
-        {name:tr('s_cl_sp'), type:'line', data:snaps.map(s=>claudeSum(s.spend_share)), showSymbol:true, lineStyle:{width:2.5,color:'#d97757'}, itemStyle:{color:'#d97757'}},
-        {name:tr('s_cl_tk'), type:'line', data:snaps.map(s=>claudeSum(s.token_share)), showSymbol:true, lineStyle:{width:2,color:'#5b86ea'}, itemStyle:{color:'#5b86ea'}}
-      ]
-    });
+    $('vgTrendChart').innerHTML = '';
   }
 }
 

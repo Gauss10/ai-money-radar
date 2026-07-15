@@ -38,7 +38,7 @@ GitHub Actions 位于 `.github/workflows/daily.yml`：
 | 模块 | 输出文件 | 更新方式 |
 |---|---|---|
 | OpenRouter 模型用量 | `site/data/openrouter_daily.json` | 自动；需要 API key |
-| Vercel AI Gateway 份额 | `site/data/vercel_gateway.json` | 自动；公开页面数据 |
+| Vercel AI Gateway 份额 | `site/data/vercel_gateway.json` | 自动；官方公开 Export API，无需 key |
 | GPU 租赁价格 | `site/data/gpu_prices.json` | 自动；Ornn 公开 API |
 | SDK 下载量 | `site/data/sdk_downloads.json` | 自动；npm / PyPI |
 | KOL / X / 播客观点 | `site/data/curated_signals.json` | 自动；按 URL、事件和展示摘要去重，从最近 3 天补足 |
@@ -65,6 +65,7 @@ ARR：
 
 - ARR 是综合估算，不是公司披露收入，也不是审计数字。
 - OpenRouter / Vercel 反映第三方路由渠道窗口，适合观察边际变化，不代表全市场总量。
+- Vercel 模型榜保持每日 Top 10、Other 和最近 7 个数据日算术平均口径；模型历史、每日快照及 Lab 趋势均按官方 API 当前覆盖窗口全量重建，不混用旧页面抓取值。
 - 数据中心 `as_of` 对应当前 CSV 版本，不代表上游每天更新。
 - `reports`、`news.pinned`、`news.blocklist` 当前不在 dashboard 展示。
 - X 抓取依赖 GitHub Secret：`TWITTER_COOKIES`；cookie 不可用时保留上次有效 `feed-x.json`，不写空缓存。
