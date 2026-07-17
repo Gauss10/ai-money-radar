@@ -42,6 +42,8 @@ GitHub Actions 位于 `.github/workflows/daily.yml`：
 | GPU 租赁价格 | `site/data/gpu_prices.json` | 自动；Ornn 公开 API |
 | SDK 下载量 | `site/data/sdk_downloads.json` | 自动；npm / PyPI |
 | KOL / X / 播客观点 | `site/data/curated_signals.json` | 自动；按 URL、事件和展示摘要去重，从最近 3 天补足 |
+| KOL 全量归档（弹窗「更多」） | `site/data/signals_archive.json` | 自动；只增不减，按 URL 合并，含 feed 原文摘录 `detail` |
+| KOL 日报深读（弹窗增强层） | `site/data/signal_details.json` | 本地；`scripts/enrich_signals_from_digests.py` 从 `../ai-signal/digests` 按 URL 匹配回填；云端不写此文件 |
 | 数据中心新闻 | `site/data/dc_news.json` | 自动；Google News RSS；按事件去重；中英界面分别展示 `title_zh` / `title_en` |
 | ARR 估算 | `site/data/arr_checkpoints.json` | 事件驱动；来自 `arr-model/arr_source.json` |
 | AI 数据中心容量 | `site/data/datacenters.json` | 半自动；来自 `data_centers/*.csv` |
@@ -79,6 +81,10 @@ OpenRouter：
 
 KOL / X / 播客：
 
+- 卡片默认 4 条一句话；点卡片右上「更多 ▸」弹窗查看全量归档（每条含原文摘录，
+  有日报深读的条目标 📓 并优先显示深读；深读只有中文，卡片一句话保持中英双语）。
+- 深读回填：本地跑 `python scripts/enrich_signals_from_digests.py`（建议每周一次，
+  或让 Claude 顺手跑）；`signal_details.json` 里手动加 `"lock": true` 可防止某条被日报覆盖。
 - 相同 URL 只保留一条。
 - 同一人物、同一天、文本高度相似的内容按同一事件处理。
 - 展示区按 URL、事件和观点摘要去重；当最新一天不足 4 条时，从 feed 最新日期起的最近 3 天候选与 archive 中补足。

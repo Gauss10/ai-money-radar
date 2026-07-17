@@ -21,6 +21,10 @@ import html
 import json
 import os
 import re
+import sys
+
+if hasattr(sys.stdout, "reconfigure"):
+    sys.stdout.reconfigure(errors="replace")  # Windows GBK 控制台遇到 emoji 不崩
 
 from common import ROOT, load_json, save_json
 
@@ -127,6 +131,14 @@ def first_sentence(text, max_len=120):
     if len(out) > max_len:
         out = out[:max_len].rstrip() + "..."
     return out
+
+
+def excerpt(text, max_len=600):
+    """原文摘录（弹窗展开层用；比 first_sentence 保留更多上下文）"""
+    text = clean_text(text)
+    if len(text) > max_len:
+        text = text[:max_len].rstrip() + "..."
+    return text
 
 
 def has_keyword(text, keyword):
@@ -250,6 +262,7 @@ def make_x_candidates(feed):
                 "take": take,
                 "take_en": take_en,
                 "url": tweet.get("url") or "",
+                "detail": excerpt(text),
                 "_score": score + min(int(tweet.get("like_count") or 0) / 50, 3),
                 "_source": "x",
                 "_raw": first_sentence(text),
@@ -279,6 +292,7 @@ def make_podcast_candidates(feed):
             "take": take,
             "take_en": take_en,
             "url": ep.get("link") or "",
+            "detail": excerpt(desc or title),
             "_score": score + (2 if ep.get("transcript_available") else 0),
             "_source": "podcast",
             "_raw": first_sentence(desc or title),
@@ -288,7 +302,28 @@ def make_podcast_candidates(feed):
 
 
 def public_entry(entry):
-    return {k: entry.get(k, "") for k in ("date", "who", "via", "via_en", "take", "take_en", "url")}
+    return {k: entry.get(k, "") for k in ("date", "who", "via", "via_en", "take", "take_en", "url", "detail")}
+
+
+def update_signals_archive(entries):
+    """
+    site/data/signals_archive.json: 只增不减的全量观点归档（弹窗「更多」层数据源）。
+    按 URL 合并；detail 取更长者，其余字段以新条目为准。
+    人工深读增强在 site/data/signal_details.json（本地维护，本脚本不碰）。
+    """
+    cur = load_json("signals_archive.json") or {}
+    merged = {item.get("url") or f"{item.get('date')}|{item.get('who')}": item
+              for item in cur.get("items", [])}
+    for entry in entries:
+        pub = public_entry(entry)
+        key = pub.get("url") or f"{pub.get('date')}|{pub.get('who')}"
+        old = merged.get(key)
+        if old and len(old.get("detail") or "") > len(pub.get("detail") or ""):
+            pub["detail"] = old["detail"]
+        merged[key] = pub
+    items = sorted(merged.values(), key=lambda x: (x.get("date", ""), x.get("who", "")), reverse=True)
+    save_json("signals_archive.json", {"as_of": str(datetime.date.today()), "items": items})
+    return len(items)
 
 
 SEMANTIC_STOPWORDS = {
@@ -410,16 +445,17 @@ def main():
         "note": (
             "自动 curated 的 KOL / podcast 观点（源：本仓库 Actions 生成的 X + 播客 feed；"
             "规则打分生成）。从 feed 与历史候选的最近 3 天内选择，展示摘要去重；"
-            "换下条目进入 kol_archive。"
+            "换下条目进入 kol_archive；全量历史在 signals_archive.json。"
         ),
         "kol": [public_entry(item) for item in display],
         "reports": cur.get("reports") or [],
         "kol_archive": [public_entry(item) for item in archive],
     }
     save_json("curated_signals.json", out)
+    total = update_signals_archive(display + archive + candidates)
     display_dates = [item["date"] for item in out["kol"]]
     window_text = f"{min(display_dates)}..{max(display_dates)}" if display_dates else "n/a"
-    print(f"  candidates: {len(candidates)}, display_window: {window_text}, display: {len(out['kol'])}, archive: {len(out['kol_archive'])}")
+    print(f"  candidates: {len(candidates)}, display_window: {window_text}, display: {len(out['kol'])}, archive: {len(out['kol_archive'])}, full_archive: {total}")
     for item in out["kol"]:
         print(f"  - {item['date']} {item['who']} | {item['via']}")
 
