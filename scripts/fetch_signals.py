@@ -321,11 +321,31 @@ def archive_same_event(left, right, day_window=2):
     return same_event(probe, other)
 
 
-def translate_details(items, limit=20):
+TIMELINE_RE = re.compile(r"^\s*(?:时间轴|章节|timestamps?)\s*[:：]?\s*$", re.I)
+TIMECODE_RE = re.compile(r"^\s*\d{1,2}:\d{2}(?::\d{2})?\s+")
+
+
+def clean_generated_summary(value):
+    """清理模型偶尔保留的标题、时间轴和推广信息。"""
+    lines = []
+    for line in (value or "").splitlines():
+        text = line.strip()
+        if not text or TIMELINE_RE.match(text) or TIMECODE_RE.match(text):
+            continue
+        if re.search(r"(?:订阅|subscribe).*(?:频道|channel|更多|more)", text, re.I):
+            continue
+        lines.append(text)
+    summary = " ".join(lines)
+    summary = re.sub(r"^(?:摘要|要点|核心要点)\s*[:：]\s*", "", summary)
+    summary = re.sub(r"\s*#[A-Za-z0-9_\u4e00-\u9fff-]+", "", summary)
+    return re.sub(r"\s+", " ", summary).strip()
+
+
+def summarize_details(items, limit=20, force=False):
     """
-    用 OpenRouter 免费模型把英文摘录翻译成中文（detail_zh）。
-    免费账号限 50 req/day，limit=20 留足余量；无 key / 请求失败时静默跳过
-    （前端回退显示英文原文，次日自动重试）。
+    用 OpenRouter 模型把 feed 摘录提炼为中文要点（detail_zh），而非逐句翻译。
+    日常只处理新增条目；--refresh-summaries 可强制重做现有摘要。
+    无 key / 请求失败时静默跳过，前端回退到中文观点摘要。
     """
     key = os.environ.get("OPENROUTER_API_KEY")
     if not key:
@@ -337,16 +357,26 @@ def translate_details(items, limit=20):
     if not key:
         return 0
     import urllib.request
-    todo = [it for it in items if (it.get("detail") or "").strip() and not (it.get("detail_zh") or "").strip()]
-    # 已是中文的摘录不用翻
-    todo = [it for it in todo if not re.search(r"[一-鿿]{6,}", it["detail"])]
+    todo = [
+        it for it in items
+        if (it.get("detail") or "").strip()
+        and (force or not (it.get("detail_zh") or "").strip())
+    ]
     done = 0
     for it in todo[:limit]:
-        prompt = ("把下面这段来自 X/播客的英文内容翻译成简洁通顺的中文，保留公司/产品/人名等专有名词原文，"
-                  "只输出译文，不要任何解释：\n\n" + it["detail"])
-        for model in ("nvidia/nemotron-3-ultra-550b-a55b-20260604:free",
-                      "poolside/laguna-m.1-20260312:free",
-                      "deepseek/deepseek-v4-flash"):
+        prompt = (
+            "你是 AI 投资日报编辑。根据下面来自 X 或播客 feed 的原始内容，直接提炼中文要点，不要逐句翻译。\n"
+            "要求：\n"
+            "1. 用 2-3 句、约 100-220 个中文字概括最重要的事实、数字和观点；\n"
+            "2. 保留必要的公司、产品、人名和关键数字，但不复述人物履历；\n"
+            "3. 删除欢迎语、宣传语、赞助、订阅、hashtags、时间轴、章节和节目流程；\n"
+            "4. 不添加原文没有的事实，也不要输出标题、列表、'摘要'或解释。\n\n"
+            f"来源：{it.get('who', '')} · {it.get('via', '')}\n"
+            f"原始内容：{it['detail']}"
+        )
+        for model in ("deepseek/deepseek-v4-flash",
+                      "nvidia/nemotron-3-ultra-550b-a55b-20260604:free",
+                      "poolside/laguna-m.1-20260312:free"):
             try:
                 req = urllib.request.Request(
                     "https://openrouter.ai/api/v1/chat/completions",
@@ -355,7 +385,9 @@ def translate_details(items, limit=20):
                     headers={"Authorization": f"Bearer {key}", "Content-Type": "application/json"})
                 with urllib.request.urlopen(req, timeout=60) as r:
                     resp = json.loads(r.read())
-                text = (resp.get("choices") or [{}])[0].get("message", {}).get("content", "").strip()
+                text = clean_generated_summary(
+                    (resp.get("choices") or [{}])[0].get("message", {}).get("content", "")
+                )
                 if text:
                     it["detail_zh"] = text
                     done += 1
@@ -369,7 +401,7 @@ def update_signals_archive(entries):
     """
     site/data/signals_archive.json: 只增不减的全量观点归档（弹窗「更多」层数据源）。
     按 URL 合并（detail/detail_zh 保留更长者）→ 语义去重（同人近日相似内容并条）
-    → 缺失中文摘录的条目自动翻译。
+    → 缺失中文要点的条目由模型自动提炼。
     人工深读增强在 site/data/signal_details.json（本地维护，本脚本不碰）。
     """
     cur = load_json("signals_archive.json") or {}
@@ -389,10 +421,10 @@ def update_signals_archive(entries):
     for item in sorted(merged.values(), key=lambda x: -len(x.get("detail") or "")):
         if not any(archive_same_event(item, prior) for prior in kept):
             kept.append(item)
-    translated = translate_details(kept)
+    summarized = summarize_details(kept)
     items = sorted(kept, key=lambda x: (x.get("date", ""), x.get("who", "")), reverse=True)
     save_json("signals_archive.json", {"as_of": str(datetime.date.today()), "items": items})
-    return len(items), translated
+    return len(items), summarized
 
 
 SEMANTIC_STOPWORDS = {
@@ -521,14 +553,28 @@ def main():
         "kol_archive": [public_entry(item) for item in archive],
     }
     save_json("curated_signals.json", out)
-    total, translated = update_signals_archive(display + archive + candidates)
+    total, summarized = update_signals_archive(display + archive + candidates)
     display_dates = [item["date"] for item in out["kol"]]
     window_text = f"{min(display_dates)}..{max(display_dates)}" if display_dates else "n/a"
     print(f"  candidates: {len(candidates)}, display_window: {window_text}, display: {len(out['kol'])}, "
-          f"archive: {len(out['kol_archive'])}, full_archive: {total}, translated: {translated}")
+          f"archive: {len(out['kol_archive'])}, full_archive: {total}, summarized: {summarized}")
     for item in out["kol"]:
         print(f"  - {item['date']} {item['who']} | {item['via']}")
 
 
+def refresh_archive_summaries():
+    archive = load_json("signals_archive.json") or {}
+    items = archive.get("items", [])
+    done = summarize_details(items, limit=50, force=True)
+    save_json("signals_archive.json", {
+        "as_of": archive.get("as_of") or str(datetime.date.today()),
+        "items": items,
+    })
+    print(f"  refreshed summaries: {done}/{sum(bool(item.get('detail')) for item in items)}")
+
+
 if __name__ == "__main__":
-    main()
+    if "--refresh-summaries" in sys.argv:
+        refresh_archive_summaries()
+    else:
+        main()

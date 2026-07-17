@@ -12,6 +12,18 @@ SPEC.loader.exec_module(fetch_signals)
 
 
 class FetchSignalsTests(unittest.TestCase):
+    def test_generated_summary_removes_timeline_and_promotion(self):
+        raw = """摘要：核心结论是模型训练成本下降。
+时间轴：
+00:00 节目介绍
+03:22 训练数据
+订阅频道获取更多内容。
+#AI #datacenter"""
+        self.assertEqual(
+            fetch_signals.clean_generated_summary(raw),
+            "核心结论是模型训练成本下降。",
+        )
+
     def test_compute_does_not_match_computer_science(self):
         score, rule = fetch_signals.classify("How Bitcoin rewired a classic computer science problem")
         self.assertFalse(rule and rule["name"] == "compute / GPU financing")

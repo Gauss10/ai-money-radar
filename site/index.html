@@ -549,7 +549,23 @@ function initSDK(sdk){
 }
 
 /* ───────── KOL ───────── */
-const normUrl = u => String(u || '').split('?')[0].replace(/\/$/, '');
+function normUrl(u){
+  const raw = String(u || '');
+  try{
+    const parsed = new URL(raw);
+    const host = parsed.hostname.replace(/^www\./, '');
+    if(host === 'youtube.com' && parsed.pathname === '/watch' && parsed.searchParams.get('v')){
+      return `${parsed.origin}${parsed.pathname}?v=${parsed.searchParams.get('v')}`;
+    }
+    return `${parsed.origin}${parsed.pathname}`.replace(/\/$/, '');
+  }catch(e){ return raw.split('?')[0].replace(/\/$/, ''); }
+}
+function cleanDeepDetail(value){
+  let text = String(value || '').trim();
+  const intro = /^(?:人物(?:简介)?|栏目(?:与作者|与嘉宾)?|嘉宾(?:简介)?|作者(?:简介)?|机构(?:简介)?|来源背景)[:：][^\n]*(?:\n+|$)/;
+  while(intro.test(text)) text = text.replace(intro, '').trim();
+  return text;
+}
 let KOL_ALL = null;   // 弹窗数据缓存（首次打开时加载）
 let KOL_BIOS = {};    // 人物/栏目背景（signal_details.json 的 bios）
 
@@ -565,7 +581,11 @@ async function openKolModal(sig){
       const k = normUrl(e.url) || `${e.date}|${e.who}`;
       const old = merged.get(k);
       if(!old) merged.set(k, {...e});
-      else if((e.detail || '').length > (old.detail || '').length) old.detail = e.detail;
+      else{
+        for(const field of ['detail', 'detail_zh']){
+          if((e[field] || '').length > (old[field] || '').length) old[field] = e[field];
+        }
+      }
     }
     KOL_ALL = [...merged.entries()]
       .map(([k, e]) => ({...e, _deep: deep[k]}))
@@ -576,8 +596,11 @@ async function openKolModal(sig){
     const take = LANG === 'en' ? (e.take_en || e.take) : e.take;
     const via = LANG === 'en' ? (e.via_en || e.via) : e.via;
     const bio = KOL_BIOS[e.who];
-    // 正文优先级：日报深读（中文分析）> 中文摘录 > 英文原文
-    const body = e._deep ? e._deep.detail : (e.detail_zh || e.detail || '');
+    // 正文优先级：日报深读（中文分析）> 模型提炼的中文要点 > 中文观点摘要
+    const originalDetail = e.detail || '';
+    const body = e._deep
+      ? cleanDeepDetail(e._deep.detail)
+      : (e.detail_zh || (/[一-鿿]{4}/.test(originalDetail) ? originalDetail : '') || e.take || originalDetail);
     const src = e._deep ? `<span class="src">📓 ${esc(e._deep.src || '')}</span>` : '';
     return `<p><span class="mono" style="color:var(--faint)">${esc(e.date)}</span> <b>${esc(e.who)}</b> <span style="color:var(--faint)">· ${esc(via)}</span> <a href="${safeUrl(e.url)}" target="_blank" rel="noopener noreferrer">↗</a>` +
       `${bio ? `<span class="bio">${esc(bio)}</span>` : ''}` +

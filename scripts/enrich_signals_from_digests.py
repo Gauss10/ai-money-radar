@@ -18,6 +18,7 @@ import glob
 import json
 import os
 import re
+from urllib.parse import parse_qsl, urlencode, urlsplit, urlunsplit
 
 from common import ROOT, load_json, save_json
 
@@ -28,22 +29,47 @@ DIGESTS_DIR = os.environ.get(
 
 URL_RE = re.compile(r"\((https?://[^)\s]+)\)")
 HEAD_RE = re.compile(r"^###\s+(.+)$", re.M)
+BOUNDARY_RE = re.compile(r"^#{2,3}\s+.+$", re.M)
 VERDICT_RE = re.compile(r"^\*\*(判断|洞察|启发)[:：]\*\*", re.M)
+INTRO_RE = re.compile(
+    r"^(?:人物(?:简介)?|栏目(?:与作者|与嘉宾)?|嘉宾(?:简介)?|作者(?:简介)?|机构(?:简介)?|来源背景)"
+    r"[:：][^\n]*(?:\n+|$)"
+)
 
 
 def normalize_url(url):
-    return (url or "").split("?")[0].rstrip("/")
+    raw = (url or "").strip()
+    try:
+        parts = urlsplit(raw)
+        host = (parts.hostname or "").removeprefix("www.")
+        if host == "youtube.com" and parts.path == "/watch":
+            video_id = dict(parse_qsl(parts.query)).get("v")
+            if video_id:
+                return urlunsplit((parts.scheme, parts.netloc, parts.path,
+                                   urlencode({"v": video_id}), ""))
+        return urlunsplit((parts.scheme, parts.netloc, parts.path.rstrip("/"), "", ""))
+    except ValueError:
+        return raw.split("?")[0].rstrip("/")
+
+
+def clean_deep_detail(value):
+    text = (value or "").strip()
+    while INTRO_RE.match(text):
+        text = INTRO_RE.sub("", text, count=1).strip()
+    return text
 
 
 def parse_digest(path):
     """返回 [{urls, title, body}]，body = 正文段落 + 判断段（去掉来源/链接行）"""
-    text = open(path, encoding="utf-8").read()
+    with open(path, encoding="utf-8") as digest_file:
+        text = digest_file.read()
     date = os.path.basename(path)[:10]
     sections = []
     heads = list(HEAD_RE.finditer(text))
     for i, m in enumerate(heads):
         start = m.end()
-        end = heads[i + 1].start() if i + 1 < len(heads) else len(text)
+        next_boundary = BOUNDARY_RE.search(text, m.end())
+        end = next_boundary.start() if next_boundary else len(text)
         block = text[start:end]
         urls = [normalize_url(u) for u in URL_RE.findall(block)]
         if not urls:
@@ -56,7 +82,7 @@ def parse_digest(path):
             # 去掉行内 markdown 链接，保留文字
             p = re.sub(r"\[([^\]]*)\]\([^)]*\)", r"\1", p)
             lines.append(p)
-        body = "\n".join(lines).strip()
+        body = clean_deep_detail("\n".join(lines))
         if not body:
             continue
         title = re.sub(r"^[\d.]+\s*", "", m.group(1)).strip()
@@ -85,7 +111,11 @@ def main():
     known = {normalize_url(e.get("url")) for e in entries}
 
     cur = load_json("signal_details.json") or {}
-    details = cur.get("details", {})
+    details = {
+        normalize_url(url): info
+        for url, info in cur.get("details", {}).items()
+        if normalize_url(url) in known
+    }
     bios = cur.get("bios", {})   # 人物/栏目背景库：只增，enrich 不覆盖已有条目
     matched = 0
     for url, info in by_url.items():
