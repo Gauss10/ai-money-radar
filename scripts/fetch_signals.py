@@ -22,6 +22,7 @@ import json
 import os
 import re
 import sys
+from urllib.parse import parse_qsl, urlencode, urlsplit, urlunsplit
 
 if hasattr(sys.stdout, "reconfigure"):
     sys.stdout.reconfigure(errors="replace")  # Windows GBK 控制台遇到 emoji 不崩
@@ -139,6 +140,11 @@ def excerpt(text, max_len=600):
     if len(text) > max_len:
         text = text[:max_len].rstrip() + "..."
     return text
+
+
+def deep_source(text, max_len=6000):
+    """供在线深读使用的较长材料；不会直接展示到页面。"""
+    return excerpt(text, max_len)
 
 
 def has_keyword(text, keyword):
@@ -267,6 +273,7 @@ def make_x_candidates(feed):
                 "_source": "x",
                 "_raw": first_sentence(text),
                 "_theme": theme,
+                "_deep_source": deep_source(text),
             })
     return out
 
@@ -278,6 +285,8 @@ def make_podcast_candidates(feed):
         desc = clean_text(ep.get("description"))
         channel = ep.get("channel") or "Podcast"
         source_text = f"{title} {desc}"
+        transcript = clean_text(ep.get("transcript"))
+        source_for_deep = transcript if len(transcript) >= 1200 else source_text
         score, rule = classify(source_text)
         if not rule or score < 7:
             continue
@@ -297,6 +306,7 @@ def make_podcast_candidates(feed):
             "_source": "podcast",
             "_raw": first_sentence(desc or title),
             "_theme": theme,
+            "_deep_source": deep_source(source_for_deep),
         })
     return out
 
@@ -323,6 +333,58 @@ def archive_same_event(left, right, day_window=2):
 
 TIMELINE_RE = re.compile(r"^\s*(?:时间轴|章节|timestamps?)\s*[:：]?\s*$", re.I)
 TIMECODE_RE = re.compile(r"^\s*\d{1,2}:\d{2}(?::\d{2})?\s+")
+INTRO_RE = re.compile(
+    r"^(?:人物(?:简介)?|栏目(?:与作者|与嘉宾)?|嘉宾(?:简介)?|作者(?:简介)?|机构(?:简介)?|来源背景)"
+    r"[:：][^\n]*(?:\n+|$)"
+)
+OPENROUTER_MODELS = (
+    "deepseek/deepseek-v4-flash",
+    "nvidia/nemotron-3-ultra-550b-a55b-20260604:free",
+    "poolside/laguna-m.1-20260312:free",
+)
+
+
+def normalize_signal_url(url):
+    raw = (url or "").strip()
+    try:
+        parts = urlsplit(raw)
+        host = (parts.hostname or "").removeprefix("www.")
+        if host == "youtube.com" and parts.path == "/watch":
+            video_id = dict(parse_qsl(parts.query)).get("v")
+            if video_id:
+                return urlunsplit((parts.scheme, parts.netloc, parts.path,
+                                   urlencode({"v": video_id}), ""))
+        return urlunsplit((parts.scheme, parts.netloc, parts.path.rstrip("/"), "", ""))
+    except ValueError:
+        return raw.split("?")[0].rstrip("/")
+
+
+def get_openrouter_key():
+    key = os.environ.get("OPENROUTER_API_KEY")
+    if key:
+        return key
+    try:
+        from common import env
+        return env("OPENROUTER_API_KEY")
+    except Exception:
+        return None
+
+
+def request_model(key, model, prompt, max_tokens):
+    import urllib.request
+
+    req = urllib.request.Request(
+        "https://openrouter.ai/api/v1/chat/completions",
+        data=json.dumps({
+            "model": model,
+            "max_tokens": max_tokens,
+            "messages": [{"role": "user", "content": prompt}],
+        }).encode(),
+        headers={"Authorization": f"Bearer {key}", "Content-Type": "application/json"},
+    )
+    with urllib.request.urlopen(req, timeout=60) as response:
+        payload = json.loads(response.read())
+    return (payload.get("choices") or [{}])[0].get("message", {}).get("content", "").strip()
 
 
 def clean_generated_summary(value):
@@ -347,16 +409,9 @@ def summarize_details(items, limit=20, force=False):
     日常只处理新增条目；--refresh-summaries 可强制重做现有摘要。
     无 key / 请求失败时静默跳过，前端回退到中文观点摘要。
     """
-    key = os.environ.get("OPENROUTER_API_KEY")
-    if not key:
-        try:
-            from common import env
-            key = env("OPENROUTER_API_KEY")
-        except Exception:
-            key = None
+    key = get_openrouter_key()
     if not key:
         return 0
-    import urllib.request
     todo = [
         it for it in items
         if (it.get("detail") or "").strip()
@@ -374,20 +429,9 @@ def summarize_details(items, limit=20, force=False):
             f"来源：{it.get('who', '')} · {it.get('via', '')}\n"
             f"原始内容：{it['detail']}"
         )
-        for model in ("deepseek/deepseek-v4-flash",
-                      "nvidia/nemotron-3-ultra-550b-a55b-20260604:free",
-                      "poolside/laguna-m.1-20260312:free"):
+        for model in OPENROUTER_MODELS:
             try:
-                req = urllib.request.Request(
-                    "https://openrouter.ai/api/v1/chat/completions",
-                    data=json.dumps({"model": model, "max_tokens": 900,
-                                     "messages": [{"role": "user", "content": prompt}]}).encode(),
-                    headers={"Authorization": f"Bearer {key}", "Content-Type": "application/json"})
-                with urllib.request.urlopen(req, timeout=60) as r:
-                    resp = json.loads(r.read())
-                text = clean_generated_summary(
-                    (resp.get("choices") or [{}])[0].get("message", {}).get("content", "")
-                )
+                text = clean_generated_summary(request_model(key, model, prompt, 900))
                 if text:
                     it["detail_zh"] = text
                     done += 1
@@ -397,12 +441,109 @@ def summarize_details(items, limit=20, force=False):
     return done
 
 
+def clean_deep_detail(value):
+    text = (value or "").strip()
+    while INTRO_RE.match(text):
+        text = INTRO_RE.sub("", text, count=1).strip()
+    lines = [
+        line.strip() for line in text.splitlines()
+        if line.strip() and not TIMELINE_RE.match(line) and not TIMECODE_RE.match(line)
+    ]
+    return "\n\n".join(lines)
+
+
+def parse_model_json(value):
+    text = (value or "").strip()
+    text = re.sub(r"^```(?:json)?\s*", "", text, flags=re.I)
+    text = re.sub(r"\s*```$", "", text)
+    start, end = text.find("{"), text.rfind("}")
+    if start < 0 or end <= start:
+        return None
+    try:
+        return json.loads(text[start:end + 1])
+    except json.JSONDecodeError:
+        return None
+
+
+def generate_deep_read(item, key):
+    source = (item.get("_deep_source") or item.get("detail") or "").strip()
+    if len(source) < 280:
+        return None
+    prompt = (
+        "你是 AI Money Radar 的研究编辑。请基于给定材料生成中文深读，风格接近简洁的专业投研日报。\n"
+        "只输出 JSON：{\"title\":\"...\",\"bio\":\"...\",\"detail\":\"...\"}\n"
+        "要求：\n"
+        "1. detail 先用 2 段提炼核心事实、数字和观点，再用‘判断：’开头写 1 段洞察；总计约 280-500 字。\n"
+        "2. 判断需解释商业或产业含义、信息局限和后续应跟踪的指标，不能只重复原文。\n"
+        "3. 不添加材料没有的事实；删除欢迎语、宣传、赞助、订阅、hashtags、时间轴和节目流程。\n"
+        "4. detail 不介绍人物或栏目；人物/栏目背景只写在 bio，控制在 35-80 字。\n"
+        "5. title 是 15-35 字的中文要点标题，不带序号。\n\n"
+        f"日期：{item.get('date', '')}\n"
+        f"作者或栏目：{item.get('who', '')}\n"
+        f"来源：{item.get('via', '')}\n"
+        f"已有中文要点：{item.get('detail_zh') or item.get('take') or ''}\n"
+        f"原始材料：{source}"
+    )
+    for model in OPENROUTER_MODELS:
+        try:
+            result = parse_model_json(request_model(key, model, prompt, 1800))
+            if not result:
+                continue
+            detail = clean_deep_detail(result.get("detail"))
+            bio = clean_text(result.get("bio"))
+            title = clean_text(result.get("title"))
+            if len(detail) < 120 or "判断" not in detail or not re.search(r"[一-鿿]{20,}", detail):
+                continue
+            return {"detail": detail, "bio": bio, "title": title}
+        except Exception:
+            continue
+    return None
+
+
+def update_online_deep_reads(entries, limit=4):
+    key = get_openrouter_key()
+    if not key:
+        return 0, 0
+    current = load_json("signal_details.json") or {}
+    details = current.get("details") or {}
+    bios = current.get("bios") or {}
+    deep_count = 0
+    bio_count = 0
+    for item in entries[:limit]:
+        url = normalize_signal_url(item.get("url"))
+        who = item.get("who") or ""
+        needs_detail = bool(url) and url not in details
+        needs_bio = bool(who) and who not in bios
+        if not needs_detail and not needs_bio:
+            continue
+        generated = generate_deep_read(item, key)
+        if not generated:
+            continue
+        if needs_detail:
+            details[url] = {
+                "detail": generated["detail"],
+                "title": generated["title"],
+                "src": f"AI Money Radar 在线深读 {item.get('date') or datetime.date.today()}",
+                "origin": "radar-online",
+            }
+            deep_count += 1
+        if needs_bio and generated["bio"]:
+            bios[who] = generated["bio"]
+            bio_count += 1
+    save_json("signal_details.json", {
+        "note": "AI Money Radar 云端深读层：GitHub Actions 按 URL 生成 details，并按 who 维护人物/栏目背景 bios。",
+        "bios": bios,
+        "details": details,
+    })
+    return deep_count, bio_count
+
+
 def update_signals_archive(entries):
     """
     site/data/signals_archive.json: 只增不减的全量观点归档（弹窗「更多」层数据源）。
     按 URL 合并（detail/detail_zh 保留更长者）→ 语义去重（同人近日相似内容并条）
     → 缺失中文要点的条目由模型自动提炼。
-    人工深读增强在 site/data/signal_details.json（本地维护，本脚本不碰）。
+    展示条目的深读与来源简介由本脚本在线生成到 signal_details.json。
     """
     cur = load_json("signals_archive.json") or {}
     merged = {item.get("url") or f"{item.get('date')}|{item.get('who')}": item
@@ -554,10 +695,21 @@ def main():
     }
     save_json("curated_signals.json", out)
     total, summarized = update_signals_archive(display + archive + candidates)
+    archive_data = load_json("signals_archive.json") or {}
+    archive_by_url = {item.get("url"): item for item in archive_data.get("items", [])}
+    deep_inputs = []
+    for item in display:
+        enriched = dict(item)
+        stored = archive_by_url.get(item.get("url")) or {}
+        enriched["detail"] = stored.get("detail") or item.get("detail") or ""
+        enriched["detail_zh"] = stored.get("detail_zh") or item.get("detail_zh") or ""
+        deep_inputs.append(enriched)
+    deep_reads, bios = update_online_deep_reads(deep_inputs)
     display_dates = [item["date"] for item in out["kol"]]
     window_text = f"{min(display_dates)}..{max(display_dates)}" if display_dates else "n/a"
     print(f"  candidates: {len(candidates)}, display_window: {window_text}, display: {len(out['kol'])}, "
-          f"archive: {len(out['kol_archive'])}, full_archive: {total}, summarized: {summarized}")
+          f"archive: {len(out['kol_archive'])}, full_archive: {total}, summarized: {summarized}, "
+          f"deep_reads: {deep_reads}, bios: {bios}")
     for item in out["kol"]:
         print(f"  - {item['date']} {item['who']} | {item['via']}")
 

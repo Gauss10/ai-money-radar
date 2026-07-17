@@ -204,7 +204,7 @@ zh: {
   vg_week_sub:p=>`Claude 系 ${p}%`,
   vgtrend:'Vercel Gateway — Lab $ Spend（逐日份额）',
   kol:'KOL / Podcast — AI 应用与变现观点',
-  kol_more:'更多 ▸', kol_all:n=>`KOL / Podcast 观点归档 · ${n} 条（📓 = 有日报深读）`,
+  kol_more:'更多 ▸', kol_all:n=>`KOL / Podcast 观点归档 · ${n} 条（📓 = 有深读分析）`,
   sdk:'SDK 下载量 7DMA（M/day）— developer adoption proxy',
   sites:'Top Sites by IT Power — Epoch',
   sec_gpu:'③ GPU 租赁价格 — Ornn OCPI', tag_gpu:'$/GPU-hr · 日频',
@@ -242,7 +242,7 @@ en: {
   vg_week_sub:p=>`Claude family ${p}%`,
   vgtrend:'Vercel Gateway — Daily Lab $ Spend share',
   kol:'KOL / Podcasts — takes on AI apps & monetization',
-  kol_more:'More ▸', kol_all:n=>`KOL / Podcast archive · ${n} items (📓 = digest deep-read)`,
+  kol_more:'More ▸', kol_all:n=>`KOL / Podcast archive · ${n} items (📓 = deep analysis)`,
   sdk:'SDK downloads 7DMA (M/day) — developer adoption proxy',
   sites:'Top Sites by IT Power — Epoch',
   sec_gpu:'③ GPU Rental Prices — Ornn OCPI', tag_gpu:'$ per GPU-hr · daily',
@@ -596,7 +596,7 @@ async function openKolModal(sig){
     const take = LANG === 'en' ? (e.take_en || e.take) : e.take;
     const via = LANG === 'en' ? (e.via_en || e.via) : e.via;
     const bio = KOL_BIOS[e.who];
-    // 正文优先级：日报深读（中文分析）> 模型提炼的中文要点 > 中文观点摘要
+    // 正文优先级：Radar 在线深读 > 模型提炼的中文要点 > 中文观点摘要
     const originalDetail = e.detail || '';
     const body = e._deep
       ? cleanDeepDetail(e._deep.detail)

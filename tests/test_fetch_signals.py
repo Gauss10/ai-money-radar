@@ -12,6 +12,39 @@ SPEC.loader.exec_module(fetch_signals)
 
 
 class FetchSignalsTests(unittest.TestCase):
+    def test_youtube_video_id_is_preserved_for_deep_reads(self):
+        url = "https://www.youtube.com/watch?v=abc123&utm_source=test"
+        self.assertEqual(
+            fetch_signals.normalize_signal_url(url),
+            "https://www.youtube.com/watch?v=abc123",
+        )
+
+    def test_tracking_query_is_removed_from_regular_url(self):
+        url = "https://x.com/example/status/1?s=20&utm_source=test"
+        self.assertEqual(
+            fetch_signals.normalize_signal_url(url),
+            "https://x.com/example/status/1",
+        )
+
+    def test_deep_read_removes_source_intro_and_timeline(self):
+        value = """栏目：重复的栏目介绍。
+核心事实第一段。
+00:00 节目介绍
+判断：需要继续跟踪真实采用。"""
+        cleaned = fetch_signals.clean_deep_detail(value)
+        self.assertNotIn("栏目：", cleaned)
+        self.assertNotIn("00:00", cleaned)
+        self.assertIn("核心事实第一段。", cleaned)
+        self.assertIn("判断：", cleaned)
+
+    def test_model_json_accepts_fenced_output(self):
+        value = '```json\n{"title":"标题","bio":"简介","detail":"判断：内容"}\n```'
+        self.assertEqual(fetch_signals.parse_model_json(value)["title"], "标题")
+
+    def test_thin_source_does_not_generate_a_deep_read(self):
+        item = {"detail": "只有一句简短宣传。", "take": "通用判断"}
+        self.assertIsNone(fetch_signals.generate_deep_read(item, "unused-key"))
+
     def test_generated_summary_removes_timeline_and_promotion(self):
         raw = """摘要：核心结论是模型训练成本下降。
 时间轴：
