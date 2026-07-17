@@ -302,13 +302,74 @@ def make_podcast_candidates(feed):
 
 
 def public_entry(entry):
-    return {k: entry.get(k, "") for k in ("date", "who", "via", "via_en", "take", "take_en", "url", "detail")}
+    return {k: entry.get(k, "") for k in
+            ("date", "who", "via", "via_en", "take", "take_en", "url", "detail", "detail_zh")}
+
+
+def archive_same_event(left, right, day_window=2):
+    """归档层语义去重：同一人、日期相近、摘录高度相似 → 同一事件"""
+    if left.get("who") != right.get("who"):
+        return False
+    ld, rd = parse_day(left.get("date")), parse_day(right.get("date"))
+    if ld == datetime.date.min or rd == datetime.date.min or abs((ld - rd).days) > day_window:
+        return False
+    lt, rt = clean_text(left.get("detail") or ""), clean_text(right.get("detail") or "")
+    if not lt or not rt:
+        return False
+    probe = {"date": left.get("date"), "who": left.get("who"), "_raw": lt[:200]}
+    other = {"date": left.get("date"), "who": right.get("who"), "_raw": rt[:200]}
+    return same_event(probe, other)
+
+
+def translate_details(items, limit=20):
+    """
+    用 OpenRouter 免费模型把英文摘录翻译成中文（detail_zh）。
+    免费账号限 50 req/day，limit=20 留足余量；无 key / 请求失败时静默跳过
+    （前端回退显示英文原文，次日自动重试）。
+    """
+    key = os.environ.get("OPENROUTER_API_KEY")
+    if not key:
+        try:
+            from common import env
+            key = env("OPENROUTER_API_KEY")
+        except Exception:
+            key = None
+    if not key:
+        return 0
+    import urllib.request
+    todo = [it for it in items if (it.get("detail") or "").strip() and not (it.get("detail_zh") or "").strip()]
+    # 已是中文的摘录不用翻
+    todo = [it for it in todo if not re.search(r"[一-鿿]{6,}", it["detail"])]
+    done = 0
+    for it in todo[:limit]:
+        prompt = ("把下面这段来自 X/播客的英文内容翻译成简洁通顺的中文，保留公司/产品/人名等专有名词原文，"
+                  "只输出译文，不要任何解释：\n\n" + it["detail"])
+        for model in ("nvidia/nemotron-3-ultra-550b-a55b-20260604:free",
+                      "poolside/laguna-m.1-20260312:free",
+                      "deepseek/deepseek-v4-flash"):
+            try:
+                req = urllib.request.Request(
+                    "https://openrouter.ai/api/v1/chat/completions",
+                    data=json.dumps({"model": model, "max_tokens": 900,
+                                     "messages": [{"role": "user", "content": prompt}]}).encode(),
+                    headers={"Authorization": f"Bearer {key}", "Content-Type": "application/json"})
+                with urllib.request.urlopen(req, timeout=60) as r:
+                    resp = json.loads(r.read())
+                text = (resp.get("choices") or [{}])[0].get("message", {}).get("content", "").strip()
+                if text:
+                    it["detail_zh"] = text
+                    done += 1
+                    break
+            except Exception:
+                continue
+    return done
 
 
 def update_signals_archive(entries):
     """
     site/data/signals_archive.json: 只增不减的全量观点归档（弹窗「更多」层数据源）。
-    按 URL 合并；detail 取更长者，其余字段以新条目为准。
+    按 URL 合并（detail/detail_zh 保留更长者）→ 语义去重（同人近日相似内容并条）
+    → 缺失中文摘录的条目自动翻译。
     人工深读增强在 site/data/signal_details.json（本地维护，本脚本不碰）。
     """
     cur = load_json("signals_archive.json") or {}
@@ -318,12 +379,20 @@ def update_signals_archive(entries):
         pub = public_entry(entry)
         key = pub.get("url") or f"{pub.get('date')}|{pub.get('who')}"
         old = merged.get(key)
-        if old and len(old.get("detail") or "") > len(pub.get("detail") or ""):
-            pub["detail"] = old["detail"]
+        if old:
+            for f in ("detail", "detail_zh"):
+                if len(old.get(f) or "") > len(pub.get(f) or ""):
+                    pub[f] = old[f]
         merged[key] = pub
-    items = sorted(merged.values(), key=lambda x: (x.get("date", ""), x.get("who", "")), reverse=True)
+    # 语义级去重：保留摘录更长（信息更多）的那条
+    kept = []
+    for item in sorted(merged.values(), key=lambda x: -len(x.get("detail") or "")):
+        if not any(archive_same_event(item, prior) for prior in kept):
+            kept.append(item)
+    translated = translate_details(kept)
+    items = sorted(kept, key=lambda x: (x.get("date", ""), x.get("who", "")), reverse=True)
     save_json("signals_archive.json", {"as_of": str(datetime.date.today()), "items": items})
-    return len(items)
+    return len(items), translated
 
 
 SEMANTIC_STOPWORDS = {
@@ -452,10 +521,11 @@ def main():
         "kol_archive": [public_entry(item) for item in archive],
     }
     save_json("curated_signals.json", out)
-    total = update_signals_archive(display + archive + candidates)
+    total, translated = update_signals_archive(display + archive + candidates)
     display_dates = [item["date"] for item in out["kol"]]
     window_text = f"{min(display_dates)}..{max(display_dates)}" if display_dates else "n/a"
-    print(f"  candidates: {len(candidates)}, display_window: {window_text}, display: {len(out['kol'])}, archive: {len(out['kol_archive'])}, full_archive: {total}")
+    print(f"  candidates: {len(candidates)}, display_window: {window_text}, display: {len(out['kol'])}, "
+          f"archive: {len(out['kol_archive'])}, full_archive: {total}, translated: {translated}")
     for item in out["kol"]:
         print(f"  - {item['date']} {item['who']} | {item['via']}")
 

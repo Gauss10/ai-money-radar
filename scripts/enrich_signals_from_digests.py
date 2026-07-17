@@ -86,6 +86,7 @@ def main():
 
     cur = load_json("signal_details.json") or {}
     details = cur.get("details", {})
+    bios = cur.get("bios", {})   # 人物/栏目背景库：只增，enrich 不覆盖已有条目
     matched = 0
     for url, info in by_url.items():
         if url not in known:
@@ -95,11 +96,16 @@ def main():
             continue
         details[url] = info
         matched += 1
+    missing_bios = sorted({e.get("who") for e in entries if e.get("who")} - set(bios))
     save_json("signal_details.json", {
-        "note": "本地增强层：AI Signal 日报深读，按 URL 匹配观点条目；云端不写此文件。lock:true 可防覆盖。",
+        "note": "本地增强层：AI Signal 日报深读（details，按 URL 键控）+ 人物/栏目背景（bios，按 who 键控）；"
+                "云端不写此文件。details 条目加 lock:true 可防覆盖。",
+        "bios": bios,
         "details": details,
     })
     print(f"  digests: {len(files)}, sections with url: {len(by_url)}, matched -> details: {matched}, total details: {len(details)}")
+    if missing_bios:
+        print(f"  [提醒] 以下来源还没有背景介绍（bios）: {', '.join(missing_bios)}")
 
 
 if __name__ == "__main__":
