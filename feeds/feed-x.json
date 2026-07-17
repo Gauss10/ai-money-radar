@@ -14,22 +14,49 @@
       "tier": "analyst",
       "tweets": [
         {
-          "id": "2077475285205958771",
-          "text": "someone just told me about this take* on CUA\n\nthis is one of those gell mann moments for me lol. i've been watching computer use since World of Bits (Shi, fan, karpathy, hernandez & liang 2017). we were the first technical pod to interview @jluan about Adept's work three years ago, we were there in the @AnthropicAI building when they first launched Computer Use 2 years ago, I fanboyed over Claude Cowork in our @felixrieseberg pod 3 months ago, and we ran our first full computer use track at @aidotengineer  ft. @DhruvBatra_ @proceduralia @francedot 3 weeks ago. \n\nGPT 5.6 + Superapp is even better at CUA than everything i just mentioned. excited for our @AriX podcast to discuss the @skybysoftware story and Codex progress.\n\nif you actually use these things as intensely as we do, CUA is progressing so, so incredibly fast. i have asked my nontechnical team to CUA as much as possible, all their knowledge work with signing up for random payment and invoicing portals and speaker and sponsor and attendee and vendor and union data requests. if you found yourself nodding along to this take below, you are so not up to date that you don't know what you don't know, and underestimating capabilities is quite a dangerous category error if you are doing any ai decisionmaking.\n\n*i admire dwarkesh alot; only criticizing one single take, not the message nor the overall enterprise, screenshot only to share",
-          "created_at": "2026-07-15T19:28:00+00:00",
-          "like_count": 100,
-          "retweet_count": 8,
-          "reply_count": 30,
-          "url": "https://x.com/swyx/status/2077475285205958771"
+          "id": "2077784077604692440",
+          "text": "Google engineer explained how to fine-tune a tiny LLM from 46% to 90% accuracy on your phone in 21 minutes - better than $1500 on-device AI bootcamps.\n\npick Gemma 270M -> generate synthetic task data -> fine-tune with LoRA -> quantize to int4 -> deploy to Pixel and hit 2000 tokens per second.\n\nThat loop is how a 270M model beats a 70B one on your task, running fully offline in your pocket.\n\nGemma 270M + synthetic data + LoRA + int4 quantization + on-device runtime - that's the stack.\n\nWatch and save it, then fine-tune your own tiny agent tonight.",
+          "created_at": "2026-07-16T15:55:02+00:00",
+          "like_count": 5908,
+          "retweet_count": 716,
+          "reply_count": 46,
+          "url": "https://x.com/h100envy/status/2077784077604692440"
         },
         {
-          "id": "2077481608308027816",
-          "text": "@DhruvBatra_ @aiDotEngineer will publish soon",
-          "created_at": "2026-07-15T19:53:07+00:00",
-          "like_count": 3,
+          "id": "2077870043833229692",
+          "text": "I’m excited to welcome two legends of developer tools, Pete Hunt (@floydophone) and Nick Schrock (@schrockn), to Vercel.\n\nPete was one of the pioneers of @reactjs at Meta. He made an early bet to power Instagram Web with ⚛️ React, evangelizing it internally and externally. He will be running Frameworks and leading @nextjs. I couldn’t imagine a better person to lead React’s most popular framework to even greater heights.\n\nNick co-invented @graphql, solving some of the gnarliest data infrastructure and access issues at Facebook scale, with a delightful developer experience. He will be working on Agentic Developer Experience, solving the problem of enabling the next billion agents and leading the way to a future of self-improving software.\n\nIt’s a dream-come-true for a founder of a startup to welcome engineering minds of this caliber who are also wonderful humans. You probably want to work with them, and they’re hiring 😁. Their DMs are open, from job applications to bug reports!",
+          "created_at": "2026-07-16T21:36:38+00:00",
+          "like_count": 1276,
+          "retweet_count": 53,
+          "reply_count": 80,
+          "url": "https://x.com/rauchg/status/2077870043833229692"
+        },
+        {
+          "id": "2078244735794413786",
+          "text": "btw if you havent set your {codex | claude | gemini | devin} automations to autoresearch how to improve your seo/aeo every week you are really truly missing out on free, should-be-commoditizing-but-weirdly-untapped alpha",
+          "created_at": "2026-07-17T22:25:31+00:00",
+          "like_count": 99,
           "retweet_count": 0,
-          "reply_count": 1,
-          "url": "https://x.com/swyx/status/2077481608308027816"
+          "reply_count": 18,
+          "url": "https://x.com/swyx/status/2078244735794413786"
+        },
+        {
+          "id": "2078146301376762134",
+          "text": "it seems that the new metagame to boost your x articles is to quote tweet it with an aie video so that your article gets the 500k views from reposting the video on x\n\ni honestly dont hate it at all, just credit the speaker (eg @cormacb) and link the original youtube in the first reply\n\nthanks for tagging us on it",
+          "created_at": "2026-07-17T15:54:22+00:00",
+          "like_count": 93,
+          "retweet_count": 3,
+          "reply_count": 13,
+          "url": "https://x.com/swyx/status/2078146301376762134"
+        },
+        {
+          "id": "2077938877407633857",
+          "text": "we make sure some of the top YC AI companies are featured at AIE every single year. \n\nthis year, we were graced by @garrytan and @eve_bouff to cap off our startups and design engineer focused audiences respectively. Really enjoyed these raw high value perspectives!",
+          "created_at": "2026-07-17T02:10:09+00:00",
+          "like_count": 52,
+          "retweet_count": 2,
+          "reply_count": 13,
+          "url": "https://x.com/swyx/status/2077938877407633857"
         }
       ]
     },
@@ -39,6 +66,24 @@
       "domain": "ai",
       "tier": "analyst",
       "tweets": [
+        {
+          "id": "2078084636719435959",
+          "text": "@AnikaSomaia @SemiAnalysis_ Kimi is amazing\nWhat they did with an extremely talented small team, strong research in RL, arch, data helps make up for lot of the compute deficit\nNoteworthy that Chinese companies are freely able to rent GPUs outside of China, which makes a lot of the export controls moot",
+          "created_at": "2026-07-17T11:49:20+00:00",
+          "like_count": 714,
+          "retweet_count": 32,
+          "reply_count": 19,
+          "url": "https://x.com/dylan522p/status/2078084636719435959"
+        },
+        {
+          "id": "2078236889228956010",
+          "text": "As far as inference cost and intelligence per dollar, it is roughly equivalent now to the western closed models.\nOpus 4.8. is $5/$25 per m tok\nKimi is $3/$15 so not a huge difference.\nAnthropic is known to have a ~75% gross margin on 1P API\nChinese labs financials where they are known, show closer to 50%, so that mostly means pricing difference is margin, not efficiency at least on inference cost.\nI'm not sure how much training efficiency they have or which of these techniques (or similar) the closed labs have implemented yet.\nTraining cost is hard to quantify, I dont think they have as much compute, but for the model run itself, not sure these's evidence they trained it for less, just they had way less research compute.",
+          "created_at": "2026-07-17T21:54:20+00:00",
+          "like_count": 4,
+          "retweet_count": 1,
+          "reply_count": 0,
+          "url": "https://x.com/dylan522p/status/2078236889228956010"
+        },
         {
           "id": "2077599630645485698",
           "text": "@Salehaldin0b Scale up CPO on the GPU is not ramping. That's what we said is delayed.",
@@ -74,9 +119,9 @@
           "id": "2077817060068057493",
           "text": "we did not have our best last 12 months ever, which is mostly my fault, but we are about to have our best 12 months to date. the team is doing amazing work and i think you’ll be very happy with what they’ve got cooking for you.\n\ni am happy about this for many reasons, but mostly because i care about our users winning. AI has to be about giving lots of people more freedom, agency, and wealth. we want to do the right thing, but we do not want to scare people into doing our thing.",
           "created_at": "2026-07-16T18:06:05+00:00",
-          "like_count": 15135,
-          "retweet_count": 531,
-          "reply_count": 1414,
+          "like_count": 23247,
+          "retweet_count": 823,
+          "reply_count": 2085,
           "url": "https://x.com/sama/status/2077817060068057493"
         }
       ]
@@ -109,49 +154,49 @@
       "tier": "infra",
       "tweets": [
         {
-          "id": "2077528638505861566",
-          "text": "Japan’s enterprises, startups and research institutions are building industry-specialized AI with NVIDIA Nemotron open models, data and libraries, helping advance AI tailored to the country’s language, industries and workforce. https://t.co/ftc6CbiVAG",
-          "created_at": "2026-07-15T23:00:00+00:00",
-          "like_count": 602,
-          "retweet_count": 101,
-          "reply_count": 28,
-          "url": "https://x.com/nvidia/status/2077528638505861566"
-        },
-        {
           "id": "2077540972422946823",
           "text": "Japan's biggest banks spent the last few years evaluating AI. Now they're building the infrastructure for it. 🏭\n\nWe're working with Mizuho, SMFG, Rakuten Bank, and MUFG NICOS to build the AI factories making that possible — using NVIDIA Nemotron open models and Agent Toolkit to turn regulated financial data into intelligence.",
           "created_at": "2026-07-15T23:49:01+00:00",
-          "like_count": 393,
-          "retweet_count": 91,
-          "reply_count": 21,
+          "like_count": 429,
+          "retweet_count": 95,
+          "reply_count": 23,
           "url": "https://x.com/nvidia/status/2077540972422946823"
-        },
-        {
-          "id": "2077540620394958889",
-          "text": "Building a production-ready vision AI agent no longer takes thousands of developer hours.\n\nNVIDIA Metropolis offers 80+ open agent skills for generating synthetic data, fine-tuning models, deploying applications and unlocking real-time insights, all through natural-language prompts.\n\nLeading companies like @FujitsuOfficial, @Hitachi, @OMRON_Official, @YazakiNA, and Shimizu Corporation are using Metropolis to bring agentic vision AI into manufacturing and critical infrastructure.\n\nhttps://t.co/ciHcnCksMG",
-          "created_at": "2026-07-15T23:47:37+00:00",
-          "like_count": 266,
-          "retweet_count": 34,
-          "reply_count": 22,
-          "url": "https://x.com/nvidia/status/2077540620394958889"
-        },
-        {
-          "id": "2077460228350546173",
-          "text": "Any single performance number only tells part of the story. AI Infrastructure performance is a Pareto Curve 🧵 https://t.co/hBA2eiAuBx",
-          "created_at": "2026-07-15T18:28:10+00:00",
-          "like_count": 216,
-          "retweet_count": 26,
-          "reply_count": 22,
-          "url": "https://x.com/nvidia/status/2077460228350546173"
         },
         {
           "id": "2077830629568205266",
           "text": "Nations have always invested in critical infrastructure to grow their economies and improve citizens’ lives, from transportation and communications to commerce, entertainment and healthcare.\n\nToday, AI is the most important layer of that infrastructure. It is turbocharging innovation across every facet of society.\n\nThat's why countries are now investing in AI capabilities that let them design, train and deploy models using:\n🏗️ Domestic infrastructure\n📊 Local datasets\n🌱 Homegrown expertise\n\nThis approach ensures AI solutions are tailored to local citizens, services and regulations, and that systems reflect each nation’s unique needs and priorities.\n\nLearn More: https://t.co/UnHQWJzOMa",
           "created_at": "2026-07-16T19:00:00+00:00",
-          "like_count": 134,
-          "retweet_count": 17,
-          "reply_count": 14,
+          "like_count": 307,
+          "retweet_count": 38,
+          "reply_count": 34,
           "url": "https://x.com/nvidia/status/2077830629568205266"
+        },
+        {
+          "id": "2077540620394958889",
+          "text": "Building a production-ready vision AI agent no longer takes thousands of developer hours.\n\nNVIDIA Metropolis offers 80+ open agent skills for generating synthetic data, fine-tuning models, deploying applications and unlocking real-time insights, all through natural-language prompts.\n\nLeading companies like @FujitsuOfficial, @Hitachi, @OMRON_Official, @YazakiNA, and Shimizu Corporation are using Metropolis to bring agentic vision AI into manufacturing and critical infrastructure.\n\nhttps://t.co/ciHcnCksMG",
+          "created_at": "2026-07-15T23:47:37+00:00",
+          "like_count": 292,
+          "retweet_count": 38,
+          "reply_count": 22,
+          "url": "https://x.com/nvidia/status/2077540620394958889"
+        },
+        {
+          "id": "2078244664751104293",
+          "text": "Agents are becoming specialized, using reinforcement learning post-training to develop domain-specific skills 🛠️\n\nEvery post-training rollout is an inference call, so a lower cost per token flows straight into a higher Intelligence per Dollar on every run. \n\nThat is what the NVIDIA Vera Rubin platform is built for: extreme co-design that drives Cost per Token down and Intelligence per Dollar up, on every run of agentic post-training.",
+          "created_at": "2026-07-17T22:25:14+00:00",
+          "like_count": 68,
+          "retweet_count": 2,
+          "reply_count": 13,
+          "url": "https://x.com/nvidia/status/2078244664751104293"
+        },
+        {
+          "id": "2078228046465655279",
+          "text": "Still building your #SIGGRAPH2026 agenda? We've got you covered. 🤝\n\n👉 Learn the latest research breakthroughs at the NVIDIA keynote.\n👉 Build new skills in hands-on labs.\n👉 Explore a full lineup of sessions covering physical AI, RTX, AI in production & more. \n\nLearn more: https://t.co/Zx7n0Iayjt",
+          "created_at": "2026-07-17T21:19:12+00:00",
+          "like_count": 44,
+          "retweet_count": 3,
+          "reply_count": 7,
+          "url": "https://x.com/nvidia/status/2078228046465655279"
         }
       ]
     },
@@ -169,22 +214,49 @@
       "tier": "builder",
       "tweets": [
         {
-          "id": "2077460395279692197",
-          "text": "Something I have been thinking about: in the past, the best engineers I knew spent a lot of time automating their work in various ways. Better vim/emacs automations, writing lint rules to catch repeat code issues, building up a suite of e2e tests so they don't need to smoke test the app manually. These kinds of things were the highest leverage activities an engineer could do, because it multiplied their own output, which in turn meant they could build more things.\n\nI think many of these automations have become even more important now. This is true for a number of reasons.\n\nFirst, infra and DevX automation speeds you up. And if you are running an army of agents, each of those agents will be sped up also. More automation == more output per unit of time.\n\nSecond, moving things to code improves efficiency. Your agent could fix an issue every time it sees that issue happen, but that uses tokens and might miss cases. If Claude instead writes a lint rule, CI step, or routine, that class of issue can be fully automated forever. This is really what people are talking about when they talk about loops -- it's about automating entire types of busywork rather than solving them one off. This isn't a new idea at all. Engineers have been doing this for a long time!\n\nThird and most importantly, automation makes it possible for others to contribute to the codebase more easily. Increasingly what I am seeing is engineers are contributing to codebases on day one because Claude can navigate the codebase for them, and that non-engineers are able to contribute to a codebase as effectively as engineers can. What gets in the way of both of these is domain knowledge that lives in peoples' heads rather than in automation -- the stuff you used to have to learn when ramping up. What has changed thanks to agents is the domain knowledge that can be encoded as infrastructure is no longer limited to what is expressible in lint rules and types and tests; it can now capture nearly all domain knowledge, encoded as code comments and skills and CLAUDE.md rules and memories. If I put up a PR for an iOS codebase I don't know and a code reviewer rejects it because it doesn't use the right framework, or if a designer builds a new feature and it gets rejected because it doesn't follow the right architectural patterns, these are failures of automation.\n\nEvery team should be writing the CLAUDE.md's, REVIEW.md's, skills, and docs that enable agents to productively work in their codebase with zero additional context from the prompter. This sounds crazy, and at the same time is a natural extension of the stuff engineers have always done: automate, and encode domain knowledge as infrastructure. As the model gets smarter and as the harness matures, this task becomes easier. In the meantime, it is on every team to look for ways to convert their domain knowledge to infra so that Claude can write code better, so that code review catches issues automatically, and so the next person working on your codebase can contribute more easily.",
-          "created_at": "2026-07-15T18:28:50+00:00",
-          "like_count": 8854,
-          "retweet_count": 772,
-          "reply_count": 346,
-          "url": "https://x.com/bcherny/status/2077460395279692197"
+          "id": "2077929379661844559",
+          "text": "I talk to engineers at other companies every day and hear the same thing: one person is 10x'ing their output with Claude but the rest of the org hasn't caught up.\n\nWatching teams adopt AI, I keep seeing the same 4 steps.\n\nI mapped them out here: Steps of AI Adoption https://t.co/kQnRAUMKpP",
+          "created_at": "2026-07-17T01:32:24+00:00",
+          "like_count": 8491,
+          "retweet_count": 781,
+          "reply_count": 333,
+          "url": "https://x.com/bcherny/status/2077929379661844559"
         },
         {
-          "id": "2077801446582505568",
-          "text": "@jeremywei Agree — Claude is getting better at this, and improving quickly",
-          "created_at": "2026-07-16T17:04:03+00:00",
-          "like_count": 10,
+          "id": "2077929390806073807",
+          "text": "In practice that means giving Claude ways to verify its own work end to end. It means enabling auto mode for permissions, defaulting on automated code review and security review, and using interfaces that let you manage multiple agents at once (Agent view in CLI, Desktop app, iOS and Android apps, Tag).\n\nTo get to higher levels it means /loop, /batch, dynamic workflows, and worktree isolation for subagents. It's not about a single feature, but rather using the right features with the right guardrails that enable Claude to automate entire classes of work in a way that your team can trust the output.",
+          "created_at": "2026-07-17T01:32:27+00:00",
+          "like_count": 260,
+          "retweet_count": 4,
+          "reply_count": 29,
+          "url": "https://x.com/bcherny/status/2077929390806073807"
+        },
+        {
+          "id": "2077929386146169269",
+          "text": "There’s no one right path through the steps. Every team and company is different. But at each step, tokens aren’t enough to move you forward: to get to the next step, you need to find and break down the next set of bottlenecks, and build up the next set of guardrails.",
+          "created_at": "2026-07-17T01:32:26+00:00",
+          "like_count": 227,
+          "retweet_count": 2,
+          "reply_count": 10,
+          "url": "https://x.com/bcherny/status/2077929386146169269"
+        },
+        {
+          "id": "2077929404219474148",
+          "text": "The bigger payoff comes when fixing and maintaining happens in the background and your teams can focus on building. That's when you start doing things that weren't even in range before.\n\nAnthropic is on step 3 and pushing toward 4. Personally, I just hit level 4.\n\nCurious where you are -- what step is your team on?",
+          "created_at": "2026-07-17T01:32:30+00:00",
+          "like_count": 151,
+          "retweet_count": 4,
+          "reply_count": 37,
+          "url": "https://x.com/bcherny/status/2077929404219474148"
+        },
+        {
+          "id": "2077931599518220594",
+          "text": "@fomolesss Artifact was me, thread was me+Claude",
+          "created_at": "2026-07-17T01:41:14+00:00",
+          "like_count": 16,
           "retweet_count": 0,
-          "reply_count": 2,
-          "url": "https://x.com/bcherny/status/2077801446582505568"
+          "reply_count": 1,
+          "url": "https://x.com/bcherny/status/2077931599518220594"
         }
       ]
     },
@@ -209,49 +281,49 @@
       "tier": "builder",
       "tweets": [
         {
+          "id": "2077900518404321759",
+          "text": "Kimi K3 is the best performing model on https://t.co/aporqgIfIh, ahead of Fable, reaching a comparable success rate in less time.\n\nThis is the first time that an open model is ahead of all proprietary ones for this comprehensive web engineering benchmark.\n\nNotes:\n\n▪️ Benchmarks don’t always tell the full story, although this is important signal, adding to mounting evidence that this could be a breakthrough moment for open models \n\n▪️ No model as of yet has reached 100% completion on this set of evals. The top performer peaks at 92% and 96% “with help”",
+          "created_at": "2026-07-16T23:37:43+00:00",
+          "like_count": 4995,
+          "retweet_count": 340,
+          "reply_count": 141,
+          "url": "https://x.com/rauchg/status/2077900518404321759"
+        },
+        {
           "id": "2077788454860316915",
           "text": "Using a generic agent harness (e.g. Codex, Claude, OpenCode) + CLI/MCP is better than \"Ask me anything\" built-in product chat boxes in every product I've ever tried. A big reason is I can use the latest frontier models, another is mixing more context. Why your box over mine?",
           "created_at": "2026-07-16T16:12:25+00:00",
-          "like_count": 1204,
-          "retweet_count": 41,
-          "reply_count": 118,
+          "like_count": 1937,
+          "retweet_count": 66,
+          "reply_count": 150,
           "url": "https://x.com/mitchellh/status/2077788454860316915"
-        },
-        {
-          "id": "2077802971673546776",
-          "text": "@sophaller — Sent from my datacenter",
-          "created_at": "2026-07-16T17:10:06+00:00",
-          "like_count": 568,
-          "retweet_count": 3,
-          "reply_count": 6,
-          "url": "https://x.com/rauchg/status/2077802971673546776"
         },
         {
           "id": "2077870043833229692",
           "text": "I’m excited to welcome two legends of developer tools, Pete Hunt (@floydophone) and Nick Schrock (@schrockn), to Vercel.\n\nPete was one of the pioneers of @reactjs at Meta. He made an early bet to power Instagram Web with ⚛️ React, evangelizing it internally and externally. He will be running Frameworks and leading @nextjs. I couldn’t imagine a better person to lead React’s most popular framework to even greater heights.\n\nNick co-invented @graphql, solving some of the gnarliest data infrastructure and access issues at Facebook scale, with a delightful developer experience. He will be working on Agentic Developer Experience, solving the problem of enabling the next billion agents and leading the way to a future of self-improving software.\n\nIt’s a dream-come-true for a founder of a startup to welcome engineering minds of this caliber who are also wonderful humans. You probably want to work with them, and they’re hiring 😁. Their DMs are open, from job applications to bug reports!",
           "created_at": "2026-07-16T21:36:38+00:00",
-          "like_count": 405,
-          "retweet_count": 28,
-          "reply_count": 36,
+          "like_count": 1276,
+          "retweet_count": 53,
+          "reply_count": 80,
           "url": "https://x.com/rauchg/status/2077870043833229692"
         },
         {
-          "id": "2077559189015335019",
-          "text": "Vercel Sandbox:\n◾ Growing DAUs at 100% m/o/m\n◾ 3.5M+ sandboxes created per day\n◾ Best-in-class Active CPU pricing model\n◾ Powering @notion, @airtable, @meta, @zapier, @coderabbitai, @interaction, @conductor_build, @blackboxai… 🐐 farm \n\nMy DMs are open for migration help or if missing anything with: https://t.co/U9bNGNLdMZ",
-          "created_at": "2026-07-16T01:01:24+00:00",
-          "like_count": 301,
-          "retweet_count": 28,
-          "reply_count": 36,
-          "url": "https://x.com/rauchg/status/2077559189015335019"
+          "id": "2077802971673546776",
+          "text": "@sophaller — Sent from my datacenter",
+          "created_at": "2026-07-16T17:10:06+00:00",
+          "like_count": 911,
+          "retweet_count": 4,
+          "reply_count": 7,
+          "url": "https://x.com/rauchg/status/2077802971673546776"
         },
         {
-          "id": "2077426190386946539",
-          "text": "Some really cool usecases of Web Analytics API:\n\n▪️ Ask your agent to correlate visitors, custom events (“purchase”, “checkout”), with the evolution of your deployments and performance \n\n▪️ Build custom frontends, and plot this data alongside e.g.: Stripe’s and Resend’s",
-          "created_at": "2026-07-15T16:12:55+00:00",
-          "like_count": 219,
-          "retweet_count": 11,
-          "reply_count": 31,
-          "url": "https://x.com/rauchg/status/2077426190386946539"
+          "id": "2077847855306596563",
+          "text": "The case for your own public agent, on your .com.\n\n0️⃣ First, the anti-case. If you haven't shipped high quality APIs for agents, start there. OpenAPI specs, SDKs, CLIs and MCPs as appropriate.\n\n1️⃣ Convenience. Not every customer has a harness 'at the ready' for every possible interaction with your product and company. Shipping one on your own domain covers a lot of spontaneous requirements.\n\n2️⃣ Security. When you go to 𝚟𝚎𝚛𝚌𝚎𝚕.𝚌𝚘𝚖 and talk to Agent, we put in the work to cover audit trails, a least-privilege permission model, and extra assurances to ensure security, privacy and data integrity. It's fully cloud-based and sandboxed, vs. a sprawl of static credentials on users' machines.\n\n3️⃣ Proactivity. We're still in the \"human enters prompt\" phase of AI. Our cloud-based agent can act on anomaly alerts triggered by exceptions, attacks, usage spikes. Our agent needs to monitor your infra while you sleep. You can, of course, set up workflows and schedules with your own harnesses, but it gets much harder.\n\nI think it's ultimately a sequencing thing. I agree with Mitchell that the priority is to give users choice and flexibility. We give people https://t.co/RhLxa4zpiZ to integrate with every agent out there. Our CLI and MCP are constantly improving. Our own Agent re-uses the same https://t.co/egfC60tXum everyone gets. All our sites are Markdown-over-the-wire if you're an agent.\n\nBased on the data and anecdata available to me, this strategy is working quite well, but YMMV.",
+          "created_at": "2026-07-16T20:08:27+00:00",
+          "like_count": 333,
+          "retweet_count": 17,
+          "reply_count": 36,
+          "url": "https://x.com/rauchg/status/2077847855306596563"
         }
       ]
     },
@@ -262,13 +334,40 @@
       "tier": "builder",
       "tweets": [
         {
+          "id": "2077824029126504525",
+          "text": "Big news: Kimi-K3 by @Kimi_Moonshot is now #1 in the Frontend Code Arena with 1679 pts, surpassing Claude Fable 5.\n\nThis is a 17-place jump from Kimi-k2.6 (#18 -> #1).\n\nIn Frontend, Kimi-K3 ranked #1 in 6 of 7 domains: Brand & Marketing, Reference-Based Design, Data & Analytics, Consumer Product, Simulations, and Content Creation Tools, landing #2 only in Gaming behind Fable 5.\n\nThe full model weights will be released by July 27.\n\nCongrats to the @Kimi_Moonshot team on this major milestone!",
+          "created_at": "2026-07-16T18:33:47+00:00",
+          "like_count": 23578,
+          "retweet_count": 3375,
+          "reply_count": 929,
+          "url": "https://x.com/arena/status/2077824029126504525"
+        },
+        {
+          "id": "2077908032944779732",
+          "text": "If you want to play my chess engine (WIP): https://t.co/4WJ9SYmr1o\n\nIt already seems to perform better than frontier models on chess.\n\nIt’s fine-tuned on 2M stockfish-labeled positions, then short GRPO RL pass.\n\nDocumentation/tutorial with all the experiments and annotated code.",
+          "created_at": "2026-07-17T00:07:35+00:00",
+          "like_count": 119,
+          "retweet_count": 11,
+          "reply_count": 33,
+          "url": "https://x.com/amasad/status/2077908032944779732"
+        },
+        {
           "id": "2077822629881495704",
           "text": "@Spontonomy Glad you’re having a good time. A couple of things on cost: prices will come down soon across the board, but also we’re introducing more model controls and options including more open source models. Lite runs Kimi if you haven’t tried that mode yet.",
           "created_at": "2026-07-16T18:28:13+00:00",
-          "like_count": 3,
+          "like_count": 5,
           "retweet_count": 0,
           "reply_count": 0,
           "url": "https://x.com/amasad/status/2077822629881495704"
+        },
+        {
+          "id": "2077910035351708050",
+          "text": "@Mujeeb1o1 Yeah it’s still bad. But better than most LLMs. ESP for its size.",
+          "created_at": "2026-07-17T00:15:32+00:00",
+          "like_count": 0,
+          "retweet_count": 0,
+          "reply_count": 0,
+          "url": "https://x.com/amasad/status/2077910035351708050"
         }
       ]
     },
@@ -282,45 +381,18 @@
           "id": "2077803351392268314",
           "text": "3 years ago we started as a tiny experiment with the goal of helping you learn faster.\n\nSince then, we grew to bring audio, video, and interactivity to your sources, transitioning from a passive workspace to your true research companion.\n\nAnd now, notebooks have even become an entire ecosystem: you can already access them in the @GeminiApp and soon in Google Search\n\nSo, with these advancements, it’s time for us to evolve once again:\n\nNotebookLM is now Gemini Notebook ✨📓\n\nThe same app you know and love isn’t going anywhere, we just have an updated name that reflects our role in Google's AI portfolio.\n\nAnd our mission stays exactly the same: helping you learn, faster.\n\nThank you for believing in us— this wouldn't have been possible without your passion (and feature requests...)\n\nBig things to come (yes, even folders📂!) so stay tuned.\n\nSincerely,\n\nThe Project Tailwind team",
           "created_at": "2026-07-16T17:11:37+00:00",
-          "like_count": 2234,
-          "retweet_count": 255,
-          "reply_count": 135,
+          "like_count": 3916,
+          "retweet_count": 478,
+          "reply_count": 217,
           "url": "https://x.com/Gemini_Notebook/status/2077803351392268314"
-        },
-        {
-          "id": "2077460573089058885",
-          "text": "Gemini Spark is now rolling out to Google AI Ultra subscribers in more countries and languages.\n\nSpark is your personal AI agent that works in the background 24/7 to get things done under your direction.",
-          "created_at": "2026-07-15T18:29:32+00:00",
-          "like_count": 1996,
-          "retweet_count": 222,
-          "reply_count": 208,
-          "url": "https://x.com/GeminiApp/status/2077460573089058885"
-        },
-        {
-          "id": "2077471111240204457",
-          "text": "Gemini Spark is headed to more Ultra subscribers around the world* plus 4 new features:\n\n1) Spark can open and edit Google Docs, acting on feedback from last week\n\n2) It can read comments in Google Sheets & Slides, so critical info isn't missed\n\n3) It's >50% faster, you can feel it\n\n4) It can parallel process across multiple sources, so tasks complete faster e2e\n\nPro members, stay tuned for an access update soon :)\n\n*Full list of countries and changelog: https://t.co/oIjY9qQBoz",
-          "created_at": "2026-07-15T19:11:25+00:00",
-          "like_count": 610,
-          "retweet_count": 42,
-          "reply_count": 62,
-          "url": "https://x.com/joshwoodward/status/2077471111240204457"
-        },
-        {
-          "id": "2077411104775406045",
-          "text": "We just released our first-ever Gemini Southeast Asia Report (below), 3 insights:\n\n1/ Active users more than doubled in the last year\n2/ 70% of prompts are submitted in native languages\n3/ 40% of prompts only use voice, image, or video\n\nGemini's local language + multimodal capabilities + mobile apps are driving growth, and we have more coming soon for the region!\n\n🇮🇩🇲🇾🇵🇭🇸🇬🇹🇭🇻🇳",
-          "created_at": "2026-07-15T15:12:58+00:00",
-          "like_count": 549,
-          "retweet_count": 57,
-          "reply_count": 46,
-          "url": "https://x.com/joshwoodward/status/2077411104775406045"
         },
         {
           "id": "2077813130990928104",
           "text": "@XianNewman @Gemini_Notebook @GeminiApp @GoogleWorkspace Workspace users are very close, sorry it's taken longer than expected. Our best guess: ~Aug 1.",
           "created_at": "2026-07-16T17:50:28+00:00",
-          "like_count": 1,
+          "like_count": 3,
           "retweet_count": 0,
-          "reply_count": 0,
+          "reply_count": 1,
           "url": "https://x.com/joshwoodward/status/2077813130990928104"
         }
       ]
@@ -334,5 +406,5 @@
     }
   ],
   "errors": null,
-  "generated_at": "2026-07-16T23:24:23.612150+00:00"
+  "generated_at": "2026-07-17T23:22:51.939088+00:00"
 }
