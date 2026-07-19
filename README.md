@@ -67,7 +67,7 @@ ARR：
 
 - ARR 是综合估算，不是公司披露收入，也不是审计数字。
 - OpenRouter / Vercel 反映第三方路由渠道窗口，适合观察边际变化，不代表全市场总量。
-- Vercel 模型榜保持每日 Top 10、Other 和最近 7 个数据日算术平均口径；模型历史、每日快照及 Lab 趋势均按官方 API 当前覆盖窗口全量重建，不混用旧页面抓取值。
+- Vercel 模型榜保持每日 Top 10、Other 和最近 7 个数据日算术平均口径；模型历史、每日快照及 Lab 趋势均按官方 API 当前覆盖窗口全量重建，不混用旧页面抓取值。Lab Spend 图中的 Kimi 对应官方 `moonshotai` Lab 口径。
 - 数据中心 `as_of` 对应当前 CSV 版本，不代表上游每天更新。
 - `reports`、`news.pinned`、`news.blocklist` 当前不在 dashboard 展示。
 - X 抓取依赖 GitHub Secret：`TWITTER_COOKIES`；cookie 不可用时保留上次有效 `feed-x.json`，不写空缓存。

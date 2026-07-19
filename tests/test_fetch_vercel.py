@@ -34,6 +34,7 @@ class FetchVercelTests(unittest.TestCase):
             {"date": "2026-07-14", "name": "openai", "metric": "spend", "share_percent": 20.0},
             {"date": "2026-07-14", "name": "google", "metric": "spend", "share_percent": 10.0},
             {"date": "2026-07-14", "name": "zai", "metric": "spend", "share_percent": 8.0},
+            {"date": "2026-07-14", "name": "moonshotai", "metric": "spend", "share_percent": 3.5},
             {"date": "2026-07-15", "name": "anthropic", "metric": "spend", "share_percent": 44.0},
             {"date": "2026-07-15", "name": "openai", "metric": "tokens", "share_percent": 15.0},
         ]
@@ -45,6 +46,7 @@ class FetchVercelTests(unittest.TestCase):
         self.assertEqual(history["series"]["OpenAI"], [20.0, 0.0])
         self.assertEqual(history["series"]["Gemini"], [10.0, 0.0])
         self.assertEqual(history["series"]["Z.ai"], [8.0, 0.0])
+        self.assertEqual(history["series"]["Kimi"], [3.5, 0.0])
 
     def test_weekly_average_uses_selected_dates_and_rebuilds_other(self):
         table = {

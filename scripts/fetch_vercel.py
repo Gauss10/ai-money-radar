@@ -34,6 +34,7 @@ LABS = {
     'OpenAI': 'openai',
     'Gemini': 'google',
     'Z.ai': 'zai',
+    'Kimi': 'moonshotai',
 }
 
 
@@ -81,7 +82,7 @@ def model_rows_to_table(rows):
 
 
 def build_lab_spend_history(rows):
-    """Build official daily Spend shares for the four selected model labs."""
+    """Build official daily Spend shares for the selected model labs."""
     by_day = {}
     for row in rows:
         if row.get('metric') != 'spend':
@@ -214,8 +215,8 @@ def main():
         'lab_history': {
             'spend': lab_spend,
             'note': (
-                'official daily Lab spend shares; Google lab is displayed '
-                'as Gemini'
+                'official daily Lab spend shares; Google and Moonshot AI '
+                'labs are displayed as Gemini and Kimi'
             ),
         },
     }
