@@ -57,23 +57,27 @@ class FetchSignalsTests(unittest.TestCase):
             "核心结论是模型训练成本下降。",
         )
 
-    def test_cover_summary_uses_fresh_detail_and_limits_length(self):
-        detail = "本期披露了新的模型使用数据与关键商业进展。" * 8
-        summary = fetch_signals.compact_cover_summary(detail, "通用主题模板")
-        self.assertTrue(summary.startswith("本期披露了新的模型使用数据"))
-        self.assertTrue(summary.endswith("…"))
-        self.assertLessEqual(len(summary), 105)
-
-    def test_cover_summary_falls_back_when_model_summary_is_missing(self):
+    def test_cover_summary_uses_complete_existing_detail(self):
+        detail = "本期披露了新的模型使用数据与关键商业进展。"
         self.assertEqual(
-            fetch_signals.compact_cover_summary("", "通用主题模板"),
+            fetch_signals.cover_summary_fallback(detail, "通用主题模板"),
+            detail,
+        )
+
+    def test_cover_summary_falls_back_instead_of_truncating(self):
+        detail = "本期披露了新的模型使用数据与关键商业进展。" * 8
+        self.assertEqual(
+            fetch_signals.cover_summary_fallback(detail, "通用主题模板"),
             "通用主题模板",
         )
 
-    def test_cover_summary_ends_at_a_natural_separator(self):
-        detail = "前半段交代核心变化。" + "补充了产品、收入和客户数据，" + ("后续细节" * 20)
-        summary = fetch_signals.compact_cover_summary(detail, max_len=35)
-        self.assertEqual(summary, "前半段交代核心变化。补充了产品、收入和客户数据…")
+    def test_generated_cover_rejects_ellipsis_and_adds_full_stop(self):
+        self.assertEqual(fetch_signals.clean_generated_cover("核心事实" * 9), "核心事实" * 9 + "。")
+        self.assertEqual(fetch_signals.clean_generated_cover("核心事实" * 9 + "…"), "")
+        self.assertEqual(
+            fetch_signals.clean_generated_cover("公司披露关键经营数据，并讨论开放源代码与模型。"),
+            "",
+        )
 
     def test_compute_does_not_match_computer_science(self):
         score, rule = fetch_signals.classify("How Bitcoin rewired a classic computer science problem")

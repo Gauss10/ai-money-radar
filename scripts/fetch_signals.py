@@ -134,18 +134,12 @@ def first_sentence(text, max_len=120):
     return out
 
 
-def compact_cover_summary(text, fallback="", max_len=105):
-    """Compress a model summary to roughly 2-3 dashboard lines."""
-    summary = clean_text(text) or clean_text(fallback)
-    if len(summary) <= max_len:
+def cover_summary_fallback(text, fallback="", max_len=160):
+    """Use a complete existing summary, otherwise fall back to the theme take."""
+    summary = clean_text(text)
+    if summary and len(summary) <= max_len and not summary.endswith(("...", "…")):
         return summary
-    prefix = summary[:max_len]
-    min_cut = int(max_len * 0.65)
-    for separators in ("。！？；", "，,;"):
-        cut = max(prefix.rfind(mark) for mark in separators)
-        if cut >= min_cut:
-            return prefix[:cut].rstrip("，,；;：: ") + "…"
-    return prefix[:-1].rstrip("，,；;：: ") + "…"
+    return clean_text(fallback)
 
 
 def excerpt(text, max_len=600):
@@ -353,9 +347,12 @@ INTRO_RE = re.compile(
     r"[:：][^\n]*(?:\n+|$)"
 )
 OPENROUTER_MODELS = (
-    "deepseek/deepseek-v4-flash",
-    "nvidia/nemotron-3-ultra-550b-a55b-20260604:free",
-    "poolside/laguna-m.1-20260312:free",
+    "google/gemma-4-26b-a4b-it:free",
+    "google/gemma-4-31b-it:free",
+    "nvidia/nemotron-3-super-120b-a12b:free",
+    "nvidia/nemotron-3-ultra-550b-a55b:free",
+    "openai/gpt-oss-20b:free",
+    "openrouter/free",
 )
 
 
@@ -416,6 +413,24 @@ def clean_generated_summary(value):
     summary = re.sub(r"^(?:摘要|要点|核心要点)\s*[:：]\s*", "", summary)
     summary = re.sub(r"\s*#[A-Za-z0-9_\u4e00-\u9fff-]+", "", summary)
     return re.sub(r"\s+", " ", summary).strip()
+
+
+def clean_generated_cover(value, min_len=35, max_len=110):
+    """Validate a complete, naturally ending model-written cover summary."""
+    text = clean_generated_summary(value).strip('"“”')
+    if len(text) < min_len or len(text) > max_len or "..." in text or "…" in text:
+        return ""
+    if not re.search(r"[一-鿿]{12,}", text):
+        return ""
+    if not text.endswith(("。", "！", "？")):
+        text += "。"
+    if re.search(
+        r"(?:与|和|及|以及|包括|通过|关于|基于|面向|来自|涉及)\s*"
+        r"(?:AI|模型|技术|内容|数据|工具|平台|系统|生态)[。！？]$",
+        text,
+    ):
+        return ""
+    return text
 
 
 def summarize_details(items, limit=20, force=False):
@@ -480,19 +495,46 @@ def parse_model_json(value):
         return None
 
 
+def generate_cover_summary(item, key):
+    source = (item.get("_deep_source") or item.get("detail") or "").strip()
+    if len(source) < 40:
+        return None
+    prompt = (
+        "你是 AI Money Radar 的研究编辑。请基于全部可用材料，为首页卡片生成中文摘要。\n"
+        "要求：\n"
+        "1. 只输出摘要正文，不要标题、列表或解释；\n"
+        "2. 用 1-2 个完整句子，控制在 55-105 个中文字，适合页面显示约 2-3 行；\n"
+        "3. 提炼本条最重要的事实、数字和观点，不写人物履历，不输出通用行业套话；\n"
+        "4. 使用自然、专业的中文，避免生硬直译；persona 译为‘角色’，AI slop 译为‘低质 AI 内容’；\n"
+        "5. 每句话必须主谓完整并自然收尾，禁止省略号、残句或截断；不添加材料没有的事实。\n\n"
+        f"作者或栏目：{item.get('who', '')}\n"
+        f"来源：{item.get('via', '')}\n"
+        f"全部可用材料：{source}"
+    )
+    for model in OPENROUTER_MODELS:
+        try:
+            cover = clean_generated_cover(request_model(key, model, prompt, 400))
+            if cover:
+                return cover
+        except Exception:
+            continue
+    return None
+
+
 def generate_deep_read(item, key):
     source = (item.get("_deep_source") or item.get("detail") or "").strip()
     if len(source) < 280:
         return None
     prompt = (
         "你是 AI Money Radar 的研究编辑。请基于给定材料生成中文深读，风格接近简洁的专业投研日报。\n"
-        "只输出 JSON：{\"title\":\"...\",\"bio\":\"...\",\"detail\":\"...\"}\n"
+        "只输出 JSON：{\"title\":\"...\",\"bio\":\"...\",\"cover\":\"...\",\"detail\":\"...\"}\n"
         "要求：\n"
         "1. detail 先用 2 段提炼核心事实、数字和观点，再用‘判断：’开头写 1 段洞察；总计约 280-500 字。\n"
         "2. 判断需解释商业或产业含义、信息局限和后续应跟踪的指标，不能只重复原文。\n"
         "3. 不添加材料没有的事实；删除欢迎语、宣传、赞助、订阅、hashtags、时间轴和节目流程。\n"
         "4. detail 不介绍人物或栏目；人物/栏目背景只写在 bio，控制在 35-80 字。\n"
         "5. title 是 15-35 字的中文要点标题，不带序号。\n\n"
+        "6. cover 是首页摘要：1-2 个完整句子、55-105 字，提炼最重要事实与数字，禁止省略号或截断。\n\n"
         f"日期：{item.get('date', '')}\n"
         f"作者或栏目：{item.get('who', '')}\n"
         f"来源：{item.get('via', '')}\n"
@@ -507,34 +549,36 @@ def generate_deep_read(item, key):
             detail = clean_deep_detail(result.get("detail"))
             bio = clean_text(result.get("bio"))
             title = clean_text(result.get("title"))
+            cover = clean_generated_cover(result.get("cover"))
             if len(detail) < 120 or "判断" not in detail or not re.search(r"[一-鿿]{20,}", detail):
                 continue
-            return {"detail": detail, "bio": bio, "title": title}
+            return {"detail": detail, "bio": bio, "title": title, "cover": cover}
         except Exception:
             continue
     return None
 
 
 def update_online_deep_reads(entries, limit=4):
-    key = get_openrouter_key()
-    if not key:
-        return 0, 0
     current = load_json("signal_details.json") or {}
     details = current.get("details") or {}
     bios = current.get("bios") or {}
+    covers = current.get("covers") or {}
+    key = get_openrouter_key()
+    if not key:
+        return 0, 0, 0, covers
     deep_count = 0
     bio_count = 0
+    cover_count = 0
     for item in entries[:limit]:
         url = normalize_signal_url(item.get("url"))
         who = item.get("who") or ""
         needs_detail = bool(url) and url not in details
         needs_bio = bool(who) and who not in bios
-        if not needs_detail and not needs_bio:
+        needs_cover = bool(url) and url not in covers
+        if not needs_detail and not needs_bio and not needs_cover:
             continue
-        generated = generate_deep_read(item, key)
-        if not generated:
-            continue
-        if needs_detail:
+        generated = generate_deep_read(item, key) if needs_detail or needs_bio else None
+        if needs_detail and generated:
             details[url] = {
                 "detail": generated["detail"],
                 "title": generated["title"],
@@ -542,15 +586,21 @@ def update_online_deep_reads(entries, limit=4):
                 "origin": "radar-online",
             }
             deep_count += 1
-        if needs_bio and generated["bio"]:
+        if needs_bio and generated and generated["bio"]:
             bios[who] = generated["bio"]
             bio_count += 1
+        if needs_cover:
+            cover = (generated or {}).get("cover") or generate_cover_summary(item, key)
+            if cover:
+                covers[url] = cover
+                cover_count += 1
     save_json("signal_details.json", {
-        "note": "AI Money Radar 云端深读层：GitHub Actions 按 URL 生成 details，并按 who 维护人物/栏目背景 bios。",
+        "note": "AI Money Radar 云端内容层：GitHub Actions 按 URL 生成深读 details 与完整封面摘要 covers，并按 who 维护人物/栏目背景 bios。",
         "bios": bios,
+        "covers": covers,
         "details": details,
     })
-    return deep_count, bio_count
+    return deep_count, bio_count, cover_count, covers
 
 
 def update_signals_archive(entries):
@@ -717,18 +767,20 @@ def main():
         stored = archive_by_url.get(item.get("url")) or {}
         enriched["detail"] = stored.get("detail") or item.get("detail") or ""
         enriched["detail_zh"] = stored.get("detail_zh") or item.get("detail_zh") or ""
-        enriched["take_zh"] = compact_cover_summary(
-            enriched["detail_zh"], item.get("take") or ""
-        )
         deep_inputs.append(enriched)
+    deep_reads, bios, cover_count, covers = update_online_deep_reads(deep_inputs)
+    for item in deep_inputs:
+        url = normalize_signal_url(item.get("url"))
+        item["take_zh"] = covers.get(url) or cover_summary_fallback(
+            item.get("detail_zh"), item.get("take") or ""
+        )
     out["kol"] = [public_entry(item) for item in deep_inputs]
-    deep_reads, bios = update_online_deep_reads(deep_inputs)
     save_json("curated_signals.json", out)
     display_dates = [item["date"] for item in out["kol"]]
     window_text = f"{min(display_dates)}..{max(display_dates)}" if display_dates else "n/a"
     print(f"  candidates: {len(candidates)}, display_window: {window_text}, display: {len(out['kol'])}, "
           f"archive: {len(out['kol_archive'])}, full_archive: {total}, summarized: {summarized}, "
-          f"deep_reads: {deep_reads}, bios: {bios}")
+          f"deep_reads: {deep_reads}, bios: {bios}, covers: {cover_count}")
     for item in out["kol"]:
         print(f"  - {item['date']} {item['who']} | {item['via']}")
 
