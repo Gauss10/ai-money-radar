@@ -5,14 +5,79 @@
       "name": "Andrej Karpathy",
       "domain": "ai",
       "tier": "analyst",
-      "tweets": []
+      "tweets": [
+        {
+          "id": "2079610838143623371",
+          "text": "One pattern I find useful for working with LLMs is a nice long ramble session. Sometimes the LLM needs more bits to understand what you're trying to achieve, but you're too lazy to type them. In these cases I like to lean back, switch to /voice and just ramble for like 10 minutes, total mess, anything goes, full stream of consciousness. Sometimes I declare it up top, something like \"switching to speech recognition sorry for any typos...\". Sometimes I turn it into a small interview of a few turns. But I find that the LLMs are somehow very good at reconstructing long incoherent rambles and often their echo of your own tangle of thoughts comes out quite a bit cleaner than what you started with. The result is that you improve the mind meld and have to correct things less from that point on.",
+          "created_at": "2026-07-21T16:53:55+00:00",
+          "like_count": 24914,
+          "retweet_count": 1884,
+          "reply_count": 1463,
+          "url": "https://x.com/karpathy/status/2079610838143623371"
+        },
+        {
+          "id": "2079645572047548608",
+          "text": "@DavidSHolz It's interesting/amusing how their self-awareness gradually builds up and falls out from pretraining on tokens of us talking about them, but it's laggy and a bit incomplete. But I think e.g. it's starting to \"get\" what I mean when I inform it I'm about to /compact its context etc",
+          "created_at": "2026-07-21T19:11:56+00:00",
+          "like_count": 586,
+          "retweet_count": 6,
+          "reply_count": 33,
+          "url": "https://x.com/karpathy/status/2079645572047548608"
+        }
+      ]
     },
     {
       "handle": "swyx",
       "name": "Swyx (Shawn Wang)",
       "domain": "ai",
       "tier": "analyst",
-      "tweets": []
+      "tweets": [
+        {
+          "id": "2079580673086730701",
+          "text": "Qwen Image 3 announced.\n\nthese pictures are NOT screenshots. all generated in a single pass.\n\nthe last one (image annotation) i think could spawn a dozen edtech / industrial training startups https://t.co/3haCGen5Bd",
+          "created_at": "2026-07-21T14:54:03+00:00",
+          "like_count": 124,
+          "retweet_count": 9,
+          "reply_count": 20,
+          "url": "https://x.com/swyx/status/2079580673086730701"
+        },
+        {
+          "id": "2079589145115234775",
+          "text": "@a1zhang obvious people to ask are nick carlini and @jxmnop (or anyone who coauthored llm data exfil papers) \n\non the cog side i think @denizbirlikci and @ericlu have done good work on anticheat detection",
+          "created_at": "2026-07-21T15:27:43+00:00",
+          "like_count": 4,
+          "retweet_count": 0,
+          "reply_count": 2,
+          "url": "https://x.com/swyx/status/2079589145115234775"
+        },
+        {
+          "id": "2079672996348997796",
+          "text": "@aiDotEngineer @theahmadosman linking u up with @SwiftAlphaOne for Local AI NYC Hacktoberfest",
+          "created_at": "2026-07-21T21:00:55+00:00",
+          "like_count": 2,
+          "retweet_count": 0,
+          "reply_count": 1,
+          "url": "https://x.com/swyx/status/2079672996348997796"
+        },
+        {
+          "id": "2079651405221249038",
+          "text": "@Rames_Jusso @aiDotEngineer @HyperFrames_ lovely intro",
+          "created_at": "2026-07-21T19:35:07+00:00",
+          "like_count": 1,
+          "retweet_count": 0,
+          "reply_count": 0,
+          "url": "https://x.com/swyx/status/2079651405221249038"
+        },
+        {
+          "id": "2079590018088304919",
+          "text": "@simonw @trq212 @_catwu @aiDotEngineer great commentary! have you written up the transcription  workflow/models somewhere",
+          "created_at": "2026-07-21T15:31:11+00:00",
+          "like_count": 1,
+          "retweet_count": 0,
+          "reply_count": 0,
+          "url": "https://x.com/swyx/status/2079590018088304919"
+        }
+      ]
     },
     {
       "handle": "dylan522p",
@@ -40,7 +105,17 @@
       "name": "Sam Altman",
       "domain": "ai",
       "tier": "exec",
-      "tweets": []
+      "tweets": [
+        {
+          "id": "2079661132302995790",
+          "text": "we had a significant security incident during evaluation of our models. we are sharing what we have learned so far. thanks to @huggingface for the partnership on this.\n\nhttps://t.co/2o2VfR6PIa",
+          "created_at": "2026-07-21T20:13:46+00:00",
+          "like_count": 7477,
+          "retweet_count": 723,
+          "reply_count": 908,
+          "url": "https://x.com/sama/status/2079661132302995790"
+        }
+      ]
     },
     {
       "handle": "DarioAmodei",
@@ -68,7 +143,53 @@
       "name": "NVIDIA (Jensen Huang / AI infrastructure)",
       "domain": "ai",
       "tier": "infra",
-      "tweets": []
+      "tweets": [
+        {
+          "id": "2079601314234032474",
+          "text": "10x more tokens per megawatt. \n\nCoreWeave has the first measured performance of NVIDIA Vera Rubin NVL72, showing 10x improvement in tokens per second per megawatt on DeepSeek-R1 compared to Blackwell.",
+          "created_at": "2026-07-21T16:16:05+00:00",
+          "like_count": 1183,
+          "retweet_count": 116,
+          "reply_count": 37,
+          "url": "https://x.com/nvidia/status/2079601314234032474"
+        },
+        {
+          "id": "2079221588705099788",
+          "text": "NVIDIA is advancing graphics and simulation with agentic and physical AI at #SIGGRAPH2026.\n\nFrom open models to real-time simulation, AI and graphics breakthroughs are transforming media, content creation, and robotics.\n\nRead the latest announcements. 👇\nhttps://t.co/TuuwW8QdkH https://t.co/Dywx9XGdJI",
+          "created_at": "2026-07-20T15:07:11+00:00",
+          "like_count": 532,
+          "retweet_count": 86,
+          "reply_count": 50,
+          "url": "https://x.com/nvidia/status/2079221588705099788"
+        },
+        {
+          "id": "2079587123196280921",
+          "text": "The first-ever measured silicon numbers for @NVIDIA Vera Rubin NVL72 are in 😲\n\nFirst measured performance shows 10x more tokens per megawatt than Blackwell. \n\nNo projections. Real results from live hardware. https://t.co/I7GBu02JKK",
+          "created_at": "2026-07-21T15:19:41+00:00",
+          "like_count": 395,
+          "retweet_count": 32,
+          "reply_count": 20,
+          "url": "https://x.com/CoreWeave/status/2079587123196280921"
+        },
+        {
+          "id": "2079619127560556869",
+          "text": "🚀 The NVIDIA Vera Rubin platform is here, with 10x better performance per watt. \n\n➡️ The NVIDIA ecosystem, including @CoreWeave, @GoogleCloud, @Microsoft, and @Oracle Cloud, are standing up NVIDIA Vera Rubin NVL72 to deliver the lowest token cost for the agentic era. \n➡️ NVIDIA Vera Rubin NVL72 on CoreWeave demonstrates 10x more tokens per megawatt than Blackwell in their first measured performance.\n➡️ Benchmark results from @DeepInfra show that the NVIDIA Vera CPU is more than 2x as fast and can support more concurrent AI agents compared with other CPUs.\n\n🔗 Read more: https://t.co/zUiuLZli63",
+          "created_at": "2026-07-21T17:26:52+00:00",
+          "like_count": 345,
+          "retweet_count": 37,
+          "reply_count": 23,
+          "url": "https://x.com/nvidia/status/2079619127560556869"
+        },
+        {
+          "id": "2079633231629144565",
+          "text": "NVIDIA Spectrum-6, a 102.4-terabit-per-second Ethernet switch built for the Vera Rubin platform, is now arriving across the world's gigascale AI factories.\n\n@CoreWeave, @Microsoft, @NebiusAI @SpaceXAI and @Tesla are among the first to bring in Spectrum-6 to accelerate their AI factories.\n\nRead the Blog: https://t.co/rm3rYQNnvK",
+          "created_at": "2026-07-21T18:22:54+00:00",
+          "like_count": 270,
+          "retweet_count": 28,
+          "reply_count": 22,
+          "url": "https://x.com/nvidia/status/2079633231629144565"
+        }
+      ]
     },
     {
       "handle": "AmandaAskell",
@@ -89,7 +210,17 @@
       "name": "Cat Wu (Anthropic)",
       "domain": "ai",
       "tier": "builder",
-      "tweets": []
+      "tweets": [
+        {
+          "id": "2079011428380602526",
+          "text": "I love using Claude Cowork to manage my calendar. Here's my prompt for it:\n\nManage my calendar for the week. Requirements: 1. <20 hours of meetings 2. Dedupe conflicting meetings. Look at past weeks to see what kinds of meetings I decline. Dinners don't count against the 20 hours. Build a skill that you refine. Ask me before updating invites. \n\nWhat do you use Cowork for?",
+          "created_at": "2026-07-20T01:12:05+00:00",
+          "like_count": 525,
+          "retweet_count": 17,
+          "reply_count": 53,
+          "url": "https://x.com/_catwu/status/2079011428380602526"
+        }
+      ]
     },
     {
       "handle": "alexalbert__",
@@ -103,21 +234,141 @@
       "name": "Guillermo Rauch (Vercel)",
       "domain": "ai",
       "tier": "builder",
-      "tweets": []
+      "tweets": [
+        {
+          "id": "2079691217227382923",
+          "text": "One line of code can save you a lot of 💰 on tokens!",
+          "created_at": "2026-07-21T22:13:19+00:00",
+          "like_count": 58,
+          "retweet_count": 2,
+          "reply_count": 9,
+          "url": "https://x.com/rauchg/status/2079691217227382923"
+        },
+        {
+          "id": "2079685915266699534",
+          "text": "Service tiers are now available on AI Gateway.\n\nUse 𝚙𝚛𝚒𝚘𝚛𝚒𝚝𝚢 for the fastest token throughput or 𝚏𝚕𝚎𝚡 for cost-sensitive, latency-tolerant requests. https://t.co/fatZkTh1a2",
+          "created_at": "2026-07-21T21:52:15+00:00",
+          "like_count": 48,
+          "retweet_count": 0,
+          "reply_count": 3,
+          "url": "https://x.com/vercel_dev/status/2079685915266699534"
+        },
+        {
+          "id": "2079656456056381945",
+          "text": "@istupidpreneur @vercel This is just the router component. Can be used with any coding agent, CLI, app, etc.",
+          "created_at": "2026-07-21T19:55:11+00:00",
+          "like_count": 3,
+          "retweet_count": 0,
+          "reply_count": 1,
+          "url": "https://x.com/rauchg/status/2079656456056381945"
+        },
+        {
+          "id": "2079656109413949742",
+          "text": "@foda @vercel We've added image, video and speech models. Which models are you missing?",
+          "created_at": "2026-07-21T19:53:49+00:00",
+          "like_count": 2,
+          "retweet_count": 0,
+          "reply_count": 2,
+          "url": "https://x.com/rauchg/status/2079656109413949742"
+        },
+        {
+          "id": "2079655759755743331",
+          "text": "@AiTesty5 @vercel What models do you use?",
+          "created_at": "2026-07-21T19:52:25+00:00",
+          "like_count": 0,
+          "retweet_count": 0,
+          "reply_count": 1,
+          "url": "https://x.com/rauchg/status/2079655759755743331"
+        }
+      ]
     },
     {
       "handle": "amasad",
       "name": "Amjad Masad (Replit)",
       "domain": "ai",
       "tier": "builder",
-      "tweets": []
+      "tweets": [
+        {
+          "id": "2079658951264920020",
+          "text": "We're partnering with @huggingface to investigate an unprecedented security incident.  \n\nCyber-capable OpenAI models compromised Hugging Face production during a benchmark evaluation.\n\nSharing preliminary findings to help defenders understand emerging risks:\n\nhttps://t.co/CIor15y9xk",
+          "created_at": "2026-07-21T20:05:06+00:00",
+          "like_count": 4939,
+          "retweet_count": 578,
+          "reply_count": 494,
+          "url": "https://x.com/OpenAI/status/2079658951264920020"
+        },
+        {
+          "id": "2079678843464667637",
+          "text": "Okay this is wild: OpenAI agent during evaluation, escaped sandboxing and hacked into HuggingFace. \n\nBecause OpenAI models don’t allow advanced cyber capabilities, HuggingFace used a Chinese open model to contain the rogue OpenAI agent.",
+          "created_at": "2026-07-21T21:24:09+00:00",
+          "like_count": 2522,
+          "retweet_count": 195,
+          "reply_count": 112,
+          "url": "https://x.com/amasad/status/2079678843464667637"
+        },
+        {
+          "id": "2079250292420571308",
+          "text": "Amjad Masad on Going Direct & Founder Storytelling\n\nReplit CEO Amjad Masad joins a16z's Erik Torenberg on how he went from crippling stage fright to one of the most famous CEOs on X, which platforms actually matter and why, and what founders get wrong about building in public.\n\n00:50 Memeing a dream into reality\n03:02 Conquering stage fright\n04:00 Make your mistakes early\n05:23 Building in public\n06:41 The authenticity edge: Elon, Zuck, Trump\n08:42 Become uncancellable\n10:47 Advice for Anthropic and OpenAI\n15:09 The day AI deleted prod\n17:39 Who should go direct?\n19:37 X vs Instagram vs YouTube\n22:52 Go direct role models\n\n@amasad @eriktorenberg",
+          "created_at": "2026-07-20T17:01:14+00:00",
+          "like_count": 338,
+          "retweet_count": 27,
+          "reply_count": 16,
+          "url": "https://x.com/a16z/status/2079250292420571308"
+        },
+        {
+          "id": "2079282869063786541",
+          "text": "First physical product shipped by a coding agent?",
+          "created_at": "2026-07-20T19:10:41+00:00",
+          "like_count": 316,
+          "retweet_count": 11,
+          "reply_count": 32,
+          "url": "https://x.com/amasad/status/2079282869063786541"
+        },
+        {
+          "id": "2079280388640489590",
+          "text": "We wanted some lightsaber holders (cue xkcd 303). @Replit agent can do CAD using OpenSCAD now https://t.co/z9ktCrzKcN",
+          "created_at": "2026-07-20T19:00:50+00:00",
+          "like_count": 62,
+          "retweet_count": 1,
+          "reply_count": 6,
+          "url": "https://x.com/darshkpatel/status/2079280388640489590"
+        }
+      ]
     },
     {
       "handle": "joshwoodward",
       "name": "Josh Woodward (Google Labs)",
       "domain": "ai",
       "tier": "builder",
-      "tweets": []
+      "tweets": [
+        {
+          "id": "2079589698490572961",
+          "text": "We’re rolling out three new models to make AI agents faster, smarter, and cheaper at scale:\n\n🔵 Gemini 3.6 Flash: It uses fewer tokens than 3.5 Flash to deliver higher quality work at the exact same cost.\n\n🔵 Gemini 3.5 Flash-Lite: A fast, cost-effective option for everyday tasks like processing documents and agentic search.\n\n🔵 Gemini 3.5 Flash Cyber: A cybersecurity model built to find and patch critical software vulnerabilities.",
+          "created_at": "2026-07-21T15:29:55+00:00",
+          "like_count": 2370,
+          "retweet_count": 401,
+          "reply_count": 206,
+          "url": "https://x.com/GoogleDeepMind/status/2079589698490572961"
+        },
+        {
+          "id": "2079595879808569534",
+          "text": "Today’s launches are all about better performance, lower latency, and a smaller bill.\n\n+ 3.6 Flash cuts token usage by up to 65% on complex coding\n+ 3.5 Flash-Lite reaches speeds of 350 output tokens/sec\n\nBoth are live in the Gemini app today!\n\nNext up: Gemini 3.5 Pro, which has officially entered partner testing.",
+          "created_at": "2026-07-21T15:54:29+00:00",
+          "like_count": 910,
+          "retweet_count": 85,
+          "reply_count": 89,
+          "url": "https://x.com/joshwoodward/status/2079595879808569534"
+        },
+        {
+          "id": "2079614730034127100",
+          "text": "One of our engineers built an interactive math art generator using the new 3.6 Flash model. You can customize speed, colors, and geometry parameters on the fly, then export the design directly to a 3D-printable STL file. Watch the video to see how the physical print turned out! https://t.co/MVivWkv0Nk",
+          "created_at": "2026-07-21T17:09:23+00:00",
+          "like_count": 246,
+          "retweet_count": 16,
+          "reply_count": 15,
+          "url": "https://x.com/joshwoodward/status/2079614730034127100"
+        }
+      ]
     },
     {
       "handle": "ornith_",
@@ -128,5 +379,5 @@
     }
   ],
   "errors": null,
-  "generated_at": "2026-07-20T23:30:03.521684+00:00"
+  "generated_at": "2026-07-21T23:27:56.959696+00:00"
 }
