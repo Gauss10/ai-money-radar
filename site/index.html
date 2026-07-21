@@ -616,7 +616,7 @@ function initSignals(sig){
   let html = '';
   const display = sig.kol || [];
   for(const k of display){
-    const take = LANG === 'en' ? (k.take_en || k.take) : k.take;
+    const take = LANG === 'en' ? (k.take_en || k.take) : (k.take_zh || k.detail_zh || k.take);
     const via = LANG === 'en' ? (k.via_en || k.via) : k.via;
     html += `<p><span class="mono" style="color:var(--faint)">${esc(k.date)}</span> <b>${esc(k.who)}</b> <span style="color:var(--faint)">· ${esc(via)}</span><br>${esc(take)} <a href="${safeUrl(k.url)}" target="_blank" rel="noopener noreferrer">↗</a></p>`;
   }

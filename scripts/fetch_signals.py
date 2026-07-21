@@ -134,6 +134,20 @@ def first_sentence(text, max_len=120):
     return out
 
 
+def compact_cover_summary(text, fallback="", max_len=105):
+    """Compress a model summary to roughly 2-3 dashboard lines."""
+    summary = clean_text(text) or clean_text(fallback)
+    if len(summary) <= max_len:
+        return summary
+    prefix = summary[:max_len]
+    min_cut = int(max_len * 0.65)
+    for separators in ("。！？；", "，,;"):
+        cut = max(prefix.rfind(mark) for mark in separators)
+        if cut >= min_cut:
+            return prefix[:cut].rstrip("，,；;：: ") + "…"
+    return prefix[:-1].rstrip("，,；;：: ") + "…"
+
+
 def excerpt(text, max_len=600):
     """原文摘录（弹窗展开层用；比 first_sentence 保留更多上下文）"""
     text = clean_text(text)
@@ -313,7 +327,8 @@ def make_podcast_candidates(feed):
 
 def public_entry(entry):
     return {k: entry.get(k, "") for k in
-            ("date", "who", "via", "via_en", "take", "take_en", "url", "detail", "detail_zh")}
+            ("date", "who", "via", "via_en", "take", "take_en", "take_zh",
+             "url", "detail", "detail_zh")}
 
 
 def archive_same_event(left, right, day_window=2):
@@ -686,14 +701,13 @@ def main():
         "as_of": str(datetime.date.today()),
         "note": (
             "自动 curated 的 KOL / podcast 观点（源：本仓库 Actions 生成的 X + 播客 feed；"
-            "规则打分生成）。从 feed 与历史候选的最近 3 天内选择，展示摘要去重；"
+            "规则打分选取、模型提炼封面摘要）。从 feed 与历史候选的最近 3 天内选择，展示摘要去重；"
             "换下条目进入 kol_archive；全量历史在 signals_archive.json。"
         ),
         "kol": [public_entry(item) for item in display],
         "reports": cur.get("reports") or [],
         "kol_archive": [public_entry(item) for item in archive],
     }
-    save_json("curated_signals.json", out)
     total, summarized = update_signals_archive(display + archive + candidates)
     archive_data = load_json("signals_archive.json") or {}
     archive_by_url = {item.get("url"): item for item in archive_data.get("items", [])}
@@ -703,8 +717,13 @@ def main():
         stored = archive_by_url.get(item.get("url")) or {}
         enriched["detail"] = stored.get("detail") or item.get("detail") or ""
         enriched["detail_zh"] = stored.get("detail_zh") or item.get("detail_zh") or ""
+        enriched["take_zh"] = compact_cover_summary(
+            enriched["detail_zh"], item.get("take") or ""
+        )
         deep_inputs.append(enriched)
+    out["kol"] = [public_entry(item) for item in deep_inputs]
     deep_reads, bios = update_online_deep_reads(deep_inputs)
+    save_json("curated_signals.json", out)
     display_dates = [item["date"] for item in out["kol"]]
     window_text = f"{min(display_dates)}..{max(display_dates)}" if display_dates else "n/a"
     print(f"  candidates: {len(candidates)}, display_window: {window_text}, display: {len(out['kol'])}, "
