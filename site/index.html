@@ -36,6 +36,7 @@
   .sec-h h2{font-size:18px;font-weight:750;color:#31221c}
   .sec-h .tag{font-size:11px;padding:2px 10px;border-radius:99px;border:1.5px solid var(--border);background:var(--card);box-shadow:2px 2px 0 var(--border);color:var(--sub)}
   .grid{display:grid;gap:18px}
+  .grid>*{min-width:0}
   .g2{grid-template-columns:1fr 1fr}
   .g3{grid-template-columns:repeat(3,1fr)}
   @media(max-width:900px){.g2,.g3{grid-template-columns:1fr}}
@@ -47,6 +48,7 @@
   #sec-tokens .card{--bar:#5fc0b0}
   #sec-gpu .card{--bar:#f2c14e}
   #sec-dc .card{--bar:#f2a0b9}
+  #sec-deals .card{--bar:#91afe4}
   .chart{height:340px;width:100%}
   .chart-sm{height:260px;width:100%}
   .arr-card{position:relative;overflow:visible}
@@ -68,6 +70,20 @@
   th{color:var(--sub);text-align:left;font-weight:700;padding:7px 8px;border-bottom:2px solid var(--border);white-space:nowrap}
   td{padding:6px 8px;border-bottom:1px solid #e6d5b4;white-space:nowrap}
   td.num,th.num{text-align:right;font-variant-numeric:tabular-nums}
+  .source-note{margin-top:8px;color:var(--faint);font-size:11.5px;line-height:1.55;border-top:1px dotted #d8c7a8;padding-top:7px}
+  .source-note a{color:#7a4b32;text-decoration:none;border-bottom:1px dotted var(--faint)}
+  .deal-note{margin:0 0 12px;color:var(--sub);font-size:12px;line-height:1.6}
+  .deal-table-wrap{overflow-x:auto}
+  .deal-table{min-width:940px}
+  .deal-table td{vertical-align:top;white-space:normal;line-height:1.45}
+  .deal-table td:first-child,.deal-table td:nth-child(2),.deal-table td.num{white-space:nowrap}
+  .deal-table .scope{min-width:230px}
+  .deal-table a{color:#7a4b32;text-decoration:none;border-bottom:1px dotted var(--faint)}
+  .status{display:inline-block;border:1px solid var(--border);border-radius:4px;padding:0 5px;font-size:10.5px;white-space:nowrap;background:var(--card2)}
+  .status.signed,.status.secured{background:#d9ead3;color:#2e6f3e}
+  .status.announced{background:#dce8f7;color:#365a8a}
+  .status.loi,.status.term_sheet{background:#fdeec9;color:#7a5b1f}
+  .status.overlap{background:#ece4dc;color:#7a6455}
   .wm-host{position:relative}
   .wm{display:none;position:absolute;inset:0;z-index:5;align-items:center;justify-content:center;pointer-events:none}
   .wm div{transform:rotate(-14deg);border:2px dashed var(--border);color:#7a5b1f;background:rgba(250,241,224,.92);padding:10px 22px;border-radius:10px;font-weight:700;font-size:15px;text-align:center;box-shadow:4px 4px 0 var(--border)}
@@ -149,6 +165,13 @@
     <div class="card"><h3><span id="i_sdk"></span></h3><div class="chart-sm" id="sdkChart"></div></div>
     <div class="card" style="overflow-x:auto"><h3><span id="i_sites"></span></h3><table id="dcTable"></table></div>
   </div>
+  <div class="grid g2" style="margin-top:18px">
+    <div class="card">
+      <h3><span id="i_codex"></span></h3>
+      <div class="chart-sm" id="codexChart"></div>
+      <div class="source-note" id="codexNote"></div>
+    </div>
+  </div>
 </section>
 
 <section id="sec-gpu">
@@ -164,6 +187,20 @@
   <div class="card" style="margin-top:18px"><h3><span id="i_news"></span><span class="sub2" id="newsMeta"></span></h3><ul class="news" id="newsList"></ul></div>
 </section>
 
+<section id="sec-deals">
+  <div class="sec-h"><h2 id="i_sec_deals"></h2><span class="tag" id="i_tag_deals"></span></div>
+  <div class="card">
+    <h3><span id="i_deals_chart"></span></h3>
+    <div class="chart-sm" id="dealsChart"></div>
+    <div class="source-note" id="dealsChartNote"></div>
+  </div>
+  <div class="card" style="margin-top:18px">
+    <h3><span id="i_deals_list"></span><span class="sub2" id="dealsMeta"></span></h3>
+    <p class="deal-note" id="dealsNote"></p>
+    <div class="deal-table-wrap"><table class="deal-table" id="dealsTable"></table></div>
+  </div>
+</section>
+
 <div class="overlay" id="kolOverlay">
   <div class="modal">
     <div class="modal-h"><span id="kolModalTitle"></span><button class="btn" id="kolCloseBtn">✕</button></div>
@@ -174,7 +211,7 @@
 <footer>
   <h4>Methodology</h4>
   <p id="i_method"></p>
-  <p class="fineprint"><span id="orCite">OpenRouter (openrouter.ai/rankings)</span> · Epoch AI, AI Data Centers (CC-BY 4.0) · Ornn Compute Price Index · Vercel AI Gateway Leaderboards (CC BY 4.0; API data transformed by AI Money Radar) · npm / pypistats · Google News · <span id="i_fine"></span></p>
+  <p class="fineprint"><span id="orCite">OpenRouter (openrouter.ai/rankings)</span> · Epoch AI, AI Data Centers (CC-BY 4.0) · Ornn Compute Price Index · Vercel AI Gateway Leaderboards (CC BY 4.0; API data transformed by AI Money Radar) · OpenAI / Anthropic / partners' public disclosures · npm / pypistats · Google News · <span id="i_fine"></span></p>
 </footer>
 
 </div>
@@ -207,6 +244,8 @@ zh: {
   kol_more:'更多 ▸', kol_all:n=>`KOL / Podcast 观点归档 · ${n} 条（📓 = 有深读分析）`,
   sdk:'SDK 下载量 7DMA（M/day）— developer adoption proxy',
   sites:'Top Sites by IT Power — Epoch',
+  codex:'OpenAI Codex 周活跃用户（M）— 公开披露里程碑',
+  codex_click:'不同产品范围和统计周期分开显示；点击节点打开 OpenAI 原始披露。',
   sec_gpu:'③ GPU 租赁价格 — Ornn OCPI', tag_gpu:'$/GPU-hr · 日频',
   gpu_chart:'价格指数走势（$/GPU-hr）',
   sec_dc:'④ AI 数据中心建设 — Epoch AI + News', tag_dc:'卫星影像 + permits · ~月频 · 新闻日更',
@@ -215,7 +254,10 @@ zh: {
   dc_comp:'算力存量', dc_comp_sub:'≈ 覆盖全球已交付 AI 算力 ~27%',
   dc_chart:'行业累计装机（覆盖样本内，前向填充加总）',
   news:'建设动态 ', news_meta:(n,d)=>`（${n} 条 · 更新 ${d}）`,
-  method:'ARR 主线为本站<b>综合估算口径</b>（多渠道 triangulation），历史段为月度估算的对数线性插值；最新时点之后沿校准后的增速路径实时外推，阴影为模型不确定带（随外推时长扩大）。◆ 散点为公开报道的 run-rate 对照。外推是<b>实时测算</b>而非公司指引；口径均为 run-rate（月化×12），非审计数字，仅供研究参考。Token 计数使用各 provider 自家 tokenizer；OpenRouter / Vercel Gateway 为第三方路由渠道窗口，适合看边际变化与份额拐点，不代表全市场总量。Vercel 数据来自官方 Leaderboard Export API；模型榜只披露每日 Top 10 的 Token 与 $ Spend 份额，不披露绝对量，未进入榜单者计入 Other。“最新一周”取最近 7 个共同数据日作份额算术平均，不做绝对量加权。Lab 趋势直接使用官方逐日 Spend 份额，其中 Google、Moonshot AI Lab 在图中分别标为 Gemini、Kimi。',
+  sec_deals:'⑤ 算力订单 — Compute Deals', tag_deals:'公开披露 · 人工核验 · 事件驱动更新',
+  deals_chart:'已签 / 已确认容量（GW，分层展示）', deals_list:'逐笔订单',
+  deals_chart_note:'汇总图只计入有明确 GW 且经核验的已签或已确认交易；LOI、term sheet 和未披露 GW 的交易只在下表展示，重叠项不展示。站点/云租约与芯片/系统框架不可相加。',
+  method:'ARR 主线为本站<b>综合估算口径</b>（多渠道 triangulation），历史段为月度估算的对数线性插值；最新时点之后沿校准后的增速路径实时外推，阴影为模型不确定带（随外推时长扩大）。◆ 散点为公开报道的 run-rate 对照。外推是<b>实时测算</b>而非公司指引；口径均为 run-rate（月化×12），非审计数字，仅供研究参考。Token 计数使用各 provider 自家 tokenizer；OpenRouter / Vercel Gateway 为第三方路由渠道窗口，适合看边际变化与份额拐点，不代表全市场总量。Vercel 数据来自官方 Leaderboard Export API；模型榜只披露每日 Top 10 的 Token 与 $ Spend 份额，不披露绝对量，未进入榜单者计入 Other。“最新一周”取最近 7 个共同数据日作份额算术平均，不做绝对量加权。Lab 趋势直接使用官方逐日 Spend 份额，其中 Google、Moonshot AI Lab 在图中分别标为 Gemini、Kimi。Codex / ChatGPT Agent 用户数据只记录 OpenAI 官方离散披露；产品范围或周活/月活口径变化时分开成独立序列，不跨口径连线。Compute Deals 的 GW 是合同或合作口径，并非已投运容量；不同基础设施层级不得相加。',
   fine:'仅供研究参考，非投资建议。',
   fable_empty:'<div><b style="color:var(--fable)">Fable 5 未出现在 OpenRouter 日度 top-50（token 口径）</b></div><div>本数据集只含每日 top-50 模型 + 长尾合计。Fable 5 定价 $10/$50，「低 token 量、高客单」形态——变现信号先看 <b>Vercel Gateway 的 $ Spend 份额</b>。</div><div style="color:var(--faint)">进入 top-50 当天，此图自动点亮。</div>',
   s_total:'日总量', s_7dma:'7DMA', s_mw:'累计 IT Power (MW)', s_h100e:'累计算力 (k H100-eq)',
@@ -245,6 +287,8 @@ en: {
   kol_more:'More ▸', kol_all:n=>`KOL / Podcast archive · ${n} items (📓 = deep analysis)`,
   sdk:'SDK downloads 7DMA (M/day) — developer adoption proxy',
   sites:'Top Sites by IT Power — Epoch',
+  codex:'OpenAI Codex weekly active users (M) — public milestones',
+  codex_click:'Product scopes and reporting periods are shown separately; click a point to open the original OpenAI source.',
   sec_gpu:'③ GPU Rental Prices — Ornn OCPI', tag_gpu:'$ per GPU-hr · daily',
   gpu_chart:'Price index ($/GPU-hr)',
   sec_dc:'④ AI Datacenter Buildout — Epoch AI + News', tag_dc:'satellite + permits · ~monthly · news daily',
@@ -253,7 +297,10 @@ en: {
   dc_comp:'Compute stock', dc_comp_sub:'≈ ~27% of global delivered AI compute',
   dc_chart:'Cumulative installed base (covered sample, forward-filled)',
   news:'Construction News ', news_meta:(n,d)=>`(${n} items · updated ${d})`,
-  method:'The ARR mainline is this site\'s <b>composite estimate</b> (multi-channel triangulation): log-linear interpolation across monthly estimates for history, and a calibrated growth-path extrapolation beyond the latest point (shaded band = model uncertainty, widening with horizon). ◆ markers are publicly reported run-rate checkpoints. The extrapolation is a <b>live calculation</b>, not company guidance; all figures are run-rates (monthly ×12), unaudited, for research reference only. Token counts use each provider\'s own tokenizer; OpenRouter / Vercel Gateway are third-party routing windows — good for marginal change and share inflections, not market totals. Vercel data comes from the official Leaderboard Export API. The model leaderboard reports daily Token and $ Spend shares for its Top 10, not absolute totals; models outside the list are included in Other. “Latest week” is the arithmetic mean across the latest 7 common data dates, without absolute-volume weighting. Lab trends use official daily Spend shares; Google and Moonshot AI Labs are labeled Gemini and Kimi in the chart.',
+  sec_deals:'⑤ Compute Deals', tag_deals:'public disclosures · manually verified · event-driven',
+  deals_chart:'Signed / secured capacity (GW, shown by layer)', deals_list:'Deal ledger',
+  deals_chart_note:'The chart includes only verified signed or secured deals with explicit GW. LOIs, term sheets and deals without disclosed GW remain in the table; overlapping entries are hidden. Cloud/site leases and chip/system frameworks must not be added together.',
+  method:'The ARR mainline is this site\'s <b>composite estimate</b> (multi-channel triangulation): log-linear interpolation across monthly estimates for history, and a calibrated growth-path extrapolation beyond the latest point (shaded band = model uncertainty, widening with horizon). ◆ markers are publicly reported run-rate checkpoints. The extrapolation is a <b>live calculation</b>, not company guidance; all figures are run-rates (monthly ×12), unaudited, for research reference only. Token counts use each provider\'s own tokenizer; OpenRouter / Vercel Gateway are third-party routing windows — good for marginal change and share inflections, not market totals. Vercel data comes from the official Leaderboard Export API. The model leaderboard reports daily Token and $ Spend shares for its Top 10, not absolute totals; models outside the list are included in Other. “Latest week” is the arithmetic mean across the latest 7 common data dates, without absolute-volume weighting. Lab trends use official daily Spend shares; Google and Moonshot AI Labs are labeled Gemini and Kimi in the chart. Codex / ChatGPT Agent adoption records only discrete official OpenAI disclosures; product-scope and WAU/MAU changes remain separate series. Compute Deals GW figures are contracted or partnership capacity, not operating capacity; infrastructure layers must not be added together.',
   fine:'For research reference only — not investment advice.',
   fable_empty:'<div><b style="color:var(--fable)">Fable 5 is not in OpenRouter\'s daily top-50 (by tokens)</b></div><div>This dataset only includes the daily top-50 models plus an aggregated long tail. At $10/$50 pricing, Fable 5 is a low-token / high-ticket model — watch <b>Vercel Gateway $ Spend share</b> for the monetization signal.</div><div style="color:var(--faint)">The day it enters the top-50, this chart lights up automatically.</div>',
   s_total:'Daily total', s_7dma:'7DMA', s_mw:'Cumulative IT Power (MW)', s_h100e:'Cumulative compute (k H100-eq)',
@@ -300,8 +347,9 @@ function brandColor(name){ const n=name.toLowerCase();
 (function(){
   const map = {i_tagline:'tagline', i_sec_arr:'sec_arr', i_tag_arr:'tag_arr', i_arr_chart:'arr_chart',
     i_sec_tok:'sec_tok', i_wm:'wm', i_fable:'fable', i_watch:'watch', i_total:'total', i_top:'top7',
-    i_vgtrend:'vgtrend', i_kol:'kol', i_sdk:'sdk', i_sites:'sites', i_sec_gpu:'sec_gpu', i_tag_gpu:'tag_gpu',
+    i_vgtrend:'vgtrend', i_kol:'kol', i_sdk:'sdk', i_sites:'sites', i_codex:'codex', i_sec_gpu:'sec_gpu', i_tag_gpu:'tag_gpu',
     i_gpu_chart:'gpu_chart', i_sec_dc:'sec_dc', i_tag_dc:'tag_dc', i_dc_chart:'dc_chart', i_news:'news',
+    i_sec_deals:'sec_deals', i_tag_deals:'tag_deals', i_deals_chart:'deals_chart', i_deals_list:'deals_list',
     i_method:'method', i_fine:'fine', fileBanner:'banner'};
   for(const [id,k] of Object.entries(map)){ const el=$(id); if(el) el.innerHTML = tr(k); }
   const b = $('langBtn');
@@ -549,6 +597,62 @@ function initSDK(sdk){
   });
 }
 
+/* ───────── Codex adoption milestones ───────── */
+function initCodex(codex){
+  if(!codex || !(codex.points||[]).length) return;
+  const pts = codex.points;
+  const periods = new Set(pts.map(p=>p.period||'weekly_active_users'));
+  const hasCombined = pts.some(p=>(p.metric_key||'').includes('combined'));
+  const product = hasCombined ? 'OpenAI Codex / ChatGPT Agent' : 'OpenAI Codex';
+  const metric = periods.size===1
+    ? ([...periods][0]==='monthly_active_users'
+      ? (LANG==='zh'?'月活跃用户':'monthly active users')
+      : (LANG==='zh'?'周活跃用户':'weekly active users'))
+    : (LANG==='zh'?'活跃用户（周活/月活分列）':'active users (WAU/MAU separated)');
+  $('i_codex').textContent = LANG==='zh'
+    ? `${product} ${metric}（M）— 公开披露里程碑`
+    : `${product} ${metric} (M) — public milestones`;
+  const grouped = new Map();
+  for(const p of pts){
+    const key = p.metric_key || 'codex_wau';
+    if(!grouped.has(key)) grouped.set(key, []);
+    grouped.get(key).push(p);
+  }
+  const colors = ['#1f9e83','#d97757','#5b86ea','#8e7cc3'];
+  const series = [...grouped.entries()].map(([key, rows], index)=>{
+    const sample = rows[rows.length-1];
+    const scope = LANG==='zh' ? (sample.scope_zh||'Codex') : (sample.scope_en||'Codex');
+    const period = sample.period==='monthly_active_users'
+      ? (LANG==='zh'?'月活':'MAU') : (LANG==='zh'?'周活':'WAU');
+    const color = colors[index % colors.length];
+    return {
+      name:`${scope} · ${period}`, type:'line', symbol:'circle', symbolSize:10, smooth:false,
+      lineStyle:{width:2.5,color}, itemStyle:{color:'#faf1e0',borderColor:color,borderWidth:2.5},
+      data:rows.map(p=>({value:[p.date,p.value_m],label:p.label,url:p.url,source_title:p.source_title,
+        scope_zh:p.scope_zh,scope_en:p.scope_en,period:p.period})),
+      label:{show:true,position:'top',color:'#3b2a24',fontSize:11,fontWeight:700,formatter:p=>p.data.label}
+    };
+  });
+  const chart = mkChart('codexChart');
+  chart.setOption({
+    tooltip:{...TIP, trigger:'item', formatter:p=>{
+      const d=p.data;
+      const scope = LANG==='zh' ? (d.scope_zh||'Codex') : (d.scope_en||'Codex');
+      const period = d.period==='monthly_active_users' ? (LANG==='zh'?'月活用户':'monthly active users') : (LANG==='zh'?'周活用户':'weekly active users');
+      return `<b>${esc(d.label)}</b> ${esc(scope)} · ${period}<br>`+
+        `<span style="color:#7a6455">${esc(d.value[0])} · ${esc(d.source_title)}</span>`;
+    }},
+    legend:{...LEG,show:series.length>1,top:0},
+    grid:{left:50,right:28,top:series.length>1?38:24,bottom:32},
+    xAxis:{type:'time', ...AX},
+    yAxis:{type:'value', ...AX, min:0, name:'M users', nameTextStyle:{color:'#a08d7b'}},
+    series
+  });
+  chart.on('click', p => { if(p.data && safeUrl(p.data.url)!=='#') window.open(p.data.url,'_blank','noopener'); });
+  const note = LANG==='zh' ? codex.note_zh : codex.note_en;
+  $('codexNote').innerHTML = `${esc(note)}<br>${esc(tr('codex_click'))}`;
+}
+
 /* ───────── KOL ───────── */
 function normUrl(u){
   const raw = String(u || '');
@@ -697,14 +801,72 @@ function initDC(dc, news){
   }
 }
 
+/* ───────── Compute deals ───────── */
+function initDeals(data){
+  if(!data || !(data.deals||[]).length) return;
+  const deals = data.deals;
+  const counted = deals.filter(d=>d.capacity_counted && Number.isFinite(d.gw));
+  const companies = ['OpenAI','Anthropic'];
+  const sum = (co,layer) => +counted.filter(d=>d.company===co && d.layer===layer).reduce((s,d)=>s+d.gw,0).toFixed(2);
+  const layers = [
+    {key:'cloud_site', name:LANG==='zh'?'站点 / 云租约':'Cloud / site leases', color:'#5b86ea'},
+    {key:'chip_system', name:LANG==='zh'?'芯片 / 系统框架':'Chip / system frameworks', color:'#d97757'}
+  ];
+  const compact = window.innerWidth <= 600;
+  mkChart('dealsChart').setOption({
+    tooltip:{...TIP,trigger:'axis',axisPointer:{type:'shadow'},valueFormatter:v=>v+' GW'},
+    legend:{...LEG,top:0},
+    grid:compact?{left:36,right:12,top:38,bottom:34}:{left:88,right:50,top:34,bottom:28},
+    xAxis:compact
+      ? {type:'category',data:companies,...AX}
+      : {type:'value',...AX,name:'GW',nameTextStyle:{color:'#a08d7b'}},
+    yAxis:compact
+      ? {type:'value',...AX,name:'GW',nameTextStyle:{color:'#a08d7b'}}
+      : {type:'category',data:companies,...AX},
+    series:layers.map(l=>({
+      name:l.name,type:'bar',barWidth:compact?'32%':'28%',data:companies.map(c=>sum(c,l.key)),
+      itemStyle:{color:l.color,borderColor:'#43302b',borderWidth:1},
+      label:{show:true,position:compact?'top':'right',color:'#5e493e',fontSize:11,formatter:p=>p.value?`${p.value} GW`:''}
+    }))
+  });
+  $('dealsChartNote').textContent = tr('deals_chart_note');
+  const visibleDeals = deals.filter(d=>d.status!=='overlap');
+  $('dealsMeta').textContent = LANG==='zh' ? `（${visibleDeals.length} 笔 · 更新 ${data.as_of}）` : `(${visibleDeals.length} deals · updated ${data.as_of})`;
+  $('dealsNote').textContent = LANG==='zh' ? data.note_zh : data.note_en;
+  const statusText = {
+    signed:LANG==='zh'?'已签':'Signed', secured:LANG==='zh'?'已确认':'Secured',
+    operational:LANG==='zh'?'已投运':'Operational', loi:'LOI', term_sheet:'Term sheet',
+    announced:LANG==='zh'?'已宣布':'Announced'
+  };
+  const layerText = {
+    cloud_site:LANG==='zh'?'站点/云':'Cloud/site',
+    chip_system:LANG==='zh'?'芯片/系统':'Chip/system'
+  };
+  const heads = LANG==='zh'
+    ? ['日期','需求方','交易对手','层级','GW','状态','范围 / 交付','来源']
+    : ['Date','Buyer','Counterparty','Layer','GW','Status','Scope / delivery','Source'];
+  const rows = visibleDeals.sort((a,b)=>b.date.localeCompare(a.date));
+  $('dealsTable').innerHTML = `<tr>${heads.map((h,i)=>`<th${i===4?' class="num"':''}>${h}</th>`).join('')}</tr>`+
+    rows.map(d=>{
+      const scope = LANG==='zh' ? d.scope_zh : d.scope_en;
+      const note = LANG==='zh' ? d.note_zh : d.note_en;
+      const gw = d.gw_label || (Number.isFinite(d.gw)?d.gw:'—');
+      return `<tr title="${esc(note)}"><td class="mono">${esc(d.date)}</td><td><b>${esc(d.company)}</b></td>`+
+        `<td>${esc(d.counterparty)}</td><td>${esc(layerText[d.layer]||d.layer)}</td><td class="num">${esc(gw)}</td>`+
+        `<td><span class="status ${esc(d.status)}">${esc(statusText[d.status]||d.status)}</span></td><td class="scope">${esc(scope)}</td>`+
+        `<td><a href="${safeUrl(d.url)}" target="_blank" rel="noopener noreferrer">${esc(d.source_title)} ↗</a></td></tr>`;
+    }).join('');
+}
+
 /* ───────── boot ───────── */
 (async function(){
   if(location.protocol === 'file:' && !BUNDLE) $('fileBanner').style.display = 'block';
-  const [arr, or_, gpu, dc, vg, sdk, sig, news] = await Promise.all([
+  const [arr, or_, gpu, dc, vg, sdk, sig, news, codex, deals] = await Promise.all([
     src('arr', 'data/arr_checkpoints.json'), src('openrouter', 'data/openrouter_daily.json'),
     src('gpu', 'data/gpu_prices.json'), src('datacenters', 'data/datacenters.json'),
     src('vercel', 'data/vercel_gateway.json'), src('sdk', 'data/sdk_downloads.json'),
-    src('signals', 'data/curated_signals.json'), src('news', 'data/dc_news.json')
+    src('signals', 'data/curated_signals.json'), src('news', 'data/dc_news.json'),
+    src('codex', 'data/codex_wau.json'), src('deals', 'data/compute_deals.json')
   ]);
   const st = [];
   if(arr) st.push(LANG === 'zh' ? 'ARR: 实时模拟' : 'ARR: live simulation');
@@ -713,9 +875,10 @@ function initDC(dc, news){
   if(vg) st.push('Gateway: ' + vg.as_of);
   if(sdk) st.push('SDK: ' + sdk.as_of);
   if(dc) st.push('DC: ' + (dc.as_of||''));
+  if(deals) st.push('Deals: ' + deals.as_of);
   $('stamps').innerHTML = st.map(s=>'<span>'+s+'</span>').join('');
-  initARR(prepArr(arr)); initTokens(or_); initVercel(vg); initSDK(sdk); initSignals(sig);
-  initGPU(gpu); initDC(dc, news);
+  initARR(prepArr(arr)); initTokens(or_); initVercel(vg); initSDK(sdk); initSignals(sig); initCodex(codex);
+  initGPU(gpu); initDC(dc, news); initDeals(deals);
 })();
 </script>
 

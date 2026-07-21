@@ -41,12 +41,14 @@ GitHub Actions 位于 `.github/workflows/daily.yml`：
 | Vercel AI Gateway 份额 | `site/data/vercel_gateway.json` | 自动；官方公开 Export API，无需 key |
 | GPU 租赁价格 | `site/data/gpu_prices.json` | 自动；Ornn 公开 API |
 | SDK 下载量 | `site/data/sdk_downloads.json` | 自动；npm / PyPI |
+| Codex / ChatGPT Agent 用户里程碑 | `site/data/codex_wau.json` | 自动；每日扫描 OpenAI 官方 RSS 与文章 |
 | KOL / X / 播客观点 | `site/data/curated_signals.json` | 自动；按 URL、事件和展示摘要去重，从最近 3 天补足 |
 | KOL 全量归档（弹窗「更多」） | `site/data/signals_archive.json` | 自动；按 URL 合并；`detail` 保留 feed 原文，`detail_zh` 保存模型提炼的中文要点 |
 | KOL 深读（弹窗增强层） | `site/data/signal_details.json` | 自动；Radar 在 GitHub Actions 中为每日展示条目生成“摘要 + 判断/洞察”和来源简介 |
 | 数据中心新闻 | `site/data/dc_news.json` | 自动；Google News RSS；按事件去重；中英界面分别展示 `title_zh` / `title_en` |
 | ARR 估算 | `site/data/arr_checkpoints.json` | 事件驱动；来自 `arr-model/arr_source.json` |
 | AI 数据中心容量 | `site/data/datacenters.json` | 半自动；来自 `data_centers/*.csv` |
+| 算力订单 | `site/data/compute_deals.json` | 自动扫描 OpenAI RSS / Anthropic Newsroom；官方原文结构化提取 |
 
 ## 人工维护点
 
@@ -63,12 +65,20 @@ ARR：
 - 覆盖 `data_centers/*.csv`。
 - 运行 `scripts/update_all.py` 生成 `site/data/datacenters.json`。
 
+Codex 周活与算力订单：
+
+- 每天扫描 OpenAI 官方 RSS；文章明确披露 Codex 或合并后的 ChatGPT/Codex 活跃用户数据时，自动更新 `site/data/codex_wau.json`。
+- 算力订单由北京时间 06:30 的任务扫描 OpenAI 官方 RSS 与 Anthropic Newsroom；新官方文章通过模型按固定 JSON 口径提取并追加到逐笔表。
+- 每个数据点保留产品范围与统计周期。纯 Codex、ChatGPT + Codex 合并口径，以及周活/月活不会被连接为同一序列；离散披露点之间不插值。
+- 自动发现的新订单默认不计入 GW 汇总；确认合同状态、基础设施层级和重复口径后，再将 `capacity_counted` 改为 `true`。
+
 ## 口径边界
 
 - ARR 是综合估算，不是公司披露收入，也不是审计数字。
 - OpenRouter / Vercel 反映第三方路由渠道窗口，适合观察边际变化，不代表全市场总量。
 - Vercel 模型榜保持每日 Top 10、Other 和最近 7 个数据日算术平均口径；模型历史、每日快照及 Lab 趋势均按官方 API 当前覆盖窗口全量重建，不混用旧页面抓取值。Lab Spend 图中的 Kimi 对应官方 `moonshotai` Lab 口径。
 - 数据中心 `as_of` 对应当前 CSV 版本，不代表上游每天更新。
+- Compute Deals 的 GW 是合同或合作容量，不代表已经投运；站点/云租约与芯片/系统框架可能重叠，不可跨层相加。金额也混合算力采购、租约和基础设施投资，不展示简单合计。
 - `reports`、`news.pinned`、`news.blocklist` 当前不在 dashboard 展示。
 - X 抓取依赖 GitHub Secret：`TWITTER_COOKIES`；cookie 不可用时保留上次有效 `feed-x.json`，不写空缓存。
 
