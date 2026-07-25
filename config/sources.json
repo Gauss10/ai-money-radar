@@ -65,6 +65,12 @@
         "tier": "infra"
       },
       {
+        "handle": "JensenHuang",
+        "name": "Jensen Huang (NVIDIA)",
+        "domain": "ai",
+        "tier": "exec"
+      },
+      {
         "handle": "AmandaAskell",
         "name": "Amanda Askell (Anthropic)",
         "domain": "ai",
