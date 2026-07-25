@@ -14,31 +14,40 @@
       "tier": "analyst",
       "tweets": [
         {
-          "id": "2080387171723137440",
-          "text": "one thing i think people dont appreciate enough about @poolsideai is their unusual degree of openness — not only have they shipped an excellent Small model that somehow beat @thinkymachines at coding, but most people (like @eliebakouch) have been shouting out their excellent papers, but also they're among a rare few to actually expose their full eval dataset as well - beautifully published, with across 6 public benchmarks  with 4 runs each and hundreds of turns per run. you can satisfy for yourself if they rewardhack. brilliant.",
-          "created_at": "2026-07-23T20:18:48+00:00",
-          "like_count": 203,
-          "retweet_count": 20,
-          "reply_count": 19,
-          "url": "https://x.com/swyx/status/2080387171723137440"
+          "id": "2080801992600179052",
+          "text": "we installed claude tag and now someone on the team needs to tell it to shut up every 30 minutes https://t.co/wkNUFFe5MY",
+          "created_at": "2026-07-24T23:47:09+00:00",
+          "like_count": 2801,
+          "retweet_count": 37,
+          "reply_count": 32,
+          "url": "https://x.com/philipliao_/status/2080801992600179052"
         },
         {
           "id": "2080500752183960017",
           "text": "btw ive been dogfooding an agentic github clone over the past month or so and its gotten quite quite enjoyable to use. even complete with built in CI/CD thanks to workers for platforms!\n\nthere's 3 more ideas i have to implement (not shown here) before this goes live. but if you're looking to hack on this with me it's a really good time to join swyx inc and influence the roadmap",
           "created_at": "2026-07-24T03:50:07+00:00",
-          "like_count": 98,
-          "retweet_count": 1,
-          "reply_count": 38,
+          "like_count": 104,
+          "retweet_count": 2,
+          "reply_count": 43,
           "url": "https://x.com/swyx/status/2080500752183960017"
         },
         {
-          "id": "2080367727621882222",
-          "text": "Poolside’s Race to AGI: Model Factory, Laguna S, Open Models, & Beyond MCP https://t.co/V9cICBXMmA\n\n@poolsideai co-founder and CEO @eisokant explains why coding is the path to AGI, how Poolside’s Model Factory runs 10,000–20,000 experiments a month and turns new models around in as little as eight weeks, why Laguna S suggests persistence and verification may matter more than raw intelligence, why agents are already helping build the next generation of models, and why the future should have 100 foundation model companies not five.",
-          "created_at": "2026-07-23T19:01:32+00:00",
-          "like_count": 44,
-          "retweet_count": 10,
-          "reply_count": 1,
-          "url": "https://x.com/latentspacepod/status/2080367727621882222"
+          "id": "2081131112534061332",
+          "text": "🎉 Today’s the day! About 500 open-source builders are coming together\n\nJoin us to support the Open Weights Movement. Bring friends and good vibes! Meet all the gladiators pushing the open AI frontier 💪🏻 https://t.co/X5RgRj8klJ",
+          "created_at": "2026-07-25T21:34:57+00:00",
+          "like_count": 16,
+          "retweet_count": 3,
+          "reply_count": 0,
+          "url": "https://x.com/eraqian/status/2081131112534061332"
+        },
+        {
+          "id": "2081120129299988764",
+          "text": "@natolambert ok but arguably releasing fable is something they didnt HAVE to do and i feel like we should recognize that contribution to society somehow",
+          "created_at": "2026-07-25T20:51:18+00:00",
+          "like_count": 5,
+          "retweet_count": 0,
+          "reply_count": 5,
+          "url": "https://x.com/swyx/status/2081120129299988764"
         },
         {
           "id": "2080511158336082176",
@@ -58,11 +67,20 @@
       "tier": "analyst",
       "tweets": [
         {
+          "id": "2080797997546590564",
+          "text": "Many don't know this but the collapse of the Bronze Age is what led humans to developing test-time compute, also known as an internal monologue.\nWhen civilization collapsed, writing systems disappeared across much of the eastern Mediterranean. Trade networks broke. Specialized bureaucracies vanished. Knowledge could no longer be offloaded to institutions.\nHumans increasingly had to simulate, plan, and reason locally rather than rely on civilization as external memory. We replaced external embeddings with internal compute.\nThe next transition may be the reverse: civilization increasingly becomes our external reasoning engine, while humans specialize in asking better questions.",
+          "created_at": "2026-07-24T23:31:16+00:00",
+          "like_count": 598,
+          "retweet_count": 39,
+          "reply_count": 51,
+          "url": "https://x.com/dylan522p/status/2080797997546590564"
+        },
+        {
           "id": "2080703926782021665",
           "text": "Impressive that Huawei shipped this first after Nvidia / Groq and AMD / Cerebras announcements.",
           "created_at": "2026-07-24T17:17:28+00:00",
-          "like_count": 124,
-          "retweet_count": 2,
+          "like_count": 206,
+          "retweet_count": 6,
           "reply_count": 15,
           "url": "https://x.com/dylan522p/status/2080703926782021665"
         },
@@ -70,19 +88,10 @@
           "id": "2080673192939807083",
           "text": "🎉 Congrats to the teams behind vLLM AFD Plugin (Ascend & vLLM, @StepFun_ai, @AntGroup, FastAFD): a new experimental plugin under vllm-project that brings Attention-FFN Disaggregation to MoE serving.\n\nAttention and the expert/FFN path are two very different workloads that normally share one topology. AFD runs them as separate services, so you can scale attention and experts independently. Same vLLM serving surface, no fork. @NVIDIA GPU and Ascend NPU.",
           "created_at": "2026-07-24T15:15:20+00:00",
-          "like_count": 82,
-          "retweet_count": 9,
+          "like_count": 140,
+          "retweet_count": 19,
           "reply_count": 3,
           "url": "https://x.com/vllm_project/status/2080673192939807083"
-        },
-        {
-          "id": "2080797997546590564",
-          "text": "Many don't know this but the collapse of the Bronze Age is what led humans to developing test-time compute, also known as an internal monologue.\nWhen civilization collapsed, writing systems disappeared across much of the eastern Mediterranean. Trade networks broke. Specialized bureaucracies vanished. Knowledge could no longer be offloaded to institutions.\nHumans increasingly had to simulate, plan, and reason locally rather than rely on civilization as external memory. We replaced external embeddings with internal compute.\nThe next transition may be the reverse: civilization increasingly becomes our external reasoning engine, while humans specialize in asking better questions.",
-          "created_at": "2026-07-24T23:31:16+00:00",
-          "like_count": 0,
-          "retweet_count": 0,
-          "reply_count": 0,
-          "url": "https://x.com/dylan522p/status/2080797997546590564"
         }
       ]
     },
@@ -110,27 +119,27 @@
           "id": "2080643682408321103",
           "text": "For my first post, I’m sharing a letter @NVIDIA signed on why open models matter.\n\nAI will transform every industry, power every company, and be built by every country.\n\nOpen models strengthen safety and cybersecurity, accelerate innovation and diffusion, and enable sovereignty.\n\nThe world needs both frontier closed models and frontier open models.\n\nhttps://t.co/AUKzoQ5Ikb",
           "created_at": "2026-07-24T13:18:05+00:00",
-          "like_count": 111733,
-          "retweet_count": 19162,
-          "reply_count": 11567,
+          "like_count": 158505,
+          "retweet_count": 27249,
+          "reply_count": 15222,
           "url": "https://x.com/JensenHuang/status/2080643682408321103"
         },
         {
           "id": "2080683363174945065",
           "text": "i want the US to win in AI both in open source and proprietary models, and i am glad to see this",
           "created_at": "2026-07-24T15:55:45+00:00",
-          "like_count": 9300,
-          "retweet_count": 574,
-          "reply_count": 1471,
+          "like_count": 13993,
+          "retweet_count": 885,
+          "reply_count": 2002,
           "url": "https://x.com/sama/status/2080683363174945065"
         },
         {
           "id": "2080515937803886872",
           "text": "Agreed: GPT-5.6 Pro (which is only available via the chatbot) is the smartest model out there. GPT-5.6 Ultra (the best model in Codex) is not near as powerful on hard tasks.\n\nFor really hard problems: GPT-5.6 Sol Pro&gt;Fable 5 Ultracode &gt; GPT-5.6 Sol Ultra. (Yes, this is confusing)",
           "created_at": "2026-07-24T04:50:28+00:00",
-          "like_count": 1884,
-          "retweet_count": 84,
-          "reply_count": 104,
+          "like_count": 2145,
+          "retweet_count": 100,
+          "reply_count": 116,
           "url": "https://x.com/emollick/status/2080515937803886872"
         }
       ]
@@ -149,13 +158,31 @@
       "tier": "exec",
       "tweets": [
         {
-          "id": "2080332282028507234",
-          "text": "Congratulations @KanishkaNarayan on your new role as UK's AI Minister in the Cabinet, great news for the UK AI ecosystem!",
-          "created_at": "2026-07-23T16:40:41+00:00",
-          "like_count": 1243,
-          "retweet_count": 56,
-          "reply_count": 40,
-          "url": "https://x.com/demishassabis/status/2080332282028507234"
+          "id": "2080643682408321103",
+          "text": "For my first post, I’m sharing a letter @NVIDIA signed on why open models matter.\n\nAI will transform every industry, power every company, and be built by every country.\n\nOpen models strengthen safety and cybersecurity, accelerate innovation and diffusion, and enable sovereignty.\n\nThe world needs both frontier closed models and frontier open models.\n\nhttps://t.co/AUKzoQ5Ikb",
+          "created_at": "2026-07-24T13:18:05+00:00",
+          "like_count": 158502,
+          "retweet_count": 27249,
+          "reply_count": 15222,
+          "url": "https://x.com/JensenHuang/status/2080643682408321103"
+        },
+        {
+          "id": "2081039623422177765",
+          "text": "A strong and secure open ecosystem is important for the world to benefit from AI. We’ve always supported and contributed heavily to open source and science from Jax to Transformers to AlphaFold to Gemma open models which have now been downloaded 300M+ times. And the standards framework we’ve proposed supports responsible deployment of both open and proprietary models.",
+          "created_at": "2026-07-25T15:31:24+00:00",
+          "like_count": 3671,
+          "retweet_count": 431,
+          "reply_count": 158,
+          "url": "https://x.com/demishassabis/status/2081039623422177765"
+        },
+        {
+          "id": "2081075346208600103",
+          "text": "just to clarify: Gemma 4 models have been downloaded 300M+ times, the Gemma open model series as a whole has been downloaded an incredible 900M+ times!! https://t.co/ezuKBVMr8Q",
+          "created_at": "2026-07-25T17:53:21+00:00",
+          "like_count": 298,
+          "retweet_count": 12,
+          "reply_count": 17,
+          "url": "https://x.com/demishassabis/status/2081075346208600103"
         }
       ]
     },
@@ -176,46 +203,63 @@
           "id": "2080643682408321103",
           "text": "For my first post, I’m sharing a letter @NVIDIA signed on why open models matter.\n\nAI will transform every industry, power every company, and be built by every country.\n\nOpen models strengthen safety and cybersecurity, accelerate innovation and diffusion, and enable sovereignty.\n\nThe world needs both frontier closed models and frontier open models.\n\nhttps://t.co/AUKzoQ5Ikb",
           "created_at": "2026-07-24T13:18:05+00:00",
-          "like_count": 111754,
-          "retweet_count": 19165,
-          "reply_count": 11569,
+          "like_count": 158504,
+          "retweet_count": 27248,
+          "reply_count": 15222,
           "url": "https://x.com/JensenHuang/status/2080643682408321103"
         },
         {
           "id": "2080686579400765517",
           "text": "Welcome @jensenhuang 💚\n\nThe future of AI leadership needs both frontier closed models and frontier open models.",
           "created_at": "2026-07-24T16:08:32+00:00",
-          "like_count": 5343,
-          "retweet_count": 427,
-          "reply_count": 224,
+          "like_count": 7996,
+          "retweet_count": 678,
+          "reply_count": 298,
           "url": "https://x.com/nvidia/status/2080686579400765517"
         },
         {
-          "id": "2080326297260072992",
-          "text": "What a moment for @NPS_Monterey and the public sector.\n\nAt Converge @ NPS, our CEO Jensen Huang joined federal leaders and ecosystem partners to commission the #NVIDIADGX GB300 system, providing 1,500 students and 600 faculty with on-premises access to large-scale AI computing for research, model training, simulations, and real-world application development.\n\nThe visit marked a shared commitment to advancing AI education, research, and mission-focused innovation.",
-          "created_at": "2026-07-23T16:16:54+00:00",
-          "like_count": 397,
-          "retweet_count": 45,
-          "reply_count": 31,
-          "url": "https://x.com/nvidia/status/2080326297260072992"
+          "id": "2080886765146321314",
+          "text": "SK Group and NVIDIA today announced a $500 billion-plus initiative spanning AI factories and next-generation memory.\n\n➡️ @SKtelecom is building a 2-gigawatt NVIDIA Vera Rubin DSX AI Factory in Korea to serve global compute demand. \n➡️ @SKhynix and NVIDIA will codevelop next-generation AI memory, including HBM.\n\nKorea is ready to become a global AI powerhouse with world-class networks and data centers, leadership in chip technology and vast industrial scale.",
+          "created_at": "2026-07-25T05:24:00+00:00",
+          "like_count": 2959,
+          "retweet_count": 395,
+          "reply_count": 113,
+          "url": "https://x.com/nvidia/status/2080886765146321314"
         },
         {
-          "id": "2080663854447804796",
-          "text": "Honored to celebrate @kaistpr’s launch of the joint AI Research Lab in Seoul, dedicated to advancing agentic AI for Korea’s industries.\n\nTogether with KAIST’s leading researchers, we’re advancing frontier AI and opening new pathways for Korea’s next generation of AI talent.",
-          "created_at": "2026-07-24T14:38:14+00:00",
-          "like_count": 195,
-          "retweet_count": 25,
-          "reply_count": 26,
-          "url": "https://x.com/nvidia/status/2080663854447804796"
+          "id": "2080833379197477226",
+          "text": "This is the Golden Age of Korea.\n\nNVIDIA is proud to partner with leaders across government, industry, and global technology to advance the K-AI vision — across chips, frontier AI, physical AI and robotics, and AI factories.\n\nTogether, we’re building AI infrastructure for Korea and the world.",
+          "created_at": "2026-07-25T01:51:52+00:00",
+          "like_count": 1515,
+          "retweet_count": 273,
+          "reply_count": 79,
+          "url": "https://x.com/nvidia/status/2080833379197477226"
         },
         {
-          "id": "2080078677426241940",
-          "text": "Personalized fan experiences don't have to end at the game.\n\nCheck out how @LiveX_ai is using NVIDIA AI to blend real-time interaction, customization, and commerce.",
-          "created_at": "2026-07-22T23:52:57+00:00",
-          "like_count": 133,
-          "retweet_count": 11,
-          "reply_count": 16,
-          "url": "https://x.com/nvidia/status/2080078677426241940"
+          "id": "2080788131062641095",
+          "text": "Korea has long been a technology leader, with the talent, industrial strength, and drive to help shape the AI era.\n\nPresident Lee Jae Myung met with our CEO @JensenHuang today ahead of the San Francisco AI Summit to discuss deepening the partnership behind Korea’s national AI ambitions.",
+          "created_at": "2026-07-24T22:52:04+00:00",
+          "like_count": 1202,
+          "retweet_count": 192,
+          "reply_count": 57,
+          "url": "https://x.com/nvidia/status/2080788131062641095"
+        }
+      ]
+    },
+    {
+      "handle": "JensenHuang",
+      "name": "Jensen Huang (NVIDIA)",
+      "domain": "ai",
+      "tier": "exec",
+      "tweets": [
+        {
+          "id": "2080643682408321103",
+          "text": "For my first post, I’m sharing a letter @NVIDIA signed on why open models matter.\n\nAI will transform every industry, power every company, and be built by every country.\n\nOpen models strengthen safety and cybersecurity, accelerate innovation and diffusion, and enable sovereignty.\n\nThe world needs both frontier closed models and frontier open models.\n\nhttps://t.co/AUKzoQ5Ikb",
+          "created_at": "2026-07-24T13:18:05+00:00",
+          "like_count": 158502,
+          "retweet_count": 27249,
+          "reply_count": 15222,
+          "url": "https://x.com/JensenHuang/status/2080643682408321103"
         }
       ]
     },
@@ -236,46 +280,28 @@
           "id": "2080699497064083942",
           "text": "On several coding and knowledge work evaluations, Opus 5 is the new state-of-the-art: https://t.co/Cl3fDxM0gP",
           "created_at": "2026-07-24T16:59:52+00:00",
-          "like_count": 8250,
-          "retweet_count": 736,
-          "reply_count": 362,
+          "like_count": 10472,
+          "retweet_count": 986,
+          "reply_count": 452,
           "url": "https://x.com/claudeai/status/2080699497064083942"
         },
         {
           "id": "2080713091688583312",
           "text": "Opus 5 is a great model for coding, data analysis, design, biology, knowledge work.\n\nMore than any of these eval scores, what is most exciting to me is something else: Opus 5 is our least prompt injectable model yet. It is a bit buried in the system card, but across PI evals and red teaming, Opus 5 is very hard to prompt inject successfully.\n\nAnd when layering defenses -- strong model alignment, combined with prompt injection probes, combined with Auto Mode in Claude Code -- the success rate for prompt injection attacks drops to ~0. This is new and exciting! More about this soon.\n\nhttps://t.co/Tc7z2FqJhQ",
           "created_at": "2026-07-24T17:53:53+00:00",
-          "like_count": 4012,
-          "retweet_count": 287,
-          "reply_count": 232,
+          "like_count": 5915,
+          "retweet_count": 452,
+          "reply_count": 317,
           "url": "https://x.com/bcherny/status/2080713091688583312"
-        },
-        {
-          "id": "2080172448314790016",
-          "text": "@rauchg @tobi This is pretty how I optimize code these days. “Hey fable, use a dynamic workflow to get p95 time down under 300ms. Dont stop till you’re done, use a profiler”",
-          "created_at": "2026-07-23T06:05:34+00:00",
-          "like_count": 1456,
-          "retweet_count": 60,
-          "reply_count": 52,
-          "url": "https://x.com/bcherny/status/2080172448314790016"
         },
         {
           "id": "2080731329990377755",
           "text": "@nathanv246 echo \"Avoid code comments unless your are explicitly asked to add comments\" &gt;&gt; CLAUDE.md",
           "created_at": "2026-07-24T19:06:21+00:00",
-          "like_count": 51,
-          "retweet_count": 3,
-          "reply_count": 3,
+          "like_count": 105,
+          "retweet_count": 5,
+          "reply_count": 4,
           "url": "https://x.com/bcherny/status/2080731329990377755"
-        },
-        {
-          "id": "2080425280561353165",
-          "text": "@dmnc_eu @rauchg @tobi Opus 4.8 is also great at it if you are not using an Enterprise plan",
-          "created_at": "2026-07-23T22:50:13+00:00",
-          "like_count": 8,
-          "retweet_count": 0,
-          "reply_count": 1,
-          "url": "https://x.com/bcherny/status/2080425280561353165"
         }
       ]
     },
@@ -289,18 +315,18 @@
           "id": "2080699495453528290",
           "text": "Introducing Claude Opus 5.\n\nIt's a thoughtful and proactive model that comes close to the frontier intelligence of Fable 5 at half the price. https://t.co/GQWhcq2CQL",
           "created_at": "2026-07-24T16:59:51+00:00",
-          "like_count": 48832,
-          "retweet_count": 5816,
-          "reply_count": 2555,
+          "like_count": 59598,
+          "retweet_count": 7330,
+          "reply_count": 3039,
           "url": "https://x.com/claudeai/status/2080699495453528290"
         },
         {
           "id": "2080707593115516985",
           "text": "Claude Opus 5 is great at long-running autonomous work! Try it out and let us know what you think :)",
           "created_at": "2026-07-24T17:32:02+00:00",
-          "like_count": 493,
-          "retweet_count": 16,
-          "reply_count": 49,
+          "like_count": 765,
+          "retweet_count": 27,
+          "reply_count": 64,
           "url": "https://x.com/_catwu/status/2080707593115516985"
         }
       ]
@@ -315,36 +341,36 @@
           "id": "2080699495453528290",
           "text": "Introducing Claude Opus 5.\n\nIt's a thoughtful and proactive model that comes close to the frontier intelligence of Fable 5 at half the price. https://t.co/GQWhcq2CQL",
           "created_at": "2026-07-24T16:59:51+00:00",
-          "like_count": 48834,
-          "retweet_count": 5817,
-          "reply_count": 2555,
+          "like_count": 59599,
+          "retweet_count": 7330,
+          "reply_count": 3039,
           "url": "https://x.com/claudeai/status/2080699495453528290"
         },
         {
           "id": "2080731979528679617",
           "text": "Just over 6 months later, Opus 5 now produces near-superhuman level spreadsheets and slide decks that match what a consultant would make. Things are changing fast. https://t.co/HKpFPP4hrM",
           "created_at": "2026-07-24T19:08:56+00:00",
-          "like_count": 1362,
-          "retweet_count": 79,
-          "reply_count": 35,
+          "like_count": 3373,
+          "retweet_count": 180,
+          "reply_count": 90,
           "url": "https://x.com/alexalbert__/status/2080731979528679617"
         },
         {
           "id": "2080703118086693121",
           "text": "Some of my favorite graphs from Opus 5 launch. We put a ton of work into making this model token efficient across domains while still raising the intelligence bar. \n\nIt feels very smooth to use and I prefer it over Fable 5 for  many coding tasks. https://t.co/bScX0FgtLq",
           "created_at": "2026-07-24T17:14:15+00:00",
-          "like_count": 549,
-          "retweet_count": 22,
-          "reply_count": 36,
+          "like_count": 674,
+          "retweet_count": 35,
+          "reply_count": 42,
           "url": "https://x.com/alexalbert__/status/2080703118086693121"
         },
         {
           "id": "2080702002120757562",
           "text": "Welcome to the world, Opus 5.",
           "created_at": "2026-07-24T17:09:49+00:00",
-          "like_count": 226,
-          "retweet_count": 2,
-          "reply_count": 12,
+          "like_count": 296,
+          "retweet_count": 4,
+          "reply_count": 17,
           "url": "https://x.com/alexalbert__/status/2080702002120757562"
         }
       ]
@@ -356,38 +382,47 @@
       "tier": "builder",
       "tweets": [
         {
+          "id": "2081103993917649134",
+          "text": "I started doing all my research with agent CLIs and the filesystem. A 📁 𝚛𝚎𝚜𝚎𝚊𝚛𝚌𝚑/ folder, an 𝙰𝙶𝙴𝙽𝚃𝚂.𝚖𝚍 describing the format I like and best practices. Then launch my agent and ask a question.\n\nNo fancy apps, knowledge graphs, UIs. The agent can be asked to find and correlate knowledge from previous sessions. Scales to infinity. The folder can be synced via iCloud, git, etc.\n\nIf I want to share some outcome, I can ask the agent to render a cool HTML report and deploy it to Vercel. The \"software\" that powers this is English in 𝙰𝙶𝙴𝙽𝚃𝚂.𝚖𝚍.",
+          "created_at": "2026-07-25T19:47:11+00:00",
+          "like_count": 467,
+          "retweet_count": 12,
+          "reply_count": 42,
+          "url": "https://x.com/rauchg/status/2081103993917649134"
+        },
+        {
+          "id": "2081123293340520642",
+          "text": "The (software) factory is the product. Your product is only as good as the agents you set up to autonomously maintain it.\n\nThis is what @elonmusk figured out about Tesla, and it's now true for the software world. https://t.co/8Jj6JH6FAZ",
+          "created_at": "2026-07-25T21:03:53+00:00",
+          "like_count": 373,
+          "retweet_count": 19,
+          "reply_count": 36,
+          "url": "https://x.com/rauchg/status/2081123293340520642"
+        },
+        {
           "id": "2080632084662775954",
           "text": "v0 can now turn a full Figma file into a working app.\n\nWith a single link, the agent explores your pages and frames, picks what it needs, and builds the screens as one app. https://t.co/2GF8vWVuWz",
           "created_at": "2026-07-24T12:31:59+00:00",
-          "like_count": 231,
-          "retweet_count": 20,
-          "reply_count": 16,
+          "like_count": 296,
+          "retweet_count": 25,
+          "reply_count": 21,
           "url": "https://x.com/v0/status/2080632084662775954"
         },
         {
-          "id": "2080344136625049690",
-          "text": "🔴🔊 AI Gateway keeps getting better. Unreal product velocity from the team.",
-          "created_at": "2026-07-23T17:27:47+00:00",
-          "like_count": 202,
-          "retweet_count": 7,
-          "reply_count": 20,
-          "url": "https://x.com/rauchg/status/2080344136625049690"
-        },
-        {
-          "id": "2080343888662077799",
-          "text": "Transcribe live audio on AI Gateway.\n\nAudio streams in, the transcript streams back as you speak. Build voice agents with 𝚜𝚝𝚛𝚎𝚊𝚖𝚃𝚛𝚊𝚗𝚜𝚌𝚛𝚒𝚋𝚎 in the AI SDK.\n\nhttps://t.co/rgnW0BRRAF",
-          "created_at": "2026-07-23T17:26:48+00:00",
-          "like_count": 97,
-          "retweet_count": 9,
-          "reply_count": 3,
-          "url": "https://x.com/vercel_dev/status/2080343888662077799"
+          "id": "2081149743368122723",
+          "text": "https://t.co/O7y9dmUqk5 is more fundamental than any other framework we’ve built.\n\nIt’s the genesis of your company. When you have a new idea, don’t think: “I’ll go to an agent and ad-hoc prompt.”\n\nThink: how can I build the factory that will start, maintain and grow my idea",
+          "created_at": "2026-07-25T22:48:59+00:00",
+          "like_count": 100,
+          "retweet_count": 4,
+          "reply_count": 17,
+          "url": "https://x.com/rauchg/status/2081149743368122723"
         },
         {
           "id": "2080705590238892474",
           "text": "Claude Opus 5 is now on AI Gateway with support for fast mode.\n\nImprovements versus previous Opus models on agentic coding and quality at lower reasoning effort levels.\n\n𝚖𝚘𝚍𝚎𝚕: '𝚊𝚗𝚝𝚑𝚛𝚘𝚙𝚒𝚌/𝚌𝚕𝚊𝚞𝚍𝚎-𝚘𝚙𝚞𝚜-𝟻'\n\nhttps://t.co/LEUrGqiWeU",
           "created_at": "2026-07-24T17:24:05+00:00",
-          "like_count": 37,
-          "retweet_count": 5,
+          "like_count": 43,
+          "retweet_count": 7,
           "reply_count": 3,
           "url": "https://x.com/vercel_dev/status/2080705590238892474"
         }
@@ -400,30 +435,48 @@
       "tier": "builder",
       "tweets": [
         {
-          "id": "2080637367468073321",
-          "text": "NVIDIA, Palantir, Replit, Microsoft, Crowdstrike, Dell and others send a strong message to congress to keep open access to open weights models.\n\n\"Our AI leadership will be judged not by one frontier AI model, but whether the United States builds a strong, open ecosystem that diffuses into every sector.\"\n\n\"Open weights also strengthen competition and competition is what keeps the gains of AI broadly shared rather than concentrated in a few hands.\"\n\n\"Openness may be one of the most important paths to AI safety and security.\"",
-          "created_at": "2026-07-24T12:52:59+00:00",
-          "like_count": 572,
-          "retweet_count": 96,
-          "reply_count": 29,
-          "url": "https://x.com/Dan_Jeffries1/status/2080637367468073321"
+          "id": "2080850075358826871",
+          "text": "Will Anthropic sign? \n\nIf you work at Anthropic worth asking your leadership to sign or make their position clear: Are they for banning open weight models?",
+          "created_at": "2026-07-25T02:58:12+00:00",
+          "like_count": 1603,
+          "retweet_count": 72,
+          "reply_count": 125,
+          "url": "https://x.com/amasad/status/2080850075358826871"
         },
         {
-          "id": "2080512523389005894",
-          "text": "My chess autoresearch agent got a PhD in modern LLM finetuning. https://t.co/xw9mvVRhgY",
-          "created_at": "2026-07-24T04:36:54+00:00",
-          "like_count": 628,
-          "retweet_count": 29,
-          "reply_count": 34,
-          "url": "https://x.com/amasad/status/2080512523389005894"
+          "id": "2080798081466138781",
+          "text": "wow. openai decides to sign on to the Nvidia/Microsoft-backed open letter to regulators supporting open source \n\nincredible https://t.co/aw6MFo1fDx",
+          "created_at": "2026-07-24T23:31:36+00:00",
+          "like_count": 1236,
+          "retweet_count": 62,
+          "reply_count": 62,
+          "url": "https://x.com/MikeIsaac/status/2080798081466138781"
+        },
+        {
+          "id": "2081086837263937543",
+          "text": "Just deployed a new chess engine; we're closing in on an estimated 1200 Elo. \n\nThe goal is to get it to 2000+, while keeping the constraints:\n\n1. One small finetuned LLM (no custom pretraining or architecture)\n2. The model has to produce the moves with no chess engine assistance\n\nIf you relax these constraints, it gets much easier.",
+          "created_at": "2026-07-25T18:39:01+00:00",
+          "like_count": 142,
+          "retweet_count": 5,
+          "reply_count": 26,
+          "url": "https://x.com/amasad/status/2081086837263937543"
+        },
+        {
+          "id": "2081090586346725718",
+          "text": "@astridwilde1 Much of the economy is betting on LLMs scaling all the way to AGI. If we can’t teach them chess then….",
+          "created_at": "2026-07-25T18:53:55+00:00",
+          "like_count": 11,
+          "retweet_count": 0,
+          "reply_count": 2,
+          "url": "https://x.com/amasad/status/2081090586346725718"
         },
         {
           "id": "2080775857170420221",
           "text": "Power is fable but what you describe sounds too much. Perhaps @zhenthebuilder can take a look. \n\nOn cost, a few things coming soon.\n- model choice: you’ll be able to select which model you want to use and exact model effort, including open models\n- a router that optimizes for best cost vs performance",
           "created_at": "2026-07-24T22:03:17+00:00",
-          "like_count": 1,
+          "like_count": 5,
           "retweet_count": 0,
-          "reply_count": 1,
+          "reply_count": 3,
           "url": "https://x.com/amasad/status/2080775857170420221"
         }
       ]
@@ -438,10 +491,28 @@
           "id": "2080771183944073347",
           "text": "Gemini does more than talk. It gets things done.\n\nToday’s use case: Drop in a school calendar PDF. Tell Gemini to add every \"No School\" day to your Google Calendar. Done.\n\n📍Gemini Spark is live now for all Google AI Pro subscribers in the US, expanding globally next.",
           "created_at": "2026-07-24T21:44:43+00:00",
-          "like_count": 289,
-          "retweet_count": 17,
-          "reply_count": 41,
+          "like_count": 956,
+          "retweet_count": 51,
+          "reply_count": 104,
           "url": "https://x.com/joshwoodward/status/2080771183944073347"
+        },
+        {
+          "id": "2080805509750538450",
+          "text": "@danliu Yeah, most people just say, \"Gemini did this for me\"",
+          "created_at": "2026-07-25T00:01:07+00:00",
+          "like_count": 9,
+          "retweet_count": 0,
+          "reply_count": 1,
+          "url": "https://x.com/joshwoodward/status/2080805509750538450"
+        },
+        {
+          "id": "2080805395044667885",
+          "text": "@mitanshu @GeminiApp I'll DM you, this could be a good eval for us",
+          "created_at": "2026-07-25T00:00:40+00:00",
+          "like_count": 0,
+          "retweet_count": 0,
+          "reply_count": 1,
+          "url": "https://x.com/joshwoodward/status/2080805395044667885"
         }
       ]
     },
@@ -455,7 +526,7 @@
           "id": "2080729163745595495",
           "text": "@JensenHuang @nvidia 🫡",
           "created_at": "2026-07-24T18:57:45+00:00",
-          "like_count": 19,
+          "like_count": 28,
           "retweet_count": 0,
           "reply_count": 0,
           "url": "https://x.com/ornith_/status/2080729163745595495"
@@ -464,5 +535,5 @@
     }
   ],
   "errors": null,
-  "generated_at": "2026-07-24T23:31:34.588271+00:00"
+  "generated_at": "2026-07-25T23:29:42.133404+00:00"
 }
