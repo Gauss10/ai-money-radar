@@ -14,22 +14,22 @@
       "tier": "analyst",
       "tweets": [
         {
-          "id": "2081131112534061332",
-          "text": "🎉 Today’s the day! About 500 open-source builders are coming together\n\nJoin us to support the Open Weights Movement. Bring friends and good vibes! Meet all the gladiators pushing the open AI frontier 💪🏻 https://t.co/X5RgRj8klJ",
-          "created_at": "2026-07-25T21:34:57+00:00",
-          "like_count": 40,
-          "retweet_count": 5,
-          "reply_count": 1,
-          "url": "https://x.com/eraqian/status/2081131112534061332"
+          "id": "2081784874994942271",
+          "text": "somehow without me noticing, @latentspacepod has quietly overtaken some of my own podcast heroes like @ProfCalNewport, @TBPN, @gruber, and other AI pod friends! wow!\n\nwe are seriously ramping up LS as a new tech media org, thanks to subscribers and donors. @ricmac joins us as our first fulltime Head of Editorial to build out technical  coverage of AI news; we will also be FINALLY opening up for sponsorships.\n\nwe are hiring writers and show producers. reply/reach out if you are interested!",
+          "created_at": "2026-07-27T16:52:46+00:00",
+          "like_count": 68,
+          "retweet_count": 10,
+          "reply_count": 21,
+          "url": "https://x.com/swyx/status/2081784874994942271"
         },
         {
-          "id": "2081120129299988764",
-          "text": "@natolambert ok but arguably releasing fable is something they didnt HAVE to do and i feel like we should recognize that contribution to society somehow",
-          "created_at": "2026-07-25T20:51:18+00:00",
-          "like_count": 18,
-          "retweet_count": 0,
-          "reply_count": 8,
-          "url": "https://x.com/swyx/status/2081120129299988764"
+          "id": "2081797702170636513",
+          "text": "✨ontologies✨\n\nthanks Prof @coyle_frankp, @emileifrem, Jesús Barrasa, @steveonjava et al for reintroducing these concepts to the AI Engineering world https://t.co/TCTRlnuGOL",
+          "created_at": "2026-07-27T17:43:44+00:00",
+          "like_count": 45,
+          "retweet_count": 5,
+          "reply_count": 3,
+          "url": "https://x.com/aiDotEngineer/status/2081797702170636513"
         },
         {
           "id": "2081212673686159499",
@@ -41,22 +41,22 @@
           "url": "https://x.com/swyx/status/2081212673686159499"
         },
         {
-          "id": "2081122841102340550",
-          "text": "@cormacb cormac's latest at @aidotengineer is now live!\nhttps://t.co/Bzr9e7KQFC",
-          "created_at": "2026-07-25T21:02:05+00:00",
-          "like_count": 2,
-          "retweet_count": 0,
-          "reply_count": 0,
-          "url": "https://x.com/swyx/status/2081122841102340550"
-        },
-        {
-          "id": "2080972668833333421",
-          "text": "@MVXMXM @JohnPhamous i solved the spritesheeting btw. the solution was moving from oneshotting spritesheets with imagegen models to.... (think about it!)\n https://t.co/88VwwWPLhv\n\nsite should be updated by the time u see this",
-          "created_at": "2026-07-25T11:05:21+00:00",
+          "id": "2081836100361064702",
+          "text": "@benhylak fable -&gt; opus routing case in point",
+          "created_at": "2026-07-27T20:16:19+00:00",
           "like_count": 1,
           "retweet_count": 0,
+          "reply_count": 0,
+          "url": "https://x.com/swyx/status/2081836100361064702"
+        },
+        {
+          "id": "2081783999740219547",
+          "text": "@nbaschez lolll this is somewhat misleading bc of what it omits LLM wise",
+          "created_at": "2026-07-27T16:49:17+00:00",
+          "like_count": 0,
+          "retweet_count": 0,
           "reply_count": 1,
-          "url": "https://x.com/swyx/status/2080972668833333421"
+          "url": "https://x.com/swyx/status/2081783999740219547"
         }
       ]
     },
@@ -66,15 +66,6 @@
       "domain": "ai",
       "tier": "analyst",
       "tweets": [
-        {
-          "id": "2080797997546590564",
-          "text": "Many don't know this but the collapse of the Bronze Age is what led humans to developing test-time compute, also known as an internal monologue.\nWhen civilization collapsed, writing systems disappeared across much of the eastern Mediterranean. Trade networks broke. Specialized bureaucracies vanished. Knowledge could no longer be offloaded to institutions.\nHumans increasingly had to simulate, plan, and reason locally rather than rely on civilization as external memory. We replaced external embeddings with internal compute.\nThe next transition may be the reverse: civilization increasingly becomes our external reasoning engine, while humans specialize in asking better questions.",
-          "created_at": "2026-07-24T23:31:16+00:00",
-          "like_count": 616,
-          "retweet_count": 41,
-          "reply_count": 51,
-          "url": "https://x.com/dylan522p/status/2080797997546590564"
-        },
         {
           "id": "2081185486169886958",
           "text": "@SQQQbear Shitposting is fun. Note this is the only tweet I've done that's pure AI output for a reason lol",
@@ -105,7 +96,17 @@
       "name": "Sam Altman",
       "domain": "ai",
       "tier": "exec",
-      "tweets": []
+      "tweets": [
+        {
+          "id": "2081707498919112925",
+          "text": "i just realized gpt-5.6 sol is literally all i need. openai could stop shipping new models tomorrow and i'd be completely fine",
+          "created_at": "2026-07-27T11:45:18+00:00",
+          "like_count": 815,
+          "retweet_count": 31,
+          "reply_count": 209,
+          "url": "https://x.com/icanvardar/status/2081707498919112925"
+        }
+      ]
     },
     {
       "handle": "DarioAmodei",
@@ -119,26 +120,7 @@
       "name": "Demis Hassabis (Google DeepMind)",
       "domain": "ai",
       "tier": "exec",
-      "tweets": [
-        {
-          "id": "2081039623422177765",
-          "text": "A strong and secure open ecosystem is important for the world to benefit from AI. We’ve always supported and contributed heavily to open source and science from Jax to Transformers to AlphaFold to Gemma open models which have now been downloaded 300M+ times. And the standards framework we’ve proposed supports responsible deployment of both open and proprietary models.",
-          "created_at": "2026-07-25T15:31:24+00:00",
-          "like_count": 6430,
-          "retweet_count": 686,
-          "reply_count": 210,
-          "url": "https://x.com/demishassabis/status/2081039623422177765"
-        },
-        {
-          "id": "2081075346208600103",
-          "text": "just to clarify: Gemma 4 models have been downloaded 300M+ times, the Gemma open model series as a whole has been downloaded an incredible 900M+ times!! https://t.co/ezuKBVMr8Q",
-          "created_at": "2026-07-25T17:53:21+00:00",
-          "like_count": 710,
-          "retweet_count": 31,
-          "reply_count": 27,
-          "url": "https://x.com/demishassabis/status/2081075346208600103"
-        }
-      ]
+      "tweets": []
     },
     {
       "handle": "jietang",
@@ -154,40 +136,31 @@
       "tier": "infra",
       "tweets": [
         {
-          "id": "2080886765146321314",
-          "text": "SK Group and NVIDIA today announced a $500 billion-plus initiative spanning AI factories and next-generation memory.\n\n➡️ @SKtelecom is building a 2-gigawatt NVIDIA Vera Rubin DSX AI Factory in Korea to serve global compute demand. \n➡️ @SKhynix and NVIDIA will codevelop next-generation AI memory, including HBM.\n\nKorea is ready to become a global AI powerhouse with world-class networks and data centers, leadership in chip technology and vast industrial scale.",
-          "created_at": "2026-07-25T05:24:00+00:00",
-          "like_count": 3350,
-          "retweet_count": 450,
-          "reply_count": 131,
-          "url": "https://x.com/nvidia/status/2080886765146321314"
+          "id": "2081666629264449730",
+          "text": "AI security advances when the industry builds in the open, together.\n\nWe're introducing the Open Secure AI Alliance with industry leaders to develop new techniques and tools to safeguard software and agents.\n\nBy sharing models, tooling and research in the open, we can broaden the community of defenders.\n\nLearn more about the founding members’ contributions: https://t.co/A16oqxs5Ty",
+          "created_at": "2026-07-27T09:02:54+00:00",
+          "like_count": 6340,
+          "retweet_count": 862,
+          "reply_count": 425,
+          "url": "https://x.com/nvidia/status/2081666629264449730"
         },
         {
-          "id": "2080833379197477226",
-          "text": "This is the Golden Age of Korea.\n\nNVIDIA is proud to partner with leaders across government, industry, and global technology to advance the K-AI vision — across chips, frontier AI, physical AI and robotics, and AI factories.\n\nTogether, we’re building AI infrastructure for Korea and the world.",
-          "created_at": "2026-07-25T01:51:52+00:00",
-          "like_count": 1748,
-          "retweet_count": 322,
-          "reply_count": 89,
-          "url": "https://x.com/nvidia/status/2080833379197477226"
+          "id": "2081730105454322151",
+          "text": "Korea’s AI moment came to San Francisco last week 🇰🇷 \n\nPresident Lee Jae Myung joined @JensenHuang and some of the biggest names in technology, industry and research to accelerate Korea’s full-stack AI ambitions. https://t.co/rTcXjtJNb9",
+          "created_at": "2026-07-27T13:15:08+00:00",
+          "like_count": 489,
+          "retweet_count": 69,
+          "reply_count": 62,
+          "url": "https://x.com/nvidia/status/2081730105454322151"
         },
         {
-          "id": "2081142850994229468",
-          "text": "\"When I left this morning, I was just Jensen. Next time I come back, call me K-Jensen.”\n\nKorea isn't just an NVIDIA partner anymore. It's where the next wave of AI gets built and SNU is at the center of it.\n\nIntroducing the NVIDIA AI Technology Center at @SeoulNatlUni.\n\nNVIDIA ❤️ SNU — let's build. 🇰🇷",
-          "created_at": "2026-07-25T22:21:36+00:00",
-          "like_count": 1052,
-          "retweet_count": 123,
-          "reply_count": 65,
-          "url": "https://x.com/nvidia/status/2081142850994229468"
-        },
-        {
-          "id": "2080887168793190587",
-          "text": "To compete in the intelligence era, nations need AI factory infrastructure. \n\nTogether, @official_naver, NVIDIA, and @Brookfield are expanding Korea’s national AI factory buildout to fuel Korea’s startups and industries at gigawatt-scale. \n\nNAVER is deploying the NVIDIA DSX platform to deliver full-stack, lowest-cost AI factory infrastructure.",
-          "created_at": "2026-07-25T05:25:36+00:00",
-          "like_count": 574,
-          "retweet_count": 75,
-          "reply_count": 37,
-          "url": "https://x.com/nvidia/status/2080887168793190587"
+          "id": "2081884835715404071",
+          "text": "Translation queues and custom integrations can slow global launches.\n\nOur Digital Marketing team built an AI-powered localization platform with NVIDIA Nemotron Speech to change that.\n\nSee the results ↓\nhttps://t.co/FbBEdcINv1 https://t.co/7GyBR9ivRM",
+          "created_at": "2026-07-27T23:29:59+00:00",
+          "like_count": 10,
+          "retweet_count": 0,
+          "reply_count": 4,
+          "url": "https://x.com/nvidia/status/2081884835715404071"
         }
       ]
     },
@@ -196,7 +169,26 @@
       "name": "Jensen Huang (NVIDIA)",
       "domain": "ai",
       "tier": "exec",
-      "tweets": []
+      "tweets": [
+        {
+          "id": "2081698060330250294",
+          "text": "Attackers have frontier AI. Defenders need a frontier AI ecosystem—the best open and closed models, force-multiplied by a global community.\n\nDuring the Hugging Face incident, closed AI blocked essential forensics. An open-weight frontier model helped contain the intrusion.\n\nThat’s why we created the Open Secure AI Alliance.",
+          "created_at": "2026-07-27T11:07:48+00:00",
+          "like_count": 27768,
+          "retweet_count": 3216,
+          "reply_count": 1643,
+          "url": "https://x.com/JensenHuang/status/2081698060330250294"
+        },
+        {
+          "id": "2081666629264449730",
+          "text": "AI security advances when the industry builds in the open, together.\n\nWe're introducing the Open Secure AI Alliance with industry leaders to develop new techniques and tools to safeguard software and agents.\n\nBy sharing models, tooling and research in the open, we can broaden the community of defenders.\n\nLearn more about the founding members’ contributions: https://t.co/A16oqxs5Ty",
+          "created_at": "2026-07-27T09:02:54+00:00",
+          "like_count": 6340,
+          "retweet_count": 862,
+          "reply_count": 425,
+          "url": "https://x.com/nvidia/status/2081666629264449730"
+        }
+      ]
     },
     {
       "handle": "AmandaAskell",
@@ -233,40 +225,49 @@
       "tier": "builder",
       "tweets": [
         {
-          "id": "2081123293340520642",
-          "text": "The (software) factory is the product. Your product is only as good as the agents you set up to autonomously maintain it.\n\nThis is what @elonmusk figured out about Tesla, and it's now true for the software world. https://t.co/8Jj6JH6FAZ",
-          "created_at": "2026-07-25T21:03:53+00:00",
-          "like_count": 1756,
-          "retweet_count": 116,
-          "reply_count": 82,
-          "url": "https://x.com/rauchg/status/2081123293340520642"
-        },
-        {
-          "id": "2081103993917649134",
-          "text": "I started doing all my research with agent CLIs and the filesystem. A 📁 𝚛𝚎𝚜𝚎𝚊𝚛𝚌𝚑/ folder, an 𝙰𝙶𝙴𝙽𝚃𝚂.𝚖𝚍 describing the format I like and best practices. Then launch my agent and ask a question.\n\nNo fancy apps, knowledge graphs, UIs. The agent can be asked to find and correlate knowledge from previous sessions. Scales to infinity. The folder can be synced via iCloud, git, etc.\n\nIf I want to share some outcome, I can ask the agent to render a cool HTML report and deploy it to Vercel. The \"software\" that powers this is English in 𝙰𝙶𝙴𝙽𝚃𝚂.𝚖𝚍.",
-          "created_at": "2026-07-25T19:47:11+00:00",
-          "like_count": 1087,
-          "retweet_count": 43,
-          "reply_count": 72,
-          "url": "https://x.com/rauchg/status/2081103993917649134"
-        },
-        {
-          "id": "2081149743368122723",
-          "text": "https://t.co/O7y9dmUqk5 is more fundamental than any other framework we’ve built.\n\nIt’s the genesis of your company. When you have a new idea, don’t think: “I’ll go to an agent and ad-hoc prompt.”\n\nThink: how can I build the factory that will start, maintain and grow my idea",
-          "created_at": "2026-07-25T22:48:59+00:00",
-          "like_count": 1068,
-          "retweet_count": 48,
-          "reply_count": 58,
-          "url": "https://x.com/rauchg/status/2081149743368122723"
+          "id": "2081546513885622760",
+          "text": "Vercel proudly co-signs the Open Weights and American AI Leadership letter. \n\nOpen source, data, protocols &amp; research enable the technological wonders we enjoy every day, enriching our lives and our world.\n\nOpen weights are the logical next frontier: https://t.co/SMeMS2lINu https://t.co/JeQwc1YvtL",
+          "created_at": "2026-07-27T01:05:36+00:00",
+          "like_count": 2008,
+          "retweet_count": 101,
+          "reply_count": 61,
+          "url": "https://x.com/rauchg/status/2081546513885622760"
         },
         {
           "id": "2081517519303737559",
           "text": "I compiled 𝚟𝚎𝚛𝚌𝚎𝚕 CLI TypeScript to native with 𝚜𝚌𝚛𝚒𝚙𝚝𝚌. Incredible.\n\n✓ Resulting binary size: 1.28mb \n✓ Startup overhead: 1.5ms (mean)\n✓ Compiles in 2.94s (mean)\n✓ Uses 𝚗𝚘𝚍𝚎:𝚑𝚝𝚝𝚙𝚜, 𝚗𝚘𝚍𝚎:𝚏𝚜, 𝚗𝚘𝚍𝚎:𝚙𝚊𝚝𝚑, 𝚗𝚘𝚍𝚎:𝚘𝚜, 𝚗𝚘𝚍𝚎:𝚌𝚛𝚢𝚙𝚝𝚘\n✓ Highly readable TypeScript\n✓ Code translated by GLM 5.2 Fast\n✓ Deploys like a charm!\n\nNo embedded v8 / QuickJS, fully static.",
           "created_at": "2026-07-26T23:10:23+00:00",
-          "like_count": 48,
-          "retweet_count": 2,
-          "reply_count": 11,
+          "like_count": 847,
+          "retweet_count": 43,
+          "reply_count": 51,
           "url": "https://x.com/rauchg/status/2081517519303737559"
+        },
+        {
+          "id": "2081852481517318560",
+          "text": "In our latest https://t.co/p9AoezbuGt benchmarks, Grok 4.5 has emerged as the best cybersecurity AI model on price-performance.\n\nIt's 10x cheaper than Sol, 5.7x cheaper than Opus 5, and 2.2x cheaper than Kimi K3, yet at Kimi-like perf.\n\nSol remains the frontier, ahead of Opus 5.",
+          "created_at": "2026-07-27T21:21:25+00:00",
+          "like_count": 221,
+          "retweet_count": 18,
+          "reply_count": 30,
+          "url": "https://x.com/rauchg/status/2081852481517318560"
+        },
+        {
+          "id": "2081762176541622478",
+          "text": "Kimi K3 is now available from US-based providers on AI Gateway, including @baseten, @FireworksAI_HQ, and others.\n\nZero Data Retention is also supported.\n\n• 𝚖𝚘𝚘𝚗𝚜𝚑𝚘𝚝𝚊𝚒/𝚔𝚒𝚖𝚒-𝚔𝟹\n• 𝚖𝚘𝚘𝚗𝚜𝚑𝚘𝚝𝚊𝚒/𝚔𝚒𝚖𝚒-𝚔𝟹-𝚏𝚊𝚜𝚝\n\nhttps://t.co/rYVuCSO7Ts",
+          "created_at": "2026-07-27T15:22:34+00:00",
+          "like_count": 204,
+          "retweet_count": 9,
+          "reply_count": 6,
+          "url": "https://x.com/vercel_dev/status/2081762176541622478"
+        },
+        {
+          "id": "2081842439304995169",
+          "text": "Kimi's paper underlines the importance of the right security boundary for agents to run in.\n\ntl:DR: container-level isolation is not enough. In their experiments, agents crashed the underlying machine (via kernel panics).\n\nFirecracker microVMs (as in Vercel Sandbox) are safe. https://t.co/wvbdBo5Ng8",
+          "created_at": "2026-07-27T20:41:30+00:00",
+          "like_count": 113,
+          "retweet_count": 9,
+          "reply_count": 25,
+          "url": "https://x.com/rauchg/status/2081842439304995169"
         }
       ]
     },
@@ -277,40 +278,22 @@
       "tier": "builder",
       "tweets": [
         {
-          "id": "2080850075358826871",
-          "text": "Will Anthropic sign? \n\nIf you work at Anthropic worth asking your leadership to sign or make their position clear: Are they for banning open weight models?",
-          "created_at": "2026-07-25T02:58:12+00:00",
-          "like_count": 1689,
-          "retweet_count": 78,
-          "reply_count": 132,
-          "url": "https://x.com/amasad/status/2080850075358826871"
+          "id": "2081277517709922501",
+          "text": "I don't think it's a lack of imagination. I also used to work at Anthropic, think trends will continue, and used to agree with this. But I've changed my mind and now disagree with this take.\n\nOpen models are already capable enough to do what you described. For example, I used Opus 4.6 to gain access to other folks medical records, hijack bank accounts, etc. back in February. GLM 5.1 is more capable than Opus 4.6 in most pentesting environments, and it came out in April.\n\nDespite capable open-weight models existing, the sketchier folks I know are still using a Claude Code or Codex subscription for hacking. (Even well-resourced groups in other countries! They use the grey/black market of discounted Ant/OAI subscription tokens sold through resellers.) So I see most of the materialized risk here as still coming from Anthropic and OpenAI; safeguards aren't sufficient to stop a moderately dedicated actor.\n\nThe groups I know who are using open-weight models are legitimate offensive security companies. They won't break the rules to use subscription-based pricing, the open-weight models are more reliable in that they don't require specific jailbreaks nor hit classifiers, and the labs use massive partnerships or spend as a prereq for lowering classifiers/safeguards. I know of three legitimate groups running GLM 5.2 as their primary model.\n\nThat last part applies for Anthropic, too: I know of two instances where two different Anthropic GTM people used large comitted spend contracts as a prereq for lowering safeguards, and I directly witnessed one.\n\nOn the inside, I know the narrative and intent is genuinely about safety. But from the outside, Anthropic-the-system seems to be optimizing for revenue and control/power, isn't diffusing capabilities to defenders, and also doesn't have adequate safeguards to prevent misuse from dedicated bad actors.\n\nAs a result, I now lean towards a future where capable open models are freely available (at least for cyber, bio is harder); I don't trust Anthropic or other frontier labs to handle this sufficiently well without diffused capabilties given what I've seen so far.",
+          "created_at": "2026-07-26T07:16:43+00:00",
+          "like_count": 1947,
+          "retweet_count": 208,
+          "reply_count": 52,
+          "url": "https://x.com/NoahLebovic/status/2081277517709922501"
         },
         {
-          "id": "2080798081466138781",
-          "text": "wow. openai decides to sign on to the Nvidia/Microsoft-backed open letter to regulators supporting open source \n\nincredible https://t.co/aw6MFo1fDx",
-          "created_at": "2026-07-24T23:31:36+00:00",
-          "like_count": 1254,
-          "retweet_count": 63,
-          "reply_count": 62,
-          "url": "https://x.com/MikeIsaac/status/2080798081466138781"
-        },
-        {
-          "id": "2081086837263937543",
-          "text": "Just deployed a new chess engine; we're closing in on an estimated 1200 Elo. \n\nThe goal is to get it to 2000+, while keeping the constraints:\n\n1. One small finetuned LLM (no custom pretraining or architecture)\n2. The model has to produce the moves with no chess engine assistance\n\nIf you relax these constraints, it gets much easier.",
-          "created_at": "2026-07-25T18:39:01+00:00",
-          "like_count": 232,
-          "retweet_count": 9,
-          "reply_count": 40,
-          "url": "https://x.com/amasad/status/2081086837263937543"
-        },
-        {
-          "id": "2081090586346725718",
-          "text": "@astridwilde1 Much of the economy is betting on LLMs scaling all the way to AGI. If we can’t teach them chess then….",
-          "created_at": "2026-07-25T18:53:55+00:00",
-          "like_count": 15,
-          "retweet_count": 0,
-          "reply_count": 3,
-          "url": "https://x.com/amasad/status/2081090586346725718"
+          "id": "2081576172656456076",
+          "text": "Interesting drop from former Anthropic employee: Hackers prefer to use massively subsidized labs AI subscriptions for attacks as opposed to open models. https://t.co/gSVw9tv346",
+          "created_at": "2026-07-27T03:03:28+00:00",
+          "like_count": 427,
+          "retweet_count": 31,
+          "reply_count": 26,
+          "url": "https://x.com/amasad/status/2081576172656456076"
         },
         {
           "id": "2081191066355847409",
@@ -328,35 +311,35 @@
       "name": "Josh Woodward (Google Labs)",
       "domain": "ai",
       "tier": "builder",
-      "tweets": [
-        {
-          "id": "2080805509750538450",
-          "text": "@danliu Yeah, most people just say, \"Gemini did this for me\"",
-          "created_at": "2026-07-25T00:01:07+00:00",
-          "like_count": 11,
-          "retweet_count": 0,
-          "reply_count": 2,
-          "url": "https://x.com/joshwoodward/status/2080805509750538450"
-        },
-        {
-          "id": "2080805395044667885",
-          "text": "@mitanshu @GeminiApp I'll DM you, this could be a good eval for us",
-          "created_at": "2026-07-25T00:00:40+00:00",
-          "like_count": 0,
-          "retweet_count": 0,
-          "reply_count": 1,
-          "url": "https://x.com/joshwoodward/status/2080805395044667885"
-        }
-      ]
+      "tweets": []
     },
     {
       "handle": "ornith_",
       "name": "Ornith (agentic coding LLM)",
       "domain": "ai",
       "tier": "builder",
-      "tweets": []
+      "tweets": [
+        {
+          "id": "2081808063515034034",
+          "text": "🐦The Ornith-1.0 family has surpassed 12M downloads on Hugging Face in 30 days.\n\n❤️Thanks to everyone who has tried Ornith and shared feedback with us. The team is working to push open-weight LLM forward.\n\n🫡We believe open weights matter. Everyone should have the freedom to control their own intelligence, protect their data, and shape how AI works for them.\n\n🫶More to come!",
+          "created_at": "2026-07-27T18:24:55+00:00",
+          "like_count": 70,
+          "retweet_count": 9,
+          "reply_count": 12,
+          "url": "https://x.com/ornith_/status/2081808063515034034"
+        },
+        {
+          "id": "2081809013516505331",
+          "text": "🐦Models: https://t.co/tzORikR5ZU  \n\n🐦Github: https://t.co/1AbDcQq3yF\n\n🐦Blog: https://t.co/BiHPRhbjo6",
+          "created_at": "2026-07-27T18:28:41+00:00",
+          "like_count": 8,
+          "retweet_count": 0,
+          "reply_count": 0,
+          "url": "https://x.com/ornith_/status/2081809013516505331"
+        }
+      ]
     }
   ],
   "errors": null,
-  "generated_at": "2026-07-26T23:28:27.365807+00:00"
+  "generated_at": "2026-07-27T23:33:43.774491+00:00"
 }
