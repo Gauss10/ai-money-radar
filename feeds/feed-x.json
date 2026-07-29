@@ -14,49 +14,49 @@
       "tier": "analyst",
       "tweets": [
         {
-          "id": "2081751862768717956",
-          "text": "This chart says so much....\n\n- Literally the exact same prompt.\n- All long horizon one-shots.\n- Totally reflects real-world experience. https://t.co/sbFyHEfYSb",
-          "created_at": "2026-07-27T14:41:35+00:00",
-          "like_count": 5039,
-          "retweet_count": 180,
-          "reply_count": 206,
-          "url": "https://x.com/jpschroeder/status/2081751862768717956"
-        },
-        {
           "id": "2082199414656127010",
           "text": "re: hiring right now\n\nit's a huge bull market for AI-native IC's/player-coaches\nit's a huge bear market for \"heads of X\" managers\n\nnever seen such furious bifurcation. to oversimplify: 1 year experience managing 10 agents &gt; 10 years experience managing 10-100 people",
           "created_at": "2026-07-28T20:20:00+00:00",
-          "like_count": 322,
-          "retweet_count": 10,
-          "reply_count": 43,
+          "like_count": 1020,
+          "retweet_count": 33,
+          "reply_count": 96,
           "url": "https://x.com/swyx/status/2082199414656127010"
         },
         {
-          "id": "2081904230768816487",
-          "text": "incidentally, $ per input/output tokens died as a relevant cost measure sometime last year\n\nif you haven’t updated your x axes to $/task per @ArtificialAnlys then idk if you can be taken seriously anymore these days",
-          "created_at": "2026-07-28T00:47:03+00:00",
-          "like_count": 303,
-          "retweet_count": 12,
-          "reply_count": 52,
-          "url": "https://x.com/swyx/status/2081904230768816487"
-        },
-        {
-          "id": "2081890955070980416",
-          "text": "as the progenitor of the agent lab thesis which got the evals/routing/interactivity/ROI focus right\n\n i gotta say the biggest argument against myself is that Claude Code got accidentally \"open sourced\" this year and approximately ~nothing happened to either it or its competitors' roadmaps",
-          "created_at": "2026-07-27T23:54:18+00:00",
-          "like_count": 91,
-          "retweet_count": 4,
-          "reply_count": 31,
-          "url": "https://x.com/swyx/status/2081890955070980416"
+          "id": "2082159947236655311",
+          "text": "Live now: our entire Forward Deployed Engineering Track from AI Engineer World's Fair!\n\nhttps://t.co/j7UQuGpsRf\n\n- @EnoReyes, CTO & Co-Founder, Factory\n- Pauline Brunet, VP of FDE, Cursor\n- @vasuman, Founder & CEO, Varick Agents\n- Jia Wu, Deployed Engineering Lead, Cognition\n- @natalie_meurer, Head of Agent Engineering, Sierra\n- Sunny Rekhi, FDE CTO, Decagon\n- @leomehr, Director of Engineering, Ramp\n- @zkevinbai, Anthropic, ex-Palantir & founding FDE at Rippling\n- @vinooganesh, CEO & Co-Founder, Kepler",
+          "created_at": "2026-07-28T17:43:10+00:00",
+          "like_count": 64,
+          "retweet_count": 10,
+          "reply_count": 3,
+          "url": "https://x.com/aiDotEngineer/status/2082159947236655311"
         },
         {
           "id": "2082165420237492346",
           "text": "really grateful to @realbasilchatha for helping me curate a survey of the entire field of Forward Deployed Engineering in one track!\n\nFrom FDE 101 by @zkevinbai (Anthropic, Palantir, Rippling Founding FDE) to head of FDE practices at:\n\n- Decagon\n- Cursor\n- Sierra\n- Ramp\n- Cognition\n- Factory\n- Kepler\n- Varick (tooling for FDEs)\n\nloving the track drop model for releasing the 30+ tracks from AIEWF. please give them some love and send to friends exploring FDE career paths. \n\nall of the speakers are hiring. naturally.",
           "created_at": "2026-07-28T18:04:55+00:00",
-          "like_count": 36,
-          "retweet_count": 6,
-          "reply_count": 9,
+          "like_count": 62,
+          "retweet_count": 7,
+          "reply_count": 10,
           "url": "https://x.com/swyx/status/2082165420237492346"
+        },
+        {
+          "id": "2082550425526669773",
+          "text": "@signulll at this point leaving openai is part of the promotion cycle at openai",
+          "created_at": "2026-07-29T19:34:48+00:00",
+          "like_count": 34,
+          "retweet_count": 2,
+          "reply_count": 3,
+          "url": "https://x.com/swyx/status/2082550425526669773"
+        },
+        {
+          "id": "2082177315648557062",
+          "text": "@alexkoch_ai come demo at new media lab and we film it?? https://t.co/GeFnEJkY8k",
+          "created_at": "2026-07-28T18:52:11+00:00",
+          "like_count": 20,
+          "retweet_count": 0,
+          "reply_count": 0,
+          "url": "https://x.com/swyx/status/2082177315648557062"
         }
       ]
     },
@@ -65,7 +65,26 @@
       "name": "Dylan Patel (SemiAnalysis)",
       "domain": "ai",
       "tier": "analyst",
-      "tweets": []
+      "tweets": [
+        {
+          "id": "2082228994653696371",
+          "text": "We support this petition, signed by our CEO, several co-founders, and senior staff. \n\nOur own research on recursive self-improvement, published last month, points to the need for tools to deliberately pace the frontier of AI development so society can prepare. We’re glad to see broad agreement across the field. https://t.co/DqwuQfa9xH",
+          "created_at": "2026-07-28T22:17:32+00:00",
+          "like_count": 4419,
+          "retweet_count": 503,
+          "reply_count": 1257,
+          "url": "https://x.com/AnthropicAI/status/2082228994653696371"
+        },
+        {
+          "id": "2082321388736581641",
+          "text": "Slowing down AI is a ultimately wishful thinking\nThe genie is out of the bottle\nThe most importan competition ever with potentially immeasurable benefits to the winner will not suddenly have people stop and sing kumbaya\nWhile many lab employees have signed, many more havent.\nPractically none at some labs less than 6 months behind have.",
+          "created_at": "2026-07-29T04:24:41+00:00",
+          "like_count": 1121,
+          "retweet_count": 63,
+          "reply_count": 74,
+          "url": "https://x.com/dylan522p/status/2082321388736581641"
+        }
+      ]
     },
     {
       "handle": "leopoldasch",
@@ -86,17 +105,7 @@
       "name": "Sam Altman",
       "domain": "ai",
       "tier": "exec",
-      "tweets": [
-        {
-          "id": "2081707498919112925",
-          "text": "i just realized gpt-5.6 sol is literally all i need. openai could stop shipping new models tomorrow and i'd be completely fine",
-          "created_at": "2026-07-27T11:45:18+00:00",
-          "like_count": 1203,
-          "retweet_count": 41,
-          "reply_count": 285,
-          "url": "https://x.com/icanvardar/status/2081707498919112925"
-        }
-      ]
+      "tweets": []
     },
     {
       "handle": "DarioAmodei",
@@ -126,40 +135,22 @@
       "tier": "infra",
       "tweets": [
         {
-          "id": "2081666629264449730",
-          "text": "AI security advances when the industry builds in the open, together.\n\nWe're introducing the Open Secure AI Alliance with industry leaders to develop new techniques and tools to safeguard software and agents.\n\nBy sharing models, tooling and research in the open, we can broaden the community of defenders.\n\nLearn more about the founding members’ contributions: https://t.co/A16oqxs5Ty",
-          "created_at": "2026-07-27T09:02:54+00:00",
-          "like_count": 7995,
-          "retweet_count": 1112,
-          "reply_count": 534,
-          "url": "https://x.com/nvidia/status/2081666629264449730"
-        },
-        {
-          "id": "2081730105454322151",
-          "text": "Korea’s AI moment came to San Francisco last week 🇰🇷 \n\nPresident Lee Jae Myung joined @JensenHuang and some of the biggest names in technology, industry and research to accelerate Korea’s full-stack AI ambitions. https://t.co/rTcXjtJNb9",
-          "created_at": "2026-07-27T13:15:08+00:00",
-          "like_count": 716,
-          "retweet_count": 102,
-          "reply_count": 70,
-          "url": "https://x.com/nvidia/status/2081730105454322151"
+          "id": "2082135368040886299",
+          "text": "The Open Secure AI Alliance is growing, with more organizations contributing expertise to help safeguard software and agents.\n\nhttps://t.co/tFQYKAqDc3 https://t.co/6zU2F5Jhdb",
+          "created_at": "2026-07-28T16:05:30+00:00",
+          "like_count": 382,
+          "retweet_count": 54,
+          "reply_count": 28,
+          "url": "https://x.com/nvidia/status/2082135368040886299"
         },
         {
           "id": "2081884835715404071",
           "text": "Translation queues and custom integrations can slow global launches.\n\nOur Digital Marketing team built an AI-powered localization platform with NVIDIA Nemotron Speech to change that.\n\nSee the results ↓\nhttps://t.co/FbBEdcINv1 https://t.co/7GyBR9ivRM",
           "created_at": "2026-07-27T23:29:59+00:00",
-          "like_count": 280,
-          "retweet_count": 30,
-          "reply_count": 43,
+          "like_count": 303,
+          "retweet_count": 32,
+          "reply_count": 48,
           "url": "https://x.com/nvidia/status/2081884835715404071"
-        },
-        {
-          "id": "2082135368040886299",
-          "text": "The Open Secure AI Alliance is growing, with more organizations contributing expertise to help safeguard software and agents.\n\nhttps://t.co/tFQYKAqDc3 https://t.co/6zU2F5Jhdb",
-          "created_at": "2026-07-28T16:05:30+00:00",
-          "like_count": 240,
-          "retweet_count": 38,
-          "reply_count": 16,
-          "url": "https://x.com/nvidia/status/2082135368040886299"
         }
       ]
     },
@@ -168,26 +159,7 @@
       "name": "Jensen Huang (NVIDIA)",
       "domain": "ai",
       "tier": "exec",
-      "tweets": [
-        {
-          "id": "2081698060330250294",
-          "text": "Attackers have frontier AI. Defenders need a frontier AI ecosystem—the best open and closed models, force-multiplied by a global community.\n\nDuring the Hugging Face incident, closed AI blocked essential forensics. An open-weight frontier model helped contain the intrusion.\n\nThat’s why we created the Open Secure AI Alliance.",
-          "created_at": "2026-07-27T11:07:48+00:00",
-          "like_count": 34590,
-          "retweet_count": 4011,
-          "reply_count": 1940,
-          "url": "https://x.com/JensenHuang/status/2081698060330250294"
-        },
-        {
-          "id": "2081666629264449730",
-          "text": "AI security advances when the industry builds in the open, together.\n\nWe're introducing the Open Secure AI Alliance with industry leaders to develop new techniques and tools to safeguard software and agents.\n\nBy sharing models, tooling and research in the open, we can broaden the community of defenders.\n\nLearn more about the founding members’ contributions: https://t.co/A16oqxs5Ty",
-          "created_at": "2026-07-27T09:02:54+00:00",
-          "like_count": 7995,
-          "retweet_count": 1112,
-          "reply_count": 534,
-          "url": "https://x.com/nvidia/status/2081666629264449730"
-        }
-      ]
+      "tweets": []
     },
     {
       "handle": "AmandaAskell",
@@ -224,49 +196,22 @@
       "tier": "builder",
       "tweets": [
         {
-          "id": "2081546513885622760",
-          "text": "Vercel proudly co-signs the Open Weights and American AI Leadership letter. \n\nOpen source, data, protocols &amp; research enable the technological wonders we enjoy every day, enriching our lives and our world.\n\nOpen weights are the logical next frontier: https://t.co/SMeMS2lINu https://t.co/JeQwc1YvtL",
-          "created_at": "2026-07-27T01:05:36+00:00",
-          "like_count": 2218,
-          "retweet_count": 111,
-          "reply_count": 63,
-          "url": "https://x.com/rauchg/status/2081546513885622760"
+          "id": "2082293455963976125",
+          "text": "@tigawanna React / Next.js quite literally has a beautiful way to deal with this: &lt;𝚂𝚞𝚜𝚙𝚎𝚗𝚜𝚎&gt;\n\nOne-shotted, streaming models / providers from @vercel AI Gateway API in parallel! Code clean af 😁 https://t.co/sNwSN2WEGN",
+          "created_at": "2026-07-29T02:33:41+00:00",
+          "like_count": 149,
+          "retweet_count": 2,
+          "reply_count": 13,
+          "url": "https://x.com/rauchg/status/2082293455963976125"
         },
         {
-          "id": "2081852481517318560",
-          "text": "In our latest https://t.co/p9AoezbuGt benchmarks, Grok 4.5 has emerged as the best cybersecurity AI model on price-performance.\n\nIt's 10x cheaper than Sol, 5.7x cheaper than Opus 5, and 2.2x cheaper than Kimi K3, yet at Kimi-like perf.\n\nSol remains the frontier, ahead of Opus 5.",
-          "created_at": "2026-07-27T21:21:25+00:00",
-          "like_count": 1944,
-          "retweet_count": 112,
-          "reply_count": 101,
-          "url": "https://x.com/rauchg/status/2081852481517318560"
-        },
-        {
-          "id": "2081842439304995169",
-          "text": "Kimi's paper underlines the importance of the right security boundary for agents to run in.\n\ntl:DR: container-level isolation is not enough. In their experiments, agents crashed the underlying machine (via kernel panics).\n\nFirecracker microVMs (as in Vercel Sandbox) are safe. https://t.co/wvbdBo5Ng8",
-          "created_at": "2026-07-27T20:41:30+00:00",
-          "like_count": 630,
-          "retweet_count": 42,
-          "reply_count": 51,
-          "url": "https://x.com/rauchg/status/2081842439304995169"
-        },
-        {
-          "id": "2081846100173177313",
-          "text": "DeepsecBench evaluates model accuracy, cost, and speed in finding cybersecurity vulnerabilities.\n\nLatest results:\n▪️ GPT-5.6 Sol scores highest\n▪️ Kimi K3 gets half the top score at 1/5 the cost\n▪️ Grok 4.5 wins best score/cost ratio in top 10\nhttps://t.co/c2F5GiPD0F",
-          "created_at": "2026-07-27T20:56:03+00:00",
-          "like_count": 374,
-          "retweet_count": 31,
-          "reply_count": 28,
-          "url": "https://x.com/vercel/status/2081846100173177313"
-        },
-        {
-          "id": "2081762176541622478",
-          "text": "Kimi K3 is now available from US-based providers on AI Gateway, including @baseten, @FireworksAI_HQ, and others.\n\nZero Data Retention is also supported.\n\n• 𝚖𝚘𝚘𝚗𝚜𝚑𝚘𝚝𝚊𝚒/𝚔𝚒𝚖𝚒-𝚔𝟹\n• 𝚖𝚘𝚘𝚗𝚜𝚑𝚘𝚝𝚊𝚒/𝚔𝚒𝚖𝚒-𝚔𝟹-𝚏𝚊𝚜𝚝\n\nhttps://t.co/rYVuCSO7Ts",
-          "created_at": "2026-07-27T15:22:34+00:00",
-          "like_count": 271,
-          "retweet_count": 15,
-          "reply_count": 8,
-          "url": "https://x.com/vercel_dev/status/2081762176541622478"
+          "id": "2082300401949478968",
+          "text": "@galluzzo_julian @vercel 🖤 excited to eventually unify agents &amp; web",
+          "created_at": "2026-07-29T03:01:17+00:00",
+          "like_count": 15,
+          "retweet_count": 0,
+          "reply_count": 1,
+          "url": "https://x.com/rauchg/status/2082300401949478968"
         }
       ]
     },
@@ -277,49 +222,49 @@
       "tier": "builder",
       "tweets": [
         {
-          "id": "2081838425276383662",
-          "text": "btw anthropic's internal document on this literally said \"we don't want it to be known that we are working on this.”\n\nit was called project panama.\n\nhere's exactly what happened:\n\n1: anthropic concluded that books were the cheapest way to build a world-class model because they gave claude curated facts, structured arguments, compelling stories, and writing “an editor would approve of.”\n\n2: once anthropic decided it needed books at enormous scale, its first solution was piracy.\n\nit downloaded 7m+ books from online libraries including libgen. the judge later wrote that although anthropic had legal ways to buy them, it chose piracy to avoid what dario amodei called the “legal/practice/business slog.”\n\n3: that piracy created a massive legal risk.\n\nso in february 2024, anthropic hired tom turvey, the former head of partnerships for google books, to find a legally safer way of obtaining “all the books in the world.”\n\n4: turvey first contacted major publishers about licensing their catalogs.\n\nthose attempts didn’t produce agreements, so anthropic chose a route that required no publisher permission: buying millions of physical books through distributors and used-book retailers.\n\n5: within about a year, anthropic spent tens of millions acquiring and scanning millions of books, including many rare and 1/1 titles. one vendor proposal targeted 500,000 to 2 million books in six months.\n\n6: to scan that many books within months, the vendors physically dismantled them.\n\na hydraulic cutter removed each spine. the pages were trimmed to size, fed as loose sheets through high-speed industrial scanners, and converted into searchable PDFs. the paper remains were then sent for recycling.\n\n7: these PDFs were fed into claude as training data.\n\nthe complete collection became a private, searchable anthropic library that the company planned to “store forever.” the scans aren’t available to the public and were never open-sourced.",
-          "created_at": "2026-07-27T20:25:33+00:00",
-          "like_count": 35218,
-          "retweet_count": 9366,
-          "reply_count": 586,
-          "url": "https://x.com/itsolelehmann/status/2081838425276383662"
-        },
-        {
-          "id": "2081749227730809127",
-          "text": "i think we finally have enough clues to reverse-engineer ilya sutskever’s secret SSI research.\n\nmy highest-probability guess: SSI has found a brain-inspired way to make an AI continually learn.\n\ntoday’s frontier models learn mostly during training. afterward, their core knowledge is largely frozen. they consume enormous datasets and still fail strangely when a problem falls outside their training.\n\nSSI may have an early system that can:\n\n• learn a new skill from very few experiences\n• recognize when an approach is failing before reaching the final answer\n• update itself without erasing old skills\n• transfer one lesson into completely different problems\n• keep learning after deployment\n\nthink of it like a gifted teenager instead of a finished encyclopedia. it may not begin knowing every profession, but it could rapidly learn any profession.\n\nthe evidence lines up almost too cleanly:\n\nilya called poor generalization the fundamental limitation of current AI. models “generalize dramatically worse than people.”\nhe described SSI’s target as a “superintelligent 15-year-old” capable of learning any job.\nwhen asked how to create human-like learning, he said there is a machine-learning principle he has opinions about but cannot discuss publicly.\nWSJ now reports that SSI’s secret research focuses on “overlooked aspects of how the human brain functions.”\nNvidia received rare access to the research, made a substantial investment, gave SSI 10x more compute, and agreed to let SSI help shape future computing platforms.\n\nmy technical guess:\n\nexperience → internal judgment → self-correction → durable learning → transfer → repeat\n\nthe internal judgment may be the brain-inspired component.\n\nhumans do not wait until the end of a 10,000-step task to know they are failing. emotions, intuition and judgment provide constant feedback. ilya has argued that AI needs an equivalent internal “value function.”\n\nthis could also explain SSI’s central promise: capability and safety trained together.\n\nthe same mechanism that teaches the AI what works may also teach it what it should care about.\n\nmy confidence is roughly 70% on human-like generalization plus continual learning, and 40% that an internal value system is the central mechanism.\n\nthe simplest description:\n\nan AI whose intelligence compounds from experience, with its values learning inside the same loop.",
-          "created_at": "2026-07-27T14:31:07+00:00",
-          "like_count": 2895,
-          "retweet_count": 257,
-          "reply_count": 125,
-          "url": "https://x.com/imjustnewatai/status/2081749227730809127"
-        },
-        {
-          "id": "2082025429901390266",
-          "text": "I bet it’s more or less an LLM",
-          "created_at": "2026-07-28T08:48:39+00:00",
-          "like_count": 1669,
-          "retweet_count": 23,
-          "reply_count": 79,
-          "url": "https://x.com/amasad/status/2082025429901390266"
-        },
-        {
           "id": "2082000490066592127",
           "text": "We’re entering a new era of exploration.\n\nOur ancestors mapped the Earth. Then they explored space.\n\nOur generation may explore the computational universe: the vast space of algorithms, programs, proofs, and designs that AI agents can search.",
           "created_at": "2026-07-28T07:09:33+00:00",
-          "like_count": 575,
-          "retweet_count": 33,
-          "reply_count": 41,
+          "like_count": 807,
+          "retweet_count": 46,
+          "reply_count": 48,
           "url": "https://x.com/amasad/status/2082000490066592127"
         },
         {
-          "id": "2082014295177724025",
-          "text": "hit massive diminishing returns training my chess LLM on board→move pairs. \n\nthen an accident: a \"think before you move\" branch failed (hallucinated moves) but mixing just ~8% of those reasoning traces into plain board→move training beat pure move data at equal budget. \n\nthe model internalizes the thinking without ever doing it at inference.",
-          "created_at": "2026-07-28T08:04:24+00:00",
-          "like_count": 139,
-          "retweet_count": 8,
-          "reply_count": 21,
-          "url": "https://x.com/amasad/status/2082014295177724025"
+          "id": "2082504898801999990",
+          "text": "This is hands down the best AI design tool, both in taste and how fun and easy it is to use.\n\nTry it out!",
+          "created_at": "2026-07-29T16:33:53+00:00",
+          "like_count": 840,
+          "retweet_count": 29,
+          "reply_count": 31,
+          "url": "https://x.com/amasad/status/2082504898801999990"
+        },
+        {
+          "id": "2082263440908079290",
+          "text": "- Kimi K3: frontier at 1/4 the price\n- DeepSeek V4 flash: low wage workhorse\n- all the GPTs\n- good old Anthropic models",
+          "created_at": "2026-07-29T00:34:25+00:00",
+          "like_count": 494,
+          "retweet_count": 28,
+          "reply_count": 45,
+          "url": "https://x.com/amasad/status/2082263440908079290"
+        },
+        {
+          "id": "2082246268517310851",
+          "text": "We recently joined NVIDIA, Microsoft, and others in supporting open-weight AI.\n\nToday, we’re putting that belief into the product with model choice on Replit, starting with Kimi K3.\n\nThe future is the right model for the right job, at the right cost.",
+          "created_at": "2026-07-28T23:26:11+00:00",
+          "like_count": 374,
+          "retweet_count": 24,
+          "reply_count": 48,
+          "url": "https://x.com/amasad/status/2082246268517310851"
+        },
+        {
+          "id": "2082508826767679668",
+          "text": "Some models are great at CSS, others are fantastic at SVG, while yet others are really good at animations.\n\nReplit Design is powered by the best of open and closed models to generate superior aesthetics. https://t.co/qt5XNdHfQ8",
+          "created_at": "2026-07-29T16:49:30+00:00",
+          "like_count": 312,
+          "retweet_count": 10,
+          "reply_count": 17,
+          "url": "https://x.com/amasad/status/2082508826767679668"
         }
       ]
     },
@@ -337,15 +282,6 @@
       "tier": "builder",
       "tweets": [
         {
-          "id": "2081809013516505331",
-          "text": "🐦Models: https://t.co/tzORikR5ZU  \n\n🐦Github: https://t.co/1AbDcQq3yF\n\n🐦Blog: https://t.co/BiHPRhbjo6",
-          "created_at": "2026-07-27T18:28:41+00:00",
-          "like_count": 10,
-          "retweet_count": 0,
-          "reply_count": 0,
-          "url": "https://x.com/ornith_/status/2081809013516505331"
-        },
-        {
           "id": "2081911438923415742",
           "text": "@Awesome_O_AI ❤️",
           "created_at": "2026-07-28T01:15:41+00:00",
@@ -358,5 +294,5 @@
     }
   ],
   "errors": null,
-  "generated_at": "2026-07-28T23:29:35.157647+00:00"
+  "generated_at": "2026-07-29T23:29:57.540165+00:00"
 }
