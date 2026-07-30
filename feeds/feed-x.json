@@ -14,49 +14,40 @@
       "tier": "analyst",
       "tweets": [
         {
-          "id": "2082199414656127010",
-          "text": "re: hiring right now\n\nit's a huge bull market for AI-native IC's/player-coaches\nit's a huge bear market for \"heads of X\" managers\n\nnever seen such furious bifurcation. to oversimplify: 1 year experience managing 10 agents &gt; 10 years experience managing 10-100 people",
-          "created_at": "2026-07-28T20:20:00+00:00",
-          "like_count": 1020,
-          "retweet_count": 33,
-          "reply_count": 96,
-          "url": "https://x.com/swyx/status/2082199414656127010"
-        },
-        {
-          "id": "2082159947236655311",
-          "text": "Live now: our entire Forward Deployed Engineering Track from AI Engineer World's Fair!\n\nhttps://t.co/j7UQuGpsRf\n\n- @EnoReyes, CTO & Co-Founder, Factory\n- Pauline Brunet, VP of FDE, Cursor\n- @vasuman, Founder & CEO, Varick Agents\n- Jia Wu, Deployed Engineering Lead, Cognition\n- @natalie_meurer, Head of Agent Engineering, Sierra\n- Sunny Rekhi, FDE CTO, Decagon\n- @leomehr, Director of Engineering, Ramp\n- @zkevinbai, Anthropic, ex-Palantir & founding FDE at Rippling\n- @vinooganesh, CEO & Co-Founder, Kepler",
-          "created_at": "2026-07-28T17:43:10+00:00",
-          "like_count": 64,
-          "retweet_count": 10,
-          "reply_count": 3,
-          "url": "https://x.com/aiDotEngineer/status/2082159947236655311"
-        },
-        {
-          "id": "2082165420237492346",
-          "text": "really grateful to @realbasilchatha for helping me curate a survey of the entire field of Forward Deployed Engineering in one track!\n\nFrom FDE 101 by @zkevinbai (Anthropic, Palantir, Rippling Founding FDE) to head of FDE practices at:\n\n- Decagon\n- Cursor\n- Sierra\n- Ramp\n- Cognition\n- Factory\n- Kepler\n- Varick (tooling for FDEs)\n\nloving the track drop model for releasing the 30+ tracks from AIEWF. please give them some love and send to friends exploring FDE career paths. \n\nall of the speakers are hiring. naturally.",
-          "created_at": "2026-07-28T18:04:55+00:00",
-          "like_count": 62,
-          "retweet_count": 7,
-          "reply_count": 10,
-          "url": "https://x.com/swyx/status/2082165420237492346"
+          "id": "2082878156483219672",
+          "text": "We are committed to pushing the model frontier across cost efficiency, capability, and speed.\n\nStarting today, we are reducing prices for GPT-5.6 Luna by 80% and GPT-5.6 Terra by 20% , and offering a faster option for GPT-5.6 Sol in the API.\n\nLuna and Terra’s lower prices are reflected in how usage is counted in Codex and ChatGPT Work, so your usage goes further.",
+          "created_at": "2026-07-30T17:17:05+00:00",
+          "like_count": 12990,
+          "retweet_count": 1137,
+          "reply_count": 779,
+          "url": "https://x.com/OpenAI/status/2082878156483219672"
         },
         {
           "id": "2082550425526669773",
           "text": "@signulll at this point leaving openai is part of the promotion cycle at openai",
           "created_at": "2026-07-29T19:34:48+00:00",
-          "like_count": 34,
+          "like_count": 51,
           "retweet_count": 2,
-          "reply_count": 3,
+          "reply_count": 4,
           "url": "https://x.com/swyx/status/2082550425526669773"
         },
         {
-          "id": "2082177315648557062",
-          "text": "@alexkoch_ai come demo at new media lab and we film it?? https://t.co/GeFnEJkY8k",
-          "created_at": "2026-07-28T18:52:11+00:00",
-          "like_count": 20,
+          "id": "2082269285209305148",
+          "text": "haha wow you really listened! still working on it! its been going for over a billion positions now, this is the most extremely overengineered side project i've ever run lmao https://t.co/XY77Mz0wJl\n\nbut also it has taught me a lot about how fucking hard it is to make a fair harness that agents can self-play-hillclimb on... its harder than doing a bunch of tasks. trying to convince @alexgshaw to support selfplay RSI in @harborframework",
+          "created_at": "2026-07-29T00:57:38+00:00",
+          "like_count": 6,
+          "retweet_count": 0,
+          "reply_count": 3,
+          "url": "https://x.com/swyx/status/2082269285209305148"
+        },
+        {
+          "id": "2082886468905881815",
+          "text": "@ArtificialAnlys ok @openai gets it\n\nhttps://t.co/uiM1fInTzu",
+          "created_at": "2026-07-30T17:50:07+00:00",
+          "like_count": 3,
           "retweet_count": 0,
           "reply_count": 0,
-          "url": "https://x.com/swyx/status/2082177315648557062"
+          "url": "https://x.com/swyx/status/2082886468905881815"
         }
       ]
     },
@@ -67,21 +58,12 @@
       "tier": "analyst",
       "tweets": [
         {
-          "id": "2082228994653696371",
-          "text": "We support this petition, signed by our CEO, several co-founders, and senior staff. \n\nOur own research on recursive self-improvement, published last month, points to the need for tools to deliberately pace the frontier of AI development so society can prepare. We’re glad to see broad agreement across the field. https://t.co/DqwuQfa9xH",
-          "created_at": "2026-07-28T22:17:32+00:00",
-          "like_count": 4419,
-          "retweet_count": 503,
-          "reply_count": 1257,
-          "url": "https://x.com/AnthropicAI/status/2082228994653696371"
-        },
-        {
           "id": "2082321388736581641",
           "text": "Slowing down AI is a ultimately wishful thinking\nThe genie is out of the bottle\nThe most importan competition ever with potentially immeasurable benefits to the winner will not suddenly have people stop and sing kumbaya\nWhile many lab employees have signed, many more havent.\nPractically none at some labs less than 6 months behind have.",
           "created_at": "2026-07-29T04:24:41+00:00",
-          "like_count": 1121,
-          "retweet_count": 63,
-          "reply_count": 74,
+          "like_count": 1209,
+          "retweet_count": 67,
+          "reply_count": 80,
           "url": "https://x.com/dylan522p/status/2082321388736581641"
         }
       ]
@@ -105,7 +87,53 @@
       "name": "Sam Altman",
       "domain": "ai",
       "tier": "exec",
-      "tweets": []
+      "tweets": [
+        {
+          "id": "2082577277246972300",
+          "text": "After deployment, we applied GPT-5.6 Sol to advance the frontier of efficiency by making itself more efficient to run. \n\nThe results:\n- 20% lower serving costs from production GPU kernel improvements.\n- 15%+ better token-generation efficiency from improved speculative decoding.",
+          "created_at": "2026-07-29T21:21:29+00:00",
+          "like_count": 15552,
+          "retweet_count": 816,
+          "reply_count": 526,
+          "url": "https://x.com/OpenAI/status/2082577277246972300"
+        },
+        {
+          "id": "2082880720989532597",
+          "text": "major price cuts today:\n\n*80% drop for GPT-5.6 Luna, now $0.20 per million input tokens and $1.20 per million output\n*20% drop for GPT-5.6 Terra, to $2/$12\n*GPT-5.6 Sol gets Fast mode in the API, up to 2.5x the speed for 2x the price, same intelligence https://t.co/erC6u4VoDR",
+          "created_at": "2026-07-30T17:27:16+00:00",
+          "like_count": 12100,
+          "retweet_count": 697,
+          "reply_count": 906,
+          "url": "https://x.com/sama/status/2082880720989532597"
+        },
+        {
+          "id": "2082516370949062989",
+          "text": "We’re giving scientists, mathematicians, and engineers free access to our frontier models—starting with 10,000 researchers and expanding to 100,000 through 2027.\n\nChatGPT for Academic Researchers is built to accelerate discovery across disciplines. https://t.co/nrHn1no0wQ",
+          "created_at": "2026-07-29T17:19:28+00:00",
+          "like_count": 9508,
+          "retweet_count": 1172,
+          "reply_count": 612,
+          "url": "https://x.com/OpenAI/status/2082516370949062989"
+        },
+        {
+          "id": "2082609662231502932",
+          "text": "Turns out GPT-5.6 Sol is actually SoTA on ARC-AGI-3. \n\nJust took two setting changes. You just have to allow it to reason and work over multiple context windows with the help of our canonical compaction implementation.\n\nhttps://t.co/wHjaNsvIv8",
+          "created_at": "2026-07-29T23:30:11+00:00",
+          "like_count": 9222,
+          "retweet_count": 605,
+          "reply_count": 651,
+          "url": "https://x.com/thsottiaux/status/2082609662231502932"
+        },
+        {
+          "id": "2082628413769003269",
+          "text": "so excited for this.\n\nvery close to models that will significantly accelerate scientific discovery; the best way to do this is for us to empower scientists, not to try to figure out everything ourselves.\n\nwe all deserve the benefits.",
+          "created_at": "2026-07-30T00:44:41+00:00",
+          "like_count": 5842,
+          "retweet_count": 367,
+          "reply_count": 681,
+          "url": "https://x.com/sama/status/2082628413769003269"
+        }
+      ]
     },
     {
       "handle": "DarioAmodei",
@@ -119,7 +147,26 @@
       "name": "Demis Hassabis (Google DeepMind)",
       "domain": "ai",
       "tier": "exec",
-      "tweets": []
+      "tweets": [
+        {
+          "id": "2082844162928381956",
+          "text": "One brain. For any robot. 🤖\n\nWe’re launching Gemini Robotics 2: our next-generation physical AI bringing full body intelligence to humanoids, advanced dexterity, multi-robot teamwork and more.",
+          "created_at": "2026-07-30T15:02:00+00:00",
+          "like_count": 3468,
+          "retweet_count": 540,
+          "reply_count": 187,
+          "url": "https://x.com/GoogleDeepMind/status/2082844162928381956"
+        },
+        {
+          "id": "2082883806323728416",
+          "text": "Gemini Robotics 2 is here, with our new suite of models, robots can now reason through every movement to manage tasks that weren’t possible before, like tying delicate knots - and even team up to solve complex workflows. Huge congrats to the robotics team on this great milestone!",
+          "created_at": "2026-07-30T17:39:32+00:00",
+          "like_count": 1947,
+          "retweet_count": 210,
+          "reply_count": 93,
+          "url": "https://x.com/demishassabis/status/2082883806323728416"
+        }
+      ]
     },
     {
       "handle": "jietang",
@@ -135,22 +182,31 @@
       "tier": "infra",
       "tweets": [
         {
-          "id": "2082135368040886299",
-          "text": "The Open Secure AI Alliance is growing, with more organizations contributing expertise to help safeguard software and agents.\n\nhttps://t.co/tFQYKAqDc3 https://t.co/6zU2F5Jhdb",
-          "created_at": "2026-07-28T16:05:30+00:00",
-          "like_count": 382,
-          "retweet_count": 54,
-          "reply_count": 28,
-          "url": "https://x.com/nvidia/status/2082135368040886299"
+          "id": "2082800585179639899",
+          "text": "Since launching last week, more than 230 companies and organizations from across the tech sector have signed the \"Open Weights and American AI Leadership\" open letter. We want to thank these partners for standing up and publicly supporting broader access to AI innovation. A special thanks to @nvidia, @a16z, and @PalantirTech for working with @Microsoft on this effort.\n\nThese signatories understand that America’s AI leadership will not depend on the success of our frontier models alone, but on our ability to build a strong, secure, and open ecosystem that diffuses AI into every sector. We look forward to continuing to work with our partners and with policymakers to build that open ecosystem in a way that benefits American businesses, empowers American workers, and strengthens the American economy.",
+          "created_at": "2026-07-30T12:08:50+00:00",
+          "like_count": 817,
+          "retweet_count": 134,
+          "reply_count": 37,
+          "url": "https://x.com/BradSmi/status/2082800585179639899"
         },
         {
-          "id": "2081884835715404071",
-          "text": "Translation queues and custom integrations can slow global launches.\n\nOur Digital Marketing team built an AI-powered localization platform with NVIDIA Nemotron Speech to change that.\n\nSee the results ↓\nhttps://t.co/FbBEdcINv1 https://t.co/7GyBR9ivRM",
-          "created_at": "2026-07-27T23:29:59+00:00",
-          "like_count": 303,
-          "retweet_count": 32,
-          "reply_count": 48,
-          "url": "https://x.com/nvidia/status/2081884835715404071"
+          "id": "2082934294180221043",
+          "text": "Physical AI is here—the next wave of AI and the foundation of the next industrial revolution.\n\nNVIDIA founder and CEO Jensen Huang outlines the full stack making it possible: Cosmos and Omniverse to develop physical AI in virtual worlds, Isaac and Newton where robots learn skills in physics-simulated gyms, and Jetson robotics computers where their intelligence runs.\n\nTogether with Japan’s robotics and manufacturing leaders, NVIDIA is creating a new era of industrial automation.",
+          "created_at": "2026-07-30T21:00:09+00:00",
+          "like_count": 186,
+          "retweet_count": 38,
+          "reply_count": 25,
+          "url": "https://x.com/nvidia/status/2082934294180221043"
+        },
+        {
+          "id": "2082911218734617015",
+          "text": "Give a big welcome to the newest members of the Open Secure AI Alliance. 💚 \n\nhttps://t.co/tFQYKAqDc3 https://t.co/J2ak7vTYno",
+          "created_at": "2026-07-30T19:28:27+00:00",
+          "like_count": 102,
+          "retweet_count": 12,
+          "reply_count": 8,
+          "url": "https://x.com/nvidia/status/2082911218734617015"
         }
       ]
     },
@@ -196,19 +252,37 @@
       "tier": "builder",
       "tweets": [
         {
+          "id": "2082876367629381719",
+          "text": "We just shaved off up to ~𝟽𝚜 of the end-to-end CLI → Live URL deploy process for many apps.\n\nThis is specially cool when you consider you can integrate all of Vercel's infra via CLI/MCP/API and build your own custom software factory on top.\n\nMy DMs are open if you're building an agent or platform that builds and deploys software autonomously.",
+          "created_at": "2026-07-30T17:09:58+00:00",
+          "like_count": 187,
+          "retweet_count": 9,
+          "reply_count": 28,
+          "url": "https://x.com/rauchg/status/2082876367629381719"
+        },
+        {
           "id": "2082293455963976125",
           "text": "@tigawanna React / Next.js quite literally has a beautiful way to deal with this: &lt;𝚂𝚞𝚜𝚙𝚎𝚗𝚜𝚎&gt;\n\nOne-shotted, streaming models / providers from @vercel AI Gateway API in parallel! Code clean af 😁 https://t.co/sNwSN2WEGN",
           "created_at": "2026-07-29T02:33:41+00:00",
-          "like_count": 149,
+          "like_count": 154,
           "retweet_count": 2,
-          "reply_count": 13,
+          "reply_count": 14,
           "url": "https://x.com/rauchg/status/2082293455963976125"
+        },
+        {
+          "id": "2082872206904943031",
+          "text": "Deployments are now up to 7 seconds faster end to end.\n\nWe improved the entire pipeline, from CLI, through build orchestration, and infrastructure deployment.\n\n𝚟𝚌 𝚞𝚙𝚐𝚛𝚊𝚍𝚎 ↓\nhttps://t.co/QBfxt4O35x",
+          "created_at": "2026-07-30T16:53:26+00:00",
+          "like_count": 80,
+          "retweet_count": 2,
+          "reply_count": 5,
+          "url": "https://x.com/vercel_dev/status/2082872206904943031"
         },
         {
           "id": "2082300401949478968",
           "text": "@galluzzo_julian @vercel 🖤 excited to eventually unify agents &amp; web",
           "created_at": "2026-07-29T03:01:17+00:00",
-          "like_count": 15,
+          "like_count": 16,
           "retweet_count": 0,
           "reply_count": 1,
           "url": "https://x.com/rauchg/status/2082300401949478968"
@@ -222,49 +296,49 @@
       "tier": "builder",
       "tweets": [
         {
-          "id": "2082000490066592127",
-          "text": "We’re entering a new era of exploration.\n\nOur ancestors mapped the Earth. Then they explored space.\n\nOur generation may explore the computational universe: the vast space of algorithms, programs, proofs, and designs that AI agents can search.",
-          "created_at": "2026-07-28T07:09:33+00:00",
-          "like_count": 807,
-          "retweet_count": 46,
-          "reply_count": 48,
-          "url": "https://x.com/amasad/status/2082000490066592127"
-        },
-        {
           "id": "2082504898801999990",
           "text": "This is hands down the best AI design tool, both in taste and how fun and easy it is to use.\n\nTry it out!",
           "created_at": "2026-07-29T16:33:53+00:00",
-          "like_count": 840,
-          "retweet_count": 29,
-          "reply_count": 31,
+          "like_count": 1714,
+          "retweet_count": 63,
+          "reply_count": 52,
           "url": "https://x.com/amasad/status/2082504898801999990"
         },
         {
-          "id": "2082263440908079290",
-          "text": "- Kimi K3: frontier at 1/4 the price\n- DeepSeek V4 flash: low wage workhorse\n- all the GPTs\n- good old Anthropic models",
-          "created_at": "2026-07-29T00:34:25+00:00",
-          "like_count": 494,
-          "retweet_count": 28,
-          "reply_count": 45,
-          "url": "https://x.com/amasad/status/2082263440908079290"
-        },
-        {
-          "id": "2082246268517310851",
-          "text": "We recently joined NVIDIA, Microsoft, and others in supporting open-weight AI.\n\nToday, we’re putting that belief into the product with model choice on Replit, starting with Kimi K3.\n\nThe future is the right model for the right job, at the right cost.",
-          "created_at": "2026-07-28T23:26:11+00:00",
-          "like_count": 374,
-          "retweet_count": 24,
-          "reply_count": 48,
-          "url": "https://x.com/amasad/status/2082246268517310851"
+          "id": "2082856252888211851",
+          "text": "If Situational Awareness was blindsided, the AI naming curse strikes again.",
+          "created_at": "2026-07-30T15:50:02+00:00",
+          "like_count": 556,
+          "retweet_count": 14,
+          "reply_count": 29,
+          "url": "https://x.com/amasad/status/2082856252888211851"
         },
         {
           "id": "2082508826767679668",
           "text": "Some models are great at CSS, others are fantastic at SVG, while yet others are really good at animations.\n\nReplit Design is powered by the best of open and closed models to generate superior aesthetics. https://t.co/qt5XNdHfQ8",
           "created_at": "2026-07-29T16:49:30+00:00",
-          "like_count": 312,
-          "retweet_count": 10,
-          "reply_count": 17,
+          "like_count": 462,
+          "retweet_count": 20,
+          "reply_count": 27,
           "url": "https://x.com/amasad/status/2082508826767679668"
+        },
+        {
+          "id": "2082505558293467363",
+          "text": "Post-prompt era",
+          "created_at": "2026-07-29T16:36:30+00:00",
+          "like_count": 283,
+          "retweet_count": 10,
+          "reply_count": 18,
+          "url": "https://x.com/amasad/status/2082505558293467363"
+        },
+        {
+          "id": "2082316553740284060",
+          "text": "Imagine SETI@Home, where you donated compute to search for aliens, but instead you donate compute to search math proofs.",
+          "created_at": "2026-07-29T04:05:28+00:00",
+          "like_count": 86,
+          "retweet_count": 4,
+          "reply_count": 14,
+          "url": "https://x.com/amasad/status/2082316553740284060"
         }
       ]
     },
@@ -273,26 +347,62 @@
       "name": "Josh Woodward (Google Labs)",
       "domain": "ai",
       "tier": "builder",
-      "tweets": []
+      "tweets": [
+        {
+          "id": "2082926031543967896",
+          "text": "My new favorite:\n\nGemini Mac app ➔ Hold Fn ➔ Speak ➔ Clean, polished text directly at your cursor\n\nZero editing or copy-pasting required\n\nGet it for free: https://t.co/Gr3KIsVhrc https://t.co/rXLLysJME5",
+          "created_at": "2026-07-30T20:27:19+00:00",
+          "like_count": 172,
+          "retweet_count": 22,
+          "reply_count": 33,
+          "url": "https://x.com/joshwoodward/status/2082926031543967896"
+        },
+        {
+          "id": "2082906921531498537",
+          "text": "@ai_for_success Glad you're liking it!",
+          "created_at": "2026-07-30T19:11:23+00:00",
+          "like_count": 8,
+          "retweet_count": 0,
+          "reply_count": 2,
+          "url": "https://x.com/joshwoodward/status/2082906921531498537"
+        },
+        {
+          "id": "2082928788405362764",
+          "text": "@Kortex_AI_Biz Agree! Once you start using it, you don't go back.",
+          "created_at": "2026-07-30T20:38:16+00:00",
+          "like_count": 3,
+          "retweet_count": 0,
+          "reply_count": 1,
+          "url": "https://x.com/joshwoodward/status/2082928788405362764"
+        },
+        {
+          "id": "2082921912255046034",
+          "text": "@diegogarciamkt @ai_for_success For Pro &amp; Ultra subscribers, it's available wherever Gemini Apps are supported, except in the European Economic Area, Nigeria, Switzerland, and the United Kingdom.\n\nMore info: https://t.co/e1Mi159Sdi",
+          "created_at": "2026-07-30T20:10:57+00:00",
+          "like_count": 1,
+          "retweet_count": 0,
+          "reply_count": 1,
+          "url": "https://x.com/joshwoodward/status/2082921912255046034"
+        },
+        {
+          "id": "2082928351019245713",
+          "text": "@ParkerOrtolani Can you say more? A custom Gemini keyboard that would replace the default keyboard?",
+          "created_at": "2026-07-30T20:36:32+00:00",
+          "like_count": 0,
+          "retweet_count": 0,
+          "reply_count": 2,
+          "url": "https://x.com/joshwoodward/status/2082928351019245713"
+        }
+      ]
     },
     {
       "handle": "ornith_",
       "name": "Ornith (agentic coding LLM)",
       "domain": "ai",
       "tier": "builder",
-      "tweets": [
-        {
-          "id": "2081911438923415742",
-          "text": "@Awesome_O_AI ❤️",
-          "created_at": "2026-07-28T01:15:41+00:00",
-          "like_count": 1,
-          "retweet_count": 0,
-          "reply_count": 0,
-          "url": "https://x.com/ornith_/status/2081911438923415742"
-        }
-      ]
+      "tweets": []
     }
   ],
   "errors": null,
-  "generated_at": "2026-07-29T23:29:57.540165+00:00"
+  "generated_at": "2026-07-30T23:32:46.559964+00:00"
 }
