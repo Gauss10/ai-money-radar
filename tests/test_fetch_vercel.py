@@ -18,6 +18,7 @@ class FetchVercelTests(unittest.TestCase):
             {"date": "2026-07-15", "name": "Model B", "metric": "tokens", "share_percent": 40.02},
             {"date": "2026-07-15", "name": "Model A", "metric": "spend", "share_percent": 55.0},
             {"date": "2026-07-15", "name": "Model A", "metric": "requests", "share_percent": 20.0},
+            {"date": "2026-07-15", "name": "Other", "metric": "tokens", "share_percent": 29.94},
             {"date": "2026-07-15", "name": "Image A", "metric": "imageCount", "share_percent": 90.0},
         ]
 
@@ -26,6 +27,7 @@ class FetchVercelTests(unittest.TestCase):
         self.assertEqual(table["tokens"]["2026-07-15"][0], ["Model B", 40.02])
         self.assertEqual(table["cost"]["2026-07-15"], [["Model A", 55.0]])
         self.assertEqual(table["requests"]["2026-07-15"], [["Model A", 20.0]])
+        self.assertNotIn("Other", dict(table["tokens"]["2026-07-15"]))
         self.assertNotIn("imageCount", table)
 
     def test_lab_spend_history_uses_official_lab_rows(self):
@@ -53,7 +55,7 @@ class FetchVercelTests(unittest.TestCase):
             "tokens": {
                 "2026-07-04": [["Old Leader", 90.0]],
                 "2026-07-05": [["Model A", 40.0], ["Model B", 20.0]],
-                "2026-07-06": [["Model A", 30.0], ["Model B", 30.0]],
+                "2026-07-06": [["Other", 40.0], ["Model A", 30.0], ["Model B", 30.0]],
             }
         }
 
@@ -63,6 +65,7 @@ class FetchVercelTests(unittest.TestCase):
 
         self.assertEqual(rows[:2], [["Model A", 35.0], ["Model B", 25.0]])
         self.assertEqual(rows[-1], ["Other", 40.0])
+        self.assertEqual([name for name, _ in rows].count("Other"), 1)
         self.assertNotIn("Old Leader", [name for name, _ in rows])
 
     def test_model_history_is_rebuilt_from_api_table_only(self):
@@ -107,6 +110,9 @@ class FetchVercelTests(unittest.TestCase):
         self.assertEqual(
             snapshots[0]["token_share"],
             [["Model A", 40.0], ["Model B", 20.0], ["Other", 40.0]],
+        )
+        self.assertEqual(
+            [name for name, _ in snapshots[0]["token_share"]].count("Other"), 1
         )
 
 

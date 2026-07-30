@@ -57,6 +57,40 @@ class FetchSignalsTests(unittest.TestCase):
             "核心结论是模型训练成本下降。",
         )
 
+    def test_generated_summary_rejects_prompt_and_reasoning_leakage(self):
+        raw = (
+            "We need to produce 2-3 sentences, about 100-220 Chinese characters. "
+            "Let's count manually. 最终摘要看起来是正常中文，但前面泄露了推理过程。"
+        )
+        self.assertEqual(fetch_signals.clean_generated_summary(raw), "")
+
+    def test_generated_summary_rejects_meta_refusal(self):
+        raw = "由于您提供的原始内容仅包含标题，我无法从中提取具体事实，请提供完整原文。"
+        self.assertEqual(fetch_signals.clean_generated_summary(raw), "")
+
+    def test_title_only_source_is_not_summary_material(self):
+        self.assertFalse(fetch_signals.has_summary_material({
+            "detail": "Trading Houses For Datacenters",
+        }))
+        self.assertTrue(fetch_signals.has_summary_material({
+            "detail": (
+                "If a human-level software engineer could run on an H100 equivalent, "
+                "that H100 should rent for over $250k a year, 15x today's spot price."
+            ),
+        }))
+
+    def test_public_entry_cannot_reintroduce_polluted_summary(self):
+        entry = {
+            "date": "2026-07-29",
+            "who": "Example",
+            "detail": "A sufficiently detailed source sentence " * 4,
+            "detail_zh": "We need to produce Chinese summary. Let's count characters. 正常结论。",
+            "take_zh": "原始内容仅包含标题，我无法从中提取，请提供完整原文。",
+        }
+        public = fetch_signals.public_entry(entry)
+        self.assertEqual(public["detail_zh"], "")
+        self.assertEqual(public["take_zh"], "")
+
     def test_cover_summary_uses_complete_existing_detail(self):
         detail = "本期披露了新的模型使用数据与关键商业进展。"
         self.assertEqual(

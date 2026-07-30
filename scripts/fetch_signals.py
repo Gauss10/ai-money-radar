@@ -320,9 +320,17 @@ def make_podcast_candidates(feed):
 
 
 def public_entry(entry):
-    return {k: entry.get(k, "") for k in
-            ("date", "who", "via", "via_en", "take", "take_en", "take_zh",
-             "url", "detail", "detail_zh")}
+    out = {k: entry.get(k, "") for k in
+           ("date", "who", "via", "via_en", "take", "take_en", "take_zh",
+            "url", "detail", "detail_zh")}
+    if contains_generation_artifacts(out.get("take_zh")):
+        out["take_zh"] = ""
+    if out.get("detail_zh"):
+        out["detail_zh"] = (
+            clean_generated_summary(out["detail_zh"])
+            if has_summary_material(out) else ""
+        )
+    return out
 
 
 def archive_same_event(left, right, day_window=2):
@@ -399,8 +407,33 @@ def request_model(key, model, prompt, max_tokens):
     return (payload.get("choices") or [{}])[0].get("message", {}).get("content", "").strip()
 
 
+GENERATION_ARTIFACT_RE = re.compile(
+    r"(?:"
+    r"\bwe need to\b|\bneed to produce\b|\blet'?s (?:count|draft|craft|extract|summarize)\b|"
+    r"\bwe must\b|\bmust not add\b|\braw content\b|\bchinese characters?\b|"
+    r"\bthe (?:source|requirement) (?:is|only|says)\b|\bi (?:cannot|can't) (?:infer|summarize)\b|"
+    r"原始内容仅|仅包含.{0,20}(?:标题|节目名称|版权说明)|无法从中提取|"
+    r"请提供.{0,20}(?:原文|内容)|未提供具体.{0,12}(?:信息|内容)|"
+    r"字数要求|中文字|字符数"
+    r")",
+    re.I,
+)
+
+
+def contains_generation_artifacts(value):
+    return bool(GENERATION_ARTIFACT_RE.search(value or ""))
+
+
+def has_summary_material(item):
+    """Do not ask a model to expand a title or boilerplate into fake detail."""
+    source = clean_text(item.get("detail"))
+    return len(source) >= 80 or len(re.findall(r"[一-鿿]", source)) >= 40
+
+
 def clean_generated_summary(value):
     """清理模型偶尔保留的标题、时间轴和推广信息。"""
+    if contains_generation_artifacts(value):
+        return ""
     lines = []
     for line in (value or "").splitlines():
         text = line.strip()
@@ -412,7 +445,10 @@ def clean_generated_summary(value):
     summary = " ".join(lines)
     summary = re.sub(r"^(?:摘要|要点|核心要点)\s*[:：]\s*", "", summary)
     summary = re.sub(r"\s*#[A-Za-z0-9_\u4e00-\u9fff-]+", "", summary)
-    return re.sub(r"\s+", " ", summary).strip()
+    summary = re.sub(r"\s+", " ", summary).strip()
+    if len(summary) > 450 or len(re.findall(r"[一-鿿]", summary)) < 12:
+        return ""
+    return summary
 
 
 def clean_generated_cover(value, min_len=35, max_len=110):
@@ -442,11 +478,11 @@ def summarize_details(items, limit=20, force=False):
     key = get_openrouter_key()
     if not key:
         return 0
-    todo = [
+    todo = sorted([
         it for it in items
-        if (it.get("detail") or "").strip()
+        if has_summary_material(it)
         and (force or not (it.get("detail_zh") or "").strip())
-    ]
+    ], key=lambda it: (it.get("date", ""), it.get("who", "")), reverse=True)
     done = 0
     for it in todo[:limit]:
         prompt = (
@@ -473,6 +509,8 @@ def summarize_details(items, limit=20, force=False):
 
 def clean_deep_detail(value):
     text = (value or "").strip()
+    if contains_generation_artifacts(text):
+        return ""
     while INTRO_RE.match(text):
         text = INTRO_RE.sub("", text, count=1).strip()
     lines = [
@@ -563,6 +601,14 @@ def update_online_deep_reads(entries, limit=4):
     details = current.get("details") or {}
     bios = current.get("bios") or {}
     covers = current.get("covers") or {}
+    details = {
+        url: record for url, record in details.items()
+        if not contains_generation_artifacts((record or {}).get("detail"))
+    }
+    covers = {
+        url: cover for url, cover in covers.items()
+        if clean_generated_cover(cover)
+    }
     key = get_openrouter_key()
     if not key:
         return 0, 0, 0, covers
@@ -611,10 +657,21 @@ def update_signals_archive(entries):
     展示条目的深读与来源简介由本脚本在线生成到 signal_details.json。
     """
     cur = load_json("signals_archive.json") or {}
+    for item in cur.get("items", []):
+        if item.get("detail_zh"):
+            item["detail_zh"] = (
+                clean_generated_summary(item["detail_zh"])
+                if has_summary_material(item) else ""
+            )
     merged = {item.get("url") or f"{item.get('date')}|{item.get('who')}": item
               for item in cur.get("items", [])}
     for entry in entries:
         pub = public_entry(entry)
+        if pub.get("detail_zh"):
+            pub["detail_zh"] = (
+                clean_generated_summary(pub["detail_zh"])
+                if has_summary_material(pub) else ""
+            )
         key = pub.get("url") or f"{pub.get('date')}|{pub.get('who')}"
         old = merged.get(key)
         if old:

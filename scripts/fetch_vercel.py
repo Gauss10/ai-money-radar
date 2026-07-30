@@ -38,6 +38,10 @@ LABS = {
 }
 
 
+def is_other(name):
+    return (name or '').strip().casefold() == 'other'
+
+
 def weekly_average(table, dates, metric):
     """Average public daily shares across the selected data dates."""
     if not dates:
@@ -45,6 +49,8 @@ def weekly_average(table, dates, metric):
     totals = {}
     for day in dates:
         for model, share in table.get(metric, {}).get(day, []):
+            if is_other(model):
+                continue
             totals[model] = totals.get(model, 0.0) + share
     averages = {model: total / len(dates) for model, total in totals.items()}
     top = sorted(averages.items(), key=lambda item: -item[1])[:10]
@@ -65,11 +71,11 @@ def fetch_dataset(dataset):
 
 
 def model_rows_to_table(rows):
-    """Map official model API rows to the legacy metric/date/model table."""
+    """Map model rows; Other is rebuilt once after ranking the named models."""
     table = {}
     for row in rows:
         metric = API_METRICS.get(row.get('metric'))
-        if not metric:
+        if not metric or is_other(row.get('name')):
             continue
         day = row['date'][:10]
         table.setdefault(metric, {}).setdefault(day, []).append(
@@ -143,7 +149,10 @@ def build_snapshots(table, limit=90):
     for day in days:
         snapshot = {'date': day}
         for metric, snapshot_key in SNAP_MAP.items():
-            values = table.get(metric, {}).get(day, [])
+            values = [
+                row for row in table.get(metric, {}).get(day, [])
+                if not is_other(row[0])
+            ]
             top = [
                 [name, round(share, 1)]
                 for name, share in sorted(
