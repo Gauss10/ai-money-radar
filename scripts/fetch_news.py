@@ -8,9 +8,8 @@ AI 数据中心建设新闻 -> site/data/dc_news.json
 策略:
   - 拉取查询词的最新条目, 按 URL 去重合并进现有列表
   - 为标题生成中文 title_zh；英文原文 title 保留
-  - pinned 条目 (手工精选/改写标题) 永远保留
-  - 其余按日期倒序, 总条数截到 30
-  - 按事件实体聚类去重: 同一事件多家报道时, 保留权威来源/手工 pinned 稿
+  - 按日期倒序, 总条数截到 30，不永久保留历史条目
+  - 按事件实体聚类去重: 同一事件多家报道时, 保留权威来源
 """
 import datetime, email.utils, json, re, xml.etree.ElementTree as ET
 from urllib.parse import quote, urlencode
@@ -103,14 +102,6 @@ TITLE_ZH_OVERRIDES = {
     'Ohio’s warped energy policy: 10 natural gas plants are being built or planned to power AI':
         '俄亥俄能源政策扭曲：10 座天然气电厂正在建设或规划中，为 AI 供电',
 }
-TITLE_EN_OVERRIDES = {
-    'Anthropic 拟投建澳洲数据中心园区：目标 1.4GW、报道口径 ~$21.6B，2027 年底前 ≥1GW 上线，FID 约 6 周内':
-        'Anthropic may build an Australian data center campus: 1.4GW target, reported ~$21.6B, >=1GW online by end-2027, FID in ~6 weeks',
-    "SB Energy × DOE：Portsmouth Site 800MW / $10B AI 数据中心（'world's largest' 口径，公私合作租用 DOE 土地）":
-        "SB Energy x DOE: Portsmouth Site 800MW / $10B AI data center ('world's largest' framing; public-private partnership leasing DOE land)",
-}
-
-
 def normalize_title(value):
     value = (value or '').lower()
     value = value.replace('data centre', 'data center')
@@ -134,9 +125,6 @@ def title_without_source(title, source):
 
 
 def event_key(item):
-    if item.get('pinned') and not item.get('approx'):
-        return f'pinned:{item.get("url") or item.get("title")}'
-
     title = title_without_source(item.get('title'), item.get('news_source'))
     t = normalize_title(title)
     if not t:
@@ -175,8 +163,6 @@ def event_key(item):
 
 
 def source_rank(item):
-    if item.get('pinned'):
-        return -1
     return SOURCE_PRIORITY.get(item.get('news_source'), 20)
 
 
@@ -211,6 +197,14 @@ def dedupe_by_event(items):
         else:
             removed += 1
     return list(winners.values()), removed
+
+
+def select_items(items, keep=KEEP):
+    for item in items:
+        item.pop('pinned', None)
+    deduped, removed = dedupe_by_event(items)
+    selected = sorted(deduped, key=lambda item: item.get('date') or '', reverse=True)[:keep]
+    return selected, removed
 
 
 def translate_title(title, source):
@@ -284,16 +278,10 @@ def main():
                 added += 1
     print(f'  fetched, {added} new items')
 
-    items, removed = dedupe_by_event(items)
-    pinned = [i for i in items if i.get('pinned')]
-    rest = sorted((i for i in items if not i.get('pinned')),
-                  key=lambda x: x['date'], reverse=True)[:KEEP - len(pinned)]
-    out_items = sorted(pinned + rest, key=lambda x: x['date'], reverse=True)
+    out_items, removed = select_items(items)
     translated = 0
     for item in out_items:
         base_title = title_without_source(item.get('title'), item.get('news_source'))
-        if item.get('title') in TITLE_EN_OVERRIDES:
-            item['title_en'] = TITLE_EN_OVERRIDES[item.get('title')]
         if base_title in TITLE_ZH_OVERRIDES:
             item['title_zh'] = TITLE_ZH_OVERRIDES[base_title]
         elif not item.get('title_zh'):
@@ -305,13 +293,13 @@ def main():
 
     out = {
         'as_of': str(datetime.date.today()),
-        'source': 'Google News RSS（每日增量；按事件实体聚类去重，同事件留最权威稿；pinned 手动精选保留；中英界面分别展示 title_zh/title_en）',
+        'source': 'Google News RSS（每日增量；按事件实体聚类去重，同事件留最权威稿；中英界面分别展示 title_zh/title_en）',
         'items': out_items,
     }
     if block:
         out['blocklist'] = sorted(block)
     save_json('dc_news.json', out)
-    print(f'  total {len(out_items)} items ({len(pinned)} pinned), removed {removed} duplicates, translated {translated}')
+    print(f'  total {len(out_items)} items, removed {removed} duplicates, translated {translated}')
 
 
 if __name__ == '__main__':
