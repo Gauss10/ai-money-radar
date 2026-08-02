@@ -40,6 +40,16 @@ class FetchCodexAdoptionTests(unittest.TestCase):
         self.assertEqual(points[0]["value_m"], 4)
         self.assertEqual(points[0]["metric_key"], "codex_wau")
 
+    def test_extracts_people_use_codex_every_week(self):
+        points = fetch_codex_adoption.extract_points(article(
+            "With Codex technology built-in, ChatGPT can now move beyond answering questions. "
+            "More than 5 million people use Codex every week."
+        ))
+        self.assertEqual(len(points), 1)
+        self.assertEqual(points[0]["value_m"], 5)
+        self.assertEqual(points[0]["label"], ">5M")
+        self.assertEqual(points[0]["metric_key"], "codex_wau")
+
     def test_extracts_growth_to_format(self):
         points = fetch_codex_adoption.extract_points(article(
             "Weekly Codex users have more than tripled since the start of the year to 1.6M."

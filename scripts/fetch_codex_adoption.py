@@ -15,7 +15,7 @@ OPENAI_RSS = "https://openai.com/news/rss.xml"
 SCAN_LIMIT = 100
 USAGE_TERMS = (
     "weekly active user", "weekly user", "weekly codex user", "users every week", "users each week",
-    "using codex every week", "using codex each week",
+    "using codex every week", "using codex each week", "use codex every week", "use codex each week",
     "monthly active user", "monthly user", "active user",
 )
 
