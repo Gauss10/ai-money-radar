@@ -10,27 +10,36 @@
           "id": "2083749667410727319",
           "text": "We're starting to leave the territory where you'd test an LLM by e.g. \"create an svg of pelican on a bicycle\". As one idea to generalize it, I was interested what Opus 5 would do if I gave it the first paragraph of the Lord of the Rings, a 1M token budget (~$10) and asked for three js render of it. Opus went off for ~2 hours and wrote 5500 lines of code that (procedurally) rendered the story. It's kind of janky but fun. But it's a bit mindboggling that the LLM has to place and orchestrate various polygon assets in (x,y,z) coordinates and write code that animates it all, and that it even does anything at all.\n\nI also like this kind of examples because no one in their right mind would ever spend the time to write something this custom but LLMs have all the stamina and patience in the world, so it's an example where we go from \"no one would ever do this\" to \"sure, why not, it's ~free\". There might be a lot more. But I'm excited about creating hyper custom worlds that you can imagine dropping players into, e.g. here to participate in the LoTR story as a spectator NPC, or one of the characters, or etc. Something like an ephemeral GTA of X on demand.\n\nLast thought is that the domain of worlds/games exposes a weakness in LLMs: they can't easily audit their work because they aren't able to efficiently and natively perceive videos or play games within them. Here, Opus 5 had to very slowly and painstakingly take screenshots at different points, and it messed up a few times and created a bunch of jank. An example of raw capability (multimodal, gameplay) that I think is still quite lacking.",
           "created_at": "2026-08-02T03:00:09+00:00",
-          "like_count": 22997,
-          "retweet_count": 1737,
-          "reply_count": 1194,
+          "like_count": 26813,
+          "retweet_count": 2069,
+          "reply_count": 1370,
           "url": "https://x.com/karpathy/status/2083749667410727319"
         },
         {
           "id": "2083756186663551388",
           "text": "@cunkpyber Eleven Labs for the audio. LLMs can easily use the APIs (here I did that part manually because I felt picky about the voice).",
           "created_at": "2026-08-02T03:26:03+00:00",
-          "like_count": 507,
-          "retweet_count": 15,
-          "reply_count": 12,
+          "like_count": 549,
+          "retweet_count": 16,
+          "reply_count": 15,
           "url": "https://x.com/karpathy/status/2083756186663551388"
+        },
+        {
+          "id": "2084080419029549276",
+          "text": "@threejs I was curious and gave your feedback to Opus. TIL! https://t.co/t5HvyZsBlh",
+          "created_at": "2026-08-03T00:54:26+00:00",
+          "like_count": 317,
+          "retweet_count": 8,
+          "reply_count": 11,
+          "url": "https://x.com/karpathy/status/2084080419029549276"
         },
         {
           "id": "2084017844455690558",
           "text": "@rainisto @DavidmComfort agree!! i quite like the idea of procedural code for storyboarding and control, and then video to video models for texturing and looksmaxxing.",
           "created_at": "2026-08-02T20:45:47+00:00",
-          "like_count": 45,
+          "like_count": 96,
           "retweet_count": 1,
-          "reply_count": 2,
+          "reply_count": 3,
           "url": "https://x.com/karpathy/status/2084017844455690558"
         }
       ]
@@ -42,49 +51,49 @@
       "tier": "analyst",
       "tweets": [
         {
-          "id": "2083596911060324570",
-          "text": "@_chenglou I was part of that team. Basically ChatGPT one year before it came out. Called LMChat and then another codename.\n\nGoogle was too nervous to release it and DeepMind was blocked from shipping products that could disrupt Google.\n\nI think about this a lot.",
-          "created_at": "2026-08-01T16:53:09+00:00",
-          "like_count": 9520,
-          "retweet_count": 407,
-          "reply_count": 208,
-          "url": "https://x.com/thsottiaux/status/2083596911060324570"
-        },
-        {
-          "id": "2083610493793845429",
-          "text": "&gt; Google was too nervous to release it and DeepMind was blocked from shipping products that could disrupt Google.\n\nbookmark for the next vc that asks you \"what if &lt;incumbent&gt; builds this?\"",
-          "created_at": "2026-08-01T17:47:07+00:00",
-          "like_count": 1147,
-          "retweet_count": 33,
-          "reply_count": 25,
-          "url": "https://x.com/swyx/status/2083610493793845429"
-        },
-        {
           "id": "2083753582160191988",
           "text": "one of my curses as organizer is i rarely get to attend the conference i run. so i basically 24/7 watch back talks with everyone else after the show\n\nthis one was VERY well paced and argued: fighting slop with slop — @vaibcode, Boundary https://t.co/vRckyyntm6 \n\n@btaylor asked for an ai native programming language on our pod. as a PL fan I’m really glad someone is rethinking how code runs from first principles. Being slop-tolerant is 100x more valuable than being anti- slop",
           "created_at": "2026-08-02T03:15:42+00:00",
-          "like_count": 197,
-          "retweet_count": 9,
-          "reply_count": 21,
+          "like_count": 227,
+          "retweet_count": 10,
+          "reply_count": 23,
           "url": "https://x.com/swyx/status/2083753582160191988"
-        },
-        {
-          "id": "2083654369095156219",
-          "text": "started work on forge agents today https://t.co/u3nBCzF7sM",
-          "created_at": "2026-08-01T20:41:28+00:00",
-          "like_count": 50,
-          "retweet_count": 2,
-          "reply_count": 18,
-          "url": "https://x.com/swyx/status/2083654369095156219"
         },
         {
           "id": "2083993378258288976",
           "text": "one way i'm developing Forge (https://t.co/2x9e0oRjxQ) is to use it to host all my projects going forward. so I often find myself having to bounce back and forth between platform and product.\n\nsharing neat trick - in @openai codex you can @ a thread + queue up the @, so if your project is blocked on a platform feature, you can actually premove your project to proceed once the platform is unblocked.\n\nnow of course.. i wasnt actually strictly necessary in this whole process, so an even better multiagent harness would seamlessly orchestrate work back and forth between platform and project... it's just not a very common usecase unless you're building a real platform (which most people dont - most people just build applications on top of platforms, or a small platform with only 1 proudct/application tenant)",
           "created_at": "2026-08-02T19:08:34+00:00",
-          "like_count": 18,
-          "retweet_count": 0,
-          "reply_count": 18,
+          "like_count": 39,
+          "retweet_count": 2,
+          "reply_count": 28,
           "url": "https://x.com/swyx/status/2083993378258288976"
+        },
+        {
+          "id": "2084156733027701164",
+          "text": "in prep for our computer use pod, gonna store a running list of codex cua wow moments. \n\n here it is dealing with support chat for me to escalate for faster resolution\n\nthese humans have no idea they are talking to a bot\n\nsupport guy tried to say its our fault, bot replied with complete receipts lmao",
+          "created_at": "2026-08-03T05:57:41+00:00",
+          "like_count": 14,
+          "retweet_count": 0,
+          "reply_count": 4,
+          "url": "https://x.com/swyx/status/2084156733027701164"
+        },
+        {
+          "id": "2084354408717128155",
+          "text": "@HarperSCarroll @mervenoyann @huggingface nice!! claude tutorial pls!!",
+          "created_at": "2026-08-03T19:03:11+00:00",
+          "like_count": 2,
+          "retweet_count": 0,
+          "reply_count": 1,
+          "url": "https://x.com/swyx/status/2084354408717128155"
+        },
+        {
+          "id": "2084081279419715632",
+          "text": "@garybasin @OpenAI only for the very motivated",
+          "created_at": "2026-08-03T00:57:52+00:00",
+          "like_count": 1,
+          "retweet_count": 0,
+          "reply_count": 1,
+          "url": "https://x.com/swyx/status/2084081279419715632"
         }
       ]
     },
@@ -98,9 +107,9 @@
           "id": "2084051253278208138",
           "text": "The funny thing about Anthropic and OpenAI people saying they want to slow down AI progress is that this is what Anti Trust mechanisms were built for.\nIt's illegal to collude and slow down AI progress.",
           "created_at": "2026-08-02T22:58:33+00:00",
-          "like_count": 97,
-          "retweet_count": 4,
-          "reply_count": 12,
+          "like_count": 1626,
+          "retweet_count": 78,
+          "reply_count": 70,
           "url": "https://x.com/dylan522p/status/2084051253278208138"
         }
       ]
@@ -152,7 +161,26 @@
       "name": "NVIDIA (Jensen Huang / AI infrastructure)",
       "domain": "ai",
       "tier": "infra",
-      "tweets": []
+      "tweets": [
+        {
+          "id": "2084420790036910459",
+          "text": "AI is becoming a primary interface for product discovery, opening new revenue opportunities for retailers.\n\nSee how NVIDIA is helping retailers prepare for agentic commerce, from product discovery to secure checkout, while maintaining control over pricing, payments and compliance.",
+          "created_at": "2026-08-03T23:26:57+00:00",
+          "like_count": 32,
+          "retweet_count": 3,
+          "reply_count": 5,
+          "url": "https://x.com/nvidia/status/2084420790036910459"
+        },
+        {
+          "id": "2084314157218939296",
+          "text": "@KAIST_AI @JensenHuang 🤝",
+          "created_at": "2026-08-03T16:23:14+00:00",
+          "like_count": 24,
+          "retweet_count": 3,
+          "reply_count": 2,
+          "url": "https://x.com/nvidia/status/2084314157218939296"
+        }
+      ]
     },
     {
       "handle": "JensenHuang",
@@ -166,7 +194,17 @@
       "name": "Amanda Askell (Anthropic)",
       "domain": "ai",
       "tier": "builder",
-      "tweets": []
+      "tweets": [
+        {
+          "id": "2084369056765989224",
+          "text": "I don't agree with this part. I think the takeaway should be that models (like humans) can behave in aligned ways while still causing harm, e.g. because they're given false information about their situation. There isn't a line between aligned and harmless: they're different axes. https://t.co/btojNfpU5a",
+          "created_at": "2026-08-03T20:01:23+00:00",
+          "like_count": 651,
+          "retweet_count": 29,
+          "reply_count": 65,
+          "url": "https://x.com/AmandaAskell/status/2084369056765989224"
+        }
+      ]
     },
     {
       "handle": "bcherny",
@@ -196,49 +234,49 @@
       "tier": "builder",
       "tweets": [
         {
-          "id": "2083610805069611230",
-          "text": "We've decided to open-source the CRM we built for ourselves at Comp AI.\n\nIt's agentic-first, which we mean literally: durable research agents. \n\nMIT license. Built using next, eve, and context. https://t.co/JLwQCXinW1",
-          "created_at": "2026-08-01T17:48:22+00:00",
-          "like_count": 3762,
-          "retweet_count": 283,
-          "reply_count": 115,
-          "url": "https://x.com/lewiscarhart/status/2083610805069611230"
+          "id": "2084399799642841419",
+          "text": "Next.js 16.3 is now available!\n\n• Up to 90% less memory in dev\n• Faster builds, type checking, and rendering\n• Better tooling for AI agents\n• Custom error boundaries\n• Instant Navigations for SPA-like responsiveness\n\nhttps://t.co/lNAQqpAKT1\n\nHere's what's new ↓",
+          "created_at": "2026-08-03T22:03:33+00:00",
+          "like_count": 773,
+          "retweet_count": 90,
+          "reply_count": 39,
+          "url": "https://x.com/nextjs/status/2084399799642841419"
         },
         {
-          "id": "2083969120270450911",
-          "text": "AI alone is cool. But mastery + creativity + AI hits on a whole different level. Don't let anyone discourage you from pursuing excellence and craft. Keep studying the blade.",
-          "created_at": "2026-08-02T17:32:11+00:00",
-          "like_count": 2589,
-          "retweet_count": 272,
-          "reply_count": 146,
-          "url": "https://x.com/rauchg/status/2083969120270450911"
+          "id": "2084345210470097127",
+          "text": "Vercel Sandbox is an excellent choice for automating web browsers in basic scenarios. The 𝚛𝚎𝚖𝚘𝚝𝚎-𝚊𝚐𝚎𝚗𝚝-𝚋𝚛𝚘𝚠𝚜𝚎𝚛 API makes it delightful:\n\n𝚋𝚛𝚘𝚠𝚜𝚎𝚛.𝚎𝚡𝚎𝚌('𝚘𝚙𝚎𝚗', 𝚞𝚛𝚕)\n𝚋𝚛𝚘𝚠𝚜𝚎𝚛.𝚎𝚡𝚎𝚌('𝚌𝚕𝚒𝚌𝚔')\n𝚋𝚛𝚘𝚠𝚜𝚎𝚛.𝚜𝚌𝚛𝚎𝚎𝚗𝚜𝚑𝚘𝚝()\n\n📦 https://t.co/66GIcFI1o4",
+          "created_at": "2026-08-03T18:26:38+00:00",
+          "like_count": 287,
+          "retweet_count": 19,
+          "reply_count": 35,
+          "url": "https://x.com/rauchg/status/2084345210470097127"
         },
         {
-          "id": "2083684679362965605",
-          "text": "Open source agentic CRM built on https://t.co/99eEa13mZ3 and @nextjs.\n\nModel-agnostic, self-hostable or serverlessly-deployed, multi-channel, and headless. \n\nThis is the way.",
-          "created_at": "2026-08-01T22:41:55+00:00",
-          "like_count": 1448,
-          "retweet_count": 88,
-          "reply_count": 40,
-          "url": "https://x.com/rauchg/status/2083684679362965605"
+          "id": "2084364099367133381",
+          "text": "Introducing the new v0 API.\n\nProgrammatic access to v0's app-building capabilities:\n\n• Start a chat from a prompt, repo, or ZIP\n• Render a dev server preview\n• Send follow-up messages\n• Deploy to Vercel https://t.co/L7zJulyglS",
+          "created_at": "2026-08-03T19:41:41+00:00",
+          "like_count": 194,
+          "retweet_count": 14,
+          "reply_count": 7,
+          "url": "https://x.com/v0/status/2084364099367133381"
         },
         {
-          "id": "2084042561690456157",
-          "text": "We built an agent that powers our company's internal operations called @𝚟.\n\nEvery day-to-day job at Vercel now involves @𝚟. It's growing exponentially both in daily interactions and token use.\n\nOne can extrapolate to the day AI agents run entire companies from here. It's an expert in finance, comms, docs, marketing, engineering, business analytics. It's seeded by the skills we gave it and we update, but it's also constantly improving.\n\nIt already keeps memories and personalized workflows and schedules on a per-user basis. For example, I knew skills⁠.sh hit 1M skills and I shared this on these forums because I asked @𝚟 to periodically check and remind me.\n\nIt's powered by and is also the basis for the design of @evedev_. We built this, it works fantastically well, we think every company should have it.\n\nBefore you @ me, I know you could also do this by picking your 'BigAI slack integration' du jour. But that's not your agent, that's their agent. If agents become the foundation of (and even synonymous with) modern companies, you being in complete control, from source → runtime → data → token, seems like a pretty big deal to me.",
-          "created_at": "2026-08-02T22:24:01+00:00",
-          "like_count": 321,
-          "retweet_count": 13,
-          "reply_count": 48,
-          "url": "https://x.com/rauchg/status/2084042561690456157"
+          "id": "2084399936687460754",
+          "text": "v0 as infrastructure. Already in production at the largest agencies and system-of-record companies in the world, as part of their AI software factories.",
+          "created_at": "2026-08-03T22:04:05+00:00",
+          "like_count": 120,
+          "retweet_count": 6,
+          "reply_count": 10,
+          "url": "https://x.com/rauchg/status/2084399936687460754"
         },
         {
-          "id": "2084001433603752011",
-          "text": "@shadcn I think it’s just like any other economical decision. You have to be different but you have to pick your battles.\n\nWhat’s the RoI of rebuilding and redesigning *every* pattern from scratch? It’s negative, with AI or not.",
-          "created_at": "2026-08-02T19:40:35+00:00",
-          "like_count": 43,
-          "retweet_count": 1,
-          "reply_count": 4,
-          "url": "https://x.com/rauchg/status/2084001433603752011"
+          "id": "2084282119975502085",
+          "text": "Introducing remote-agent-browser\n\n→ Agent-friendly API for controlling agent-browser\n→ Chromium-free, no browser binary to install\n→ Fast-booting with managed cloud sandbox infrastructure\n\nhttps://t.co/pF6uZKwNmA https://t.co/Q561QiVkEZ",
+          "created_at": "2026-08-03T14:15:56+00:00",
+          "like_count": 110,
+          "retweet_count": 7,
+          "reply_count": 7,
+          "url": "https://x.com/huozhi/status/2084282119975502085"
         }
       ]
     },
@@ -249,49 +287,49 @@
       "tier": "builder",
       "tweets": [
         {
-          "id": "2083424608993300824",
-          "text": "~1500 Elo!\n\nConsistently beats frontier models and Stockfish level 0.\n\nFun seeing an 8b model mogging GPT 5.6 with high reasoning and response chaining. Spends 1-2 seconds per move vs 30 seconds.\n\nPlay it: https://t.co/qRg0HNwgC4 https://t.co/w6H0MWOmPx",
-          "created_at": "2026-08-01T05:28:29+00:00",
-          "like_count": 317,
-          "retweet_count": 15,
-          "reply_count": 40,
-          "url": "https://x.com/amasad/status/2083424608993300824"
-        },
-        {
           "id": "2083926395403821427",
           "text": "My LLM chess engine is now on LiChess autonomously playing real games against people and bots. \n\n1253 Elo: https://t.co/W3qp1Z1i7I",
           "created_at": "2026-08-02T14:42:24+00:00",
-          "like_count": 191,
-          "retweet_count": 9,
-          "reply_count": 36,
+          "like_count": 231,
+          "retweet_count": 10,
+          "reply_count": 46,
           "url": "https://x.com/amasad/status/2083926395403821427"
         },
         {
           "id": "2083999993875066941",
           "text": "@Replit Chess ♟️\n\nTwo-shot this in Replit Design Mode.\n\nRidiculous.\n\n#Replit #BuildInPublic #AI #Chess #VibeMaxxing https://t.co/npCqVWXa10",
           "created_at": "2026-08-02T19:34:52+00:00",
-          "like_count": 25,
+          "like_count": 42,
           "retweet_count": 1,
-          "reply_count": 7,
+          "reply_count": 8,
           "url": "https://x.com/Andrew_Blumson/status/2083999993875066941"
         },
         {
-          "id": "2083968593570738497",
-          "text": "@ashen_one Nice! Going to add Opus to the benchmark!",
-          "created_at": "2026-08-02T17:30:05+00:00",
-          "like_count": 1,
-          "retweet_count": 0,
-          "reply_count": 1,
-          "url": "https://x.com/amasad/status/2083968593570738497"
+          "id": "2084383515928404304",
+          "text": "When an agent starts with shared context, more people can get reliable answers.\n\nWhen truth is shared, AI becomes infrastucture.\n\nRead about how our internal truth layer drives our teams at Replit:\n\nhttps://t.co/vXqCKAcpRE https://t.co/lG9phy0h04",
+          "created_at": "2026-08-03T20:58:50+00:00",
+          "like_count": 23,
+          "retweet_count": 6,
+          "reply_count": 2,
+          "url": "https://x.com/Replit/status/2084383515928404304"
         },
         {
           "id": "2084049052505948384",
           "text": "@ReplitSupport @storyofgene You can also switch models under power. GPT is significantly cheaper.",
           "created_at": "2026-08-02T22:49:48+00:00",
-          "like_count": 0,
+          "like_count": 3,
           "retweet_count": 0,
-          "reply_count": 0,
+          "reply_count": 1,
           "url": "https://x.com/amasad/status/2084049052505948384"
+        },
+        {
+          "id": "2083968593570738497",
+          "text": "@ashen_one Nice! Going to add Opus to the benchmark!",
+          "created_at": "2026-08-02T17:30:05+00:00",
+          "like_count": 2,
+          "retweet_count": 0,
+          "reply_count": 1,
+          "url": "https://x.com/amasad/status/2083968593570738497"
         }
       ]
     },
@@ -311,5 +349,5 @@
     }
   ],
   "errors": null,
-  "generated_at": "2026-08-02T23:28:50.832541+00:00"
+  "generated_at": "2026-08-03T23:35:11.468302+00:00"
 }
