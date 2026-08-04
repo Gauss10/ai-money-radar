@@ -7,40 +7,13 @@
       "tier": "analyst",
       "tweets": [
         {
-          "id": "2083749667410727319",
-          "text": "We're starting to leave the territory where you'd test an LLM by e.g. \"create an svg of pelican on a bicycle\". As one idea to generalize it, I was interested what Opus 5 would do if I gave it the first paragraph of the Lord of the Rings, a 1M token budget (~$10) and asked for three js render of it. Opus went off for ~2 hours and wrote 5500 lines of code that (procedurally) rendered the story. It's kind of janky but fun. But it's a bit mindboggling that the LLM has to place and orchestrate various polygon assets in (x,y,z) coordinates and write code that animates it all, and that it even does anything at all.\n\nI also like this kind of examples because no one in their right mind would ever spend the time to write something this custom but LLMs have all the stamina and patience in the world, so it's an example where we go from \"no one would ever do this\" to \"sure, why not, it's ~free\". There might be a lot more. But I'm excited about creating hyper custom worlds that you can imagine dropping players into, e.g. here to participate in the LoTR story as a spectator NPC, or one of the characters, or etc. Something like an ephemeral GTA of X on demand.\n\nLast thought is that the domain of worlds/games exposes a weakness in LLMs: they can't easily audit their work because they aren't able to efficiently and natively perceive videos or play games within them. Here, Opus 5 had to very slowly and painstakingly take screenshots at different points, and it messed up a few times and created a bunch of jank. An example of raw capability (multimodal, gameplay) that I think is still quite lacking.",
-          "created_at": "2026-08-02T03:00:09+00:00",
-          "like_count": 26813,
-          "retweet_count": 2069,
-          "reply_count": 1370,
-          "url": "https://x.com/karpathy/status/2083749667410727319"
-        },
-        {
-          "id": "2083756186663551388",
-          "text": "@cunkpyber Eleven Labs for the audio. LLMs can easily use the APIs (here I did that part manually because I felt picky about the voice).",
-          "created_at": "2026-08-02T03:26:03+00:00",
-          "like_count": 549,
-          "retweet_count": 16,
-          "reply_count": 15,
-          "url": "https://x.com/karpathy/status/2083756186663551388"
-        },
-        {
           "id": "2084080419029549276",
           "text": "@threejs I was curious and gave your feedback to Opus. TIL! https://t.co/t5HvyZsBlh",
           "created_at": "2026-08-03T00:54:26+00:00",
-          "like_count": 317,
+          "like_count": 350,
           "retweet_count": 8,
           "reply_count": 11,
           "url": "https://x.com/karpathy/status/2084080419029549276"
-        },
-        {
-          "id": "2084017844455690558",
-          "text": "@rainisto @DavidmComfort agree!! i quite like the idea of procedural code for storyboarding and control, and then video to video models for texturing and looksmaxxing.",
-          "created_at": "2026-08-02T20:45:47+00:00",
-          "like_count": 96,
-          "retweet_count": 1,
-          "reply_count": 3,
-          "url": "https://x.com/karpathy/status/2084017844455690558"
         }
       ]
     },
@@ -51,29 +24,29 @@
       "tier": "analyst",
       "tweets": [
         {
-          "id": "2083753582160191988",
-          "text": "one of my curses as organizer is i rarely get to attend the conference i run. so i basically 24/7 watch back talks with everyone else after the show\n\nthis one was VERY well paced and argued: fighting slop with slop — @vaibcode, Boundary https://t.co/vRckyyntm6 \n\n@btaylor asked for an ai native programming language on our pod. as a PL fan I’m really glad someone is rethinking how code runs from first principles. Being slop-tolerant is 100x more valuable than being anti- slop",
-          "created_at": "2026-08-02T03:15:42+00:00",
-          "like_count": 227,
-          "retweet_count": 10,
-          "reply_count": 23,
-          "url": "https://x.com/swyx/status/2083753582160191988"
+          "id": "2084687434886135915",
+          "text": "Super relevant update on the Airtable acquisition!\n\nThey spun out their AI business Hyperagent prior to the acquisition. \n\nSo the company lives on, and likely some cash with it, probably can be recapitalized.\n\nseems like a fantastic outcome. Shed the old business and focus on AI https://t.co/EAcpDD9OCa",
+          "created_at": "2026-08-04T17:06:30+00:00",
+          "like_count": 441,
+          "retweet_count": 21,
+          "reply_count": 36,
+          "url": "https://x.com/pitdesi/status/2084687434886135915"
         },
         {
-          "id": "2083993378258288976",
-          "text": "one way i'm developing Forge (https://t.co/2x9e0oRjxQ) is to use it to host all my projects going forward. so I often find myself having to bounce back and forth between platform and product.\n\nsharing neat trick - in @openai codex you can @ a thread + queue up the @, so if your project is blocked on a platform feature, you can actually premove your project to proceed once the platform is unblocked.\n\nnow of course.. i wasnt actually strictly necessary in this whole process, so an even better multiagent harness would seamlessly orchestrate work back and forth between platform and project... it's just not a very common usecase unless you're building a real platform (which most people dont - most people just build applications on top of platforms, or a small platform with only 1 proudct/application tenant)",
-          "created_at": "2026-08-02T19:08:34+00:00",
-          "like_count": 39,
+          "id": "2084695630237311086",
+          "text": "we are huge airtable fans - aie runs on airtable - so seeing this number might seem surprising, but don't count @howietl out! \n\nif you were at WF26 you would already have seen @hyperagentapp which is the next chapter of team Airtable! https://t.co/yQhb4VUue4",
+          "created_at": "2026-08-04T17:39:04+00:00",
+          "like_count": 32,
           "retweet_count": 2,
-          "reply_count": 28,
-          "url": "https://x.com/swyx/status/2083993378258288976"
+          "reply_count": 23,
+          "url": "https://x.com/swyx/status/2084695630237311086"
         },
         {
           "id": "2084156733027701164",
           "text": "in prep for our computer use pod, gonna store a running list of codex cua wow moments. \n\n here it is dealing with support chat for me to escalate for faster resolution\n\nthese humans have no idea they are talking to a bot\n\nsupport guy tried to say its our fault, bot replied with complete receipts lmao",
           "created_at": "2026-08-03T05:57:41+00:00",
-          "like_count": 14,
-          "retweet_count": 0,
+          "like_count": 19,
+          "retweet_count": 1,
           "reply_count": 4,
           "url": "https://x.com/swyx/status/2084156733027701164"
         },
@@ -81,19 +54,19 @@
           "id": "2084354408717128155",
           "text": "@HarperSCarroll @mervenoyann @huggingface nice!! claude tutorial pls!!",
           "created_at": "2026-08-03T19:03:11+00:00",
-          "like_count": 2,
+          "like_count": 3,
           "retweet_count": 0,
           "reply_count": 1,
           "url": "https://x.com/swyx/status/2084354408717128155"
         },
         {
-          "id": "2084081279419715632",
-          "text": "@garybasin @OpenAI only for the very motivated",
-          "created_at": "2026-08-03T00:57:52+00:00",
-          "like_count": 1,
+          "id": "2084115691654066244",
+          "text": "@vaibcode @OpenAI yep. forge owns EVERYTHING.\n\nhttps://t.co/TFr5hNFTE4",
+          "created_at": "2026-08-03T03:14:36+00:00",
+          "like_count": 0,
           "retweet_count": 0,
-          "reply_count": 1,
-          "url": "https://x.com/swyx/status/2084081279419715632"
+          "reply_count": 0,
+          "url": "https://x.com/swyx/status/2084115691654066244"
         }
       ]
     },
@@ -104,13 +77,13 @@
       "tier": "analyst",
       "tweets": [
         {
-          "id": "2084051253278208138",
-          "text": "The funny thing about Anthropic and OpenAI people saying they want to slow down AI progress is that this is what Anti Trust mechanisms were built for.\nIt's illegal to collude and slow down AI progress.",
-          "created_at": "2026-08-02T22:58:33+00:00",
-          "like_count": 1626,
-          "retweet_count": 78,
-          "reply_count": 70,
-          "url": "https://x.com/dylan522p/status/2084051253278208138"
+          "id": "2084461665173848493",
+          "text": "@RothRottweiler @aqib_zakaria @hamandcheese @SemiAnalysis_ Idk about all that chief. We have more compute for China mapped than this",
+          "created_at": "2026-08-04T02:09:23+00:00",
+          "like_count": 4,
+          "retweet_count": 0,
+          "reply_count": 0,
+          "url": "https://x.com/dylan522p/status/2084461665173848493"
         }
       ]
     },
@@ -163,22 +136,49 @@
       "tier": "infra",
       "tweets": [
         {
+          "id": "2084733460690903204",
+          "text": "AI compute is going to orbit. 🚀\n\n@SpaceX’s Starmind AI1 satellite compute payload is powered by NVIDIA Vera Rubin NVL72, bringing AI factory compute closer to the stars.\n\nThe next chapter of AI infrastructure boldly goes where no AI compute has gone before. https://t.co/sJaY8Cg7b7",
+          "created_at": "2026-08-04T20:09:24+00:00",
+          "like_count": 4521,
+          "retweet_count": 614,
+          "reply_count": 185,
+          "url": "https://x.com/nvidia/status/2084733460690903204"
+        },
+        {
+          "id": "2084663782018543841",
+          "text": "Meet Alpamayo 2 Super, now commercially available for robotaxis and autonomous vehicles.\n\nBuilt for complex real-world driving, this open reasoning model adds 360° awareness, high-level driving decisions and automated reasoning labels.\n\nWe built it, so you can build on it. https://t.co/OZBWtsu3FC",
+          "created_at": "2026-08-04T15:32:31+00:00",
+          "like_count": 829,
+          "retweet_count": 102,
+          "reply_count": 58,
+          "url": "https://x.com/nvidia/status/2084663782018543841"
+        },
+        {
           "id": "2084420790036910459",
           "text": "AI is becoming a primary interface for product discovery, opening new revenue opportunities for retailers.\n\nSee how NVIDIA is helping retailers prepare for agentic commerce, from product discovery to secure checkout, while maintaining control over pricing, payments and compliance.",
           "created_at": "2026-08-03T23:26:57+00:00",
-          "like_count": 32,
-          "retweet_count": 3,
-          "reply_count": 5,
+          "like_count": 499,
+          "retweet_count": 49,
+          "reply_count": 60,
           "url": "https://x.com/nvidia/status/2084420790036910459"
         },
         {
-          "id": "2084314157218939296",
-          "text": "@KAIST_AI @JensenHuang 🤝",
-          "created_at": "2026-08-03T16:23:14+00:00",
-          "like_count": 24,
-          "retweet_count": 3,
-          "reply_count": 2,
-          "url": "https://x.com/nvidia/status/2084314157218939296"
+          "id": "2084625868173820144",
+          "text": "Security is strongest when organizations collaborate openly and move quickly. \n\nNow over 120 members strong, the Open Secure AI Alliance is sharing new open source security contributions, including new proposed SAFE guidelines, for turning confidential incident findings into stronger protection across the ecosystem.",
+          "created_at": "2026-08-04T13:01:52+00:00",
+          "like_count": 440,
+          "retweet_count": 67,
+          "reply_count": 52,
+          "url": "https://x.com/nvidia/status/2084625868173820144"
+        },
+        {
+          "id": "2084716722746253566",
+          "text": "Read why AI agents need more than one model. 👇 https://t.co/IFaesvTdl8",
+          "created_at": "2026-08-04T19:02:53+00:00",
+          "like_count": 200,
+          "retweet_count": 18,
+          "reply_count": 26,
+          "url": "https://x.com/nvidia/status/2084716722746253566"
         }
       ]
     },
@@ -187,7 +187,17 @@
       "name": "Jensen Huang (NVIDIA)",
       "domain": "ai",
       "tier": "exec",
-      "tweets": []
+      "tweets": [
+        {
+          "id": "2084656303046332747",
+          "text": "Today, we’re launching Alpamayo 2 Super, our frontier open reasoning model for autonomous vehicles.\n\nBeyond seeing, Alpamayo understands and reasons through the complex world - thinks before it acts.\n\nIt’s a powerful backbone for robotaxis, trucks, shuttles, delivery vans, tractors and the long tail of mobile robots—billions of autonomous machines someday.\n\nWe’re releasing it for commercial use under OpenMDW-1.1 so teams can inspect it, fine-tune it and deploy it—open models advance safety and security.\n\nThe next wave of AI is robotics—and it starts with autonomous vehicles.\n\nGreat work, Alpamayo team!\n\nhttps://t.co/2PYCCXWjZh",
+          "created_at": "2026-08-04T15:02:48+00:00",
+          "like_count": 9619,
+          "retweet_count": 1105,
+          "reply_count": 784,
+          "url": "https://x.com/JensenHuang/status/2084656303046332747"
+        }
+      ]
     },
     {
       "handle": "AmandaAskell",
@@ -199,9 +209,9 @@
           "id": "2084369056765989224",
           "text": "I don't agree with this part. I think the takeaway should be that models (like humans) can behave in aligned ways while still causing harm, e.g. because they're given false information about their situation. There isn't a line between aligned and harmless: they're different axes. https://t.co/btojNfpU5a",
           "created_at": "2026-08-03T20:01:23+00:00",
-          "like_count": 651,
-          "retweet_count": 29,
-          "reply_count": 65,
+          "like_count": 1247,
+          "retweet_count": 78,
+          "reply_count": 112,
           "url": "https://x.com/AmandaAskell/status/2084369056765989224"
         }
       ]
@@ -237,46 +247,46 @@
           "id": "2084399799642841419",
           "text": "Next.js 16.3 is now available!\n\n• Up to 90% less memory in dev\n• Faster builds, type checking, and rendering\n• Better tooling for AI agents\n• Custom error boundaries\n• Instant Navigations for SPA-like responsiveness\n\nhttps://t.co/lNAQqpAKT1\n\nHere's what's new ↓",
           "created_at": "2026-08-03T22:03:33+00:00",
-          "like_count": 773,
-          "retweet_count": 90,
-          "reply_count": 39,
+          "like_count": 3608,
+          "retweet_count": 400,
+          "reply_count": 122,
           "url": "https://x.com/nextjs/status/2084399799642841419"
+        },
+        {
+          "id": "2084411344623902994",
+          "text": "Next.js 16.3: faster, better, stronger. My highlights:\n\n0️⃣ Faster dev & builds\nShoutout to Fable for improving memory use, and the team for landing the incremental 𝚗𝚎𝚡𝚝 𝚋𝚞𝚒𝚕𝚍 cache.\n\n1️⃣ Instant navigations are 🔥\nThe people wanted SPAs, they shall get SPAs. By turning on instant navs (which will soon be default), your  agent is basically forced to make things fast.\n\n2️⃣ Agent-native DX\nYou can still ship \"slow\" navs if you want, e.g. by blocking navs on server-side data fetching ala PHP olden days. But even then, your agent will be given *choices*, like setting up a <𝚂𝚞𝚜𝚙𝚎𝚗𝚜𝚎 𝚏𝚊𝚕𝚕𝚋𝚊𝚌𝚔> for instant loading shells. Agents also get built-in versioned docs.\n\nThis is our best release for agents by far, which will also make your upgrading journey very smooth. I've had an easy time bumping my projects to 16.3 and enabling instant navs, having my agent migrate everything without issues.\n\nAnd so much more. 16.3 is more cost-efficient to serve, both in self-hosting and serverless environments. Faster to type-check… Thank you to the 90 contributors to this release!",
+          "created_at": "2026-08-03T22:49:25+00:00",
+          "like_count": 917,
+          "retweet_count": 41,
+          "reply_count": 49,
+          "url": "https://x.com/rauchg/status/2084411344623902994"
         },
         {
           "id": "2084345210470097127",
           "text": "Vercel Sandbox is an excellent choice for automating web browsers in basic scenarios. The 𝚛𝚎𝚖𝚘𝚝𝚎-𝚊𝚐𝚎𝚗𝚝-𝚋𝚛𝚘𝚠𝚜𝚎𝚛 API makes it delightful:\n\n𝚋𝚛𝚘𝚠𝚜𝚎𝚛.𝚎𝚡𝚎𝚌('𝚘𝚙𝚎𝚗', 𝚞𝚛𝚕)\n𝚋𝚛𝚘𝚠𝚜𝚎𝚛.𝚎𝚡𝚎𝚌('𝚌𝚕𝚒𝚌𝚔')\n𝚋𝚛𝚘𝚠𝚜𝚎𝚛.𝚜𝚌𝚛𝚎𝚎𝚗𝚜𝚑𝚘𝚝()\n\n📦 https://t.co/66GIcFI1o4",
           "created_at": "2026-08-03T18:26:38+00:00",
-          "like_count": 287,
-          "retweet_count": 19,
-          "reply_count": 35,
+          "like_count": 470,
+          "retweet_count": 28,
+          "reply_count": 42,
           "url": "https://x.com/rauchg/status/2084345210470097127"
         },
         {
           "id": "2084364099367133381",
           "text": "Introducing the new v0 API.\n\nProgrammatic access to v0's app-building capabilities:\n\n• Start a chat from a prompt, repo, or ZIP\n• Render a dev server preview\n• Send follow-up messages\n• Deploy to Vercel https://t.co/L7zJulyglS",
           "created_at": "2026-08-03T19:41:41+00:00",
-          "like_count": 194,
-          "retweet_count": 14,
-          "reply_count": 7,
+          "like_count": 412,
+          "retweet_count": 28,
+          "reply_count": 23,
           "url": "https://x.com/v0/status/2084364099367133381"
         },
         {
-          "id": "2084399936687460754",
-          "text": "v0 as infrastructure. Already in production at the largest agencies and system-of-record companies in the world, as part of their AI software factories.",
-          "created_at": "2026-08-03T22:04:05+00:00",
-          "like_count": 120,
-          "retweet_count": 6,
-          "reply_count": 10,
-          "url": "https://x.com/rauchg/status/2084399936687460754"
-        },
-        {
-          "id": "2084282119975502085",
-          "text": "Introducing remote-agent-browser\n\n→ Agent-friendly API for controlling agent-browser\n→ Chromium-free, no browser binary to install\n→ Fast-booting with managed cloud sandbox infrastructure\n\nhttps://t.co/pF6uZKwNmA https://t.co/Q561QiVkEZ",
-          "created_at": "2026-08-03T14:15:56+00:00",
-          "like_count": 110,
-          "retweet_count": 7,
-          "reply_count": 7,
-          "url": "https://x.com/huozhi/status/2084282119975502085"
+          "id": "2084426730241220703",
+          "text": "The new AI Gateway logs UI is delightful https://t.co/cpMCaVeTbj",
+          "created_at": "2026-08-03T23:50:33+00:00",
+          "like_count": 334,
+          "retweet_count": 14,
+          "reply_count": 24,
+          "url": "https://x.com/rauchg/status/2084426730241220703"
         }
       ]
     },
@@ -287,49 +297,22 @@
       "tier": "builder",
       "tweets": [
         {
-          "id": "2083926395403821427",
-          "text": "My LLM chess engine is now on LiChess autonomously playing real games against people and bots. \n\n1253 Elo: https://t.co/W3qp1Z1i7I",
-          "created_at": "2026-08-02T14:42:24+00:00",
-          "like_count": 231,
-          "retweet_count": 10,
-          "reply_count": 46,
-          "url": "https://x.com/amasad/status/2083926395403821427"
-        },
-        {
-          "id": "2083999993875066941",
-          "text": "@Replit Chess ♟️\n\nTwo-shot this in Replit Design Mode.\n\nRidiculous.\n\n#Replit #BuildInPublic #AI #Chess #VibeMaxxing https://t.co/npCqVWXa10",
-          "created_at": "2026-08-02T19:34:52+00:00",
-          "like_count": 42,
-          "retweet_count": 1,
-          "reply_count": 8,
-          "url": "https://x.com/Andrew_Blumson/status/2083999993875066941"
-        },
-        {
           "id": "2084383515928404304",
           "text": "When an agent starts with shared context, more people can get reliable answers.\n\nWhen truth is shared, AI becomes infrastucture.\n\nRead about how our internal truth layer drives our teams at Replit:\n\nhttps://t.co/vXqCKAcpRE https://t.co/lG9phy0h04",
           "created_at": "2026-08-03T20:58:50+00:00",
-          "like_count": 23,
-          "retweet_count": 6,
-          "reply_count": 2,
+          "like_count": 153,
+          "retweet_count": 20,
+          "reply_count": 13,
           "url": "https://x.com/Replit/status/2084383515928404304"
         },
         {
-          "id": "2084049052505948384",
-          "text": "@ReplitSupport @storyofgene You can also switch models under power. GPT is significantly cheaper.",
-          "created_at": "2026-08-02T22:49:48+00:00",
-          "like_count": 3,
-          "retweet_count": 0,
-          "reply_count": 1,
-          "url": "https://x.com/amasad/status/2084049052505948384"
-        },
-        {
-          "id": "2083968593570738497",
-          "text": "@ashen_one Nice! Going to add Opus to the benchmark!",
-          "created_at": "2026-08-02T17:30:05+00:00",
-          "like_count": 2,
-          "retweet_count": 0,
-          "reply_count": 1,
-          "url": "https://x.com/amasad/status/2083968593570738497"
+          "id": "2084501585124827611",
+          "text": "@levelsio Claude was clearly trained on SF house parties.",
+          "created_at": "2026-08-04T04:48:00+00:00",
+          "like_count": 99,
+          "retweet_count": 1,
+          "reply_count": 0,
+          "url": "https://x.com/amasad/status/2084501585124827611"
         }
       ]
     },
@@ -338,7 +321,26 @@
       "name": "Josh Woodward (Google Labs)",
       "domain": "ai",
       "tier": "builder",
-      "tweets": []
+      "tweets": [
+        {
+          "id": "2084746170576892342",
+          "text": "Notebook is built for thinking, not toggling.\n\nWhile others add more modes, Notebook keeps everything in a single, unified prompt bar and just does the things you want.\n\nUltra and Pro subscribers can jump in now, rolling out to everyone next.",
+          "created_at": "2026-08-04T20:59:54+00:00",
+          "like_count": 166,
+          "retweet_count": 9,
+          "reply_count": 9,
+          "url": "https://x.com/joshwoodward/status/2084746170576892342"
+        },
+        {
+          "id": "2084624887055044790",
+          "text": "I set up Gemini Spark to write my own weekly AI news digest for me, and I'm still stuck on how little effort I had to put in.\n\nThis is the exact prompt I gave it, just once:\n\n\"Every Tuesday at 12:15 PM, create a new Doc in my Drive, find the 5 biggest AI stories from that week, and format each one properly.\"\n\nAnd here's what it actually produces, every week:\n\n1. A new Doc, created and named on its own\n2. The 5 biggest AI stories from that week, found and picked automatically\n3. A bold headline and a summary for each one\n4. The key impact spelled out, not just the news\n5. A source link on every single story\n\nThis runs on a schedule so I never have to think about it again. I didn't ask anything on Tuesday, I just opened the drive and the news digest doc was already there.\nJust like this, you can use Spark to automate any recurring task.",
+          "created_at": "2026-08-04T12:57:58+00:00",
+          "like_count": 102,
+          "retweet_count": 4,
+          "reply_count": 17,
+          "url": "https://x.com/eyishazyer/status/2084624887055044790"
+        }
+      ]
     },
     {
       "handle": "ornith_",
@@ -349,5 +351,5 @@
     }
   ],
   "errors": null,
-  "generated_at": "2026-08-03T23:35:11.468302+00:00"
+  "generated_at": "2026-08-04T23:32:44.251458+00:00"
 }
