@@ -7,7 +7,8 @@ OpenRouter 日度 token 数据 -> site/data/openrouter_daily.json
   - 数据自 2025-01-01 起; 限速 30 req/min, 500 req/day; 需要任意有效 API key
   - 引用要求: "Source: OpenRouter (openrouter.ai/rankings), as of {as_of}."
 
-增量策略: 从现有 daily_totals 最后日期回退 3 天开始拉到今天, 覆盖合并。
+增量策略: 从现有 daily_totals 最后日期回退 8 天开始拉到今天, 覆盖合并。
+回退窗口必须覆盖完整 7 个数据日，否则 top_models_7d 会被误算为 4–6 日合计。
 """
 import json, datetime
 from collections import defaultdict
@@ -22,6 +23,7 @@ WATCH_START = {
     'tencent/hy3': datetime.date(2026, 7, 6),
 }
 B = 1e9
+INCREMENTAL_LOOKBACK_DAYS = 8
 
 
 def fetch_window(key, start, end):
@@ -46,7 +48,10 @@ def main():
 
     today = datetime.date.today()
     if old_totals:
-        start = datetime.date.fromisoformat(max(old_totals)) - datetime.timedelta(days=3)
+        start = (
+            datetime.date.fromisoformat(max(old_totals))
+            - datetime.timedelta(days=INCREMENTAL_LOOKBACK_DAYS)
+        )
     else:
         start = datetime.date(2025, 1, 1)
     for wkey, first_date in WATCH_START.items():
