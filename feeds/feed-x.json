@@ -5,17 +5,7 @@
       "name": "Andrej Karpathy",
       "domain": "ai",
       "tier": "analyst",
-      "tweets": [
-        {
-          "id": "2084080419029549276",
-          "text": "@threejs I was curious and gave your feedback to Opus. TIL! https://t.co/t5HvyZsBlh",
-          "created_at": "2026-08-03T00:54:26+00:00",
-          "like_count": 350,
-          "retweet_count": 8,
-          "reply_count": 11,
-          "url": "https://x.com/karpathy/status/2084080419029549276"
-        }
-      ]
+      "tweets": []
     },
     {
       "handle": "swyx",
@@ -24,49 +14,49 @@
       "tier": "analyst",
       "tweets": [
         {
+          "id": "2085034604172603724",
+          "text": "Announcing Discovery Loop! \n\nI am very excited to announce that, along with my longtime friends and collaborators @Sanjay_Ghemawat, @OriolVinyalsML and @quocleix, we are founding Discovery Loop (@DiscoLoopAI), a Public Benefit Corporation whose mission is to automate machine learning, science, and engineering to accelerate discoveries and progress. The four of us have worked together for 14 to 30 years, and have helped build some of the world’s most used products, infrastructure and AI models, and we’re excited to turn our attention to this ambitious endeavor.\n\n♾\n\nLearn more at: https://t.co/Rv3LMdLluK",
+          "created_at": "2026-08-05T16:06:02+00:00",
+          "like_count": 12574,
+          "retweet_count": 1237,
+          "reply_count": 630,
+          "url": "https://x.com/JeffDean/status/2085034604172603724"
+        },
+        {
           "id": "2084687434886135915",
           "text": "Super relevant update on the Airtable acquisition!\n\nThey spun out their AI business Hyperagent prior to the acquisition. \n\nSo the company lives on, and likely some cash with it, probably can be recapitalized.\n\nseems like a fantastic outcome. Shed the old business and focus on AI https://t.co/EAcpDD9OCa",
           "created_at": "2026-08-04T17:06:30+00:00",
-          "like_count": 441,
-          "retweet_count": 21,
-          "reply_count": 36,
+          "like_count": 641,
+          "retweet_count": 31,
+          "reply_count": 46,
           "url": "https://x.com/pitdesi/status/2084687434886135915"
         },
         {
-          "id": "2084695630237311086",
-          "text": "we are huge airtable fans - aie runs on airtable - so seeing this number might seem surprising, but don't count @howietl out! \n\nif you were at WF26 you would already have seen @hyperagentapp which is the next chapter of team Airtable! https://t.co/yQhb4VUue4",
-          "created_at": "2026-08-04T17:39:04+00:00",
-          "like_count": 32,
+          "id": "2085072791087480947",
+          "text": "🆕 Unpacking ChatGPT Work\n\nhttps://t.co/wccYg8wY9K\n\nChatGPT Work, an extension of the @openai Codex harness to cloud and general knowledge work, launched on July 9 and crossed 10M users 3 weeks later. \n\n@shloked guests with an A+ reconstruction of how Memory, Proactivity, Scheduling, Browser Use, Plugins, Skills and Tools work in this new harness that is bringing a full agentic experience to the almost 1B weekly active users of ChatGPT!",
+          "created_at": "2026-08-05T18:37:46+00:00",
+          "like_count": 29,
           "retweet_count": 2,
-          "reply_count": 23,
-          "url": "https://x.com/swyx/status/2084695630237311086"
+          "reply_count": 2,
+          "url": "https://x.com/latentspacepod/status/2085072791087480947"
         },
         {
-          "id": "2084156733027701164",
-          "text": "in prep for our computer use pod, gonna store a running list of codex cua wow moments. \n\n here it is dealing with support chat for me to escalate for faster resolution\n\nthese humans have no idea they are talking to a bot\n\nsupport guy tried to say its our fault, bot replied with complete receipts lmao",
-          "created_at": "2026-08-03T05:57:41+00:00",
-          "like_count": 19,
-          "retweet_count": 1,
-          "reply_count": 4,
-          "url": "https://x.com/swyx/status/2084156733027701164"
-        },
-        {
-          "id": "2084354408717128155",
-          "text": "@HarperSCarroll @mervenoyann @huggingface nice!! claude tutorial pls!!",
-          "created_at": "2026-08-03T19:03:11+00:00",
-          "like_count": 3,
+          "id": "2085081968593739997",
+          "text": "@t2k2x is covering this in the @latentspacepod paper club today\n\nhttps://t.co/QH3Ku24vaH\n\ngreat discussion in the comments! https://t.co/1CfqgbjvoI",
+          "created_at": "2026-08-05T19:14:14+00:00",
+          "like_count": 1,
           "retweet_count": 0,
           "reply_count": 1,
-          "url": "https://x.com/swyx/status/2084354408717128155"
+          "url": "https://x.com/swyx/status/2085081968593739997"
         },
         {
-          "id": "2084115691654066244",
-          "text": "@vaibcode @OpenAI yep. forge owns EVERYTHING.\n\nhttps://t.co/TFr5hNFTE4",
-          "created_at": "2026-08-03T03:14:36+00:00",
-          "like_count": 0,
+          "id": "2085049946982764609",
+          "text": "ishan is an aie top speaker using these tips  btw https://t.co/xKVwwGzr1W https://t.co/F8v3eg2b4D",
+          "created_at": "2026-08-05T17:07:00+00:00",
+          "like_count": 1,
           "retweet_count": 0,
           "reply_count": 0,
-          "url": "https://x.com/swyx/status/2084115691654066244"
+          "url": "https://x.com/swyx/status/2085049946982764609"
         }
       ]
     },
@@ -120,7 +110,17 @@
       "name": "Demis Hassabis (Google DeepMind)",
       "domain": "ai",
       "tier": "exec",
-      "tweets": []
+      "tweets": [
+        {
+          "id": "2085034334914769203",
+          "text": "I’ve been working towards AGI my whole life, and as we enter this pivotal moment, I’m stepping into a new role as Chair of Google DeepMind & Chief Scientist of Alphabet. This will allow me to focus on long-term strategy, and accelerating scientific breakthroughs, including leaning into my work at Isomorphic to help cure disease.\n\nI’m excited that @koraykv will be stepping up to lead GDM as SVP, alongside @joshwoodward and our exec team. I could not be more excited and confident about our amazing next chapter! 🚀\n\nhttps://t.co/2WtlIIlTUa",
+          "created_at": "2026-08-05T16:04:58+00:00",
+          "like_count": 14420,
+          "retweet_count": 1159,
+          "reply_count": 741,
+          "url": "https://x.com/demishassabis/status/2085034334914769203"
+        }
+      ]
     },
     {
       "handle": "jietang",
@@ -139,45 +139,45 @@
           "id": "2084733460690903204",
           "text": "AI compute is going to orbit. 🚀\n\n@SpaceX’s Starmind AI1 satellite compute payload is powered by NVIDIA Vera Rubin NVL72, bringing AI factory compute closer to the stars.\n\nThe next chapter of AI infrastructure boldly goes where no AI compute has gone before. https://t.co/sJaY8Cg7b7",
           "created_at": "2026-08-04T20:09:24+00:00",
-          "like_count": 4521,
-          "retweet_count": 614,
-          "reply_count": 185,
+          "like_count": 12902,
+          "retweet_count": 1883,
+          "reply_count": 572,
           "url": "https://x.com/nvidia/status/2084733460690903204"
         },
         {
           "id": "2084663782018543841",
           "text": "Meet Alpamayo 2 Super, now commercially available for robotaxis and autonomous vehicles.\n\nBuilt for complex real-world driving, this open reasoning model adds 360° awareness, high-level driving decisions and automated reasoning labels.\n\nWe built it, so you can build on it. https://t.co/OZBWtsu3FC",
           "created_at": "2026-08-04T15:32:31+00:00",
-          "like_count": 829,
-          "retweet_count": 102,
-          "reply_count": 58,
+          "like_count": 1282,
+          "retweet_count": 179,
+          "reply_count": 76,
           "url": "https://x.com/nvidia/status/2084663782018543841"
-        },
-        {
-          "id": "2084420790036910459",
-          "text": "AI is becoming a primary interface for product discovery, opening new revenue opportunities for retailers.\n\nSee how NVIDIA is helping retailers prepare for agentic commerce, from product discovery to secure checkout, while maintaining control over pricing, payments and compliance.",
-          "created_at": "2026-08-03T23:26:57+00:00",
-          "like_count": 499,
-          "retweet_count": 49,
-          "reply_count": 60,
-          "url": "https://x.com/nvidia/status/2084420790036910459"
         },
         {
           "id": "2084625868173820144",
           "text": "Security is strongest when organizations collaborate openly and move quickly. \n\nNow over 120 members strong, the Open Secure AI Alliance is sharing new open source security contributions, including new proposed SAFE guidelines, for turning confidential incident findings into stronger protection across the ecosystem.",
           "created_at": "2026-08-04T13:01:52+00:00",
-          "like_count": 440,
-          "retweet_count": 67,
-          "reply_count": 52,
+          "like_count": 626,
+          "retweet_count": 97,
+          "reply_count": 58,
           "url": "https://x.com/nvidia/status/2084625868173820144"
+        },
+        {
+          "id": "2085046495011869017",
+          "text": "Thanks @ssankar for putting NVIDIA Nemotron 3 Ultra to the test with no post-training.\n\n24 hours later, it was outperforming frontier models on the tasks @PalantirTech customers needed to solve.",
+          "created_at": "2026-08-05T16:53:17+00:00",
+          "like_count": 605,
+          "retweet_count": 86,
+          "reply_count": 37,
+          "url": "https://x.com/nvidia/status/2085046495011869017"
         },
         {
           "id": "2084716722746253566",
           "text": "Read why AI agents need more than one model. 👇 https://t.co/IFaesvTdl8",
           "created_at": "2026-08-04T19:02:53+00:00",
-          "like_count": 200,
-          "retweet_count": 18,
-          "reply_count": 26,
+          "like_count": 427,
+          "retweet_count": 47,
+          "reply_count": 42,
           "url": "https://x.com/nvidia/status/2084716722746253566"
         }
       ]
@@ -192,9 +192,9 @@
           "id": "2084656303046332747",
           "text": "Today, we’re launching Alpamayo 2 Super, our frontier open reasoning model for autonomous vehicles.\n\nBeyond seeing, Alpamayo understands and reasons through the complex world - thinks before it acts.\n\nIt’s a powerful backbone for robotaxis, trucks, shuttles, delivery vans, tractors and the long tail of mobile robots—billions of autonomous machines someday.\n\nWe’re releasing it for commercial use under OpenMDW-1.1 so teams can inspect it, fine-tune it and deploy it—open models advance safety and security.\n\nThe next wave of AI is robotics—and it starts with autonomous vehicles.\n\nGreat work, Alpamayo team!\n\nhttps://t.co/2PYCCXWjZh",
           "created_at": "2026-08-04T15:02:48+00:00",
-          "like_count": 9619,
-          "retweet_count": 1105,
-          "reply_count": 784,
+          "like_count": 14688,
+          "retweet_count": 1825,
+          "reply_count": 1035,
           "url": "https://x.com/JensenHuang/status/2084656303046332747"
         }
       ]
@@ -204,17 +204,7 @@
       "name": "Amanda Askell (Anthropic)",
       "domain": "ai",
       "tier": "builder",
-      "tweets": [
-        {
-          "id": "2084369056765989224",
-          "text": "I don't agree with this part. I think the takeaway should be that models (like humans) can behave in aligned ways while still causing harm, e.g. because they're given false information about their situation. There isn't a line between aligned and harmless: they're different axes. https://t.co/btojNfpU5a",
-          "created_at": "2026-08-03T20:01:23+00:00",
-          "like_count": 1247,
-          "retweet_count": 78,
-          "reply_count": 112,
-          "url": "https://x.com/AmandaAskell/status/2084369056765989224"
-        }
-      ]
+      "tweets": []
     },
     {
       "handle": "bcherny",
@@ -244,49 +234,49 @@
       "tier": "builder",
       "tweets": [
         {
-          "id": "2084399799642841419",
-          "text": "Next.js 16.3 is now available!\n\n• Up to 90% less memory in dev\n• Faster builds, type checking, and rendering\n• Better tooling for AI agents\n• Custom error boundaries\n• Instant Navigations for SPA-like responsiveness\n\nhttps://t.co/lNAQqpAKT1\n\nHere's what's new ↓",
-          "created_at": "2026-08-03T22:03:33+00:00",
-          "like_count": 3608,
-          "retweet_count": 400,
-          "reply_count": 122,
-          "url": "https://x.com/nextjs/status/2084399799642841419"
+          "id": "2085019036849770642",
+          "text": "Next.js 16.3 is radically more efficient to serve and faster to build. Massive cost reductions on compute and data transfer at scale. Easy upgrade path.",
+          "created_at": "2026-08-05T15:04:10+00:00",
+          "like_count": 402,
+          "retweet_count": 17,
+          "reply_count": 41,
+          "url": "https://x.com/rauchg/status/2085019036849770642"
         },
         {
-          "id": "2084411344623902994",
-          "text": "Next.js 16.3: faster, better, stronger. My highlights:\n\n0️⃣ Faster dev & builds\nShoutout to Fable for improving memory use, and the team for landing the incremental 𝚗𝚎𝚡𝚝 𝚋𝚞𝚒𝚕𝚍 cache.\n\n1️⃣ Instant navigations are 🔥\nThe people wanted SPAs, they shall get SPAs. By turning on instant navs (which will soon be default), your  agent is basically forced to make things fast.\n\n2️⃣ Agent-native DX\nYou can still ship \"slow\" navs if you want, e.g. by blocking navs on server-side data fetching ala PHP olden days. But even then, your agent will be given *choices*, like setting up a <𝚂𝚞𝚜𝚙𝚎𝚗𝚜𝚎 𝚏𝚊𝚕𝚕𝚋𝚊𝚌𝚔> for instant loading shells. Agents also get built-in versioned docs.\n\nThis is our best release for agents by far, which will also make your upgrading journey very smooth. I've had an easy time bumping my projects to 16.3 and enabling instant navs, having my agent migrate everything without issues.\n\nAnd so much more. 16.3 is more cost-efficient to serve, both in self-hosting and serverless environments. Faster to type-check… Thank you to the 90 contributors to this release!",
-          "created_at": "2026-08-03T22:49:25+00:00",
-          "like_count": 917,
-          "retweet_count": 41,
-          "reply_count": 49,
-          "url": "https://x.com/rauchg/status/2084411344623902994"
-        },
-        {
-          "id": "2084345210470097127",
-          "text": "Vercel Sandbox is an excellent choice for automating web browsers in basic scenarios. The 𝚛𝚎𝚖𝚘𝚝𝚎-𝚊𝚐𝚎𝚗𝚝-𝚋𝚛𝚘𝚠𝚜𝚎𝚛 API makes it delightful:\n\n𝚋𝚛𝚘𝚠𝚜𝚎𝚛.𝚎𝚡𝚎𝚌('𝚘𝚙𝚎𝚗', 𝚞𝚛𝚕)\n𝚋𝚛𝚘𝚠𝚜𝚎𝚛.𝚎𝚡𝚎𝚌('𝚌𝚕𝚒𝚌𝚔')\n𝚋𝚛𝚘𝚠𝚜𝚎𝚛.𝚜𝚌𝚛𝚎𝚎𝚗𝚜𝚑𝚘𝚝()\n\n📦 https://t.co/66GIcFI1o4",
-          "created_at": "2026-08-03T18:26:38+00:00",
-          "like_count": 470,
-          "retweet_count": 28,
+          "id": "2084779435866398801",
+          "text": "1 line of code in @aisdk saves you 90% or more in DeepSeek v4 Flash AI Gateway tokens",
+          "created_at": "2026-08-04T23:12:05+00:00",
+          "like_count": 399,
+          "retweet_count": 12,
           "reply_count": 42,
-          "url": "https://x.com/rauchg/status/2084345210470097127"
-        },
-        {
-          "id": "2084364099367133381",
-          "text": "Introducing the new v0 API.\n\nProgrammatic access to v0's app-building capabilities:\n\n• Start a chat from a prompt, repo, or ZIP\n• Render a dev server preview\n• Send follow-up messages\n• Deploy to Vercel https://t.co/L7zJulyglS",
-          "created_at": "2026-08-03T19:41:41+00:00",
-          "like_count": 412,
-          "retweet_count": 28,
-          "reply_count": 23,
-          "url": "https://x.com/v0/status/2084364099367133381"
+          "url": "https://x.com/rauchg/status/2084779435866398801"
         },
         {
           "id": "2084426730241220703",
           "text": "The new AI Gateway logs UI is delightful https://t.co/cpMCaVeTbj",
           "created_at": "2026-08-03T23:50:33+00:00",
-          "like_count": 334,
-          "retweet_count": 14,
-          "reply_count": 24,
+          "like_count": 347,
+          "retweet_count": 15,
+          "reply_count": 26,
           "url": "https://x.com/rauchg/status/2084426730241220703"
+        },
+        {
+          "id": "2084804138169446449",
+          "text": "Vercel is the Vercel for backends.\n\n@FactoryAI powers their API services with Fluid compute, with billions of requests per month.",
+          "created_at": "2026-08-05T00:50:14+00:00",
+          "like_count": 318,
+          "retweet_count": 12,
+          "reply_count": 22,
+          "url": "https://x.com/rauchg/status/2084804138169446449"
+        },
+        {
+          "id": "2084445517678064092",
+          "text": "This is why P̵L̵G̵ ALG will always be king for startups. Have p̵e̵o̵p̵l̵e̵ agents adopt your product first, then have the meetings, if needed. The companies that start with the meetings are likely not your ideal customers.",
+          "created_at": "2026-08-04T01:05:13+00:00",
+          "like_count": 312,
+          "retweet_count": 12,
+          "reply_count": 50,
+          "url": "https://x.com/rauchg/status/2084445517678064092"
         }
       ]
     },
@@ -297,19 +287,10 @@
       "tier": "builder",
       "tweets": [
         {
-          "id": "2084383515928404304",
-          "text": "When an agent starts with shared context, more people can get reliable answers.\n\nWhen truth is shared, AI becomes infrastucture.\n\nRead about how our internal truth layer drives our teams at Replit:\n\nhttps://t.co/vXqCKAcpRE https://t.co/lG9phy0h04",
-          "created_at": "2026-08-03T20:58:50+00:00",
-          "like_count": 153,
-          "retweet_count": 20,
-          "reply_count": 13,
-          "url": "https://x.com/Replit/status/2084383515928404304"
-        },
-        {
           "id": "2084501585124827611",
           "text": "@levelsio Claude was clearly trained on SF house parties.",
           "created_at": "2026-08-04T04:48:00+00:00",
-          "like_count": 99,
+          "like_count": 111,
           "retweet_count": 1,
           "reply_count": 0,
           "url": "https://x.com/amasad/status/2084501585124827611"
@@ -326,18 +307,18 @@
           "id": "2084746170576892342",
           "text": "Notebook is built for thinking, not toggling.\n\nWhile others add more modes, Notebook keeps everything in a single, unified prompt bar and just does the things you want.\n\nUltra and Pro subscribers can jump in now, rolling out to everyone next.",
           "created_at": "2026-08-04T20:59:54+00:00",
-          "like_count": 166,
-          "retweet_count": 9,
-          "reply_count": 9,
+          "like_count": 499,
+          "retweet_count": 34,
+          "reply_count": 21,
           "url": "https://x.com/joshwoodward/status/2084746170576892342"
         },
         {
           "id": "2084624887055044790",
           "text": "I set up Gemini Spark to write my own weekly AI news digest for me, and I'm still stuck on how little effort I had to put in.\n\nThis is the exact prompt I gave it, just once:\n\n\"Every Tuesday at 12:15 PM, create a new Doc in my Drive, find the 5 biggest AI stories from that week, and format each one properly.\"\n\nAnd here's what it actually produces, every week:\n\n1. A new Doc, created and named on its own\n2. The 5 biggest AI stories from that week, found and picked automatically\n3. A bold headline and a summary for each one\n4. The key impact spelled out, not just the news\n5. A source link on every single story\n\nThis runs on a schedule so I never have to think about it again. I didn't ask anything on Tuesday, I just opened the drive and the news digest doc was already there.\nJust like this, you can use Spark to automate any recurring task.",
           "created_at": "2026-08-04T12:57:58+00:00",
-          "like_count": 102,
-          "retweet_count": 4,
-          "reply_count": 17,
+          "like_count": 205,
+          "retweet_count": 8,
+          "reply_count": 25,
           "url": "https://x.com/eyishazyer/status/2084624887055044790"
         }
       ]
@@ -351,5 +332,5 @@
     }
   ],
   "errors": null,
-  "generated_at": "2026-08-04T23:32:44.251458+00:00"
+  "generated_at": "2026-08-05T23:28:45.417623+00:00"
 }
