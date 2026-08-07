@@ -14,49 +14,49 @@
       "tier": "analyst",
       "tweets": [
         {
-          "id": "2085034604172603724",
-          "text": "Announcing Discovery Loop! \n\nI am very excited to announce that, along with my longtime friends and collaborators @Sanjay_Ghemawat, @OriolVinyalsML and @quocleix, we are founding Discovery Loop (@DiscoLoopAI), a Public Benefit Corporation whose mission is to automate machine learning, science, and engineering to accelerate discoveries and progress. The four of us have worked together for 14 to 30 years, and have helped build some of the world’s most used products, infrastructure and AI models, and we’re excited to turn our attention to this ambitious endeavor.\n\n♾\n\nLearn more at: https://t.co/Rv3LMdLluK",
-          "created_at": "2026-08-05T16:06:02+00:00",
-          "like_count": 12574,
-          "retweet_count": 1237,
-          "reply_count": 630,
-          "url": "https://x.com/JeffDean/status/2085034604172603724"
+          "id": "2085398373511918022",
+          "text": "Build a plugin once and use it across compatible agent clients.\n\nIntroducing Agent Plugins, an open standard developed with @awsdevelopers, @cursor_ai, @github, @code, and @vercel that packages Agent Skills and supports MCP server configurations in a shared format. https://t.co/JOQe4sc40N",
+          "created_at": "2026-08-06T16:11:31+00:00",
+          "like_count": 5307,
+          "retweet_count": 444,
+          "reply_count": 238,
+          "url": "https://x.com/OpenAIDevs/status/2085398373511918022"
         },
         {
-          "id": "2084687434886135915",
-          "text": "Super relevant update on the Airtable acquisition!\n\nThey spun out their AI business Hyperagent prior to the acquisition. \n\nSo the company lives on, and likely some cash with it, probably can be recapitalized.\n\nseems like a fantastic outcome. Shed the old business and focus on AI https://t.co/EAcpDD9OCa",
-          "created_at": "2026-08-04T17:06:30+00:00",
-          "like_count": 641,
-          "retweet_count": 31,
-          "reply_count": 46,
-          "url": "https://x.com/pitdesi/status/2084687434886135915"
-        },
-        {
-          "id": "2085072791087480947",
-          "text": "🆕 Unpacking ChatGPT Work\n\nhttps://t.co/wccYg8wY9K\n\nChatGPT Work, an extension of the @openai Codex harness to cloud and general knowledge work, launched on July 9 and crossed 10M users 3 weeks later. \n\n@shloked guests with an A+ reconstruction of how Memory, Proactivity, Scheduling, Browser Use, Plugins, Skills and Tools work in this new harness that is bringing a full agentic experience to the almost 1B weekly active users of ChatGPT!",
-          "created_at": "2026-08-05T18:37:46+00:00",
-          "like_count": 29,
+          "id": "2085517544795079014",
+          "text": "## eval competition idea: Help kill my SaaS \n\nmy team is proposing to pay >$40k/year for enterprise saas we have never used and will never be able to customize.\n\nas a smol business owner, this feels shitty.\n\nthinking of doing a small remote hackathon:\n- i cover $1000 in tokens for you\n- you do your best to clone this SaaS in a weekend\n- my team (your prospective customer) evals it\n- winner gets $10,000 cash & @latentspacepod writeup\n- all code is open sourced\n\neveryone wins except high margin low moat saas.\nwe keep doing this with increasingly ambitious saas things for SMBs until we find the boundary of what saas is still hard to kill in a weekend.\n\ndoes that work?",
+          "created_at": "2026-08-07T00:05:04+00:00",
+          "like_count": 47,
           "retweet_count": 2,
-          "reply_count": 2,
-          "url": "https://x.com/latentspacepod/status/2085072791087480947"
+          "reply_count": 16,
+          "url": "https://x.com/swyx/status/2085517544795079014"
         },
         {
-          "id": "2085081968593739997",
-          "text": "@t2k2x is covering this in the @latentspacepod paper club today\n\nhttps://t.co/QH3Ku24vaH\n\ngreat discussion in the comments! https://t.co/1CfqgbjvoI",
-          "created_at": "2026-08-05T19:14:14+00:00",
-          "like_count": 1,
+          "id": "2085450774914756631",
+          "text": "i guess this is a good time to mention that smol forge is open for the first 100 alpha users. get your usernames! (tire kickers who dont make any commits will be kicked out by eod)\n\npoint clanker to forge.smol.​ai/llms.txt\n\nfor now its just a fast agent native git remote and u can check docs for the extras. note that it's an alpha - transcript stuff is broken rn, for updates check the blog written by our ai devrel.",
+          "created_at": "2026-08-06T19:39:45+00:00",
+          "like_count": 46,
+          "retweet_count": 1,
+          "reply_count": 14,
+          "url": "https://x.com/swyx/status/2085450774914756631"
+        },
+        {
+          "id": "2085504717829058569",
+          "text": "man @waterloo_intern theses keep getting challenged*\n\n> megakernels are dead\ncursor drops monster kitty kernel\n\n> etched asics are dead\namd buys taalas, and etched is valued at $10b by SK Hynix and TSMC lol\n\nwhos gonna take on the remaining two theses?\n\n*note that he was making long term calls, these are short term datapoints",
+          "created_at": "2026-08-06T23:14:06+00:00",
+          "like_count": 12,
           "retweet_count": 0,
-          "reply_count": 1,
-          "url": "https://x.com/swyx/status/2085081968593739997"
+          "reply_count": 5,
+          "url": "https://x.com/swyx/status/2085504717829058569"
         },
         {
-          "id": "2085049946982764609",
-          "text": "ishan is an aie top speaker using these tips  btw https://t.co/xKVwwGzr1W https://t.co/F8v3eg2b4D",
-          "created_at": "2026-08-05T17:07:00+00:00",
-          "like_count": 1,
+          "id": "2085507281349931367",
+          "text": "forge agents is quite substantial so only working on it at night while i sleep. \n\nthis is /goal but it only works during sleepytime https://t.co/QdMQMCOJ6R",
+          "created_at": "2026-08-06T23:24:17+00:00",
+          "like_count": 0,
           "retweet_count": 0,
           "reply_count": 0,
-          "url": "https://x.com/swyx/status/2085049946982764609"
+          "url": "https://x.com/swyx/status/2085507281349931367"
         }
       ]
     },
@@ -67,13 +67,22 @@
       "tier": "analyst",
       "tweets": [
         {
-          "id": "2084461665173848493",
-          "text": "@RothRottweiler @aqib_zakaria @hamandcheese @SemiAnalysis_ Idk about all that chief. We have more compute for China mapped than this",
-          "created_at": "2026-08-04T02:09:23+00:00",
-          "like_count": 4,
-          "retweet_count": 0,
-          "reply_count": 0,
-          "url": "https://x.com/dylan522p/status/2084461665173848493"
+          "id": "2085203412040434079",
+          "text": "\"Everytime Googlers leave, the TPU ecosystem grows stronger\"\nDeepmind friend coping so hard in my DMs rn",
+          "created_at": "2026-08-06T03:16:49+00:00",
+          "like_count": 1277,
+          "retweet_count": 24,
+          "reply_count": 40,
+          "url": "https://x.com/dylan522p/status/2085203412040434079"
+        },
+        {
+          "id": "2085480002917945449",
+          "text": "YC mantra is \"talk to your users\"\nYet every good AI or software founder I know secretly thinks their users are retards",
+          "created_at": "2026-08-06T21:35:53+00:00",
+          "like_count": 622,
+          "retweet_count": 5,
+          "reply_count": 53,
+          "url": "https://x.com/dylan522p/status/2085480002917945449"
         }
       ]
     },
@@ -96,7 +105,17 @@
       "name": "Sam Altman",
       "domain": "ai",
       "tier": "exec",
-      "tweets": []
+      "tweets": [
+        {
+          "id": "2085434712429052386",
+          "text": "We’re making better intelligence easier to access in ChatGPT for everyone:\n\n- GPT-5.6 Sol now powers both Instant and deep reasoning for Plus &amp; Pro users, delivering more factual, focused responses.\n\n- Free &amp; Go users get unlimited text chats with GPT-5.6 Luna starting tomorrow. https://t.co/JXhmj5GLTH",
+          "created_at": "2026-08-06T18:35:55+00:00",
+          "like_count": 13645,
+          "retweet_count": 1074,
+          "reply_count": 694,
+          "url": "https://x.com/OpenAI/status/2085434712429052386"
+        }
+      ]
     },
     {
       "handle": "DarioAmodei",
@@ -115,9 +134,9 @@
           "id": "2085034334914769203",
           "text": "I’ve been working towards AGI my whole life, and as we enter this pivotal moment, I’m stepping into a new role as Chair of Google DeepMind & Chief Scientist of Alphabet. This will allow me to focus on long-term strategy, and accelerating scientific breakthroughs, including leaning into my work at Isomorphic to help cure disease.\n\nI’m excited that @koraykv will be stepping up to lead GDM as SVP, alongside @joshwoodward and our exec team. I could not be more excited and confident about our amazing next chapter! 🚀\n\nhttps://t.co/2WtlIIlTUa",
           "created_at": "2026-08-05T16:04:58+00:00",
-          "like_count": 14420,
-          "retweet_count": 1159,
-          "reply_count": 741,
+          "like_count": 20037,
+          "retweet_count": 1656,
+          "reply_count": 1040,
           "url": "https://x.com/demishassabis/status/2085034334914769203"
         }
       ]
@@ -127,7 +146,17 @@
       "name": "Tang Jie (Z.ai / Tsinghua)",
       "domain": "ai",
       "tier": "exec",
-      "tweets": []
+      "tweets": [
+        {
+          "id": "2085034604172603724",
+          "text": "Announcing Discovery Loop! \n\nI am very excited to announce that, along with my longtime friends and collaborators @Sanjay_Ghemawat, @OriolVinyalsML and @quocleix, we are founding Discovery Loop (@DiscoLoopAI), a Public Benefit Corporation whose mission is to automate machine learning, science, and engineering to accelerate discoveries and progress. The four of us have worked together for 14 to 30 years, and have helped build some of the world’s most used products, infrastructure and AI models, and we’re excited to turn our attention to this ambitious endeavor.\n\n♾\n\nLearn more at: https://t.co/Rv3LMdLluK",
+          "created_at": "2026-08-05T16:06:02+00:00",
+          "like_count": 20295,
+          "retweet_count": 2021,
+          "reply_count": 864,
+          "url": "https://x.com/JeffDean/status/2085034604172603724"
+        }
+      ]
     },
     {
       "handle": "nvidia",
@@ -136,49 +165,49 @@
       "tier": "infra",
       "tweets": [
         {
-          "id": "2084733460690903204",
-          "text": "AI compute is going to orbit. 🚀\n\n@SpaceX’s Starmind AI1 satellite compute payload is powered by NVIDIA Vera Rubin NVL72, bringing AI factory compute closer to the stars.\n\nThe next chapter of AI infrastructure boldly goes where no AI compute has gone before. https://t.co/sJaY8Cg7b7",
-          "created_at": "2026-08-04T20:09:24+00:00",
-          "like_count": 12902,
-          "retweet_count": 1883,
-          "reply_count": 572,
-          "url": "https://x.com/nvidia/status/2084733460690903204"
-        },
-        {
-          "id": "2084663782018543841",
-          "text": "Meet Alpamayo 2 Super, now commercially available for robotaxis and autonomous vehicles.\n\nBuilt for complex real-world driving, this open reasoning model adds 360° awareness, high-level driving decisions and automated reasoning labels.\n\nWe built it, so you can build on it. https://t.co/OZBWtsu3FC",
-          "created_at": "2026-08-04T15:32:31+00:00",
-          "like_count": 1282,
-          "retweet_count": 179,
-          "reply_count": 76,
-          "url": "https://x.com/nvidia/status/2084663782018543841"
-        },
-        {
-          "id": "2084625868173820144",
-          "text": "Security is strongest when organizations collaborate openly and move quickly. \n\nNow over 120 members strong, the Open Secure AI Alliance is sharing new open source security contributions, including new proposed SAFE guidelines, for turning confidential incident findings into stronger protection across the ecosystem.",
-          "created_at": "2026-08-04T13:01:52+00:00",
-          "like_count": 626,
-          "retweet_count": 97,
-          "reply_count": 58,
-          "url": "https://x.com/nvidia/status/2084625868173820144"
-        },
-        {
           "id": "2085046495011869017",
           "text": "Thanks @ssankar for putting NVIDIA Nemotron 3 Ultra to the test with no post-training.\n\n24 hours later, it was outperforming frontier models on the tasks @PalantirTech customers needed to solve.",
           "created_at": "2026-08-05T16:53:17+00:00",
-          "like_count": 605,
-          "retweet_count": 86,
-          "reply_count": 37,
+          "like_count": 1009,
+          "retweet_count": 145,
+          "reply_count": 51,
           "url": "https://x.com/nvidia/status/2085046495011869017"
         },
         {
-          "id": "2084716722746253566",
-          "text": "Read why AI agents need more than one model. 👇 https://t.co/IFaesvTdl8",
-          "created_at": "2026-08-04T19:02:53+00:00",
-          "like_count": 427,
-          "retweet_count": 47,
-          "reply_count": 42,
-          "url": "https://x.com/nvidia/status/2084716722746253566"
+          "id": "2085485069226106891",
+          "text": "Vera Rubin NVL72 Compute Tray. Designed to scale.\nAssembled in 1 minute. 100% automated. No cables, no hoses, no fans.\nA revolutionary new design that means faster ramp and faster time to revenue.",
+          "created_at": "2026-08-06T21:56:01+00:00",
+          "like_count": 802,
+          "retweet_count": 83,
+          "reply_count": 37,
+          "url": "https://x.com/nvidia/status/2085485069226106891"
+        },
+        {
+          "id": "2085081013600825387",
+          "text": "When organizations build AI with proprietary data, the resulting intelligence should remain theirs.\n\nAt @PalantirTech’s Sovereignty Bootcamp, NVIDIA VP of Enterprise AI @j_boitano discusses how Nemotron open models make secure, mission-specific AI possible. 👇 https://t.co/bQyw2a0DB4",
+          "created_at": "2026-08-05T19:10:27+00:00",
+          "like_count": 461,
+          "retweet_count": 60,
+          "reply_count": 37,
+          "url": "https://x.com/nvidia/status/2085081013600825387"
+        },
+        {
+          "id": "2085106911964242055",
+          "text": "How do you explain world models to your sibling? 🤖\n\nNVIDIA Cosmos helps physical AI reason about real-world interactions and simulate possible futures before acting in the real world.\n\nOr, as they might put it, it teaches robots to dream. 💭 https://t.co/OWn0A1XYQ0",
+          "created_at": "2026-08-05T20:53:21+00:00",
+          "like_count": 288,
+          "retweet_count": 38,
+          "reply_count": 38,
+          "url": "https://x.com/nvidia/status/2085106911964242055"
+        },
+        {
+          "id": "2085418201848971501",
+          "text": "Every business has different data, workflows and standards. Its AI should reflect that.\n\nWatch to see how NVIDIA Nemotron open models help teams build specialized AI they can trust, control and customize, then improve against the outcomes that matter most. https://t.co/waxSmCaNN3",
+          "created_at": "2026-08-06T17:30:19+00:00",
+          "like_count": 208,
+          "retweet_count": 29,
+          "reply_count": 43,
+          "url": "https://x.com/nvidia/status/2085418201848971501"
         }
       ]
     },
@@ -187,17 +216,7 @@
       "name": "Jensen Huang (NVIDIA)",
       "domain": "ai",
       "tier": "exec",
-      "tweets": [
-        {
-          "id": "2084656303046332747",
-          "text": "Today, we’re launching Alpamayo 2 Super, our frontier open reasoning model for autonomous vehicles.\n\nBeyond seeing, Alpamayo understands and reasons through the complex world - thinks before it acts.\n\nIt’s a powerful backbone for robotaxis, trucks, shuttles, delivery vans, tractors and the long tail of mobile robots—billions of autonomous machines someday.\n\nWe’re releasing it for commercial use under OpenMDW-1.1 so teams can inspect it, fine-tune it and deploy it—open models advance safety and security.\n\nThe next wave of AI is robotics—and it starts with autonomous vehicles.\n\nGreat work, Alpamayo team!\n\nhttps://t.co/2PYCCXWjZh",
-          "created_at": "2026-08-04T15:02:48+00:00",
-          "like_count": 14688,
-          "retweet_count": 1825,
-          "reply_count": 1035,
-          "url": "https://x.com/JensenHuang/status/2084656303046332747"
-        }
-      ]
+      "tweets": []
     },
     {
       "handle": "AmandaAskell",
@@ -234,49 +253,49 @@
       "tier": "builder",
       "tweets": [
         {
-          "id": "2085019036849770642",
-          "text": "Next.js 16.3 is radically more efficient to serve and faster to build. Massive cost reductions on compute and data transfer at scale. Easy upgrade path.",
-          "created_at": "2026-08-05T15:04:10+00:00",
-          "like_count": 402,
-          "retweet_count": 17,
-          "reply_count": 41,
-          "url": "https://x.com/rauchg/status/2085019036849770642"
+          "id": "2085398393179005223",
+          "text": "Introducing Agent Plugins, an open standard for extending agents.\n\nSupports Agent Skills and MCP, with more to come.\n\nBuilt in collaboration with: @awsdevelopers, @code, @cursor_ai, @github, and @openaidevs.\n\nhttps://t.co/duFCQqigZD",
+          "created_at": "2026-08-06T16:11:36+00:00",
+          "like_count": 1190,
+          "retweet_count": 104,
+          "reply_count": 74,
+          "url": "https://x.com/vercel/status/2085398393179005223"
         },
         {
-          "id": "2084779435866398801",
-          "text": "1 line of code in @aisdk saves you 90% or more in DeepSeek v4 Flash AI Gateway tokens",
-          "created_at": "2026-08-04T23:12:05+00:00",
-          "like_count": 399,
-          "retweet_count": 12,
-          "reply_count": 42,
-          "url": "https://x.com/rauchg/status/2084779435866398801"
+          "id": "2085168662881894559",
+          "text": "Writing a banger tweet is AGI-complete. If you can prove a clanker can write a banger in polynomial time, you’ve solved the entire class of AGI problems",
+          "created_at": "2026-08-06T00:58:44+00:00",
+          "like_count": 588,
+          "retweet_count": 21,
+          "reply_count": 72,
+          "url": "https://x.com/rauchg/status/2085168662881894559"
         },
         {
-          "id": "2084426730241220703",
-          "text": "The new AI Gateway logs UI is delightful https://t.co/cpMCaVeTbj",
-          "created_at": "2026-08-03T23:50:33+00:00",
-          "like_count": 347,
-          "retweet_count": 15,
-          "reply_count": 26,
-          "url": "https://x.com/rauchg/status/2084426730241220703"
+          "id": "2085403169551790359",
+          "text": "Devtools must be 1️⃣ open source and 2️⃣ universally extensible.\n\nAI coding agents are the most important devtools in the history of our industry. The Plugin standard lets anybody extend them uniformly.\n\nThis is huge for the ecosystem. Build a Plugin → get exposure to the tidal wave of software creation from every agent: CLIs, IDEs, cloud agents, and even personal assistants.",
+          "created_at": "2026-08-06T16:30:35+00:00",
+          "like_count": 333,
+          "retweet_count": 8,
+          "reply_count": 46,
+          "url": "https://x.com/rauchg/status/2085403169551790359"
         },
         {
-          "id": "2084804138169446449",
-          "text": "Vercel is the Vercel for backends.\n\n@FactoryAI powers their API services with Fluid compute, with billions of requests per month.",
-          "created_at": "2026-08-05T00:50:14+00:00",
-          "like_count": 318,
-          "retweet_count": 12,
-          "reply_count": 22,
-          "url": "https://x.com/rauchg/status/2084804138169446449"
+          "id": "2085077900190208080",
+          "text": "Infinite agent compute\n10,000 concurrent + 5,000 CPU cores per minute\nand these quotas are raisable",
+          "created_at": "2026-08-05T18:58:04+00:00",
+          "like_count": 253,
+          "retweet_count": 10,
+          "reply_count": 40,
+          "url": "https://x.com/rauchg/status/2085077900190208080"
         },
         {
-          "id": "2084445517678064092",
-          "text": "This is why P̵L̵G̵ ALG will always be king for startups. Have p̵e̵o̵p̵l̵e̵ agents adopt your product first, then have the meetings, if needed. The companies that start with the meetings are likely not your ideal customers.",
-          "created_at": "2026-08-04T01:05:13+00:00",
-          "like_count": 312,
-          "retweet_count": 12,
-          "reply_count": 50,
-          "url": "https://x.com/rauchg/status/2084445517678064092"
+          "id": "2085076757238227239",
+          "text": "Vercel Sandbox quotas are now 5-10x higher:\n\n▪️ 10,000 concurrent sandboxes\n▪️ 5,000 vCPUs per minute\nhttps://t.co/bQJi9Jpem5",
+          "created_at": "2026-08-05T18:53:32+00:00",
+          "like_count": 95,
+          "retweet_count": 6,
+          "reply_count": 3,
+          "url": "https://x.com/vercel_dev/status/2085076757238227239"
         }
       ]
     },
@@ -287,13 +306,22 @@
       "tier": "builder",
       "tweets": [
         {
-          "id": "2084501585124827611",
-          "text": "@levelsio Claude was clearly trained on SF house parties.",
-          "created_at": "2026-08-04T04:48:00+00:00",
-          "like_count": 111,
-          "retweet_count": 1,
+          "id": "2085144550516064671",
+          "text": "ご報告です。Replitに入社しました。\n\n日本はReplitにとって最重要市場の一つであり、その日本初の社員として、東京を拠点に活動します。\n\n使う人は純粋にやりたいことだけを表現する。難しいことはReplitが全部やる。\n2年前にReplit Agentに触れてこの哲学に出会い、それ以来アンバサダーとして日本中でワークショップをしてきました。今度は中の人として、この体験を日本のもっと多くの人に届けます。\n\n日本での情報発信のやり方も色々と検討しています。\nまた、日本のReplitアンバサダーも公募しています。イベントでもいいですし、情報発信でもいいですし、とにかく日本でもっとReplitを盛り上げたいという方は連絡ください。応募はこちら →\nhttps://t.co/39ocXO5RUR\n\nいきなりフォームから申し込むのは勇気がいるという方は、私にDMをください。何でもお答えします。",
+          "created_at": "2026-08-05T23:22:55+00:00",
+          "like_count": 308,
+          "retweet_count": 32,
+          "reply_count": 46,
+          "url": "https://x.com/nobita2040/status/2085144550516064671"
+        },
+        {
+          "id": "2085399356170006927",
+          "text": "@Replit always comes out w/ bangers. \n\nGet pro account. Blow budget in one sitting. Fable 5 juiced to the gills. \n\nI question my finances. Turn on primary economy and add in skills. \n\nMy apps are all like 5x better at 10% original cost w/ Fable 5 solo🤣\n\nInsane value! https://t.co/Pxiwe1fBqP",
+          "created_at": "2026-08-06T16:15:26+00:00",
+          "like_count": 4,
+          "retweet_count": 0,
           "reply_count": 0,
-          "url": "https://x.com/amasad/status/2084501585124827611"
+          "url": "https://x.com/JDoyleCreate/status/2085399356170006927"
         }
       ]
     },
@@ -302,26 +330,7 @@
       "name": "Josh Woodward (Google Labs)",
       "domain": "ai",
       "tier": "builder",
-      "tweets": [
-        {
-          "id": "2084746170576892342",
-          "text": "Notebook is built for thinking, not toggling.\n\nWhile others add more modes, Notebook keeps everything in a single, unified prompt bar and just does the things you want.\n\nUltra and Pro subscribers can jump in now, rolling out to everyone next.",
-          "created_at": "2026-08-04T20:59:54+00:00",
-          "like_count": 499,
-          "retweet_count": 34,
-          "reply_count": 21,
-          "url": "https://x.com/joshwoodward/status/2084746170576892342"
-        },
-        {
-          "id": "2084624887055044790",
-          "text": "I set up Gemini Spark to write my own weekly AI news digest for me, and I'm still stuck on how little effort I had to put in.\n\nThis is the exact prompt I gave it, just once:\n\n\"Every Tuesday at 12:15 PM, create a new Doc in my Drive, find the 5 biggest AI stories from that week, and format each one properly.\"\n\nAnd here's what it actually produces, every week:\n\n1. A new Doc, created and named on its own\n2. The 5 biggest AI stories from that week, found and picked automatically\n3. A bold headline and a summary for each one\n4. The key impact spelled out, not just the news\n5. A source link on every single story\n\nThis runs on a schedule so I never have to think about it again. I didn't ask anything on Tuesday, I just opened the drive and the news digest doc was already there.\nJust like this, you can use Spark to automate any recurring task.",
-          "created_at": "2026-08-04T12:57:58+00:00",
-          "like_count": 205,
-          "retweet_count": 8,
-          "reply_count": 25,
-          "url": "https://x.com/eyishazyer/status/2084624887055044790"
-        }
-      ]
+      "tweets": []
     },
     {
       "handle": "ornith_",
@@ -332,5 +341,5 @@
     }
   ],
   "errors": null,
-  "generated_at": "2026-08-05T23:28:45.417623+00:00"
+  "generated_at": "2026-08-07T01:36:20.241462+00:00"
 }
