@@ -14,31 +14,49 @@
       "tier": "analyst",
       "tweets": [
         {
+          "id": "2085817074816070014",
+          "text": "New in Claude Code: your sessions can now message each other.\n\nInstead of having to re-explain yourself in another session, you can now tell Claude to do it. It sends a summary (not your history or files), and the other session picks it up mid-task. https://t.co/PtNsfXeQXP",
+          "created_at": "2026-08-07T19:55:17+00:00",
+          "like_count": 55027,
+          "retweet_count": 4218,
+          "reply_count": 1765,
+          "url": "https://x.com/ClaudeDevs/status/2085817074816070014"
+        },
+        {
+          "id": "2085779009913430237",
+          "text": "At Databricks, AI coding token spend is growing exponentially.\n\n1. The “efficiency frontier” matters. On Databricks Coding Bench, GLM 5.2, Opus 4.8, and GPT 5.6-Sol sit on that frontier: the best quality per dollar.\n\n2. We see cost regressions when comparing Opus 5.0 to 4.8. Newer model doesn’t always mean more efficient.\n\n3. Hard budgets are the wrong primitive. Your biggest AI spenders may also be your most AI-leveraged engineers.\n\n4. There is no best model for every task. Routing, harnesses, evals, and the right mix of open and proprietary models can radically change the economics.\n\nWe’re investing heavily in all 4, both for ourselves and for our customers.",
+          "created_at": "2026-08-07T17:24:02+00:00",
+          "like_count": 392,
+          "retweet_count": 37,
+          "reply_count": 41,
+          "url": "https://x.com/Yuchenj_UW/status/2085779009913430237"
+        },
+        {
           "id": "2085517544795079014",
           "text": "## eval competition idea: Help kill my SaaS \n\nmy team is proposing to pay >$40k/year for enterprise saas we have never used and will never be able to customize.\n\nas a smol business owner, this feels shitty.\n\nthinking of doing a small remote hackathon:\n- i cover $1000 in tokens for you\n- you do your best to clone this SaaS in a weekend\n- my team (your prospective customer) evals it\n- winner gets $10,000 cash & @latentspacepod writeup\n- all code is open sourced\n\neveryone wins except high margin low moat saas.\nwe keep doing this with increasingly ambitious saas things for SMBs until we find the boundary of what saas is still hard to kill in a weekend.\n\ndoes that work?",
           "created_at": "2026-08-07T00:05:04+00:00",
-          "like_count": 364,
-          "retweet_count": 11,
-          "reply_count": 76,
+          "like_count": 409,
+          "retweet_count": 14,
+          "reply_count": 86,
           "url": "https://x.com/swyx/status/2085517544795079014"
         },
         {
-          "id": "2085403515636396446",
-          "text": "the last agent spec has arrived\n\nwe're finally past fragmentation and are arriving at consolidation",
-          "created_at": "2026-08-06T16:31:57+00:00",
-          "like_count": 59,
-          "retweet_count": 2,
-          "reply_count": 7,
-          "url": "https://x.com/andrewqu/status/2085403515636396446"
+          "id": "2085884470306234676",
+          "text": "dear openai\n\njust make a new phone\n\neveryone wants openaiphone\n\nwe can read 2-4x faster than we talk and speak\n\nopenai alexa reachy hybrid is fine but pls just be a stepping stone to phone\n\nwe want phone\n\nsigned,\n\neverybody",
+          "created_at": "2026-08-08T00:23:06+00:00",
+          "like_count": 224,
+          "retweet_count": 8,
+          "reply_count": 51,
+          "url": "https://x.com/swyx/status/2085884470306234676"
         },
         {
-          "id": "2085616830786543667",
-          "text": "the ai-devblog skill elicits what YOU think the story is, and works with you to trace what you read and report it faithfully.\n\nalso does visuals... https://t.co/629UcBES0e",
-          "created_at": "2026-08-07T06:39:36+00:00",
-          "like_count": 4,
-          "retweet_count": 0,
-          "reply_count": 4,
-          "url": "https://x.com/swyx/status/2085616830786543667"
+          "id": "2085995879966921177",
+          "text": "$10,000 kill my saas in a weekend competition is live!\n\nTECH STACK:\nany coding agent\nany model\nup to $500 in token spend incl subscriptions\n\nsee luma for description. join waitlist if late to this - finish line extended to Wednesday.\n\nthe brief is live and people are prompting their clankers already. get to it!!!",
+          "created_at": "2026-08-08T07:45:48+00:00",
+          "like_count": 114,
+          "retweet_count": 6,
+          "reply_count": 57,
+          "url": "https://x.com/swyx/status/2085995879966921177"
         }
       ]
     },
@@ -49,31 +67,22 @@
       "tier": "analyst",
       "tweets": [
         {
-          "id": "2085480002917945449",
-          "text": "YC mantra is \"talk to your users\"\nYet every good AI or software founder I know secretly thinks their users are retards",
-          "created_at": "2026-08-06T21:35:53+00:00",
-          "like_count": 2047,
-          "retweet_count": 33,
-          "reply_count": 143,
-          "url": "https://x.com/dylan522p/status/2085480002917945449"
-        },
-        {
-          "id": "2085203412040434079",
-          "text": "\"Everytime Googlers leave, the TPU ecosystem grows stronger\"\nDeepmind friend coping so hard in my DMs rn",
-          "created_at": "2026-08-06T03:16:49+00:00",
-          "like_count": 1352,
-          "retweet_count": 27,
-          "reply_count": 41,
-          "url": "https://x.com/dylan522p/status/2085203412040434079"
-        },
-        {
           "id": "2085553638525845640",
           "text": "Her \"Do you know Thom Browne?\"\nMe \"The Anthropic cofounder? Ya he's a legend!\" https://t.co/oWggWPERkY",
           "created_at": "2026-08-07T02:28:29+00:00",
-          "like_count": 201,
+          "like_count": 212,
           "retweet_count": 0,
-          "reply_count": 14,
+          "reply_count": 15,
           "url": "https://x.com/dylan522p/status/2085553638525845640"
+        },
+        {
+          "id": "2085885099527336255",
+          "text": "@insane_analyst @jwt0625 for the current things you've seen. There's a lot of cool research and companies beyond the 2 you have looked into. I think you should keep open mind to it, but agree theres not really any deployments of uled in short or medium term. The report says as much.",
+          "created_at": "2026-08-08T00:25:36+00:00",
+          "like_count": 4,
+          "retweet_count": 0,
+          "reply_count": 3,
+          "url": "https://x.com/dylan522p/status/2085885099527336255"
         }
       ]
     },
@@ -98,21 +107,12 @@
       "tier": "exec",
       "tweets": [
         {
-          "id": "2085434712429052386",
-          "text": "We’re making better intelligence easier to access in ChatGPT for everyone:\n\n- GPT-5.6 Sol now powers both Instant and deep reasoning for Plus &amp; Pro users, delivering more factual, focused responses.\n\n- Free &amp; Go users get unlimited text chats with GPT-5.6 Luna starting tomorrow. https://t.co/JXhmj5GLTH",
-          "created_at": "2026-08-06T18:35:55+00:00",
-          "like_count": 19494,
-          "retweet_count": 1635,
-          "reply_count": 1078,
-          "url": "https://x.com/OpenAI/status/2085434712429052386"
-        },
-        {
           "id": "2085862292311396515",
           "text": "astra is a powerful model and we are working to make it generally available.\n\nwe do not think it is a good strategy to keep powerful models to a chosen few.\n\ngiven its cyber capabilities, we need a little big longer to do do this safely. but hopefully not too long!",
           "created_at": "2026-08-07T22:54:58+00:00",
-          "like_count": 1004,
-          "retweet_count": 53,
-          "reply_count": 193,
+          "like_count": 24792,
+          "retweet_count": 1081,
+          "reply_count": 1590,
           "url": "https://x.com/sama/status/2085862292311396515"
         }
       ]
@@ -129,7 +129,26 @@
       "name": "Demis Hassabis (Google DeepMind)",
       "domain": "ai",
       "tier": "exec",
-      "tweets": []
+      "tweets": [
+        {
+          "id": "2085914742414061886",
+          "text": "Really enjoyed talking to @bzcohen about AlphaGo's famous move 37 and the significance of it 10 years on for math and science breakthroughs in verifiable domains",
+          "created_at": "2026-08-08T02:23:23+00:00",
+          "like_count": 1332,
+          "retweet_count": 84,
+          "reply_count": 66,
+          "url": "https://x.com/demishassabis/status/2085914742414061886"
+        },
+        {
+          "id": "2085894257651392763",
+          "text": "A decade ago, a computer did something that no human would have done. It was considered a breakthrough for AI. Now the world is full of them. https://t.co/lWcMb4tovy",
+          "created_at": "2026-08-08T01:01:59+00:00",
+          "like_count": 179,
+          "retweet_count": 21,
+          "reply_count": 25,
+          "url": "https://x.com/WSJ/status/2085894257651392763"
+        }
+      ]
     },
     {
       "handle": "jietang",
@@ -145,40 +164,13 @@
       "tier": "infra",
       "tweets": [
         {
-          "id": "2085485069226106891",
-          "text": "Vera Rubin NVL72 Compute Tray. Designed to scale.\nAssembled in 1 minute. 100% automated. No cables, no hoses, no fans.\nA revolutionary new design that means faster ramp and faster time to revenue.",
-          "created_at": "2026-08-06T21:56:01+00:00",
-          "like_count": 2136,
-          "retweet_count": 242,
-          "reply_count": 84,
-          "url": "https://x.com/nvidia/status/2085485069226106891"
-        },
-        {
-          "id": "2085418201848971501",
-          "text": "Every business has different data, workflows and standards. Its AI should reflect that.\n\nWatch to see how NVIDIA Nemotron open models help teams build specialized AI they can trust, control and customize, then improve against the outcomes that matter most. https://t.co/waxSmCaNN3",
-          "created_at": "2026-08-06T17:30:19+00:00",
-          "like_count": 289,
-          "retweet_count": 36,
-          "reply_count": 59,
-          "url": "https://x.com/nvidia/status/2085418201848971501"
-        },
-        {
-          "id": "2085381082539594007",
-          "text": "Network automation and autonomous networks aren't the same thing — and the gap between them is where the next generation of telco operations lives.\n\nIn this video, Amogh Dendukuri breaks down what it takes to get there: agentic AI, closed-loop operations, and an ecosystem building on NVIDIA platforms to make it real.",
-          "created_at": "2026-08-06T15:02:49+00:00",
-          "like_count": 200,
-          "retweet_count": 23,
-          "reply_count": 32,
-          "url": "https://x.com/nvidia/status/2085381082539594007"
-        },
-        {
-          "id": "2085147268253138946",
-          "text": "@Akamai @amazon @CapitalOne @Cisco @Cloudflare @cognition @CrowdStrike @LangChain @Microsoft @okta @PaloAltoNtwks @perplexity_ai @RedHat @Uber @Veeam @Visa @wiz_io The Open Secure AI Alliance community, together at\n@BlackHatEvents’ #BHUSA. 📸 \n\nMembers met in person to connect, share ideas and keep moving AI security forward. A great moment for a growing community. https://t.co/4q0XDdeYgw",
-          "created_at": "2026-08-05T23:33:43+00:00",
-          "like_count": 55,
-          "retweet_count": 8,
-          "reply_count": 6,
-          "url": "https://x.com/nvidia/status/2085147268253138946"
+          "id": "2086040693596659932",
+          "text": "Armenia and Kazakhstan with @FirebirdCloudAI are building the infrastructure to create intelligence at home, powered by the NVIDIA DSX platform.\n\n📽️ Hear from @JensenHuang on this important milestone for the CIS region. https://t.co/CFzLFbxbYt https://t.co/dn4rCVb0Yd",
+          "created_at": "2026-08-08T10:43:52+00:00",
+          "like_count": 519,
+          "retweet_count": 70,
+          "reply_count": 58,
+          "url": "https://x.com/nvidia/status/2086040693596659932"
         }
       ]
     },
@@ -192,9 +184,9 @@
           "id": "2085779369830822040",
           "text": "AI at the final frontier 🚀",
           "created_at": "2026-08-07T17:25:28+00:00",
-          "like_count": 12950,
-          "retweet_count": 785,
-          "reply_count": 596,
+          "like_count": 22271,
+          "retweet_count": 1318,
+          "reply_count": 796,
           "url": "https://x.com/JensenHuang/status/2085779369830822040"
         }
       ]
@@ -213,22 +205,49 @@
       "tier": "builder",
       "tweets": [
         {
-          "id": "2085794862608318627",
-          "text": "Starting August 14, auto mode will be the default permission mode in Claude Code for Pro, Max, and Team users.\n\nAuto mode reviews shell commands and actions with a separate classifier. In testing, it caught 89% of dangerous commands. Manual approval caught 14%.",
-          "created_at": "2026-08-07T18:27:02+00:00",
-          "like_count": 7376,
-          "retweet_count": 275,
-          "reply_count": 351,
-          "url": "https://x.com/ClaudeDevs/status/2085794862608318627"
+          "id": "2086173812253729118",
+          "text": "@thsottiaux We are hiring if you would like to work at Anthropic!\n\nWe don’t ban people for using harnesses with other models. Almost certainly it was a different account classifier that triggered. Looking into it, thanks for escalating.",
+          "created_at": "2026-08-08T19:32:50+00:00",
+          "like_count": 1800,
+          "retweet_count": 32,
+          "reply_count": 155,
+          "url": "https://x.com/bcherny/status/2086173812253729118"
         },
         {
-          "id": "2085860677990883454",
-          "text": "turns out you can get indirect prompt injection to ~0 on unseen attacks if you stack enough layers (model training + input probes + a classifier checking intent). didn't expect that a year ago. auto mode is default in claude code as of next week\n\nhttps://t.co/7KLnIzf6y7 https://t.co/ow4jX2CMZW",
-          "created_at": "2026-08-07T22:48:33+00:00",
-          "like_count": 83,
-          "retweet_count": 7,
-          "reply_count": 13,
-          "url": "https://x.com/bcherny/status/2085860677990883454"
+          "id": "2086183356795060396",
+          "text": "Using our harnesses with other models is supported: just use a proxy like litellm (see our docs page, or ask Claude to set it up for you).\n\nOne challenge is there’s a lot of model-specific tool design and prompting that goes into building a good harness. The team and I spend a lot of time dialing these in for each model.",
+          "created_at": "2026-08-08T20:10:46+00:00",
+          "like_count": 127,
+          "retweet_count": 4,
+          "reply_count": 8,
+          "url": "https://x.com/bcherny/status/2086183356795060396"
+        },
+        {
+          "id": "2086178281913815263",
+          "text": "@GrayOdesa What would be better in this case? We could make it so Claude auto-resumes using Fable once your limit resets, or we could pause and let you decide what to do each time? Curious what you’d prefer",
+          "created_at": "2026-08-08T19:50:36+00:00",
+          "like_count": 56,
+          "retweet_count": 0,
+          "reply_count": 37,
+          "url": "https://x.com/bcherny/status/2086178281913815263"
+        },
+        {
+          "id": "2085953705996869947",
+          "text": "@i_am_echel0n This exists. Just ask Claude to add to the list, or add to it yourself in your settings.json",
+          "created_at": "2026-08-08T04:58:13+00:00",
+          "like_count": 14,
+          "retweet_count": 0,
+          "reply_count": 0,
+          "url": "https://x.com/bcherny/status/2085953705996869947"
+        },
+        {
+          "id": "2085954130435248621",
+          "text": "@JoshuaImel Try claude --safe-mode. If the model stops rabbit holing, then it’s something in your CLAUDE.md or skills",
+          "created_at": "2026-08-08T04:59:54+00:00",
+          "like_count": 6,
+          "retweet_count": 0,
+          "reply_count": 1,
+          "url": "https://x.com/bcherny/status/2085954130435248621"
         }
       ]
     },
@@ -253,40 +272,49 @@
       "tier": "builder",
       "tweets": [
         {
-          "id": "2085756097097552264",
-          "text": "Watching a presentation on how we're making systems ultra-resilient to 𝚞𝚜-𝚎𝚊𝚜𝚝-𝟷 outages. Team reminded me the last AWS outage shut down my IoT mattress 😂\n\nOne of the many benefits of @vercel Fluid compute is how easy multi-region failover becomes, which allows you to sleep in an ultra-cold bed soundly all night.",
-          "created_at": "2026-08-07T15:52:59+00:00",
-          "like_count": 289,
-          "retweet_count": 6,
-          "reply_count": 28,
-          "url": "https://x.com/rauchg/status/2085756097097552264"
-        },
-        {
-          "id": "2085753399170252931",
-          "text": "Navigations in v0 got ~3.5× faster with Next.js 16.3.\n\nAn agent ran this loop on each slow nav:\n\n1. Write a failing 𝚒𝚗𝚜𝚝𝚊𝚗𝚝() test\n2. Apply a fix from the Skill\n3. Re-run the test\n4. Repeat 2–3 until it passes\n\nhttps://t.co/gfe9HXbY4n",
-          "created_at": "2026-08-07T15:42:16+00:00",
-          "like_count": 253,
-          "retweet_count": 11,
-          "reply_count": 6,
-          "url": "https://x.com/nextjs/status/2085753399170252931"
+          "id": "2085868721315410269",
+          "text": "SITUATION DETECTED: Herdr joins YC, gains Vercel Sandbox plugin",
+          "created_at": "2026-08-07T23:20:31+00:00",
+          "like_count": 335,
+          "retweet_count": 7,
+          "reply_count": 23,
+          "url": "https://x.com/rauchg/status/2085868721315410269"
         },
         {
           "id": "2085825140022235517",
           "text": "“The others make the easy part easier. Vercel makes the hard part easy” – direct quote today from tech lead for AI agent platform built on https://t.co/nDDXqUmOlD at 55,000+ person company.\n\nThey wanted to have their company's all-knowing agent, like our @𝚟. Tried @aisdk, good but too low level. Tried off-the-shelf solutions and ${⁠lab} Enterprise products, expensive and inflexible. Tried agent frameworks, which led to the quote above… didn't hit the spot.\n\n@evedev_ team cooked. It's hard to find the abstraction that's both easy and scales with sophistication.",
           "created_at": "2026-08-07T20:27:20+00:00",
-          "like_count": 111,
-          "retweet_count": 12,
-          "reply_count": 32,
+          "like_count": 245,
+          "retweet_count": 24,
+          "reply_count": 40,
           "url": "https://x.com/rauchg/status/2085825140022235517"
+        },
+        {
+          "id": "2085868432319471643",
+          "text": "You can now run multiple coding agents in isolated Vercel Sandboxes, all from a local Herdr pane.\n\n𝚑𝚎𝚛𝚍𝚛 𝚙𝚕𝚞𝚐𝚒𝚗 𝚒𝚗𝚜𝚝𝚊𝚕𝚕 \\\n  𝚟𝚎𝚛𝚌𝚎𝚕-𝚕𝚊𝚋𝚜/𝚑𝚎𝚛𝚍𝚛-𝚟𝚎𝚛𝚌𝚎𝚕-𝚜𝚊𝚗𝚍𝚋𝚘𝚡-𝚙𝚕𝚞𝚐𝚒𝚗\n\nhttps://t.co/AG0mDgvwOe",
+          "created_at": "2026-08-07T23:19:22+00:00",
+          "like_count": 255,
+          "retweet_count": 15,
+          "reply_count": 7,
+          "url": "https://x.com/vercel_dev/status/2085868432319471643"
         },
         {
           "id": "2085778190690406848",
           "text": "You can now build and share unlisted skill packs.\n\nBundle skills from the community or your own repos, for yourself, your team, and your agents.\n\nhttps://t.co/lARQqIDh5Z",
           "created_at": "2026-08-07T17:20:47+00:00",
-          "like_count": 113,
-          "retweet_count": 10,
-          "reply_count": 6,
+          "like_count": 214,
+          "retweet_count": 18,
+          "reply_count": 11,
           "url": "https://x.com/vercel_dev/status/2085778190690406848"
+        },
+        {
+          "id": "2086189360194723919",
+          "text": "How Vercel helps prevent surprise cloud bills:\n◾ Soft & hard caps¹ \n◾ Anomaly alerting²\n◾ Recursion protection for Functions³\n◾ Billing usage APIs your agents can query⁴\n◾ Always-on DDoS L3/L4/L7 mitigation on all plans⁵\n\nA ton of work went into the streaming data infrastructure to support all this functionality. \n\nVercel ingests a superlative amount of data that needs to be analyzed in realtime to detect anomalies, threats, dispatch alerts, and more.\n\nSuper thankful to the teams that worked so hard on this for years! Much more to come.\n\n¹ vercel⁠.com/changelog/improved-hard-caps-for-spend-management\n² vercel⁠.com/changelog/anomaly-alert-configuration-now-available\n³ vercel⁠.com/changelog/automatic-recursion-protection-for-vercel-serverless-functions\n⁴ vercel⁠.com/changelog/access-billing-usage-cost-data-api\n⁵ vercel⁠.com/docs/vercel-firewall/ddos-mitigation",
+          "created_at": "2026-08-08T20:34:37+00:00",
+          "like_count": 147,
+          "retweet_count": 10,
+          "reply_count": 26,
+          "url": "https://x.com/rauchg/status/2086189360194723919"
         }
       ]
     },
@@ -297,49 +325,31 @@
       "tier": "builder",
       "tweets": [
         {
-          "id": "2085144550516064671",
-          "text": "ご報告です。Replitに入社しました。\n\n日本はReplitにとって最重要市場の一つであり、その日本初の社員として、東京を拠点に活動します。\n\n使う人は純粋にやりたいことだけを表現する。難しいことはReplitが全部やる。\n2年前にReplit Agentに触れてこの哲学に出会い、それ以来アンバサダーとして日本中でワークショップをしてきました。今度は中の人として、この体験を日本のもっと多くの人に届けます。\n\n日本での情報発信のやり方も色々と検討しています。\nまた、日本のReplitアンバサダーも公募しています。イベントでもいいですし、情報発信でもいいですし、とにかく日本でもっとReplitを盛り上げたいという方は連絡ください。応募はこちら →\nhttps://t.co/39ocXO5RUR\n\nいきなりフォームから申し込むのは勇気がいるという方は、私にDMをください。何でもお答えします。",
-          "created_at": "2026-08-05T23:22:55+00:00",
-          "like_count": 323,
-          "retweet_count": 36,
-          "reply_count": 48,
-          "url": "https://x.com/nobita2040/status/2085144550516064671"
+          "id": "2085810949563543786",
+          "text": "Sources: Cursor told staff Thursday that SpaceX could complete its $60B acquisition as soon as next week and the Cursor brand name will likely be phased out (@graceihle / The Information)\n\n(Visit Techmeme dot com for the link and full context!)",
+          "created_at": "2026-08-07T19:30:57+00:00",
+          "like_count": 403,
+          "retweet_count": 23,
+          "reply_count": 54,
+          "url": "https://x.com/Techmeme/status/2085810949563543786"
         },
         {
           "id": "2085544020424716723",
           "text": "It’s true, in 21/22 I went around the valley asking everyone to train coding specific models with us: Google, Meta, everyone — no one thought it was as important as NLP use cases — eventually we trained our own: Replit-code-3b and then everyone got code pilled.",
           "created_at": "2026-08-07T01:50:16+00:00",
-          "like_count": 254,
-          "retweet_count": 20,
-          "reply_count": 28,
+          "like_count": 276,
+          "retweet_count": 21,
+          "reply_count": 30,
           "url": "https://x.com/amasad/status/2085544020424716723"
-        },
-        {
-          "id": "2085471234020810759",
-          "text": "Amjad Masad says Google, $GOOGL, killed a coding model deal with Replit because it was scared of disrupting Search. Replit is now worth 9 billion dollars.\n\n\"I was going around Silicon Valley. There wasn't anyone paying attention to AI coding. And I was talking to OpenAI, I was talking to Anthropic, I was talking to Google.\"\n\n\"We got excited about potentially doing a deal together and we got close, but then Google actually killed it. And the reason is because Google Search is such a profitable product that they were worried about the reputation, and they were worried about Google Search being disrupted.\"\n\n[ They denied it, but it's true. ]\n\n\"I tried with all these different companies. We have to train our own model. Which is a radical thing to do in like 2023.\"",
-          "created_at": "2026-08-06T21:01:03+00:00",
-          "like_count": 76,
-          "retweet_count": 10,
-          "reply_count": 12,
-          "url": "https://x.com/CEOinterview/status/2085471234020810759"
         },
         {
           "id": "2085501387714986373",
           "text": "A Guinness World Record for the largest AI video lesson: 14,075 people building together in one live session.\n\nCongrats to @KanzHire and everyone who showed up to make it real. https://t.co/4kMM6ueu5o",
           "created_at": "2026-08-06T23:00:52+00:00",
-          "like_count": 39,
+          "like_count": 40,
           "retweet_count": 6,
           "reply_count": 7,
           "url": "https://x.com/Replit/status/2085501387714986373"
-        },
-        {
-          "id": "2085399356170006927",
-          "text": "@Replit always comes out w/ bangers. \n\nGet pro account. Blow budget in one sitting. Fable 5 juiced to the gills. \n\nI question my finances. Turn on primary economy and add in skills. \n\nMy apps are all like 5x better at 10% original cost w/ Fable 5 solo🤣\n\nInsane value! https://t.co/Pxiwe1fBqP",
-          "created_at": "2026-08-06T16:15:26+00:00",
-          "like_count": 8,
-          "retweet_count": 0,
-          "reply_count": 1,
-          "url": "https://x.com/JDoyleCreate/status/2085399356170006927"
         }
       ]
     },
@@ -348,17 +358,7 @@
       "name": "Josh Woodward (Google Labs)",
       "domain": "ai",
       "tier": "builder",
-      "tweets": [
-        {
-          "id": "2085444245058736363",
-          "text": "More time to create more videos: You now have until August 11, 2026 at 11:59pm PT to create 10 Gemini Omni videos at no cost in the app or on web. Have fun!",
-          "created_at": "2026-08-06T19:13:48+00:00",
-          "like_count": 1847,
-          "retweet_count": 166,
-          "reply_count": 168,
-          "url": "https://x.com/GeminiApp/status/2085444245058736363"
-        }
-      ]
+      "tweets": []
     },
     {
       "handle": "ornith_",
@@ -369,5 +369,5 @@
     }
   ],
   "errors": null,
-  "generated_at": "2026-08-07T23:05:13.105277+00:00"
+  "generated_at": "2026-08-08T22:57:18.465432+00:00"
 }
