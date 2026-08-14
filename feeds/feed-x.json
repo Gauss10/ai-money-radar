@@ -14,31 +14,49 @@
       "tier": "analyst",
       "tweets": [
         {
-          "id": "2087774049145626928",
-          "text": "So @swyx announced his “Kill My SaaS in one weekend” contest, where you could win $10K to replace his $40K/year SaaS. On Saturday morning, I learned that it was to replace their conference CFP software. \n\nOMG. I've run about 24 conferences over 12 years, but something I rarely talk about is how much I've hated the software we've had to use — over the last decade, we've used 5+ CFP tools, which manage the process of taking speaker submissions and running a review process, some MUCH worse than others.  \n\nWith each, we've had to build so many workarounds, things like Basecamp, Trello, Google Sheets, Zapier, and I've written entire new apps to be the reviewer frontend. (BusyConf was the one we loved, but they went out of business.)\n\nSo I jumped into the contest (Margueritte Kim and I will donate it all to a STEM charity if we win), and less than 24 hours later, I built CurtainCall CFP. \n\nThis has been the craziest dev experience of my career — and when Swyx released his eval harness, the entire project became a hill-climbing exercise, and began one of the craziest infrastructure experiences of my career.  (Will write more about that later!)\n\nBut it's in production! The Enterprise AI Summit is in Charlotte on Oct 7–8, and there are a few slots that may become available! If you want to submit an experience report talk, submit your proposal!\n\n(And you can see the 14 amazing announced speakers (more coming) here, too!)\n\nhttps://t.co/WrXwr74ksr",
-          "created_at": "2026-08-13T05:31:36+00:00",
-          "like_count": 81,
-          "retweet_count": 4,
-          "reply_count": 5,
-          "url": "https://x.com/RealGeneKim/status/2087774049145626928"
+          "id": "2088057260807532867",
+          "text": "Gotta say that Matt's \"grill-me\" skill is exceptional and helps a ton with getting agents aligned with my brain",
+          "created_at": "2026-08-14T00:16:59+00:00",
+          "like_count": 5398,
+          "retweet_count": 108,
+          "reply_count": 157,
+          "url": "https://x.com/theo/status/2088057260807532867"
         },
         {
-          "id": "2087805426750632290",
-          "text": "The @latentspacepod team and I will be speaking at Mongodb's .local buildfest today 10a-4pmish, come by!\n\nhttps://t.co/2ECvrv0x4N \n\nWe'll be covering:\n- tba Agent infra with @BazeleyMikiko!\n- the state of embeddings/reranking with @frankzliu @VoyageAI head of Applied ML\n- wearable AI with @a_israelov, CTO of Mentra!\n- their state of managed MCP with Gaurab Aryal \n- Jim Scharf, CTO MongoDB\n- AIE top speaker Apoorva Joshi\n\nclick on only if you are gonna come... take one of my tix MDBLCL26INSIDER!",
-          "created_at": "2026-08-13T07:36:17+00:00",
-          "like_count": 18,
-          "retweet_count": 3,
-          "reply_count": 15,
-          "url": "https://x.com/swyx/status/2087805426750632290"
+          "id": "2088060528988201419",
+          "text": "the major ai companies should commit to a real time priced API product. ai demand varies wildly over a day/night curve and the industry is broadly extremely capacity crunched. meanwhile agents make dealing with variable pricing, batching, and projecting total costs very easy",
+          "created_at": "2026-08-14T00:29:59+00:00",
+          "like_count": 1581,
+          "retweet_count": 56,
+          "reply_count": 176,
+          "url": "https://x.com/tszzl/status/2088060528988201419"
         },
         {
-          "id": "2087630280094077309",
-          "text": "@Vtrivedy10 @aiDotEngineer thank you for speaking!!",
-          "created_at": "2026-08-12T20:00:19+00:00",
-          "like_count": 2,
-          "retweet_count": 0,
-          "reply_count": 1,
-          "url": "https://x.com/swyx/status/2087630280094077309"
+          "id": "2087977008253071816",
+          "text": "worktrees are dead. cloud agents are the future.\n\nthey've allowed me to massively orchestrate swarms of agents, all with their own computer. it's how i've been able to trust that my agents are actually doing what i want them to, because they can run their code, take videos and screenshots, and interact with UIs the same way users do.\n\ncloud agents + pstack is the reason why i'm able to ship thousands of PRs a month with high confidence. spawn a verification /swarm of Grok 4.6 agents to \"fuzz\" every stack of PRs and you'll be able to let your agents merge their own work while you sleep!\n\nalthough i miss writing the code myself, the combination of using @bot, @cursor_ai, and the speed, intelligence, and efficiency of Grok 4.6 makes building so much fun. the future of coding is really starting to look more like playing starcraft!",
+          "created_at": "2026-08-13T18:58:06+00:00",
+          "like_count": 1428,
+          "retweet_count": 62,
+          "reply_count": 94,
+          "url": "https://x.com/poteto/status/2087977008253071816"
+        },
+        {
+          "id": "2088027097327673735",
+          "text": "I got this question so many times today. \"How can you grow 80% at $7B?\"\n\nThe true answer is that we're finally seeing a breakthrough with AI agents starting to work in the enterprise. \n\nThe AIs have been super smart for a while, but have lacked basic context that's in people's heads, or in some SaaS system-or-record. A lot of organizations are deploying FDEs to capture this context, or Ontology, and feed it to the AI. This is labor intensive and expensive. We just automated that with Genie Ontology.\n\nOnce you have that enterprise context graph, an AI agent like Genie becomes magical. I find myself no longer waiting for answers from my CRO, CFO, CMO, CHRO etc, I just keep queuing up questions on the phone while sitting in meetings. It'd frankly addictive.\n\nOur customers are starting to do the same, over 70% of all queries on the platform are now generated by Genie agents. This fuels more questions to the platform, which drives consumption, which drives revenue. That's the simple answer.",
+          "created_at": "2026-08-13T22:17:08+00:00",
+          "like_count": 962,
+          "retweet_count": 196,
+          "reply_count": 61,
+          "url": "https://x.com/alighodsi/status/2088027097327673735"
+        },
+        {
+          "id": "2087844420922364148",
+          "text": "Jason and I started Arize 6+ years ago with a simple proposition that headlined our seed deck:\n\n“We Make the World's AI Work”\n\nToday we are announcing we’ve entered into a definitive agreement to be acquired by Dynatrace to accelerate that vision.\n\nWe made a bet years ago that the explosion of AI would require bespoke infra tools. We knew AI systems weren’t going to behave like traditional software because we were building the next generation of intelligence. That bet became the market's first AI Observability platform.\n\nFast forward to 2026. The world has changed dramatically. Every company in the world is scaling up its use of agents. AI is everywhere and agents are reshaping business after business.\n\nWhat wasn’t clear years ago and is crystal clear today is that agent systems and software are deeply connected together in ways that none of us fathomed.\n\n- The best general agents are coding agents.\n- Skills and tools for agents are mixtures of prompts and code.\n- Prompts that control agents live in code repos.\n- The logs and traces used to debug your software also help you debug your AI systems.\n- The path to AGI is likely through coding agents.\n\nThe two worlds of AI and software observability are coming together to create the future of observability.\n\nLots more to share in the coming days, but I wanted to thank folks who made this possible:\n\nTo the Arize team - startups are about the people you build with, and I’ve never met a better group of humble rockstars. The markets changed, our product evolved, but the camaraderie of the team through this journey is what I’m really proud of.\n\nTo Jason, being in the trenches with you for the past 6 years has been the journey of a lifetime. You’re a visionary, and the best entrepreneur I know. Everything I know about entrepreneurship comes from watching you execute day in and day out - you always figured it out. Arize wouldn’t be Arize without you.\n\nTo our customers, thank you for trusting us and building this category with us. You made the product better everyday, and inspired us with the products you’re building.\n\nTo the open source community around Phoenix and OpenInference, developer trust and open standards are the foundation this category gets built on.\n\nAnd to our investors, advisors, and early believers who backed us when AI observability was not a budget line or even a real category yet, thank you.\n\nOnwards to the next chapter! https://t.co/OBZSsnX8pu",
+          "created_at": "2026-08-13T10:11:14+00:00",
+          "like_count": 129,
+          "retweet_count": 15,
+          "reply_count": 40,
+          "url": "https://x.com/aparnadhinak/status/2087844420922364148"
         }
       ]
     },
@@ -68,7 +86,17 @@
       "name": "Sam Altman",
       "domain": "ai",
       "tier": "exec",
-      "tweets": []
+      "tweets": [
+        {
+          "id": "2087947721936359705",
+          "text": "Previewing Ultrafast mode: GPT-5.6 Sol at up to 14x the speed.\n\nLaunching first in the OpenAI API to a select group of customers with expanded access to more businesses as capacity grows. https://t.co/a5dleofiDJ",
+          "created_at": "2026-08-13T17:01:43+00:00",
+          "like_count": 14194,
+          "retweet_count": 918,
+          "reply_count": 695,
+          "url": "https://x.com/OpenAI/status/2087947721936359705"
+        }
+      ]
     },
     {
       "handle": "DarioAmodei",
@@ -87,27 +115,27 @@
           "id": "2087948366294515977",
           "text": "Gemini 3.7 Flash is here.\n\nIt’s stronger for coding, knowledge work, and web development. 🧵",
           "created_at": "2026-08-13T17:04:17+00:00",
-          "like_count": 3067,
-          "retweet_count": 365,
-          "reply_count": 205,
+          "like_count": 4818,
+          "retweet_count": 579,
+          "reply_count": 312,
           "url": "https://x.com/GoogleDeepMind/status/2087948366294515977"
         },
         {
           "id": "2087950102455271765",
           "text": "Gemini 3.7 Flash brings major upgrades for software engineering, web dev &amp; knowledge work. And introductory price is half the original 3.6 Flash cost. Happy building - enjoy!",
           "created_at": "2026-08-13T17:11:11+00:00",
-          "like_count": 2163,
-          "retweet_count": 120,
-          "reply_count": 103,
+          "like_count": 3110,
+          "retweet_count": 168,
+          "reply_count": 134,
           "url": "https://x.com/demishassabis/status/2087950102455271765"
         },
         {
           "id": "2087885303855944001",
           "text": "SL2T is our amazing sign-language-to-text model allows users to sign directly to their phones for the first time. Built in close collaboration with the Deaf community, it’s a great example of the good that can be done with AI. Congrats to the team for the launch!",
           "created_at": "2026-08-13T12:53:42+00:00",
-          "like_count": 1513,
-          "retweet_count": 131,
-          "reply_count": 70,
+          "like_count": 1840,
+          "retweet_count": 164,
+          "reply_count": 80,
           "url": "https://x.com/demishassabis/status/2087885303855944001"
         }
       ]
@@ -117,7 +145,17 @@
       "name": "Tang Jie (Z.ai / Tsinghua)",
       "domain": "ai",
       "tier": "exec",
-      "tweets": []
+      "tweets": [
+        {
+          "id": "2088132965922476159",
+          "text": "Introducing GLM-5.3: Built to Code. Ready for Cyber Defense.\n\n- Top-tier coding and agentic capabilities, achieved through post-training on the 743B base model\n- A major leap in cybersecurity, setting a new standard among open models\n\nTech Blog: https://t.co/ekQkO83jCv https://t.co/y3Y2AB0wxr",
+          "created_at": "2026-08-14T05:17:49+00:00",
+          "like_count": 17626,
+          "retweet_count": 2185,
+          "reply_count": 838,
+          "url": "https://x.com/Zai_org/status/2088132965922476159"
+        }
+      ]
     },
     {
       "handle": "nvidia",
@@ -126,49 +164,49 @@
       "tier": "infra",
       "tweets": [
         {
-          "id": "2087576824159297605",
-          "text": "Congrats to the @SpaceXAI team on the release of Grok 4.6.\n\nGrok 4.6 brings frontier intelligence, running and trained on NVIDIA GB300 NVL72 with NVLink to deliver exceptional performance, reliability and lowest token cost.",
-          "created_at": "2026-08-12T16:27:54+00:00",
-          "like_count": 8532,
-          "retweet_count": 785,
-          "reply_count": 197,
-          "url": "https://x.com/nvidia/status/2087576824159297605"
-        },
-        {
-          "id": "2087549663289422297",
-          "text": "We’re honored that Glassdoor has named our founder and CEO, @JensenHuang , No. 1 on its 2026 Best CEOs list. 🎉 \n\nA very meaningful recognition, grounded in feedback from the people who make NVIDIA what it is. https://t.co/At3CEoP5ji",
-          "created_at": "2026-08-12T14:39:59+00:00",
-          "like_count": 650,
-          "retweet_count": 84,
-          "reply_count": 43,
-          "url": "https://x.com/nvidia/status/2087549663289422297"
+          "id": "2088088665058873720",
+          "text": "Great to welcome @LGE_Global Group Chairman Kwang-mo Koo and LG leaders to NVIDIA as we enter the next chapter of our collaboration.\n\nTogether, we’re expanding our work across AI infrastructure, physical AI and robotics.\n\nWe’re excited about what our teams can build together. https://t.co/75yVaxSdIT",
+          "created_at": "2026-08-14T02:21:47+00:00",
+          "like_count": 1027,
+          "retweet_count": 101,
+          "reply_count": 66,
+          "url": "https://x.com/nvidia/status/2088088665058873720"
         },
         {
           "id": "2087991151806521392",
           "text": "AI is becoming a new computing model for media and entertainment.\n\nAt the 2026 Runway AI Summit, NVIDIA’s Richard Kerris explored how real-time generative AI can make creative production a live, artist-controlled process. Powered by NVIDIA Vera Rubin, Runway brought Gen-4.5 to its platform in one day, helping close the gap between imagining a scene and bringing it to life.",
           "created_at": "2026-08-13T19:54:18+00:00",
-          "like_count": 335,
-          "retweet_count": 40,
-          "reply_count": 24,
+          "like_count": 791,
+          "retweet_count": 83,
+          "reply_count": 56,
           "url": "https://x.com/nvidia/status/2087991151806521392"
+        },
+        {
+          "id": "2088057386384916833",
+          "text": "Original then, original now at NVIDIA HQ.\n\nThe @Jaguar Type 01, powered by NVIDIA DRIVE, joined a classic 1966 Jaguar E-Type at HQ, where the team caught up with @JensenHuang ahead of #MontereyCarWeek. https://t.co/srIupNLYG9",
+          "created_at": "2026-08-14T00:17:29+00:00",
+          "like_count": 753,
+          "retweet_count": 76,
+          "reply_count": 37,
+          "url": "https://x.com/nvidia/status/2088057386384916833"
+        },
+        {
+          "id": "2088346841469379033",
+          "text": "This summer, NVIDIA interns brought their curiosity, creativity and energy to teams across the company - learning, building and helping shape what’s next.\n\nTo our 2026 interns: thank you for spending your summer with us. 💚 https://t.co/e6XpXRpJjO",
+          "created_at": "2026-08-14T19:27:41+00:00",
+          "like_count": 462,
+          "retweet_count": 43,
+          "reply_count": 35,
+          "url": "https://x.com/nvidia/status/2088346841469379033"
         },
         {
           "id": "2087924679163965756",
           "text": "AI factories are the industrial infrastructure of the AI era.\nTokens are the new commodity.\n\nHow do you optimize AI token economics? 🧵 https://t.co/u4yEPTdc2m",
           "created_at": "2026-08-13T15:30:09+00:00",
-          "like_count": 224,
-          "retweet_count": 32,
-          "reply_count": 38,
+          "like_count": 314,
+          "retweet_count": 45,
+          "reply_count": 46,
           "url": "https://x.com/nvidia/status/2087924679163965756"
-        },
-        {
-          "id": "2087924905329234013",
-          "text": "Put the right tokens to work. https://t.co/MjYyTamzNs",
-          "created_at": "2026-08-13T15:31:03+00:00",
-          "like_count": 46,
-          "retweet_count": 9,
-          "reply_count": 2,
-          "url": "https://x.com/nvidia/status/2087924905329234013"
         }
       ]
     },
@@ -182,19 +220,28 @@
           "id": "2087755674650603534",
           "text": "The mighty A100 fleet are mission-capable from 2020 through 2029. NVIDIA computing is more than chips. CUDA gives developers and NVIDIA engineers a common platform to continually upgrade Ampere, Hopper and Blackwell throughout their useful lives.\nCUDA makes NVIDIA computing versatile. Versatility makes it fungible. Fungibility drives utilization and extends durability, making NVIDIA compute a productive asset: rentable, durable and financeable.",
           "created_at": "2026-08-13T04:18:36+00:00",
-          "like_count": 6759,
-          "retweet_count": 632,
-          "reply_count": 349,
+          "like_count": 7395,
+          "retweet_count": 693,
+          "reply_count": 383,
           "url": "https://x.com/JensenHuang/status/2087755674650603534"
         },
         {
-          "id": "2087628860703506476",
-          "text": "CoreWeave's 2029 commitment to Nvidia A100 GPUs challenges the short-lived AI chip narrative. https://t.co/7786HZeMJd",
-          "created_at": "2026-08-12T19:54:41+00:00",
-          "like_count": 190,
-          "retweet_count": 22,
-          "reply_count": 6,
-          "url": "https://x.com/BusinessInsider/status/2087628860703506476"
+          "id": "2088350155758313875",
+          "text": "NVIDIA interns. This is an incredible time to be in technology. Loved having you for the summer.\nCome back and do your life’s work at @NVIDIA.",
+          "created_at": "2026-08-14T19:40:51+00:00",
+          "like_count": 2466,
+          "retweet_count": 168,
+          "reply_count": 141,
+          "url": "https://x.com/JensenHuang/status/2088350155758313875"
+        },
+        {
+          "id": "2088346841469379033",
+          "text": "This summer, NVIDIA interns brought their curiosity, creativity and energy to teams across the company - learning, building and helping shape what’s next.\n\nTo our 2026 interns: thank you for spending your summer with us. 💚 https://t.co/e6XpXRpJjO",
+          "created_at": "2026-08-14T19:27:41+00:00",
+          "like_count": 462,
+          "retweet_count": 43,
+          "reply_count": 35,
+          "url": "https://x.com/nvidia/status/2088346841469379033"
         }
       ]
     },
@@ -215,46 +262,46 @@
           "id": "2088014489438621990",
           "text": "A weird experiment I've been trying the last few weeks is having Claude take over day-to-day maintenance of our apps. Seeing early signs of life that this might be possible.\n\nThe setup is straightforward: we have a Slack channel called proj-claude-maintains-apps. In it, Claude Tag runs a bunch of daily routines across iOS, Android, Desktop, web, CLI, and Agent SDK:\n\n- Crash fuzzer: open the app in a simulator and tap around to find ways to crash it, then root cause and fix the crashes\n- Dup unifier: scans the codebase for similar-yet-slightly-divergent abstractions, and puts up PRs to unify them\n- Dead-code remover: removes statically unreachable code, and adds logging to suspected dead code to check if it's really dead and if so, remove it the next day\n- Abstraction police: fixes leaky abstractions\n- a bunch more..\n\nResults have been surprisingly positive. Over the last few weeks, these routines have opened 388 PRs across our repos, 180 of which we merged after Claude Code Review + human review. We're now thinking about how to streamline this to make merging these kinds of mechanical changes easier.\n\nClaude generally gets these PRs right on the first shot, and if it doesn't, we ask Claude to tune its routines so it's better the next day. Sometimes it takes a few days of tuning. \n\nTo try a similar workflow, ask Claude Code or Tag, or create some routines directly at https://t.co/Z70hStEBH6. A few of the actual prompts I used below.\n\nHas anyone experimented with similar workflows?",
           "created_at": "2026-08-13T21:27:02+00:00",
-          "like_count": 1020,
-          "retweet_count": 46,
-          "reply_count": 122,
+          "like_count": 4239,
+          "retweet_count": 235,
+          "reply_count": 343,
           "url": "https://x.com/bcherny/status/2088014489438621990"
-        },
-        {
-          "id": "2087343259366621454",
-          "text": "@jadenitripp Each model generation requires less tokens to do the same task. As models improve, the Pareto-frontier shifts left, which means less tokens over time for the same task.",
-          "created_at": "2026-08-12T00:59:48+00:00",
-          "like_count": 60,
-          "retweet_count": 1,
-          "reply_count": 7,
-          "url": "https://x.com/bcherny/status/2087343259366621454"
         },
         {
           "id": "2088021539883208958",
           "text": "@Hummer292 I use the same Fable as everyone else, and also feel the pain of downgrades. We landed improvements here, and more to come.",
           "created_at": "2026-08-13T21:55:03+00:00",
-          "like_count": 36,
-          "retweet_count": 0,
-          "reply_count": 3,
+          "like_count": 169,
+          "retweet_count": 1,
+          "reply_count": 16,
           "url": "https://x.com/bcherny/status/2088021539883208958"
         },
         {
           "id": "2088022665017901167",
           "text": "Here's the full prompt I used:\n\n> lets start new daily routines for crash fuzzing ios, android, and desktop apps e2e. make routines for each that use workflows to run the real apps (no mocks) and fuzz them to trigger crashes, then put up fix prs for those crashes. each pr must run /verify and post a repro and truth table to the pr. post updates in a new top level Fuzzer thread in this channel\n\nDoesn't needs super specific instructions with modern models.\n\n> But do you need Claude for Dead-code remover? A library like knip can handle this. Or is this something more?\n\nDead code is sometimes statically analyzable, but often it isn't. This covers the latter also.",
           "created_at": "2026-08-13T21:59:31+00:00",
-          "like_count": 13,
-          "retweet_count": 1,
-          "reply_count": 1,
+          "like_count": 62,
+          "retweet_count": 4,
+          "reply_count": 6,
           "url": "https://x.com/bcherny/status/2088022665017901167"
         },
         {
-          "id": "2087384107307422176",
-          "text": "@gerti_t On low effort it uses no agents, at higher effort levels it uses up to 10",
-          "created_at": "2026-08-12T03:42:07+00:00",
-          "like_count": 15,
+          "id": "2088021350871175304",
+          "text": "@tinybluedev We use Opus for most of these. Only need Fable for a few of the hard routines.",
+          "created_at": "2026-08-13T21:54:18+00:00",
+          "like_count": 21,
           "retweet_count": 0,
-          "reply_count": 3,
-          "url": "https://x.com/bcherny/status/2087384107307422176"
+          "reply_count": 1,
+          "url": "https://x.com/bcherny/status/2088021350871175304"
+        },
+        {
+          "id": "2088140601967730978",
+          "text": "@0xCodila Sonnet 5 could definitely do many of these. If using Sonnet I’d spend a bit more time auditing PRs and iterating on routines’ prompts then adding in checks and guardrails .",
+          "created_at": "2026-08-14T05:48:09+00:00",
+          "like_count": 16,
+          "retweet_count": 1,
+          "reply_count": 1,
+          "url": "https://x.com/bcherny/status/2088140601967730978"
         }
       ]
     },
@@ -279,49 +326,49 @@
       "tier": "builder",
       "tweets": [
         {
-          "id": "2087573868877946948",
-          "text": "We built a software factory for AI SDK.\n\nEach step is an agent, and humans merge changes. Four weeks in:\n\n▪️ The factory authors up to 35% of merged PRs\n▪️ It closed 70% of issues in July\n▪️ Open bugs are down 25%\n\nhttps://t.co/UNGeeQJdAu",
-          "created_at": "2026-08-12T16:16:10+00:00",
-          "like_count": 888,
-          "retweet_count": 55,
-          "reply_count": 43,
-          "url": "https://x.com/vercel/status/2087573868877946948"
-        },
-        {
-          "id": "2087574374706761892",
-          "text": "Towards a future of self-maintaining software. \n\nMust read of how we balance quality and autonomy for the development of @aisdk, one of the most popular open source AI libraries in the world.",
-          "created_at": "2026-08-12T16:18:10+00:00",
-          "like_count": 456,
-          "retweet_count": 14,
-          "reply_count": 29,
-          "url": "https://x.com/rauchg/status/2087574374706761892"
-        },
-        {
           "id": "2087682908576416172",
           "text": "Introducing Vercel Managed Images.\n\nVercel Sandbox now ships with:\n▪︎ Ubuntu as the default OS\n▪︎ Preinstalled coding agents (𝚌𝚘𝚍𝚎𝚡, 𝚌𝚕𝚊𝚞𝚍𝚎…)\n▪︎ Customizable, open source base images\n\nTry the new base image:\n$ 𝚗𝚙𝚡 𝚜𝚊𝚗𝚍𝚋𝚘𝚡@𝚕𝚊𝚝𝚎𝚜𝚝 𝚜𝚑 https://t.co/QZy4OyG3rp",
           "created_at": "2026-08-12T23:29:27+00:00",
-          "like_count": 321,
-          "retweet_count": 21,
-          "reply_count": 15,
+          "like_count": 345,
+          "retweet_count": 23,
+          "reply_count": 16,
           "url": "https://x.com/vercel_dev/status/2087682908576416172"
         },
         {
-          "id": "2087631388359242050",
-          "text": "Seedance 2.5 on @vercel AI Gateway 🐇 https://t.co/Ql9zpuJpBD",
-          "created_at": "2026-08-12T20:04:43+00:00",
-          "like_count": 340,
-          "retweet_count": 11,
-          "reply_count": 31,
-          "url": "https://x.com/rauchg/status/2087631388359242050"
+          "id": "2088020529039180204",
+          "text": "One command to rule them all (tokens).\n\nI predict that this will become the default way of using coding AI at scale. Uptime, model choice, lower costs, observability, ZDR…\n\nThe cool thing is that this command configures every *existing* coding harness, like Claude Code & Codex!",
+          "created_at": "2026-08-13T21:51:02+00:00",
+          "like_count": 223,
+          "retweet_count": 16,
+          "reply_count": 35,
+          "url": "https://x.com/rauchg/status/2088020529039180204"
         },
         {
-          "id": "2087605691158827499",
-          "text": "Digg was by far my favorite site of the web 2.0 era. Getting my tech essays onto \"the digg front page\" was one of the coolest memories of my teenage years 😁\n\nSo happy to be powering the new, agent-native https://t.co/zOlxD4NloH on @vercel. Full 🕳️",
-          "created_at": "2026-08-12T18:22:37+00:00",
-          "like_count": 163,
-          "retweet_count": 10,
-          "reply_count": 19,
-          "url": "https://x.com/rauchg/status/2087605691158827499"
+          "id": "2088323451132199338",
+          "text": "Vercel is the fastest [AI Gateway] infrastructure in the world",
+          "created_at": "2026-08-14T17:54:44+00:00",
+          "like_count": 216,
+          "retweet_count": 12,
+          "reply_count": 24,
+          "url": "https://x.com/rauchg/status/2088323451132199338"
+        },
+        {
+          "id": "2088018757189009515",
+          "text": "Connect your coding agents to AI Gateway with a single command.\n\n• Auto-configure 8 popular coding harnesses\n• 300+ models from 30+ providers, no markup\n• Open-weight models with ZDR &amp; US inference\n\n▲ ~/ vercel ai-gateway coding-agents setup https://t.co/fOMg7Q6h6i",
+          "created_at": "2026-08-13T21:43:59+00:00",
+          "like_count": 193,
+          "retweet_count": 23,
+          "reply_count": 13,
+          "url": "https://x.com/vercel/status/2088018757189009515"
+        },
+        {
+          "id": "2087970380762013760",
+          "text": "GLM 5.2 via @blackboxai is now free for eve agents on AI Gateway.\n\n✓ Free until Aug 27\n✓ Fast (up to 500TPS)\n✓ Use \"𝚣𝚊𝚒/𝚐𝚕𝚖-𝟻.𝟸\" in 𝚊𝚐𝚎𝚗𝚝.𝚝𝚜\n✓ Default for new eve agents\n\n𝚗𝚙𝚡 𝚎𝚟𝚎@𝚕𝚊𝚝𝚎𝚜𝚝 𝚒𝚗𝚒𝚝 𝚗𝚎𝚠-𝚊𝚐𝚎𝚗𝚝\nhttps://t.co/uhhgsMbbLR",
+          "created_at": "2026-08-13T18:31:46+00:00",
+          "like_count": 203,
+          "retweet_count": 13,
+          "reply_count": 8,
+          "url": "https://x.com/vercel_dev/status/2087970380762013760"
         }
       ]
     },
@@ -330,7 +377,26 @@
       "name": "Amjad Masad (Replit)",
       "domain": "ai",
       "tier": "builder",
-      "tweets": []
+      "tweets": [
+        {
+          "id": "2088124774824521786",
+          "text": "ARC-AGI-3 is nearly solved by merely adding a coding harness. As predicted, coding generalizes LLMs. https://t.co/ynhHVkdObE",
+          "created_at": "2026-08-14T04:45:16+00:00",
+          "like_count": 652,
+          "retweet_count": 45,
+          "reply_count": 50,
+          "url": "https://x.com/amasad/status/2088124774824521786"
+        },
+        {
+          "id": "2088276799461675372",
+          "text": "in case anyone is curious, https://t.co/CLvz9ck92Y took less than ~50 hours from the first prompt on @replit to sharing the testflight on X https://t.co/ft8Uzp1ffw",
+          "created_at": "2026-08-14T14:49:21+00:00",
+          "like_count": 25,
+          "retweet_count": 0,
+          "reply_count": 8,
+          "url": "https://x.com/yoheinakajima/status/2088276799461675372"
+        }
+      ]
     },
     {
       "handle": "joshwoodward",
@@ -342,46 +408,46 @@
           "id": "2087948481721962669",
           "text": "Introducing Gemini 3.7 Flash : )\n\n- it is fast!\n- 50% lower price than 3.6 flash (through end of year)\n- strong intelligence increase in only ~3 weeks (thanks to some awesome algorithmic improvements)\n- available in the API, AI Studio, Antigravity, and more! https://t.co/hxnd83CiXD",
           "created_at": "2026-08-13T17:04:44+00:00",
-          "like_count": 8053,
-          "retweet_count": 543,
-          "reply_count": 652,
+          "like_count": 10630,
+          "retweet_count": 731,
+          "reply_count": 800,
           "url": "https://x.com/OfficialLoganK/status/2087948481721962669"
         },
         {
-          "id": "2087567329567904048",
-          "text": "You can now connect to even more apps in Gemini to get more done.\n\nBy linking your favorite services to Gemini in your settings, you can easily plan, create, and tackle your to-do list all in one place. \n\nHere are 14 new apps to use with Gemini. 🧵",
-          "created_at": "2026-08-12T15:50:11+00:00",
-          "like_count": 1611,
-          "retweet_count": 170,
-          "reply_count": 120,
-          "url": "https://x.com/GeminiApp/status/2087567329567904048"
+          "id": "2088259242423968162",
+          "text": "✅ Papercut fixed: You can now toggle visible watermarks on or off in Gemini and Flow, with Search coming next.\n\nThis applies to watermarks on all images (Nano Banana), videos (Omni), and songs (Lyria) except in countries where it’s required by law to keep them. https://t.co/utHN0yDmD3",
+          "created_at": "2026-08-14T13:39:36+00:00",
+          "like_count": 706,
+          "retweet_count": 38,
+          "reply_count": 55,
+          "url": "https://x.com/joshwoodward/status/2088259242423968162"
         },
         {
           "id": "2087751559606407615",
           "text": "Gemini gets things done across the apps you use every day. Starting today, another wave of integrations are rolling out. If you want to partner with us, DM me.\n\nAngi (formerly Angie's List)\nFever\nGetYourGuide\nGranola\niHeartRadio\nLocaliza\nOpenTable\nOtter\nPandora\nThumbtack\nTicketmaster\nWix\nZocdoc\nZoho",
           "created_at": "2026-08-13T04:02:15+00:00",
-          "like_count": 505,
-          "retweet_count": 27,
-          "reply_count": 47,
+          "like_count": 553,
+          "retweet_count": 30,
+          "reply_count": 52,
           "url": "https://x.com/joshwoodward/status/2087751559606407615"
+        },
+        {
+          "id": "2088259244193960386",
+          "text": "We’re striking a balance here between creative control and safety: while the visible watermarks are now optional, invisible SynthID watermarks and C2PA metadata are still being used for transparency. So you can still use Gemini or Search to see if an image was AI-generated.\n\nhttps://t.co/p47A4b4byW",
+          "created_at": "2026-08-14T13:39:36+00:00",
+          "like_count": 75,
+          "retweet_count": 4,
+          "reply_count": 3,
+          "url": "https://x.com/joshwoodward/status/2088259244193960386"
         },
         {
           "id": "2087758503410888801",
           "text": "@AjaySinghadiya8 With Gemini Spark, you can do custom MCPs - have you tried it? Notebook MCP - on it!",
           "created_at": "2026-08-13T04:29:50+00:00",
-          "like_count": 15,
+          "like_count": 16,
           "retweet_count": 0,
-          "reply_count": 3,
+          "reply_count": 4,
           "url": "https://x.com/joshwoodward/status/2087758503410888801"
-        },
-        {
-          "id": "2088033201805828495",
-          "text": "@LukasBoguth @OfficialLoganK @ai_for_success Soon :)",
-          "created_at": "2026-08-13T22:41:23+00:00",
-          "like_count": 1,
-          "retweet_count": 0,
-          "reply_count": 1,
-          "url": "https://x.com/joshwoodward/status/2088033201805828495"
         }
       ]
     },
@@ -394,5 +460,5 @@
     }
   ],
   "errors": null,
-  "generated_at": "2026-08-13T23:11:24.508980+00:00"
+  "generated_at": "2026-08-14T22:49:08.548703+00:00"
 }
