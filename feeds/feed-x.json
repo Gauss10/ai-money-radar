@@ -17,46 +17,46 @@
           "id": "2089399057659596847",
           "text": "Origin, our code hosting platform, is now live.\n\nIt's fast, easy to use, and deeply integrated with Cursor.\n\nGet started by syncing your repos from GitHub. https://t.co/aqRHavAOQg",
           "created_at": "2026-08-17T17:08:49+00:00",
-          "like_count": 15264,
-          "retweet_count": 1303,
-          "reply_count": 1061,
+          "like_count": 24572,
+          "retweet_count": 2308,
+          "reply_count": 1478,
           "url": "https://x.com/cursor_ai/status/2089399057659596847"
         },
         {
           "id": "2089384708245540877",
           "text": "It's time to rethink RL.\n\nTranslating real world use into model improvements requires redesigning post-training algorithms for non-verifiable, per token rewards.\n\nAt @aiDotEngineer 's World Fair, we share our insights into scaling algorithms like SDPO for continual learning. https://t.co/djZqt1LdF7",
           "created_at": "2026-08-17T16:11:47+00:00",
-          "like_count": 177,
-          "retweet_count": 18,
-          "reply_count": 8,
+          "like_count": 252,
+          "retweet_count": 22,
+          "reply_count": 11,
           "url": "https://x.com/trajectorylabs/status/2089384708245540877"
+        },
+        {
+          "id": "2089798658225266806",
+          "text": "we've been doing a lot of a/b testing of @aiDotEngineer  youtube thumbnails. i always hated that it is such an opaque process.\n\nopen sourcing/crowdsourcing our learnings today!\nhttps://t.co/J9SYClIF7z\n\ndoing this in hopes that people can share their experience or learn from ours. at the end of the day we just want to get good educational content to rise above the noise online. please lmk what you think",
+          "created_at": "2026-08-18T19:36:41+00:00",
+          "like_count": 89,
+          "retweet_count": 1,
+          "reply_count": 22,
+          "url": "https://x.com/swyx/status/2089798658225266806"
+        },
+        {
+          "id": "2089499493083529476",
+          "text": "one way to get past the larger models thing i've been using is to periodically use larger models to make deterministic \"compound tools\" (made out of more primitive tools) that the smaller models cannot screw up. \n\npretty handy form of @erikdunteman \"muscle memory\" - sequences you do more often should be within closer reach",
+          "created_at": "2026-08-17T23:47:54+00:00",
+          "like_count": 45,
+          "retweet_count": 3,
+          "reply_count": 4,
+          "url": "https://x.com/swyx/status/2089499493083529476"
         },
         {
           "id": "2089264969309389138",
           "text": "i obv care about good writing, and obv this isnt applicable to high sensitivity domains like literature, but the interesting thing about the aaronson mechanism is that the bias only applies to close-enough tournament candidates. if we trust that llms model language well, then this should genuinely kinda work and scale better the more that llms also route usecases well",
           "created_at": "2026-08-17T08:16:00+00:00",
-          "like_count": 17,
+          "like_count": 19,
           "retweet_count": 0,
           "reply_count": 2,
           "url": "https://x.com/swyx/status/2089264969309389138"
-        },
-        {
-          "id": "2089467492163010836",
-          "text": "@TomasReimers @cursor_ai is live! https://t.co/hkyT5adhBO",
-          "created_at": "2026-08-17T21:40:45+00:00",
-          "like_count": 1,
-          "retweet_count": 0,
-          "reply_count": 0,
-          "url": "https://x.com/swyx/status/2089467492163010836"
-        },
-        {
-          "id": "2089377149627314366",
-          "text": "as you know there's a curve so just depends on the cutoff you choose on low-entropy but claude gave me these numbers. top token p of 0.5 seems decent. \n\ni think point just stands that either we trust that the llm can model language enough to accurately calibrate token distribution or not, and i've done some basic reading but have yet to find any convincing argument on the actual harm of the watermarking here given these condition. and if the llm doesnt model {literature|writing|law|whatever} well then... yknow... bitter lesson it??",
-          "created_at": "2026-08-17T15:41:45+00:00",
-          "like_count": 1,
-          "retweet_count": 0,
-          "reply_count": 1,
-          "url": "https://x.com/swyx/status/2089377149627314366"
         }
       ]
     },
@@ -86,7 +86,26 @@
       "name": "Sam Altman",
       "domain": "ai",
       "tier": "exec",
-      "tweets": []
+      "tweets": [
+        {
+          "id": "2089787807611195475",
+          "text": "We have paused some frontier RL training to ensure that we can meet the appropriate alignment, security and monitoring standards for the new level of capabilities in front of us. Model progress is now extremely rapid, and we always said we would take action if we felt that model capabilities were outstripping the pace of safety and alignment.\n\nWe care very deeply about AI safety. We believe the entire field will have to coordinate on shared safety standards, but will act unilaterally in the meantime.\n\nWe expect confidence in safety to increasingly set the pace of AI progress. We are optimistic about the alignment work we are doing, and we remain committed to making frontier capabilities widely available.\n\nhttps://t.co/51kvKfbfrO",
+          "created_at": "2026-08-18T18:53:34+00:00",
+          "like_count": 5445,
+          "retweet_count": 396,
+          "reply_count": 912,
+          "url": "https://x.com/sama/status/2089787807611195475"
+        },
+        {
+          "id": "2089805495783813196",
+          "text": "(We still expect to ship great new models soon; this impacts further-out releases.)",
+          "created_at": "2026-08-18T20:03:51+00:00",
+          "like_count": 1450,
+          "retweet_count": 59,
+          "reply_count": 143,
+          "url": "https://x.com/sama/status/2089805495783813196"
+        }
+      ]
     },
     {
       "handle": "DarioAmodei",
@@ -119,10 +138,19 @@
           "id": "2089331953585607127",
           "text": "From accelerating scientific discovery to advancing healthcare, AI can transform every industry — but the infrastructure behind it must keep pace.\n\nAt SB Energy’s PORTS-Pike Technology Campus in Southern Ohio, NVIDIA will be the exclusive AI compute infrastructure provider, with OpenAI as the customer.\n\nThe campus project will create tens of thousands of Ohio jobs and invest hundreds of millions in the community.",
           "created_at": "2026-08-17T12:42:10+00:00",
-          "like_count": 778,
-          "retweet_count": 95,
-          "reply_count": 55,
+          "like_count": 952,
+          "retweet_count": 121,
+          "reply_count": 73,
           "url": "https://x.com/nvidia/status/2089331953585607127"
+        },
+        {
+          "id": "2089804526970642920",
+          "text": "Creator Crafted. Game Ready.\n\nNVIDIA RTX Spark brings together creative workflows, local AI tools and RTX gaming in one PC. https://t.co/aFm9kl6zcU",
+          "created_at": "2026-08-18T20:00:00+00:00",
+          "like_count": 82,
+          "retweet_count": 10,
+          "reply_count": 11,
+          "url": "https://x.com/nvidia/status/2089804526970642920"
         }
       ]
     },
@@ -145,7 +173,26 @@
       "name": "Boris Cherny (Claude Code)",
       "domain": "ai",
       "tier": "builder",
-      "tweets": []
+      "tweets": [
+        {
+          "id": "2089471692762673408",
+          "text": "Claude Code can design now. The new /design skill (research preview) brings Claude Design's artboard workflow into the CLI and Desktop, built on artifacts.\n\nRun /design to get editable artboards for your UI — pick one, tweak it, then have Claude implement it. https://t.co/uttl4F1G0e",
+          "created_at": "2026-08-17T21:57:26+00:00",
+          "like_count": 13672,
+          "retweet_count": 878,
+          "reply_count": 411,
+          "url": "https://x.com/ClaudeDevs/status/2089471692762673408"
+        },
+        {
+          "id": "2089509659090780193",
+          "text": "Perf win of the day: Claude Code CLI now uses 2x less CPU at p99.\n\nBun's garbage collector was running on a fixed timer, so it would kick in mid-turn and steal CPU right when Claude Code was busiest. Now it waits until the process is idle. https://t.co/icGc35LDQs",
+          "created_at": "2026-08-18T00:28:18+00:00",
+          "like_count": 6196,
+          "retweet_count": 213,
+          "reply_count": 233,
+          "url": "https://x.com/ClaudeDevs/status/2089509659090780193"
+        }
+      ]
     },
     {
       "handle": "_catwu",
@@ -171,37 +218,46 @@
           "id": "2089409162270965858",
           "text": "You can now host your repos in Cursor Origin and deploy to Vercel via Cursor Origin which is itself hosted on Vercel. And unlike GitHub, it's online 😁",
           "created_at": "2026-08-17T17:48:58+00:00",
-          "like_count": 2631,
-          "retweet_count": 82,
-          "reply_count": 116,
+          "like_count": 4322,
+          "retweet_count": 136,
+          "reply_count": 163,
           "url": "https://x.com/rauchg/status/2089409162270965858"
+        },
+        {
+          "id": "2089804717337817514",
+          "text": "Your software factory should be a monorepo. All your company context (design, marketing, sales, engineering, support…) in one place for agents to build upon",
+          "created_at": "2026-08-18T20:00:45+00:00",
+          "like_count": 1180,
+          "retweet_count": 49,
+          "reply_count": 61,
+          "url": "https://x.com/rauchg/status/2089804717337817514"
+        },
+        {
+          "id": "2089747453004468339",
+          "text": "We are putting $1M towards verifying the security of Vercel Sandbox, in the open. You're free to test any model in the world to try and find an escape.\n\nI'm looking forward to bringing transparency to what frontier models can and cannot do in terms of real-world guardrail exploitability.\n\nIf escapes are discovered, we'll be ready to patch, iterate, and share our findings with the broader community to strengthen global cybersecurity.",
+          "created_at": "2026-08-18T16:13:13+00:00",
+          "like_count": 1104,
+          "retweet_count": 49,
+          "reply_count": 54,
+          "url": "https://x.com/rauchg/status/2089747453004468339"
+        },
+        {
+          "id": "2089744789982069006",
+          "text": "Agents can now exploit vulnerable sandbox boundaries, so we are testing ours in the open.\n\n$1,000,000 hacker challenge for Vercel Sandbox:\n\n• Escape the Firecracker microVM\n• Defeat the host-side network boundary\n• Up to $50k/report via @Hacker0x01\n\nhttps://t.co/6l4HL845jc",
+          "created_at": "2026-08-18T16:02:38+00:00",
+          "like_count": 783,
+          "retweet_count": 76,
+          "reply_count": 46,
+          "url": "https://x.com/vercel/status/2089744789982069006"
         },
         {
           "id": "2089372856014836113",
           "text": "GPT 5.6 Sol is 50% off on AI Gateway.\n\n• Through September 18, 2026\n• Applies to both standard and fast mode\n\n'𝚘𝚙𝚎𝚗𝚊𝚒/𝚐𝚙𝚝-𝟻.𝟼-𝚜𝚘𝚕'\n\nhttps://t.co/IkZSWlh2Ul",
           "created_at": "2026-08-17T15:24:42+00:00",
-          "like_count": 563,
-          "retweet_count": 42,
-          "reply_count": 37,
+          "like_count": 678,
+          "retweet_count": 50,
+          "reply_count": 42,
           "url": "https://x.com/vercel_dev/status/2089372856014836113"
-        },
-        {
-          "id": "2089188518233100564",
-          "text": "@mynameisyahia @nextjs 🫡 so happy about this feature. Have found that agents can easily migrate to it",
-          "created_at": "2026-08-17T03:12:12+00:00",
-          "like_count": 48,
-          "retweet_count": 2,
-          "reply_count": 3,
-          "url": "https://x.com/rauchg/status/2089188518233100564"
-        },
-        {
-          "id": "2089216151519944707",
-          "text": "@poteto @shadcn Not bait. I think people reading this as all of React’s success, just think that component libraries especially shad really drove the success of the React model home \n\nAnd I expect the next React to basically start out looking more like shadcn than a component API",
-          "created_at": "2026-08-17T05:02:00+00:00",
-          "like_count": 23,
-          "retweet_count": 0,
-          "reply_count": 3,
-          "url": "https://x.com/rauchg/status/2089216151519944707"
         }
       ]
     },
@@ -212,48 +268,30 @@
       "tier": "builder",
       "tweets": [
         {
-          "id": "2088867492907327573",
-          "text": "The argument that “AI structurally centralizes power” because it’s currently compute hungry ignores 125 years of super exponential growth in compute price-performance. \n\nImprovement in algorithms and continued hardware efficiency gains     means there is no reason to assume AGI-level capabilities will always require a data center to run.\n\nScaling laws are not laws of physics. They’re simply empirical relationships observed for particular architectures, objectives, datasets etc. Change any one of those factors and you get a different scaling curve. \n\nIf the brain is any guide, true AGI will likely be very efficient. In fact, current scaling laws might a bug and not a feature. It shows how inefficiency of the ML algorithms we discovered so far.",
-          "created_at": "2026-08-16T05:56:34+00:00",
-          "like_count": 680,
-          "retweet_count": 76,
-          "reply_count": 86,
-          "url": "https://x.com/amasad/status/2088867492907327573"
-        },
-        {
-          "id": "2088868466279502118",
-          "text": "@elonmusk Saying things like might be fun but is a huge self-own. It’s almost like Tech is actively trying to scare people from AI and invite distrust.",
-          "created_at": "2026-08-16T06:00:26+00:00",
-          "like_count": 323,
-          "retweet_count": 1,
-          "reply_count": 20,
-          "url": "https://x.com/amasad/status/2088868466279502118"
-        },
-        {
-          "id": "2089028986932470156",
-          "text": "hard agree with @amasad —@JonSaadFalcon and my research indicates that intelligence efficiency (intelligence per watt) is rapidly improving and we will definitely *not* need data center scale compute to run agi!\n\nlinks to research in comments below 👇",
-          "created_at": "2026-08-16T16:38:17+00:00",
-          "like_count": 165,
-          "retweet_count": 20,
-          "reply_count": 20,
-          "url": "https://x.com/Avanika15/status/2089028986932470156"
-        },
-        {
-          "id": "2089027147419787431",
-          "text": "@patrickc Agreed, and desktop apps aren’t that much better. \n\nWe spent a better part of this year generalizing Replit into a cloud coding harness that can work on anything and render any artifact.\n\nSeen people do genetics, CAD, ML, and so many other things. Hope you try it!",
-          "created_at": "2026-08-16T16:30:58+00:00",
-          "like_count": 160,
+          "id": "2089525819567739264",
+          "text": "This team doesn’t have “AI” anywhere in their pitch but has AI growth rates and would have 10x the headcount if they weren’t so AI-pilled.",
+          "created_at": "2026-08-18T01:32:31+00:00",
+          "like_count": 272,
           "retweet_count": 3,
-          "reply_count": 8,
-          "url": "https://x.com/amasad/status/2089027147419787431"
+          "reply_count": 23,
+          "url": "https://x.com/amasad/status/2089525819567739264"
+        },
+        {
+          "id": "2089449022507606468",
+          "text": "@DavidSacks My favorite part of his strawman:\n\n“If you’re against AI regulation, how would you feel without the court system?”\n\nApparently, being concerned about a mega corporate lobbying effort is like being against the freaking JUSTICE system, the cornerstone of civilization!",
+          "created_at": "2026-08-17T20:27:21+00:00",
+          "like_count": 213,
+          "retweet_count": 9,
+          "reply_count": 5,
+          "url": "https://x.com/amasad/status/2089449022507606468"
         },
         {
           "id": "2089427187162083785",
           "text": "You can now run black-box pen tests for your Replit apps. \n\nSecurity scans that test your Replit apps the way external attackers do. \n\nReplit Agent can fix what it finds in a single click. https://t.co/AyPkiBffFa",
           "created_at": "2026-08-17T19:00:35+00:00",
-          "like_count": 76,
-          "retweet_count": 12,
-          "reply_count": 5,
+          "like_count": 167,
+          "retweet_count": 17,
+          "reply_count": 20,
           "url": "https://x.com/Replit/status/2089427187162083785"
         }
       ]
@@ -263,7 +301,17 @@
       "name": "Josh Woodward (Google Labs)",
       "domain": "ai",
       "tier": "builder",
-      "tweets": []
+      "tweets": [
+        {
+          "id": "2089520767281324112",
+          "text": "Circling back on this with some updates... What’s the next set of things we can improve to make your Gemini experience even better?\n\n#1: Testing revamped Workspace tools in 1-2 weeks\n#2: 3.7 Flash showed improvements in tool calling, more coming here\n#3: New “Projects” design done, implementing now\n#4: 49 connectors (and counting) supported now\n#5: Backend work done, frontend work started\n#6: Done\n#7: Done, ramping up now\n#8: Done\n#9: Done\n#10: Done, fixed the biggest over-triggering bugs",
+          "created_at": "2026-08-18T01:12:26+00:00",
+          "like_count": 715,
+          "retweet_count": 42,
+          "reply_count": 221,
+          "url": "https://x.com/joshwoodward/status/2089520767281324112"
+        }
+      ]
     },
     {
       "handle": "ornith_",
@@ -274,5 +322,5 @@
     }
   ],
   "errors": null,
-  "generated_at": "2026-08-17T22:49:44.838502+00:00"
+  "generated_at": "2026-08-18T22:50:00.047966+00:00"
 }
