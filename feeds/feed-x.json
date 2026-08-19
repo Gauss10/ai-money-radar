@@ -14,49 +14,49 @@
       "tier": "analyst",
       "tweets": [
         {
-          "id": "2089399057659596847",
-          "text": "Origin, our code hosting platform, is now live.\n\nIt's fast, easy to use, and deeply integrated with Cursor.\n\nGet started by syncing your repos from GitHub. https://t.co/aqRHavAOQg",
-          "created_at": "2026-08-17T17:08:49+00:00",
-          "like_count": 24572,
-          "retweet_count": 2308,
-          "reply_count": 1478,
-          "url": "https://x.com/cursor_ai/status/2089399057659596847"
-        },
-        {
-          "id": "2089384708245540877",
-          "text": "It's time to rethink RL.\n\nTranslating real world use into model improvements requires redesigning post-training algorithms for non-verifiable, per token rewards.\n\nAt @aiDotEngineer 's World Fair, we share our insights into scaling algorithms like SDPO for continual learning. https://t.co/djZqt1LdF7",
-          "created_at": "2026-08-17T16:11:47+00:00",
-          "like_count": 252,
-          "retweet_count": 22,
-          "reply_count": 11,
-          "url": "https://x.com/trajectorylabs/status/2089384708245540877"
-        },
-        {
           "id": "2089798658225266806",
           "text": "we've been doing a lot of a/b testing of @aiDotEngineer  youtube thumbnails. i always hated that it is such an opaque process.\n\nopen sourcing/crowdsourcing our learnings today!\nhttps://t.co/J9SYClIF7z\n\ndoing this in hopes that people can share their experience or learn from ours. at the end of the day we just want to get good educational content to rise above the noise online. please lmk what you think",
           "created_at": "2026-08-18T19:36:41+00:00",
-          "like_count": 89,
-          "retweet_count": 1,
-          "reply_count": 22,
+          "like_count": 167,
+          "retweet_count": 6,
+          "reply_count": 48,
           "url": "https://x.com/swyx/status/2089798658225266806"
         },
         {
           "id": "2089499493083529476",
           "text": "one way to get past the larger models thing i've been using is to periodically use larger models to make deterministic \"compound tools\" (made out of more primitive tools) that the smaller models cannot screw up. \n\npretty handy form of @erikdunteman \"muscle memory\" - sequences you do more often should be within closer reach",
           "created_at": "2026-08-17T23:47:54+00:00",
-          "like_count": 45,
-          "retweet_count": 3,
+          "like_count": 55,
+          "retweet_count": 5,
           "reply_count": 4,
           "url": "https://x.com/swyx/status/2089499493083529476"
         },
         {
-          "id": "2089264969309389138",
-          "text": "i obv care about good writing, and obv this isnt applicable to high sensitivity domains like literature, but the interesting thing about the aaronson mechanism is that the bias only applies to close-enough tournament candidates. if we trust that llms model language well, then this should genuinely kinda work and scale better the more that llms also route usecases well",
-          "created_at": "2026-08-17T08:16:00+00:00",
-          "like_count": 19,
+          "id": "2089485962229563394",
+          "text": "@random_walker meta did post hoc watermarking paper here but not sure about testing your specific prompt https://t.co/0KQWPMcOLK they apply a filter instead",
+          "created_at": "2026-08-17T22:54:08+00:00",
+          "like_count": 3,
           "retweet_count": 0,
-          "reply_count": 2,
-          "url": "https://x.com/swyx/status/2089264969309389138"
+          "reply_count": 0,
+          "url": "https://x.com/swyx/status/2089485962229563394"
+        },
+        {
+          "id": "2089873813886599663",
+          "text": "@lennysan @aiDotEngineer u gotta have some tips for me ser",
+          "created_at": "2026-08-19T00:35:19+00:00",
+          "like_count": 1,
+          "retweet_count": 0,
+          "reply_count": 0,
+          "url": "https://x.com/swyx/status/2089873813886599663"
+        },
+        {
+          "id": "2090155878792188325",
+          "text": "@pauliusztin_ @aiDotEngineer advice pls",
+          "created_at": "2026-08-19T19:16:09+00:00",
+          "like_count": 0,
+          "retweet_count": 0,
+          "reply_count": 0,
+          "url": "https://x.com/swyx/status/2090155878792188325"
         }
       ]
     },
@@ -65,7 +65,17 @@
       "name": "Dylan Patel (SemiAnalysis)",
       "domain": "ai",
       "tier": "analyst",
-      "tweets": []
+      "tweets": [
+        {
+          "id": "2089933933203075349",
+          "text": "Holy shit have y'all seen Anthropic ARR?\nAs measured by last 1 hour at 2PM times 8760",
+          "created_at": "2026-08-19T04:34:13+00:00",
+          "like_count": 1953,
+          "retweet_count": 33,
+          "reply_count": 50,
+          "url": "https://x.com/dylan522p/status/2089933933203075349"
+        }
+      ]
     },
     {
       "handle": "leopoldasch",
@@ -91,18 +101,18 @@
           "id": "2089787807611195475",
           "text": "We have paused some frontier RL training to ensure that we can meet the appropriate alignment, security and monitoring standards for the new level of capabilities in front of us. Model progress is now extremely rapid, and we always said we would take action if we felt that model capabilities were outstripping the pace of safety and alignment.\n\nWe care very deeply about AI safety. We believe the entire field will have to coordinate on shared safety standards, but will act unilaterally in the meantime.\n\nWe expect confidence in safety to increasingly set the pace of AI progress. We are optimistic about the alignment work we are doing, and we remain committed to making frontier capabilities widely available.\n\nhttps://t.co/51kvKfbfrO",
           "created_at": "2026-08-18T18:53:34+00:00",
-          "like_count": 5445,
-          "retweet_count": 396,
-          "reply_count": 912,
+          "like_count": 9548,
+          "retweet_count": 746,
+          "reply_count": 1557,
           "url": "https://x.com/sama/status/2089787807611195475"
         },
         {
           "id": "2089805495783813196",
           "text": "(We still expect to ship great new models soon; this impacts further-out releases.)",
           "created_at": "2026-08-18T20:03:51+00:00",
-          "like_count": 1450,
-          "retweet_count": 59,
-          "reply_count": 143,
+          "like_count": 3172,
+          "retweet_count": 115,
+          "reply_count": 224,
           "url": "https://x.com/sama/status/2089805495783813196"
         }
       ]
@@ -126,7 +136,26 @@
       "name": "Tang Jie (Z.ai / Tsinghua)",
       "domain": "ai",
       "tier": "exec",
-      "tweets": []
+      "tweets": [
+        {
+          "id": "2089941544581403107",
+          "text": "Thoughts About Scaling Law\n\nScaling, but not only of parameters. Every model release now ends with the same question: how many parameters? It isn't a question that can be answered on its own. Parameter count is only meaningful alongside three others — how much data you have, where you intend to spend your compute, and who will run the model, under what conditions.\n\nThe field learned this the hard way. Kaplan et al. (2020) fit an exponent that told everyone to grow parameters faster than data — roughly 2.7:1 — and the industry complied: GPT-3, Gopher, MT-NLG. Hoffmann et al. (2022) redid the experiment across four hundred models and found the compute-optimal split is closer to 20 tokens per parameter, and that with sufficient compute the two should grow at the same rate rather than drifting apart. The error in the earlier fit compounded with every order of magnitude of compute, which is why the largest models of that generation were the most misallocated. The trillion-parameter round was, in retrospect, a detour the whole field took together and then reversed.\n\nChinchilla wasn't the end either. It optimized training compute for models that would be trained once and evaluated. Today a model is called billions of times a day and inference dominates lifetime cost. Put inference into the objective and the optimum moves toward smaller models trained far longer — deliberate over-training, which is what Llama-2-7B and Gemma-2-9B were doing at roughly 290 and 889 tokens per parameter.\n\nSparsity moved the target again. In a MoE model two quantities have to be kept apart: total parameters govern roughly how much the model can hold — knowledge, facts, the long tail — while activated parameters and effective depth govern roughly how far it can think, how many steps of a causal chain it can carry before it comes apart. A dense 20:1 ratio does not transfer. And the ratio isn't a single number at all: Roberts et al. (2025) find the optimal tokens-per-parameter is task-dependent, with memorization favoring more parameters and reasoning favoring more data. Follow-up work on MoE observes that at fixed TPP, pushing total parameters higher actually degrades reasoning, while activating more experts reliably helps it.\n\nThis matters for what we are building toward. Finding a vulnerability is not a retrieval problem. It doesn't come from having memorized more CVEs; it comes from carrying a twenty-step chain of inference to the end without losing the thread. That capability does not live in total parameter count.\n\nWhich brings us to this release. Total parameters appear to matter up to a threshold — enough to hold the world — after which additional capability comes from scaling elsewhere: effective depth per forward pass, and above all post-training. GLM-5.3 is our controlled experiment on that claim. Same base, same architecture, same total and activated parameters as GLM-5.2. One month of scaling long-horizon environments and RL. The gains are not marginal. Well, scaling has more than one dial. We turned the post-training one this time because it had the most slack left in it — not because the others are finished. Base model size, pretraining data, compute spent per forward pass: all of them are still on the table, and we will come back to each. What this experiment taught us is that the dials do not have to be turned together, and that the one worth turning next is rarely the one that was worth turning last. We are not done scaling. Next time, maybe mid-training, pre-training, and even more.",
+          "created_at": "2026-08-19T05:04:28+00:00",
+          "like_count": 4323,
+          "retweet_count": 578,
+          "reply_count": 159,
+          "url": "https://x.com/jietang/status/2089941544581403107"
+        },
+        {
+          "id": "2089816129011098048",
+          "text": "GLM-5.3 API is now live.\n\n- Built for coding, defensive cybersecurity, and long-horizon agentic tasks\n- Priced the same as GLM-5.2\n- Available via the official API and partner model gateways\n\nGet started: https://t.co/3Dpy1tOdaM https://t.co/yBzgPwTFxL",
+          "created_at": "2026-08-18T20:46:06+00:00",
+          "like_count": 3436,
+          "retweet_count": 297,
+          "reply_count": 164,
+          "url": "https://x.com/Zai_org/status/2089816129011098048"
+        }
+      ]
     },
     {
       "handle": "nvidia",
@@ -135,21 +164,12 @@
       "tier": "infra",
       "tweets": [
         {
-          "id": "2089331953585607127",
-          "text": "From accelerating scientific discovery to advancing healthcare, AI can transform every industry — but the infrastructure behind it must keep pace.\n\nAt SB Energy’s PORTS-Pike Technology Campus in Southern Ohio, NVIDIA will be the exclusive AI compute infrastructure provider, with OpenAI as the customer.\n\nThe campus project will create tens of thousands of Ohio jobs and invest hundreds of millions in the community.",
-          "created_at": "2026-08-17T12:42:10+00:00",
-          "like_count": 952,
-          "retweet_count": 121,
-          "reply_count": 73,
-          "url": "https://x.com/nvidia/status/2089331953585607127"
-        },
-        {
           "id": "2089804526970642920",
           "text": "Creator Crafted. Game Ready.\n\nNVIDIA RTX Spark brings together creative workflows, local AI tools and RTX gaming in one PC. https://t.co/aFm9kl6zcU",
           "created_at": "2026-08-18T20:00:00+00:00",
-          "like_count": 82,
-          "retweet_count": 10,
-          "reply_count": 11,
+          "like_count": 251,
+          "retweet_count": 25,
+          "reply_count": 30,
           "url": "https://x.com/nvidia/status/2089804526970642920"
         }
       ]
@@ -175,22 +195,31 @@
       "tier": "builder",
       "tweets": [
         {
-          "id": "2089471692762673408",
-          "text": "Claude Code can design now. The new /design skill (research preview) brings Claude Design's artboard workflow into the CLI and Desktop, built on artifacts.\n\nRun /design to get editable artboards for your UI — pick one, tweak it, then have Claude implement it. https://t.co/uttl4F1G0e",
-          "created_at": "2026-08-17T21:57:26+00:00",
-          "like_count": 13672,
-          "retweet_count": 878,
-          "reply_count": 411,
-          "url": "https://x.com/ClaudeDevs/status/2089471692762673408"
-        },
-        {
           "id": "2089509659090780193",
           "text": "Perf win of the day: Claude Code CLI now uses 2x less CPU at p99.\n\nBun's garbage collector was running on a fixed timer, so it would kick in mid-turn and steal CPU right when Claude Code was busiest. Now it waits until the process is idle. https://t.co/icGc35LDQs",
           "created_at": "2026-08-18T00:28:18+00:00",
-          "like_count": 6196,
-          "retweet_count": 213,
-          "reply_count": 233,
+          "like_count": 6606,
+          "retweet_count": 228,
+          "reply_count": 241,
           "url": "https://x.com/ClaudeDevs/status/2089509659090780193"
+        },
+        {
+          "id": "2089860955266228548",
+          "text": "Claude Desktop now starts ~2x faster than it did a month ago.\n\nWhen the app started in the background, its timers got throttled and the JS engine dropped into power-saving mode. We now boot at full speed even while the window's still hidden, along with some smaller perf fixes! https://t.co/pt5UviYvkL",
+          "created_at": "2026-08-18T23:44:14+00:00",
+          "like_count": 3605,
+          "retweet_count": 129,
+          "reply_count": 194,
+          "url": "https://x.com/ClaudeDevs/status/2089860955266228548"
+        },
+        {
+          "id": "2089938162814701713",
+          "text": "@triketora Great way to use Claude!",
+          "created_at": "2026-08-19T04:51:01+00:00",
+          "like_count": 29,
+          "retweet_count": 0,
+          "reply_count": 3,
+          "url": "https://x.com/bcherny/status/2089938162814701713"
         }
       ]
     },
@@ -215,49 +244,49 @@
       "tier": "builder",
       "tweets": [
         {
-          "id": "2089409162270965858",
-          "text": "You can now host your repos in Cursor Origin and deploy to Vercel via Cursor Origin which is itself hosted on Vercel. And unlike GitHub, it's online 😁",
-          "created_at": "2026-08-17T17:48:58+00:00",
-          "like_count": 4322,
-          "retweet_count": 136,
-          "reply_count": 163,
-          "url": "https://x.com/rauchg/status/2089409162270965858"
-        },
-        {
           "id": "2089804717337817514",
           "text": "Your software factory should be a monorepo. All your company context (design, marketing, sales, engineering, support…) in one place for agents to build upon",
           "created_at": "2026-08-18T20:00:45+00:00",
-          "like_count": 1180,
-          "retweet_count": 49,
-          "reply_count": 61,
+          "like_count": 3045,
+          "retweet_count": 140,
+          "reply_count": 146,
           "url": "https://x.com/rauchg/status/2089804717337817514"
+        },
+        {
+          "id": "2089828083415355806",
+          "text": "Introducing fx, a tiny, open, native coding agent from Vercel Labs.\n\nOriginally an internal tool, fx is a harness and CLI written in Zig, optimized for research and embedding in larger systems. Today, we're open sourcing it.\n\nfx is built on three principles:\n\n1. Fast. A single native binary, no runtime to install. It cold starts in 10µs and does no unnecessary work or I/O before accepting input. fx is the answer to \"how fast can a coding agent be?\"\n\n2. Light. The 6.3MiB binary uses single-digit megabytes of memory at baseline, made for instant installation and embedding in resource-constrained environments and agent sandboxes.\n\n3. Open. Apache-2.0, model and provider agnostic, suitable for local and cloud inference. Its small core extends through skills, plugins, and MCP.\n\nMinimalism is an obsession throughout the entire harness: system prompt, tools, features, binary. The goal was to keep context usage and time to first token low, and make fx optimal for model benchmarking, sandboxing, evals, and gyms.\n\nYou can use fx directly or embed it as infrastructure. The CLI feels more like a Unix shell than an IDE in the terminal: it preserves scroll history, produces minimal output, and uses complex TUI rendering very, very sparingly. Programmatically, 𝚏𝚡 𝚊𝚜𝚔 --𝚓𝚜𝚘𝚗 gives structured output, 𝚏𝚡 𝚊𝚌𝚙 connects to editors and other clients, and WebAssembly can even run the whole thing inside the browser (see: https://t.co/wf2Trg47sC).\n\nPrivacy is a design constraint: no product telemetry, sessions and usage stay local, and no source code or prompts are shared with any endpoint other than inference. With local inference and auto-updates off, fx is fully hermetic.\n\nfx is experimental. Use at your own risk and expect frequent changes. Chat with us on X (https://t.co/A2AB2YythC) or file issues (https://t.co/GEjTHSoa1J).\n\n𝚌𝚞𝚛𝚕 -𝚏𝚜𝚂𝙻 𝚏𝚡.𝚜𝚑/𝚜𝚎𝚝𝚞𝚙.𝚜𝚑 | 𝚋𝚊𝚜𝚑\n\nhttps://t.co/g2uEuXhGnt",
+          "created_at": "2026-08-18T21:33:36+00:00",
+          "like_count": 2523,
+          "retweet_count": 242,
+          "reply_count": 153,
+          "url": "https://x.com/vercel_dev/status/2089828083415355806"
         },
         {
           "id": "2089747453004468339",
           "text": "We are putting $1M towards verifying the security of Vercel Sandbox, in the open. You're free to test any model in the world to try and find an escape.\n\nI'm looking forward to bringing transparency to what frontier models can and cannot do in terms of real-world guardrail exploitability.\n\nIf escapes are discovered, we'll be ready to patch, iterate, and share our findings with the broader community to strengthen global cybersecurity.",
           "created_at": "2026-08-18T16:13:13+00:00",
-          "like_count": 1104,
-          "retweet_count": 49,
-          "reply_count": 54,
+          "like_count": 1542,
+          "retweet_count": 73,
+          "reply_count": 70,
           "url": "https://x.com/rauchg/status/2089747453004468339"
         },
         {
           "id": "2089744789982069006",
           "text": "Agents can now exploit vulnerable sandbox boundaries, so we are testing ours in the open.\n\n$1,000,000 hacker challenge for Vercel Sandbox:\n\n• Escape the Firecracker microVM\n• Defeat the host-side network boundary\n• Up to $50k/report via @Hacker0x01\n\nhttps://t.co/6l4HL845jc",
           "created_at": "2026-08-18T16:02:38+00:00",
-          "like_count": 783,
-          "retweet_count": 76,
-          "reply_count": 46,
+          "like_count": 1258,
+          "retweet_count": 121,
+          "reply_count": 74,
           "url": "https://x.com/vercel/status/2089744789982069006"
         },
         {
-          "id": "2089372856014836113",
-          "text": "GPT 5.6 Sol is 50% off on AI Gateway.\n\n• Through September 18, 2026\n• Applies to both standard and fast mode\n\n'𝚘𝚙𝚎𝚗𝚊𝚒/𝚐𝚙𝚝-𝟻.𝟼-𝚜𝚘𝚕'\n\nhttps://t.co/IkZSWlh2Ul",
-          "created_at": "2026-08-17T15:24:42+00:00",
-          "like_count": 678,
-          "retweet_count": 50,
-          "reply_count": 42,
-          "url": "https://x.com/vercel_dev/status/2089372856014836113"
+          "id": "2089831055373316274",
+          "text": "I’ve been using https://t.co/OL0LzGtvAw as my daily driver and it’s a one-way street.\n\nIt’s 10-20x smaller than the major coding CLIs. It starts up instantaneously. It feels more like using 𝚣𝚜𝚑 than an IDE in your terminal. It’s embeddable anywhere, even your browser via WebAssembly.\n\nAnd of course it’s open source and model-agnostic. It’s experimental, but give it a shot and let us know how it goes!",
+          "created_at": "2026-08-18T21:45:25+00:00",
+          "like_count": 1334,
+          "retweet_count": 45,
+          "reply_count": 84,
+          "url": "https://x.com/rauchg/status/2089831055373316274"
         }
       ]
     },
@@ -268,31 +297,49 @@
       "tier": "builder",
       "tweets": [
         {
+          "id": "2090076648276185555",
+          "text": "Replit Free Mode, powered by @OpenAI GPT-5.6 Luna. \n\nLet’s make intelligence accessible to everyone. https://t.co/UDcrYl5HZL",
+          "created_at": "2026-08-19T14:01:19+00:00",
+          "like_count": 3053,
+          "retweet_count": 312,
+          "reply_count": 215,
+          "url": "https://x.com/Replit/status/2090076648276185555"
+        },
+        {
+          "id": "2090079496124674377",
+          "text": "Agents made software cheaper but made coding expensive.\n\nToday, together with @OpenAI, we’re changing this:",
+          "created_at": "2026-08-19T14:12:38+00:00",
+          "like_count": 2950,
+          "retweet_count": 190,
+          "reply_count": 142,
+          "url": "https://x.com/amasad/status/2090079496124674377"
+        },
+        {
+          "id": "2090104535112945906",
+          "text": "Excited for our partnership with OpenAI",
+          "created_at": "2026-08-19T15:52:08+00:00",
+          "like_count": 563,
+          "retweet_count": 19,
+          "reply_count": 41,
+          "url": "https://x.com/amasad/status/2090104535112945906"
+        },
+        {
           "id": "2089525819567739264",
           "text": "This team doesn’t have “AI” anywhere in their pitch but has AI growth rates and would have 10x the headcount if they weren’t so AI-pilled.",
           "created_at": "2026-08-18T01:32:31+00:00",
-          "like_count": 272,
-          "retweet_count": 3,
-          "reply_count": 23,
+          "like_count": 283,
+          "retweet_count": 4,
+          "reply_count": 29,
           "url": "https://x.com/amasad/status/2089525819567739264"
         },
         {
-          "id": "2089449022507606468",
-          "text": "@DavidSacks My favorite part of his strawman:\n\n“If you’re against AI regulation, how would you feel without the court system?”\n\nApparently, being concerned about a mega corporate lobbying effort is like being against the freaking JUSTICE system, the cornerstone of civilization!",
-          "created_at": "2026-08-17T20:27:21+00:00",
-          "like_count": 213,
-          "retweet_count": 9,
-          "reply_count": 5,
-          "url": "https://x.com/amasad/status/2089449022507606468"
-        },
-        {
-          "id": "2089427187162083785",
-          "text": "You can now run black-box pen tests for your Replit apps. \n\nSecurity scans that test your Replit apps the way external attackers do. \n\nReplit Agent can fix what it finds in a single click. https://t.co/AyPkiBffFa",
-          "created_at": "2026-08-17T19:00:35+00:00",
-          "like_count": 167,
+          "id": "2090076468508320156",
+          "text": "Vibe coding company Replit debuted Free Mode today, a new feature powered by OpenAI’s GPT-5.6 Luna model. The joint announcement, shared exclusively with Fortune, heralds an enhanced partnership between the two tech companies that will see them work on several future products.\nhttps://t.co/ZaJt2sjrZ9",
+          "created_at": "2026-08-19T14:00:36+00:00",
+          "like_count": 142,
           "retweet_count": 17,
-          "reply_count": 20,
-          "url": "https://x.com/Replit/status/2089427187162083785"
+          "reply_count": 9,
+          "url": "https://x.com/FortuneMagazine/status/2090076468508320156"
         }
       ]
     },
@@ -306,9 +353,9 @@
           "id": "2089520767281324112",
           "text": "Circling back on this with some updates... What’s the next set of things we can improve to make your Gemini experience even better?\n\n#1: Testing revamped Workspace tools in 1-2 weeks\n#2: 3.7 Flash showed improvements in tool calling, more coming here\n#3: New “Projects” design done, implementing now\n#4: 49 connectors (and counting) supported now\n#5: Backend work done, frontend work started\n#6: Done\n#7: Done, ramping up now\n#8: Done\n#9: Done\n#10: Done, fixed the biggest over-triggering bugs",
           "created_at": "2026-08-18T01:12:26+00:00",
-          "like_count": 715,
-          "retweet_count": 42,
-          "reply_count": 221,
+          "like_count": 770,
+          "retweet_count": 44,
+          "reply_count": 236,
           "url": "https://x.com/joshwoodward/status/2089520767281324112"
         }
       ]
@@ -322,5 +369,5 @@
     }
   ],
   "errors": null,
-  "generated_at": "2026-08-18T22:50:00.047966+00:00"
+  "generated_at": "2026-08-19T22:50:30.552366+00:00"
 }
