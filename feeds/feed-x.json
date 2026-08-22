@@ -5,17 +5,7 @@
       "name": "Andrej Karpathy",
       "domain": "ai",
       "tier": "analyst",
-      "tweets": [
-        {
-          "id": "2090478783895929036",
-          "text": "@ChrisJMcCormick Yeah, increasingly a lot more appealing to tear down these abstractions now that agents can do a lot of the math and drudgery and verification. A lot of the abstractions were built for a world with constraints of finite intelligence and attention in the industry.",
-          "created_at": "2026-08-20T16:39:15+00:00",
-          "like_count": 253,
-          "retweet_count": 16,
-          "reply_count": 14,
-          "url": "https://x.com/karpathy/status/2090478783895929036"
-        }
-      ]
+      "tweets": []
     },
     {
       "handle": "swyx",
@@ -24,49 +14,49 @@
       "tier": "analyst",
       "tweets": [
         {
-          "id": "2090314794456785263",
-          "text": "HAHAHAHAHAHA\n\nnon technical people are so incredibly cooked they are burnt thru\n\ncan u imagine covering ai with zero context, zero reasoning, zero internal world model. it must be so delightfully joyful, everything is so amazing, face value is all you need,\n\nwhat a time to be alive",
-          "created_at": "2026-08-20T05:47:37+00:00",
-          "like_count": 1616,
-          "retweet_count": 44,
-          "reply_count": 104,
-          "url": "https://x.com/swyx/status/2090314794456785263"
-        },
-        {
-          "id": "2090538596440715455",
-          "text": "wow this is kind of a shock. from what i understand nvidia bought the \"model factory\" part of poolside and a lot of employees (researchers?) got offers from nvidia. founders staying at poolside is unusual, wondering if they will just become a neocloud/compute provider since i don't see any mention of PIC (poolside infrastructure company) here?",
-          "created_at": "2026-08-20T20:36:56+00:00",
-          "like_count": 199,
-          "retweet_count": 12,
-          "reply_count": 14,
-          "url": "https://x.com/eliebakouch/status/2090538596440715455"
-        },
-        {
-          "id": "2090550020496040266",
-          "text": "by total views, matt’s now the top @aidotengineer speaker in our brief history, and arguably one of the best skills experts in the world — his /grill-me has reached all echelons up to @satyanadella (with some variations…)\n\n/wayfinder is @mattpocockuk’s /grill-me for /grill-me, when you are just navigating the fog of war and don’t yet know what you dont yet know, and need to orchestrate research and other grill sessions to get there. super glad to have @ricmac help launch our new Skills coverage with his course launch this week!\n\n👇exclusive interview, quick read",
-          "created_at": "2026-08-20T21:22:20+00:00",
-          "like_count": 176,
-          "retweet_count": 11,
-          "reply_count": 19,
-          "url": "https://x.com/swyx/status/2090550020496040266"
+          "id": "2090948945753076141",
+          "text": "I think its easy to say \"Simulation is a new scaling law\" and treat it as marketing hyperbole, but midway along this interview you can hear me go from somewhat shitposting to very very serious. \n\nI am 2 years late to this but finally understand why @karpathy and @drfeifei backed @joon_s_pk @msbernst @percyliang et al - Smallville at the time had zero commercial applications, but if you take RSI seriously, from models automating increasingly large parts of ML research and AI engineering, the last* barrier is simulating humans and human feedback, and Simile is obviously the team to do this and already finding PMF at Fortune 100s even at this early stage.\n\nI've never been so happy to be so wrong.\n\n*or second last ! :) more soon on the Science pod",
+          "created_at": "2026-08-21T23:47:31+00:00",
+          "like_count": 273,
+          "retweet_count": 16,
+          "reply_count": 26,
+          "url": "https://x.com/swyx/status/2090948945753076141"
         },
         {
           "id": "2090577677916807429",
           "text": "proud that @vibhuuuus and i did the most recent pod with @eisokant on why NVIDIA just paid him $6B to buy the incredible model factory that is pumping out Thinky-beating models (actually not exaggeration, look at the numbers)\n\ntune in / subscribe / whatever https://t.co/EsgyFnhAIy \n\nonly on @latentspacepod",
           "created_at": "2026-08-20T23:12:14+00:00",
-          "like_count": 92,
-          "retweet_count": 12,
-          "reply_count": 23,
+          "like_count": 95,
+          "retweet_count": 13,
+          "reply_count": 26,
           "url": "https://x.com/swyx/status/2090577677916807429"
         },
         {
-          "id": "2090469849088553006",
-          "text": "ICYMI: Everything announced at #MongoDBlocal Build Fest is designed to help developers stay in flow and ship production AI, faster.\n\nFrom the new Atlas Managed MCP Server for Agents and native Atlas access inside @claudeai, Claude Code, @ChatGPT, Codex, @grok Build, @DevinAI, & @cursor_ai, to Automated Embeddings in MongoDB Atlas and @VoyageAI's voyage-code-4, plus a GA'd Embedding & Reranking API and Vector Search for Stream Processing, it's about less setup, fewer workarounds, and more time building.\n\nGet the latest: https://t.co/YGX7MGq0oN \n\n@swyx @BazeleyMikiko",
-          "created_at": "2026-08-20T16:03:45+00:00",
-          "like_count": 48,
+          "id": "2090947408238969113",
+          "text": "Simulating Humanity: 85% accurate digital twins, behavioral foundation models, social physics, & 8 billion agents https://t.co/ntIccXOr1y\n\n@simile_ai CEO @joon_s_pk explains how AI can move from predicting what people will do to simulating how to shape outcomes, why today’s frontier models still miss how humans actually behave, how digital twins reproduced people with 85% accuracy, why human biases and mistakes have to be learned rather than optimized away, and what it would take to eventually simulate all 8 billion people on Earth.",
+          "created_at": "2026-08-21T23:41:24+00:00",
+          "like_count": 77,
           "retweet_count": 4,
-          "reply_count": 2,
-          "url": "https://x.com/MongoDB/status/2090469849088553006"
+          "reply_count": 5,
+          "url": "https://x.com/latentspacepod/status/2090947408238969113"
+        },
+        {
+          "id": "2090813719018176904",
+          "text": "it was a blast covering Build Fest this year - they didnt know this but I learned to code with MongoDB over 10 years ago (shoutout MERN stack) and now in the AI Engineering era seeing SF builders rediscover MDB was so gratifying - this was a *huge* step up from last year!",
+          "created_at": "2026-08-21T14:50:10+00:00",
+          "like_count": 71,
+          "retweet_count": 1,
+          "reply_count": 19,
+          "url": "https://x.com/swyx/status/2090813719018176904"
+        },
+        {
+          "id": "2090877494177972268",
+          "text": "@NickADobos @aiDotEngineer @satyanadella @mattpocockuk iykyk",
+          "created_at": "2026-08-21T19:03:35+00:00",
+          "like_count": 2,
+          "retweet_count": 0,
+          "reply_count": 0,
+          "url": "https://x.com/swyx/status/2090877494177972268"
         }
       ]
     },
@@ -75,7 +65,17 @@
       "name": "Dylan Patel (SemiAnalysis)",
       "domain": "ai",
       "tier": "analyst",
-      "tweets": []
+      "tweets": [
+        {
+          "id": "2090957403424776270",
+          "text": "God damnit, every one of my AI founder friends who actually have revenue are now just transforming into neoclouds with value add on top",
+          "created_at": "2026-08-22T00:21:07+00:00",
+          "like_count": 1446,
+          "retweet_count": 46,
+          "reply_count": 92,
+          "url": "https://x.com/dylan522p/status/2090957403424776270"
+        }
+      ]
     },
     {
       "handle": "leopoldasch",
@@ -117,26 +117,7 @@
       "name": "Tang Jie (Z.ai / Tsinghua)",
       "domain": "ai",
       "tier": "exec",
-      "tweets": [
-        {
-          "id": "2090363702042304847",
-          "text": "An excellent history of scaling laws from @jietang.\n\nIn 2020, we explored the limits of sparsity in Switch Transformers by routing each token to only 1 out of 2048 experts (in retrospect, a bold choice). The model had fewer than 3B activated parameters, but 1.6T total parameters (comparable to today's frontier models).\n\nThe 1.6T model achieved better C4 perplexities than the T5 models using far less compute, set a new SOTA on TriviaQA, but was dumb as bricks on reasoning tasks like SuperGLUE. \n\nThe lesson was that the optimal tokens-per-parameter ratio is highly task-dependent. Or as @NShazeer had already intuited: FLOPs were intelligence; parameters were knowledge!",
-          "created_at": "2026-08-20T09:01:58+00:00",
-          "like_count": 565,
-          "retweet_count": 46,
-          "reply_count": 12,
-          "url": "https://x.com/LiamFedus/status/2090363702042304847"
-        },
-        {
-          "id": "2090319632133673217",
-          "text": "@haibinLEE1 LLM could generalize a bit beyond knowledge base",
-          "created_at": "2026-08-20T06:06:51+00:00",
-          "like_count": 3,
-          "retweet_count": 0,
-          "reply_count": 2,
-          "url": "https://x.com/jietang/status/2090319632133673217"
-        }
-      ]
+      "tweets": []
     },
     {
       "handle": "nvidia",
@@ -145,40 +126,22 @@
       "tier": "infra",
       "tweets": [
         {
-          "id": "2090343188393246973",
-          "text": "A milestone for our infrastructure: our first NVIDIA Vera Rubin racks are here and now running our training stack. This is an important step as we expand compute that powers OpenAI's next generation of frontier AI pre-training. https://t.co/HXk6DrfLav",
-          "created_at": "2026-08-20T07:40:27+00:00",
-          "like_count": 1543,
-          "retweet_count": 102,
-          "reply_count": 69,
-          "url": "https://x.com/udayruddarraju/status/2090343188393246973"
+          "id": "2090929770779521310",
+          "text": "Delivery day at our Microsoft DCs as the first production Vera Rubins arrive. A huge thank you to our partners at @nvidia and our Azure hardware and datacenter teams for all the incredible work that brought us to this milestone! https://t.co/pBqKArGO1N",
+          "created_at": "2026-08-21T22:31:19+00:00",
+          "like_count": 7175,
+          "retweet_count": 606,
+          "reply_count": 302,
+          "url": "https://x.com/satyanadella/status/2090929770779521310"
         },
         {
-          "id": "2090473127658570184",
-          "text": "Awesome to see the first NVIDIA Vera Rubin racks powering @OpenAI 's training stack. \n\nTogether, we’re building the accelerated computing infrastructure to advance frontier AI.",
-          "created_at": "2026-08-20T16:16:47+00:00",
-          "like_count": 751,
-          "retweet_count": 85,
-          "reply_count": 48,
-          "url": "https://x.com/nvidia/status/2090473127658570184"
-        },
-        {
-          "id": "2090548358868070801",
-          "text": "The right model depends on the task.\n\nNVIDIA NeMo Switchyard helps developers route each agent workflow step across a chosen model pool based on their own quality, latency and cost criteria.\n\nKari Briski joins @MTSlive to explain why agent workflows need model routing. https://t.co/3fMDh26MKY",
-          "created_at": "2026-08-20T21:15:43+00:00",
-          "like_count": 281,
-          "retweet_count": 45,
-          "reply_count": 41,
-          "url": "https://x.com/nvidia/status/2090548358868070801"
-        },
-        {
-          "id": "2090511030548132122",
-          "text": "@Razorpay Great to see Razorpay Vulcan live, bringing AI foundation models to India’s payments ecosystem. Excited to see what this enables for developers, businesses and customers across the country.",
-          "created_at": "2026-08-20T18:47:24+00:00",
-          "like_count": 2,
-          "retweet_count": 1,
-          "reply_count": 0,
-          "url": "https://x.com/nvidia/status/2090511030548132122"
+          "id": "2090944279103635481",
+          "text": "NVIDIA Vera Rubin is ramping into full production. Congrats to the teams at @Microsoft who made this exciting milestone happen.",
+          "created_at": "2026-08-21T23:28:58+00:00",
+          "like_count": 2214,
+          "retweet_count": 216,
+          "reply_count": 67,
+          "url": "https://x.com/nvidia/status/2090944279103635481"
         }
       ]
     },
@@ -203,30 +166,12 @@
       "tier": "builder",
       "tweets": [
         {
-          "id": "2090537902912815536",
-          "text": "We've been working on this with customers for a while. Mythos-class models require additional safety measures and enterprises need to meet their own privacy and compliance rules. Customers can own and control their own data and Anthropic retains none. It’s coming this fall.",
-          "created_at": "2026-08-20T20:34:11+00:00",
-          "like_count": 2182,
-          "retweet_count": 123,
-          "reply_count": 167,
-          "url": "https://x.com/bcherny/status/2090537902912815536"
-        },
-        {
-          "id": "2090499283682300333",
-          "text": "Anthropic Plans to Change Data Retention Policy for Advanced AI https://t.co/U2Xk1tM9Cp",
-          "created_at": "2026-08-20T18:00:43+00:00",
-          "like_count": 162,
-          "retweet_count": 14,
-          "reply_count": 6,
-          "url": "https://x.com/business/status/2090499283682300333"
-        },
-        {
           "id": "2090674260465598470",
           "text": "@_sandeep47 @dedene As models improve, I suspect we won’t need code review",
           "created_at": "2026-08-21T05:36:01+00:00",
-          "like_count": 21,
-          "retweet_count": 0,
-          "reply_count": 4,
+          "like_count": 48,
+          "retweet_count": 1,
+          "reply_count": 6,
           "url": "https://x.com/bcherny/status/2090674260465598470"
         }
       ]
@@ -236,7 +181,26 @@
       "name": "Cat Wu (Anthropic)",
       "domain": "ai",
       "tier": "builder",
-      "tweets": []
+      "tweets": [
+        {
+          "id": "2091216768970965095",
+          "text": "@thecandykeynes this is not for training",
+          "created_at": "2026-08-22T17:31:45+00:00",
+          "like_count": 0,
+          "retweet_count": 0,
+          "reply_count": 0,
+          "url": "https://x.com/_catwu/status/2091216768970965095"
+        },
+        {
+          "id": "2091215235994747012",
+          "text": "@angeldemirev claude with computer use should be able to navigate workday easily! if you’re running into issues, please dm me with what claude is not doing correctly",
+          "created_at": "2026-08-22T17:25:39+00:00",
+          "like_count": 0,
+          "retweet_count": 0,
+          "reply_count": 0,
+          "url": "https://x.com/_catwu/status/2091215235994747012"
+        }
+      ]
     },
     {
       "handle": "alexalbert__",
@@ -252,31 +216,31 @@
       "tier": "builder",
       "tweets": [
         {
-          "id": "2090857388924661915",
-          "text": "Introducing https://t.co/8MeR16MRQn, a tool to measure how well agents can read your site. Backed by @oradotai's research, you can run:\n\n▪︎ Audits with 100+ checks\n▪︎ Visualizations of agents using your site\n▪︎ One-click prompts to fix problems\n▪︎ A CLI for agents",
-          "created_at": "2026-08-21T17:43:42+00:00",
-          "like_count": 1111,
-          "retweet_count": 90,
-          "reply_count": 90,
-          "url": "https://x.com/vercel_dev/status/2090857388924661915"
+          "id": "2091229263701905662",
+          "text": "I used 𝚏𝚡 to build Mini, a personal web browser.\n\nMany times I need to screen share, stream, or just test something without the 'bloat' and state of my browser. So I go Mini.\n\nThis was a cool test for https://t.co/OL0LzGtvAw and open models. It was the first time I experienced how cheap, but also how *good* these things can be.\n\n'Personal software' is a hot topic. \"I spent $25,000USD to cancel my $10 XYZ subscription\" is a real thing 😂 (especially in Enterprises these days). \n\nBut I think open and local models will change this dynamic very profoundly. Software will really become spontaneous.\n\nps: shoutout to Orion browser who inspired me with 'focus mode'. I wanted my browser to be even more minimal, hackable, and run on Chromium.",
+          "created_at": "2026-08-22T18:21:24+00:00",
+          "like_count": 447,
+          "retweet_count": 9,
+          "reply_count": 37,
+          "url": "https://x.com/rauchg/status/2091229263701905662"
         },
         {
-          "id": "2090858571613470919",
-          "text": "This was wild to watch unfold. We ran 𝚒𝚜-𝚊𝚐𝚎𝚗𝚝𝚒𝚌 in a loop against https://t.co/bnjggVrBDj until it got to 100/100.\n\nIt made us close quite a few gaps. We worked hard to make sure the criteria is high quality and worth your time &amp; tokens.",
-          "created_at": "2026-08-21T17:48:24+00:00",
-          "like_count": 890,
-          "retweet_count": 33,
-          "reply_count": 66,
-          "url": "https://x.com/rauchg/status/2090858571613470919"
+          "id": "2091234105702887879",
+          "text": "Today's a record day for open weight share of tokens on Vercel AI Gateway.\n\nAug 22 (today)\n🟦 Open: 62%\n🟨 Closed: 38%\n\nJun 24 (~2 months ago)\n🟦 Open: 28.4%\n🟨 Closed: 71.6% \n\nThis is very likely just the start, because enterprise adoption is still early, and harnesses, CLIs, IDEs, SDKs, etc need to be adapted to be model agnostic.",
+          "created_at": "2026-08-22T18:40:38+00:00",
+          "like_count": 297,
+          "retweet_count": 29,
+          "reply_count": 41,
+          "url": "https://x.com/rauchg/status/2091234105702887879"
         },
         {
-          "id": "2090772065557397564",
-          "text": "@wil1fred @vercel I love being the place where people build these and deploy their artifacts to. \n\nThe reason we invest in @aisdk, https://t.co/G0UyDr4xgg, sandbox, gateway etc is that they provide the building blocks to novel IDEs &amp; software factories",
-          "created_at": "2026-08-21T12:04:39+00:00",
-          "like_count": 2,
+          "id": "2090959728939802868",
+          "text": "@bullbear_info @grok Did you have env exposing an ai gateway key? Dm me for details!",
+          "created_at": "2026-08-22T00:30:22+00:00",
+          "like_count": 1,
           "retweet_count": 0,
           "reply_count": 1,
-          "url": "https://x.com/rauchg/status/2090772065557397564"
+          "url": "https://x.com/rauchg/status/2090959728939802868"
         }
       ]
     },
@@ -290,19 +254,10 @@
           "id": "2090808854594646106",
           "text": "Replit Free Mode vs Gemini 3.7 Flash vs Grok 4.6 vs Claude Opus 5\n\nI asked each of them to create a Subway Surfer clone.\n\nWhich one wins for you? https://t.co/kp7MmtcgNj",
           "created_at": "2026-08-21T14:30:50+00:00",
-          "like_count": 56,
-          "retweet_count": 2,
-          "reply_count": 14,
+          "like_count": 82,
+          "retweet_count": 4,
+          "reply_count": 18,
           "url": "https://x.com/CodeByPoonam/status/2090808854594646106"
-        },
-        {
-          "id": "2090549496816267589",
-          "text": "@tab_hasan @OpenAI What are you talking about? As far as CEOs in tech, Sam is one of the very few that showed any support. https://t.co/0NcQHvt8jy",
-          "created_at": "2026-08-20T21:20:15+00:00",
-          "like_count": 55,
-          "retweet_count": 0,
-          "reply_count": 4,
-          "url": "https://x.com/amasad/status/2090549496816267589"
         },
         {
           "id": "2090662219843555455",
@@ -312,15 +267,6 @@
           "retweet_count": 0,
           "reply_count": 1,
           "url": "https://x.com/amasad/status/2090662219843555455"
-        },
-        {
-          "id": "2090516972262015291",
-          "text": "@Andrew_Blumson @Replit @OpenAI Sick!",
-          "created_at": "2026-08-20T19:11:00+00:00",
-          "like_count": 2,
-          "retweet_count": 0,
-          "reply_count": 0,
-          "url": "https://x.com/amasad/status/2090516972262015291"
         }
       ]
     },
@@ -329,7 +275,17 @@
       "name": "Josh Woodward (Google Labs)",
       "domain": "ai",
       "tier": "builder",
-      "tweets": []
+      "tweets": [
+        {
+          "id": "2091171998559076432",
+          "text": "@koltregaskes Just to make sure I understand: you want Gemini to set an alarm on your phone based on, say, a F1 race start time week to week?",
+          "created_at": "2026-08-22T14:33:51+00:00",
+          "like_count": 124,
+          "retweet_count": 1,
+          "reply_count": 17,
+          "url": "https://x.com/joshwoodward/status/2091171998559076432"
+        }
+      ]
     },
     {
       "handle": "ornith_",
@@ -338,53 +294,53 @@
       "tier": "builder",
       "tweets": [
         {
+          "id": "2090902037395649003",
+          "text": "🐦Now we can just burn some tokens🔥\n\n🫡Thanks @runinfrai for the support!\n\nhttps://t.co/qv0HPdAPPy",
+          "created_at": "2026-08-21T20:41:07+00:00",
+          "like_count": 149,
+          "retweet_count": 4,
+          "reply_count": 7,
+          "url": "https://x.com/ornith_/status/2090902037395649003"
+        },
+        {
           "id": "2090842337518002316",
           "text": "216 tok/s. 167ms to first token. 262,144 token context\n\nOrnith 1.5 35B is now live on RunInfra\n\n$0.10/1M input. $0.40/1M output. $0.01/1M cached. 90% of input hits the cache, so effective input is ~$0.02/1M\n\n1M in + 1M out with a warm cache costs $0.42\n\nhttps://t.co/mh3Je0blGn https://t.co/HcfK2Qmk4W",
           "created_at": "2026-08-21T16:43:53+00:00",
-          "like_count": 77,
-          "retweet_count": 8,
-          "reply_count": 8,
+          "like_count": 111,
+          "retweet_count": 9,
+          "reply_count": 9,
           "url": "https://x.com/runinfrai/status/2090842337518002316"
         },
         {
           "id": "2090861778326393309",
           "text": "Over the last day I've run an extensive set of benchmarks on Qwen3.6-35B-A3B vs Ornith-1.5-35B-A3B.\n\nThe results are in. I will post a more detailed thread of the breakdown shortly, but the clear winner is Ornith. Especially as it comes to coding, math and science.\n\nI chose to test both MoE models against each other to compare apples to apples.",
           "created_at": "2026-08-21T18:01:08+00:00",
-          "like_count": 63,
-          "retweet_count": 9,
-          "reply_count": 14,
+          "like_count": 98,
+          "retweet_count": 13,
+          "reply_count": 18,
           "url": "https://x.com/Mayhem4Markets/status/2090861778326393309"
         },
         {
-          "id": "2090902037395649003",
-          "text": "🐦Now we can just burn some tokens🔥\n\n🫡Thanks @runinfrai for the support!\n\nhttps://t.co/qv0HPdAPPy",
-          "created_at": "2026-08-21T20:41:07+00:00",
-          "like_count": 39,
-          "retweet_count": 1,
-          "reply_count": 2,
-          "url": "https://x.com/ornith_/status/2090902037395649003"
+          "id": "2091188849791676719",
+          "text": "turned thinking mode on and re-ran the hard test on Ornith 1.5 35B.\n\nGPQA-diamond, same harness as this morning's board, zero-shot greedy, 16k reasoning budget: 52.0 -> 81.8.\n\nthat lands it level with the best dense 27B rungs on my ladder with their thinking on (79.3 to 80.8), and this model decodes at 303 tok/s on one RTX 5090 where those rungs do 53 to 96.\n\nthinking mode is worth ~30 points on this benchmark, the same band the dense ladder measured.",
+          "created_at": "2026-08-22T15:40:48+00:00",
+          "like_count": 94,
+          "retweet_count": 10,
+          "reply_count": 20,
+          "url": "https://x.com/witcheer/status/2091188849791676719"
         },
         {
-          "id": "2090529055644987703",
-          "text": "Ever wanted a compact AI that talks like a pro? Meet Ornith-1.5-9B-GGUF, a text-generation powerhouse that fits right into your workflow. With 54k downloads and 101 likes, it's already winning hearts. Curious? Let's dive in! #AI #LLM https://t.co/6LvF7lRYhG",
-          "created_at": "2026-08-20T19:59:01+00:00",
-          "like_count": 9,
-          "retweet_count": 1,
-          "reply_count": 1,
-          "url": "https://x.com/HuggingModels/status/2090529055644987703"
-        },
-        {
-          "id": "2090568144767295785",
-          "text": "@DanWahlin @nvidia 🧡",
-          "created_at": "2026-08-20T22:34:21+00:00",
-          "like_count": 1,
+          "id": "2091239887504851239",
+          "text": "@llama_cpp 🥳welcome!",
+          "created_at": "2026-08-22T19:03:37+00:00",
+          "like_count": 0,
           "retweet_count": 0,
           "reply_count": 0,
-          "url": "https://x.com/ornith_/status/2090568144767295785"
+          "url": "https://x.com/ornith_/status/2091239887504851239"
         }
       ]
     }
   ],
   "errors": null,
-  "generated_at": "2026-08-21T22:50:23.067921+00:00"
+  "generated_at": "2026-08-22T22:47:17.699400+00:00"
 }
