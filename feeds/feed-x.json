@@ -12,43 +12,14 @@
       "name": "Swyx (Shawn Wang)",
       "domain": "ai",
       "tier": "analyst",
-      "tweets": [
-        {
-          "id": "2090948945753076141",
-          "text": "I think its easy to say \"Simulation is a new scaling law\" and treat it as marketing hyperbole, but midway along this interview you can hear me go from somewhat shitposting to very very serious. \n\nI am 2 years late to this but finally understand why @karpathy and @drfeifei backed @joon_s_pk @msbernst @percyliang et al - Smallville at the time had zero commercial applications, but if you take RSI seriously, from models automating increasingly large parts of ML research and AI engineering, the last* barrier is simulating humans and human feedback, and Simile is obviously the team to do this and already finding PMF at Fortune 100s even at this early stage.\n\nI've never been so happy to be so wrong.\n\n*or second last ! :) more soon on the Science pod",
-          "created_at": "2026-08-21T23:47:31+00:00",
-          "like_count": 337,
-          "retweet_count": 20,
-          "reply_count": 41,
-          "url": "https://x.com/swyx/status/2090948945753076141"
-        },
-        {
-          "id": "2090947408238969113",
-          "text": "Simulating Humanity: 85% accurate digital twins, behavioral foundation models, social physics, & 8 billion agents https://t.co/ntIccXOr1y\n\n@simile_ai CEO @joon_s_pk explains how AI can move from predicting what people will do to simulating how to shape outcomes, why today’s frontier models still miss how humans actually behave, how digital twins reproduced people with 85% accuracy, why human biases and mistakes have to be learned rather than optimized away, and what it would take to eventually simulate all 8 billion people on Earth.",
-          "created_at": "2026-08-21T23:41:24+00:00",
-          "like_count": 93,
-          "retweet_count": 5,
-          "reply_count": 5,
-          "url": "https://x.com/latentspacepod/status/2090947408238969113"
-        }
-      ]
+      "tweets": []
     },
     {
       "handle": "dylan522p",
       "name": "Dylan Patel (SemiAnalysis)",
       "domain": "ai",
       "tier": "analyst",
-      "tweets": [
-        {
-          "id": "2090957403424776270",
-          "text": "God damnit, every one of my AI founder friends who actually have revenue are now just transforming into neoclouds with value add on top",
-          "created_at": "2026-08-22T00:21:07+00:00",
-          "like_count": 1565,
-          "retweet_count": 50,
-          "reply_count": 100,
-          "url": "https://x.com/dylan522p/status/2090957403424776270"
-        }
-      ]
+      "tweets": []
     },
     {
       "handle": "leopoldasch",
@@ -97,17 +68,7 @@
       "name": "NVIDIA (Jensen Huang / AI infrastructure)",
       "domain": "ai",
       "tier": "infra",
-      "tweets": [
-        {
-          "id": "2090944279103635481",
-          "text": "NVIDIA Vera Rubin is ramping into full production. Congrats to the teams at @Microsoft who made this exciting milestone happen.",
-          "created_at": "2026-08-21T23:28:58+00:00",
-          "like_count": 2401,
-          "retweet_count": 234,
-          "reply_count": 75,
-          "url": "https://x.com/nvidia/status/2090944279103635481"
-        }
-      ]
+      "tweets": []
     },
     {
       "handle": "JensenHuang",
@@ -128,79 +89,14 @@
       "name": "Boris Cherny (Claude Code)",
       "domain": "ai",
       "tier": "builder",
-      "tweets": [
-        {
-          "id": "2091308045284585724",
-          "text": "@scaling01 Agree. People are sleeping on using Opus to hill climb. We use it for optimizing CPU and memory, optimizing CI times, improving frame rates, reducing latency, any other kind of problem in the shape of “iterate on X with a profiler and dataset until it hits Y”",
-          "created_at": "2026-08-22T23:34:27+00:00",
-          "like_count": 1476,
-          "retweet_count": 55,
-          "reply_count": 202,
-          "url": "https://x.com/bcherny/status/2091308045284585724"
-        },
-        {
-          "id": "2091589188298891264",
-          "text": "tbh this is a good debate to have.\n\nHere is what the timeline of the near past/future looks like to me:\n\n1. Models are able to code better than I can\n2. Models are able to do coding-adjacent engineering work better than I can: debugging, profiling, optimizing, bug fixing, system design, abstraction design, ui design, idea generation, etc.\n3. Models are able to do most things that can be done on a computer better than most people\n\nFor the kinds of coding that I do, Claude has achieved 1 and some (but not all) of 2. It is showing early-ish signs of 3.\n\nThis is not the case for all coding yet. If you are Anders Hejlsberg and are a world class expert in compilers and type systems, Claude might not be at 1 yet. My bet would be that it gets there quite soon, while at the same time pushing further into 2-3 territory for the rest of us.\n\nYou can think of model capabilities as capturing the distribution of human ability. I consider myself an average programmer so Claude has already surpassed me, but the same is not yet true for everyone.\n\nBack in Nov 2025 I fully stopped writing code by hand, though I continue to code (using agents) every day. That is the point where for me and many others around me, it felt fair to say that coding is solved. But engineering is more than coding. Claude’s code is not perfect. It has bugs and inefficiencies. Claude can code, but it cannot yet do everything that goes into engineering.\n\nOpus 4.8 is the first model that felt like it could code better than me. Fable now routinely finds optimizations and debugs issues that I would not have been able to fix myself. And with each generation, the code the model produces continues to improve, and the model is able to do more of the non-coding parts of engineering.",
-          "created_at": "2026-08-23T18:11:36+00:00",
-          "like_count": 673,
-          "retweet_count": 34,
-          "reply_count": 60,
-          "url": "https://x.com/bcherny/status/2091589188298891264"
-        },
-        {
-          "id": "2091591570982371454",
-          "text": "Hey, hope it didn’t sound dismissive. I really do use Opus for a lot of work, and was sharing an example of a kind of task where it excels.\n\nEvery model has different strengths and quirks — eg. Opus excels at long running work and coding, but it has quirks. Verbosity in particular has been top of mind, in addition to other issues you listed. We know Opus is not perfect, and it is a big priority for the team to fix it. \n\nFor verbosity, we shipped a quick band aid so you don’t have to wait for the longer term fix. Run: claude /config outputStyle=concise",
-          "created_at": "2026-08-23T18:21:05+00:00",
-          "like_count": 500,
-          "retweet_count": 16,
-          "reply_count": 57,
-          "url": "https://x.com/bcherny/status/2091591570982371454"
-        },
-        {
-          "id": "2091583232357851533",
-          "text": "@kunchenguid We use Opus for all sorts of work, not just profiling",
-          "created_at": "2026-08-23T17:47:56+00:00",
-          "like_count": 163,
-          "retweet_count": 0,
-          "reply_count": 41,
-          "url": "https://x.com/bcherny/status/2091583232357851533"
-        },
-        {
-          "id": "2091589586405429638",
-          "text": "@kunchenguid claude /config outputStyle=concise",
-          "created_at": "2026-08-23T18:13:11+00:00",
-          "like_count": 39,
-          "retweet_count": 3,
-          "reply_count": 13,
-          "url": "https://x.com/bcherny/status/2091589586405429638"
-        }
-      ]
+      "tweets": []
     },
     {
       "handle": "_catwu",
       "name": "Cat Wu (Anthropic)",
       "domain": "ai",
       "tier": "builder",
-      "tweets": [
-        {
-          "id": "2091216768970965095",
-          "text": "@thecandykeynes this is not for training",
-          "created_at": "2026-08-22T17:31:45+00:00",
-          "like_count": 0,
-          "retweet_count": 0,
-          "reply_count": 0,
-          "url": "https://x.com/_catwu/status/2091216768970965095"
-        },
-        {
-          "id": "2091215235994747012",
-          "text": "@angeldemirev claude with computer use should be able to navigate workday easily! if you’re running into issues, please dm me with what claude is not doing correctly",
-          "created_at": "2026-08-22T17:25:39+00:00",
-          "like_count": 0,
-          "retweet_count": 0,
-          "reply_count": 0,
-          "url": "https://x.com/_catwu/status/2091215235994747012"
-        }
-      ]
+      "tweets": []
     },
     {
       "handle": "alexalbert__",
@@ -214,88 +110,30 @@
       "name": "Guillermo Rauch (Vercel)",
       "domain": "ai",
       "tier": "builder",
-      "tweets": [
-        {
-          "id": "2091234105702887879",
-          "text": "Today's a record day for open weight share of tokens on Vercel AI Gateway.\n\nAug 22 (today)\n🟦 Open: 62%\n🟨 Closed: 38%\n\nJun 24 (~2 months ago)\n🟦 Open: 28.4%\n🟨 Closed: 71.6% \n\nThis is very likely just the start, because enterprise adoption is still early, and harnesses, CLIs, IDEs, SDKs, etc need to be adapted to be model agnostic.",
-          "created_at": "2026-08-22T18:40:38+00:00",
-          "like_count": 878,
-          "retweet_count": 89,
-          "reply_count": 76,
-          "url": "https://x.com/rauchg/status/2091234105702887879"
-        },
-        {
-          "id": "2091583525661384813",
-          "text": "Our philosophy on extending 𝚏𝚡: open protocols.\n∙ MCP (modelcontextprotocol⁠.io)\n∙ Skills (agentskills⁠.io)\n∙ Plugins (agent-plugins⁠.org)\n\nAnd the best one, Unix:\n\n① Small programs that do one thing well and compose by calling other programs.\n\n② 𝚕𝚒𝚋𝚏𝚡 that enables embeddability into more complex programs. You should be able to build your own CLI, background agent, software factory. Local or cloud.",
-          "created_at": "2026-08-23T17:49:06+00:00",
-          "like_count": 498,
-          "retweet_count": 25,
-          "reply_count": 38,
-          "url": "https://x.com/rauchg/status/2091583525661384813"
-        }
-      ]
+      "tweets": []
     },
     {
       "handle": "amasad",
       "name": "Amjad Masad (Replit)",
       "domain": "ai",
       "tier": "builder",
-      "tweets": [
-        {
-          "id": "2091311652494803424",
-          "text": "The team has been busy lately. This is what shipped on Replit this week:\n- Free Mode\n- Conversations\n- Routines\n- Steer conversations\n- Import Skills from GitHub\n- Control models across Workspaces\n- Black-box pen tests https://t.co/heoEPR7j1P",
-          "created_at": "2026-08-22T23:48:47+00:00",
-          "like_count": 49,
-          "retweet_count": 8,
-          "reply_count": 2,
-          "url": "https://x.com/raoufcode/status/2091311652494803424"
-        }
-      ]
+      "tweets": []
     },
     {
       "handle": "joshwoodward",
       "name": "Josh Woodward (Google Labs)",
       "domain": "ai",
       "tier": "builder",
-      "tweets": [
-        {
-          "id": "2091171998559076432",
-          "text": "@koltregaskes Just to make sure I understand: you want Gemini to set an alarm on your phone based on, say, a F1 race start time week to week?",
-          "created_at": "2026-08-22T14:33:51+00:00",
-          "like_count": 142,
-          "retweet_count": 1,
-          "reply_count": 20,
-          "url": "https://x.com/joshwoodward/status/2091171998559076432"
-        }
-      ]
+      "tweets": []
     },
     {
       "handle": "ornith_",
       "name": "Ornith (agentic coding LLM)",
       "domain": "ai",
       "tier": "builder",
-      "tweets": [
-        {
-          "id": "2091188849791676719",
-          "text": "turned thinking mode on and re-ran the hard test on Ornith 1.5 35B.\n\nGPQA-diamond, same harness as this morning's board, zero-shot greedy, 16k reasoning budget: 52.0 -> 81.8.\n\nthat lands it level with the best dense 27B rungs on my ladder with their thinking on (79.3 to 80.8), and this model decodes at 303 tok/s on one RTX 5090 where those rungs do 53 to 96.\n\nthinking mode is worth ~30 points on this benchmark, the same band the dense ladder measured.",
-          "created_at": "2026-08-22T15:40:48+00:00",
-          "like_count": 162,
-          "retweet_count": 13,
-          "reply_count": 26,
-          "url": "https://x.com/witcheer/status/2091188849791676719"
-        },
-        {
-          "id": "2091239887504851239",
-          "text": "@llama_cpp 🥳welcome!",
-          "created_at": "2026-08-22T19:03:37+00:00",
-          "like_count": 0,
-          "retweet_count": 0,
-          "reply_count": 0,
-          "url": "https://x.com/ornith_/status/2091239887504851239"
-        }
-      ]
+      "tweets": []
     }
   ],
   "errors": null,
-  "generated_at": "2026-08-23T22:47:15.321250+00:00"
+  "generated_at": "2026-08-24T22:52:48.484637+00:00"
 }
