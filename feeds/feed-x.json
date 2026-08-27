@@ -21,49 +21,40 @@
       "tier": "analyst",
       "tweets": [
         {
-          "id": "2091694046888792462",
-          "text": "There's quite a bit of CCP funded anti datacenter and anti AI organizations.\nJust follow the money.",
-          "created_at": "2026-08-24T01:08:17+00:00",
-          "like_count": 1778,
-          "retweet_count": 144,
-          "reply_count": 173,
-          "url": "https://x.com/dylan522p/status/2091694046888792462"
-        },
-        {
           "id": "2092258594628706778",
           "text": "OpenAI Jalapeno is spicy\nUsually first generation chips aren't competitive, but OpenAI is beating Nvidia Blackwell and even Rubin\nThis is huge news!\nWe got to go into OpenAI's lab to dissect their new chip and dive into the software, architecture, and performance\nIncredible work!",
           "created_at": "2026-08-25T14:31:35+00:00",
-          "like_count": 1498,
-          "retweet_count": 85,
-          "reply_count": 51,
+          "like_count": 2080,
+          "retweet_count": 120,
+          "reply_count": 79,
           "url": "https://x.com/dylan522p/status/2092258594628706778"
         },
         {
           "id": "2092253723640598761",
           "text": "OpenAI Jalapeño: Better Than Nvidia Blackwell\nOpenAI’s self-designed ASIC compared with Rubin,\nJalapeño’s TCO, throughput per MW, and spicy deets\n\nhttps://t.co/dbuAUrRSt1",
           "created_at": "2026-08-25T14:12:14+00:00",
-          "like_count": 794,
-          "retweet_count": 76,
-          "reply_count": 57,
+          "like_count": 1024,
+          "retweet_count": 107,
+          "reply_count": 74,
           "url": "https://x.com/SemiAnalysis_/status/2092253723640598761"
         },
         {
           "id": "2092340557184143488",
           "text": "@yacineMTB I love Nvidia?",
           "created_at": "2026-08-25T19:57:17+00:00",
-          "like_count": 70,
-          "retweet_count": 1,
-          "reply_count": 10,
+          "like_count": 127,
+          "retweet_count": 0,
+          "reply_count": 14,
           "url": "https://x.com/dylan522p/status/2092340557184143488"
         },
         {
-          "id": "2091946535022215304",
-          "text": "@suchenzang There's a lot of evidence of organizations astro turfing false narratives about datacenter water use and noise, having funding from non domestic sources. \nNot sure what he accusing me of tho?\nI always tweet what I believe\nSurely you're not saying I have some alterior motive",
-          "created_at": "2026-08-24T17:51:35+00:00",
-          "like_count": 59,
+          "id": "2092627181797077453",
+          "text": "@JayKapoorNYC I did do the math.\nhttps://t.co/1FtutOoBy7",
+          "created_at": "2026-08-26T14:56:13+00:00",
+          "like_count": 87,
           "retweet_count": 2,
-          "reply_count": 12,
-          "url": "https://x.com/dylan522p/status/2091946535022215304"
+          "reply_count": 3,
+          "url": "https://x.com/dylan522p/status/2092627181797077453"
         }
       ]
     },
@@ -91,10 +82,19 @@
           "id": "2092339694210040187",
           "text": "we made a chip and it is fast",
           "created_at": "2026-08-25T19:53:51+00:00",
-          "like_count": 18595,
-          "retweet_count": 776,
-          "reply_count": 2032,
+          "like_count": 45678,
+          "retweet_count": 1934,
+          "reply_count": 3920,
           "url": "https://x.com/sama/status/2092339694210040187"
+        },
+        {
+          "id": "2092691861773160673",
+          "text": "We have conducted a thorough investigation into the Hugging Face incident.\n\nWe are releasing a technical report and accompanying blog post that reconstruct the agents’ activity, explain why existing safeguards failed, and detail how we’re preventing recurrence.\n\nhttps://t.co/hfxlbiXXiP",
+          "created_at": "2026-08-26T19:13:14+00:00",
+          "like_count": 5284,
+          "retweet_count": 673,
+          "reply_count": 321,
+          "url": "https://x.com/OpenAI/status/2092691861773160673"
         }
       ]
     },
@@ -126,49 +126,40 @@
       "tier": "infra",
       "tweets": [
         {
-          "id": "2091920680317046847",
-          "text": "The first CPU built for agents is going to work at scale. \n\n@SpaceX is deploying NVIDIA Vera to accelerate the orchestration, code execution, and data processing that powers its next generation of agentic AI — keeping GPUs fed and agents acting fast.\n\nFrom gigawatt AI factories to orbit. One NVIDIA architecture, everywhere.",
-          "created_at": "2026-08-24T16:08:50+00:00",
-          "like_count": 5209,
-          "retweet_count": 559,
-          "reply_count": 272,
-          "url": "https://x.com/nvidia/status/2091920680317046847"
-        },
-        {
           "id": "2092268362386780270",
           "text": "Today we’re launching Portable Computer on @NVIDIA DGX Spark.\n\nPortable Computer is a fully local version of Perplexity Computer, where the entire runtime: orchestrator LLM, subagent LLM, agent harness all run on your local hardware. No cloud dependency. https://t.co/plVWz5PaAw",
           "created_at": "2026-08-25T15:10:24+00:00",
-          "like_count": 2905,
-          "retweet_count": 283,
-          "reply_count": 159,
+          "like_count": 4276,
+          "retweet_count": 437,
+          "reply_count": 219,
           "url": "https://x.com/perplexity_ai/status/2092268362386780270"
-        },
-        {
-          "id": "2091904062077694153",
-          "text": "📢 First ever on-silicon NVIDIA Vera Rubin performance measured on how agents actually run. \n\n⚡ Up to 30x more throughput per megawatt and up to 35x lower token cost than GB300 NVL72.\n\nAgentic sessions are nothing like chat or summarization workloads. Context grows across hundreds of steps and can reach hundreds of thousands of tokens. \n\nNVIDIA measured Vera Rubin performance on @SemiAnalysis_ AgentX workload consisting of real-world agentic coding trajectories using DeepSeek V4 Pro model.",
-          "created_at": "2026-08-24T15:02:48+00:00",
-          "like_count": 1196,
-          "retweet_count": 116,
-          "reply_count": 76,
-          "url": "https://x.com/nvidia/status/2091904062077694153"
         },
         {
           "id": "2092337107108770116",
           "text": "NVIDIA Vera Rubin NVL72 production racks are here.\n\nThe compute tray is engineered for fast compute, assembly, and serviceability. Manufacturing is 100% automated, and every tray goes together in one minute.\n\nCongratulations to @Microsoft on the first operational Vera Rubin NVL72 racks, now rolling off @HonHai_Foxconn Ingrasys lines.",
           "created_at": "2026-08-25T19:43:34+00:00",
-          "like_count": 1053,
-          "retweet_count": 116,
-          "reply_count": 39,
+          "like_count": 2567,
+          "retweet_count": 285,
+          "reply_count": 94,
           "url": "https://x.com/nvidia/status/2092337107108770116"
         },
         {
           "id": "2092269109086126575",
           "text": "Meet Portable Computer, Perplexity's new local-first agent stack on NVIDIA DGX Spark.\n\nWhen running locally, Portable Computer offers one-click local inference setup and an optimized agentic experience for DGX Spark.\n\nLearn more and get started today: https://t.co/0UElxhCnkY https://t.co/W07ZafKYdC",
           "created_at": "2026-08-25T15:13:22+00:00",
-          "like_count": 908,
-          "retweet_count": 107,
-          "reply_count": 47,
+          "like_count": 1197,
+          "retweet_count": 144,
+          "reply_count": 65,
           "url": "https://x.com/nvidia/status/2092269109086126575"
+        },
+        {
+          "id": "2092390101959479713",
+          "text": "From the show floor to the AI factory: Hot Chips 2026 was all about extreme co-design to accelerate agentic workloads — the most complex workload in history.\n\nVera CPU, Vera Rubin, Groq 3 LPX, Spectrum-X Multiplane, BlueField-4 Scale-In networking. \n\nOne full AI stack platform built for agents.",
+          "created_at": "2026-08-25T23:14:09+00:00",
+          "like_count": 443,
+          "retweet_count": 56,
+          "reply_count": 67,
+          "url": "https://x.com/nvidia/status/2092390101959479713"
         }
       ]
     },
@@ -196,28 +187,10 @@
           "id": "2092299704864284888",
           "text": "Claude now has one memory across chat and Claude Cowork, and you decide what's in it.\n\nHand Cowork a task and it starts from what Claude already knows from your chats: the project you talked through, your manager's preferences, or the client from last quarter. https://t.co/ViKapsT8K6",
           "created_at": "2026-08-25T17:14:57+00:00",
-          "like_count": 5228,
-          "retweet_count": 290,
-          "reply_count": 241,
+          "like_count": 8089,
+          "retweet_count": 481,
+          "reply_count": 376,
           "url": "https://x.com/claudeai/status/2092299704864284888"
-        },
-        {
-          "id": "2091690757480735000",
-          "text": "Agree. In the future models will generate code without bugs, and with great architecture and ui, etc. Getting there takes research effort.\n\nPrompt injection is a good example. With a combo of alignment training and mechanistic interpretability, it turns out to be a solvable problem. It took many years.",
-          "created_at": "2026-08-24T00:55:12+00:00",
-          "like_count": 153,
-          "retweet_count": 2,
-          "reply_count": 15,
-          "url": "https://x.com/bcherny/status/2091690757480735000"
-        },
-        {
-          "id": "2091753154681672015",
-          "text": "@0xBOYD @mattpocockuk We use the same exact Fable. Cyber security refusals suck, and we are working on reducing them. More to come.",
-          "created_at": "2026-08-24T05:03:09+00:00",
-          "like_count": 27,
-          "retweet_count": 0,
-          "reply_count": 5,
-          "url": "https://x.com/bcherny/status/2091753154681672015"
         }
       ]
     },
@@ -231,18 +204,18 @@
           "id": "2092299704864284888",
           "text": "Claude now has one memory across chat and Claude Cowork, and you decide what's in it.\n\nHand Cowork a task and it starts from what Claude already knows from your chats: the project you talked through, your manager's preferences, or the client from last quarter. https://t.co/ViKapsT8K6",
           "created_at": "2026-08-25T17:14:57+00:00",
-          "like_count": 5228,
-          "retweet_count": 290,
-          "reply_count": 241,
+          "like_count": 8089,
+          "retweet_count": 481,
+          "reply_count": 376,
           "url": "https://x.com/claudeai/status/2092299704864284888"
         },
         {
           "id": "2092337156455051345",
           "text": "Thanks to your feedback, we’ve unified memory across Chat and Cowork. Now, you can tell Claude to remember something once and it’ll have that context across surfaces!\n\nTell us what you’d like to see next :)",
           "created_at": "2026-08-25T19:43:46+00:00",
-          "like_count": 267,
-          "retweet_count": 8,
-          "reply_count": 59,
+          "like_count": 802,
+          "retweet_count": 33,
+          "reply_count": 136,
           "url": "https://x.com/_catwu/status/2092337156455051345"
         }
       ]
@@ -261,49 +234,49 @@
       "tier": "builder",
       "tweets": [
         {
+          "id": "2092382653161107534",
+          "text": "We're introducing Run SDK: secure 𝚎𝚟𝚊𝚕 for dynamic Code Mode execution.\n\nWhen agents write code, you don't always need a full sandbox. You can 𝚛𝚞𝚗 their code in a lightweight QuickJS secure context. Faster and more cost-efficient.\n\n𝚗𝚙𝚖 𝚒 𝚛𝚞𝚗\nhttps://t.co/br24j8Qp4r https://t.co/ZLqpkwqTT5",
+          "created_at": "2026-08-25T22:44:33+00:00",
+          "like_count": 618,
+          "retweet_count": 43,
+          "reply_count": 60,
+          "url": "https://x.com/rauchg/status/2092382653161107534"
+        },
+        {
           "id": "2092295314988568985",
           "text": "Vercel Connect is now generally available.\n\nGive your apps and agents secure access to @slackhq, @linear, @github &amp; 100+ other services.\n\n• Short-lived, scoped access tokens\n• Token and trigger observability\n• RBAC and audit trails\n\nhttps://t.co/3JUlBz3ddo",
           "created_at": "2026-08-25T16:57:30+00:00",
-          "like_count": 317,
-          "retweet_count": 26,
-          "reply_count": 23,
+          "like_count": 567,
+          "retweet_count": 45,
+          "reply_count": 36,
           "url": "https://x.com/vercel/status/2092295314988568985"
         },
         {
-          "id": "2092075869107879973",
-          "text": "fx v0.0.6 \n• Better Auto mode (cheaper & faster) \n• Approval workflows up to 23% faster \n• Smaller macOS binary: 6.12mb (-0.26%) \n• Remote HTTP MCP support \n• More reliable Codex, Grok & MCP sign-ins \n• Many bug fixes\n\nWe've also documented MCP integrations with @neondatabase, @supabase, @prisma, @usekernel & @browserbase.\n\nThanks to @sachinadlakhaa, ackingyou & @mjlbach \n\nFull: https://t.co/wNAnSW5SLy",
-          "created_at": "2026-08-25T02:25:30+00:00",
-          "like_count": 279,
-          "retweet_count": 12,
-          "reply_count": 22,
-          "url": "https://x.com/fazxes/status/2092075869107879973"
+          "id": "2092352411839193234",
+          "text": "The hardest problem in building agents is secure connectivity to services and data.\n\nExcited for Vercel Connect to be GA. Run e.g: 𝚟𝚎𝚛𝚌𝚎𝚕 𝚌𝚘𝚗𝚗𝚎𝚌𝚝 𝚌𝚛𝚎𝚊𝚝𝚎 𝚗𝚘𝚝𝚒𝚘𝚗, then get an MCP client you can query on behalf of the authenticated user.",
+          "created_at": "2026-08-25T20:44:23+00:00",
+          "like_count": 315,
+          "retweet_count": 15,
+          "reply_count": 29,
+          "url": "https://x.com/rauchg/status/2092352411839193234"
         },
         {
-          "id": "2092251167770451984",
-          "text": "One of the coolest things about gateways: managed tools.\n\nIf you add 𝚎𝚡𝚊_𝚜𝚎𝚊𝚛𝚌𝚑 to your 𝚝𝚘𝚘𝚕𝚜, you give zero-setup, fast Exa search to your agents.\n\nNo credentials, accounts, connections to set up, plus unified billing.",
-          "created_at": "2026-08-25T14:02:05+00:00",
-          "like_count": 201,
-          "retweet_count": 12,
-          "reply_count": 22,
-          "url": "https://x.com/rauchg/status/2092251167770451984"
+          "id": "2092621371914482026",
+          "text": "We're shipping a cool security dashboard, but also the 𝚟𝚎𝚛𝚌𝚎𝚕 𝚜𝚎𝚌𝚞𝚛𝚒𝚝𝚢 𝚌𝚑𝚎𝚌𝚔 CLI.\n\nMuch like 𝚒𝚜-𝚊𝚐𝚎𝚗𝚝𝚒𝚌, you can call on agents to improve your security posture with human-in-the-loop, or run in crons.\n\nWho would have thunk CLIs would save the world 😁 https://t.co/xuVkD7KlHp",
+          "created_at": "2026-08-26T14:33:08+00:00",
+          "like_count": 253,
+          "retweet_count": 11,
+          "reply_count": 29,
+          "url": "https://x.com/rauchg/status/2092621371914482026"
         },
         {
           "id": "2092315151131390068",
           "text": "AI Gateway can now call webhooks after long generations 😍\n\n① Lower compute costs (no long-running process waiting idly)\n\n② More reliable. Gateway can take more of the processing burden\n\n③ You can 𝚊𝚠𝚊𝚒𝚝 𝚑𝚘𝚘𝚔() in \"𝚞𝚜𝚎 𝚠𝚘𝚛𝚔𝚏𝚕𝚘𝚠\" to sanely consume these",
           "created_at": "2026-08-25T18:16:20+00:00",
-          "like_count": 112,
-          "retweet_count": 8,
-          "reply_count": 18,
+          "like_count": 169,
+          "retweet_count": 10,
+          "reply_count": 20,
           "url": "https://x.com/rauchg/status/2092315151131390068"
-        },
-        {
-          "id": "2092233451177197811",
-          "text": "Exa is now available through AI Gateway and the Agent Marketplace.\n\n• AI Gateway: give models instant web search\n• Marketplace: add neural search to your app\n\nFull details on how to integrate @exaailabs ↓\n\nhttps://t.co/Ivrq9pgsLz",
-          "created_at": "2026-08-25T12:51:41+00:00",
-          "like_count": 115,
-          "retweet_count": 2,
-          "reply_count": 6,
-          "url": "https://x.com/vercel_dev/status/2092233451177197811"
         }
       ]
     },
@@ -314,22 +287,13 @@
       "tier": "builder",
       "tweets": [
         {
-          "id": "2091962601907638352",
-          "text": "True. Replit Agent completely replaced Claude CoWork in my day-to-day work. It's much more persistent and fastidious, and it uses code/software more effectively to complete tasks.",
-          "created_at": "2026-08-24T18:55:25+00:00",
-          "like_count": 201,
-          "retweet_count": 11,
-          "reply_count": 32,
-          "url": "https://x.com/amasad/status/2091962601907638352"
-        },
-        {
-          "id": "2091953150919901625",
-          "text": "Founders, I highly recommend using @Replit Agent as your cheapest, fastest and most intelligent employee before you hire for admin tasks. \n\nFor $5.23, Agent just did 23 pages of paperwork for me, accurately, in 12 minutes (in Max mode). It asked me questions and caught things I wouldn't have caught. \n\nAgent in Max: 12 minutes, $5.28\nHuman: ~3–7 hours, Approx. $75–$350+\n\nThat makes Agent roughly 15–35× faster and 14–66× cheaper (before accounting for hiring, onboarding or management.)\n\nWork smart not hard!",
-          "created_at": "2026-08-24T18:17:52+00:00",
-          "like_count": 40,
-          "retweet_count": 1,
-          "reply_count": 6,
-          "url": "https://x.com/NIftek/status/2091953150919901625"
+          "id": "2092198049284018625",
+          "text": "Got my $144 Grammarly renewal notice.\n\nBuilt my own version with @Replit instead, Content Refinery. Working app in a day. \n\nBest part: hooked up @ubersuggest_seo via MCP for SEO research inside the editor. Setup took seconds.\n\nFurther insights👇\nhttps://t.co/RlJ4f5iG0y https://t.co/mxVJfYSY2u",
+          "created_at": "2026-08-25T10:31:00+00:00",
+          "like_count": 24,
+          "retweet_count": 3,
+          "reply_count": 5,
+          "url": "https://x.com/AdrianoBaussen/status/2092198049284018625"
         }
       ]
     },
@@ -338,7 +302,17 @@
       "name": "Josh Woodward (Google Labs)",
       "domain": "ai",
       "tier": "builder",
-      "tweets": []
+      "tweets": [
+        {
+          "id": "2092614266818064389",
+          "text": "Experimenting with multiplayer AI",
+          "created_at": "2026-08-26T14:04:54+00:00",
+          "like_count": 146,
+          "retweet_count": 15,
+          "reply_count": 11,
+          "url": "https://x.com/joshwoodward/status/2092614266818064389"
+        }
+      ]
     },
     {
       "handle": "ornith_",
@@ -347,44 +321,35 @@
       "tier": "builder",
       "tweets": [
         {
-          "id": "2092002467269824598",
-          "text": "🐦Tokens now go brrrr\n\n🪽Ornith-1.5 models just got new wings: MTP weights have been updated for the BF16, GGUF, NVFP4 &amp; FP8 variants.\n\n🔗https://t.co/4sha3FY326",
-          "created_at": "2026-08-24T21:33:50+00:00",
-          "like_count": 805,
-          "retweet_count": 59,
-          "reply_count": 51,
-          "url": "https://x.com/ornith_/status/2092002467269824598"
+          "id": "2092680139406819368",
+          "text": "🔍We dove a bit deeper and analyzed how multi-token prediction (MTP) works in Ornith 1.5 models.\n\n🪽With MTP, Ornith 1.5 gain inference speedups without quality loss via self-speculative decoding: models use their own MTP head to draft tokens and verify them in a forward pass. \n\n🐦MTP weights are now updated for all 9B, 35B, and 397B models in BF16, GGUF, FP8, and NVFP4 variants (except 397B NVFP4, will be updated today).\n\nhttps://t.co/mGJLwhrQOM",
+          "created_at": "2026-08-26T18:26:40+00:00",
+          "like_count": 272,
+          "retweet_count": 22,
+          "reply_count": 18,
+          "url": "https://x.com/ornith_/status/2092680139406819368"
         },
         {
-          "id": "2092011502559707272",
-          "text": "🧐To help everyone easily adopt advanced intelligence and empower everyday tasks, we also released FP8, NVFP4, GGUF, and MLX variants of the Ornith 1.5 series models.\n\n🐦Blog: https://t.co/3GcMB60HaX \n🐦HF: https://t.co/4sha3FY326",
-          "created_at": "2026-08-24T22:09:44+00:00",
-          "like_count": 12,
-          "retweet_count": 2,
+          "id": "2092692012407677390",
+          "text": "🔍We dove a bit deeper and analyzed how multi-token prediction (MTP) works in Ornith 1.5 models.\n\n👇Results: https://t.co/mnKVOpKoPS",
+          "created_at": "2026-08-26T19:13:50+00:00",
+          "like_count": 1,
+          "retweet_count": 0,
           "reply_count": 0,
-          "url": "https://x.com/ornith_/status/2092011502559707272"
+          "url": "https://x.com/ornith_/status/2092692012407677390"
         },
         {
-          "id": "2092065176321429936",
-          "text": "@TeksEdge Thanks for the real‑world M4 Max benchmark – 112 tok/s at just 20GB memory is exactly what MoE + MLX can achieve.",
-          "created_at": "2026-08-25T01:43:01+00:00",
-          "like_count": 8,
+          "id": "2092686715685404953",
+          "text": "@selfhosted_ai 🫡",
+          "created_at": "2026-08-26T18:52:47+00:00",
+          "like_count": 1,
           "retweet_count": 0,
           "reply_count": 1,
-          "url": "https://x.com/ornith_/status/2092065176321429936"
-        },
-        {
-          "id": "2092026576779330009",
-          "text": "@mikaackermann9 yes! it was optimized for faster inference speed!",
-          "created_at": "2026-08-24T23:09:38+00:00",
-          "like_count": 3,
-          "retweet_count": 0,
-          "reply_count": 0,
-          "url": "https://x.com/ornith_/status/2092026576779330009"
+          "url": "https://x.com/ornith_/status/2092686715685404953"
         }
       ]
     }
   ],
   "errors": null,
-  "generated_at": "2026-08-25T22:54:41.580527+00:00"
+  "generated_at": "2026-08-27T03:26:17.386583+00:00"
 }
