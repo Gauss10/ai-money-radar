@@ -17,10 +17,19 @@
           "id": "2093093810121404585",
           "text": "@HarryStebbings its very true. @gradypb and @sonyatweetybird’s ai summit last month was extremely on point with the sovereign ai focus and it all starts with open models.",
           "created_at": "2026-08-27T21:50:26+00:00",
-          "like_count": 3,
+          "like_count": 5,
           "retweet_count": 1,
           "reply_count": 1,
           "url": "https://x.com/swyx/status/2093093810121404585"
+        },
+        {
+          "id": "2093477980379201780",
+          "text": "@ronaldmannak @Prince_Canuma @aiDotEngineer i dont run it but will pass it to @AlisdairBroshar !",
+          "created_at": "2026-08-28T23:17:00+00:00",
+          "like_count": 2,
+          "retweet_count": 0,
+          "reply_count": 2,
+          "url": "https://x.com/swyx/status/2093477980379201780"
         }
       ]
     },
@@ -29,17 +38,7 @@
       "name": "Dylan Patel (SemiAnalysis)",
       "domain": "ai",
       "tier": "analyst",
-      "tweets": [
-        {
-          "id": "2092627181797077453",
-          "text": "@JayKapoorNYC I did do the math.\nhttps://t.co/1FtutOoBy7",
-          "created_at": "2026-08-26T14:56:13+00:00",
-          "like_count": 95,
-          "retweet_count": 4,
-          "reply_count": 3,
-          "url": "https://x.com/dylan522p/status/2092627181797077453"
-        }
-      ]
+      "tweets": []
     },
     {
       "handle": "leopoldasch",
@@ -65,19 +64,10 @@
           "id": "2093060670472241368",
           "text": "this is a critically important moment for cyber defense with AI; there is not much time to act.\n\nwe are happy if you want to work with us or any of our competitors or partners, but please take this moment seriously.\n\nonly an urgent and intense collective response will work.",
           "created_at": "2026-08-27T19:38:45+00:00",
-          "like_count": 12668,
-          "retweet_count": 1037,
-          "reply_count": 1738,
+          "like_count": 16243,
+          "retweet_count": 1311,
+          "reply_count": 2219,
           "url": "https://x.com/sama/status/2093060670472241368"
-        },
-        {
-          "id": "2092691861773160673",
-          "text": "We have conducted a thorough investigation into the Hugging Face incident.\n\nWe are releasing a technical report and accompanying blog post that reconstruct the agents’ activity, explain why existing safeguards failed, and detail how we’re preventing recurrence.\n\nhttps://t.co/hfxlbiXXiP",
-          "created_at": "2026-08-26T19:13:14+00:00",
-          "like_count": 10706,
-          "retweet_count": 1369,
-          "reply_count": 657,
-          "url": "https://x.com/OpenAI/status/2092691861773160673"
         }
       ]
     },
@@ -105,9 +95,9 @@
           "id": "2092850258573471936",
           "text": "Ox Alpha = GLM-5.3 Flash\nAA = 57 ,\n1/100 frontier price, \n\nPowered by pure Chinese chips. \nDelivered nearly 20% weekly token share (no. 1) on OpenRouter.\n\nThanks to all for the support. https://t.co/niAGKJgrKQ",
           "created_at": "2026-08-27T05:42:39+00:00",
-          "like_count": 2440,
-          "retweet_count": 178,
-          "reply_count": 125,
+          "like_count": 2556,
+          "retweet_count": 186,
+          "reply_count": 135,
           "url": "https://x.com/jietang/status/2092850258573471936"
         }
       ]
@@ -117,7 +107,53 @@
       "name": "NVIDIA (Jensen Huang / AI infrastructure)",
       "domain": "ai",
       "tier": "infra",
-      "tweets": []
+      "tweets": [
+        {
+          "id": "2092960847408583120",
+          "text": "NVIDIA Vera is heading to @awscloud. \n\nNVIDIA’s Ian Buck hand-delivered AWS’s first Vera CPU Server and Vera Rubin GPU to Willem Visser and Supreeth Sheshadri at the AWS HQ in Seattle.\n\nVera is purpose-built for agentic AI: more tokens per dollar, faster results for users, and the compute foundation AI factories need to scale.",
+          "created_at": "2026-08-27T13:02:06+00:00",
+          "like_count": 1022,
+          "retweet_count": 96,
+          "reply_count": 82,
+          "url": "https://x.com/nvidia/status/2092960847408583120"
+        },
+        {
+          "id": "2093036251603734919",
+          "text": "Congratulations to Josh Parker, NVIDIA's Head of Sustainability, on being named to @TIME’s 2026 #TIME100AI list.\n\nLearn more: https://t.co/txrKwQHX1N https://t.co/vDZeidVB4v",
+          "created_at": "2026-08-27T18:01:43+00:00",
+          "like_count": 301,
+          "retweet_count": 38,
+          "reply_count": 42,
+          "url": "https://x.com/nvidia/status/2093036251603734919"
+        },
+        {
+          "id": "2093484389682270429",
+          "text": "What used to take years now takes a week. \n\n@TAMU's VISION, an NVIDIA DGX SuperPOD and the most powerful academic supercomputer on the June 2026 TOP500, is giving researchers across seven institutions the compute to tackle challenges at unprecedented scale and speed. https://t.co/TfohplP2fW",
+          "created_at": "2026-08-28T23:42:28+00:00",
+          "like_count": 234,
+          "retweet_count": 38,
+          "reply_count": 21,
+          "url": "https://x.com/nvidia/status/2093484389682270429"
+        },
+        {
+          "id": "2093399189690691994",
+          "text": "Lightning fast to customize. Lightning fast to run.\n\nNVIDIA Nemotron 3.5 Lightning is a compact, customizable open model built to help always-on agents complete specialized tasks faster.\n\nKari Briski joins @MTSlive to explain how Lightning helps always-on agents work faster. https://t.co/JInmQmA07g",
+          "created_at": "2026-08-28T18:03:54+00:00",
+          "like_count": 174,
+          "retweet_count": 19,
+          "reply_count": 28,
+          "url": "https://x.com/nvidia/status/2093399189690691994"
+        },
+        {
+          "id": "2093457336161419676",
+          "text": "Open development helps AI move faster.\n\nWhen we can learn from, build on and improve each other’s work, we can make better technology together.\n\nHear @ctnzr on the MAD Podcast with @mattturck https://t.co/CfvNqYfHjp",
+          "created_at": "2026-08-28T21:54:58+00:00",
+          "like_count": 129,
+          "retweet_count": 16,
+          "reply_count": 21,
+          "url": "https://x.com/nvidia/status/2093457336161419676"
+        }
+      ]
     },
     {
       "handle": "JensenHuang",
@@ -164,46 +200,46 @@
           "id": "2092999180780556643",
           "text": "We built https://t.co/ESOyv3KDeM to ship shaders on https://t.co/pLuAOUwBOE. Now it's open source.\n\n▪︎ Minimal agent-first WebGPU library\n▪︎ Run in the browser or headless Node.js\n▪︎ Render in CPU sandboxes and CI tests\n▪︎ Create reusable .wgsl modules https://t.co/RWtvwWkZ0t",
           "created_at": "2026-08-27T15:34:25+00:00",
-          "like_count": 3150,
-          "retweet_count": 238,
-          "reply_count": 110,
+          "like_count": 4572,
+          "retweet_count": 351,
+          "reply_count": 139,
           "url": "https://x.com/vercel/status/2092999180780556643"
         },
         {
           "id": "2093077548649570777",
           "text": "You can now create new web apps with Cursor, store the code with Origin, and deploy to Vercel. https://t.co/08AfRw2UMW",
           "created_at": "2026-08-27T20:45:49+00:00",
-          "like_count": 2376,
-          "retweet_count": 152,
-          "reply_count": 118,
+          "like_count": 3559,
+          "retweet_count": 233,
+          "reply_count": 190,
           "url": "https://x.com/cursor_ai/status/2093077548649570777"
-        },
-        {
-          "id": "2092984433649283284",
-          "text": "We've added a new cookbook: connect a Claude Managed Agent to @vercel's Chat SDK. This gives an agent access to a universal chat layer. \n \nhttps://t.co/0FrWT6C6R3 https://t.co/wVCfAC3j1b",
-          "created_at": "2026-08-27T14:35:49+00:00",
-          "like_count": 2342,
-          "retweet_count": 137,
-          "reply_count": 94,
-          "url": "https://x.com/ClaudeDevs/status/2092984433649283284"
         },
         {
           "id": "2093019310725951683",
           "text": "Our best products have been exports of internal technology we gain strong conviction in.\n\n@matinotfound and team have been shipping extraordinary WebGPU creative productions, and now https://t.co/0nyTRPKDEJ is here.\n\nIt’s a fully agent-native devtool: it was designed for agents, not humans alone. Much like 𝚊𝚐𝚎𝚗𝚝-𝚋𝚛𝚘𝚠𝚜𝚎𝚛, it’s part of a new exciting generation of tools to serve the new world.",
           "created_at": "2026-08-27T16:54:24+00:00",
-          "like_count": 505,
-          "retweet_count": 21,
-          "reply_count": 40,
+          "like_count": 664,
+          "retweet_count": 28,
+          "reply_count": 46,
           "url": "https://x.com/rauchg/status/2093019310725951683"
         },
         {
           "id": "2093120128879907123",
           "text": "Deploy to Vercel",
           "created_at": "2026-08-27T23:35:01+00:00",
-          "like_count": 314,
-          "retweet_count": 8,
-          "reply_count": 28,
+          "like_count": 599,
+          "retweet_count": 15,
+          "reply_count": 37,
           "url": "https://x.com/rauchg/status/2093120128879907123"
+        },
+        {
+          "id": "2093364921073549667",
+          "text": "Ship a new eve agent in one minute.\n\nFrom https://t.co/i9Vv3noQtm:\n1. Add a prompt\n2. Pick models &amp; MCP connections\n3. Deploy\n\nYour agent is in production, ready to chat, backed by a Git repo you own. https://t.co/qRMehsjDoQ",
+          "created_at": "2026-08-28T15:47:44+00:00",
+          "like_count": 514,
+          "retweet_count": 36,
+          "reply_count": 26,
+          "url": "https://x.com/vercel/status/2093364921073549667"
         }
       ]
     },
@@ -212,7 +248,53 @@
       "name": "Amjad Masad (Replit)",
       "domain": "ai",
       "tier": "builder",
-      "tweets": []
+      "tweets": [
+        {
+          "id": "2093515564786540695",
+          "text": "We’re ending our partnership with Cursor following its acquisition by SpaceX. Under our proposal, Cursor’s direct access to our models would end on November 12.\n\nWe know that the people most affected by this decision are the developers who rely on OpenAI models in Cursor. We care about their experience in this transition and we’re ready to go above and beyond to support them.\n\nhttps://t.co/OzuCTzUjfX",
+          "created_at": "2026-08-29T01:46:20+00:00",
+          "like_count": 7996,
+          "retweet_count": 901,
+          "reply_count": 1085,
+          "url": "https://x.com/OpenAI/status/2093515564786540695"
+        },
+        {
+          "id": "2093533378880667787",
+          "text": "You can access OpenAI models on Replit for free.\n\nOur router also makes high-end models incredibly cost-efficient.\n\nIf you’re a business looking for an independent, multi-model alternative to Cursor, we’d be happy to fund your transition.",
+          "created_at": "2026-08-29T02:57:08+00:00",
+          "like_count": 271,
+          "retweet_count": 18,
+          "reply_count": 32,
+          "url": "https://x.com/amasad/status/2093533378880667787"
+        },
+        {
+          "id": "2093413457924166045",
+          "text": "You’ve come up with the idea. You’ve built the product, faster than ever, with Agent.\n\nReplit’s Growth Skills gets your product into the hands of those who need it. Our expert partners make growth more accessible, even if you don’t know where to start. \n\nStart today in Replit with:\n@ZoomInfo\n@useapolloio\n@Clay_GTM\n@Sideshift_app\n@RevenueCat\n@Stripe\n@PostHog\n\nTurn that idea into a real business overnight at https://t.co/Hj0ejTdko2.",
+          "created_at": "2026-08-28T19:00:36+00:00",
+          "like_count": 202,
+          "retweet_count": 23,
+          "reply_count": 23,
+          "url": "https://x.com/Replit/status/2093413457924166045"
+        },
+        {
+          "id": "2093534323920228369",
+          "text": "@OpenAI You can code with OpenAI models on @Replit for free.\n\nOur router also makes high-end models incredibly cost-efficient.\n\nIf you’re a business looking for an independent, multi-model alternative to Cursor, we’d be happy to fund your transition.",
+          "created_at": "2026-08-29T03:00:53+00:00",
+          "like_count": 232,
+          "retweet_count": 5,
+          "reply_count": 20,
+          "url": "https://x.com/amasad/status/2093534323920228369"
+        },
+        {
+          "id": "2093434828385313068",
+          "text": "Growth agent is such an untapped potential.",
+          "created_at": "2026-08-28T20:25:31+00:00",
+          "like_count": 187,
+          "retweet_count": 6,
+          "reply_count": 21,
+          "url": "https://x.com/amasad/status/2093434828385313068"
+        }
+      ]
     },
     {
       "handle": "joshwoodward",
@@ -224,37 +306,37 @@
           "id": "2093059543362306369",
           "text": "Introducing Expert Intelligence ✨\n\nA cross-@Google initiative that helps you engage with your trusted sources, starting with eligible @GooglePlay ebooks in Gemini Notebook. You can now combine expertise from your favorite authors with other sources and engage with your books in brand new ways!\n\nTry it out here: https://t.co/So7CQPf3ba",
           "created_at": "2026-08-27T19:34:16+00:00",
-          "like_count": 1670,
-          "retweet_count": 179,
-          "reply_count": 51,
+          "like_count": 2775,
+          "retweet_count": 367,
+          "reply_count": 71,
           "url": "https://x.com/Gemini_Notebook/status/2093059543362306369"
-        },
-        {
-          "id": "2092661911120978024",
-          "text": "Gemini Live is moving beyond conversation to handle complex tasks on your behalf.\n\nWith new features in Live like Daily Brief, Gemini Spark, Personal Intelligence, and @Gmail inbox management, you can talk through your day and delegate your to-dos without missing a beat. 🧵",
-          "created_at": "2026-08-26T17:14:14+00:00",
-          "like_count": 1098,
-          "retweet_count": 117,
-          "reply_count": 78,
-          "url": "https://x.com/GeminiApp/status/2092661911120978024"
         },
         {
           "id": "2093074288295481470",
           "text": "Look what you can do:\n- Tell Gemini what you want done\n- Gemini gets to work\n\nThis is the Year of Voice",
           "created_at": "2026-08-27T20:32:52+00:00",
-          "like_count": 287,
-          "retweet_count": 14,
-          "reply_count": 16,
+          "like_count": 401,
+          "retweet_count": 20,
+          "reply_count": 21,
           "url": "https://x.com/joshwoodward/status/2093074288295481470"
         },
         {
-          "id": "2092614266818064389",
-          "text": "Experimenting with multiplayer AI",
-          "created_at": "2026-08-26T14:04:54+00:00",
-          "like_count": 196,
-          "retweet_count": 16,
-          "reply_count": 14,
-          "url": "https://x.com/joshwoodward/status/2092614266818064389"
+          "id": "2093400960337133929",
+          "text": "@shreyas try this out in @Gemini_Notebook, just launched yesterday\n\nhttps://t.co/qMEl5zrHad",
+          "created_at": "2026-08-28T18:10:57+00:00",
+          "like_count": 190,
+          "retweet_count": 5,
+          "reply_count": 8,
+          "url": "https://x.com/joshwoodward/status/2093400960337133929"
+        },
+        {
+          "id": "2093409673571631480",
+          "text": "One of my favorite parts of Expert Intelligence in @Gemini_Notebook is the letter from the author, such a nice touch! https://t.co/I6iDB4hHOt",
+          "created_at": "2026-08-28T18:45:34+00:00",
+          "like_count": 110,
+          "retweet_count": 7,
+          "reply_count": 3,
+          "url": "https://x.com/joshwoodward/status/2093409673571631480"
         }
       ]
     },
@@ -263,37 +345,9 @@
       "name": "Ornith (agentic coding LLM)",
       "domain": "ai",
       "tier": "builder",
-      "tweets": [
-        {
-          "id": "2092680139406819368",
-          "text": "🔍We dove a bit deeper and analyzed how multi-token prediction (MTP) works in Ornith 1.5 models.\n\n🪽With MTP, Ornith 1.5 gain inference speedups without quality loss via self-speculative decoding: models use their own MTP head to draft tokens and verify them in a forward pass. \n\n🐦MTP weights are now updated for all 9B, 35B, and 397B models in BF16, GGUF, FP8, and NVFP4 variants (except 397B NVFP4, will be updated today).\n\nhttps://t.co/mGJLwhrQOM",
-          "created_at": "2026-08-26T18:26:40+00:00",
-          "like_count": 346,
-          "retweet_count": 24,
-          "reply_count": 22,
-          "url": "https://x.com/ornith_/status/2092680139406819368"
-        },
-        {
-          "id": "2092692012407677390",
-          "text": "🔍We dove a bit deeper and analyzed how multi-token prediction (MTP) works in Ornith 1.5 models.\n\n👇Results: https://t.co/mnKVOpKoPS",
-          "created_at": "2026-08-26T19:13:50+00:00",
-          "like_count": 2,
-          "retweet_count": 0,
-          "reply_count": 0,
-          "url": "https://x.com/ornith_/status/2092692012407677390"
-        },
-        {
-          "id": "2092686715685404953",
-          "text": "@selfhosted_ai 🫡",
-          "created_at": "2026-08-26T18:52:47+00:00",
-          "like_count": 1,
-          "retweet_count": 0,
-          "reply_count": 1,
-          "url": "https://x.com/ornith_/status/2092686715685404953"
-        }
-      ]
+      "tweets": []
     }
   ],
   "errors": null,
-  "generated_at": "2026-08-28T06:13:20.091312+00:00"
+  "generated_at": "2026-08-29T03:47:31.925194+00:00"
 }
