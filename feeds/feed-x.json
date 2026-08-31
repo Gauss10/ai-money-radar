@@ -12,17 +12,7 @@
       "name": "Swyx (Shawn Wang)",
       "domain": "ai",
       "tier": "analyst",
-      "tweets": [
-        {
-          "id": "2093477980379201780",
-          "text": "@ronaldmannak @Prince_Canuma @aiDotEngineer i dont run it but will pass it to @AlisdairBroshar !",
-          "created_at": "2026-08-28T23:17:00+00:00",
-          "like_count": 2,
-          "retweet_count": 0,
-          "reply_count": 2,
-          "url": "https://x.com/swyx/status/2093477980379201780"
-        }
-      ]
+      "tweets": []
     },
     {
       "handle": "dylan522p",
@@ -80,39 +70,12 @@
       "tier": "infra",
       "tweets": [
         {
-          "id": "2093484389682270429",
-          "text": "What used to take years now takes a week. \n\n@TAMU's VISION, an NVIDIA DGX SuperPOD and the most powerful academic supercomputer on the June 2026 TOP500, is giving researchers across seven institutions the compute to tackle challenges at unprecedented scale and speed. https://t.co/TfohplP2fW",
-          "created_at": "2026-08-28T23:42:28+00:00",
-          "like_count": 1219,
-          "retweet_count": 104,
-          "reply_count": 51,
-          "url": "https://x.com/nvidia/status/2093484389682270429"
-        },
-        {
-          "id": "2093399189690691994",
-          "text": "Lightning fast to customize. Lightning fast to run.\n\nNVIDIA Nemotron 3.5 Lightning is a compact, customizable open model built to help always-on agents complete specialized tasks faster.\n\nKari Briski joins @MTSlive to explain how Lightning helps always-on agents work faster. https://t.co/JInmQmA07g",
-          "created_at": "2026-08-28T18:03:54+00:00",
-          "like_count": 314,
-          "retweet_count": 25,
-          "reply_count": 35,
-          "url": "https://x.com/nvidia/status/2093399189690691994"
-        },
-        {
-          "id": "2093457336161419676",
-          "text": "Open development helps AI move faster.\n\nWhen we can learn from, build on and improve each other’s work, we can make better technology together.\n\nHear @ctnzr on the MAD Podcast with @mattturck https://t.co/CfvNqYfHjp",
-          "created_at": "2026-08-28T21:54:58+00:00",
-          "like_count": 268,
-          "retweet_count": 27,
-          "reply_count": 30,
-          "url": "https://x.com/nvidia/status/2093457336161419676"
-        },
-        {
           "id": "2093722690049695780",
           "text": "Are you measuring AI infrastructure performance on how agents actually run? \n\n@SemiAnalysis_ built AgentX to do just that. \n\nVera Rubin NVL72 performance measured by NVIDIA on the SemiAnalysis AgentX workload shows up to 30x better throughput per megawatt than GB300 NVL72. \n\nLearn more ➡️ https://t.co/7GTEtxFk76",
           "created_at": "2026-08-29T15:29:23+00:00",
-          "like_count": 256,
-          "retweet_count": 29,
-          "reply_count": 21,
+          "like_count": 403,
+          "retweet_count": 40,
+          "reply_count": 44,
           "url": "https://x.com/nvidia/status/2093722690049695780"
         }
       ]
@@ -122,7 +85,26 @@
       "name": "Jensen Huang (NVIDIA)",
       "domain": "ai",
       "tier": "exec",
-      "tweets": []
+      "tweets": [
+        {
+          "id": "2094081116164460995",
+          "text": "Regret the tone of my post on data centers yesterday.\n\nWhat I should have said:\n\nThere were reasonable concerns about data centers 18ish months ago: water, taxes, jobs, electricity prices, the environment and what they would do to small towns. Well-structured data center projects have largely addressed these concerns today and we should be celebrating this. \n\nOn balance, data centers are awesome for America in every way.\n\nOn water: U.S. data centers use a fraction of what golf courses use. A lot of the numbers from 18 months ago were off by over 1000x. Newer data centers use closed-loop systems or recycled water. Should be required by every town approving a data center project.\n\nOn taxes: looking only at sales-tax exemptions, as Ronan Farrow did, is the wrong way to evaluate this. Data centers pay significant property taxes. Loudoun County, which is the wealthiest county in America, now collects on the order of $1 billion a year from data centers. In Quincy, WA, data centers are more than half the property-tax roll. Over time, property taxes can go to zero while government spending increases in these towns.\n\nOn jobs: this has been unambiguously awesome for blue collar Americans. Demand for electricians, plumbers, welders, HVAC techs, and contractors has gone vertical, and it is not a one-time construction job. These buildings get upgraded and expanded over time. That is why the building trades are fighting for them, and why some unions are now treating opposition to data centers as a reason not to endorse politicians.\n\nOn power: the original fear was that households would pay for the incremental electricity demand in the form of higher prices. That is why the ratepayer-protection deals and the new large-load tariffs exist. The right structure is: the data center brings or pays for new generation and signs a contract long enough that existing customers are protected. Where that is happening, utilities are cutting or freezing residential rates and saying so on the record. Where it is not, people are right to object. Electricity prices are going down *today* in a number of large states because of data centers.\n On the environment: data centers overwhelming use natural gas today, which is the cleanest power source outside of nuclear, solar and wind. And the companies that are building the data centers are committed to carbon neutrality such that an equivalent amount of solar will likely be built. Maybe more importantly, the data centers need batteries to function effectively and these batteries can also sell energy back into the grid (which recently prevented blackouts in Texas). Over time, data centers will run on solar plus batteries.\n\nOn the towns: Poverty in Quincy, WA fell from 29% to 6%. Data center taxes paid for a new high school, a hospital, a library, police and fire stations. This is happening in many left for dead  former mill and farm towns that had no other bidder for the land.\n\nData centers are actually reindustrializing parts of America and creating the kind of working-class jobs both parties have spent decades claiming to support. That should not be a partisan issue. Data centers can and should be awesome for America and they increasingly, overwhelmingly are. Supporting the outsourcing of data centers to China will likely age just as well as support for the outsourcing of high quality, blue collar manufacturing jobs to China has aged.\n\nWhen the facts change, I change my mind. I hope that reasonable people who had good faith reasons to oppose data centers at least consider updating their beliefs given the change in the facts over the last 18 months. This really matters for America.\n\nI will say I also think the idea of making data centers beautiful is a good one that has yet to be implemented. Data centers should be just as beautiful as Grand Central Station. We can learn a lot from the railroad buildout. Neoclassical revival ftw.\n\nMight write up open-weight AI tomorrow as this is equally essential to America.",
+          "created_at": "2026-08-30T15:13:38+00:00",
+          "like_count": 7170,
+          "retweet_count": 1171,
+          "reply_count": 474,
+          "url": "https://x.com/GavinSBaker/status/2094081116164460995"
+        },
+        {
+          "id": "2094173025881272408",
+          "text": "Gavin, spot on.\n\nAI is bringing manufacturing back to America and reindustrializing the nation after decades of offshoring.\n\nAI is creating demand that drives investment in our aging power grid and sustainable energy, powered by market forces, not subsidies.\n\nAI is creating construction and manufacturing jobs across energy plants, chip fabs and data centers.\n\nAI is creating new companies and industries. $400 billion has been invested in AI startups in the past six months alone.\n\nBuilders must partner with communities to build in their hometowns, earn trust and create local benefits.\n\nWe have an opportunity to create lasting benefits for communities across America and help America lead the next industrial revolution.",
+          "created_at": "2026-08-30T21:18:51+00:00",
+          "like_count": 6943,
+          "retweet_count": 754,
+          "reply_count": 290,
+          "url": "https://x.com/JensenHuang/status/2094173025881272408"
+        }
+      ]
     },
     {
       "handle": "AmandaAskell",
@@ -159,49 +141,49 @@
       "tier": "builder",
       "tweets": [
         {
-          "id": "2093482695838007318",
-          "text": "I see the web evolving in two extremes:\n\n1️⃣ ultra-fancy human experiences, in the service of delight, exploration, brand, entertainment. https://t.co/0nyTRPKDEJ / threejs / typegpu are enabling this\n\n2️⃣ agent-centric content, data and APIs. the opposite end of the spectrum: pure, lossless signal for machines. The rise of markdown and MCP are the tip of this iceberg\n\nThe 'in between' is likely to be subsumed by agents producing just-in-time UI. When you need utilitarian content or data, it'll be generated just-in-time for you. Think of the agent as the new browser in this model.",
-          "created_at": "2026-08-28T23:35:44+00:00",
-          "like_count": 1091,
-          "retweet_count": 74,
-          "reply_count": 77,
-          "url": "https://x.com/rauchg/status/2093482695838007318"
+          "id": "2094122005193003077",
+          "text": "Two days ago JFrog dropped CVE-2026-82329, a critical authentication bypass in Artifactory.\n\nIt’s a CVSS 9.8, a disastrous vulnerability score. It’s like a 9.8 earthquake on the seismic scale.\n\nIt affects default configs, requires no auth, no user interaction. It’s an RCE bomb because Artifactory hosts binaries, so you can basically poison everything, but an admin escalation can cause damage even beyond that.\n\nWhen the OpenAI / Hugging Face news came out of agents discovering zero-days, I was wondering if it was marketing-speak or reality, because I hadn’t seen a CVE filing. Now it’s here: https://www​.cve.org/CVERecord?id=CVE-2026-82329.\n\nI don’t see any official confirmation that it’s indeed the case, but one can speculate this is what the agents discovered and exploited. I’d previously written that it was obvious agents could help in finding serious vulnerabilities *alongside humans*, but exploiting them autonomously was a bridge not yet crossed. It seems like we’re now there.\n\nOur guidance for this new world: assume everything hackable will get hacked. And it will get hacked autonomously. You must also defend yourself autonomously, because your surface of attack is likely bigger and your code more vulnerable than you expect:\n\nhttps://vercel​.com/blog/everything-hackable-will-get-hacked",
+          "created_at": "2026-08-30T17:56:07+00:00",
+          "like_count": 806,
+          "retweet_count": 39,
+          "reply_count": 53,
+          "url": "https://x.com/rauchg/status/2094122005193003077"
         },
         {
-          "id": "2093347647050616954",
-          "text": "As models get more performant, UI gets more generative and dynamic. Excited for this trend to continue",
-          "created_at": "2026-08-28T14:39:06+00:00",
-          "like_count": 778,
-          "retweet_count": 15,
-          "reply_count": 37,
-          "url": "https://x.com/rauchg/status/2093347647050616954"
+          "id": "2093736865191076318",
+          "text": "https://t.co/OL0LzGtvAw 0.0.7: \n\n- hugely improved MCP support, eval'd with top MCPs like @context7ai, @datadoghq, @mongodb, @linear, @notionhq, @supabase, @neondatabase, @stagehanddev, @usekernel…\n\n- more minimalist: fewer tools and improved shell execution. One of the trickiest things about CLI agents is that running commands is actually not that simple.\n\ne.g: commands might hang or run for very long, their output needs to be monitorable by the agent, they might produce huge amounts of output, or none. \n\nThis is an area where 𝚏𝚡 really shines and will continue to get better.",
+          "created_at": "2026-08-29T16:25:43+00:00",
+          "like_count": 330,
+          "retweet_count": 17,
+          "reply_count": 51,
+          "url": "https://x.com/rauchg/status/2093736865191076318"
         },
         {
-          "id": "2093364921073549667",
-          "text": "Ship a new eve agent in one minute.\n\nFrom https://t.co/i9Vv3noQtm:\n1. Add a prompt\n2. Pick models &amp; MCP connections\n3. Deploy\n\nYour agent is in production, ready to chat, backed by a Git repo you own. https://t.co/qRMehsjDoQ",
-          "created_at": "2026-08-28T15:47:44+00:00",
-          "like_count": 617,
-          "retweet_count": 40,
-          "reply_count": 38,
-          "url": "https://x.com/vercel/status/2093364921073549667"
+          "id": "2093733353757233580",
+          "text": "fx v0.0.7\n\nMCP now feels native to fx.\n• Added 𝚏𝚡 𝚖𝚌𝚙 commands\n• Project-level MCP configuration\n• MCP management from the CLI\n• Better compatibility with existing servers\n• Cleaner transcripts & live turn feedback\n• Steer active turns with Ctrl+Enter\n• 8 fewer tools for sharper choices & more context\n\nDocumented integrations with @NotionHQ @huggingface @ExaAILabs\n\nThanks to @biraj21_, AdrianTJ & ssynb\n\nhttps://t.co/A9E1vrOYq3…",
+          "created_at": "2026-08-29T16:11:45+00:00",
+          "like_count": 122,
+          "retweet_count": 6,
+          "reply_count": 15,
+          "url": "https://x.com/fazxes/status/2093733353757233580"
         },
         {
-          "id": "2093387887668814214",
-          "text": "There are many “easy” ways to create agents out there.\n\nBut how many that give you a Git repo where you actually *own* the entire intelligence stack? Runtime, model choice, skills, tools, connectivity, sandbox…\n\nEasiest way to start with eve: \nhttps://t.co/cUFDog6P3d",
-          "created_at": "2026-08-28T17:19:00+00:00",
-          "like_count": 443,
-          "retweet_count": 28,
-          "reply_count": 48,
-          "url": "https://x.com/rauchg/status/2093387887668814214"
+          "id": "2094198031709356134",
+          "text": "MiniMax H3 and H3 Max from @MiniMax_AI are 50% off on AI Gateway through Sept 13.\n\n𝚊𝚠𝚊𝚒𝚝 𝚐𝚎𝚗𝚎𝚛𝚊𝚝𝚎𝚅𝚒𝚍𝚎𝚘({\n  𝚖𝚘𝚍𝚎𝚕: '𝚖𝚒𝚗𝚒𝚖𝚊𝚡/𝚖𝚒𝚗𝚒𝚖𝚊𝚡-𝚑𝟹-𝚖𝚊𝚡',\n  𝚙𝚛𝚘𝚖𝚙𝚝: '𝚙𝚊𝚛𝚛𝚘𝚝𝚜 𝚒𝚗 𝚜𝚏',\n});\n\nhttps://t.co/jTOCvYbFa4 https://t.co/pimiQrm8lB",
+          "created_at": "2026-08-30T22:58:13+00:00",
+          "like_count": 79,
+          "retweet_count": 5,
+          "reply_count": 4,
+          "url": "https://x.com/vercel_dev/status/2094198031709356134"
         },
         {
-          "id": "2093336820625060276",
-          "text": "the new deployment filters are available now in the @vercel dashboard\n\nhere's how we engineered them… https://t.co/SJ8lOSILPA",
-          "created_at": "2026-08-28T13:56:05+00:00",
-          "like_count": 444,
-          "retweet_count": 19,
-          "reply_count": 16,
-          "url": "https://x.com/witsdev/status/2093336820625060276"
+          "id": "2094149693341376706",
+          "text": "@sriramk @dwarkesh_sp This issue will be riddled with speculation &amp; mysticism until the raw traces of what the agents actually did are published, as well as the snapshot of the runtime environments.",
+          "created_at": "2026-08-30T19:46:08+00:00",
+          "like_count": 16,
+          "retweet_count": 1,
+          "reply_count": 1,
+          "url": "https://x.com/rauchg/status/2094149693341376706"
         }
       ]
     },
@@ -215,46 +197,46 @@
           "id": "2093515564786540695",
           "text": "We’re ending our partnership with Cursor following its acquisition by SpaceX. Under our proposal, Cursor’s direct access to our models would end on November 12.\n\nWe know that the people most affected by this decision are the developers who rely on OpenAI models in Cursor. We care about their experience in this transition and we’re ready to go above and beyond to support them.\n\nhttps://t.co/OzuCTzUjfX",
           "created_at": "2026-08-29T01:46:20+00:00",
-          "like_count": 20958,
-          "retweet_count": 2163,
-          "reply_count": 2990,
+          "like_count": 21995,
+          "retweet_count": 2274,
+          "reply_count": 3174,
           "url": "https://x.com/OpenAI/status/2093515564786540695"
         },
         {
           "id": "2093543108491530308",
           "text": "@NotTomBrown Maybe you changed your ways, but we all remember what you did to Windsurf, which was infinitely nastier.  More likely answer is that you can’t do that here because you need the compute.",
           "created_at": "2026-08-29T03:35:47+00:00",
-          "like_count": 4689,
-          "retweet_count": 121,
-          "reply_count": 109,
+          "like_count": 5155,
+          "retweet_count": 131,
+          "reply_count": 113,
           "url": "https://x.com/amasad/status/2093543108491530308"
         },
         {
           "id": "2093534323920228369",
           "text": "@OpenAI You can code with OpenAI models on @Replit for free.\n\nOur router also makes high-end models incredibly cost-efficient.\n\nIf you’re a business looking for an independent, multi-model alternative to Cursor, we’d be happy to fund your transition.",
           "created_at": "2026-08-29T03:00:53+00:00",
-          "like_count": 1956,
-          "retweet_count": 51,
-          "reply_count": 85,
+          "like_count": 2074,
+          "retweet_count": 53,
+          "reply_count": 96,
           "url": "https://x.com/amasad/status/2093534323920228369"
         },
         {
           "id": "2093533378880667787",
           "text": "You can access OpenAI models on Replit for free.\n\nOur router also makes high-end models incredibly cost-efficient.\n\nIf you’re a business looking for an independent, multi-model alternative to Cursor, we’d be happy to fund your transition.",
           "created_at": "2026-08-29T02:57:08+00:00",
-          "like_count": 1293,
-          "retweet_count": 65,
-          "reply_count": 122,
+          "like_count": 1369,
+          "retweet_count": 69,
+          "reply_count": 131,
           "url": "https://x.com/amasad/status/2093533378880667787"
         },
         {
-          "id": "2093413457924166045",
-          "text": "You’ve come up with the idea. You’ve built the product, faster than ever, with Agent.\n\nReplit’s Growth Skills gets your product into the hands of those who need it. Our expert partners make growth more accessible, even if you don’t know where to start. \n\nStart today in Replit with:\n@ZoomInfo\n@useapolloio\n@Clay_GTM\n@Sideshift_app\n@RevenueCat\n@Stripe\n@PostHog\n\nTurn that idea into a real business overnight at https://t.co/Hj0ejTdko2.",
-          "created_at": "2026-08-28T19:00:36+00:00",
-          "like_count": 323,
-          "retweet_count": 31,
-          "reply_count": 33,
-          "url": "https://x.com/Replit/status/2093413457924166045"
+          "id": "2093546513553412355",
+          "text": "@SawyerMerritt I assume the overwhelming usage is free, which is routed to the cheapest model (composer/grok) but a more important question is what % of paid/metered tokens are OpenAI.",
+          "created_at": "2026-08-29T03:49:19+00:00",
+          "like_count": 285,
+          "retweet_count": 4,
+          "reply_count": 9,
+          "url": "https://x.com/amasad/status/2093546513553412355"
         }
       ]
     },
@@ -263,26 +245,7 @@
       "name": "Josh Woodward (Google Labs)",
       "domain": "ai",
       "tier": "builder",
-      "tweets": [
-        {
-          "id": "2093400960337133929",
-          "text": "@shreyas try this out in @Gemini_Notebook, just launched yesterday\n\nhttps://t.co/qMEl5zrHad",
-          "created_at": "2026-08-28T18:10:57+00:00",
-          "like_count": 275,
-          "retweet_count": 9,
-          "reply_count": 9,
-          "url": "https://x.com/joshwoodward/status/2093400960337133929"
-        },
-        {
-          "id": "2093409673571631480",
-          "text": "One of my favorite parts of Expert Intelligence in @Gemini_Notebook is the letter from the author, such a nice touch! https://t.co/I6iDB4hHOt",
-          "created_at": "2026-08-28T18:45:34+00:00",
-          "like_count": 176,
-          "retweet_count": 14,
-          "reply_count": 4,
-          "url": "https://x.com/joshwoodward/status/2093409673571631480"
-        }
-      ]
+      "tweets": []
     },
     {
       "handle": "ornith_",
@@ -293,5 +256,5 @@
     }
   ],
   "errors": null,
-  "generated_at": "2026-08-30T00:32:35.346500+00:00"
+  "generated_at": "2026-08-31T00:45:12.007218+00:00"
 }
