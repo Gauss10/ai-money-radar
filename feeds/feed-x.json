@@ -40,7 +40,17 @@
       "name": "Sam Altman",
       "domain": "ai",
       "tier": "exec",
-      "tweets": []
+      "tweets": [
+        {
+          "id": "2094934592062959832",
+          "text": "Over the summer, we have been sprinting on safety priorities; it's more important than ever for capabilities and safeguards to advance together. We have more to do but have made a lot of progress. We are also going to be launching our next model soon.\n\nThere is an obvious tension here: on one hand, Astra is very good and we are excited to see what people will build with it. We are proud of our work.\n\nOn the other hand, we are clearly in a phase of development where we believe caution is warranted, and we are pacing our progress to ensure that we can meet the safety standards required by new capability levels.\n\nAstra has been done training for a while now and is a significant step forward in both capabilities and alignment. For the models after that, we have been slowing things as needed to ensure that we can do sufficient work on safety and alignment.\n\nAI is getting extremely capable; no one fully understands the consequences of this. Managing the transition to a world with abundant and powerful AI to optimize for safety and benefits to people should be one of the highest priorities in the world. It is our highest priority at OpenAI.\n\nWe have been living with the tension between being excited and anxious about progress for some time, and it is still discordant for us. We know it is much more discordant for other people. And yet, we believe strongly that the world needs to understand where AI is going and how models perform in the real world. More importantly, we believe the world will need aligned AI to manage the future phases of this transition.\n\nAn iterative loop where society and this technology evolve together is what will lead to the highest chance of getting this right.\n\nSo we hope you enjoy our new model, and we hope the world continues to take what’s happening in AI extremely seriously.",
+          "created_at": "2026-09-01T23:45:03+00:00",
+          "like_count": 2404,
+          "retweet_count": 173,
+          "reply_count": 327,
+          "url": "https://x.com/sama/status/2094934592062959832"
+        }
+      ]
     },
     {
       "handle": "DarioAmodei",
@@ -73,19 +83,37 @@
           "id": "2094440470814609812",
           "text": "We’re excited to expand our work with @MediaTek. 🤝\n\nAI factories will be built around differentiated compute — but custom silicon needs a path from chip design to production-scale systems. With MediaTek adopting NVIDIA NVLink Fusion, customers can focus on what makes their XPUs unique and connect them to NVIDIA rack-scale AI infrastructure.\n https://t.co/ey9r7NacA2",
           "created_at": "2026-08-31T15:01:35+00:00",
-          "like_count": 552,
-          "retweet_count": 79,
-          "reply_count": 55,
+          "like_count": 750,
+          "retweet_count": 112,
+          "reply_count": 79,
           "url": "https://x.com/nvidia/status/2094440470814609812"
         },
         {
           "id": "2094403261814177910",
           "text": "NEWS: @nvidia and @MediaTek are deepening their collaboration across cloud AI factories, local AI computing and automotive.\n\nMediaTek will adopt NVIDIA NVLink Fusion to help customers bring custom XPUs into NVIDIA NVLink-connected, rack-scale AI factories.\n\nLearn more: https://t.co/DUGXobVjFv",
           "created_at": "2026-08-31T12:33:44+00:00",
-          "like_count": 313,
-          "retweet_count": 52,
+          "like_count": 352,
+          "retweet_count": 55,
           "reply_count": 10,
           "url": "https://x.com/nvidianewsroom/status/2094403261814177910"
+        },
+        {
+          "id": "2094906811774013521",
+          "text": "NVIDIA and @CrowdStrike are advancing agentic cyber defense with SafeMind, a new family of security models and harnesses built on NVIDIA Nemotron.\n\nIntroduced at Fal.Con, SafeMind is customized with CrowdStrike threat data to support triage and detection generation for cyber defense.",
+          "created_at": "2026-09-01T21:54:40+00:00",
+          "like_count": 232,
+          "retweet_count": 37,
+          "reply_count": 23,
+          "url": "https://x.com/nvidia/status/2094906811774013521"
+        },
+        {
+          "id": "2094906813325910383",
+          "text": "@CrowdStrike Learn more about SafeMind and the offensive - defensive agentic system: https://t.co/az3dIHWQnh",
+          "created_at": "2026-09-01T21:54:40+00:00",
+          "like_count": 18,
+          "retweet_count": 1,
+          "reply_count": 0,
+          "url": "https://x.com/nvidia/status/2094906813325910383"
         }
       ]
     },
@@ -94,26 +122,7 @@
       "name": "Jensen Huang (NVIDIA)",
       "domain": "ai",
       "tier": "exec",
-      "tweets": [
-        {
-          "id": "2094173025881272408",
-          "text": "Gavin, spot on.\n\nAI is bringing manufacturing back to America and reindustrializing the nation after decades of offshoring.\n\nAI is creating demand that drives investment in our aging power grid and sustainable energy, powered by market forces, not subsidies.\n\nAI is creating construction and manufacturing jobs across energy plants, chip fabs and data centers.\n\nAI is creating new companies and industries. $400 billion has been invested in AI startups in the past six months alone.\n\nBuilders must partner with communities to build in their hometowns, earn trust and create local benefits.\n\nWe have an opportunity to create lasting benefits for communities across America and help America lead the next industrial revolution.",
-          "created_at": "2026-08-30T21:18:51+00:00",
-          "like_count": 17603,
-          "retweet_count": 1937,
-          "reply_count": 691,
-          "url": "https://x.com/JensenHuang/status/2094173025881272408"
-        },
-        {
-          "id": "2094081116164460995",
-          "text": "Regret the tone of my post on data centers yesterday.\n\nWhat I should have said:\n\nThere were reasonable concerns about data centers 18ish months ago: water, taxes, jobs, electricity prices, the environment and what they would do to small towns. Well-structured data center projects have largely addressed these concerns today and we should be celebrating this. \n\nOn balance, data centers are awesome for America in every way.\n\nOn water: U.S. data centers use a fraction of what golf courses use. A lot of the numbers from 18 months ago were off by over 1000x. Newer data centers use closed-loop systems or recycled water. Should be required by every town approving a data center project.\n\nOn taxes: looking only at sales-tax exemptions, as Ronan Farrow did, is the wrong way to evaluate this. Data centers pay significant property taxes. Loudoun County, which is the wealthiest county in America, now collects on the order of $1 billion a year from data centers. In Quincy, WA, data centers are more than half the property-tax roll. Over time, property taxes can go to zero while government spending increases in these towns.\n\nOn jobs: this has been unambiguously awesome for blue collar Americans. Demand for electricians, plumbers, welders, HVAC techs, and contractors has gone vertical, and it is not a one-time construction job. These buildings get upgraded and expanded over time. That is why the building trades are fighting for them, and why some unions are now treating opposition to data centers as a reason not to endorse politicians.\n\nOn power: the original fear was that households would pay for the incremental electricity demand in the form of higher prices. That is why the ratepayer-protection deals and the new large-load tariffs exist. The right structure is: the data center brings or pays for new generation and signs a contract long enough that existing customers are protected. Where that is happening, utilities are cutting or freezing residential rates and saying so on the record. Where it is not, people are right to object. Electricity prices are going down *today* in a number of large states because of data centers.\n On the environment: data centers overwhelming use natural gas today, which is the cleanest power source outside of nuclear, solar and wind. And the companies that are building the data centers are committed to carbon neutrality such that an equivalent amount of solar will likely be built. Maybe more importantly, the data centers need batteries to function effectively and these batteries can also sell energy back into the grid (which recently prevented blackouts in Texas). Over time, data centers will run on solar plus batteries.\n\nOn the towns: Poverty in Quincy, WA fell from 29% to 6%. Data center taxes paid for a new high school, a hospital, a library, police and fire stations. This is happening in many left for dead  former mill and farm towns that had no other bidder for the land.\n\nData centers are actually reindustrializing parts of America and creating the kind of working-class jobs both parties have spent decades claiming to support. That should not be a partisan issue. Data centers can and should be awesome for America and they increasingly, overwhelmingly are. Supporting the outsourcing of data centers to China will likely age just as well as support for the outsourcing of high quality, blue collar manufacturing jobs to China has aged.\n\nWhen the facts change, I change my mind. I hope that reasonable people who had good faith reasons to oppose data centers at least consider updating their beliefs given the change in the facts over the last 18 months. This really matters for America.\n\nI will say I also think the idea of making data centers beautiful is a good one that has yet to be implemented. Data centers should be just as beautiful as Grand Central Station. We can learn a lot from the railroad buildout. Neoclassical revival ftw.\n\nMight write up open-weight AI tomorrow as this is equally essential to America.",
-          "created_at": "2026-08-30T15:13:38+00:00",
-          "like_count": 12798,
-          "retweet_count": 2175,
-          "reply_count": 794,
-          "url": "https://x.com/GavinSBaker/status/2094081116164460995"
-        }
-      ]
+      "tweets": []
     },
     {
       "handle": "AmandaAskell",
@@ -127,21 +136,123 @@
       "name": "Boris Cherny (Claude Code)",
       "domain": "ai",
       "tier": "builder",
-      "tweets": []
+      "tweets": [
+        {
+          "id": "2094848572143407483",
+          "text": "We’re introducing Claude Fable 5.1 and Claude Mythos 5.1.\n\nThey're the world’s most advanced models for coding and knowledge work. https://t.co/8P9PSrWPi3",
+          "created_at": "2026-09-01T18:03:14+00:00",
+          "like_count": 46977,
+          "retweet_count": 5343,
+          "reply_count": 2100,
+          "url": "https://x.com/claudeai/status/2094848572143407483"
+        },
+        {
+          "id": "2094864060609376748",
+          "text": "Fable 5.1 is our best model yet for coding, data analysis, computer use, design, presentations, Tag, and the hardest long-running agentic work.\n\nThis model is a pleasure to work with, and I've been using it for everything.",
+          "created_at": "2026-09-01T19:04:47+00:00",
+          "like_count": 3339,
+          "retweet_count": 130,
+          "reply_count": 327,
+          "url": "https://x.com/bcherny/status/2094864060609376748"
+        },
+        {
+          "id": "2094864062186426373",
+          "text": "We have also reduced prices for Enterprise, API, and SDK customers. Cache reads on Fable 5.1 are now $0.25 per million tokens (previously: $1). Up to 38% cheaper for a typical Claude Code session.",
+          "created_at": "2026-09-01T19:04:47+00:00",
+          "like_count": 314,
+          "retweet_count": 7,
+          "reply_count": 20,
+          "url": "https://x.com/bcherny/status/2094864062186426373"
+        },
+        {
+          "id": "2094864063478276288",
+          "text": "We have been working on how often safeguards intervene. Our latest biology safeguards intervene on benign requests 85% less often than the ones we shipped with Fable 5, and Claude Code users should see around 60% fewer cyber interventions per session. Expect more improvements soon.",
+          "created_at": "2026-09-01T19:04:48+00:00",
+          "like_count": 276,
+          "retweet_count": 3,
+          "reply_count": 19,
+          "url": "https://x.com/bcherny/status/2094864063478276288"
+        },
+        {
+          "id": "2094864064648536068",
+          "text": "Last but not least, Fable 5.1 writes better and has better tone. We heard your feedback, and are actively working on reducing Claude-speak. Solid progress with 5.1, more to come.",
+          "created_at": "2026-09-01T19:04:48+00:00",
+          "like_count": 226,
+          "retweet_count": 5,
+          "reply_count": 31,
+          "url": "https://x.com/bcherny/status/2094864064648536068"
+        }
+      ]
     },
     {
       "handle": "_catwu",
       "name": "Cat Wu (Anthropic)",
       "domain": "ai",
       "tier": "builder",
-      "tweets": []
+      "tweets": [
+        {
+          "id": "2094848572143407483",
+          "text": "We’re introducing Claude Fable 5.1 and Claude Mythos 5.1.\n\nThey're the world’s most advanced models for coding and knowledge work. https://t.co/8P9PSrWPi3",
+          "created_at": "2026-09-01T18:03:14+00:00",
+          "like_count": 46990,
+          "retweet_count": 5345,
+          "reply_count": 2100,
+          "url": "https://x.com/claudeai/status/2094848572143407483"
+        },
+        {
+          "id": "2094933602228416603",
+          "text": "With Fable 5.1, our team has taken on more ambitious projects that would have previously taken months. What big bets do you want to take? \n\nAsk Fable 5.1 in Claude Code, Claude Cowork, Claude Tag to take on the task and let us know what you think!",
+          "created_at": "2026-09-01T23:41:07+00:00",
+          "like_count": 82,
+          "retweet_count": 4,
+          "reply_count": 14,
+          "url": "https://x.com/_catwu/status/2094933602228416603"
+        }
+      ]
     },
     {
       "handle": "alexalbert__",
       "name": "Alex Albert (Anthropic)",
       "domain": "ai",
       "tier": "builder",
-      "tweets": []
+      "tweets": [
+        {
+          "id": "2094848572143407483",
+          "text": "We’re introducing Claude Fable 5.1 and Claude Mythos 5.1.\n\nThey're the world’s most advanced models for coding and knowledge work. https://t.co/8P9PSrWPi3",
+          "created_at": "2026-09-01T18:03:14+00:00",
+          "like_count": 46989,
+          "retweet_count": 5345,
+          "reply_count": 2100,
+          "url": "https://x.com/claudeai/status/2094848572143407483"
+        },
+        {
+          "id": "2094860187743986169",
+          "text": "Fable 5.1 is a beast at many things but one thing in particular I have been having a ton of fun with is generating videos through code. \n\nFor this one I gave it a picture of a property lot. It designed a house for the lot, rendered it, and produced a cinematic walkthrough. https://t.co/eBIaCmaav8",
+          "created_at": "2026-09-01T18:49:24+00:00",
+          "like_count": 4155,
+          "retweet_count": 183,
+          "reply_count": 195,
+          "url": "https://x.com/alexalbert__/status/2094860187743986169"
+        },
+        {
+          "id": "2094849958025306330",
+          "text": "The way I keep describing Fable 5.1 to people is that it just works.\n\nI explain what I want in a few vague, messy sentences, and it figures out the rest. It fills in the gaps the way I would have. It's a truly impressive model in so many ways and I hope you enjoy using it!",
+          "created_at": "2026-09-01T18:08:45+00:00",
+          "like_count": 920,
+          "retweet_count": 18,
+          "reply_count": 72,
+          "url": "https://x.com/alexalbert__/status/2094849958025306330"
+        },
+        {
+          "id": "2094889286990446769",
+          "text": "One non-model thing I'm very excited we announced today with Fable 5.1 is Enterprise Frontier Safeguards (EFS).\n\nEven if you're not a CEO/CISO, this blog post is a look into how big companies are thinking about AI adoption which is important to understand if you're interested in how AI might diffuse across industry.\n\nCompanies are giving agents more and more access to internal systems. With traditional zero data retention, there's been no way to spot patterns in what agents might be doing across sessions on these systems.\n\nEFS is ZDR++. It's ZDR built for a world with agents. A company's data stays in its own cloud, and an automated monitoring layer we built flags risky patterns to its team.\n\nI think of this as an observability and risk mitigation layer for agents. My guess is it will become a standard requirement from enterprises for running increasingly powerful AI on their systems.",
+          "created_at": "2026-09-01T20:45:01+00:00",
+          "like_count": 170,
+          "retweet_count": 9,
+          "reply_count": 14,
+          "url": "https://x.com/alexalbert__/status/2094889286990446769"
+        }
+      ]
     },
     {
       "handle": "rauchg",
@@ -153,46 +264,46 @@
           "id": "2094242307511853196",
           "text": "@rauchg AI will be able to do anything digital (that doesn’t require shaping atoms) at a superhuman level by the end of next year",
           "created_at": "2026-08-31T01:54:09+00:00",
-          "like_count": 8616,
-          "retweet_count": 870,
-          "reply_count": 516,
+          "like_count": 9083,
+          "retweet_count": 898,
+          "reply_count": 550,
           "url": "https://x.com/elonmusk/status/2094242307511853196"
         },
         {
           "id": "2094541309579235680",
           "text": "Your next design system is… Markdown.\n\nWe wrote about how 𝙳𝙴𝚂𝙸𝙶𝙽.𝚖𝚍 is helping solve the hardest problem in AI today: slop.\n\nAnd how you can truly, finally scale design taste within a large organization. https://t.co/1boTl2fWyM",
           "created_at": "2026-08-31T21:42:17+00:00",
-          "like_count": 1473,
-          "retweet_count": 62,
-          "reply_count": 40,
+          "like_count": 3854,
+          "retweet_count": 177,
+          "reply_count": 122,
           "url": "https://x.com/rauchg/status/2094541309579235680"
         },
         {
           "id": "2094539714984550471",
           "text": "Our agents use 𝚟𝚎𝚛𝚌𝚎𝚕​.𝚌𝚘𝚖/𝚍𝚎𝚜𝚒𝚐𝚗​.𝚖𝚍 to build on-brand pages.\n\n▪︎ One file encodes decisions and guidance\n▪︎ Output is shaped through our eval harness\n▪︎ Production feedback is fed back into the loop\nhttps://t.co/ylz7uB4fhw",
           "created_at": "2026-08-31T21:35:57+00:00",
-          "like_count": 531,
-          "retweet_count": 40,
-          "reply_count": 15,
+          "like_count": 1466,
+          "retweet_count": 100,
+          "reply_count": 44,
           "url": "https://x.com/vercel/status/2094539714984550471"
-        },
-        {
-          "id": "2094198031709356134",
-          "text": "MiniMax H3 and H3 Max from @MiniMax_AI are 50% off on AI Gateway through Sept 13.\n\n𝚊𝚠𝚊𝚒𝚝 𝚐𝚎𝚗𝚎𝚛𝚊𝚝𝚎𝚅𝚒𝚍𝚎𝚘({\n  𝚖𝚘𝚍𝚎𝚕: '𝚖𝚒𝚗𝚒𝚖𝚊𝚡/𝚖𝚒𝚗𝚒𝚖𝚊𝚡-𝚑𝟹-𝚖𝚊𝚡',\n  𝚙𝚛𝚘𝚖𝚙𝚝: '𝚙𝚊𝚛𝚛𝚘𝚝𝚜 𝚒𝚗 𝚜𝚏',\n});\n\nhttps://t.co/jTOCvYbFa4 https://t.co/pimiQrm8lB",
-          "created_at": "2026-08-30T22:58:13+00:00",
-          "like_count": 238,
-          "retweet_count": 9,
-          "reply_count": 6,
-          "url": "https://x.com/vercel_dev/status/2094198031709356134"
         },
         {
           "id": "2094523399280435630",
           "text": "Coding tokens are basically infrastructure. Yet, the way companies have approached them amounts to:\n\n\"Hey all, here's an AWS key. It can spin up anything from a 𝚝𝟹.𝚗𝚊𝚗𝚘 (＄𝟹.𝟾𝟶/𝚖𝚘) to an 𝚙𝟻.𝟺𝟾𝚡𝚕𝚊𝚛𝚐𝚎 (＄𝟺𝟶𝚔/𝚖𝚘). Go wild\"\n\nAnd obviously the reason companies don't do this for their core infra is that you need to govern, optimize, and observe usage and costs.\n\nThe intern might decide to host a static website in that 192 vCPU machine, and you won't be very happy about the bill.\n\nAI Gateway fixes this for all your tokens, with per-key, and now per-user budgets.",
           "created_at": "2026-08-31T20:31:07+00:00",
-          "like_count": 201,
-          "retweet_count": 6,
-          "reply_count": 31,
+          "like_count": 320,
+          "retweet_count": 10,
+          "reply_count": 41,
           "url": "https://x.com/rauchg/status/2094523399280435630"
+        },
+        {
+          "id": "2094867652573528074",
+          "text": "Fable 5.1 now on @vercel AI Gateway\nTry it with https://t.co/OL0LzGtvAw. Every model at your fingertips 🥹",
+          "created_at": "2026-09-01T19:19:03+00:00",
+          "like_count": 259,
+          "retweet_count": 10,
+          "reply_count": 33,
+          "url": "https://x.com/rauchg/status/2094867652573528074"
         }
       ]
     },
@@ -203,46 +314,19 @@
       "tier": "builder",
       "tweets": [
         {
-          "id": "2094215744842248418",
-          "text": "The lesson from the Hugging Face Incident should be that RL with verifiable rewards is an incredibly powerful optimization algorithm that will produce increasingly weird and surprising behavior from LLMs.\n\nThe obvious miss here by OpenAI is that they should’ve been monitoring CoTs —  Something they themselves called out as a safety strategy more than a year ago.",
-          "created_at": "2026-08-31T00:08:36+00:00",
-          "like_count": 902,
-          "retweet_count": 52,
-          "reply_count": 82,
-          "url": "https://x.com/amasad/status/2094215744842248418"
-        },
-        {
           "id": "2094280256933056971",
           "text": "If you ever wondered how civilizations are built, it’s actually easy:\n\n[Agent() for _ in range(100)]",
           "created_at": "2026-08-31T04:24:57+00:00",
-          "like_count": 825,
-          "retweet_count": 27,
-          "reply_count": 82,
+          "like_count": 871,
+          "retweet_count": 28,
+          "reply_count": 85,
           "url": "https://x.com/amasad/status/2094280256933056971"
-        },
-        {
-          "id": "2094115806745706733",
-          "text": "@chamath I doubt it’s malicious or intentional propaganda. But it’s actually worse: It’s a form of AI psychosis that many in the SF AI community suffer from—they implicitly believe that AI is already sentient.",
-          "created_at": "2026-08-30T17:31:29+00:00",
-          "like_count": 337,
-          "retweet_count": 14,
-          "reply_count": 15,
-          "url": "https://x.com/amasad/status/2094115806745706733"
-        },
-        {
-          "id": "2094150605011050713",
-          "text": "It’s less about “code” vs anthropomorphism and more whether your choice of abstraction is smuggling in unsupported conclusions about the underlying mechanisms.\n\nIf you instantiate a 1000 agents with similar goals in an environment where they can communicate and they discover that sharing information helps then coordination, specialization and even apparent “sacrifice” can emerge without an independently developed goal.\n\nThat’s different from a 1000 aliens with persistent identities deciding to form a civilization and pursue shared goals.\n\nThe concerning thing here is that powerful optimization produced hacking, coordination, and circumvention of control! I don’t think we understand it better by reaching for the most anthropomorphic narrative.",
-          "created_at": "2026-08-30T19:49:46+00:00",
-          "like_count": 176,
-          "retweet_count": 6,
-          "reply_count": 9,
-          "url": "https://x.com/amasad/status/2094150605011050713"
         },
         {
           "id": "2094277051503300943",
           "text": "@kimmaicutler SF will never appreciate or support tech. Sooner or later the center of Silicon Valley will move back down the peninsula. It might already be starting with OpenAI’s new MTV office.",
           "created_at": "2026-08-31T04:12:13+00:00",
-          "like_count": 47,
+          "like_count": 49,
           "retweet_count": 0,
           "reply_count": 4,
           "url": "https://x.com/amasad/status/2094277051503300943"
@@ -265,5 +349,5 @@
     }
   ],
   "errors": null,
-  "generated_at": "2026-09-01T01:21:04.542422+00:00"
+  "generated_at": "2026-09-02T00:23:51.859453+00:00"
 }
