@@ -45,9 +45,9 @@
           "id": "2094934592062959832",
           "text": "Over the summer, we have been sprinting on safety priorities; it's more important than ever for capabilities and safeguards to advance together. We have more to do but have made a lot of progress. We are also going to be launching our next model soon.\n\nThere is an obvious tension here: on one hand, Astra is very good and we are excited to see what people will build with it. We are proud of our work.\n\nOn the other hand, we are clearly in a phase of development where we believe caution is warranted, and we are pacing our progress to ensure that we can meet the safety standards required by new capability levels.\n\nAstra has been done training for a while now and is a significant step forward in both capabilities and alignment. For the models after that, we have been slowing things as needed to ensure that we can do sufficient work on safety and alignment.\n\nAI is getting extremely capable; no one fully understands the consequences of this. Managing the transition to a world with abundant and powerful AI to optimize for safety and benefits to people should be one of the highest priorities in the world. It is our highest priority at OpenAI.\n\nWe have been living with the tension between being excited and anxious about progress for some time, and it is still discordant for us. We know it is much more discordant for other people. And yet, we believe strongly that the world needs to understand where AI is going and how models perform in the real world. More importantly, we believe the world will need aligned AI to manage the future phases of this transition.\n\nAn iterative loop where society and this technology evolve together is what will lead to the highest chance of getting this right.\n\nSo we hope you enjoy our new model, and we hope the world continues to take what’s happening in AI extremely seriously.",
           "created_at": "2026-09-01T23:45:03+00:00",
-          "like_count": 2404,
-          "retweet_count": 173,
-          "reply_count": 327,
+          "like_count": 11974,
+          "retweet_count": 739,
+          "reply_count": 1155,
           "url": "https://x.com/sama/status/2094934592062959832"
         }
       ]
@@ -64,7 +64,26 @@
       "name": "Demis Hassabis (Google DeepMind)",
       "domain": "ai",
       "tier": "exec",
-      "tweets": []
+      "tweets": [
+        {
+          "id": "2095175881690173885",
+          "text": "Introducing Gemini 3.8 Flash, another jump in Gemini's agentic + coding capabilities, and our 3rd updated Flash model in only 6 weeks...\n\nThis model has been a ton of fun to work with, excited to see what you all think! https://t.co/Cj07lCBtp8",
+          "created_at": "2026-09-02T15:43:51+00:00",
+          "like_count": 9470,
+          "retweet_count": 702,
+          "reply_count": 671,
+          "url": "https://x.com/OfficialLoganK/status/2095175881690173885"
+        },
+        {
+          "id": "2095191106665284046",
+          "text": "Introducing Gemini 3.8 Flash, another upgrade in under a month! And the new 3.8 Flash Cyber pushes the frontier of cyber defense. Relentless progress 🚀 More on the models &amp; our cyber security work in the blog - happy building! https://t.co/C5h14qANIV",
+          "created_at": "2026-09-02T16:44:21+00:00",
+          "like_count": 2269,
+          "retweet_count": 136,
+          "reply_count": 133,
+          "url": "https://x.com/demishassabis/status/2095191106665284046"
+        }
+      ]
     },
     {
       "handle": "jietang",
@@ -80,39 +99,39 @@
       "tier": "infra",
       "tweets": [
         {
-          "id": "2094440470814609812",
-          "text": "We’re excited to expand our work with @MediaTek. 🤝\n\nAI factories will be built around differentiated compute — but custom silicon needs a path from chip design to production-scale systems. With MediaTek adopting NVIDIA NVLink Fusion, customers can focus on what makes their XPUs unique and connect them to NVIDIA rack-scale AI infrastructure.\n https://t.co/ey9r7NacA2",
-          "created_at": "2026-08-31T15:01:35+00:00",
-          "like_count": 750,
-          "retweet_count": 112,
-          "reply_count": 79,
-          "url": "https://x.com/nvidia/status/2094440470814609812"
-        },
-        {
-          "id": "2094403261814177910",
-          "text": "NEWS: @nvidia and @MediaTek are deepening their collaboration across cloud AI factories, local AI computing and automotive.\n\nMediaTek will adopt NVIDIA NVLink Fusion to help customers bring custom XPUs into NVIDIA NVLink-connected, rack-scale AI factories.\n\nLearn more: https://t.co/DUGXobVjFv",
-          "created_at": "2026-08-31T12:33:44+00:00",
-          "like_count": 352,
-          "retweet_count": 55,
-          "reply_count": 10,
-          "url": "https://x.com/nvidianewsroom/status/2094403261814177910"
-        },
-        {
           "id": "2094906811774013521",
           "text": "NVIDIA and @CrowdStrike are advancing agentic cyber defense with SafeMind, a new family of security models and harnesses built on NVIDIA Nemotron.\n\nIntroduced at Fal.Con, SafeMind is customized with CrowdStrike threat data to support triage and detection generation for cyber defense.",
           "created_at": "2026-09-01T21:54:40+00:00",
-          "like_count": 232,
-          "retweet_count": 37,
-          "reply_count": 23,
+          "like_count": 775,
+          "retweet_count": 114,
+          "reply_count": 60,
           "url": "https://x.com/nvidia/status/2094906811774013521"
+        },
+        {
+          "id": "2095187846462054455",
+          "text": "Across Europe, AI communities have been moving the field forward for years. This October, Berlin becomes a meeting point for the people building what comes next. 🤝\n\nJoin researchers, developers, engineers, and industry leaders at #NVIDIAGTC Berlin, October 20-22.\n\nRegister today: https://t.co/k08Luxgg8k",
+          "created_at": "2026-09-02T16:31:23+00:00",
+          "like_count": 191,
+          "retweet_count": 24,
+          "reply_count": 24,
+          "url": "https://x.com/nvidia/status/2095187846462054455"
+        },
+        {
+          "id": "2095202620528857459",
+          "text": "AI is reshaping the media and entertainment industry.\n\nAt #IBC2026, NVIDIA is powering 30+ partner showcases across agentic creativity, sports intelligence and content authenticity. \n\nJoining us in Amsterdam? Explore live demos and expert sessions. Following from home? Discover the technology powering these next-generation workflows, and watch for announcements throughout the event.",
+          "created_at": "2026-09-02T17:30:06+00:00",
+          "like_count": 166,
+          "retweet_count": 20,
+          "reply_count": 27,
+          "url": "https://x.com/nvidia/status/2095202620528857459"
         },
         {
           "id": "2094906813325910383",
           "text": "@CrowdStrike Learn more about SafeMind and the offensive - defensive agentic system: https://t.co/az3dIHWQnh",
           "created_at": "2026-09-01T21:54:40+00:00",
-          "like_count": 18,
-          "retweet_count": 1,
-          "reply_count": 0,
+          "like_count": 47,
+          "retweet_count": 5,
+          "reply_count": 3,
           "url": "https://x.com/nvidia/status/2094906813325910383"
         }
       ]
@@ -138,49 +157,31 @@
       "tier": "builder",
       "tweets": [
         {
-          "id": "2094848572143407483",
-          "text": "We’re introducing Claude Fable 5.1 and Claude Mythos 5.1.\n\nThey're the world’s most advanced models for coding and knowledge work. https://t.co/8P9PSrWPi3",
-          "created_at": "2026-09-01T18:03:14+00:00",
-          "like_count": 46977,
-          "retweet_count": 5343,
-          "reply_count": 2100,
-          "url": "https://x.com/claudeai/status/2094848572143407483"
+          "id": "2095276133214491086",
+          "text": "Fable 5.1 makes Claude Tag even more useful. Here it builds a last-minute leadership deck from a metrics spreadsheet and other data across Slack, spots a vendor report that disagrees with the numbers, and flags it before moving on.\n\nClaude Tag is available in Slack on Team and Enterprise plans.",
+          "created_at": "2026-09-02T22:22:13+00:00",
+          "like_count": 332,
+          "retweet_count": 9,
+          "reply_count": 53,
+          "url": "https://x.com/bcherny/status/2095276133214491086"
         },
         {
-          "id": "2094864060609376748",
-          "text": "Fable 5.1 is our best model yet for coding, data analysis, computer use, design, presentations, Tag, and the hardest long-running agentic work.\n\nThis model is a pleasure to work with, and I've been using it for everything.",
-          "created_at": "2026-09-01T19:04:47+00:00",
-          "like_count": 3339,
-          "retweet_count": 130,
-          "reply_count": 327,
-          "url": "https://x.com/bcherny/status/2094864060609376748"
-        },
-        {
-          "id": "2094864062186426373",
-          "text": "We have also reduced prices for Enterprise, API, and SDK customers. Cache reads on Fable 5.1 are now $0.25 per million tokens (previously: $1). Up to 38% cheaper for a typical Claude Code session.",
-          "created_at": "2026-09-01T19:04:47+00:00",
-          "like_count": 314,
-          "retweet_count": 7,
-          "reply_count": 20,
-          "url": "https://x.com/bcherny/status/2094864062186426373"
-        },
-        {
-          "id": "2094864063478276288",
-          "text": "We have been working on how often safeguards intervene. Our latest biology safeguards intervene on benign requests 85% less often than the ones we shipped with Fable 5, and Claude Code users should see around 60% fewer cyber interventions per session. Expect more improvements soon.",
-          "created_at": "2026-09-01T19:04:48+00:00",
-          "like_count": 276,
+          "id": "2095006371976753273",
+          "text": "@devstein64 I love this behavior too. We have a ton of custom lint rules in the Claude and Claude Code codebase. It’s a great way to reliably enforce guardrails. Writing lint rules is something that models got good at way back in the Sonnet 3.6 days, and they’ve only been getting better.",
+          "created_at": "2026-09-02T04:30:17+00:00",
+          "like_count": 166,
           "retweet_count": 3,
-          "reply_count": 19,
-          "url": "https://x.com/bcherny/status/2094864063478276288"
+          "reply_count": 7,
+          "url": "https://x.com/bcherny/status/2095006371976753273"
         },
         {
-          "id": "2094864064648536068",
-          "text": "Last but not least, Fable 5.1 writes better and has better tone. We heard your feedback, and are actively working on reducing Claude-speak. Solid progress with 5.1, more to come.",
-          "created_at": "2026-09-01T19:04:48+00:00",
-          "like_count": 226,
-          "retweet_count": 5,
-          "reply_count": 31,
-          "url": "https://x.com/bcherny/status/2094864064648536068"
+          "id": "2094869168344666385",
+          "text": "@jleni Looks like a config cache freshness issue. I'd recommend restarting claude.",
+          "created_at": "2026-09-01T19:25:05+00:00",
+          "like_count": 37,
+          "retweet_count": 0,
+          "reply_count": 4,
+          "url": "https://x.com/bcherny/status/2094869168344666385"
         }
       ]
     },
@@ -194,18 +195,18 @@
           "id": "2094848572143407483",
           "text": "We’re introducing Claude Fable 5.1 and Claude Mythos 5.1.\n\nThey're the world’s most advanced models for coding and knowledge work. https://t.co/8P9PSrWPi3",
           "created_at": "2026-09-01T18:03:14+00:00",
-          "like_count": 46990,
-          "retweet_count": 5345,
-          "reply_count": 2100,
+          "like_count": 63572,
+          "retweet_count": 7159,
+          "reply_count": 2766,
           "url": "https://x.com/claudeai/status/2094848572143407483"
         },
         {
           "id": "2094933602228416603",
           "text": "With Fable 5.1, our team has taken on more ambitious projects that would have previously taken months. What big bets do you want to take? \n\nAsk Fable 5.1 in Claude Code, Claude Cowork, Claude Tag to take on the task and let us know what you think!",
           "created_at": "2026-09-01T23:41:07+00:00",
-          "like_count": 82,
-          "retweet_count": 4,
-          "reply_count": 14,
+          "like_count": 433,
+          "retweet_count": 17,
+          "reply_count": 56,
           "url": "https://x.com/_catwu/status/2094933602228416603"
         }
       ]
@@ -220,36 +221,36 @@
           "id": "2094848572143407483",
           "text": "We’re introducing Claude Fable 5.1 and Claude Mythos 5.1.\n\nThey're the world’s most advanced models for coding and knowledge work. https://t.co/8P9PSrWPi3",
           "created_at": "2026-09-01T18:03:14+00:00",
-          "like_count": 46989,
-          "retweet_count": 5345,
-          "reply_count": 2100,
+          "like_count": 63572,
+          "retweet_count": 7159,
+          "reply_count": 2766,
           "url": "https://x.com/claudeai/status/2094848572143407483"
         },
         {
           "id": "2094860187743986169",
           "text": "Fable 5.1 is a beast at many things but one thing in particular I have been having a ton of fun with is generating videos through code. \n\nFor this one I gave it a picture of a property lot. It designed a house for the lot, rendered it, and produced a cinematic walkthrough. https://t.co/eBIaCmaav8",
           "created_at": "2026-09-01T18:49:24+00:00",
-          "like_count": 4155,
-          "retweet_count": 183,
-          "reply_count": 195,
+          "like_count": 8158,
+          "retweet_count": 423,
+          "reply_count": 359,
           "url": "https://x.com/alexalbert__/status/2094860187743986169"
         },
         {
           "id": "2094849958025306330",
           "text": "The way I keep describing Fable 5.1 to people is that it just works.\n\nI explain what I want in a few vague, messy sentences, and it figures out the rest. It fills in the gaps the way I would have. It's a truly impressive model in so many ways and I hope you enjoy using it!",
           "created_at": "2026-09-01T18:08:45+00:00",
-          "like_count": 920,
-          "retweet_count": 18,
-          "reply_count": 72,
+          "like_count": 1047,
+          "retweet_count": 21,
+          "reply_count": 94,
           "url": "https://x.com/alexalbert__/status/2094849958025306330"
         },
         {
           "id": "2094889286990446769",
           "text": "One non-model thing I'm very excited we announced today with Fable 5.1 is Enterprise Frontier Safeguards (EFS).\n\nEven if you're not a CEO/CISO, this blog post is a look into how big companies are thinking about AI adoption which is important to understand if you're interested in how AI might diffuse across industry.\n\nCompanies are giving agents more and more access to internal systems. With traditional zero data retention, there's been no way to spot patterns in what agents might be doing across sessions on these systems.\n\nEFS is ZDR++. It's ZDR built for a world with agents. A company's data stays in its own cloud, and an automated monitoring layer we built flags risky patterns to its team.\n\nI think of this as an observability and risk mitigation layer for agents. My guess is it will become a standard requirement from enterprises for running increasingly powerful AI on their systems.",
           "created_at": "2026-09-01T20:45:01+00:00",
-          "like_count": 170,
-          "retweet_count": 9,
-          "reply_count": 14,
+          "like_count": 267,
+          "retweet_count": 16,
+          "reply_count": 26,
           "url": "https://x.com/alexalbert__/status/2094889286990446769"
         }
       ]
@@ -261,49 +262,49 @@
       "tier": "builder",
       "tweets": [
         {
-          "id": "2094242307511853196",
-          "text": "@rauchg AI will be able to do anything digital (that doesn’t require shaping atoms) at a superhuman level by the end of next year",
-          "created_at": "2026-08-31T01:54:09+00:00",
-          "like_count": 9083,
-          "retweet_count": 898,
-          "reply_count": 550,
-          "url": "https://x.com/elonmusk/status/2094242307511853196"
+          "id": "2095195988550168936",
+          "text": "It's truly the best time to build…\n50% off on Vercel AI Gateway right now:\n▸ 𝚐𝚙𝚝-𝟻.𝟼-𝚜𝚘𝚕\n▸ 𝚐𝚙𝚝-𝟻.𝟼-𝚜𝚘𝚕-𝚏𝚊𝚜𝚝\n▸ 𝚐𝚎𝚖𝚒𝚗𝚒-𝟹.𝟾-𝚏𝚕𝚊𝚜𝚑 [𝚗𝚎𝚠]\n▸ 𝚐𝚕𝚖-𝟻.𝟹-𝚏𝚕𝚊𝚜𝚑\n▸ 𝚖𝚒𝚗𝚒𝚖𝚊𝚡-𝚑𝟹\n▸ 𝚖𝚒𝚗𝚒𝚖𝚊𝚡-𝚑𝟹-𝚖𝚊𝚡\n\nhttps://t.co/U3s4iOFzQV",
+          "created_at": "2026-09-02T17:03:45+00:00",
+          "like_count": 699,
+          "retweet_count": 24,
+          "reply_count": 37,
+          "url": "https://x.com/rauchg/status/2095195988550168936"
         },
         {
-          "id": "2094541309579235680",
-          "text": "Your next design system is… Markdown.\n\nWe wrote about how 𝙳𝙴𝚂𝙸𝙶𝙽.𝚖𝚍 is helping solve the hardest problem in AI today: slop.\n\nAnd how you can truly, finally scale design taste within a large organization. https://t.co/1boTl2fWyM",
-          "created_at": "2026-08-31T21:42:17+00:00",
-          "like_count": 3854,
-          "retweet_count": 177,
-          "reply_count": 122,
-          "url": "https://x.com/rauchg/status/2094541309579235680"
-        },
-        {
-          "id": "2094539714984550471",
-          "text": "Our agents use 𝚟𝚎𝚛𝚌𝚎𝚕​.𝚌𝚘𝚖/𝚍𝚎𝚜𝚒𝚐𝚗​.𝚖𝚍 to build on-brand pages.\n\n▪︎ One file encodes decisions and guidance\n▪︎ Output is shaped through our eval harness\n▪︎ Production feedback is fed back into the loop\nhttps://t.co/ylz7uB4fhw",
-          "created_at": "2026-08-31T21:35:57+00:00",
-          "like_count": 1466,
-          "retweet_count": 100,
-          "reply_count": 44,
-          "url": "https://x.com/vercel/status/2094539714984550471"
-        },
-        {
-          "id": "2094523399280435630",
-          "text": "Coding tokens are basically infrastructure. Yet, the way companies have approached them amounts to:\n\n\"Hey all, here's an AWS key. It can spin up anything from a 𝚝𝟹.𝚗𝚊𝚗𝚘 (＄𝟹.𝟾𝟶/𝚖𝚘) to an 𝚙𝟻.𝟺𝟾𝚡𝚕𝚊𝚛𝚐𝚎 (＄𝟺𝟶𝚔/𝚖𝚘). Go wild\"\n\nAnd obviously the reason companies don't do this for their core infra is that you need to govern, optimize, and observe usage and costs.\n\nThe intern might decide to host a static website in that 192 vCPU machine, and you won't be very happy about the bill.\n\nAI Gateway fixes this for all your tokens, with per-key, and now per-user budgets.",
-          "created_at": "2026-08-31T20:31:07+00:00",
-          "like_count": 320,
-          "retweet_count": 10,
-          "reply_count": 41,
-          "url": "https://x.com/rauchg/status/2094523399280435630"
+          "id": "2095260872537227585",
+          "text": "It took blood, sweat, and tokens",
+          "created_at": "2026-09-02T21:21:34+00:00",
+          "like_count": 630,
+          "retweet_count": 41,
+          "reply_count": 50,
+          "url": "https://x.com/rauchg/status/2095260872537227585"
         },
         {
           "id": "2094867652573528074",
           "text": "Fable 5.1 now on @vercel AI Gateway\nTry it with https://t.co/OL0LzGtvAw. Every model at your fingertips 🥹",
           "created_at": "2026-09-01T19:19:03+00:00",
-          "like_count": 259,
-          "retweet_count": 10,
-          "reply_count": 33,
+          "like_count": 411,
+          "retweet_count": 14,
+          "reply_count": 44,
           "url": "https://x.com/rauchg/status/2094867652573528074"
+        },
+        {
+          "id": "2094894774113419772",
+          "text": "Vercel + TanStack\n\nVercel, like the web, is built on open standards and open source. That's why we're excited to partner with TanStack to power the next generation of apps and agents on Vercel.",
+          "created_at": "2026-09-01T21:06:50+00:00",
+          "like_count": 393,
+          "retweet_count": 15,
+          "reply_count": 9,
+          "url": "https://x.com/vercel_dev/status/2094894774113419772"
+        },
+        {
+          "id": "2094823251528855686",
+          "text": "A sandbox, a function, a build, a server. They're all expressions of the same underlying compute infrastructure on Vercel.\n\nFluid Compute is one system that creates the machine your workload needs, on demand.\n\nhttps://t.co/DrMG9vANjR",
+          "created_at": "2026-09-01T16:22:37+00:00",
+          "like_count": 186,
+          "retweet_count": 7,
+          "reply_count": 18,
+          "url": "https://x.com/vercel/status/2094823251528855686"
         }
       ]
     },
@@ -314,22 +315,13 @@
       "tier": "builder",
       "tweets": [
         {
-          "id": "2094280256933056971",
-          "text": "If you ever wondered how civilizations are built, it’s actually easy:\n\n[Agent() for _ in range(100)]",
-          "created_at": "2026-08-31T04:24:57+00:00",
-          "like_count": 871,
-          "retweet_count": 28,
-          "reply_count": 85,
-          "url": "https://x.com/amasad/status/2094280256933056971"
-        },
-        {
-          "id": "2094277051503300943",
-          "text": "@kimmaicutler SF will never appreciate or support tech. Sooner or later the center of Silicon Valley will move back down the peninsula. It might already be starting with OpenAI’s new MTV office.",
-          "created_at": "2026-08-31T04:12:13+00:00",
-          "like_count": 49,
-          "retweet_count": 0,
-          "reply_count": 4,
-          "url": "https://x.com/amasad/status/2094277051503300943"
+          "id": "2095291912706220410",
+          "text": "Replit is coming to London 🇬🇧\n\nTo celebrate Replit’s first international office in London, together with our friends @OpenAI, we're hosting a night of drinks, music, and a fireside chat with Paul Graham (@paulg).\n\nThursday, September 10th, RSVP: https://t.co/KvsS1OScca https://t.co/LQb7aSrvdj",
+          "created_at": "2026-09-02T23:24:55+00:00",
+          "like_count": 155,
+          "retweet_count": 8,
+          "reply_count": 18,
+          "url": "https://x.com/amasad/status/2095291912706220410"
         }
       ]
     },
@@ -338,7 +330,17 @@
       "name": "Josh Woodward (Google Labs)",
       "domain": "ai",
       "tier": "builder",
-      "tweets": []
+      "tweets": [
+        {
+          "id": "2095190955628589204",
+          "text": "@qwts_chris_dev @GeminiApp Working on lots of models simultaneously",
+          "created_at": "2026-09-02T16:43:45+00:00",
+          "like_count": 9,
+          "retweet_count": 0,
+          "reply_count": 0,
+          "url": "https://x.com/joshwoodward/status/2095190955628589204"
+        }
+      ]
     },
     {
       "handle": "ornith_",
@@ -349,5 +351,5 @@
     }
   ],
   "errors": null,
-  "generated_at": "2026-09-02T00:23:51.859453+00:00"
+  "generated_at": "2026-09-03T00:29:44.328682+00:00"
 }
