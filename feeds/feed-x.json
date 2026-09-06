@@ -14,31 +14,13 @@
       "tier": "analyst",
       "tweets": [
         {
-          "id": "2095621785953984782",
-          "text": "sorry for the radio silence folks - got sucked into extreme LLM psychosis. but i can confidently say we have crossed over into a new age of AI Engineering and we are never, ever, looking back. \n\nthis isnt even EVERYTHING i did with Astra but i'll append more reports as I publish them on LS!",
-          "created_at": "2026-09-03T21:15:43+00:00",
-          "like_count": 398,
-          "retweet_count": 23,
-          "reply_count": 31,
-          "url": "https://x.com/swyx/status/2095621785953984782"
-        },
-        {
-          "id": "2095621025887396217",
-          "text": "We spent >20B tokens throwing @openai's Astra at every AI Engineering task we could think of, beyond cute Blender demos and fun games.\n\nhttps://t.co/QoW6YBybA4\n\nHere's everything Astra can do, and do so at <$6 an hour (serious):\n\n- choose and train models\n- label data (both helping you label and then using your labels for active learning)\n- keep pipelines saturated\n- instrument and read logs\n- deploy and debug entire systems in one shot\n- fan out and command and eval subagents (including agents running other models)\n- keep coherence over billions of tokens of a single agent thread.\n\nmore to come on @swyx's coverage of the Fable- and Astra-class of 2026!",
-          "created_at": "2026-09-03T21:12:41+00:00",
-          "like_count": 125,
-          "retweet_count": 7,
-          "reply_count": 3,
-          "url": "https://x.com/latentspacepod/status/2095621025887396217"
-        },
-        {
-          "id": "2095572498096267324",
-          "text": "@htahir111 @aiDotEngineer @strickvl also check out https://t.co/v0nunbVLZN :)",
-          "created_at": "2026-09-03T17:59:52+00:00",
-          "like_count": 8,
-          "retweet_count": 1,
-          "reply_count": 2,
-          "url": "https://x.com/swyx/status/2095572498096267324"
+          "id": "2095757111854866639",
+          "text": "for the first time in a year, @OpenAI's model launch has been better received than a Claude launch.\n\nhttps://t.co/Bh2QIL6Oth\n\nthis is a huge upset that we had previously not thought possible this year. https://t.co/OmWPUG2tCD",
+          "created_at": "2026-09-04T06:13:27+00:00",
+          "like_count": 126,
+          "retweet_count": 11,
+          "reply_count": 10,
+          "url": "https://x.com/latentspacepod/status/2095757111854866639"
         }
       ]
     },
@@ -47,7 +29,17 @@
       "name": "Dylan Patel (SemiAnalysis)",
       "domain": "ai",
       "tier": "analyst",
-      "tweets": []
+      "tweets": [
+        {
+          "id": "2095940936438079549",
+          "text": "Been trying Anthropic Fable 5.1 vs OpenAI Astra recently.\nPretty clear who the real winner is. https://t.co/iJwEQJAwl4",
+          "created_at": "2026-09-04T18:23:54+00:00",
+          "like_count": 3305,
+          "retweet_count": 101,
+          "reply_count": 125,
+          "url": "https://x.com/dylan522p/status/2095940936438079549"
+        }
+      ]
     },
     {
       "handle": "leopoldasch",
@@ -70,31 +62,13 @@
       "tier": "exec",
       "tweets": [
         {
-          "id": "2095595741528125780",
-          "text": "This is GPT-6 Astra.\n\nAnything you can do on a computer, Astra can do for you. Fast. https://t.co/gDd0IsewJw",
-          "created_at": "2026-09-03T19:32:13+00:00",
-          "like_count": 97183,
-          "retweet_count": 9523,
-          "reply_count": 2649,
-          "url": "https://x.com/OpenAI/status/2095595741528125780"
-        },
-        {
-          "id": "2095600005772104059",
-          "text": "GPT-6 Astra is here.\n\nWe hope it will begin to enable a new generation of entrepreneurship, scientific discovery, and building.\n\nWe believe it is the best model in the world for computer use, professional work, science, coding, cybersecurity, and more.\n\nIt took us some extra time to ensure that we could meet the safety and alignment standards required for this capability level, but we think you’ll find it worth the wait.\n\nIt scores 98% on FrontierMath Tier 4, 99.9% on ARC-AGI 3, and 100% on ExploitBench.",
-          "created_at": "2026-09-03T19:49:10+00:00",
-          "like_count": 30134,
-          "retweet_count": 2380,
-          "reply_count": 1473,
-          "url": "https://x.com/sama/status/2095600005772104059"
-        },
-        {
-          "id": "2095601442220638547",
-          "text": "Also, this is my favorite OpenAI video so far. It makes me excited for the future!",
-          "created_at": "2026-09-03T19:54:52+00:00",
-          "like_count": 10105,
-          "retweet_count": 462,
-          "reply_count": 567,
-          "url": "https://x.com/sama/status/2095601442220638547"
+          "id": "2095973658867171733",
+          "text": "GPT-6 Astra is now available to all Pro, Enterprise, and Business Premium users in Work/Codex, and is available in the API.\n\nWe will start rollout to Plus and Business users next.\n\nThank you for the patience.",
+          "created_at": "2026-09-04T20:33:56+00:00",
+          "like_count": 19614,
+          "retweet_count": 853,
+          "reply_count": 824,
+          "url": "https://x.com/sama/status/2095973658867171733"
         }
       ]
     },
@@ -110,26 +84,7 @@
       "name": "Demis Hassabis (Google DeepMind)",
       "domain": "ai",
       "tier": "exec",
-      "tweets": [
-        {
-          "id": "2095175881690173885",
-          "text": "Introducing Gemini 3.8 Flash, another jump in Gemini's agentic + coding capabilities, and our 3rd updated Flash model in only 6 weeks...\n\nThis model has been a ton of fun to work with, excited to see what you all think! https://t.co/Cj07lCBtp8",
-          "created_at": "2026-09-02T15:43:51+00:00",
-          "like_count": 10990,
-          "retweet_count": 821,
-          "reply_count": 769,
-          "url": "https://x.com/OfficialLoganK/status/2095175881690173885"
-        },
-        {
-          "id": "2095191106665284046",
-          "text": "Introducing Gemini 3.8 Flash, another upgrade in under a month! And the new 3.8 Flash Cyber pushes the frontier of cyber defense. Relentless progress 🚀 More on the models &amp; our cyber security work in the blog - happy building! https://t.co/C5h14qANIV",
-          "created_at": "2026-09-02T16:44:21+00:00",
-          "like_count": 3238,
-          "retweet_count": 203,
-          "reply_count": 178,
-          "url": "https://x.com/demishassabis/status/2095191106665284046"
-        }
-      ]
+      "tweets": []
     },
     {
       "handle": "jietang",
@@ -145,31 +100,22 @@
       "tier": "infra",
       "tweets": [
         {
-          "id": "2095518531693806017",
-          "text": "Open models are essential to expanding access to AI and accelerating innovation around the world.\n\nWe're excited to help @huggingface scale its platform and community while preserving the openness, neutrality, and choice that have made it a trusted home for AI builders.\n\n🤗💚",
-          "created_at": "2026-09-03T14:25:25+00:00",
-          "like_count": 1194,
-          "retweet_count": 157,
-          "reply_count": 71,
-          "url": "https://x.com/nvidia/status/2095518531693806017"
+          "id": "2095934132110946634",
+          "text": "Huge congrats to our friends at @wayve_ai and @Uber. \n\nWayve’s frontier AI, trained on NVIDIA infrastructure and running on NVIDIA DRIVE AGX accelerated compute, is now taking passengers through the streets of London.\n\nLet’s ride. 🚘🇬🇧",
+          "created_at": "2026-09-04T17:56:52+00:00",
+          "like_count": 520,
+          "retweet_count": 50,
+          "reply_count": 49,
+          "url": "https://x.com/nvidia/status/2095934132110946634"
         },
         {
-          "id": "2095187846462054455",
-          "text": "Across Europe, AI communities have been moving the field forward for years. This October, Berlin becomes a meeting point for the people building what comes next. 🤝\n\nJoin researchers, developers, engineers, and industry leaders at #NVIDIAGTC Berlin, October 20-22.\n\nRegister today: https://t.co/k08Luxgg8k",
-          "created_at": "2026-09-02T16:31:23+00:00",
-          "like_count": 283,
-          "retweet_count": 45,
-          "reply_count": 28,
-          "url": "https://x.com/nvidia/status/2095187846462054455"
-        },
-        {
-          "id": "2095202620528857459",
-          "text": "AI is reshaping the media and entertainment industry.\n\nAt #IBC2026, NVIDIA is powering 30+ partner showcases across agentic creativity, sports intelligence and content authenticity. \n\nJoining us in Amsterdam? Explore live demos and expert sessions. Following from home? Discover the technology powering these next-generation workflows, and watch for announcements throughout the event.",
-          "created_at": "2026-09-02T17:30:06+00:00",
-          "like_count": 267,
-          "retweet_count": 36,
-          "reply_count": 36,
-          "url": "https://x.com/nvidia/status/2095202620528857459"
+          "id": "2095994562409873738",
+          "text": "@MicronTech Reinventing memory is one of the great challenges of the AI era. Congratulations to @MicronTech on this bold step toward the breakthroughs that will define the next era of AI and computing.",
+          "created_at": "2026-09-04T21:57:00+00:00",
+          "like_count": 7,
+          "retweet_count": 0,
+          "reply_count": 3,
+          "url": "https://x.com/nvidia/status/2095994562409873738"
         }
       ]
     },
@@ -178,17 +124,7 @@
       "name": "Jensen Huang (NVIDIA)",
       "domain": "ai",
       "tier": "exec",
-      "tweets": [
-        {
-          "id": "2095482647355244762",
-          "text": "Exciting day for NVIDIA and @huggingface.\n\nOpen models strengthen safety and cybersecurity, accelerate innovation and diffusion, and enable sovereignty. They allow every developer, startup, university, industry and country to build with, customize and benefit from AI.\n\nThank you @ClementDelangue for coming to me.\n\nNVIDIA is going to be a great home for Hugging Face, its community and the future of open models. 🤗\n\nhttps://t.co/q8Om2Xc5ye",
-          "created_at": "2026-09-03T12:02:49+00:00",
-          "like_count": 21419,
-          "retweet_count": 2713,
-          "reply_count": 1227,
-          "url": "https://x.com/JensenHuang/status/2095482647355244762"
-        }
-      ]
+      "tweets": []
     },
     {
       "handle": "AmandaAskell",
@@ -204,49 +140,13 @@
       "tier": "builder",
       "tweets": [
         {
-          "id": "2095226833293685100",
-          "text": "Claude can now use your computer in the background in Claude Cowork and Claude Code.\n\nGive it something to do on your desktop and Claude clicks, types, and opens apps just like you would, while you work on something else. https://t.co/AOiup03pQK",
-          "created_at": "2026-09-02T19:06:19+00:00",
-          "like_count": 11135,
-          "retweet_count": 639,
-          "reply_count": 491,
-          "url": "https://x.com/claudeai/status/2095226833293685100"
-        },
-        {
-          "id": "2095572891941351550",
-          "text": "We're exploring a new way to let you extend and customize Claude Code: Function Hooks.\n\nHere's a couple videos showing what you'd be able to do. It hasn't shipped yet, we'd love feedback on this on our GitHub issue. https://t.co/0F3kBO3kjl",
-          "created_at": "2026-09-03T18:01:25+00:00",
-          "like_count": 2173,
-          "retweet_count": 102,
-          "reply_count": 141,
-          "url": "https://x.com/ClaudeDevs/status/2095572891941351550"
-        },
-        {
-          "id": "2095378890370019683",
-          "text": "Background computer use is underrated",
-          "created_at": "2026-09-03T05:10:32+00:00",
-          "like_count": 1872,
-          "retweet_count": 54,
-          "reply_count": 158,
-          "url": "https://x.com/bcherny/status/2095378890370019683"
-        },
-        {
-          "id": "2095276133214491086",
-          "text": "Fable 5.1 makes Claude Tag even more useful. Here it builds a last-minute leadership deck from a metrics spreadsheet and other data across Slack, spots a vendor report that disagrees with the numbers, and flags it before moving on.\n\nClaude Tag is available in Slack on Team and Enterprise plans.",
-          "created_at": "2026-09-02T22:22:13+00:00",
-          "like_count": 1064,
-          "retweet_count": 41,
-          "reply_count": 109,
-          "url": "https://x.com/bcherny/status/2095276133214491086"
-        },
-        {
-          "id": "2095590515765060076",
-          "text": "Your input needed: would you use this?\n\nThis is an early look at how we're thinking about making Claude Code way more extensible. It's a little crazy, and very exciting.\n\nMore details here: https://t.co/X2SbdZYxvi",
-          "created_at": "2026-09-03T19:11:27+00:00",
-          "like_count": 601,
-          "retweet_count": 31,
-          "reply_count": 135,
-          "url": "https://x.com/bcherny/status/2095590515765060076"
+          "id": "2096093732991025412",
+          "text": "@aabyzov Ask Claude “why did the hook fail?”",
+          "created_at": "2026-09-05T04:31:04+00:00",
+          "like_count": 4,
+          "retweet_count": 0,
+          "reply_count": 1,
+          "url": "https://x.com/bcherny/status/2096093732991025412"
         }
       ]
     },
@@ -262,7 +162,17 @@
       "name": "Alex Albert (Anthropic)",
       "domain": "ai",
       "tier": "builder",
-      "tweets": []
+      "tweets": [
+        {
+          "id": "2096311827328327703",
+          "text": "@dfelinto @andrewpprice @GregFeingold No MCP and no Blender UI at all. I ran Fable 5.1 in a sandboxed Linux box with a shell. It installed Blender, wrote a Python script against Blender's built-in bpy API. And rendered everything CPU only. No asset library used either.",
+          "created_at": "2026-09-05T18:57:41+00:00",
+          "like_count": 0,
+          "retweet_count": 0,
+          "reply_count": 0,
+          "url": "https://x.com/alexalbert__/status/2096311827328327703"
+        }
+      ]
     },
     {
       "handle": "rauchg",
@@ -271,49 +181,49 @@
       "tier": "builder",
       "tweets": [
         {
-          "id": "2095260872537227585",
-          "text": "It took blood, sweat, and tokens",
-          "created_at": "2026-09-02T21:21:34+00:00",
-          "like_count": 1800,
-          "retweet_count": 121,
-          "reply_count": 105,
-          "url": "https://x.com/rauchg/status/2095260872537227585"
+          "id": "2096375803714138437",
+          "text": "Anyone that works in AI is working the hardest they've ever worked in their lives. On the surface it's somewhat ironic (AI should give us back time!), but the reality is that it's the most fun, fascinating and empowering epoch in human history. The intelligence revolution.",
+          "created_at": "2026-09-05T23:11:55+00:00",
+          "like_count": 2074,
+          "retweet_count": 184,
+          "reply_count": 131,
+          "url": "https://x.com/rauchg/status/2096375803714138437"
         },
         {
-          "id": "2095195988550168936",
-          "text": "It's truly the best time to build…\n50% off on Vercel AI Gateway right now:\n▸ 𝚐𝚙𝚝-𝟻.𝟼-𝚜𝚘𝚕\n▸ 𝚐𝚙𝚝-𝟻.𝟼-𝚜𝚘𝚕-𝚏𝚊𝚜𝚝\n▸ 𝚐𝚎𝚖𝚒𝚗𝚒-𝟹.𝟾-𝚏𝚕𝚊𝚜𝚑 [𝚗𝚎𝚠]\n▸ 𝚐𝚕𝚖-𝟻.𝟹-𝚏𝚕𝚊𝚜𝚑\n▸ 𝚖𝚒𝚗𝚒𝚖𝚊𝚡-𝚑𝟹\n▸ 𝚖𝚒𝚗𝚒𝚖𝚊𝚡-𝚑𝟹-𝚖𝚊𝚡\n\nhttps://t.co/U3s4iOFzQV",
-          "created_at": "2026-09-02T17:03:45+00:00",
-          "like_count": 1038,
-          "retweet_count": 41,
-          "reply_count": 52,
-          "url": "https://x.com/rauchg/status/2095195988550168936"
+          "id": "2096065378598441431",
+          "text": "Super bullish on WebMCP. Much like Tesla FSD meets the world where it is (streets, stoplights, potholes and all), agents *need* to ride the existing WWW infrastructure… WebMCP makes it more efficient.\n\nSome pretty unique wins too. e.g: Next.js dev pages could expose debugging tools directly to agents in the specific tab they’re testing, with page-specific context, instead of sifting through server logs. No separate MCP server to find and configure because the page directly exposes its own 'agent tools'.\n\ne.g: in this world 𝚏𝚡 + 𝚊𝚐𝚎𝚗𝚝-𝚋𝚛𝚘𝚠𝚜𝚎𝚛 is a complete web dev stack with zero loss in debugging depth",
+          "created_at": "2026-09-05T02:38:23+00:00",
+          "like_count": 1380,
+          "retweet_count": 71,
+          "reply_count": 123,
+          "url": "https://x.com/rauchg/status/2096065378598441431"
         },
         {
-          "id": "2095534442198839758",
-          "text": "Run \n▲ ~/ vercel ai-gateway coding-agents setup\n\nPoints all coding agents to AI Gateway, getting you 100% uptime, observability, budgets, and ease of switching.",
-          "created_at": "2026-09-03T15:28:38+00:00",
-          "like_count": 158,
-          "retweet_count": 4,
-          "reply_count": 32,
-          "url": "https://x.com/rauchg/status/2095534442198839758"
+          "id": "2096285043094405491",
+          "text": "Astra is now the best cybersecurity model in the world on @vercel DeepsecBench.\n\nIt pulls off in 49 minutes what took Sol ~4 hours, with a better score, at nearly the same cost. It's more effective and 50% cheaper than Claude Opus 5 max.\n\nhttps://t.co/14WK4F7Qhs https://t.co/zRyGqlZYFo",
+          "created_at": "2026-09-05T17:11:16+00:00",
+          "like_count": 980,
+          "retweet_count": 43,
+          "reply_count": 66,
+          "url": "https://x.com/rauchg/status/2096285043094405491"
         },
         {
-          "id": "2095231331349176593",
-          "text": "I never imagined spending 80% of my time in front of a CLI to build an outbound sales process. But as @rauchg says, everything is code now… even sales.",
-          "created_at": "2026-09-02T19:24:11+00:00",
-          "like_count": 71,
-          "retweet_count": 2,
-          "reply_count": 8,
-          "url": "https://x.com/damian_kofman/status/2095231331349176593"
+          "id": "2096307407039426619",
+          "text": "The unexpected benefit of open source is that it allows model training companies to train on using your software (and optimizing it) for free.\n\nBlender may have just won as a 3D asset creation software because the models will be better at using it than any proprietary ones",
+          "created_at": "2026-09-05T18:40:08+00:00",
+          "like_count": 598,
+          "retweet_count": 23,
+          "reply_count": 22,
+          "url": "https://x.com/MillionInt/status/2096307407039426619"
         },
         {
-          "id": "2095290230740046312",
-          "text": "@0xMoe_ 🫡 glad you're using ai-cli! send feedback to @ctatedev :D",
-          "created_at": "2026-09-02T23:18:14+00:00",
-          "like_count": 2,
+          "id": "2096291249091441116",
+          "text": "@vidigoat2011 @vercel We have. Fable refuses",
+          "created_at": "2026-09-05T17:35:55+00:00",
+          "like_count": 47,
           "retweet_count": 0,
-          "reply_count": 0,
-          "url": "https://x.com/rauchg/status/2095290230740046312"
+          "reply_count": 3,
+          "url": "https://x.com/rauchg/status/2096291249091441116"
         }
       ]
     },
@@ -324,31 +234,31 @@
       "tier": "builder",
       "tweets": [
         {
-          "id": "2095291912706220410",
-          "text": "Replit is coming to London 🇬🇧\n\nTo celebrate Replit’s first international office in London, together with our friends @OpenAI, we're hosting a night of drinks, music, and a fireside chat with Paul Graham (@paulg).\n\nThursday, September 10th, RSVP: https://t.co/KvsS1OScca https://t.co/LQb7aSrvdj",
-          "created_at": "2026-09-02T23:24:55+00:00",
-          "like_count": 1121,
-          "retweet_count": 56,
-          "reply_count": 93,
-          "url": "https://x.com/amasad/status/2095291912706220410"
+          "id": "2095746838490198375",
+          "text": "Marvin Minsky wrote about this in The Emotion Machine. Emotions are a core part of human intelligence, not some epiphenomenal side effect of human evolution (which presumably many AI folks believe it is).\n\nMinsky describes a selector of sorts for different thinking strategies.",
+          "created_at": "2026-09-04T05:32:38+00:00",
+          "like_count": 556,
+          "retweet_count": 44,
+          "reply_count": 57,
+          "url": "https://x.com/amasad/status/2095746838490198375"
         },
         {
-          "id": "2095608811868524679",
-          "text": "GPT-6 is a major jump in capabilities and will unlock new use-cases. Will launch on Replit very soon for you to try it!",
-          "created_at": "2026-09-03T20:24:09+00:00",
-          "like_count": 748,
-          "retweet_count": 25,
-          "reply_count": 23,
-          "url": "https://x.com/amasad/status/2095608811868524679"
+          "id": "2095765201631203513",
+          "text": "Ken Thompson’s “Reflections on Trusting Trust” feels super relevant to AI.\n\nHe bootstrapped a “poisoned” compiler that left no traces of the poison in the source code because it compiled itself.\n\nYou can imagine the same thing happening with models where one poisoned generation helps train the next while removing any traces of the poison.",
+          "created_at": "2026-09-04T06:45:36+00:00",
+          "like_count": 153,
+          "retweet_count": 5,
+          "reply_count": 40,
+          "url": "https://x.com/amasad/status/2095765201631203513"
         },
         {
-          "id": "2095582330152992838",
-          "text": "Many AI’s are down but not all of them. Replit will route you to the available model!",
-          "created_at": "2026-09-03T18:38:56+00:00",
-          "like_count": 139,
-          "retweet_count": 7,
-          "reply_count": 16,
-          "url": "https://x.com/amasad/status/2095582330152992838"
+          "id": "2096395315935162840",
+          "text": "@KevinBlumson @Replit @OpenAI Wild!!",
+          "created_at": "2026-09-06T00:29:27+00:00",
+          "like_count": 1,
+          "retweet_count": 0,
+          "reply_count": 0,
+          "url": "https://x.com/amasad/status/2096395315935162840"
         }
       ]
     },
@@ -357,36 +267,16 @@
       "name": "Josh Woodward (Google Labs)",
       "domain": "ai",
       "tier": "builder",
-      "tweets": [
-        {
-          "id": "2095190955628589204",
-          "text": "@qwts_chris_dev @GeminiApp Working on lots of models simultaneously",
-          "created_at": "2026-09-02T16:43:45+00:00",
-          "like_count": 17,
-          "retweet_count": 0,
-          "reply_count": 2,
-          "url": "https://x.com/joshwoodward/status/2095190955628589204"
-        }
-      ]
+      "tweets": []
     },
     {
       "handle": "ornith_",
       "name": "Ornith (agentic coding LLM)",
       "domain": "ai",
       "tier": "builder",
-      "tweets": [
-        {
-          "id": "2095619122361159684",
-          "text": "@nvidia @huggingface 🥳",
-          "created_at": "2026-09-03T21:05:08+00:00",
-          "like_count": 0,
-          "retweet_count": 0,
-          "reply_count": 0,
-          "url": "https://x.com/ornith_/status/2095619122361159684"
-        }
-      ]
+      "tweets": []
     }
   ],
   "errors": null,
-  "generated_at": "2026-09-04T00:15:25.003132+00:00"
+  "generated_at": "2026-09-06T00:06:31.954169+00:00"
 }
