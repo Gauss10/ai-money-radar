@@ -12,17 +12,7 @@
       "name": "Swyx (Shawn Wang)",
       "domain": "ai",
       "tier": "analyst",
-      "tweets": [
-        {
-          "id": "2095757111854866639",
-          "text": "for the first time in a year, @OpenAI's model launch has been better received than a Claude launch.\n\nhttps://t.co/Bh2QIL6Oth\n\nthis is a huge upset that we had previously not thought possible this year. https://t.co/OmWPUG2tCD",
-          "created_at": "2026-09-04T06:13:27+00:00",
-          "like_count": 126,
-          "retweet_count": 11,
-          "reply_count": 10,
-          "url": "https://x.com/latentspacepod/status/2095757111854866639"
-        }
-      ]
+      "tweets": []
     },
     {
       "handle": "dylan522p",
@@ -31,13 +21,31 @@
       "tier": "analyst",
       "tweets": [
         {
-          "id": "2095940936438079549",
-          "text": "Been trying Anthropic Fable 5.1 vs OpenAI Astra recently.\nPretty clear who the real winner is. https://t.co/iJwEQJAwl4",
-          "created_at": "2026-09-04T18:23:54+00:00",
-          "like_count": 3305,
-          "retweet_count": 101,
-          "reply_count": 125,
-          "url": "https://x.com/dylan522p/status/2095940936438079549"
+          "id": "2096631734699753569",
+          "text": "She's a 10 but she uses Gemini",
+          "created_at": "2026-09-06T16:08:53+00:00",
+          "like_count": 1736,
+          "retweet_count": 51,
+          "reply_count": 158,
+          "url": "https://x.com/dylan522p/status/2096631734699753569"
+        },
+        {
+          "id": "2096628232514687407",
+          "text": "@MilksandMatcha If it's early stage and it's a nice deck without AI it's negative signal.\nIf it's a simple deck without AI that's good signal.\nIf it's a nice deck with AI that's a good signal.",
+          "created_at": "2026-09-06T15:54:58+00:00",
+          "like_count": 147,
+          "retweet_count": 4,
+          "reply_count": 7,
+          "url": "https://x.com/dylan522p/status/2096628232514687407"
+        },
+        {
+          "id": "2096639082793222406",
+          "text": "@polynoamial @OpenAI I'm kinda surprised AI company employees use AI about as much SemiAnalysis employees now, but earlier in the year they used significantly less.\nIG y'all didn't have Claude Code then, but now ur models are better.",
+          "created_at": "2026-09-06T16:38:05+00:00",
+          "like_count": 117,
+          "retweet_count": 3,
+          "reply_count": 7,
+          "url": "https://x.com/dylan522p/status/2096639082793222406"
         }
       ]
     },
@@ -62,13 +70,13 @@
       "tier": "exec",
       "tweets": [
         {
-          "id": "2095973658867171733",
-          "text": "GPT-6 Astra is now available to all Pro, Enterprise, and Business Premium users in Work/Codex, and is available in the API.\n\nWe will start rollout to Plus and Business users next.\n\nThank you for the patience.",
-          "created_at": "2026-09-04T20:33:56+00:00",
-          "like_count": 19614,
-          "retweet_count": 853,
-          "reply_count": 824,
-          "url": "https://x.com/sama/status/2095973658867171733"
+          "id": "2096630018495377464",
+          "text": "I wrote about the state of AI, why I’m concerned about the next few years, and the choices we need to make to keep the future in humanity’s hands.\n\nAn Alien Mind: https://t.co/FeIfWNe0UE",
+          "created_at": "2026-09-06T16:02:04+00:00",
+          "like_count": 7215,
+          "retweet_count": 1007,
+          "reply_count": 460,
+          "url": "https://x.com/merettm/status/2096630018495377464"
         }
       ]
     },
@@ -98,33 +106,24 @@
       "name": "NVIDIA (Jensen Huang / AI infrastructure)",
       "domain": "ai",
       "tier": "infra",
-      "tweets": [
-        {
-          "id": "2095934132110946634",
-          "text": "Huge congrats to our friends at @wayve_ai and @Uber. \n\nWayve’s frontier AI, trained on NVIDIA infrastructure and running on NVIDIA DRIVE AGX accelerated compute, is now taking passengers through the streets of London.\n\nLet’s ride. 🚘🇬🇧",
-          "created_at": "2026-09-04T17:56:52+00:00",
-          "like_count": 520,
-          "retweet_count": 50,
-          "reply_count": 49,
-          "url": "https://x.com/nvidia/status/2095934132110946634"
-        },
-        {
-          "id": "2095994562409873738",
-          "text": "@MicronTech Reinventing memory is one of the great challenges of the AI era. Congratulations to @MicronTech on this bold step toward the breakthroughs that will define the next era of AI and computing.",
-          "created_at": "2026-09-04T21:57:00+00:00",
-          "like_count": 7,
-          "retweet_count": 0,
-          "reply_count": 3,
-          "url": "https://x.com/nvidia/status/2095994562409873738"
-        }
-      ]
+      "tweets": []
     },
     {
       "handle": "JensenHuang",
       "name": "Jensen Huang (NVIDIA)",
       "domain": "ai",
       "tier": "exec",
-      "tweets": []
+      "tweets": [
+        {
+          "id": "2096700264569090384",
+          "text": "@ChaseLochmiller @OpenAI GPT-6 Astra, trained on ~100K+ NVIDIA Grace Blackwell NVLink72. From ChatGPT to o1 to Astra in 4 years.\n\nAGI has arrived. Congratulations @OpenAI team.\n\n400K GPUs coming online next.",
+          "created_at": "2026-09-06T20:41:12+00:00",
+          "like_count": 21529,
+          "retweet_count": 2296,
+          "reply_count": 847,
+          "url": "https://x.com/JensenHuang/status/2096700264569090384"
+        }
+      ]
     },
     {
       "handle": "AmandaAskell",
@@ -167,9 +166,9 @@
           "id": "2096311827328327703",
           "text": "@dfelinto @andrewpprice @GregFeingold No MCP and no Blender UI at all. I ran Fable 5.1 in a sandboxed Linux box with a shell. It installed Blender, wrote a Python script against Blender's built-in bpy API. And rendered everything CPU only. No asset library used either.",
           "created_at": "2026-09-05T18:57:41+00:00",
-          "like_count": 0,
+          "like_count": 1,
           "retweet_count": 0,
-          "reply_count": 0,
+          "reply_count": 1,
           "url": "https://x.com/alexalbert__/status/2096311827328327703"
         }
       ]
@@ -184,46 +183,46 @@
           "id": "2096375803714138437",
           "text": "Anyone that works in AI is working the hardest they've ever worked in their lives. On the surface it's somewhat ironic (AI should give us back time!), but the reality is that it's the most fun, fascinating and empowering epoch in human history. The intelligence revolution.",
           "created_at": "2026-09-05T23:11:55+00:00",
-          "like_count": 2074,
-          "retweet_count": 184,
-          "reply_count": 131,
+          "like_count": 5878,
+          "retweet_count": 515,
+          "reply_count": 294,
           "url": "https://x.com/rauchg/status/2096375803714138437"
-        },
-        {
-          "id": "2096065378598441431",
-          "text": "Super bullish on WebMCP. Much like Tesla FSD meets the world where it is (streets, stoplights, potholes and all), agents *need* to ride the existing WWW infrastructure… WebMCP makes it more efficient.\n\nSome pretty unique wins too. e.g: Next.js dev pages could expose debugging tools directly to agents in the specific tab they’re testing, with page-specific context, instead of sifting through server logs. No separate MCP server to find and configure because the page directly exposes its own 'agent tools'.\n\ne.g: in this world 𝚏𝚡 + 𝚊𝚐𝚎𝚗𝚝-𝚋𝚛𝚘𝚠𝚜𝚎𝚛 is a complete web dev stack with zero loss in debugging depth",
-          "created_at": "2026-09-05T02:38:23+00:00",
-          "like_count": 1380,
-          "retweet_count": 71,
-          "reply_count": 123,
-          "url": "https://x.com/rauchg/status/2096065378598441431"
-        },
-        {
-          "id": "2096285043094405491",
-          "text": "Astra is now the best cybersecurity model in the world on @vercel DeepsecBench.\n\nIt pulls off in 49 minutes what took Sol ~4 hours, with a better score, at nearly the same cost. It's more effective and 50% cheaper than Claude Opus 5 max.\n\nhttps://t.co/14WK4F7Qhs https://t.co/zRyGqlZYFo",
-          "created_at": "2026-09-05T17:11:16+00:00",
-          "like_count": 980,
-          "retweet_count": 43,
-          "reply_count": 66,
-          "url": "https://x.com/rauchg/status/2096285043094405491"
         },
         {
           "id": "2096307407039426619",
           "text": "The unexpected benefit of open source is that it allows model training companies to train on using your software (and optimizing it) for free.\n\nBlender may have just won as a 3D asset creation software because the models will be better at using it than any proprietary ones",
           "created_at": "2026-09-05T18:40:08+00:00",
-          "like_count": 598,
-          "retweet_count": 23,
-          "reply_count": 22,
+          "like_count": 1392,
+          "retweet_count": 61,
+          "reply_count": 32,
           "url": "https://x.com/MillionInt/status/2096307407039426619"
+        },
+        {
+          "id": "2096285043094405491",
+          "text": "Astra is now the best cybersecurity model in the world on @vercel DeepsecBench.\n\nIt pulls off in 49 minutes what took Sol ~4 hours, with a better score, at nearly the same cost. It's more effective and 50% cheaper than Claude Opus 5 max.\n\nhttps://t.co/14WK4F7Qhs https://t.co/zRyGqlZYFo",
+          "created_at": "2026-09-05T17:11:16+00:00",
+          "like_count": 1374,
+          "retweet_count": 63,
+          "reply_count": 79,
+          "url": "https://x.com/rauchg/status/2096285043094405491"
         },
         {
           "id": "2096291249091441116",
           "text": "@vidigoat2011 @vercel We have. Fable refuses",
           "created_at": "2026-09-05T17:35:55+00:00",
-          "like_count": 47,
+          "like_count": 76,
           "retweet_count": 0,
           "reply_count": 3,
           "url": "https://x.com/rauchg/status/2096291249091441116"
+        },
+        {
+          "id": "2096286061370749260",
+          "text": "@marcmaceira Yeah this is an area of active research. We're working on better per-project spend controls, invoicing could v well be within consideration too. cc @simhskal",
+          "created_at": "2026-09-05T17:15:18+00:00",
+          "like_count": 7,
+          "retweet_count": 0,
+          "reply_count": 1,
+          "url": "https://x.com/rauchg/status/2096286061370749260"
         }
       ]
     },
@@ -234,28 +233,10 @@
       "tier": "builder",
       "tweets": [
         {
-          "id": "2095746838490198375",
-          "text": "Marvin Minsky wrote about this in The Emotion Machine. Emotions are a core part of human intelligence, not some epiphenomenal side effect of human evolution (which presumably many AI folks believe it is).\n\nMinsky describes a selector of sorts for different thinking strategies.",
-          "created_at": "2026-09-04T05:32:38+00:00",
-          "like_count": 556,
-          "retweet_count": 44,
-          "reply_count": 57,
-          "url": "https://x.com/amasad/status/2095746838490198375"
-        },
-        {
-          "id": "2095765201631203513",
-          "text": "Ken Thompson’s “Reflections on Trusting Trust” feels super relevant to AI.\n\nHe bootstrapped a “poisoned” compiler that left no traces of the poison in the source code because it compiled itself.\n\nYou can imagine the same thing happening with models where one poisoned generation helps train the next while removing any traces of the poison.",
-          "created_at": "2026-09-04T06:45:36+00:00",
-          "like_count": 153,
-          "retweet_count": 5,
-          "reply_count": 40,
-          "url": "https://x.com/amasad/status/2095765201631203513"
-        },
-        {
           "id": "2096395315935162840",
           "text": "@KevinBlumson @Replit @OpenAI Wild!!",
           "created_at": "2026-09-06T00:29:27+00:00",
-          "like_count": 1,
+          "like_count": 2,
           "retweet_count": 0,
           "reply_count": 0,
           "url": "https://x.com/amasad/status/2096395315935162840"
@@ -278,5 +259,5 @@
     }
   ],
   "errors": null,
-  "generated_at": "2026-09-06T00:06:31.954169+00:00"
+  "generated_at": "2026-09-07T00:10:32.585466+00:00"
 }
