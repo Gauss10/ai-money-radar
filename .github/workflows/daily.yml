@@ -20,6 +20,7 @@ concurrency:
 jobs:
   update-and-deploy:
     runs-on: ubuntu-latest
+    timeout-minutes: 45   # 兜底：任何卡死最多 45 分钟，不再占满 GitHub 默认 6 小时
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
