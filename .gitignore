@@ -10,3 +10,6 @@ __pycache__/
 # 本地维护文档：公开仓库只保留产品和数据管道
 README.md
 AI-Money-Radar-数据说明.md
+
+# twscrape 账号库：明文存 cookie，绝不入库
+scripts/twitter_accounts.db
