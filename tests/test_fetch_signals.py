@@ -176,3 +176,24 @@ class FetchSignalsTests(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class XFeedHealthTests(unittest.TestCase):
+    def _feed(self, days_ago):
+        import datetime
+        ts = datetime.datetime.now(datetime.timezone.utc) - datetime.timedelta(days=days_ago)
+        return {"generated_at": ts.isoformat()}
+
+    def test_fresh_feed_is_ok(self):
+        self.assertEqual(fetch_signals.x_feed_health(self._feed(0))["status"], "ok")
+
+    def test_two_days_is_stale(self):
+        h = fetch_signals.x_feed_health(self._feed(2))
+        self.assertEqual(h["status"], "stale")
+        self.assertEqual(h["stale_days"], 2)
+
+    def test_five_days_means_cookie_dead(self):
+        self.assertEqual(fetch_signals.x_feed_health(self._feed(5))["status"], "dead")
+
+    def test_missing_timestamp_is_unknown(self):
+        self.assertEqual(fetch_signals.x_feed_health({})["status"], "unknown")

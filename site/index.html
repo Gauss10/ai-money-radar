@@ -114,6 +114,9 @@
   .modal-b .bio{display:block;color:var(--faint);font-size:11.5px;margin-top:2px}
   .modal-b .src{display:inline-block;color:var(--faint);font-size:11px;margin-top:3px}
   #kolMoreBtn{margin-left:auto}
+  .health{font-size:10.5px;font-weight:600;padding:1px 7px;border-radius:99px;border:1.5px solid var(--border);margin-left:8px;white-space:nowrap}
+  .health.stale{background:#fdeec9;color:#7a5b1f}
+  .health.dead{background:#f6d0c9;color:#9c3722}
 </style>
 </head>
 <body>
@@ -159,7 +162,7 @@
   </div>
   <div class="grid g2" style="margin-top:18px">
     <div class="card"><h3><span id="i_vgtrend"></span></h3><div class="chart-sm" id="vgTrendChart"></div></div>
-    <div class="card sig" id="sigCard"><h3><span id="i_kol"></span><button class="btn" id="kolMoreBtn"></button></h3></div>
+    <div class="card sig" id="sigCard"><h3><span id="i_kol"></span><span id="kolHealth"></span><button class="btn" id="kolMoreBtn"></button></h3></div>
   </div>
   <div class="grid g2" style="margin-top:18px">
     <div class="card"><h3><span id="i_sdk"></span></h3><div class="chart-sm" id="sdkChart"></div></div>
@@ -241,7 +244,10 @@ zh: {
   vg_week_sub:p=>`Claude 系 ${p}%`,
   vgtrend:'Vercel Gateway — Lab $ Spend（逐日份额）',
   kol:'KOL / Podcast — AI 应用与变现观点',
-  kol_more:'更多 ▸', kol_all:n=>`KOL / Podcast 观点归档 · ${n} 条（📓 = 有深读分析）`,
+  kol_more:'更多 ▸',
+  kol_stale:d=>`⚠ X 源已 ${d} 天未更新`,
+  kol_dead:d=>`⚠ X cookie 疑似失效（${d} 天无数据）`,
+  kol_health_tip:'KOL 卡片依赖 X 抓取；cookie 过期需在仓库 Secrets 更新 TWITTER_COOKIES。其余数据源不受影响。', kol_all:n=>`KOL / Podcast 观点归档 · ${n} 条（📓 = 有深读分析）`,
   sdk:'SDK 下载量 7DMA（M/day）— developer adoption proxy',
   sites:'Top Sites by IT Power — Epoch',
   codex:'OpenAI Codex 周活跃用户（M）— 公开披露里程碑',
@@ -284,7 +290,10 @@ en: {
   vg_week_sub:p=>`Claude family ${p}%`,
   vgtrend:'Vercel Gateway — Daily Lab $ Spend share',
   kol:'KOL / Podcasts — takes on AI apps & monetization',
-  kol_more:'More ▸', kol_all:n=>`KOL / Podcast archive · ${n} items (📓 = deep analysis)`,
+  kol_more:'More ▸',
+  kol_stale:d=>`⚠ X feed ${d}d stale`,
+  kol_dead:d=>`⚠ X cookie likely expired (${d}d no data)`,
+  kol_health_tip:'The KOL card depends on X scraping; an expired cookie needs TWITTER_COOKIES updated in repo Secrets. Other data sources are unaffected.', kol_all:n=>`KOL / Podcast archive · ${n} items (📓 = deep analysis)`,
   sdk:'SDK downloads 7DMA (M/day) — developer adoption proxy',
   sites:'Top Sites by IT Power — Epoch',
   codex:'OpenAI Codex weekly active users (M) — public milestones',
@@ -725,6 +734,14 @@ function initSignals(sig){
     html += `<p><span class="mono" style="color:var(--faint)">${esc(k.date)}</span> <b>${esc(k.who)}</b> <span style="color:var(--faint)">· ${esc(via)}</span><br>${esc(take)} <a href="${safeUrl(k.url)}" target="_blank" rel="noopener noreferrer">↗</a></p>`;
   }
   el.insertAdjacentHTML('beforeend', html);
+  // X cookie 失效告警：feed 停更 2 天黄标、4 天红标
+  const h = sig.feed_health;
+  if(h && (h.status === 'stale' || h.status === 'dead')){
+    const badge = $('kolHealth');
+    badge.className = 'health ' + h.status;
+    badge.textContent = T[LANG][h.status === 'dead' ? 'kol_dead' : 'kol_stale'](h.stale_days);
+    badge.title = tr('kol_health_tip') + (h.generated_at ? ` (last: ${h.generated_at})` : '');
+  }
   const btn = $('kolMoreBtn');
   btn.textContent = tr('kol_more');
   btn.onclick = () => openKolModal(sig);

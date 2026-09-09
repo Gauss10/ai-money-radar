@@ -786,6 +786,35 @@ def select_display(candidates, historical=()):
     return dedupe(recent_display_pool(merged), unique_take=True)[:DISPLAY_LIMIT]
 
 
+X_STALE_WARN_DAYS = 2      # 超过 2 天没抓到 X → 黄色提醒
+X_STALE_DEAD_DAYS = 4      # 超过 4 天 → 判定 cookie 已失效
+
+
+def x_feed_health(feed):
+    """
+    X cookie 失效告警。
+
+    cookie 过期时 generate_signal_feed.py 会保留上一份有效的 feed-x.json
+    （不写空缓存），所以 generated_at 的"年龄"就等于 X 已经断更几天。
+    返回给前端在 KOL 卡片上显示状态徽标。
+    """
+    generated = (feed or {}).get("generated_at") or ""
+    try:
+        ts = datetime.datetime.fromisoformat(generated)
+        if ts.tzinfo is None:
+            ts = ts.replace(tzinfo=datetime.timezone.utc)
+        age = (datetime.datetime.now(datetime.timezone.utc) - ts).days
+    except ValueError:
+        return {"source": "x", "status": "unknown", "generated_at": generated, "stale_days": None}
+    if age >= X_STALE_DEAD_DAYS:
+        status = "dead"
+    elif age >= X_STALE_WARN_DAYS:
+        status = "stale"
+    else:
+        status = "ok"
+    return {"source": "x", "status": status, "generated_at": generated[:10], "stale_days": age}
+
+
 def main():
     x_feed = load_feed("feed-x.json")
     podcast_feed = load_feed("feed-podcasts.json")
@@ -814,6 +843,7 @@ def main():
         "kol": [public_entry(item) for item in display],
         "reports": cur.get("reports") or [],
         "kol_archive": [public_entry(item) for item in archive],
+        "feed_health": x_feed_health(x_feed),
     }
     total, summarized = update_signals_archive(display + archive + candidates)
     archive_data = load_json("signals_archive.json") or {}
