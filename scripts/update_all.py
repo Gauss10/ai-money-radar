@@ -23,11 +23,26 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(HERE)
 
 
+# 单个脚本的最长运行时间（秒）。上游源卡死（例如 X cookie 失效后 twscrape
+# 每 15 分钟无限重试）时，超时放弃该源并继续跑其余源，避免整个 job 被
+# GitHub 的 6 小时上限杀掉、导致当天所有数据都不更新。
+STEP_TIMEOUT = {
+    'generate_signal_feed.py': 15 * 60,
+    'fetch_openrouter.py': 20 * 60,
+}
+DEFAULT_TIMEOUT = 10 * 60
+
+
 def run(name):
     print(f'== {name} ==')
+    limit = STEP_TIMEOUT.get(name, DEFAULT_TIMEOUT)
     try:
-        subprocess.run([sys.executable, os.path.join(HERE, name)], check=True)
+        subprocess.run([sys.executable, os.path.join(HERE, name)],
+                       check=True, timeout=limit)
         return True
+    except subprocess.TimeoutExpired:
+        print(f'  [TIMEOUT] {name} 超过 {limit // 60} 分钟未完成，已跳过（其余数据源继续）')
+        return False
     except Exception:
         traceback.print_exc()
         return False
