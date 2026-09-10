@@ -144,7 +144,7 @@
   <div class="wm-host" id="tokenHost">
     <div class="wm"><div id="i_wm"></div></div>
     <div class="grid g2">
-      <div class="card or-chart"><h3><span id="i_fable"></span></h3><div class="chart-sm" id="fableChart"></div></div>
+      <div class="card"><h3><span id="i_fable"></span></h3><div class="chart-sm" id="fableChart"></div></div>
       <div class="card or-chart"><h3><span id="i_watch"></span></h3><div class="chart-sm" id="watchChart"></div></div>
     </div>
     <div class="grid g2" style="margin-top:18px">
@@ -233,7 +233,8 @@ zh: {
   arr_note:'实时模拟 · 综合估算 · 非公司披露/非审计',
   sec_tok:'② Token 用量与采用度',
   wm:'OpenRouter 图为 SAMPLE DATA（占位虚构）<br><span style="font-size:12px;font-weight:400">配置 OPENROUTER_API_KEY（免费注册）并跑一次 Action 后自动替换</span>',
-  fable:'Claude Fable 5 · 每日 Token（B/day）— OpenRouter',
+  fable:'旗舰模型对位 — $ Spend 份额（%）· Vercel Gateway',
+  flag_empty:'GPT-6 Astra / Claude Fable 5.1 尚未进入 Vercel Gateway 的 $ Spend Top 10。<br><span style="font-size:12px">旗舰模型「低 token 量、高客单」，进入榜单当天此图自动点亮。</span>',
   watch:'重点模型家族对比（B tokens/day）— OpenRouter',
   total:'OpenRouter 日 Token 总量（B/day · 全模型含长尾）',
   top7:'Top Models — 最新一周合计（B tokens）— OpenRouter', top1:'Top Models — 最新一天（B tokens）— OpenRouter',
@@ -265,7 +266,6 @@ zh: {
   deals_chart_note:'汇总图只计入有明确 GW 且经核验的已签或已确认交易；LOI、term sheet 和未披露 GW 的交易只在下表展示，重叠项不展示。站点/云租约与芯片/系统框架不可相加。',
   method:'ARR 主线为本站<b>综合估算口径</b>（多渠道 triangulation），历史段为月度估算的对数线性插值；最新时点之后沿校准后的增速路径实时外推，阴影为模型不确定带（随外推时长扩大）。◆ 散点为公开报道的 run-rate 对照。外推是<b>实时测算</b>而非公司指引；口径均为 run-rate（月化×12），非审计数字，仅供研究参考。Token 计数使用各 provider 自家 tokenizer；OpenRouter / Vercel Gateway 为第三方路由渠道窗口，适合看边际变化与份额拐点，不代表全市场总量。Vercel 数据来自官方 Leaderboard Export API；模型榜只披露每日 Top 10 的 Token 与 $ Spend 份额，不披露绝对量，未进入榜单者计入 Other。“最新一周”取最近 7 个共同数据日作份额算术平均，不做绝对量加权。Lab 趋势直接使用官方逐日 Spend 份额，其中 Google、Moonshot AI Lab 在图中分别标为 Gemini、Kimi。Codex / ChatGPT Agent 用户数据只记录 OpenAI 官方离散披露；产品范围或周活/月活口径变化时分开成独立序列，不跨口径连线。Compute Deals 的 GW 是合同或合作口径，并非已投运容量；不同基础设施层级不得相加。',
   fine:'仅供研究参考，非投资建议。',
-  fable_empty:'<div><b style="color:var(--fable)">Fable 5 未出现在 OpenRouter 日度 top-50（token 口径）</b></div><div>本数据集只含每日 top-50 模型 + 长尾合计。Fable 5 定价 $10/$50，「低 token 量、高客单」形态——变现信号先看 <b>Vercel Gateway 的 $ Spend 份额</b>。</div><div style="color:var(--faint)">进入 top-50 当天，此图自动点亮。</div>',
   s_total:'日总量', s_7dma:'7DMA', s_mw:'累计 IT Power (MW)', s_h100e:'累计算力 (k H100-eq)',
   s_lab_anthropic:'Anthropic', s_lab_openai:'OpenAI', s_lab_google:'Gemini', s_lab_zai:'Z.ai', s_lab_kimi:'Kimi',
   th:['Site','Owner','User','MW','k H100e'], stale:'数据至 ',
@@ -279,7 +279,8 @@ en: {
   arr_note:'Live simulation · composite estimate · not disclosed/audited',
   sec_tok:'② Token Usage & Adoption',
   wm:'OpenRouter charts show SAMPLE DATA<br><span style="font-size:12px;font-weight:400">Set OPENROUTER_API_KEY (free) and run the Action once to replace</span>',
-  fable:'Claude Fable 5 · Daily Tokens (B/day) — OpenRouter',
+  fable:'Flagship head-to-head — $ Spend share (%) · Vercel Gateway',
+  flag_empty:'GPT-6 Astra / Claude Fable 5.1 are not yet in the Vercel Gateway $ Spend Top 10.<br><span style="font-size:12px">Flagships are low-token / high-ticket; this chart lights up the day they enter.</span>',
   watch:'Model family comparison (B tokens/day) — OpenRouter',
   total:'OpenRouter daily token total (B/day · all models incl. long tail)',
   top7:'Top Models — trailing 7-day total (B tokens) — OpenRouter', top1:'Top Models — latest day (B tokens) — OpenRouter',
@@ -311,7 +312,6 @@ en: {
   deals_chart_note:'The chart includes only verified signed or secured deals with explicit GW. LOIs, term sheets and deals without disclosed GW remain in the table; overlapping entries are hidden. Cloud/site leases and chip/system frameworks must not be added together.',
   method:'The ARR mainline is this site\'s <b>composite estimate</b> (multi-channel triangulation): log-linear interpolation across monthly estimates for history, and a calibrated growth-path extrapolation beyond the latest point (shaded band = model uncertainty, widening with horizon). ◆ markers are publicly reported run-rate checkpoints. The extrapolation is a <b>live calculation</b>, not company guidance; all figures are run-rates (monthly ×12), unaudited, for research reference only. Token counts use each provider\'s own tokenizer; OpenRouter / Vercel Gateway are third-party routing windows — good for marginal change and share inflections, not market totals. Vercel data comes from the official Leaderboard Export API. The model leaderboard reports daily Token and $ Spend shares for its Top 10, not absolute totals; models outside the list are included in Other. “Latest week” is the arithmetic mean across the latest 7 common data dates, without absolute-volume weighting. Lab trends use official daily Spend shares; Google and Moonshot AI Labs are labeled Gemini and Kimi in the chart. Codex / ChatGPT Agent adoption records only discrete official OpenAI disclosures; product-scope and WAU/MAU changes remain separate series. Compute Deals GW figures are contracted or partnership capacity, not operating capacity; infrastructure layers must not be added together.',
   fine:'For research reference only — not investment advice.',
-  fable_empty:'<div><b style="color:var(--fable)">Fable 5 is not in OpenRouter\'s daily top-50 (by tokens)</b></div><div>This dataset only includes the daily top-50 models plus an aggregated long tail. At $10/$50 pricing, Fable 5 is a low-token / high-ticket model — watch <b>Vercel Gateway $ Spend share</b> for the monetization signal.</div><div style="color:var(--faint)">The day it enters the top-50, this chart lights up automatically.</div>',
   s_total:'Daily total', s_7dma:'7DMA', s_mw:'Cumulative IT Power (MW)', s_h100e:'Cumulative compute (k H100-eq)',
   s_lab_anthropic:'Anthropic', s_lab_openai:'OpenAI', s_lab_google:'Gemini', s_lab_zai:'Z.ai', s_lab_kimi:'Kimi',
   th:['Site','Owner','User','MW','k H100e'], stale:'data thru ',
@@ -477,20 +477,6 @@ function initTokens(or_){
 
   const wl = or_.watchlist || {};
   const FKEY = ['anthropic/claude-5-fable','anthropic/claude-fable-5'].find(k => (wl[k]||[]).length) || null;
-  const fable = FKEY ? wl[FKEY] : [];
-  if(!fable.length && !or_.sample){
-    $('fableChart').innerHTML = `<div style="height:100%;display:flex;flex-direction:column;justify-content:center;gap:10px;color:var(--sub);font-size:12.5px;line-height:1.6">${tr('fable_empty')}</div>`;
-  } else {
-    mkChart('fableChart').setOption({
-      tooltip: TIP, grid:{left:46,right:14,top:26,bottom:26},
-      xAxis:{type:'category', data:fable.map(p=>p[0].slice(5)), ...AX},
-      yAxis:{type:'value', ...AX},
-      series:[{type:'line', data:fable.map(p=>p[1]), smooth:.3, showSymbol:false,
-        lineStyle:{width:2.5,color:'#f0762b'},
-        areaStyle:{color:new echarts.graphic.LinearGradient(0,0,0,1,[{offset:0,color:'rgba(240,118,43,.35)'},{offset:1,color:'rgba(240,118,43,0)'}])}}]
-    });
-  }
-
   const wlNames = Object.keys(wl).filter(k => k !== FKEY);
   const palette = ['#5b86ea','#2e8b46','#9d7cc3','#d9a13b','#d16b95','#3fb6c4'];
   mkChart('watchChart').setOption({
@@ -532,8 +518,41 @@ function initTokens(or_){
 }
 
 /* ───────── Vercel Gateway ───────── */
+// 旗舰对位：GPT-6 Astra vs Claude Fable 5.1 的 $ Spend 份额
+// 这两个模型 token 量低、单价高，只在 Vercel 的 $ spend 榜出现，OpenRouter token top-50 里没有
+const FLAGSHIPS = [
+  {name:'GPT-6 Astra',      color:'#1f9e83'},
+  {name:'Claude Fable 5.1', color:'#f0762b'},
+];
+function initFlagships(vg){
+  const cost = ((vg||{}).history||{}).cost;
+  if(!cost || !(cost.days||[]).length) return;
+  const days = cost.days;
+  const series = FLAGSHIPS
+    .map(f => ({...f, data: (cost.series||{})[f.name] || []}))
+    .filter(f => f.data.some(v => v > 0));
+  if(!series.length){
+    $('fableChart').innerHTML = `<div style="height:100%;display:flex;align-items:center;color:var(--sub);font-size:12.5px;line-height:1.6">${tr('flag_empty')}</div>`;
+    return;
+  }
+  mkChart('fableChart').setOption({
+    tooltip:{...TIP, valueFormatter:v=>(v==null?'—':v+'%')},
+    legend:{...LEG, type:'plain', left:'center', itemWidth:14, itemHeight:8, itemGap:12},
+    grid:{left:44,right:14,top:30,bottom:26},
+    xAxis:{type:'category', data:days.map(d=>d.slice(5)), ...AX},
+    yAxis:{type:'value', ...AX, name:'%', nameTextStyle:{color:'#a08d7b'}},
+    series: series.map(f => ({
+      name:f.name, type:'line', smooth:.3, showSymbol:false, connectNulls:false,
+      // 上线之前的 0 值不画成贴地直线，留空更诚实
+      data:f.data.map(v => v > 0 ? v : null),
+      lineStyle:{width:2.5, color:f.color}, itemStyle:{color:f.color},
+    })),
+  });
+}
+
 function initVercel(vg){
   if(!vg || !(vg.snapshots||[]).length) return;
+  initFlagships(vg);
   const snaps = vg.snapshots;
   const snap = snaps[snaps.length-1];
   const claudeSum = arr => +(arr||[]).filter(x=>x[0].toLowerCase().includes('claude')).reduce((s,x)=>s+x[1],0).toFixed(1);

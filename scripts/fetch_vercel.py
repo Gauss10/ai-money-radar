@@ -14,6 +14,9 @@ from common import http_get, save_json
 API_URL = 'https://vercel.com/api/ai/leaderboard-export'
 TRACKED = [
     'Claude (family)',
+    # 旗舰对位：高单价、低 token 量，只在 $ spend 榜出现
+    'GPT-6 Astra',
+    'Claude Fable 5.1',
     'Claude Fable 5',
     'DeepSeek V4 Flash',
     'DeepSeek V4 Pro',
