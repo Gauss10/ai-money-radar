@@ -420,9 +420,15 @@ async def fetch_twitter(sources):
     if proxy:
         log(f"🌐 Twitter proxy: {proxy}")
         try:
+            import inspect as _inspect
             import twscrape.xclid as _xclid
-            from twscrape.http import make_client as _mc
-            _xclid._make_client = lambda: _mc(proxy=proxy, headers={"user-agent": "@chrome"})
+            # twscrape >= 0.20 的 _make_client 自己接收 proxy/cookies 并设置 chrome UA，
+            # 无需打补丁；旧版不透传 proxy 才需要包一层。补丁保持签名兼容，
+            # 否则 twscrape 以 proxy=... 调用时会 TypeError，进而每 15 分钟无限重试。
+            if "proxy" not in _inspect.signature(_xclid._make_client).parameters:
+                from twscrape.http import make_client as _mc
+                _xclid._make_client = lambda *a, **kw: _mc(
+                    proxy=proxy, headers={"user-agent": "@chrome"})
         except Exception:
             pass
 
