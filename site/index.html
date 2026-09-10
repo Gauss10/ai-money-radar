@@ -475,9 +475,9 @@ function initTokens(or_){
   if(or_.sample) $('tokenHost').classList.add('sampled');
   if(or_.citation) $('orCite').textContent = or_.citation;
 
+  // 旗舰图已迁到 Vercel $ spend（见 initFlagships），这里 watchlist 全部平铺渲染
   const wl = or_.watchlist || {};
-  const FKEY = ['anthropic/claude-5-fable','anthropic/claude-fable-5'].find(k => (wl[k]||[]).length) || null;
-  const wlNames = Object.keys(wl).filter(k => k !== FKEY);
+  const wlNames = Object.keys(wl).filter(k => (wl[k] || []).length);
   const palette = ['#5b86ea','#2e8b46','#9d7cc3','#d9a13b','#d16b95','#3fb6c4'];
   mkChart('watchChart').setOption({
     tooltip: TIP,
@@ -485,10 +485,8 @@ function initTokens(or_){
       textStyle:{...LEG.textStyle, fontSize:9.5}},
     grid:{left:46,right:14,top:30,bottom:26},
     xAxis:{type:'time', ...AX}, yAxis:{type:'value', ...AX},
-    series: [
-      ...(fable.length ? [{name:'claude-5-fable', type:'line', data:fable.map(p=>[p[0],p[1]]), showSymbol:false, lineStyle:{width:2.5,color:'#f0762b'}, itemStyle:{color:'#f0762b'}}] : []),
-      ...wlNames.map((k,i)=>({name:wlName(k), type:'line', data:wl[k].map(p=>[p[0],p[1]]), showSymbol:false, lineStyle:{width:1.6,color:palette[i%palette.length]}, itemStyle:{color:palette[i%palette.length]}}))
-    ]
+    series: wlNames.map((k,i)=>({name:wlName(k), type:'line', data:wl[k].map(p=>[p[0],p[1]]), showSymbol:false,
+      lineStyle:{width:1.6, color:brandColor(k)||palette[i%palette.length]}, itemStyle:{color:brandColor(k)||palette[i%palette.length]}}))
   });
 
   const tot = or_.daily_totals || [];
