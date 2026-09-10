@@ -27,8 +27,13 @@ ROOT = os.path.dirname(HERE)
 # 每 15 分钟无限重试）时，超时放弃该源并继续跑其余源，避免整个 job 被
 # GitHub 的 6 小时上限杀掉、导致当天所有数据都不更新。
 STEP_TIMEOUT = {
-    'generate_signal_feed.py': 15 * 60,
+    # X 抓取：成功时 ~6 分钟跑完 19 个账号；失败时 twscrape 每 15 分钟才重试一次，
+    # 等满 15 分钟只多换来一次注定失败的尝试，白烧 job 预算。
+    'generate_signal_feed.py': 8 * 60,
     'fetch_openrouter.py': 20 * 60,
+    # KOL 加工要逐条跑模型摘要/翻译；积压了一批新推文时 10 分钟不够，
+    # 会导致抓到的内容白抓（卡片不更新）。
+    'fetch_signals.py': 25 * 60,
 }
 DEFAULT_TIMEOUT = 10 * 60
 
