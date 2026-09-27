@@ -118,3 +118,33 @@ class FetchVercelTests(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class PreserveDroppedSeriesTests(unittest.TestCase):
+    def _hist(self, days, series):
+        return {"cost": {"days": days, "series": series}}
+
+    def test_keeps_values_the_api_retroactively_dropped(self):
+        # 模型掉出 Top 10 后，API 把它在历史日期里也并入 Other（返回 0）
+        prev = self._hist(["d1", "d2", "d3"], {"Fable": [4.6, 3.9, 1.7]})
+        cur = self._hist(["d2", "d3", "d4"], {"Fable": [0.0, 0.0, 0.0]})
+        restored = fetch_vercel.preserve_dropped_series(cur, prev)
+        self.assertEqual(cur["cost"]["series"]["Fable"], [3.9, 1.7, 0.0])
+        self.assertEqual(restored, 2)   # d1 已滚出 API 窗口，不回填
+
+    def test_api_value_wins_when_present(self):
+        prev = self._hist(["d1"], {"Astra": [18.1]})    # 当天的早期读数
+        cur = self._hist(["d1"], {"Astra": [16.4]})     # API 最终值
+        fetch_vercel.preserve_dropped_series(cur, prev)
+        self.assertEqual(cur["cost"]["series"]["Astra"], [16.4])
+
+    def test_never_seen_model_stays_zero(self):
+        cur = self._hist(["d1"], {"New": [0.0]})
+        self.assertEqual(fetch_vercel.preserve_dropped_series(cur, None), 0)
+        self.assertEqual(cur["cost"]["series"]["New"], [0.0])
+
+    def test_family_total_is_not_touched(self):
+        prev = self._hist(["d1"], {"Claude (family)": [60.0]})
+        cur = self._hist(["d1"], {"Claude (family)": [0.0]})
+        fetch_vercel.preserve_dropped_series(cur, prev)
+        self.assertEqual(cur["cost"]["series"]["Claude (family)"], [0.0])

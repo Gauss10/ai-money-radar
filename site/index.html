@@ -235,6 +235,7 @@ zh: {
   wm:'OpenRouter 图为 SAMPLE DATA（占位虚构）<br><span style="font-size:12px;font-weight:400">配置 OPENROUTER_API_KEY（免费注册）并跑一次 Action 后自动替换</span>',
   fable:'旗舰模型对位 — $ Spend 份额（%）· Vercel Gateway',
   flag_empty:'GPT-6 Astra / Claude Fable 5.1 尚未进入 Vercel Gateway 的 $ Spend Top 10。<br><span style="font-size:12px">旗舰模型「低 token 量、高客单」，进入榜单当天此图自动点亮。</span>',
+  flag_dropped:d=>`（${d} 起掉出 Top 10）`,
   watch:'重点模型家族对比（B tokens/day）— OpenRouter',
   total:'OpenRouter 日 Token 总量（B/day · 全模型含长尾）',
   top7:'Top Models — 最新一周合计（B tokens）— OpenRouter', top1:'Top Models — 最新一天（B tokens）— OpenRouter',
@@ -281,6 +282,7 @@ en: {
   wm:'OpenRouter charts show SAMPLE DATA<br><span style="font-size:12px;font-weight:400">Set OPENROUTER_API_KEY (free) and run the Action once to replace</span>',
   fable:'Flagship head-to-head — $ Spend share (%) · Vercel Gateway',
   flag_empty:'GPT-6 Astra / Claude Fable 5.1 are not yet in the Vercel Gateway $ Spend Top 10.<br><span style="font-size:12px">Flagships are low-token / high-ticket; this chart lights up the day they enter.</span>',
+  flag_dropped:d=>` (out of Top 10 from ${d})`,
   watch:'Model family comparison (B tokens/day) — OpenRouter',
   total:'OpenRouter daily token total (B/day · all models incl. long tail)',
   top7:'Top Models — trailing 7-day total (B tokens) — OpenRouter', top1:'Top Models — latest day (B tokens) — OpenRouter',
@@ -527,8 +529,13 @@ function initFlagships(vg){
   if(!cost || !(cost.days||[]).length) return;
   const days = cost.days;
   const series = FLAGSHIPS
-    .map(f => ({...f, data: (cost.series||{})[f.name] || []}))
-    .filter(f => f.data.some(v => v > 0));
+    .map(f => {
+      const data = (cost.series||{})[f.name] || [];
+      let end = -1;
+      data.forEach((v, i) => { if(v > 0) end = i; });
+      return {...f, data, end};
+    })
+    .filter(f => f.end >= 0);
   if(!series.length){
     $('fableChart').innerHTML = `<div style="height:100%;display:flex;align-items:center;color:var(--sub);font-size:12.5px;line-height:1.6">${tr('flag_empty')}</div>`;
     return;
@@ -540,7 +547,12 @@ function initFlagships(vg){
     xAxis:{type:'category', data:days.map(d=>d.slice(5)), ...AX},
     yAxis:{type:'value', ...AX, name:'%', nameTextStyle:{color:'#a08d7b'}},
     series: series.map(f => ({
-      name:f.name, type:'line', smooth:.3, showSymbol:false, connectNulls:false,
+      // 掉出 $ spend Top 10 后 Vercel 不再披露其份额（并入 Other），线条会中断——
+      // 在图例上注明原因，而不是让读者以为数据出错
+      name: f.end < days.length - 1
+        ? f.name + T[LANG].flag_dropped(days[f.end + 1].slice(5))
+        : f.name,
+      type:'line', smooth:.3, showSymbol:false, connectNulls:false,
       // 上线之前的 0 值不画成贴地直线，留空更诚实
       data:f.data.map(v => v > 0 ? v : null),
       lineStyle:{width:2.5, color:f.color}, itemStyle:{color:f.color},

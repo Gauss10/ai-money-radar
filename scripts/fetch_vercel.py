@@ -8,7 +8,7 @@ that legacy page-scraped values cannot be mixed with official API values.
 
 import json
 
-from common import http_get, save_json
+from common import http_get, load_json, save_json
 
 
 API_URL = 'https://vercel.com/api/ai/leaderboard-export'
@@ -17,6 +17,7 @@ TRACKED = [
     # 旗舰对位：高单价、低 token 量，只在 $ spend 榜出现
     'GPT-6 Astra',
     'Claude Fable 5.1',
+    'Claude Opus 5.5',
     'Claude Fable 5',
     'DeepSeek V4 Flash',
     'DeepSeek V4 Pro',
@@ -142,6 +143,34 @@ def build_model_history(table):
     return history
 
 
+def preserve_dropped_series(history, previous):
+    """Keep tracked values the export API has retroactively stopped naming.
+
+    Once a model falls out of the current Top 10, the export API folds it into
+    Other on *every* past day, not just going forward - a full rebuild would
+    erase shares we already fetched from this same API. Shares themselves are
+    not revised (repeat fetches of one day agree), only no longer named, so for
+    days still inside the API window: when the API reports 0 for a tracked
+    model but the last saved history had a value, keep the saved value.
+    Days that roll out of the API window are dropped as before.
+    """
+    restored = 0
+    for key, current in history.items():
+        prev = (previous or {}).get(key) or {}
+        prev_index = {day: i for i, day in enumerate(prev.get('days') or [])}
+        prev_series = prev.get('series') or {}
+        for name, values in current['series'].items():
+            if name == 'Claude (family)':
+                continue
+            old = prev_series.get(name) or []
+            for i, day in enumerate(current['days']):
+                j = prev_index.get(day)
+                if not values[i] and j is not None and j < len(old) and old[j]:
+                    values[i] = old[j]
+                    restored += 1
+    return restored
+
+
 def build_snapshots(table, limit=90):
     """Rebuild daily Top 10 snapshots for dates shared by all three metrics."""
     common_days = set(table.get('tokens', {}))
@@ -179,6 +208,10 @@ def main():
     print(f"  API rows: models={len(models['rows'])}, labs={len(labs['rows'])}")
 
     history = build_model_history(table)
+    previous = (load_json('vercel_gateway.json') or {}).get('history')
+    restored = preserve_dropped_series(history, previous)
+    if restored:
+        print(f'  kept {restored} tracked values the API no longer names')
     snapshots = build_snapshots(table)
     all_days = sorted({day for metric in table.values() for day in metric})
     if not all_days:
