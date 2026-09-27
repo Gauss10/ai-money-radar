@@ -234,7 +234,7 @@ zh: {
   sec_tok:'② Token 用量与采用度',
   wm:'OpenRouter 图为 SAMPLE DATA（占位虚构）<br><span style="font-size:12px;font-weight:400">配置 OPENROUTER_API_KEY（免费注册）并跑一次 Action 后自动替换</span>',
   fable:'旗舰模型对位 — $ Spend 份额（%）· Vercel Gateway',
-  flag_empty:'GPT-6 Astra / Claude Fable 5.1 尚未进入 Vercel Gateway 的 $ Spend Top 10。<br><span style="font-size:12px">旗舰模型「低 token 量、高客单」，进入榜单当天此图自动点亮。</span>',
+  flag_empty:'GPT-6 Astra / Claude Fable 5.1 / Opus 5.5 尚未进入 Vercel Gateway 的 $ Spend Top 10。<br><span style="font-size:12px">旗舰模型「低 token 量、高客单」，进入榜单当天此图自动点亮。</span>',
   flag_dropped:d=>`（${d} 起掉出 Top 10）`,
   watch:'重点模型家族对比（B tokens/day）— OpenRouter',
   total:'OpenRouter 日 Token 总量（B/day · 全模型含长尾）',
@@ -281,7 +281,7 @@ en: {
   sec_tok:'② Token Usage & Adoption',
   wm:'OpenRouter charts show SAMPLE DATA<br><span style="font-size:12px;font-weight:400">Set OPENROUTER_API_KEY (free) and run the Action once to replace</span>',
   fable:'Flagship head-to-head — $ Spend share (%) · Vercel Gateway',
-  flag_empty:'GPT-6 Astra / Claude Fable 5.1 are not yet in the Vercel Gateway $ Spend Top 10.<br><span style="font-size:12px">Flagships are low-token / high-ticket; this chart lights up the day they enter.</span>',
+  flag_empty:'GPT-6 Astra / Claude Fable 5.1 / Opus 5.5 are not yet in the Vercel Gateway $ Spend Top 10.<br><span style="font-size:12px">Flagships are low-token / high-ticket; this chart lights up the day they enter.</span>',
   flag_dropped:d=>` (out of Top 10 from ${d})`,
   watch:'Model family comparison (B tokens/day) — OpenRouter',
   total:'OpenRouter daily token total (B/day · all models incl. long tail)',
@@ -518,11 +518,14 @@ function initTokens(or_){
 }
 
 /* ───────── Vercel Gateway ───────── */
-// 旗舰对位：GPT-6 Astra vs Claude Fable 5.1 的 $ Spend 份额
-// 这两个模型 token 量低、单价高，只在 Vercel 的 $ spend 榜出现，OpenRouter token top-50 里没有
+// 旗舰对位：GPT-6 Astra vs Claude Fable 5.1 / Opus 5.5 的 $ Spend 份额
+// 旗舰模型 token 量低、单价高，只在 Vercel 的 $ spend 榜出现，OpenRouter token top-50 里没有。
+// Opus 5.5 用深砖红：与 Fable 同属 Claude 暖色系、又能区分（品牌色 #d97757 与 Fable 橙 ΔE 仅 5.3，
+// 正常视力都分不清）。三色已过 validate_palette 全配对检查。
 const FLAGSHIPS = [
-  {name:'GPT-6 Astra',      color:'#1f9e83'},
-  {name:'Claude Fable 5.1', color:'#f0762b'},
+  {name:'GPT-6 Astra',      short:'Astra',     color:'#1f9e83'},
+  {name:'Claude Fable 5.1', short:'Fable 5.1', color:'#f0762b'},
+  {name:'Claude Opus 5.5',  short:'Opus 5.5',  color:'#9f3a22'},
 ];
 function initFlagships(vg){
   const cost = ((vg||{}).history||{}).cost;
@@ -540,12 +543,15 @@ function initFlagships(vg){
     $('fableChart').innerHTML = `<div style="height:100%;display:flex;align-items:center;color:var(--sub);font-size:12.5px;line-height:1.6">${tr('flag_empty')}</div>`;
     return;
   }
+  // 只画有数据的时段：旗舰都是 9 月才上线，前面一个多月的空轴会把三条线挤到右半边
+  const from = Math.max(0, Math.min(...series.map(f => f.data.findIndex(v => v > 0))) - 2);
   mkChart('fableChart').setOption({
     tooltip:{...TIP, valueFormatter:v=>(v==null?'—':v+'%')},
     legend:{...LEG, type:'plain', left:'center', itemWidth:14, itemHeight:8, itemGap:12},
-    grid:{left:44,right:14,top:30,bottom:26},
-    xAxis:{type:'category', data:days.map(d=>d.slice(5)), ...AX},
-    yAxis:{type:'value', ...AX, name:'%', nameTextStyle:{color:'#a08d7b'}},
+    grid:{left:44,right:92,top:30,bottom:26},
+    xAxis:{type:'category', data:days.slice(from).map(d=>d.slice(5)), ...AX},
+    // 单位写进刻度，不另放轴名——轴名会和三项图例在左上角重叠
+    yAxis:{type:'value', ...AX, axisLabel:{...AX.axisLabel, formatter:'{value}%'}},
     series: series.map(f => ({
       // 掉出 $ spend Top 10 后 Vercel 不再披露其份额（并入 Other），线条会中断——
       // 在图例上注明原因，而不是让读者以为数据出错
@@ -554,8 +560,13 @@ function initFlagships(vg){
         : f.name,
       type:'line', smooth:.3, showSymbol:false, connectNulls:false,
       // 上线之前的 0 值不画成贴地直线，留空更诚实
-      data:f.data.map(v => v > 0 ? v : null),
+      data:f.data.slice(from).map(v => v > 0 ? v : null),
       lineStyle:{width:2.5, color:f.color}, itemStyle:{color:f.color},
+      // 末端直接标注：线色对底色对比度不足 3:1，且 Astra/Opus 5.5 右端数值接近，
+      // 不能只靠颜色识别；文字用正文墨色，不用线色
+      endLabel:{show:true, formatter:p => `${f.short} ${p.value}%`,
+        color:'#3b2a24', fontSize:10.5, fontWeight:600, distance:4},
+      labelLayout:{moveOverlap:'shiftY'},
     })),
   });
 }
