@@ -783,7 +783,20 @@ def recent_display_pool(candidates, lookback_days=DISPLAY_LOOKBACK_DAYS):
 
 def select_display(candidates, historical=()):
     merged = dedupe(list(candidates) + list(historical))
-    return dedupe(recent_display_pool(merged), unique_take=True)[:DISPLAY_LIMIT]
+    pool = dedupe(recent_display_pool(merged))              # 最近 3 天，URL + 同事件去重
+    chosen = dedupe(pool, unique_take=True)[:DISPLAY_LIMIT]  # 优先：观点主题各不相同
+    # 主题不够分散时补满空位，而不是留空。模板 take 只是主题标签，卡片上实际显示的是
+    # 模型按 URL 逐条生成的封面摘要（或该条的中文原文），同主题的两条推文文字并不重复。
+    # 补位先选还没上卡片的人，再选其余。
+    taken = {id(x) for x in chosen}
+    rest = [x for x in pool if id(x) not in taken]
+    while len(chosen) < DISPLAY_LIMIT and rest:
+        seen_who = {x.get("who") for x in chosen}
+        pick = next((x for x in rest if x.get("who") not in seen_who), rest[0])
+        chosen.append(pick)
+        rest.remove(pick)
+    rank = {id(x): i for i, x in enumerate(pool)}
+    return sorted(chosen, key=lambda x: rank[id(x)])
 
 
 X_STALE_WARN_DAYS = 2      # 超过 2 天没抓到 X → 黄色提醒

@@ -197,3 +197,43 @@ class XFeedHealthTests(unittest.TestCase):
 
     def test_missing_timestamp_is_unknown(self):
         self.assertEqual(fetch_signals.x_feed_health({})["status"], "unknown")
+
+
+class SelectDisplayFillTests(unittest.TestCase):
+    def _item(self, who, url, score, raw):
+        return {"date": "2026-09-25", "who": who, "url": url, "_score": score,
+                "take": "same template take", "_raw": raw}
+
+    def test_same_theme_candidates_fill_all_slots(self):
+        # 同一主题（模板 take 相同）的不同推文不应被压缩成 1 张卡片
+        items = [
+            self._item("Boris", "u1", 19, "claude code desktop browser release"),
+            self._item("Sam", "u2", 18, "reviewing agent internet use during evals"),
+            self._item("Rauch", "u3", 13, "enterprise agent platform with sso"),
+            self._item("Sam", "u4", 12, "hugging face incident response update"),
+            self._item("Rauch", "u5", 11, "skills registry passes one million"),
+        ]
+        shown = fetch_signals.select_display(items)
+        self.assertEqual(len(shown), 4)
+
+    def test_fill_prefers_new_faces(self):
+        # A 有 4 条高分，B 只有 1 条低分；4 个空位按分数会全给 A，补位应先让 B 上卡片
+        items = [
+            self._item("A", "u1", 20, "gpu rental prices climbing"),
+            self._item("A", "u2", 19, "enterprise contracts renewing early"),
+            self._item("A", "u3", 18, "datacenter permits in texas"),
+            self._item("A", "u4", 17, "open weights release schedule"),
+            self._item("B", "u5", 5, "podcast about coding agents"),
+        ]
+        shown = fetch_signals.select_display(items)
+        self.assertEqual(len(shown), 4)
+        self.assertIn("u5", [x["url"] for x in shown])
+
+    def test_distinct_themes_still_preferred(self):
+        items = [
+            {"date": "2026-09-25", "who": "A", "url": "u1", "_score": 20, "take": "t1", "_raw": "alpha one"},
+            {"date": "2026-09-25", "who": "B", "url": "u2", "_score": 19, "take": "t1", "_raw": "beta two"},
+            {"date": "2026-09-25", "who": "C", "url": "u3", "_score": 5, "take": "t2", "_raw": "gamma three"},
+        ]
+        shown = fetch_signals.select_display(items)
+        self.assertIn("u3", [x["url"] for x in shown])  # 低分但主题不同的条目不会被挤掉
