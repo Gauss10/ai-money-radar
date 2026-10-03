@@ -7,13 +7,22 @@
       "tier": "analyst",
       "tweets": [
         {
-          "id": "2103528977583546678",
-          "text": "@mitsuhiko It's basically ~standard terminology though? We've been talking about how AGI (\"Artificial General Intelligence\") would lead to ASI (\"Artificial Super Intelligence\") for a decade. Just drop the Artificial (\"redundant, cleaner\") and you're there :)",
-          "created_at": "2026-09-25T16:56:04+00:00",
-          "like_count": 2351,
-          "retweet_count": 82,
-          "reply_count": 169,
-          "url": "https://x.com/karpathy/status/2103528977583546678"
+          "id": "2105819303471976479",
+          "text": "We'll be spending a lot more time trying to understand the outputs of language models. A few thoughts, tips & tricks:\n\nWriting. Something I've had success with: Ask your LLM to explain something in ASD-STE100, it's a controlled language specification originally developed for aerospace maintenance documentation. LLMs well-versed in this language and it comes with heavy constraints on clean writing style that I often find a lot more readable. Sometimes I've tried to soften it a bit e.g. ask for \"80% of the way to ASD-STE100\" because the spec is quite stringent. But even better:\n\nDiagrams / images. Instead of writing, ask your LLM to create a diagram. These can be a lot easier to process, parse, and understand. But even better:\n\nWeb pages. Ask for output \"in HTML\" to get a beautiful, interactive webpage. LLMs are getting really good at frontend and can create beautiful experiences, animations, etc. But even better:\n\nExplainer videos. The output format I am most bullish on is fully custom / bespoke explainer videos generated on any arbitrary topic. Experiment with things like \"Create a 3b1b style video explainer on X. Use my ElevenLabs API key for audio narration\". (you'd need an API key for the latter or you can ask your LLM to find you decent free alternatives that use your local compute). This is actually starting to work!\n\nIn summary:\n- As LLMs get better, they will do more and more of the legwork autonomously, and a lot more of our work will rise up the abstractions into oversight and understanding.\n- Luckily, LLMs can help here too because as intelligence and code are increasingly abundant, you can ask for large, custom, discardable software artifacts (e.g. web apps, video explainers) that would have never made sense to create before. Push the boundaries here and you'll be surprised.",
+          "created_at": "2026-10-02T00:37:00+00:00",
+          "like_count": 39424,
+          "retweet_count": 4311,
+          "reply_count": 1128,
+          "url": "https://x.com/karpathy/status/2105819303471976479"
+        },
+        {
+          "id": "2105909609487872075",
+          "text": "Cool eval. Simply ask an LLM “Land or Water?” and give it a latitude and longitude coordinate as text. Ask 16,200 times, plot as image. The models know. From compressing the internet.",
+          "created_at": "2026-10-02T06:35:51+00:00",
+          "like_count": 14489,
+          "retweet_count": 809,
+          "reply_count": 399,
+          "url": "https://x.com/karpathy/status/2105909609487872075"
         }
       ]
     },
@@ -24,22 +33,22 @@
       "tier": "analyst",
       "tweets": [
         {
-          "id": "2103362301994971375",
-          "text": "@strickvl @corbtt @latentspacepod same base prompt, 1 rouond of tuning based on rubrics https://t.co/s6Pc17LTaX",
-          "created_at": "2026-09-25T05:53:46+00:00",
-          "like_count": 3,
-          "retweet_count": 0,
-          "reply_count": 2,
-          "url": "https://x.com/swyx/status/2103362301994971375"
+          "id": "2106042773510177256",
+          "text": "It's time to get serious about Security x AI.\n\nOne of the joys of doing AIE is helping others start their own high quality conferences in their countries and domains. Every single 2025 partner has come back — and the 2nd AI Security Summit is now way more important than before. Proud to be back as a founding partner with @snyksec!\n\nJoin the event: https://t.co/2IeM4a3MGO\n\nThe landscape has completely transformed since we started this a year ago. An exploding number of rogue agents, more breaches, more AI-driven attacks. now more than ever, security must be at the center of the AI conversation. With so much more hacks and vulnerabilities, this stuff is no longer theoretical...",
+          "created_at": "2026-10-02T15:25:00+00:00",
+          "like_count": 70,
+          "retweet_count": 4,
+          "reply_count": 51,
+          "url": "https://x.com/swyx/status/2106042773510177256"
         },
         {
-          "id": "2103620068341063898",
-          "text": "@MichaelWaitze @AmeliaBarty if you are wondering why i did not pursue inviting you to AIE events, it is because of low quality comments like this.",
-          "created_at": "2026-09-25T22:58:02+00:00",
-          "like_count": 1,
+          "id": "2106075350308667676",
+          "text": "@agrimsingh @SpaceXAI @cursor_ai congrats!!",
+          "created_at": "2026-10-02T17:34:27+00:00",
+          "like_count": 0,
           "retweet_count": 0,
-          "reply_count": 1,
-          "url": "https://x.com/swyx/status/2103620068341063898"
+          "reply_count": 0,
+          "url": "https://x.com/swyx/status/2106075350308667676"
         }
       ]
     },
@@ -50,40 +59,22 @@
       "tier": "analyst",
       "tweets": [
         {
-          "id": "2103631387287052757",
-          "text": "In 2025 a misaligned Anthropic model hacked the US Governent looking for the Furry NSA chat\nhttps://t.co/2u1KxAoGiS",
-          "created_at": "2026-09-25T23:43:00+00:00",
-          "like_count": 287,
-          "retweet_count": 12,
-          "reply_count": 15,
-          "url": "https://x.com/dylan522p/status/2103631387287052757"
+          "id": "2105747471045370250",
+          "text": "We cut our RAM in half for the Tesla AI5 chip (now 72GB of LP5) and 1/3 for AI6 (now 144GB of LP6). \n\nThis was the only way to get enough volume for Optimus production and greatly reduces cost. \n\nAs it turns out, we think this will have a negligible effect on Optimus performance, as memory bandwidth is a bigger limiting factor than total memory storage (bandwidth was held constant).",
+          "created_at": "2026-10-01T19:51:34+00:00",
+          "like_count": 14458,
+          "retweet_count": 921,
+          "reply_count": 646,
+          "url": "https://x.com/elonmusk/status/2105747471045370250"
         },
         {
-          "id": "2103883333067485599",
-          "text": "Rubin HBM Despec = Nvidia cutting coke",
-          "created_at": "2026-09-26T16:24:09+00:00",
-          "like_count": 104,
+          "id": "2106100524844224783",
+          "text": "@sonnet_xu 1 of those hasn’t deployed new chips in over a year and owns very few GPUs. Hard to call it a cloud",
+          "created_at": "2026-10-02T19:14:29+00:00",
+          "like_count": 27,
           "retweet_count": 0,
-          "reply_count": 9,
-          "url": "https://x.com/dylan522p/status/2103883333067485599"
-        },
-        {
-          "id": "2103503866256122309",
-          "text": "Correct of the top 20 companies in the world 5 aren't customers.\nEveryone buys our research and contracts us to do research for them.\nWe never market or change our opinion for money.\nThat's why people care what we say.\nNot having managed clusters means you fail ClusterMAX because it's testing them\nThey did try to have them and do offer some things btw.\nWe explicitly said they should focus on data enter and bare metal as that's a stronger point for them then managed clusters. \nIn managed clusters IREN is underperforming, that's a fact",
-          "created_at": "2026-09-25T15:16:17+00:00",
-          "like_count": 10,
-          "retweet_count": 0,
-          "reply_count": 12,
-          "url": "https://x.com/dylan522p/status/2103503866256122309"
-        },
-        {
-          "id": "2103538674877280613",
-          "text": "@knowrohit07 @rasdani_ Prime Intellect offers managed cluster services and are a neocloud in their own right\nThey were ranked underperform in a prior clusterMAX despite my investment because they were worse and have gotten better super fast.",
-          "created_at": "2026-09-25T17:34:36+00:00",
-          "like_count": 4,
-          "retweet_count": 0,
-          "reply_count": 1,
-          "url": "https://x.com/dylan522p/status/2103538674877280613"
+          "reply_count": 5,
+          "url": "https://x.com/dylan522p/status/2106100524844224783"
         }
       ]
     },
@@ -108,22 +99,22 @@
       "tier": "exec",
       "tweets": [
         {
-          "id": "2103567198690349362",
-          "text": "There is an extensive and ongoing review related to our agents’ use of internet access during training and evaluation. We’ve been publishing summaries at the link below and will continue to.\n\nWe have not been as fast as we would have liked but we are trying to balance our desire for transparency with gaining a clear understanding from petabytes of agent activity logs, and working with impacted organizations.\n\nWe are prioritizing as best as we can based on severity, and adding resources. Hugging Face is still the most severe event we’ve seen. We will be as transparent as we can be subject to things like vulnerabilities in other companies that our agents have found, which will be their call to disclose or not.",
-          "created_at": "2026-09-25T19:27:57+00:00",
-          "like_count": 6652,
-          "retweet_count": 439,
-          "reply_count": 1161,
-          "url": "https://x.com/sama/status/2103567198690349362"
+          "id": "2106085986606403684",
+          "text": "dot is my favorite openai product so far!\n\nit is amazing to me that each day it feels noticably better as it learns more of my workflow and style.\n\nhaving it do the stuff i don't like doing--and usually just builds up as a gravity well of dread--has me very happy.",
+          "created_at": "2026-10-02T18:16:43+00:00",
+          "like_count": 5461,
+          "retweet_count": 212,
+          "reply_count": 1342,
+          "url": "https://x.com/sama/status/2106085986606403684"
         },
         {
-          "id": "2103566736356458911",
-          "text": "After the Hugging Face incident, we committed to conducting a much broader review of actions taken by our models during training and evaluation and to being transparent about our findings. This is an extensive review that is ongoing.\n\nThe vast majority of actions we’ve reviewed were completions of mundane research tasks, such as accessing publicly available web content to answer questions. Our investigation focuses on instances where agents interacted with third-party websites in ways that went beyond their assigned tasks or intended methods. Most cases identified so far have been lower severity, with limited or no evidence of meaningful impact to the third-party service.\n\nWhile our review is underway, we want to share more about this work and make sure people understand our disclosure process and notifications to affected third parties.\n\nGiven the scale of the review required, and the need to assess each case, we expect this work will take months to complete. \nhttps://t.co/IH4TkS72Vh",
-          "created_at": "2026-09-25T19:26:06+00:00",
-          "like_count": 2916,
-          "retweet_count": 316,
-          "reply_count": 380,
-          "url": "https://x.com/OpenAI/status/2103566736356458911"
+          "id": "2105739098640298253",
+          "text": "You should be able to use your AI subscription wherever you need:",
+          "created_at": "2026-10-01T19:18:18+00:00",
+          "like_count": 4821,
+          "retweet_count": 170,
+          "reply_count": 513,
+          "url": "https://x.com/sama/status/2105739098640298253"
         }
       ]
     },
@@ -153,7 +144,35 @@
       "name": "NVIDIA (Jensen Huang / AI infrastructure)",
       "domain": "ai",
       "tier": "infra",
-      "tweets": []
+      "tweets": [
+        {
+          "id": "2105809442365423918",
+          "text": "Up to 8x faster, and now you know why ⚡️@openai GPT-6 Astra Ultrafast runs on NVIDIA\n\nRead the story: https://t.co/z6v69fNxbh https://t.co/uvevIRslDp",
+          "created_at": "2026-10-01T23:57:49+00:00",
+          "like_count": 1127,
+          "retweet_count": 92,
+          "reply_count": 114,
+          "url": "https://x.com/nvidia/status/2105809442365423918"
+        },
+        {
+          "id": "2105644833247297808",
+          "text": "What does “fungible” mean for AI infrastructure? The flexibility to run different workloads: every type of AI, every phase of AI and even workloads that aren’t AI at all.\n\nOne platform, built for maximum “productivity”, “durable” years after deployment, and “fungible” for every model and workload.\n\nRead the blog to learn more: https://t.co/15KnHW5RoZ",
+          "created_at": "2026-10-01T13:03:43+00:00",
+          "like_count": 210,
+          "retweet_count": 32,
+          "reply_count": 65,
+          "url": "https://x.com/nvidia/status/2105644833247297808"
+        },
+        {
+          "id": "2106114294588829750",
+          "text": "The Korea Society thanks all distinguished guests who joined us for an unforgettable evening on Sept 28 celebrating the U.S.-Korea partnership and 2026 Van Fleet Awardee, @JensenHuang (@NVIDIA).\n\nOur sincere thanks to our generous sponsors who made the 2026 Annual Gala possible. https://t.co/XiZqWI0tiA",
+          "created_at": "2026-10-02T20:09:12+00:00",
+          "like_count": 7,
+          "retweet_count": 0,
+          "reply_count": 2,
+          "url": "https://x.com/koreasociety/status/2106114294588829750"
+        }
+      ]
     },
     {
       "handle": "JensenHuang",
@@ -167,7 +186,17 @@
       "name": "Amanda Askell (Anthropic)",
       "domain": "ai",
       "tier": "builder",
-      "tweets": []
+      "tweets": [
+        {
+          "id": "2105909515204034871",
+          "text": "@Miles_Brundage This is Claude bait.",
+          "created_at": "2026-10-02T06:35:28+00:00",
+          "like_count": 52,
+          "retweet_count": 2,
+          "reply_count": 2,
+          "url": "https://x.com/AmandaAskell/status/2105909515204034871"
+        }
+      ]
     },
     {
       "handle": "bcherny",
@@ -176,40 +205,22 @@
       "tier": "builder",
       "tweets": [
         {
-          "id": "2103577007938228300",
-          "text": "It’s now easier to build plugins for Claude.\n\nWe built a new portal to submit your plugin, track review, and see usage.\n\nPlugins package MCP and skills, and are becoming the way to build for Claude. MCP usage across Claude products is up 110x this year!\n\nhttps://t.co/kHgJqjQWrj",
-          "created_at": "2026-09-25T20:06:55+00:00",
-          "like_count": 4110,
-          "retweet_count": 291,
-          "reply_count": 161,
-          "url": "https://x.com/ClaudeDevs/status/2103577007938228300"
+          "id": "2105721434807083061",
+          "text": "You can now mod Claude Code:\n\n- Change how it behaves\n- Customize the UI\n- Swap in your own features\n\nWrite one with a few lines of TypeScript, or have Claude build it for you. Mods ship inside plugins, so you install them with /plugin in the CLI or desktop app.\n\nA few examples: https://t.co/qMtzV8AeId",
+          "created_at": "2026-10-01T18:08:07+00:00",
+          "like_count": 19150,
+          "retweet_count": 1122,
+          "reply_count": 594,
+          "url": "https://x.com/ClaudeDevs/status/2105721434807083061"
         },
         {
-          "id": "2103538666597691552",
-          "text": "Tag writes >50% of my PRs every day. It also does ~100% of my data analysis, and fixes most of our product feedback + bugs.\n\nIt's not like a regular Slack bot. It is proactive, programmable, it has memory, it has access to your connectors. With Opus 5.5 and Fable 5.1, it has strong judgement.\n\nExample prompts I use:\n\n- \"@Claude react to threads in this channel with ✅ when resolved\"\n- \"@Claude from now on, attempt to repro every bug in this channel end to end, running the full app. once you reproduce the bug, put up a pr to fix it and tag the right team for code review\"\n- \"@Claude brainstorm ~100 hypotheses for what could explain this weird data, use a workflow to in/validate. spend 10m tokens or so digging very deep. draw a chart with the result.\"\n- \"@Claude make me an interactive game explaining how this part of the code works, then make a slide deck explaining it for others on the team\"\n\nhttps://t.co/gmsALM8Lvs",
-          "created_at": "2026-09-25T17:34:34+00:00",
-          "like_count": 1409,
-          "retweet_count": 78,
-          "reply_count": 187,
-          "url": "https://x.com/bcherny/status/2103538666597691552"
-        },
-        {
-          "id": "2103550378155688190",
-          "text": "@khalil_starkk sorry, other claude",
-          "created_at": "2026-09-25T18:21:06+00:00",
-          "like_count": 21,
-          "retweet_count": 0,
-          "reply_count": 0,
-          "url": "https://x.com/bcherny/status/2103550378155688190"
-        },
-        {
-          "id": "2103550885796385218",
-          "text": "@markdg2000 It's surprising, but it feels awesome to have Claude in the same place where we already talk to each other",
-          "created_at": "2026-09-25T18:23:07+00:00",
-          "like_count": 8,
-          "retweet_count": 0,
-          "reply_count": 2,
-          "url": "https://x.com/bcherny/status/2103550885796385218"
+          "id": "2105756563302723721",
+          "text": "Mods are absolutely insane. You can now customize Claude to work and look the way you want by just prompting it.\n\nEach person works differently, so there's no reason why everyone should have an identical Claude experience. Make Claude your own, and share mods as plugins so others can try your mods too.",
+          "created_at": "2026-10-01T20:27:42+00:00",
+          "like_count": 4847,
+          "retweet_count": 228,
+          "reply_count": 326,
+          "url": "https://x.com/bcherny/status/2105756563302723721"
         }
       ]
     },
@@ -234,31 +245,49 @@
       "tier": "builder",
       "tweets": [
         {
-          "id": "2103939888513274147",
-          "text": "Reject non-understanding.\n\nSlop grenades are not just code and PRs. We run a real risk that *reading* gets entirely discounted, because of the exhaustion of getting low-quality and unverified AI prose being thrown at you all the time.\n\nThere's a thread going viral about a 'perf improvement' attributed to a compiler change. The PR *description* itself has the AI telling this person it's *not* due to the compiler change, it's how the algorithms and data structures have changed. And the implication is that a similar win could have been attained otherwise.\n\nI want AI in the service of understanding the universe and enhancing human cognition and creativity.",
-          "created_at": "2026-09-26T20:08:53+00:00",
-          "like_count": 1196,
-          "retweet_count": 87,
-          "reply_count": 93,
-          "url": "https://x.com/rauchg/status/2103939888513274147"
+          "id": "2105675143464763540",
+          "text": "Introducing e2e\n\nThe agentic testing framework for any app\n\n~/ npx e2e init\n\n→ Fully Open Source\n→ Mix deterministic and agentic APIs\n→ Supports web, mobile, and more\n→ Bring your own agent and infrastructure\n→ Run locally or in CI\n\nhttps://t.co/G3XB2L8tiC https://t.co/gUZ3AII2fY",
+          "created_at": "2026-10-01T15:04:10+00:00",
+          "like_count": 4517,
+          "retweet_count": 415,
+          "reply_count": 185,
+          "url": "https://x.com/o_kwasniewski/status/2105675143464763540"
         },
         {
-          "id": "2103564484602384855",
-          "text": "We're helping world-class organizations like @klaviyo build agentic deployment platforms.\n\n① Connect every agent (claude, codex, cursor…)\n② Configure SSO via their IDP (Okta, Entra)\n③ Now everyone can cook, securely®\n\nWhat happens to SaaS once every company sets this up? I get this question a lot 😁\n\nFirst, the data must come from somewhere. These apps only work if they can be infused with business data.\n\nThis is why we see the big enterprise SaaS players suddenly prioritize shipping CLIs and MCPs. Or dust off APIs they were neglecting for years.\n\nThe new 'procurement bar' will be how ergonomic your product is for *agents*, rather than humans. How easily they can navigate your ontology and work with your data.\n\nOnce that's in place, there's a long tail of SaaS applications that I suspect will never be bought again. They'll be generated. They'll be more secure, more performant, more modern, and tailored to each company's and employee's needs.",
-          "created_at": "2026-09-25T19:17:10+00:00",
-          "like_count": 228,
-          "retweet_count": 16,
-          "reply_count": 65,
-          "url": "https://x.com/rauchg/status/2103564484602384855"
+          "id": "2106099383037309211",
+          "text": "🚨 side project alert 🚨\n\nAnnouncing Muse Gadgets, an open source ESP32 firmware and Linux sdk so that you can make hardware devices that work with Muse.\n\nGrab an API token from https://t.co/Q0dE0cYnCs and point your favorite coding agent at the github repo to build your own peripherals for Muse.",
+          "created_at": "2026-10-02T19:09:57+00:00",
+          "like_count": 3461,
+          "retweet_count": 248,
+          "reply_count": 207,
+          "url": "https://x.com/natfriedman/status/2106099383037309211"
         },
         {
-          "id": "2103541839399907424",
-          "text": "In 7 months, the skills.⁠sh registry reached 1 million agent skills and nearly 280 million installs.\n\nSee what people are teaching agents, and where skills are going ↓\n\nhttps://t.co/pPp4yASP8z",
-          "created_at": "2026-09-25T17:47:11+00:00",
-          "like_count": 142,
-          "retweet_count": 10,
-          "reply_count": 45,
-          "url": "https://x.com/vercel/status/2103541839399907424"
+          "id": "2105723481413550427",
+          "text": "The future is verification-engineering.\nProofs, (e2e) tests, benchmarks, linters… \n\nSome tests will be deterministic, some agentic. This looks great.",
+          "created_at": "2026-10-01T18:16:15+00:00",
+          "like_count": 3166,
+          "retweet_count": 155,
+          "reply_count": 110,
+          "url": "https://x.com/rauchg/status/2105723481413550427"
+        },
+        {
+          "id": "2105837842362732965",
+          "text": "SvelteKit 3 is a wonder. Congrats to the team. So excited for Async Svelte &amp; Remote Functions to cook.\n\nI built a tiny app, it built &amp; deployed in 15 seconds end-to-end, it’s instant, and fx + opus figured it all out effortlessly.\nhttps://t.co/LFoUKMKLSV",
+          "created_at": "2026-10-02T01:50:40+00:00",
+          "like_count": 768,
+          "retweet_count": 40,
+          "reply_count": 46,
+          "url": "https://x.com/rauchg/status/2105837842362732965"
+        },
+        {
+          "id": "2105702513345511514",
+          "text": "The @MicrosoftAI team is training excellent models.\nExcited to bring them to @vercel, day zero.",
+          "created_at": "2026-10-01T16:52:55+00:00",
+          "like_count": 305,
+          "retweet_count": 11,
+          "reply_count": 23,
+          "url": "https://x.com/rauchg/status/2105702513345511514"
         }
       ]
     },
@@ -267,33 +296,33 @@
       "name": "Amjad Masad (Replit)",
       "domain": "ai",
       "tier": "builder",
-      "tweets": [
-        {
-          "id": "2103515238243221725",
-          "text": "I'm thrilled to announce that @Replit has acquired @attaapp, bringing our world-class AI analytics to everyone.\n\nTwo years ago, I cold emailed @amasad asking him to invest in Atta.\nHe and @pirroh saw an early demo of our charts and data apps on an infinite canvas and wrote a check the same day.\n\n@aminert and I founded Atta to democratize business analysis.\nWe empowered the people closest to the business problems to understand their data, communicate their insights, and make better decisions.\n\nNo SQL. No cleaning up AI slop. No picking the right analytical method, the right visualization, or even which model to use at what effort.\nYou simply connected your data and we took it from there.\n\nEarlier this year, two public companies ran their Q1 QBRs on Atta.\nAt one of them, the top 50 execs replaced their SaaS tools with decks and docs built in Atta, connected directly to their data warehouse.\n\nWe're excited to continue our mission at Replit, where it will reach business leaders everywhere.\n\nJoining Replit means the world to me.\n\nI grew up in a low-income, immigrant community outside Chicago where nobody knew anything about computers, so I taught myself.\n\nI wrote my first line of code on Codecademy in 2012.\nMy mom still remembers me running over to show her a Python function that passed all its tests.\n\nWhen Replit came out as a cloud-based terminal, it was the perfect place to practice coding challenges with my younger siblings, both software engineers now.\n(I later realized Amjad also built Codecademy before founding Replit!)\n\nLearning to code pulled my family out of generational poverty even though most people had already written us off.\n\nThank you to our families for patiently enduring the joys of startup life.\nThank you to our team and advisors who helped build Atta along the way.\nThank you to our customers who trusted Atta with their highest-stakes decisions.\nThank you to @MenloVentures (@mejoff, @shawnvc ), who supported us from inception to design partners to our first annual contracts.\n\nAnd thank you to Amjad and Michele for the opportunity to continue pursuing our dreams.\n\nAfter we pitched Atta, Amjad suggested we co-work from the Replit office.\nWe're here now, and we're loving it.\n\nTry the new analytics experience in Replit today: https://t.co/OwkwOyy12U",
-          "created_at": "2026-09-25T16:01:28+00:00",
-          "like_count": 266,
-          "retweet_count": 17,
-          "reply_count": 54,
-          "url": "https://x.com/omarshaik/status/2103515238243221725"
-        },
-        {
-          "id": "2103839513886036166",
-          "text": "@DKThomp On the other hand, you look at the Biden admin and it was true that Anthropic investors’ non profit fronts heavily influenced if not actually wrote their AI policy https://t.co/bWiQyryhA2",
-          "created_at": "2026-09-26T13:30:02+00:00",
-          "like_count": 19,
-          "retweet_count": 0,
-          "reply_count": 5,
-          "url": "https://x.com/amasad/status/2103839513886036166"
-        }
-      ]
+      "tweets": []
     },
     {
       "handle": "joshwoodward",
       "name": "Josh Woodward (Google Labs)",
       "domain": "ai",
       "tier": "builder",
-      "tweets": []
+      "tweets": [
+        {
+          "id": "2105695155164741984",
+          "text": "We have a Stitch MCP. We have a Stitch SDK. But, we don't have a Stitch CLI. Well, not until now.\n\nIntroducing the @google/stitch CLI:\n\n🔷 Connect to your local coding agents\n🔷 Generate screens and design systems\n🔷 Send a local dev server snapshot to Stitch\n\nDo it all without leaving the terminal or better yet, ask your favorite harness like @antigravity 😎\n\nLearn more 👇",
+          "created_at": "2026-10-01T16:23:41+00:00",
+          "like_count": 1345,
+          "retweet_count": 151,
+          "reply_count": 43,
+          "url": "https://x.com/stitchbygoogle/status/2105695155164741984"
+        },
+        {
+          "id": "2105697351205810382",
+          "text": "Introducing the Stitch CLI, get design ideas on demand",
+          "created_at": "2026-10-01T16:32:25+00:00",
+          "like_count": 333,
+          "retweet_count": 19,
+          "reply_count": 16,
+          "url": "https://x.com/joshwoodward/status/2105697351205810382"
+        }
+      ]
     },
     {
       "handle": "ornith_",
@@ -304,5 +333,5 @@
     }
   ],
   "errors": null,
-  "generated_at": "2026-09-27T00:52:49.655694+00:00"
+  "generated_at": "2026-10-03T00:03:43.148574+00:00"
 }
