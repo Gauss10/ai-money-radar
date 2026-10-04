@@ -7,21 +7,12 @@
       "tier": "analyst",
       "tweets": [
         {
-          "id": "2105819303471976479",
-          "text": "We'll be spending a lot more time trying to understand the outputs of language models. A few thoughts, tips & tricks:\n\nWriting. Something I've had success with: Ask your LLM to explain something in ASD-STE100, it's a controlled language specification originally developed for aerospace maintenance documentation. LLMs well-versed in this language and it comes with heavy constraints on clean writing style that I often find a lot more readable. Sometimes I've tried to soften it a bit e.g. ask for \"80% of the way to ASD-STE100\" because the spec is quite stringent. But even better:\n\nDiagrams / images. Instead of writing, ask your LLM to create a diagram. These can be a lot easier to process, parse, and understand. But even better:\n\nWeb pages. Ask for output \"in HTML\" to get a beautiful, interactive webpage. LLMs are getting really good at frontend and can create beautiful experiences, animations, etc. But even better:\n\nExplainer videos. The output format I am most bullish on is fully custom / bespoke explainer videos generated on any arbitrary topic. Experiment with things like \"Create a 3b1b style video explainer on X. Use my ElevenLabs API key for audio narration\". (you'd need an API key for the latter or you can ask your LLM to find you decent free alternatives that use your local compute). This is actually starting to work!\n\nIn summary:\n- As LLMs get better, they will do more and more of the legwork autonomously, and a lot more of our work will rise up the abstractions into oversight and understanding.\n- Luckily, LLMs can help here too because as intelligence and code are increasingly abundant, you can ask for large, custom, discardable software artifacts (e.g. web apps, video explainers) that would have never made sense to create before. Push the boundaries here and you'll be surprised.",
-          "created_at": "2026-10-02T00:37:00+00:00",
-          "like_count": 39424,
-          "retweet_count": 4311,
-          "reply_count": 1128,
-          "url": "https://x.com/karpathy/status/2105819303471976479"
-        },
-        {
           "id": "2105909609487872075",
           "text": "Cool eval. Simply ask an LLM “Land or Water?” and give it a latitude and longitude coordinate as text. Ask 16,200 times, plot as image. The models know. From compressing the internet.",
           "created_at": "2026-10-02T06:35:51+00:00",
-          "like_count": 14489,
-          "retweet_count": 809,
-          "reply_count": 399,
+          "like_count": 17789,
+          "retweet_count": 977,
+          "reply_count": 495,
           "url": "https://x.com/karpathy/status/2105909609487872075"
         }
       ]
@@ -36,16 +27,34 @@
           "id": "2106042773510177256",
           "text": "It's time to get serious about Security x AI.\n\nOne of the joys of doing AIE is helping others start their own high quality conferences in their countries and domains. Every single 2025 partner has come back — and the 2nd AI Security Summit is now way more important than before. Proud to be back as a founding partner with @snyksec!\n\nJoin the event: https://t.co/2IeM4a3MGO\n\nThe landscape has completely transformed since we started this a year ago. An exploding number of rogue agents, more breaches, more AI-driven attacks. now more than ever, security must be at the center of the AI conversation. With so much more hacks and vulnerabilities, this stuff is no longer theoretical...",
           "created_at": "2026-10-02T15:25:00+00:00",
-          "like_count": 70,
-          "retweet_count": 4,
-          "reply_count": 51,
+          "like_count": 84,
+          "retweet_count": 5,
+          "reply_count": 67,
           "url": "https://x.com/swyx/status/2106042773510177256"
+        },
+        {
+          "id": "2106492886913278003",
+          "text": "@BHolmesDev @aiDotEngineer 1000% always run some kind of skill review/cutter after every model-created skill https://t.co/MbfK4dygPP",
+          "created_at": "2026-10-03T21:13:35+00:00",
+          "like_count": 36,
+          "retweet_count": 2,
+          "reply_count": 9,
+          "url": "https://x.com/swyx/status/2106492886913278003"
+        },
+        {
+          "id": "2106182356310937799",
+          "text": "@natfriedman instant buy. i'm setting up an agentic office for AIE and i want muse to run the whole thing",
+          "created_at": "2026-10-03T00:39:39+00:00",
+          "like_count": 7,
+          "retweet_count": 0,
+          "reply_count": 8,
+          "url": "https://x.com/swyx/status/2106182356310937799"
         },
         {
           "id": "2106075350308667676",
           "text": "@agrimsingh @SpaceXAI @cursor_ai congrats!!",
           "created_at": "2026-10-02T17:34:27+00:00",
-          "like_count": 0,
+          "like_count": 2,
           "retweet_count": 0,
           "reply_count": 0,
           "url": "https://x.com/swyx/status/2106075350308667676"
@@ -59,22 +68,40 @@
       "tier": "analyst",
       "tweets": [
         {
-          "id": "2105747471045370250",
-          "text": "We cut our RAM in half for the Tesla AI5 chip (now 72GB of LP5) and 1/3 for AI6 (now 144GB of LP6). \n\nThis was the only way to get enough volume for Optimus production and greatly reduces cost. \n\nAs it turns out, we think this will have a negligible effect on Optimus performance, as memory bandwidth is a bigger limiting factor than total memory storage (bandwidth was held constant).",
-          "created_at": "2026-10-01T19:51:34+00:00",
-          "like_count": 14458,
-          "retweet_count": 921,
-          "reply_count": 646,
-          "url": "https://x.com/elonmusk/status/2105747471045370250"
+          "id": "2106413909867642937",
+          "text": "@negligible_cap We never said OpenAI moved off Cerebras?\nWe said 6.1 Sol Ultra Fast runs on GPUs\nThat's a fact.\nThat's your fault for taking that to mean they moved off Cerebras.",
+          "created_at": "2026-10-03T15:59:46+00:00",
+          "like_count": 78,
+          "retweet_count": 1,
+          "reply_count": 29,
+          "url": "https://x.com/dylan522p/status/2106413909867642937"
         },
         {
           "id": "2106100524844224783",
           "text": "@sonnet_xu 1 of those hasn’t deployed new chips in over a year and owns very few GPUs. Hard to call it a cloud",
           "created_at": "2026-10-02T19:14:29+00:00",
-          "like_count": 27,
+          "like_count": 40,
           "retweet_count": 0,
           "reply_count": 5,
           "url": "https://x.com/dylan522p/status/2106100524844224783"
+        },
+        {
+          "id": "2106411306437992588",
+          "text": "@JKeynesAlpha GPT 6.1 Ultra fast runs on GPUs. That's a fact.\nWhat did we say wrong?",
+          "created_at": "2026-10-03T15:49:25+00:00",
+          "like_count": 38,
+          "retweet_count": 0,
+          "reply_count": 12,
+          "url": "https://x.com/dylan522p/status/2106411306437992588"
+        },
+        {
+          "id": "2106414586249535749",
+          "text": "We posted facts.\nMicron couldn't hit the original pin speed targets for Nvidia.\nNvidia relaxed the pin speed targets and HBM bandwidth for Rubin.\nThey got back in.\nWe reported all these things sequentially but people see 1 and mins interpret as everything\nWhen we said micron missed the pin speed, we said that would be beneficial for their earnings btw because HBM is lower gross margin than commodity and we said it was bullish",
+          "created_at": "2026-10-03T16:02:27+00:00",
+          "like_count": 4,
+          "retweet_count": 0,
+          "reply_count": 1,
+          "url": "https://x.com/dylan522p/status/2106414586249535749"
         }
       ]
     },
@@ -99,22 +126,22 @@
       "tier": "exec",
       "tweets": [
         {
+          "id": "2106388373221118198",
+          "text": "I am very uncomfortable about people trying to ascribe religious force or a surrender of human judgment to AI models, and think it is a real safety issue.",
+          "created_at": "2026-10-03T14:18:17+00:00",
+          "like_count": 21057,
+          "retweet_count": 1404,
+          "reply_count": 3337,
+          "url": "https://x.com/sama/status/2106388373221118198"
+        },
+        {
           "id": "2106085986606403684",
           "text": "dot is my favorite openai product so far!\n\nit is amazing to me that each day it feels noticably better as it learns more of my workflow and style.\n\nhaving it do the stuff i don't like doing--and usually just builds up as a gravity well of dread--has me very happy.",
           "created_at": "2026-10-02T18:16:43+00:00",
-          "like_count": 5461,
-          "retweet_count": 212,
-          "reply_count": 1342,
+          "like_count": 8210,
+          "retweet_count": 327,
+          "reply_count": 1734,
           "url": "https://x.com/sama/status/2106085986606403684"
-        },
-        {
-          "id": "2105739098640298253",
-          "text": "You should be able to use your AI subscription wherever you need:",
-          "created_at": "2026-10-01T19:18:18+00:00",
-          "like_count": 4821,
-          "retweet_count": 170,
-          "reply_count": 513,
-          "url": "https://x.com/sama/status/2105739098640298253"
         }
       ]
     },
@@ -146,30 +173,12 @@
       "tier": "infra",
       "tweets": [
         {
-          "id": "2105809442365423918",
-          "text": "Up to 8x faster, and now you know why ⚡️@openai GPT-6 Astra Ultrafast runs on NVIDIA\n\nRead the story: https://t.co/z6v69fNxbh https://t.co/uvevIRslDp",
-          "created_at": "2026-10-01T23:57:49+00:00",
-          "like_count": 1127,
-          "retweet_count": 92,
-          "reply_count": 114,
-          "url": "https://x.com/nvidia/status/2105809442365423918"
-        },
-        {
-          "id": "2105644833247297808",
-          "text": "What does “fungible” mean for AI infrastructure? The flexibility to run different workloads: every type of AI, every phase of AI and even workloads that aren’t AI at all.\n\nOne platform, built for maximum “productivity”, “durable” years after deployment, and “fungible” for every model and workload.\n\nRead the blog to learn more: https://t.co/15KnHW5RoZ",
-          "created_at": "2026-10-01T13:03:43+00:00",
-          "like_count": 210,
-          "retweet_count": 32,
-          "reply_count": 65,
-          "url": "https://x.com/nvidia/status/2105644833247297808"
-        },
-        {
           "id": "2106114294588829750",
           "text": "The Korea Society thanks all distinguished guests who joined us for an unforgettable evening on Sept 28 celebrating the U.S.-Korea partnership and 2026 Van Fleet Awardee, @JensenHuang (@NVIDIA).\n\nOur sincere thanks to our generous sponsors who made the 2026 Annual Gala possible. https://t.co/XiZqWI0tiA",
           "created_at": "2026-10-02T20:09:12+00:00",
-          "like_count": 7,
-          "retweet_count": 0,
-          "reply_count": 2,
+          "like_count": 31,
+          "retweet_count": 2,
+          "reply_count": 6,
           "url": "https://x.com/koreasociety/status/2106114294588829750"
         }
       ]
@@ -191,9 +200,9 @@
           "id": "2105909515204034871",
           "text": "@Miles_Brundage This is Claude bait.",
           "created_at": "2026-10-02T06:35:28+00:00",
-          "like_count": 52,
+          "like_count": 59,
           "retweet_count": 2,
-          "reply_count": 2,
+          "reply_count": 3,
           "url": "https://x.com/AmandaAskell/status/2105909515204034871"
         }
       ]
@@ -203,26 +212,7 @@
       "name": "Boris Cherny (Claude Code)",
       "domain": "ai",
       "tier": "builder",
-      "tweets": [
-        {
-          "id": "2105721434807083061",
-          "text": "You can now mod Claude Code:\n\n- Change how it behaves\n- Customize the UI\n- Swap in your own features\n\nWrite one with a few lines of TypeScript, or have Claude build it for you. Mods ship inside plugins, so you install them with /plugin in the CLI or desktop app.\n\nA few examples: https://t.co/qMtzV8AeId",
-          "created_at": "2026-10-01T18:08:07+00:00",
-          "like_count": 19150,
-          "retweet_count": 1122,
-          "reply_count": 594,
-          "url": "https://x.com/ClaudeDevs/status/2105721434807083061"
-        },
-        {
-          "id": "2105756563302723721",
-          "text": "Mods are absolutely insane. You can now customize Claude to work and look the way you want by just prompting it.\n\nEach person works differently, so there's no reason why everyone should have an identical Claude experience. Make Claude your own, and share mods as plugins so others can try your mods too.",
-          "created_at": "2026-10-01T20:27:42+00:00",
-          "like_count": 4847,
-          "retweet_count": 228,
-          "reply_count": 326,
-          "url": "https://x.com/bcherny/status/2105756563302723721"
-        }
-      ]
+      "tweets": []
     },
     {
       "handle": "_catwu",
@@ -245,49 +235,49 @@
       "tier": "builder",
       "tweets": [
         {
-          "id": "2105675143464763540",
-          "text": "Introducing e2e\n\nThe agentic testing framework for any app\n\n~/ npx e2e init\n\n→ Fully Open Source\n→ Mix deterministic and agentic APIs\n→ Supports web, mobile, and more\n→ Bring your own agent and infrastructure\n→ Run locally or in CI\n\nhttps://t.co/G3XB2L8tiC https://t.co/gUZ3AII2fY",
-          "created_at": "2026-10-01T15:04:10+00:00",
-          "like_count": 4517,
-          "retweet_count": 415,
-          "reply_count": 185,
-          "url": "https://x.com/o_kwasniewski/status/2105675143464763540"
-        },
-        {
           "id": "2106099383037309211",
           "text": "🚨 side project alert 🚨\n\nAnnouncing Muse Gadgets, an open source ESP32 firmware and Linux sdk so that you can make hardware devices that work with Muse.\n\nGrab an API token from https://t.co/Q0dE0cYnCs and point your favorite coding agent at the github repo to build your own peripherals for Muse.",
           "created_at": "2026-10-02T19:09:57+00:00",
-          "like_count": 3461,
-          "retweet_count": 248,
-          "reply_count": 207,
+          "like_count": 6534,
+          "retweet_count": 478,
+          "reply_count": 362,
           "url": "https://x.com/natfriedman/status/2106099383037309211"
         },
         {
-          "id": "2105723481413550427",
-          "text": "The future is verification-engineering.\nProofs, (e2e) tests, benchmarks, linters… \n\nSome tests will be deterministic, some agentic. This looks great.",
-          "created_at": "2026-10-01T18:16:15+00:00",
-          "like_count": 3166,
-          "retweet_count": 155,
-          "reply_count": 110,
-          "url": "https://x.com/rauchg/status/2105723481413550427"
+          "id": "2106503460384538793",
+          "text": "AI will make everything free, including itself. The last domino to fall will be free energy, which is humanity’s final frontier.",
+          "created_at": "2026-10-03T21:55:36+00:00",
+          "like_count": 1522,
+          "retweet_count": 84,
+          "reply_count": 157,
+          "url": "https://x.com/rauchg/status/2106503460384538793"
+        },
+        {
+          "id": "2106402024804020657",
+          "text": "We’ve confirmed a KVM 0day through our Vercel Sandbox bounty program. Affecting the industry’s gold standard solution for Linux virtualization. \n\n2026 is wild! Thankful to Paulos and other researchers helping us make the most secure sandbox for agents. Full writeup coming.",
+          "created_at": "2026-10-03T15:12:32+00:00",
+          "like_count": 1381,
+          "retweet_count": 89,
+          "reply_count": 79,
+          "url": "https://x.com/rauchg/status/2106402024804020657"
         },
         {
           "id": "2105837842362732965",
           "text": "SvelteKit 3 is a wonder. Congrats to the team. So excited for Async Svelte &amp; Remote Functions to cook.\n\nI built a tiny app, it built &amp; deployed in 15 seconds end-to-end, it’s instant, and fx + opus figured it all out effortlessly.\nhttps://t.co/LFoUKMKLSV",
           "created_at": "2026-10-02T01:50:40+00:00",
-          "like_count": 768,
-          "retweet_count": 40,
-          "reply_count": 46,
+          "like_count": 824,
+          "retweet_count": 44,
+          "reply_count": 54,
           "url": "https://x.com/rauchg/status/2105837842362732965"
         },
         {
-          "id": "2105702513345511514",
-          "text": "The @MicrosoftAI team is training excellent models.\nExcited to bring them to @vercel, day zero.",
-          "created_at": "2026-10-01T16:52:55+00:00",
-          "like_count": 305,
+          "id": "2106516538836856945",
+          "text": "Security will become a larger and larger function in software companies. Security is verification engineering (eg: “my code is probably memory-safe”), as well as capital allocation (“what surface should I throw most tokens at?”)\n\nFor startups, it’s a challenge and opportunity. As the world’s paranoia grows given ever-more-sophisticated AI adversaries, how can you trust a 2-person-and-a-dog company?\n\nBut conversely, given the dire state of global cybersecurity and increasing reliance on centralization, as always, there’re vast areas that small teams can now disrupt that I’m excited to invest in.",
+          "created_at": "2026-10-03T22:47:34+00:00",
+          "like_count": 279,
           "retweet_count": 11,
-          "reply_count": 23,
-          "url": "https://x.com/rauchg/status/2105702513345511514"
+          "reply_count": 50,
+          "url": "https://x.com/rauchg/status/2106516538836856945"
         }
       ]
     },
@@ -296,33 +286,42 @@
       "name": "Amjad Masad (Replit)",
       "domain": "ai",
       "tier": "builder",
-      "tweets": []
+      "tweets": [
+        {
+          "id": "2106011594182304234",
+          "text": "NEW: According to a bombshell report in the New York Times, Anthropic co-founder Chris Olah threatened to walk out of Pope Leo XIV’s AI encyclical launch in May because the pope rejected the idea that machines can be conscious.\n\nOlah’s team then privately lobbied the pope’s advisers “to take the possibility of model consciousness seriously.” Pope Leo XIV held firm.\n\nFor months, Anthropic has wined and dined theologians and religious scholars under nondisclosure agreements, hoping they would bless the idea that Claude has moral standing. https://t.co/iG3Bnlzt2J",
+          "created_at": "2026-10-02T13:21:06+00:00",
+          "like_count": 31037,
+          "retweet_count": 5015,
+          "reply_count": 978,
+          "url": "https://x.com/ChristopherHale/status/2106011594182304234"
+        },
+        {
+          "id": "2106408584460509308",
+          "text": ".@OpenRouter co-founder Alex Atallah, in his first podcast since Stripe acquired the company, joins @Replit co-founder Amjad Masad and a16z's Erik Torenberg on why the future of AI is independence and specialization.\n\nIn this conversation, Alex walks through how the Stripe deal unfolded, why he wasn't originally looking to sell, and why \"payments and inference are going to blend together.\"\n\nPre-OpenRouter, the typical AI workflow had one model provider to choose from, and little pressure on that provider to lower prices. Now enterprises are diversifying across labs and open-weight models, and every board is asking about AI costs and benchmarks.\n\nAmjad argues if your company depends on one AI lab, it can turn into your competitor. So Replit is building the layer that lets enterprises use any model and any cloud, without being locked into either.\n\nAlex and Amjad are split on personal agents – Amjad runs one agent across his whole company and loves the cross-domain joins, while Alex says general agents cause you to sacrifice understanding, and argues 10 specialized chiefs of staff beats one superagent.\n\n0:45 How the Stripe deal unfolded\n5:05 Why mixing models beats one model\n7:25 Forcing the labs to compete on price\n8:50 Enterprises want open-weight models\n10:30 Every board asks about AI every month\n12:25 Why companies must own their intelligence\n14:15 Replit as the independence layer\n15:10 Everyone is building the same agent\n16:35 Why Amjad built bring-your-own-cloud\n18:10 Amjad's agent that runs his whole company\n19:55 Why 10 specialized agents beat one\n23:35 Machines, not humans, should specialize\n27:30 Guardrails for agents talking to agents\n31:10 Models training their own replacements\n33:45 Most tasks don't need a frontier model\n40:50 Training small models on Qwen 8B\n43:25 The Rust cycle is coming for AI\n45:10 Fusion models: frontier quality at half the cost\n\nYouTube: https://t.co/stL1g14F3q\n\n@alexatallah @OpenRouter @amasad @eriktorenberg",
+          "created_at": "2026-10-03T15:38:36+00:00",
+          "like_count": 193,
+          "retweet_count": 23,
+          "reply_count": 21,
+          "url": "https://x.com/a16z/status/2106408584460509308"
+        },
+        {
+          "id": "2106493596857954790",
+          "text": "Replit CEO Amjad Masad on how general models could train smaller, domain-specific models on the fly:\n\n\"There's a lot of talk of recursive self-improvement, but there's something I don't think is getting a lot of discussion, which is models training their replacements.\"\n\n\"You can think of it as a just-in-time compiler. As you're executing dynamic code, the interpreter realizes there's an opportunity to optimize, and it emits machine code on the fly that's a lot more optimized.\"\n\n\"You can imagine general models, you're doing something with Operator or Astra, some of the big models, and they realize the use case is limited, or some other agent observing realizes the use case is limited.\"\n\n\"General agents have all these flaws, but there's also more potential for them to be harmful, more potential for them to go off the rails.\"\n\n\"So the model, on the fly, trains a model that could be its replacement, but is a lot more domain specific. Therefore it's cheaper, less vulnerable to prompt injections, and less harmful for you, because it's less capable.\"\n\n\"It's almost like a system that's training machine learning models for specific use cases as it's monitoring the entire system.\"\n\n@amasad",
+          "created_at": "2026-10-03T21:16:24+00:00",
+          "like_count": 135,
+          "retweet_count": 11,
+          "reply_count": 26,
+          "url": "https://x.com/a16z/status/2106493596857954790"
+        }
+      ]
     },
     {
       "handle": "joshwoodward",
       "name": "Josh Woodward (Google Labs)",
       "domain": "ai",
       "tier": "builder",
-      "tweets": [
-        {
-          "id": "2105695155164741984",
-          "text": "We have a Stitch MCP. We have a Stitch SDK. But, we don't have a Stitch CLI. Well, not until now.\n\nIntroducing the @google/stitch CLI:\n\n🔷 Connect to your local coding agents\n🔷 Generate screens and design systems\n🔷 Send a local dev server snapshot to Stitch\n\nDo it all without leaving the terminal or better yet, ask your favorite harness like @antigravity 😎\n\nLearn more 👇",
-          "created_at": "2026-10-01T16:23:41+00:00",
-          "like_count": 1345,
-          "retweet_count": 151,
-          "reply_count": 43,
-          "url": "https://x.com/stitchbygoogle/status/2105695155164741984"
-        },
-        {
-          "id": "2105697351205810382",
-          "text": "Introducing the Stitch CLI, get design ideas on demand",
-          "created_at": "2026-10-01T16:32:25+00:00",
-          "like_count": 333,
-          "retweet_count": 19,
-          "reply_count": 16,
-          "url": "https://x.com/joshwoodward/status/2105697351205810382"
-        }
-      ]
+      "tweets": []
     },
     {
       "handle": "ornith_",
@@ -333,5 +332,5 @@
     }
   ],
   "errors": null,
-  "generated_at": "2026-10-03T00:03:43.148574+00:00"
+  "generated_at": "2026-10-04T00:54:06.551472+00:00"
 }
