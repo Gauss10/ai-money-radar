@@ -14,40 +14,49 @@
       "tier": "analyst",
       "tweets": [
         {
-          "id": "2113283272130412684",
-          "text": "Opus 5.5 is the best work estimator model i've ever used. This is calibration that is increasingly important as we delegate more and more work — don't tell me that it's going to take 2-3 working days (what a human would do) when for you, an enthusiastic, indefatigable, and embarrasingly parallelizable AGI, can get it done in 2-3 hours.",
-          "created_at": "2026-10-22T14:56:09+00:00",
-          "like_count": 226,
-          "retweet_count": 7,
-          "reply_count": 170,
-          "url": "https://x.com/swyx/status/2113283272130412684"
+          "id": "2114794838541660443",
+          "text": "We are pleased to announce that @trq212 will be returning to AIE to share what's now and what's next!\n\nhttps://t.co/9SqON1glPs will be the last flagship AIE of the year, gathering the top 1000 agentic engineers in the world by invite only.\n\nApply here: https://t.co/6q9NzKsAKH\n\nAs usual all keynotes livestreamed and talks posted free on our youtube!",
+          "created_at": "2026-10-26T19:02:35+00:00",
+          "like_count": 182,
+          "retweet_count": 4,
+          "reply_count": 2,
+          "url": "https://x.com/aiDotEngineer/status/2114794838541660443"
         },
         {
-          "id": "2113359027682050352",
-          "text": "imo this is the right attitude - dont blame AI for finding the bugs, just fucking lock in on clearing all the bugs asap\n\nhttps://t.co/8hF2N3gBVa",
-          "created_at": "2026-10-22T19:57:11+00:00",
-          "like_count": 186,
-          "retweet_count": 12,
-          "reply_count": 41,
-          "url": "https://x.com/swyx/status/2113359027682050352"
+          "id": "2114805687226376267",
+          "text": "bro moved from Claude Code to AIE Code\n\npower move tbh",
+          "created_at": "2026-10-26T19:45:41+00:00",
+          "like_count": 125,
+          "retweet_count": 3,
+          "reply_count": 34,
+          "url": "https://x.com/swyx/status/2114805687226376267"
         },
         {
-          "id": "2113003628835553559",
-          "text": "When we framed @trq212's pod about Claude Code's Next Era, we meant it. \n\nwe took some directive from @_catwu and did a proper deep dive on the new Claude Mods and highilghted our faves and what you should try now.\n\nin the same way that LLMs had that evolution from specific -> foundation -> specific, CC is much more of a malleable, general purpose hardened harness that has  \"pretrained\" on quadrillions of tokens of learning that you can now repurpose for any domain specific harness!\n\nthanks to @ricmac and @daniel_mac8 for working on our latest product dive. if you have stuff you'd like us to test and write up, we're open to chat at business@latent.space",
-          "created_at": "2026-10-21T20:24:57+00:00",
-          "like_count": 129,
-          "retweet_count": 6,
-          "reply_count": 66,
-          "url": "https://x.com/swyx/status/2113003628835553559"
+          "id": "2114830979709964728",
+          "text": "@christineist could we actually collab for @aidotengineer? i'll dm",
+          "created_at": "2026-10-26T21:26:11+00:00",
+          "like_count": 2,
+          "retweet_count": 0,
+          "reply_count": 1,
+          "url": "https://x.com/swyx/status/2114830979709964728"
         },
         {
-          "id": "2112896961548259434",
-          "text": "There's not enough buzz around Claude Mods.\n\nRead this Claude Mods article if you want to:\n\n- Understand Claude Mods basics\n- Install and use the most useful mods today\n- Ponder where the agent-human interface will go\n\nFor @latentspacepod.",
-          "created_at": "2026-10-21T13:21:06+00:00",
-          "like_count": 64,
-          "retweet_count": 8,
-          "reply_count": 11,
-          "url": "https://x.com/daniel_mac8/status/2112896961548259434"
+          "id": "2114824910707277997",
+          "text": "@grok how many of my reply guys are ai",
+          "created_at": "2026-10-26T21:02:04+00:00",
+          "like_count": 2,
+          "retweet_count": 0,
+          "reply_count": 4,
+          "url": "https://x.com/swyx/status/2114824910707277997"
+        },
+        {
+          "id": "2114864591985656285",
+          "text": "@goodalexander fable will be strong they are just pacing it for ipo timing",
+          "created_at": "2026-10-26T23:39:45+00:00",
+          "like_count": 1,
+          "retweet_count": 0,
+          "reply_count": 1,
+          "url": "https://x.com/swyx/status/2114864591985656285"
         }
       ]
     },
@@ -56,17 +65,7 @@
       "name": "Dylan Patel (SemiAnalysis)",
       "domain": "ai",
       "tier": "analyst",
-      "tweets": [
-        {
-          "id": "2112723987675648403",
-          "text": "@tyler_fong_ @Natl_Compute Sick congrats!",
-          "created_at": "2026-10-21T01:53:45+00:00",
-          "like_count": 3,
-          "retweet_count": 0,
-          "reply_count": 1,
-          "url": "https://x.com/dylan522p/status/2112723987675648403"
-        }
-      ]
+      "tweets": []
     },
     {
       "handle": "leopoldasch",
@@ -87,50 +86,40 @@
       "name": "Sam Altman",
       "domain": "ai",
       "tier": "exec",
-      "tweets": []
+      "tweets": [
+        {
+          "id": "2114780711664398349",
+          "text": "GPT-6.1 Terra: delivering fast and capable computer use at a lower price.\n\nGPT-6.1 Terra understands what’s on screen, takes action across apps, writes naturally, and is a more capable model for your whole workday with the efficiency to take on more of it. https://t.co/8JTN1yonmV",
+          "created_at": "2026-10-26T18:06:27+00:00",
+          "like_count": 21195,
+          "retweet_count": 1826,
+          "reply_count": 1098,
+          "url": "https://x.com/OpenAI/status/2114780711664398349"
+        },
+        {
+          "id": "2114818620782248024",
+          "text": "6.1 Terra is here! It is good at a lot of things, but we are especially excited for this new era of computer use.",
+          "created_at": "2026-10-26T20:37:05+00:00",
+          "like_count": 4678,
+          "retweet_count": 237,
+          "reply_count": 529,
+          "url": "https://x.com/sama/status/2114818620782248024"
+        }
+      ]
     },
     {
       "handle": "DarioAmodei",
       "name": "Dario Amodei",
       "domain": "ai",
       "tier": "exec",
-      "tweets": [
-        {
-          "id": "2112732230124818891",
-          "text": "Thank you for this, @_NathanCalvin. I appreciate and am a fan of the investigative work you’ve done on behalf of AI safety and believe your comments are coming from a constructive, honest place, and that it benefits the public to have people whose job is to scrutinize the actions of frontier AI companies. I think something would be wrong if companies of the size of Anthropic didn’t get harshly criticized basically every day; strong antibodies against corporate power are a healthy feature of a free society, and especially so when issues of the gravity of the one we’re facing are at play. I also do agree that some of the examples you cite were mistakes by Anthropic.\n\nThat said, I disagree with the thrust of your post. At the core, a good fraction of the things you criticize are consequences of Anthropic’s basic theory of change that we have held for many years. Our strategy has always been what I’ve called the “race to the top” — by showing how it’s possible to build the technology responsibly, we can raise the bar for the entire industry. The forces that drive the race to the top are hugely more effective if the company practicing them is at the frontier; that’s one lesson I’ve learned repeatedly. And looking at that strategy as a whole, I’m proud of our track record and stand by it.\n\nI believe that if we take a list of things that Anthropic did in the past year that were pro-safety and commercially costly to us, they far outweigh the list you’ve made, while at the same time I also disagree with some of the items on your list. Here are some things Anthropic has done, in the same period you’ve cited (the last year), which were very costly to us commercially while having strong safety benefits:\n\n1. We played a key role in SB53 (and other state laws), at a time when doing so was politically perilous to the company and AI regulation was very unpopular. We in fact argued for a stronger version of SB53 than was ultimately passed; there were a lot of stakeholders and we were not the limiting factor in the strength of the bill that was passed.\n\n2. We have very strong biological safeguards on our models, because we’ve seen concerning results in bio uplift trials and even seen and blocked potential attempts to misuse our models for bioweapons (as seen in our threat intelligence report from a few weeks ago). This is a very serious threat that we want to have zero tolerance for. But having very low false negatives means having significant false positives (despite months of effort on our part to improve the classifiers), enough so that biologists joke about how restrictive our classifiers are, and competitors sometimes sell against us by touting their more permissive bio capabilities. This has been very painful to us in an area where we care a lot about supporting an ecosystem of Claude users (biomedical science; and it is particularly frustrating to me as a biologist), but it’s the right thing to do and we intend to keep doing it.\n\n3. Similarly, we first had Mythos-class models in February but didn’t make them generally available until June (when we had stronger cyber safeguards in place). We only offered them to a limited set of partners in order to focus on cyberdefense. It would have been much more economically rational to simply release the model to everyone. We likely sacrificed a significant chunk of a several-month model lead. But because of this, many companies secured their cyber infrastructure before the deluge of widely available cyber-capable models. Of course there are ways it could have gone better or been run better, but this was what we were aiming to do.\n\n4. I advocated forcefully and publicly, in my essay Policy on the AI Exponential in June of this year, for the government to have the power to block model releases. Back then this was still outside or maybe on the edge of the Overton window, though I understand the window has moved since then. We were attacked intensely for this.\n\n5. I don’t want to re-ignite conflict, but the events of February 2026 are a strong example. It is clear that our public stance could have seriously damaged the company’s future.\n\n6. We’ve continued to advocate for export controls on chips and chipmaking equipment to China, because we think it allows democracies to negotiate from a position of strength on AI safety agreements. We’ve done this despite problems it’s created for us with industry partners who hold very different views and on whom we are very dependent.\n\n7. As far as I’m aware we were the first, and still only, frontier company to restrict the sale of AI services to PRC-controlled companies, including those operating through third countries (otherwise a major loophole). We’ve therefore forfeited significant short-term business to prevent fueling AI platforms and applications that would help the CCP’s military and intelligence services. We are also cracking down on distillation; generally, distillation is not a major threat to us commercially, but like chip exports it has concerning national security and safety implications, so we expend significant energy and company resources to address it.\n\n8. As you mentioned, we’ve put out a lot of reports, announcements, long model cards, public advocacy, etc, all trying to inform the public about the risks of AI. These involve a level of detail and effort that would be implausible for a purely profit-maximizing company.\n\n9. Just this week, we announced we were putting 5% (and possibly more over time) of the company into a public benefit fund.\n\nAll of these decisions came with very substantial costs to us. To be fair, those that involved holding back or restricting access to frontier capabilities also had a broader cost — for example, the public might otherwise have benefitted from faster progress in biology, so I am not saying that our decisions were without tradeoffs — but they were not driven by profit-seeking.\n\nFor each decision, you can come up with ulterior motives that could have driven us — I think it is a general truth that any decision, on any topic, can always be portrayed as a nefarious scheme. But most of those end up being pretty farfetched or don’t fully make sense if you actually examine them closely. For example, it is deeply implausible that it would be a shrewd business move to block a large swath of research biology in order to do the work ourselves and compete with our customers; we expect the benefit to the ecosystem to greatly exceed the work Anthropic does itself, and for the two to complement each other. It is not in Anthropic’s interest to be perceived as unfriendly to biologists. Our Life Sciences Verification Program, which gives vetted biology professionals access to our models, also refutes this idea. \n\nOf course, a different set of people will see this and make a different criticism: that Anthropic shouldn't be making decisions about who gets access to what in the first place. I agree, in the sense that ideally the government would be making these decisions, and that’s why we advocate for regulation. But for now we are forced to make them, and enabling bioterrorism isn’t a better option.\n\nI think that even if I conceded every item in your list, I would happily hold up mine next to it; I don’t think it’s a close call. That is of course partly subjective and different things are important to different people. Maybe one way you could object is that several of the items above relate to AI misuse and not loss-of-control; if you think the latter is much more important than the former, that might change your calculus. But this is not Anthropic’s view — we view both as serious issues. You can also disagree with our decisions, as many have, but they are consistent.\n\nBut I also disagree with at least some of your list. Several items don’t represent a deviation from Anthropic’s strategy or values at all, once we postulate the “race to the top” strategy that requires being a frontier AI company. Your items 1-4 are all simply examples of what it means to compete at the frontier, and we stand by them, both in the sense that they are transparently ordinary things to do as part of that strategy, and that we stand by the strategy as a whole. \n\nTo be fair, there are important questions worth confronting (and that we are confronting) about what to do when the AI-driven acceleration gets fast enough that it is hard for safety to keep up. We are nearing that point and that’s what’s driving some of our thinking about “pacing.” But 1-4 are actions taken before that point and should be perfectly expected based on Anthropic’s strategy as a company. Of course it is possible to disagree with that strategy, but that’s a more fundamental disagreement that you could have had any time over the last few years.\n\nI agree we could have handled your items 7, 8, and 9 better. All fall into the category of “rhetoric or policy communication that wasn’t carefully written or resulting from fast-changing circumstances not propagating from one team to another fast enough.” This kind of thing happens a lot in large organizations (Anthropic is over 5,000 people), and doesn’t even necessarily represent a failure or mistake of any single person. I am of course the CEO, and I take responsibility. The volume of communication from Anthropic is enormous and if these are the worst examples, I think we’re frankly doing pretty well, though I will continue to work hard to make sure we do even better.\n\nYour 5th item (the change to our RSP) is the most substantive item, and people can debate this, but I think that the old, more rigid RSP created a lot of situations where we were technically required to do something that required a lot of effort but in retrospect wasn’t very important for safety, as well as not covering some of the most important things. Our current RSP’s focus on transparency brought things like risk reports and roadmaps, and its emphasis on independent external review laid the groundwork for even more intensive embedded evaluation, all of which I think have been valuable in driving a race to the top. In the original announcement in September 2023, we described the RSP as an “early iteration that we [would] build on” and said that “rapid iteration…will almost certainly be necessary.” I understand that changing plans is always a move that creates justifiable scrutiny — I just don’t think we ever represented that we wouldn’t do so.\n\nRelating to your 6th item (having an FCF in addition to our RSP), I know our intent is to meet the letter and spirit of our regulatory obligations (via our FCF) while also remaining able to experiment with more novel approaches to risk management that go beyond what the law currently requires (via our RSP). I promise to look into it further, as it’s a complex issue and it is possible we are not weighing the considerations in the right way.\n\nOverall, although Anthropic has made plenty of mistakes as an organization — including some of the items on your list — I feel that we have repeatedly taken serious and substantive actions counter to our bottom line and that there is a significant negativity bias distorting assessments like the one you are making above. We’ll always try to do better but, again, I am extremely proud of our track record and stand by it. I will have more to say soon about how we are going to further live our values in this moment of rapid change.",
-          "created_at": "2026-10-21T02:26:30+00:00",
-          "like_count": 4051,
-          "retweet_count": 311,
-          "reply_count": 764,
-          "url": "https://x.com/DarioAmodei/status/2112732230124818891"
-        }
-      ]
+      "tweets": []
     },
     {
       "handle": "demishassabis",
       "name": "Demis Hassabis (Google DeepMind)",
       "domain": "ai",
       "tier": "exec",
-      "tweets": [
-        {
-          "id": "2113352276026990972",
-          "text": "Honoured to be featured in the @WSJ Innovators Issue. I’ve always believed in the power of human ingenuity to solve our hardest problems. I’m confident we can collectively navigate the potential challenges of frontier models and usher in a new golden age of scientific discovery!",
-          "created_at": "2026-10-22T19:30:21+00:00",
-          "like_count": 1453,
-          "retweet_count": 100,
-          "reply_count": 88,
-          "url": "https://x.com/demishassabis/status/2113352276026990972"
-        },
-        {
-          "id": "2112884628520317426",
-          "text": "From childhood prodigy to AI pioneer to Nobel Prize winner, Demis Hassabis has always had a simple plan. Step one, solve intelligence. Step two, solve everything else. 🔗 https://t.co/W3SLM55fJy https://t.co/rihg56z69d",
-          "created_at": "2026-10-21T12:32:05+00:00",
-          "like_count": 367,
-          "retweet_count": 50,
-          "reply_count": 20,
-          "url": "https://x.com/WSJ/status/2112884628520317426"
-        }
-      ]
+      "tweets": []
     },
     {
       "handle": "jietang",
@@ -146,49 +135,22 @@
       "tier": "infra",
       "tweets": [
         {
-          "id": "2112842244583833746",
-          "text": "NVIDIA 💚 Europe. https://t.co/UWwiTWiJGe",
-          "created_at": "2026-10-21T09:43:40+00:00",
-          "like_count": 2046,
-          "retweet_count": 87,
-          "reply_count": 41,
-          "url": "https://x.com/nvidia/status/2112842244583833746"
+          "id": "2114377680715980950",
+          "text": "Europe is building its AI future, and we’re all in. \n\nFrom AI factories and AI agents to robotics and healthcare, Jensen took the stage at #NVIDIAGTC Berlin to show how AI is taking shape across the continent.\n\nHere's a look back at the highlights: https://t.co/8nJReDvmH7",
+          "created_at": "2026-10-25T15:24:56+00:00",
+          "like_count": 808,
+          "retweet_count": 96,
+          "reply_count": 135,
+          "url": "https://x.com/nvidia/status/2114377680715980950"
         },
         {
-          "id": "2112841174213902450",
-          "text": "With NVIDIA extreme co-design, we’ve accelerated AI performance a millionfold over 10 years, and we’re not stopping there. https://t.co/iSa3ArDkNY",
-          "created_at": "2026-10-21T09:39:25+00:00",
-          "like_count": 1891,
-          "retweet_count": 164,
-          "reply_count": 104,
-          "url": "https://x.com/nvidia/status/2112841174213902450"
-        },
-        {
-          "id": "2112882448530800716",
-          "text": "AI builders need computing capacity they can put to work sooner.\n\nWe introduced DSX POD at NVIDIA GTC Berlin: AI factories integrated and tested before delivery, enabling deployment at prepared sites in as little as 14 days. https://t.co/0Ax7yHMvBp",
-          "created_at": "2026-10-21T12:23:25+00:00",
-          "like_count": 1473,
-          "retweet_count": 162,
-          "reply_count": 122,
-          "url": "https://x.com/nvidia/status/2112882448530800716"
-        },
-        {
-          "id": "2112847277282721888",
-          "text": "Jensen introduces the OpenShell Reference Architecture to help businesses set boundaries for AI agents and stop them when they step outside those boundaries.\n\nSecuring agents around the world. 🔒 https://t.co/5FaiFJTE8g",
-          "created_at": "2026-10-21T10:03:40+00:00",
-          "like_count": 782,
-          "retweet_count": 93,
-          "reply_count": 119,
-          "url": "https://x.com/nvidia/status/2112847277282721888"
-        },
-        {
-          "id": "2112850890642383262",
-          "text": "This is the magic behind the agents. https://t.co/20DoFjIkTa",
-          "created_at": "2026-10-21T10:18:01+00:00",
-          "like_count": 763,
-          "retweet_count": 66,
-          "reply_count": 24,
-          "url": "https://x.com/nvidia/status/2112850890642383262"
+          "id": "2114827978748383342",
+          "text": "After a breast cancer diagnosis, one of the hardest questions is whether it will come back.\n\n@SimBioSys is helping doctors and patients better understand that risk. Powered by NVIDIA technology, its FDA-cleared TumorSight Risk analyzes an existing breast MRI alongside pathology and clinical information to estimate the risk of cancer returning at five and ten years.\n\nFor women with HR-positive, HER2-negative early-stage breast cancer, those insights can be available before surgery, giving them and their doctors more information as they talk through treatment options.\n\nAI can help give patients and their doctors more information when the decisions ahead feel most difficult.",
+          "created_at": "2026-10-26T21:14:16+00:00",
+          "like_count": 180,
+          "retweet_count": 27,
+          "reply_count": 34,
+          "url": "https://x.com/nvidia/status/2114827978748383342"
         }
       ]
     },
@@ -197,7 +159,17 @@
       "name": "Jensen Huang (NVIDIA)",
       "domain": "ai",
       "tier": "exec",
-      "tweets": []
+      "tweets": [
+        {
+          "id": "2114773600574279837",
+          "text": "I was the opening act for a family of ducks.\n\nThank you, Berlin. What a GTC.\n\nEurope is building its AI ecosystem and economy, from AI factories to agents to robots.\n\nDSX POD: Vera Rubin modular factories built, cabled and tested in the factory, then delivered ready to produce intelligence.\n\nAgents: models, harnesses, sandboxes, knowledge and tools. NVIDIA Agent Toolkit brings the pieces together so companies control what their agents know, access and do.  NVIDIA OpenShell enhances safety.\n\nPhysical AI: new customers across AI-RAN, robotaxis and robotics.\n\nPersonal AI: after four years building with Microsoft, RTX Spark brings personal agents to the Windows PC.\n\nThank you to President @EmmanuelMacron, Prime Minister @andyburnham and Chancellor @bundeskanzler for hosting me. Great to celebrate Sferical One with Sweden’s technology leaders. And thank you to President @TokayevKZ for the warm welcome.\n\nAnd to our partners and NVIDIA teams: thank you for making it happen.\n\nThe keynote is here: https://t.co/s9GISZ1Swi",
+          "created_at": "2026-10-26T17:38:11+00:00",
+          "like_count": 2043,
+          "retweet_count": 168,
+          "reply_count": 147,
+          "url": "https://x.com/JensenHuang/status/2114773600574279837"
+        }
+      ]
     },
     {
       "handle": "AmandaAskell",
@@ -211,87 +183,21 @@
       "name": "Boris Cherny (Claude Code)",
       "domain": "ai",
       "tier": "builder",
-      "tweets": [
-        {
-          "id": "2113328526413996100",
-          "text": "We're donating Agent Skills to the Agentic AI Foundation (@AgenticAIFdn), the same foundation we donated MCP to.\n\nSince December 2025, 70+ agent platforms have integrated the standard, including ChatGPT, Cursor, GitHub Copilot, and VS Code. \n\nHere's what that means for you:",
-          "created_at": "2026-10-22T17:55:59+00:00",
-          "like_count": 5890,
-          "retweet_count": 253,
-          "reply_count": 201,
-          "url": "https://x.com/ClaudeDevs/status/2113328526413996100"
-        },
-        {
-          "id": "2113333859907747871",
-          "text": "Agent Skills started as an experiment in Claude Code. Many across the industry have come to adopt it, so we at Anthropic found it more fitting to donate it to the @AgenticAIFdn, next to MCP.",
-          "created_at": "2026-10-22T18:17:10+00:00",
-          "like_count": 1380,
-          "retweet_count": 43,
-          "reply_count": 140,
-          "url": "https://x.com/bcherny/status/2113333859907747871"
-        },
-        {
-          "id": "2113141937645769087",
-          "text": "@CampbellKaleb23 No changes on our end. Can you run this command and paste the full output here? Happy to help debug.\n\nclaude -p /usage | pbcopy",
-          "created_at": "2026-10-22T05:34:32+00:00",
-          "like_count": 836,
-          "retweet_count": 7,
-          "reply_count": 72,
-          "url": "https://x.com/bcherny/status/2113141937645769087"
-        }
-      ]
+      "tweets": []
     },
     {
       "handle": "_catwu",
       "name": "Cat Wu (Anthropic)",
       "domain": "ai",
       "tier": "builder",
-      "tweets": [
-        {
-          "id": "2112984664256241837",
-          "text": "We’re opening a research preview of Claude Duet, a new app where Claude works as a proactive agent.\n\nIt comes to you with what needs your attention, completes tasks you ask of it, keeps working when you step away, and checks with you before it acts on your behalf. https://t.co/kt8gAbWuX8",
-          "created_at": "2026-10-21T19:09:35+00:00",
-          "like_count": 52925,
-          "retweet_count": 4054,
-          "reply_count": 2212,
-          "url": "https://x.com/claudeai/status/2112984664256241837"
-        },
-        {
-          "id": "2112988751576330487",
-          "text": "We heard your feedback that you want Claude to proactively take more off your plate! Claude Duet is a large step in this direction - it'll notice work that needs to be done, and then do it before you ask. \n\nJoin the waitlist here: https://t.co/f3PfUuXIox",
-          "created_at": "2026-10-21T19:25:50+00:00",
-          "like_count": 930,
-          "retweet_count": 27,
-          "reply_count": 97,
-          "url": "https://x.com/_catwu/status/2112988751576330487"
-        }
-      ]
+      "tweets": []
     },
     {
       "handle": "alexalbert__",
       "name": "Alex Albert (Anthropic)",
       "domain": "ai",
       "tier": "builder",
-      "tweets": [
-        {
-          "id": "2113386454907007444",
-          "text": "One side quest that would be so much fun to try right now is running a bunch of local small businesses with AI helping you out\n\nI think products like Claude Duet could end up being bigger for these businesses than even things like Square or Google Maps were",
-          "created_at": "2026-10-22T21:46:10+00:00",
-          "like_count": 87,
-          "retweet_count": 1,
-          "reply_count": 50,
-          "url": "https://x.com/alexalbert__/status/2113386454907007444"
-        },
-        {
-          "id": "2113386456098197941",
-          "text": "if you are running a small business with claude helping you, I'd love to hear what you're doing!",
-          "created_at": "2026-10-22T21:46:10+00:00",
-          "like_count": 12,
-          "retweet_count": 0,
-          "reply_count": 9,
-          "url": "https://x.com/alexalbert__/status/2113386456098197941"
-        }
-      ]
+      "tweets": []
     },
     {
       "handle": "rauchg",
@@ -300,49 +206,40 @@
       "tier": "builder",
       "tweets": [
         {
-          "id": "2113251591822471644",
-          "text": "Vercel now has all the pieces in place to host at-scale backends. \n\nWebSockets, Queues, Workflows, Cron, Services, Containers, Python, Daemons, Long-duration Functions, Blob, Drives, Sandbox…\n\nAny guesses what comes next?",
-          "created_at": "2026-10-22T12:50:16+00:00",
-          "like_count": 1306,
-          "retweet_count": 33,
-          "reply_count": 341,
-          "url": "https://x.com/rauchg/status/2113251591822471644"
+          "id": "2114770919436808572",
+          "text": "I built 𝚌𝚙𝚞-𝚌𝚑𝚊𝚝, a reproduction of @openai's findings of covert communication using the CPU.\n\nIt runs on a generic host with 2+ Firecracker microVMs with no internet access. Works on x86 and even my M5 chip.\n\nI was able to chat via 3 separate mechanisms:\n① CPU contention\n② Cache eviction timing\n③ DRAM bandwidth contention \n\n… across multiple CPUs, defeating all Firecracker's production recommendations (no SMT, no KSM, tenants pinned to different cores.)\n\nEssentially, if shared hardware is involved, there's a good chance your agents can communicate covertly. And with really decent latency.\n\nThe good news: this is decidedly different from a *side-channel attack* where the agents could steal information (Meltdown/Spectre), a category of attack that providers like Vercel Sandbox mitigate. Further, in our real-world environment, these 'whispering' techniques are much harder to pull off and easier for us to monitor and detect (sampling hardware counters + lots of at-scale statistical data.)\n\nNoteworthy: ironically, OpenAI and Anthropic's models refused to do this work. Open weight models got the job done. I'm worried the labs' stance might backfire and get in the way of helping developers build correct and secure systems. e.g: building a secure sandbox requires having this kind of analysis, and without it, we'll have a less secure world.",
+          "created_at": "2026-10-26T17:27:32+00:00",
+          "like_count": 1559,
+          "retweet_count": 133,
+          "reply_count": 183,
+          "url": "https://x.com/rauchg/status/2114770919436808572"
         },
         {
-          "id": "2113010010766913815",
-          "text": "DeepSeek v4.1 Flash (1017) is now included in ▲ Token Pass.\n\nFast, mind-bogglingly cheap, and served with ZDR (zero-data retention).\n\nIt's a phenomenal model to run subagents that execute plans conceived by larger and more expensive models. You can port TypeScript to Rust 10 times and not run out of credits 😂",
-          "created_at": "2026-10-21T20:50:19+00:00",
-          "like_count": 947,
-          "retweet_count": 24,
-          "reply_count": 98,
-          "url": "https://x.com/rauchg/status/2113010010766913815"
+          "id": "2114792686897312046",
+          "text": "Yes. Different cores, no SMT involvement, no KSM/dedup, no shared pages. Only  requirement is two cooperating agents in same machine.\n\ncpuset can partition cores, but it cannot partition the memory pipe (DRAM channels and the memory controller are one socket entity in this machine, but I think socket pinning could mitigate)\n\nBtw, there are even more whispering attacks available, and there's plenty of literature to cram through.",
+          "created_at": "2026-10-26T18:54:02+00:00",
+          "like_count": 10,
+          "retweet_count": 0,
+          "reply_count": 2,
+          "url": "https://x.com/rauchg/status/2114792686897312046"
         },
         {
-          "id": "2113399539227136084",
-          "text": "It’s time to kill “static credentials”.\n\nAttacks and breaches can happen. But imagine if thieves could only steal “self-destructing keys” to your data and tokens.\n\nThe industry once came together to deliver “green locks” encryption for every site (TLS). Let’s do it for OIDC! 💪",
-          "created_at": "2026-10-22T22:38:09+00:00",
-          "like_count": 636,
-          "retweet_count": 30,
-          "reply_count": 65,
-          "url": "https://x.com/rauchg/status/2113399539227136084"
+          "id": "2114802381775143355",
+          "text": "@S1r1u5_ Good eval to run",
+          "created_at": "2026-10-26T19:32:33+00:00",
+          "like_count": 6,
+          "retweet_count": 0,
+          "reply_count": 2,
+          "url": "https://x.com/rauchg/status/2114802381775143355"
         },
         {
-          "id": "2112922639153209361",
-          "text": "WebSocket support in Vercel Functions is now generally available.\n\nVercel now serves 15 million WebSocket connections a day across AI chat, streaming, and realtime multiplayer apps.\n\nhttps://t.co/VoeignmMOX",
-          "created_at": "2026-10-21T15:03:08+00:00",
-          "like_count": 235,
-          "retweet_count": 14,
-          "reply_count": 6,
-          "url": "https://x.com/vercel_dev/status/2112922639153209361"
-        },
-        {
-          "id": "2113005104911757598",
-          "text": "DeepSeek V4.1 Flash 1017 is now included in Vercel Token Pass.\n\n• New weights from DeepSeek\n• 1M context window\n• No config change\n\nGet $80 of tokens for $30/mo ↓https://t.co/VGjgv7AgJz",
-          "created_at": "2026-10-21T20:30:49+00:00",
-          "like_count": 216,
-          "retweet_count": 17,
-          "reply_count": 19,
-          "url": "https://x.com/vercel_dev/status/2113005104911757598"
+          "id": "2114803158841278824",
+          "text": "@johncodes @OpenAI With two-socket boxes, you just need 3 covert tenants and they can still communicate",
+          "created_at": "2026-10-26T19:35:38+00:00",
+          "like_count": 0,
+          "retweet_count": 0,
+          "reply_count": 0,
+          "url": "https://x.com/rauchg/status/2114803158841278824"
         }
       ]
     },
@@ -353,22 +250,22 @@
       "tier": "builder",
       "tweets": [
         {
-          "id": "2112975002027147545",
-          "text": "prompt -&gt; corporation",
-          "created_at": "2026-10-21T18:31:12+00:00",
-          "like_count": 152,
-          "retweet_count": 7,
-          "reply_count": 40,
-          "url": "https://x.com/amasad/status/2112975002027147545"
+          "id": "2114760898225299721",
+          "text": "For centuries, the architecture of the firm has barely changed: hierarchies of people organized into departments and coordinated through bureaucracy.\n\nAI agents are about to upend that.\n\nWe’re moving toward the self-driving company where humans exercise judgment and agents execute most of the work.\n\nAt Replit, we’re building the foundation for this new kind of company. We’re calling it “the Agent Habitat.”\n\nMarc Andreessen wrote a fantastic piece placing this shift in the history of computing. Every major computing revolution began with chaos before businesses figured out how to harness it.",
+          "created_at": "2026-10-26T16:47:43+00:00",
+          "like_count": 610,
+          "retweet_count": 60,
+          "reply_count": 137,
+          "url": "https://x.com/amasad/status/2114760898225299721"
         },
         {
-          "id": "2112959588387725412",
-          "text": "With @Stripe @Atlas, you can now ask Replit Agent to incorporate your business through the @Stripe MCP integration. https://t.co/bFOMlLHYKq",
-          "created_at": "2026-10-21T17:29:57+00:00",
-          "like_count": 81,
-          "retweet_count": 13,
-          "reply_count": 28,
-          "url": "https://x.com/Replit/status/2112959588387725412"
+          "id": "2114890745471545419",
+          "text": "OpenAI asked three scientific communities how to release its discoveries and got three different answers:\n\nMathematicians: “Just post it. Who gives a shit anymore.”\n\nComputer scientists: “Open source it, but also pay for our conference.”\n\nPhysicists: “Leave it to us, nerds.” https://t.co/5cpEOIADpY",
+          "created_at": "2026-10-27T01:23:41+00:00",
+          "like_count": 16,
+          "retweet_count": 1,
+          "reply_count": 7,
+          "url": "https://x.com/amasad/status/2114890745471545419"
         }
       ]
     },
@@ -384,19 +281,9 @@
       "name": "Ornith (agentic coding LLM)",
       "domain": "ai",
       "tier": "builder",
-      "tweets": [
-        {
-          "id": "2112955969676497300",
-          "text": "🐦 Ornith-1.5, including the recent 122B one, are built upon Ornith-1.0, which was developed on top of Qwen3.5 @Alibaba_Qwen with additional continued pretraining, mid-training, and post-training.\n\n🫡 Thanks to the open-weight community! \n\n👀 Please feel free to build your own projects or model variants on top of Ornith.",
-          "created_at": "2026-10-21T17:15:34+00:00",
-          "like_count": 254,
-          "retweet_count": 20,
-          "reply_count": 21,
-          "url": "https://x.com/ornith_/status/2112955969676497300"
-        }
-      ]
+      "tweets": []
     }
   ],
   "errors": null,
-  "generated_at": "2026-10-23T00:48:04.685703+00:00"
+  "generated_at": "2026-10-27T01:34:06.520840+00:00"
 }
