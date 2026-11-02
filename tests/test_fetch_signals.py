@@ -12,6 +12,18 @@ SPEC.loader.exec_module(fetch_signals)
 
 
 class FetchSignalsTests(unittest.TestCase):
+    def test_x_candidate_preserves_late_source_details(self):
+        text = "Claude agent workflow tokens model inference. " * 25
+        text += "Manual steps: provision a server and buy a domain."
+        feed = {"x": [{"name": "Example", "tweets": [{
+            "text": text, "url": "https://x.com/example/status/1",
+            "created_at": "2026-11-02T00:00:00+00:00",
+        }]}]}
+        entries = fetch_signals.make_x_candidates(feed)
+        self.assertEqual(len(entries), 1)
+        public = fetch_signals.public_entry(entries[0])
+        self.assertIn("Manual steps: provision a server and buy a domain.", public["detail"])
+
     def test_youtube_video_id_is_preserved_for_deep_reads(self):
         url = "https://www.youtube.com/watch?v=abc123&utm_source=test"
         self.assertEqual(

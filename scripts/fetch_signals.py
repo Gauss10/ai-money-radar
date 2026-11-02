@@ -276,7 +276,8 @@ def make_x_candidates(feed):
                 "take": take,
                 "take_en": take_en,
                 "url": tweet.get("url") or "",
-                "detail": excerpt(text),
+                # Keep the fetched X text so archive summaries retain concrete details.
+                "detail": text,
                 "_score": score + min(int(tweet.get("like_count") or 0) / 50, 3),
                 "_source": "x",
                 "_raw": first_sentence(text),
@@ -488,16 +489,17 @@ def summarize_details(items, limit=20, force=False):
         prompt = (
             "你是 AI 投资日报编辑。根据下面来自 X 或播客 feed 的原始内容，直接提炼中文要点，不要逐句翻译。\n"
             "要求：\n"
-            "1. 用 2-3 句、约 100-220 个中文字概括最重要的事实、数字和观点；\n"
+            "1. 材料充分时用 4-6 句、约 180-320 个中文字：交代发生了什么、具体机制或例子、关键数字与适用条件；短帖按实际信息量写，不凑字数；\n"
             "2. 保留必要的公司、产品、人名和关键数字，但不复述人物履历；\n"
             "3. 删除欢迎语、宣传语、赞助、订阅、hashtags、时间轴、章节和节目流程；\n"
-            "4. 不添加原文没有的事实，也不要输出标题、列表、'摘要'或解释。\n\n"
+            "4. 区分原帖作者与转引者，猜测和指控必须归因给发言者，不得写成已核实事实；\n"
+            "5. 最后可用‘判断：’补一句商业含义或后续观察点，明确属于分析；原文未提供的数据不得补造。不输出标题、列表或写作说明。\n\n"
             f"来源：{it.get('who', '')} · {it.get('via', '')}\n"
             f"原始内容：{it['detail']}"
         )
         for model in OPENROUTER_MODELS:
             try:
-                text = clean_generated_summary(request_model(key, model, prompt, 900))
+                text = clean_generated_summary(request_model(key, model, prompt, 1400))
                 if text:
                     it["detail_zh"] = text
                     done += 1
@@ -569,7 +571,7 @@ def generate_deep_read(item, key):
         "要求：\n"
         "1. detail 先用 2 段提炼核心事实、数字和观点，再用‘判断：’开头写 1 段洞察；总计约 280-500 字。\n"
         "2. 判断需解释商业或产业含义、信息局限和后续应跟踪的指标，不能只重复原文。\n"
-        "3. 不添加材料没有的事实；删除欢迎语、宣传、赞助、订阅、hashtags、时间轴和节目流程。\n"
+        "3. 全文只用中文，保留必要产品名。保留材料中的具体机制、例子和条件，区分原作者与转引者；猜测和指控须归因。短帖不要凑字数，不添加材料没有的事实；删除宣传、赞助、时间轴和节目流程。\n"
         "4. detail 不介绍人物或栏目；人物/栏目背景只写在 bio，控制在 35-80 字。\n"
         "5. title 是 15-35 字的中文要点标题，不带序号。\n\n"
         "6. cover 是首页摘要：1-2 个完整句子、55-105 字，提炼最重要事实与数字，禁止省略号或截断。\n\n"

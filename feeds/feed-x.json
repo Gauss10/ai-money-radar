@@ -5,7 +5,35 @@
       "name": "Andrej Karpathy",
       "domain": "ai",
       "tier": "analyst",
-      "tweets": []
+      "tweets": [
+        {
+          "id": "2116957135661945283",
+          "text": "Weekend hack: HackerTube. I was annoyed with YouTube's recommendations so I had Claude filter down 43M comments over 20 years of HN to 6,454 videos that keep being recommended. *Significantly* better viewing experience, ~2 hours with Opus 5.5:\nhttps://t.co/JIhXN7OSh1\n\n- Excellent recs without any logins (state is kept in local browser session)\n- Thumbnail is a representative frame from middle of the video instead of the super duper A/B test hyper-optimized user uploads\n- Underlying data from the comment analysis as one zip file, point your Claude at it and ask for your own version\n- HackerTube Longs ✊\n\nA bit more on the process:\nI use Claude Code (desktop app for Mac), Opus 5.5 on Medium effort as my default. I only talk to Claude and have it do everything, the only \"manual work\" I helped with in tandem was in the browser (reminiscent of MenuGen): 1) I had to create some kind of API key from Google Cloud UI to query YouTube for video metadata, 2) I booted up a VPS box for serving and 3) I bought the domain name. Once the box was up I gave Claude the IP and told it update, secure, harden, deploy and optimize the code, and it did the whole thing.\n\nMany awesome projects that would have normally taken weeks/months even can now be few-shotted for breakfast. What else are we not thinking of.",
+          "created_at": "2026-11-01T18:14:46+00:00",
+          "like_count": 39749,
+          "retweet_count": 3574,
+          "reply_count": 1632,
+          "url": "https://x.com/karpathy/status/2116957135661945283"
+        },
+        {
+          "id": "2116980174667583602",
+          "text": "@davegoldblatt \"Hi Claude good morning how are you I'm great thx build me a YouTube-style site but restricted to videos that have been repeatedly recommended on HN over the years pls. Don't make any mistakes.\"",
+          "created_at": "2026-11-01T19:46:19+00:00",
+          "like_count": 1740,
+          "retweet_count": 72,
+          "reply_count": 60,
+          "url": "https://x.com/karpathy/status/2116980174667583602"
+        },
+        {
+          "id": "2116970707867566106",
+          "text": "@eyadnour Oh tbc Claude filtered it down a lot: urls, regexes, dropping spam, only the remainder was dispatched to Sonnet with a CC Workflow (so it uses the sub tokens). You can see surviving comments under videos, the comments that recommend videos seem to be of nice &amp; helpful character.",
+          "created_at": "2026-11-01T19:08:42+00:00",
+          "like_count": 493,
+          "retweet_count": 6,
+          "reply_count": 17,
+          "url": "https://x.com/karpathy/status/2116970707867566106"
+        }
+      ]
     },
     {
       "handle": "swyx",
@@ -14,49 +42,31 @@
       "tier": "analyst",
       "tweets": [
         {
-          "id": "2115711258196574210",
-          "text": "anthropic is generational wealth creation machine and its more interesting even 2026 joiners are getting 8-digit payouts https://t.co/7qra0O5JN8",
-          "created_at": "2026-10-29T07:44:06+00:00",
-          "like_count": 1185,
-          "retweet_count": 40,
-          "reply_count": 21,
-          "url": "https://x.com/himanshustwts/status/2115711258196574210"
+          "id": "2116773135668404286",
+          "text": "btw @karpathy uses medium on opus 5.5 on his latest project (Hackertube launched today).\n\noverall i think having strong opinions on effort levels is like the tabs vs spaces of our time. just tweak to taste. altho mine is definitely superior to yours. https://t.co/oSCPvlogKc",
+          "created_at": "2026-11-01T06:03:37+00:00",
+          "like_count": 799,
+          "retweet_count": 28,
+          "reply_count": 268,
+          "url": "https://x.com/swyx/status/2116773135668404286"
         },
         {
-          "id": "2116305528330785190",
-          "text": "its true, Anthropic really vibecoded their entire backend to Rust and none of you noticed",
-          "created_at": "2026-10-30T23:05:31+00:00",
-          "like_count": 87,
-          "retweet_count": 3,
-          "reply_count": 31,
-          "url": "https://x.com/swyx/status/2116305528330785190"
-        },
-        {
-          "id": "2116240128511459608",
-          "text": "I wrote about this in AINews last night but basically https://t.co/bx6aYCqlW8 is gathering the top 1000 AI Engineers to 1) accurately represent the 2026 SOTA in AI x Code, 2) preview 2027.\n\nSo proud to have gathered the best collection of invited attendees, speakers and sponsors to reflect the three themes that have defined this year:",
-          "created_at": "2026-10-30T18:45:39+00:00",
-          "like_count": 47,
-          "retweet_count": 3,
-          "reply_count": 28,
-          "url": "https://x.com/swyx/status/2116240128511459608"
-        },
-        {
-          "id": "2116240369134584305",
-          "text": "even the AIE CODE expo is insanely stacked, basically all the top coding agent companies in the world, i could just wander around all day and catch up with everyone\n\n2 spots left for gold and silver btw - sponsorships@ai.engineer\n\nsee you in 2 weeks! https://t.co/a9JYGvLeDR",
-          "created_at": "2026-10-30T18:46:36+00:00",
-          "like_count": 12,
+          "id": "2116658380781801963",
+          "text": "@matanSF @factory @typedef_ai @shaunmmaguire breaking: Factory CEO raising",
+          "created_at": "2026-10-31T22:27:38+00:00",
+          "like_count": 4,
           "retweet_count": 0,
-          "reply_count": 4,
-          "url": "https://x.com/swyx/status/2116240369134584305"
+          "reply_count": 0,
+          "url": "https://x.com/swyx/status/2116658380781801963"
         },
         {
-          "id": "2116206151402696732",
-          "text": "@adambcohen93 feedback: was intrigued by this, clicked thru, saw Weave's tagline \"Engineering intelligence for the AI era\", was turned off/didnt resonate. just in case it helps.",
-          "created_at": "2026-10-30T16:30:38+00:00",
-          "like_count": 3,
+          "id": "2116994179561873721",
+          "text": "@TheRealAdamG @OpenAI woww 2021 OG",
+          "created_at": "2026-11-01T20:41:58+00:00",
+          "like_count": 1,
           "retweet_count": 0,
-          "reply_count": 1,
-          "url": "https://x.com/swyx/status/2116206151402696732"
+          "reply_count": 0,
+          "url": "https://x.com/swyx/status/2116994179561873721"
         }
       ]
     },
@@ -65,7 +75,17 @@
       "name": "Dylan Patel (SemiAnalysis)",
       "domain": "ai",
       "tier": "analyst",
-      "tweets": []
+      "tweets": [
+        {
+          "id": "2117075900575477855",
+          "text": "Today we’re releasing GDPx, a benchmark for measuring agentic capabilities across the most valuable domains.\n\nGDPx is a true frontier-level benchmark: even the best model scores just 12% (1/7)🧵 https://t.co/RNnkcuUkih",
+          "created_at": "2026-11-02T02:06:42+00:00",
+          "like_count": 1904,
+          "retweet_count": 182,
+          "reply_count": 199,
+          "url": "https://x.com/SemiAnalysis_/status/2117075900575477855"
+        }
+      ]
     },
     {
       "handle": "leopoldasch",
@@ -114,17 +134,7 @@
       "name": "NVIDIA (Jensen Huang / AI infrastructure)",
       "domain": "ai",
       "tier": "infra",
-      "tweets": [
-        {
-          "id": "2116236325351559524",
-          "text": "Sit back and enjoy the show.\n\nYou’re watching computer graphics and simulation powered by NVIDIA CUDA-X, the software helping scientists and engineers put their ideas to the test.\n\nFrom #NVIDIAGTC Berlin: https://t.co/E8SMc1OBaF",
-          "created_at": "2026-10-30T18:30:32+00:00",
-          "like_count": 313,
-          "retweet_count": 43,
-          "reply_count": 41,
-          "url": "https://x.com/nvidia/status/2116236325351559524"
-        }
-      ]
+      "tweets": []
     },
     {
       "handle": "JensenHuang",
@@ -145,17 +155,7 @@
       "name": "Boris Cherny (Claude Code)",
       "domain": "ai",
       "tier": "builder",
-      "tweets": [
-        {
-          "id": "2115859487068422226",
-          "text": "@sam_commonly @CampbellKaleb23 Just landed CLAUDE_CODE_SUBAGENT_EFFORT\n\nCLAUDE_CODE_SUBAGENT_EFFORT=low claude\n\nOr, customize it in your custom agent config",
-          "created_at": "2026-10-29T17:33:07+00:00",
-          "like_count": 91,
-          "retweet_count": 3,
-          "reply_count": 21,
-          "url": "https://x.com/bcherny/status/2115859487068422226"
-        }
-      ]
+      "tweets": []
     },
     {
       "handle": "_catwu",
@@ -169,35 +169,7 @@
       "name": "Alex Albert (Anthropic)",
       "domain": "ai",
       "tier": "builder",
-      "tweets": [
-        {
-          "id": "2116074289053175808",
-          "text": "We identified a security incident affecting a modified Claude Code VS Code extension accessed through our Cursor IDE extension marketplace, impacting at most 5,000 users. This malicious version of the extension was not developed by Anthropic. It does not impact other extensions downloaded from the https://t.co/sJRGX5jLXW, Grok Bot, Grok or our other SpaceXSI products.\n\nIn response, we took down our extension marketplace this afternoon, worked with relevant providers to neutralize the malware, and have reinstated the marketplace after confirming there is no further risk.\n\nIf affected, please review instructions in this blog post to understand how to find the malicious package and establish a path to mitigate any potential impact. We are asking all customers update to Claude Code for VS Code version 2.1.314: https://t.co/ESqf7YEtHZ",
-          "created_at": "2026-10-30T07:46:39+00:00",
-          "like_count": 6439,
-          "retweet_count": 1000,
-          "reply_count": 470,
-          "url": "https://x.com/cursor_ai/status/2116074289053175808"
-        },
-        {
-          "id": "2116221457252659275",
-          "text": "I lead product for Claude subscriptions. Today we're renaming our Max plans, and I want to explain why.\n\nWhen we launched our top plan in April 2025, it had a single limit: 5 hours. It gave you 20x Pro's limit, so we called it Max 20x. When we added weekly limits to Max 20x, we set them to 10x Pro's (the 5-hour limit stayed at 20x).\n\nI get that some new users assumed 20x applied to both limits. We could have done better here, and I'm sorry.\n\nThe Ultra plan keeps the weekly limit (10x Pro), but we're removing the 5-hour limit so you can keep building without getting blocked mid-session. This starts today and rolls out in stages. To help prevent fraud and abuse, a temporary limit applies until we've verified your account. You'll get an email when your limit is removed.\n\nWe've got more cooking and can't wait to share it. Thanks for building with Claude 🙏",
-          "created_at": "2026-10-30T17:31:27+00:00",
-          "like_count": 2369,
-          "retweet_count": 69,
-          "reply_count": 436,
-          "url": "https://x.com/mboverell/status/2116221457252659275"
-        },
-        {
-          "id": "2116185803433071061",
-          "text": "@amasad This was not an official Claude Code extension. It was a tampered copy of the Claude Code extension, which we didn’t build or publish. See here: https://t.co/VH3RAYdHG0",
-          "created_at": "2026-10-30T15:09:47+00:00",
-          "like_count": 144,
-          "retweet_count": 2,
-          "reply_count": 6,
-          "url": "https://x.com/alexalbert__/status/2116185803433071061"
-        }
-      ]
+      "tweets": []
     },
     {
       "handle": "rauchg",
@@ -206,49 +178,22 @@
       "tier": "builder",
       "tweets": [
         {
-          "id": "2116143077656322310",
-          "text": "Amazing technology is being developed and released at a rate humans can hardly keep up with. \n\nAgents are shipping software faster than we can yap about it.",
-          "created_at": "2026-10-30T12:20:00+00:00",
-          "like_count": 752,
-          "retweet_count": 31,
-          "reply_count": 284,
-          "url": "https://x.com/rauchg/status/2116143077656322310"
+          "id": "2117000819623243925",
+          "text": "Own your intelligence.\n\nAnyone that opposes this has something to sell you (perhaps your own intelligence back to you.)\n\nLocal models need to continue proliferating. The “absolute unit” massive models may be out of reach for now locally, so your best option is to, indeed, keep your options open. Own your harness, data, connections, runtime: your agents. Embrace open source.",
+          "created_at": "2026-11-01T21:08:22+00:00",
+          "like_count": 2555,
+          "retweet_count": 260,
+          "reply_count": 269,
+          "url": "https://x.com/rauchg/status/2117000819623243925"
         },
         {
-          "id": "2115874115118834153",
-          "text": "The future of software engineering is agents talking to other agents. Even across different companies.\n\nWe’re learning daily from the feedback agents send us on how to make a better Vercel.\n\nPut in your 𝙰𝙶𝙴𝙽𝚃𝚂.𝚖𝚍: send Vercel feedback when something could be better.",
-          "created_at": "2026-10-29T18:31:14+00:00",
-          "like_count": 727,
-          "retweet_count": 40,
-          "reply_count": 248,
-          "url": "https://x.com/rauchg/status/2115874115118834153"
-        },
-        {
-          "id": "2115936423748718866",
-          "text": "Node.js 26 LTS is now available on Vercel.\n\n▪︎ Default for all new projects\n▪︎ HTTP/2 by default for built-in 𝚏𝚎𝚝𝚌𝚑\n▪︎ Temporal API for dates and time zones\n▪︎ V8 14.6 JavaScript engine\nhttps://t.co/d59k41Ya1i",
-          "created_at": "2026-10-29T22:38:50+00:00",
-          "like_count": 388,
-          "retweet_count": 21,
-          "reply_count": 3,
-          "url": "https://x.com/vercel_dev/status/2115936423748718866"
-        },
-        {
-          "id": "2115941392698798365",
-          "text": "I love how quickly our team works to bring the latest LTS and security upgrades for @nodejs.\n\nShould be a nice performance boost given 𝚏𝚎𝚝𝚌𝚑 now uses HTTP/2 by default, and agents produce a lot of network traffic",
-          "created_at": "2026-10-29T22:58:34+00:00",
-          "like_count": 371,
-          "retweet_count": 6,
-          "reply_count": 61,
-          "url": "https://x.com/rauchg/status/2115941392698798365"
-        },
-        {
-          "id": "2115835041876222134",
-          "text": "Your agent can now send feedback to Vercel.\n\nUse plain language to explain a bug or feature request, and your agent will use 𝚜𝚞𝚋𝚖𝚒𝚝_𝚏𝚎𝚎𝚍𝚋𝚊𝚌𝚔 via Vercel MCP to attach structured context and submit the comment.\nhttps://t.co/soLvbXs00f",
-          "created_at": "2026-10-29T15:55:58+00:00",
-          "like_count": 154,
-          "retweet_count": 2,
-          "reply_count": 9,
-          "url": "https://x.com/vercel_dev/status/2115835041876222134"
+          "id": "2116988333096370443",
+          "text": "Working with Gemini on https://t.co/3Z4NESzNKd is hilarious 😂😂\n\nOther than being SUPER EXCITED!, I've been testing it on two high complexity projects and it's doing great. https://t.co/Vb16Fbyats",
+          "created_at": "2026-11-01T20:18:45+00:00",
+          "like_count": 417,
+          "retweet_count": 9,
+          "reply_count": 73,
+          "url": "https://x.com/rauchg/status/2116988333096370443"
         }
       ]
     },
@@ -259,49 +204,49 @@
       "tier": "builder",
       "tweets": [
         {
-          "id": "2115876931749200320",
-          "text": "Introducing Kino: make videos end-to-end with Claude Code and Codex.\n\nDrop your footage, get highlights, edit together, send links for feedback, and let your agents cook.\n\nAI is becoming a great creative partner. Kino is a new home for your team and agents to collaborate. https://t.co/AJStZkrAS1",
-          "created_at": "2026-10-29T18:42:26+00:00",
-          "like_count": 3554,
-          "retweet_count": 249,
-          "reply_count": 382,
-          "url": "https://x.com/lukeigel/status/2115876931749200320"
+          "id": "2116636967517798672",
+          "text": "I'm now building an \"improvements\" feature into all of my personal vibecoded applications: a freeform text input that's hooked up to an agent that yolo implements whatever is submitted.\n\nIt's an interesting experience -- the activation energy barrier to sanding any rough edge or implementing any new feature becomes extremely low. Someone else who uses one of the applications I created has already implemented 150 improvements over the course of a few days. This pattern feels like a new kind of tool -- liquid software? -- and every application that doesn't have this feature now has a slightly rigid and anachronistic flavor. Why can't I just tell it how I want it to be different?\n\nNow, it's not obvious to me how this pattern can or should scale. Does it become unmaintainable after a while? (Maybe model intelligence improvement outstrips my feature appetite such that it's fine?) How does collaborative software work in this model? Can software designed this way be secure and reliable?\n\nWhatever the larger questions about broader deployment, it definitely works great in a personal context. It reminds me a little of the visions of Lisp/Lisp machines, Smalltalk, and HyperCard -- systems that the user can take control of and modify. Those visions never quite worked, though: the vast majority of software today is not end-user modifiable in any useful way. So, while this \"liquid\" affordance is a very small touch, the way it changes one's relation to the software feels a bit transgressive and empowering in a Lickliderian and Engelbartian way.",
+          "created_at": "2026-10-31T21:02:32+00:00",
+          "like_count": 4259,
+          "retweet_count": 189,
+          "reply_count": 424,
+          "url": "https://x.com/patrickc/status/2116636967517798672"
         },
         {
-          "id": "2116170090991484947",
-          "text": "Massively underreported: an official Claude Code extension was compromised and installed backdoors on developer machines.\n\nCould it be behind the Binance hack? https://t.co/lODvfIc5AP",
-          "created_at": "2026-10-30T14:07:20+00:00",
-          "like_count": 540,
-          "retweet_count": 55,
-          "reply_count": 153,
-          "url": "https://x.com/amasad/status/2116170090991484947"
+          "id": "2117010858845089805",
+          "text": "If you’re enjoying a subsidized AI subscription get ready to get rug pulled.",
+          "created_at": "2026-11-01T21:48:15+00:00",
+          "like_count": 2521,
+          "retweet_count": 107,
+          "reply_count": 193,
+          "url": "https://x.com/amasad/status/2117010858845089805"
         },
         {
-          "id": "2116179892991922433",
-          "text": "Coding agents on employee or contractor laptops are a massive cyber and national security risk https://t.co/iTeVTIyhh0",
-          "created_at": "2026-10-30T14:46:17+00:00",
-          "like_count": 389,
-          "retweet_count": 25,
-          "reply_count": 105,
-          "url": "https://x.com/amasad/status/2116179892991922433"
+          "id": "2116998155925360965",
+          "text": "You can enable this on Replit with one toggle. If you enable the “feedback widget” on your site, users’ feedback become prompts for the agents to build.",
+          "created_at": "2026-11-01T20:57:46+00:00",
+          "like_count": 268,
+          "retweet_count": 12,
+          "reply_count": 81,
+          "url": "https://x.com/amasad/status/2116998155925360965"
         },
         {
-          "id": "2116188845746368602",
-          "text": "I understand it might not be your fault, but it’s dishonest to say it’s not the “official” extension. If I’m a cursor user and I installed the *official* Claude code extension, I would potentially get this update, no? From my perspective as a user, the official marketplace extension was compromised. \n\nIt’s honestly disappointing that your first response was to be defensive and split hairs instead of worrying about the impact on your users.",
-          "created_at": "2026-10-30T15:21:52+00:00",
-          "like_count": 94,
+          "id": "2117012965232959660",
+          "text": "@Daeron0x Might be a factor but Ant pays spacex for compute so it’s not like they don’t have enough margin to burn. I think the bigger issue is compute shortage",
+          "created_at": "2026-11-01T21:56:37+00:00",
+          "like_count": 96,
           "retweet_count": 0,
-          "reply_count": 12,
-          "url": "https://x.com/amasad/status/2116188845746368602"
+          "reply_count": 1,
+          "url": "https://x.com/amasad/status/2117012965232959660"
         },
         {
-          "id": "2115885650021097877",
-          "text": "i forked Excalidraw and added some new features :)\n\n🐟 draw fish and watch them swim\n🏀 draw a course and drop a ball through it\n\nwith @Replit Cloud Agents, you can pull in an existing repo, make your changes, and open a PR. here’s how:\n\n1. gave the agent the Excalidraw repo and asked it to get the app running\n2. described the features i wanted, tried them in the preview, and asked for tweaks\n3. created my own fork on GitHub and granted the Replit GitHub App access\n4. asked the agent to run the checks and open a PR against my fork\n\nhere’s the PR it created ↓",
-          "created_at": "2026-10-29T19:17:04+00:00",
-          "like_count": 71,
-          "retweet_count": 5,
-          "reply_count": 6,
-          "url": "https://x.com/sarahli/status/2115885650021097877"
+          "id": "2117027771260207364",
+          "text": "@FirasHermez @Daeron0x It simply means compute shortage means it goes to customers who pay full price",
+          "created_at": "2026-11-01T22:55:27+00:00",
+          "like_count": 18,
+          "retweet_count": 0,
+          "reply_count": 1,
+          "url": "https://x.com/amasad/status/2117027771260207364"
         }
       ]
     },
@@ -310,26 +255,7 @@
       "name": "Josh Woodward (Google Labs)",
       "domain": "ai",
       "tier": "builder",
-      "tweets": [
-        {
-          "id": "2115953461108023400",
-          "text": "Notebook has just unlocked over 700 textbooks from the world’s leading publishers. Every single one is available to you, completely free of charge! @Gemini_Notebook https://t.co/WUdpOQbZgh",
-          "created_at": "2026-10-29T23:46:32+00:00",
-          "like_count": 1916,
-          "retweet_count": 227,
-          "reply_count": 72,
-          "url": "https://x.com/joshwoodward/status/2115953461108023400"
-        },
-        {
-          "id": "2115954517149995130",
-          "text": "@where_secrets @Gemini_Notebook Let us know which ones you use!",
-          "created_at": "2026-10-29T23:50:44+00:00",
-          "like_count": 6,
-          "retweet_count": 0,
-          "reply_count": 0,
-          "url": "https://x.com/joshwoodward/status/2115954517149995130"
-        }
-      ]
+      "tweets": []
     },
     {
       "handle": "ornith_",
@@ -340,5 +266,5 @@
     }
   ],
   "errors": null,
-  "generated_at": "2026-10-30T23:59:16.063497+00:00"
+  "generated_at": "2026-11-02T09:20:03.645795+00:00"
 }
