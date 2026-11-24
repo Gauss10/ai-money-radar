@@ -18,12 +18,9 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  update-and-deploy:
+  build:
     runs-on: ubuntu-latest
     timeout-minutes: 45   # 兜底：任何卡死最多 45 分钟，不再占满 GitHub 默认 6 小时
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - uses: actions/checkout@v4
 
@@ -39,7 +36,7 @@ jobs:
         if: github.event_name != 'push'
         env:
           OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
-          TWITTER_COOKIES: ${{ secrets.TWITTER_COOKIES }}
+          # X is refreshed locally. Without cookies the feed generator preserves that cache.
         run: |
           cd scripts
           if [[ "${{ github.event.schedule }}" == "0 2 * * *" ]]; then
@@ -72,9 +69,28 @@ jobs:
         with:
           enablement: true   # 首次运行自动启用 GitHub Pages
 
-      - uses: actions/upload-pages-artifact@v3
+      - uses: actions/upload-pages-artifact@v5
         with:
           path: site
 
-      - id: deployment
-        uses: actions/deploy-pages@v4
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    environment:
+      name: github-pages
+      url: ${{ steps.retry.outputs.page_url || steps.first.outputs.page_url }}
+    steps:
+      - name: Deploy site
+        id: first
+        continue-on-error: true
+        uses: actions/deploy-pages@v5
+
+      - name: Wait before retrying Pages
+        if: steps.first.outcome == 'failure'
+        run: sleep 45
+
+      - name: Retry deployment of the same artifact
+        id: retry
+        if: steps.first.outcome == 'failure'
+        uses: actions/deploy-pages@v5
